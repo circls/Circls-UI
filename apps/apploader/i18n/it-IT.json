@@ -1,0 +1,22 @@
+{
+	"defaultApp": {
+		"title": "predefinito app",
+		"label": "avere un app di default permette di immergersi subito in quella app, una volta effettuato l'accesso."
+	},
+	"noDefaultApp": {
+		"label": "nessuna app predefinita selezionata"
+	},
+	"appDescription": {
+		"title": "l'impostazione di un app di default",
+		"label": "per impostare o modificare la vostra applicazione di default, trascinare l'applicazione desiderata all'interno dell'area designata sopra."
+	},
+	"searchQuery": {
+		"placeholder": "Apps Ricerca"
+	},
+	"appstore": {
+		"button": "scambio app"
+	},
+	"appList": {
+		"title": "le tue applicazioni"
+	}
+}

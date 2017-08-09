@@ -1,0 +1,32 @@
+{
+    "_id": "_design/rates",
+    "language": "javascript",
+    "views": {
+       "crossbar_deleted": {
+           "map": "function(doc) { if (doc.pvt_deleted == 'false' || doc.pvt_type !== 'rate') return; emit(parseInt(doc.prefix), null); }"
+       },
+       "crossbar_detail": {
+           "map": "function(doc) { if (doc.deleted || doc.pvt_type !== 'rate') return; emit(doc._id, {\"name\":doc.rate_name, \"cost\":doc.rate_cost, \"prefix\":doc.prefix, \"description\":doc.description, \"surcharge\":doc.rate_surcharge, \"carrier\":doc.carrier, 'direction': doc.direction, 'flatrate': doc.flatrate, 'iso_code': doc.iso_country_code, 'options': doc.options, 'internal_rate': doc.pvt_internal_rate_cost, 'pvt_type': doc.pvt_type, 'increment': doc.rate_increment, 'minimum': doc.rate_minimum, 'routes': doc.routes}); }"
+       },
+       "crossbar_listing": {
+           "map": "function(doc) { if (doc.pvt_deleted || doc.pvt_type !== 'rate') return; ratesum = parseInt(((doc.rate_cost * 1) + (doc.rate_surcharge * 1) + 0.0005*1)*1000)/1000; emit(doc._id, {'_id': doc._id, '_rev': doc._rev, 'routes': doc.routes, 'iso_country_code': doc.iso_country_code, 'rate_name': doc.rate_name, 'rate_cost': doc.rate_cost, 'direction': doc.direction, 'internal_rate_cost': doc.pvt_internal_rate_cost, 'flatrate': doc.flatrate, 'options': doc.options, 'prefix': doc.prefix, 'rate_increment': doc.rate_increment, 'rate_minimum': doc.rate_minimum, 'rate_surcharge': doc.rate_surcharge, 'weight': doc.weight, 'pvt_type': doc.pvt_type,'ratesum': ratesum}); }"
+       },
+       "lookup": {
+           "map": "function(doc) { if (doc.pvt_deleted || doc.pvt_type !== 'rate') return; emit(parseInt(doc.prefix), null); }"
+       },
+       "search_by_prefix": {
+           "map": "function(doc) { if (doc.pvt_deleted || doc.pvt_type !== 'rate') return; emit(doc.prefix, {\"name\":doc.rate_name, \"cost\":doc.rate_cost, \"prefix\":doc.prefix, \"description\":doc.description, \"surcharge\":doc.rate_surcharge, \"carrier\":doc.carrier, 'direction': doc.direction, 'flatrate': doc.flatrate, 'iso_code': doc.iso_country_code, 'options': doc.options, 'internal_rate': doc.pvt_internal_rate_cost, 'pvt_type': doc.pvt_type, 'increment': doc.rate_increment, 'minimum': doc.rate_minimum, 'routes': doc.routes}); }"
+       },
+       "group_by_prefix": {
+           "map": "function(doc) { if (doc.pvt_deleted || doc.pvt_type !== 'rate') return; emit(doc.prefix,1); }",
+           "reduce": "_count"
+       },
+       "search_by_isocode": {
+           "map": "function(doc) { if (doc.pvt_deleted || doc.pvt_type !== 'rate') return; emit(doc.iso_country_code, {\"name\":doc.rate_name, \"cost\":doc.rate_cost, \"prefix\":doc.prefix, \"description\":doc.description, \"surcharge\":doc.rate_surcharge, \"carrier\":doc.carrier, 'direction': doc.direction, 'flatrate': doc.flatrate, 'iso_code': doc.iso_country_code, 'options': doc.options, 'internal_rate': doc.pvt_internal_rate_cost, 'pvt_type': doc.pvt_type, 'increment': doc.rate_increment, 'minimum': doc.rate_minimum, 'routes': doc.routes}); }"
+       },
+       "group_by_isocode": {
+           "map": "function(doc) { if (doc.pvt_deleted || doc.pvt_type !== 'rate') return; emit(doc.iso_country_code,1); }",
+           "reduce": "_count"
+       }
+    }
+}

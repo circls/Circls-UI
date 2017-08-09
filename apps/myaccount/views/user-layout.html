@@ -1,0 +1,328 @@
+<div class="user-content-wrapper">
+	<ul class="list-settings">
+		<li class="settings-item clearfix" data-name="email">
+			<a class="settings-link clearfix">
+				<span class="title">{{ i18n.user.email }}</span>
+				<span class="description">{{user.email}}</span>
+				<span class="update">
+					<i class="fa fa-cog icon-small"></i>
+					<span class="text">{{ i18n.editSettings }}</span>
+				</span>
+				<span class="changes-saved">{{ i18n.changesSaved }}</span>
+			</a>
+			<div class="settings-item-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" id="form_email">
+							<div class="control-group">
+								<label class="control-label" for="email">{{ i18n.user.email }}</label>
+								<div class="controls">
+									<input type="email" placeholder="{{ i18n.placeholderEmail }}" id="email" name="email" value="{{user.email}}" data-original_value="{{user.email}}"/>
+								</div>
+							</div>
+							<div class="action-group clearfix">
+								<div class="action-bar">
+									<button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+									<button type="submit" class="monster-button-success change" data-module="user" data-field="email">{{ i18n.saveChanges }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="settings-item clearfix" data-name="password">
+			<a class="settings-link clearfix">
+				<span class="title">{{ i18n.user.password }}</span>
+				<span class="description">*************</span>
+				<span class="update">
+					<i class="fa fa-cog icon-small"></i>
+					<span class="text">{{ i18n.editSettings }}</span>
+				</span>
+				<span class="changes-saved">{{ i18n.changesSaved }}</span>
+			</a>
+			<div class="settings-item-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" id="form_password">
+							<div class="control-group">
+								<label class="control-label" for="password">{{ i18n.user.newPassword }}</label>
+								<div class="controls">
+									<input type="password" id="password" name="password" data-original_value=""/>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="confirm_password">{{ i18n.user.confirmPassword }}</label>
+								<div class="controls">
+									<input type="password" id="confirm_password" name="confirm_password" data-original_value=""/>
+								</div>
+							</div>
+							<div class="action-group clearfix">
+								<div class="action-bar">
+									<button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+									<button type="submit" class="monster-button-success change" data-module="user" data-field="password">{{ i18n.saveChanges }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="settings-item clearfix" data-name="timezone">
+			<a class="settings-link clearfix">
+				<span class="title">{{ i18n.user.timezoneTitle }}</span>
+				<div class="description">
+					<ul>
+						<li>{{user.timezone}}</li>
+						<li>{{user.language}}</li>
+					</ul>
+				</div>
+				<span class="update">
+					<i class="fa fa-cog icon-small"></i>
+					<span class="text">{{ i18n.editSettings }}</span>
+				</span>
+				<span class="changes-saved">{{ i18n.changesSaved }}</span>
+			</a>
+			<div class="settings-item-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" id="form_timezone">
+							<div class="control-group">
+								<label class="control-label" for="user_timezone">{{ i18n.user.userTimezone }}</label>
+								<div class="controls">
+									<select id="user_timezone" name="timezone" data-original_value="{{user.timezone}}"></select>
+								</div>
+							</div>
+                                                        <div class="control-group">
+                                                                <label class="control-label" for="user_language">{{ i18n.account.userLanguage }}</label>
+                                                                <div class="controls">
+                                                                        <select id="user_language" name="language" data-original_value="{{account.language}}"></select>
+                                                                </div>
+                                                        </div>
+							<div class="action-group clearfix">
+								<div class="action-bar">
+									<button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+									<button type="submit" class="monster-button-success change" data-module="user" data-field="timezone">{{ i18n.saveChanges }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="settings-item clearfix" data-name="datetime">
+			<a class="settings-link clearfix">
+				<span class="title">{{ i18n.user.dateTimeTitle }}</span>
+				<span class="description">
+					<ul>
+						<li>
+						{{#compare user.ui_flags.date_format '===' 'dmy'}}
+							{{ i18n.user.dateFormats.dmy }}
+						{{else}} 
+							{{#compare user.ui_flags.date_format '===' 'ymd'}}
+								{{ ../i18n.user.dateFormats.ymd }}
+							{{else}}
+								{{ ../i18n.user.dateFormats.mdy }}
+							{{/compare}} 
+						{{/compare}}
+						</li>
+						<li>
+						{{#if user.ui_flags.twelve_hours_mode}}
+							{{ i18n.user.twelveHoursModeEnabled }}
+						{{else}}
+							{{ i18n.user.twelveHoursModeDisabled }}
+						{{/if}}
+						</li>
+					</ul>
+				</span>
+				<span class="update">
+					<i class="fa fa-cog icon-small"></i>
+					<span class="text">{{ i18n.editSettings }}</span>
+				</span>
+				<span class="changes-saved">{{ i18n.changesSaved }}</span>
+			</a>
+			<div class="settings-item-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" id="form_datetime">
+							<div class="control-group">
+								<label class="control-label">{{ i18n.user.dateFormatTitle }}</label>
+								<div class="controls checkbox-container">
+									<label>
+										{{#monsterRadio i18n.user.dateFormats.mdy}}
+										<input type="radio" value="mdy" name="ui_flags.date_format" checked />
+										{{/monsterRadio}}
+									</label>
+									<label>
+										{{#monsterRadio i18n.user.dateFormats.dmy}}
+										<input type="radio" value="dmy" name="ui_flags.date_format" {{#compare user.ui_flags.date_format '===' 'dmy'}}checked{{/compare}} />
+										{{/monsterRadio}}
+									</label>
+									<label>
+										{{#monsterRadio i18n.user.dateFormats.ymd}}
+										<input type="radio" value="ymd" name="ui_flags.date_format" {{#compare user.ui_flags.date_format '===' 'ymd'}}checked{{/compare}} />
+										{{/monsterRadio}}
+									</label>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="user_twelve_hours_mode">{{ i18n.user.enableTwelveHoursMode }}</label>
+								<div class="controls checkbox-container">
+									{{#monsterCheckbox}}
+										<input type="checkbox" id="user_twelve_hours_mode" name="ui_flags.twelve_hours_mode" {{#if user.ui_flags.twelve_hours_mode}}checked{{/if}} />
+									{{/monsterCheckbox}}
+								</div>
+							</div>
+							<div class="action-group clearfix">
+								<div class="action-bar">
+									<button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+									<button type="submit" class="monster-button-success change" data-module="user" data-field="datetime">{{ i18n.saveChanges }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<li class="settings-item clearfix" data-name="quickcalldevice">
+			<a class="settings-link clearfix">
+				<span class="title">{{ i18n.user.quickcalldeviceTitle }}</span>
+				<div class="description">
+					<ul>
+						<li>{{quickcallDevice}}</li>
+					</ul>
+				</div>
+				<span class="update">
+					<i class="fa fa-cog icon-small"></i>
+					<span class="text">{{ i18n.editSettings }}</span>
+				</span>
+				<span class="changes-saved">{{ i18n.changesSaved }}</span>
+			</a>
+			<div class="settings-item-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" id="form_quickcalldevice">
+							<div class="control-group">
+								<label class="control-label" for="user_quickcalldevice">{{ i18n.user.quickcalldeviceLabel }}
+                                                                <div class="help_popover" data-original-title="{{ i18n.user.quickcalldeviceHelp }}" data-placement="top" data-toggle="tooltip">
+                                                                         <i class="fa fa-question-circle"></i>
+                                                                </div>
+								</label>
+								<div class="controls">
+									<select id="user_quickcalldevice" name="quickcalldevice" data-original_value="{{user.quickcalldevice}}"></select>
+								</div>
+							</div>
+							<div class="action-group clearfix">
+								<div class="action-bar">
+									<button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+									<button type="submit" class="monster-button-success change" data-module="user" data-field="quickcalldevice">{{ i18n.saveChanges }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<li class="settings-item clearfix" data-name="contactsync">
+			<a class="settings-link clearfix">
+				<span class="title">{{ i18n.user.contactSync }}</span>
+				<span class="description">{{ user.contactsync.URL }}</span>
+				<span class="update">
+					<i class="fa fa-cog icon-small"></i>
+					<span class="text">{{ i18n.editSettings }}</span>
+				</span>
+				<span class="changes-saved">{{ i18n.changesSaved }}</span>
+			</a>
+			<div class="settings-item-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" id="form_contactsync">
+							<div class="control-group">
+								<label class="control-label" for="contactsync">{{ i18n.user.contactsyncUser }}
+                                                                <div class="help_popover" data-original-title="{{ i18n.user.contactsyncUserHelp }}" data-placement="top" data-toggle="tooltip">
+                                                                         <i class="fa fa-question-circle"></i>
+                                                                </div>
+								</label>
+								<div class="controls">
+									<input type="contactsync" placeholder="{{ i18n.placeholdercontactsync }}" id="contactsync.user" name="contactsync.user" value="{{user.contactsync.user}}" data-original_value="{{user.contactsync.user}}"/>
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label" for="contactsync">{{ i18n.user.contactsyncPassword }}
+                                                                <div class="help_popover" data-original-title="{{ i18n.user.contactsyncPasswordHelp }}" data-placement="top" data-toggle="tooltip">
+                                                                         <i class="fa fa-question-circle"></i>
+                                                                </div>
+								</label>
+								<div class="controls">
+									<input type="contactsync" placeholder="{{ i18n.placeholdercontactsyncPassword }}" id="contactsync.password" name="contactsync.password" value="{{user.contactsync.password}}" data-original_value="{{user.contactsync.password}}"/>
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label" for="contactsync">{{ i18n.user.contactsyncURL }}
+                                                                <div class="help_popover" data-original-title="{{ i18n.user.contactsyncURLHelp }}" data-placement="top" data-toggle="tooltip">
+                                                                         <i class="fa fa-question-circle"></i>
+                                                                </div>
+								</label>
+								<div class="controls">
+									<input type="contactsync" placeholder="{{ i18n.placeholdercontactsyncURL }}" id="contactsync.URL" name="contactsync.URL" value="{{user.contactsync.URL}}" data-original_value="{{user.contactsync.URL}}"/>
+								</div>
+							</div>
+
+							<div class="action-group clearfix">
+								<div class="action-bar">
+									<button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+									<button type="submit" class="monster-button-success change" data-module="user" data-field="contactsync">{{ i18n.saveChanges }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+
+		<li class="settings-item clearfix" data-name="colorblind">
+			<a class="settings-link clearfix">
+				<span class="title">{{ i18n.user.colorblindTitle }}</span>
+				<span class="description">
+					{{#if user.ui_flags.colorblind}}
+						{{ i18n.user.colorblindEnabled }}
+					{{else}}
+						{{ i18n.user.colorblindDisabled }}
+					{{/if}}
+				</span>
+				<span class="update">
+					<i class="fa fa-cog icon-small"></i>
+					<span class="text">{{ i18n.editSettings }}</span>
+				</span>
+				<span class="changes-saved">{{ i18n.changesSaved }}</span>
+			</a>
+			<div class="settings-item-content">
+				<div class="row-fluid">
+					<div class="span12">
+						<form class="form-horizontal" id="form_colorblind">
+							<div class="control-group">
+								<label class="control-label" for="user_colorblind">{{ i18n.user.enableColorblind }}</label>
+								<div class="controls checkbox-container">
+									{{#monsterCheckbox}}
+										<input type="checkbox" id="user_colorblind" name="ui_flags.colorblind" {{#if user.ui_flags.colorblind}}checked{{/if}} />
+									{{/monsterCheckbox}}
+								</div>
+							</div>
+							<div class="action-group clearfix">
+								<div class="action-bar">
+									<button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+									<button type="submit" class="monster-button-success change" data-module="user" data-field="colorblind">{{ i18n.saveChanges }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	</ul>
+</div>

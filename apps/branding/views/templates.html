@@ -1,0 +1,31 @@
+<div class="templates-branding-container">
+	<legend>{{i18n.templatesBranding.mainTitle}}</legend>
+	<div class="templates-branding-content">
+	{{#each brandingTemplates}}
+		<div class="category-container open" data-category="{{categoryKey}}">
+			<div class="category-header clickable-box">
+				<div class="title">{{categoryName}}</div>
+				<i class="fa-lg fa fa-caret-down"></i>
+			</div>
+			<div class="category-content">
+				{{#each templates}}
+					<div class="template-container" data-template="{{templateKey}}">
+						<div class="template-header clickable-box">
+							<div class="title">{{templateName}}</div>
+							{{#compare status '===' 'disabled'}}
+							<i class="fa fa-file monster-red pull-right" data-original-title="{{../../../i18n.templatesBranding.editIconTooltips.disabled}}" data-placement="top" data-toggle="tooltip"></i>
+							{{else}} {{#compare status '===' 'custom'}}
+							<i class="fa fa-file-text-o monster-green pull-right" data-original-title="{{../../../../i18n.templatesBranding.editIconTooltips.custom}}" data-placement="top" data-toggle="tooltip"></i>
+							{{else}}
+							<i class="fa fa-file-o pull-right" data-original-title="{{../../../../i18n.templatesBranding.editIconTooltips.default}}" data-placement="top" data-toggle="tooltip"></i>
+							{{/compare}} {{/compare}}
+						</div>
+						<div class="template-content flat-box">
+						</div>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	{{/each}}
+	</div>
+</div>

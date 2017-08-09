@@ -1,0 +1,63 @@
+{
+   "name": "rates",
+   "api_url": "http://portal.mycircls.com:8000/v2",
+   "source_url": "http://portal.mycircls.com/apps/rates",
+   "i18n": {
+       "en-US": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "ro-RO": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "ru-RU": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "nl-NL": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "de-DE": {
+           "label": "Verbindungstarife",
+           "description": "Einrichten und verwalten Ihrer Verbindungstarife für Ihre Kunden und Liefereranten.",
+           "extended_description": "Sie können die Verbindungstarife einpflegen und verändern.",
+           "features": [ "Einzelne Tarife erstellen und anpassen", "Neue Tarife upload per csv" ]
+       },
+       "it-IT": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "fr-FR": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "es-ES": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       }
+   },
+   "tags": [ "carrier", "reseller", "all" ],
+   "author": "CIRCLS",
+   "version": "1.0",
+   "license": "MPL",
+   "price": "0.00",
+   "icon": "Rates_app.png",
+   "screenshots": [ "rates_1.png", "rates_2.png" ],
+   "pvt_type": "app"
+}

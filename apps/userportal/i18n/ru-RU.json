@@ -1,0 +1,359 @@
+{
+	"userportal": {
+                "vmstatus": {
+                    "new": "New",
+                    "saved": "Saved",
+                    "deleted": "Deleted"
+                },
+		"my_voicemails": "Мой голосовой почты",
+		"my_call_history": "Мой Журнал вызовов",
+		"my_settings": "Мои настройки",
+		"forward_calls_to": "Переадресация вызовов Чтобы",
+		"also_ring_my_voip_phone": "Кроме Ring My VoIP Phone",
+		"send_voicemail_to_email": "Отправить голосовое сообщение на электронную почту",
+		"email_address": "E-mail адрес",
+		"keep_caller_id": "Держите Caller ID",
+		"sawe": "Сохранить",
+		"my_devices": "Мои устройства",
+		"registered_devices_are_displayed": "Зарегистрированные устройства отображаются зеленым ниже.",
+		"my_contact_list": "Мой Список контактов",
+		"in_order_to_use_the_quickcall_feature": ". Для того, чтобы использовать эту функцию QuickCall, вы можете ввести номер в поле ниже, или выберите номер непосредственно из списка контактов",
+		"the_quickcall_feature_will_ring_your_selected_device": ". Функция QuickCall будет звонить выбранного устройства, а затем будет пытаться достичь выбранный номер, как только вы подобрали на вызов",
+		"mark_as_new": "Отметить как новое",
+		"mark_as_saved": "Марк, как спастись",
+		"delete": "Удалить",
+		"data": "Дата",
+		"from_caller_id": "Из (Caller ID)",
+		"to_dialed_number": "Для того, чтобы (Набранный номер)",
+		"duration": "Продолжительность",
+		"caller_id": "АОН",
+		"status": "Статус",
+		"listen": "Слушай",
+		"download": "Скачать",
+                "play": "Play Message",
+		"name": "Имя",
+		"internal_number": "Внутренний номер",
+		"external_number": "Внешний номер",
+		"you_need_to_select_a_registered_device": "Вы должны выбрать зарегистрированное устройство из выпадающего меню для того, чтобы использовать функцию QuickCall!",
+		"quickcall_device": "QuickCall Устройство:",
+		"quickcall_startedto": "Quickcall started to: ",
+		"call": "Вызов",
+		"start_date": "Старт",
+		"end_date": "Конец",
+		"filter": "Фильтр",
+		"dates_in_the_filter": "Сроки в фильтре не в нужном формате (мм / дд / гггг)",
+		"message_index": "Сообщение Список",
+		"voicemail_box_id": "ящик голосовой почты ID",
+		"are_you_sure_that_you_want_to_delete": "Вы уверены, что хотите удалить выбранное сообщение (ы) голосовой почты?",
+		"enable_call_forward": "Включить переадресацию вызовов",
+		"rangeTooLarge": "Диапазон больше, чем {{variable}} переменных дней, пожалуйста, исправить ее",
+                "device_types": {
+                        "cellphone": "Сотовый телефон",
+                        "sip_device": "SIP телефон",
+                        "smartphone": "Смартфон",
+                        "mobile": "Мобильный телефон",
+                        "softphone": "Софтфон",
+                        "landline": "Стационарная линия",
+                        "fax": "Факс",
+                        "ata": "Шлюз",
+                        "sip_uri": "SIP URI"
+                },
+                "setquickcallDevice": "Please, go to your account settings and select first a quickcall device."
+	},
+
+	"devices": {
+		"add": "Добавить устройство",
+		"assigned": "Назначено",
+		"createDevice": "Создать устройство",
+		"confirmDeleteDevice": "Это устройство будет удалено без возможности восстановления. Продолжить?",
+		"deleteDevice": "Удалить устройство",
+		"deletedDevice": "Вы успешно удалили следующее устройство \"{{deviceName}}\".",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+		"popupSettings": {
+			"advancedTitle": "Расширенные",
+			"basicTitle": "Основные настройки",
+			"brandDownloads": "Productinfo",
+			"basicSectionTitle": "Основные настройки",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "Для выбора кодека мышкой перетащите необходимый кодек из списка доступных кодеков в список выбранных кодеков.",
+			"options": {
+				"menuTitle": "Параметры"
+			},
+			"sip": {
+				"menuTitle": "SIP",
+				"sectionTitle": "Параметры SIP",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+			},
+			"audio": {
+				"menuTitle": "Звук",
+				"sectionTitle": "Настройки звука",
+				"selectedCodecs": "Выбранные кодеки",
+				"unselectedCodecs": "Доступные кодеки",
+				"codecs": {
+					"OPUS": "OPUS",
+					"CELT@32000h": "Siren @ 32Khz",
+					"G7221@32000h": "G722.1 @ 32khz",
+					"G7221@16000h": "G722.1 @ 16khz",
+					"G722": "G722",
+					"speex@32000h": "Speex @ 32khz",
+					"speex@16000h": "Speex @ 16khz",
+					"speex": "Speex",
+					"PCMU": "G711u / PCMU - 64kbps (NA)",
+					"PCMA": "G711a / PCMA - 64kbps (Elsewhere)",
+					"G729":"G729 - 8kbps (Requires License)",
+					"GSM":"GSM",
+					"CELT@48000h": "Siren (HD) @ 48kHz",
+					"CELT@64000h": "Siren (HD) @ 64kHz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "Caller-ID для эстр.служб",
+				"sectionTitle": "Caller-ID при вызове экстренных служб",
+				"emergency": "Номер",
+				"notSet": "- Учетная запись по умолчанию -",
+				"noE911Numbers": "Вы не определили номер для экстренных вызовов (Е911) ни для одного из ваших номеров, пожалуйста, установите его для любого из ваших номеров в разделе Управление номерами и продолжите текущую настройку.",
+				"address": "Адрес",
+				"__comment": "UI-1386: Updating devices to use the numberSelector common control",
+				"__version": "v3.20_s4",
+				"selectNumber": "Выберите номер для экстренных служб",
+				"useDefault": "Использовать настройки по умолчанию"
+			},
+			"miscellaneous": {
+				"menuTitle": "Прочее",
+				"sectionTitle": "Прочее",
+				"rtp": {
+					"enable": "Шифрование звука",
+					"type": "Тип шифрования: ",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"__comment": "UI-1119: Adding ignore_complete_elsewhere",
+				"__version": "3.19",
+				"ignoreCompletedElsewhere": {
+					"label": "Игнорировать ответ в другом месте",
+					"help": "Если включено, поддерживаемые модели телефонов будут отображать пропущенный вызов, даже если он был частью вызова группы и был отвечен кем-то ещё."
+				},
+                                "restart": {
+                                        "label": "Envoyer une requête de redémarrage",
+                                        "button": "Redémarrer",
+                                        "help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+                                        "success": "Vous avez envoyé une requête de redémarrage avec succès!"
+                                }
+                        },
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+			},
+			"restrictions": {
+				"menuTitle": "Ограничения",
+				"sectionTitle": "Настройка ограничений",
+				"inherit": "Наследовать",
+				"deny": "Запретить",
+				"matcher": {
+					"help": "Введите номер (international format => +[Countryprefix]...) и нажмите кнопку \"Проверить\" чтобы убедиться, что вызов разрешен.",
+					"placeholder": "+18554443333",
+					"button": "Проверить",
+					"label": "Указанный номер соответствует этому правилу.",
+					"__comment": "UI-727, v3.19_s2: Информация об изменении ограничений вызовов отображается на устройствах.",
+					"allowMessage": "Этому устройству разрешено совершать вызовы по номеру {{phoneNumber}}",
+					"denyMessage": "Этому устройству запрещено совершать вызовы по номеру {{phoneNumber}}."
+				},
+				"__comment": "UI-727, v3.19_s2: Информация об изменении ограничений вызовов отображается на устройствах.",
+				"allow": "Разрешить",
+				"disabledRestrictionsInfo": "Некоторые типы вызовов ограничены для всей вашей учётной записи и не могут быть назначены для конкретного устройства."
+			},
+			"video": {
+				"menuTitle": "Видео",
+				"sectionTitle": "Настройки видео",
+				"selectedCodecs": "Выбранные кодеки",
+				"unselectedCodecs": "Доступные кодеки",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "H264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			},
+			"__comment": "UI-1351: Add ability to configure feature keys for SIP devices in SmartPBX",
+			"__version": "v3.20_s4",
+			"featureKeys": {
+				"menuTitle": "Клавиши расширения",
+				"description": "Клавиши расширения",
+				"labels": {
+					"user": "Пользователь",
+					"parkingSpot": "Парковочная орбита",
+					"value": "Значение"
+				},
+				"info": {
+					"link": {
+						"showInfo": "Показать инфо",
+						"hideInfo": "Спрятать инфо"
+					},
+					"types": {
+						"presence": "Показывать, когда пользователю приходит входящий вызов на его телефоне, или он разговаривает. Индикатор может использоваться  для перехвата вызова или для быстрого набора.",
+						"parking": "Показывать, когда звонок поставлен на парковочную орбиту, доступную всем пользователям. Индикатор может быть использован для парковки звонка или подключения к запаркованному звонку.",
+						"personal_parking": "Показывать, когда звонок поставлен на персональную парковочную орбиту пользователя. Индикатор может быть использован для парковки звонка или подключения к запаркованному звонку.",
+						"speed_dial": "Не отображать события звонка, использовать только для быстрого набора."
+					}
+				},
+				"types": {
+					"none": "Нет",
+					"presence": "Присутствие",
+					"parking": "Парковка",
+					"personal_parking": "Персональная парковка",
+					"speed_dial": "Быстрый набор"
+				}
+			}
+		},
+		"buy": "Купить устройство",
+		"classifiers": {
+			"unknown": {
+			    "name": "Кроме указанных выше",
+			    "help": "Пожалуйста, выберите этот параметр, если вы хотите, чтобы эта учетная запись могла совершать вызовы на ЛЮБОЙ номер, не представленный в списке. (Когда формат номера не известен для системы.)"
+			}
+		},
+		"noMatchingDevices": "Не найдено устройств отвечающих условиям вашего поиска",
+		"noDevicesConfigured": "Нет сконфигурированных устройств",
+		"provisionerPopup": {
+			"brandHeadline": "Выберите марку устройства:",
+			"deviceHeadline": "Выберите модель устройства:",
+			"deviceSelected": "Вы выбрали {{brand}} {{model}}",
+			"missingBrand": "Марки моего устройства нет в списке",
+			"missingDevice": "Моего устройства нет в списке",
+			"title": "Выбор устройства"
+		},
+		"sip_device": {
+			"addTitle": "Добавление a SIP устройства",
+			"editTitle": "Редактирование SIP устройства: {{name}}",
+			"macAddress": "MAC Address",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Новое SIP устройство",
+			"deviceName": "Имя устройства"
+		},
+		"sip_uri": {
+			"addTitle": "Добавление a SIP URI",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование SIP URI: {{name}}",
+			"new": "Новый SIP URI",
+			"uri": "SIP URI",
+			"uriPlaceholder": "sip:device@my.company.com",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"landline": {
+			"addTitle": "Добавление стационарной линии",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование стационарной линии: {{name}}",
+			"new": "Новая стационарная линия",
+			"number": "Номер",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Требуется нажатие кнопки",
+			"keepCallerId": "Переадресация с передачей номера вызывающего абонента",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"cellphone": {
+			"addTitle": "Добавление сотового телефона",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование сотового телефона: {{name}}",
+			"new": "Новый сотовый телефон",
+			"number": "Номер",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Разрешить использование голосовой почты сотового телефона",
+			"keepCallerId": "Сохранить оригинальный Caller-ID",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"mobile": {
+			"addTitle": "Добавление мобильного телефона",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование мобильного телефона: {{name}}",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10-значный номер телефона",
+			"new": "Новый мобильный телефон"
+		},
+		"smartphone": {
+			"addTitle": "Добавление смартфона",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование смартфона: {{name}}",
+			"new": "Новый смартфон",
+			"requireKeypress": "Разрешить изпользование голосовой почты сотового телефона",
+			"keepCallerId": "Сохранить оригинальный Caller-ID",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"fax": {
+			"addTitle": "Добавление факса",
+			"editTitle": "Редактирование факса: {{name}}",
+			"macAddress": "MAC адрес",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Новый факс",
+			"deviceName": "Имя устройства",
+			"t38": "T38",
+			"disabled": "Запрещено",
+			"auto": "Автоопределение",
+			"force": "Принудительно"
+		},
+		"softphone": {
+			"addTitle": "Добавление софтфона",
+			"editTitle": "Редактирование софтфона: {{name}}",
+			"new": "Новый софтфон",
+			"deviceName": "Имя устройства"
+		},
+		"ata": {
+			"addTitle": "Добавление шлюза",
+			"editTitle": "Редактирование шлюза: {{name}}",
+			"new": "Новый шлюз",
+			"deviceName": "Имя устройства"
+		},
+		"sip": {
+			"username": "SIP пользователь",
+			"password": "SIP пароль",
+			"realm": "Realm"
+		},
+		"spare": "Резервные",
+		"title": "Устройства",
+		"titleGrid": {
+			"edit": "Изменить",
+			"enable": "Включить",
+			"user": "Пользователь",
+			"modelMacAddress": "Имя / MAC адрес",
+			"type": "Type"
+		},
+		"types": {
+			"cellphone": "Сотовый телефон",
+			"sip_device": "SIP телефон",
+			"smartphone": "Смартфон",
+			"mobile": "Мобильный телефон",
+			"softphone": "Софтфон",
+			"landline": "Стационарная линия",
+			"fax": "Факс",
+			"ata": "Шлюз",
+			"sip_uri": "SIP URI"
+		},
+		"unassignedDevice": "-"
+	}
+}

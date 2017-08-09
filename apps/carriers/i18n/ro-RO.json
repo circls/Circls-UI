@@ -1,0 +1,250 @@
+{
+	"carriers": {
+		"ips": {
+			"title": "Bine ati venit la aplicația transportatorilor",
+			"subtitle": "se pare că contul esti folosind nu are suficiente adrese IP alocate. în scopul de a începe să utilizați această aplicație, trebuie să achiziționați cel puțin 1 adresă IP din 2 zone diferite. rugam selectati zonele de mai jos",
+			"purchase": "ips de cumpărare",
+			"zones": {
+				"central": "central",
+				"east": "est",
+				"west": "vest"
+			},
+			"noZones": "se pare că nu există zone disponibile pentru contul dvs., vă rugăm să contactați un reprezentant de vânzări!",
+			"noMore": "nu mai ips disponibile în această zonă",
+			"skip": "I don't need to select any IP Address for this account, skip this step"
+		},
+		"brands": {
+                        "efon": "e-fon CH",
+                        "winet": "Winet CH",
+                        "netvoip": "Netvoip CH",
+                        "netswiss": "Netswisstelecom CH",
+                        "sipcall": "Sipcall CH",
+                        "sipgate": "Sipgate DE",
+                        "swisscom": "Swisscom CH",
+                        "sunrise": "Sunrise CH",
+                        "calltrade": "CallTrade CH",
+                        "mitto": "Mitto CH",
+                        "oblcom": "OBLcom CH",
+                        "att": "AT&T US",
+                        "telekom": "Deutsche Telekom DE",
+                        "bt": "British Telecom UK",
+                        "sky_telecom": "Sky-Telecom CH",
+                        "t42com": "42Com DE",
+			"bandwidth": "lățime de bandă",
+			"broadvox": "Broadvox",
+			"call_centric": "centrice apel",
+			"level3": "nivelul 3",
+			"onsip": "onsip",
+			"onvoy": "Onvoy",
+			"peatec": "peatec",
+			"verizon": "Verizon",
+			"vitelity": "vitelity",
+			"voice_plus": "voce peste",
+			"voip_innovations": "inovații voip",
+			"other": "alte",
+			"noTemplate": "nu șablon",
+			"custom": "obicei"
+		},
+		
+		"toastrMessages": {
+			"carrierCreated": "v-a adăugat cu succes {{ name }} ca un operator de transport în contul dvs.!",
+			"carrierUpdated": "ați actualizat cu succes {{ name }}!",
+			"noNamePlaceholder": "acest transportator",
+			"providerDeleted": "ați scos succes {{ name }} furnizorului de servicii din contul dvs.",
+			"templateDeleted": "ați scos succes {{ name }} șablonul din contul dvs.",
+			"warningDeleteProvider": "Sigur doriți să eliminați acest furnizor de servicii ({{ name }}) din contul dvs. ?",
+			"warningDeleteTemplate": "Sigur doriți să eliminați acest șablon ({{ name }}) din contul dvs. ?"
+		},
+		"menuTitles": {
+			"dashboard": "tablou de bord",
+			"carrierTemplates": "template-uri de transport",
+			"serviceProviders": "furnizorii de servicii",
+			"callingPriorities": "apel priorități",
+			"importNumbers": "numerele de import",
+			"setLocally": "stabilite la nivel local",
+			"setGlobally": "setat global"
+		},
+		"resourcesChoice": "tip de resurse",
+		"resourcesHelp": "puteți alege ce tip de resurse pe care doriți să editați când actualizarea transportatorii tale. resurselor locale vor avea un impact doar contul, în timp ce resursele globale sunt disponibile pentru toate conturile din sistem. asigurați- vă că știți ce esti faci dacă selectați modul global!",
+		"toggleAdmin": {
+			"global": "la nivel mondial",
+			"local": "local"
+		},
+
+		"callingPriorities": {
+			"differentPriorities": "alege priorități diferite pentru toate serviciile de ieșire",
+			"differentTitle": "selectați fiecare serviciu de asteptare de ieșire de mai jos și a stabilit furnizorii specifice pentru fiecare serviciu",
+			"samePriorities": "alege aceleași priorități pentru toate serviciile de ieșire",
+			"sameTitle": "prioritate furnizorii pentru toate serviciile de asteptare ieșire",
+			"titleTemplate": "ieșire apel Setări prioritățile",
+			"noCarriers": "aveți în prezent nu există purtători înființate în acest cont. veți putea gestiona prioritățile transportatorilor dumneavoastră după ce le-au configurat doar. vă rugăm să mergeți în secțiunea furnizorii de servicii și să le creeze acolo!",
+			"warningNoCarriers": "aveți în prezent nu există purtători activate pentru această categorie!",
+			"noCarriersForClassifier": "nu aveti un furnizor de servicii stabilit pentru această categorie. vă rugăm să mergeți la furnizorii de servicii și activați această categorie de furnizorul de servicii!",
+			"prioritiesUpdated": "ați actualizat cu succes setările prioritățile de apel!"
+		},
+
+		"serviceProviders": {
+			"editResource": {
+				"titles": {
+					"advanced": "avansat",
+					"basic": "de bază",
+					"audio": "audio",
+					"video": "video",
+					"flags": "steaguri",
+					"gateway": "portal"
+				},
+				"server": {
+					"title": "serverul",
+					"placeholder": "255.255.255.255",
+					"help": "adresa IP a transportatorului (ex-"
+				},
+				"subtitles": {
+					"audio": "setările audio",
+					"video": "setări video",
+					"flags": "manager de steaguri",
+					"gateway": "setările gateway-"
+				},
+				"codecs": {
+					"dragAndDrop": "pentru a selecta un codec, drag and drop din caseta codec-urile disponibile pentru caseta de codec-uri selectat",
+					"selectedCodecs": "codec-uri selectate",
+					"unselectedCodecs": "codec-uri disponibile",
+					"OPUS": "lucru",
+					"CELT@32000h": "sirenă @ 32kHz",
+					"G7221@32000h": "g722.1 @ 32kHz",
+					"G7221@16000h": "g722.1 @ 16kHz",
+					"G722": "g722",
+					"speex@32000h": "speex @ 32kHz",
+					"speex@16000h": "speex @ 16kHz",
+					"PCMU": "g711u/pcmu-64kbps (na)",
+					"PCMA": "g711a/PCMA-64kbps (în altă parte)",
+					"G729": "G729-8kbps (necesită licență)",
+					"GSM": "gsm",
+					"CELT@48000h": "sirena (HD) @ 48kHz",
+					"CELT@64000h": "sirena (HD) @ 64khz",
+					"VP8": "VP8",
+					"H264": "H264",
+					"H263": "H263",
+					"H261": "H261"
+				},
+				"add": "adăuga în lista",
+				"update": "cu excepția",
+				"addCarrierTitle": "adăuga un purtător în contul dvs.",
+				"editCarrierTitle": "Editați setările de {{ }} variabile",
+				"addTemplateTitle": "adăuga un șablon în contul dvs.",
+				"editTemplateTitle": "edita setările de următorul model",
+				"newCarrier": "nou operator de transport",
+				"creatingCustomCarrier": "crearea de purtător personalizat",
+				"name": "nume",
+				"templateName": "marca",
+				"customName": "alte nume de brand",
+				"username": "numele de utilizator",
+				"password": "parolă",
+				"flags": {
+					"name": "numele pavilion",
+					"create": "crearea de noi pavilion",
+					"require": "necesită steaguri ?",
+					"requireHelp": "când verificate"
+				},
+				"rules": {
+					"add": "adăuga noi reguli",
+					"empty": "aveți în prezent nu există reguli stabilite pentru acest transportator! selectați o regulă din a adăuga noi reguli meniul vertical de mai sus pentru a adăuga unul.",
+					"title": "normele",
+					"prefix": "prefix",
+					"suffix": "sufix",
+					"customizeMatch": "personaliza meci",
+					"match": "meci",
+					"test": "încercare",
+					"success": "da!",
+					"failure": "nope...",
+					"testPlaceholder": "introduceți un număr de test...",
+					"testTitle": "nu acest număr intră în această categorie ?",
+					"formattedNumberTitle": "Numărul de după formatare"
+				},
+				"authentication": {
+					"title": "metodă de autentificare",
+					"help": "alege mijloacele prin care operatorul de transport va autentifica apelurile atunci când sunt trimise la ei. Dacă nu știți, consultați operatorul dvs.!"
+				},
+				"realm": {
+					"title": "tărâm",
+					"help": "în cazul în care domeniul înghițitură oferite de acest transportator este diferit de cel de server și sunteți folosind parola de autentificare, atunci trebuie să setați acest domeniu pentru ieșire solicită să lucreze sale."
+				},
+				"progressTimeout": {
+					"title": "progres timeout",
+					"help": "cât de mult ar trebui să solicită așteptați pentru ei să înceapă (apel). uneori, solicită ca ia internațional mai mult, însă în cazul în care operatorul de transport este în jos, valorile mari vor întârzia failover."
+				},
+                                "dialstring_prefix": {
+                                        "title": "Caller-ID Prefix",
+                                        "help": "If this Carrier use a Prefix for a Calleri-ID, this field is used for."
+                                },
+                                "dialstring_format": {
+                                        "title": "Caller-ID Format",
+                                        "help": "Choose format of Caller-ID to signal in right way for this carrier."
+                                },
+				"supportsT38": {
+					"title": "sprijină T.38",
+					"help": "atunci când se utilizează dispozitive de fax, verificați acest lucru pentru a încerca pentru a comuta la T.38. în cazul în care transportatorul doesnt sprijini acest codec, apelul va fi abandonat."
+				},
+				"staticRoute": {
+					"title": "traseu static",
+					"help": "dacă trebuie să fie trimise la aceeași URI, indiferent de ceea ce s-a format solicită, configurați destinația aici."
+				},
+				"staticRouteSIPURI": {
+					"title": "sip uri"
+				},
+				"formatFromURI": {
+					"title": "format din uri",
+					"help": "verifica acest lucru pentru a înlocui SIP de la antet (adesea folosite pentru a apelantului-id), cu următorul domeniul"
+				},
+				"formatFromURIRealm": {
+					"title": "tărâm"
+				},
+				"customSIPInterface": {
+					"title": "interfață SIP personalizat",
+					"help": "în cazul în care sistemul dvs. a fost configurat cu mai multe interfețe SIP, selectați această opțiune pentru a introduce numele interfeței folosit pentru apeluri de ieșire traseu"
+				},
+				"customSIPInterfaceName": {
+					"title": "nume"
+				},
+				"ip": "adresa ip",
+				"ipPlaceholder": "255.255.255.255",
+				"creds": "nume de utilizator și o parolă",
+				"missingIP": "se pare că nu aveti nici un ip dedicat mapate la contul dumneavoastră. tu cant a adăuga acest purtător fără o, vă rugăm să contactați compania dumneavoastră VoIP pentru a obține unul."
+			},
+			"listTitleTemplate": "Listă de șabloanele disponibile pentru dvs. subconturi",
+			"listTitleCarriers": "Listă de furnizorii de servicii configurate",
+			"titleTemplate": "adăuga un șablon prin selectarea unui profil de prim",
+			"titleCarriers": "adăuga un furnizor selectând șablon prima sa",
+			"providerMissing": "furnizorul meu nu este listat mai sus",
+			"noCarriers": "nu aveti nici o purtător configurată pentru acest cont. pentru a putea adauga o, selectați un șablon din bara de sus și completați diferitele setări!",
+			"noTemplates": "nu aveti nici o șablon configurat pentru Subaccount ta! dvs. de sub- conturi nu va fi capabil pentru a adăuga un purtător dintr-un șablon până când le adauga aici."
+		},
+
+		"listingJobs": {
+			"titleTemplate": "Lista de locuri de muncă import",
+			"refreshTooltip": "lista de reîmprospătare",
+			"create": "crearea de noi locuri de muncă import",
+			"statuses": {
+				"success": "de succes",
+				"failed": "Ocazie",
+				"pending": "în curs",
+				"errors": "erori"
+			},
+			"dialogAdd": {
+				"created": "ați creat cu succes un nou loc de muncă denumit {{ name }}. puteți verifica statutul său în lista, și a vedea rezultatele, atunci când a terminat de!",
+				"name": "Numele de locuri de muncă",
+				"selectProvider": "Selectați furnizorul",
+				"inputNumbers": "Numerele de intrare care urmează să fie importate",
+				"beginImport": "începe import",
+				"formatHelp": "exemplu format",
+				"inputHelp": "autotrans.sh de -de-de prompts.txt diff diff-prompts.txt en-prompts.txt en-ne en- us.json es-es fr -ca get_translate.php it- o go.sh it- prompts.txt"
+			},
+			"dialogView": {
+				"title": "Starea de {{ name }}",
+				"errors": {
+					"unauthorized": "nu sunt autorizate să efectueze operație număr solicitat",
+					"not_routable": "numărul nu este conform cu cerințele minime pe de reconciliere"
+				}
+			}
+		}
+	}
+}

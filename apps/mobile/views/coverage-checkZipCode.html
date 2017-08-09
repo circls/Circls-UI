@@ -1,0 +1,14 @@
+<div class="app-content check-zipCode{{#if isActivating}} step-1{{/if}}">
+	<h3 class="title">
+	{{#if isActivating}}
+		{{i18n.mobileApp.checkZipCode.titles.activating}}
+	{{else}}
+		{{i18n.mobileApp.checkZipCode.titles.normal}}
+	{{/if}}
+	</h3>
+	<p class="text">{{i18n.mobileApp.checkZipCode.text}}</p>
+	<form class="input-container" id="check_coverage_form">
+		<input type="text" id="zip_code" name="zip_code" placeholder="{{i18n.mobileApp.checkZipCode.placeholder}}">
+		<button class="monster-button-primary check-coverage">{{i18n.mobileApp.checkZipCode.button}}</button>
+	</form>
+</div>

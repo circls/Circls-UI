@@ -1,0 +1,32 @@
+<div class="app-content devices-list">
+	<div class="list-header">
+		<div class="search-box pull-left hidden">
+			<i class="fa fa-search"></i>
+			<input type="text" class="search-query" placeholder="{{i18n.search}}">
+		</div>
+		<button class="monster-button-primary pull-right activate-device">{{i18n.mobileApp.devicesList.button}}</button>
+	</div>
+	<table class="monster-table footable" data-filter="#filter">
+		<thead>
+			<tr>
+				<th>{{i18n.mobileApp.devicesList.table.headers.name}}</th>
+				<th>{{i18n.mobileApp.devicesList.table.headers.mdn}}</th>
+				<th>{{i18n.mobileApp.devicesList.table.headers.esn}}</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each devices}}
+			<tr data-mdn="{{mdn}}" data-esn="{{esn}}">
+				<td><span class="test">{{device_name}}</span></td>
+				<td>{{formatPhoneNumber mdn}}</td>
+				<td>{{esn}}</td>
+				<td class="actions">
+					<i class="fa fa-cog action-item edit-device"></i>
+					<i class="fa fa-trash action-item cancel-device"></i>
+				</td>
+			</tr>
+		{{/each}}
+		</tbody>
+	</table>
+</div>

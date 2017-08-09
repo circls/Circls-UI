@@ -1,0 +1,16 @@
+<div id="view_job_wrapper">
+	<div class="header clearfix">
+		<div class="carrier-logo {{extra.carrier.brandName}}">
+			{{#compare extra.carrier.brandName "===" "custom"}}
+				<div class="text-wrapper">{{ extra.carrier.template_name }}</div>
+			{{else}}
+				{{#compare extra.carrier.brandName "===" "other"}}
+					<div class="text-wrapper">{{ i18n.carriers.brands.noTemplate }}</div>
+				{{/compare}}
+			{{/compare}}
+		</div>
+		<div class="title">{{extra.carrier.name}}</div>
+	</div>
+
+	<div class="results-wrapper"></div>
+</div>

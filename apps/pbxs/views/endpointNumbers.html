@@ -1,0 +1,72 @@
+<div id="pbx_connector_container" data-id="{{extra.id}}">
+	<div class="box-top-blue pbx-title">
+		<img width="80" height="56" src="apps/pbxs/style/static/images/endpoints/{{img_link}}.png" class="img-style">{{server_name}}
+		<span class="pull-right">
+			<div class="navbar">
+				<ul class="nav pull-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+						<ul class="dropdown-menu">
+							<li class="settings-pbx-link" data-step="1"><a href="#"><i class="fa fa-edit"></i>{{ i18n.brand_selection }}</a></li>
+							<li class="settings-pbx-link" data-step="2"><a href="#"><i class="fa fa-signal"></i>{{ i18n.authentication }}</a></li>
+							<li class="settings-pbx-link" data-step="3"><a href="#"><i class="fa fa-wrench"></i>{{ i18n.testing }}</a></li>
+							<li class="divider"></li>
+							<li><a id="delete_pbx" href="#"><i class="fa fa-trash-o"></i>{{ i18n.delete_pbx }}</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</span>
+	</div>
+	<div id="actions_wrapper">
+		<form class="form-inline">
+			<label>{{ i18n.numbersLabel }}</label>
+			<label id="count_phones"></label>
+			<span id="trigger_links" class="nav-bar">
+				<a href="#" id="remove_numbers" class="action-number"><i class="fa fa-times monster-red"></i><span class="action-text">{{ i18n.remove }}</span></a>
+
+				<li class="dropdown dropdown-move">
+					<a href="#" id="move_numbers" role="button" class="action-number dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share monster-orange"></i><span class="action-text">{{ i18n.move }}</span></a>
+					<ul class="dropdown-menu">
+						{{#each servers_list}}
+							<li class="pbx-dropdown" data-index="{{index}}"><a href="#"><img width="45" height="32" src="apps/pbxs/style/static/images/endpoints/{{img_link}}.png" class="img_style"/>{{server_name}}</a></li>
+						{{else}}
+							<li class="pbx-dropdown empty">{{ i18n.no_pbx }}</li>
+						{{/each}}
+					</ul>
+				</li>
+			</span>
+			<ul class="nav buy-numbers-dropdown">
+				<li class="dropdown">
+					<a href="#" id="buy_numbers" class="dropdown-toggle buy-dropdown action-number" data-toggle="dropdown" data-target="#"><i class="fa fa-shopping-cart monster-green"></i><span class="action-text">{{ i18n.buy }}</span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a class="buy-numbers-link" data-type="regular" href="#">{{i18n.buyNumberLinks.regular}}</a></li>
+						<li><a class="buy-numbers-link" data-type="tollfree" href="#">{{i18n.buyNumberLinks.tollfree}}</a></li>
+					</ul>
+				</li>
+			</ul>
+			{{#unless hidePort}}
+				<a href="#" id="port_numbers" class="action-number"><i class="fa fa-random monster-blue"></i><span class="action-text">{{ i18n.portLabel }}</span></a>
+			{{/unless}}
+			{{#if i18n.deviceBuy}}
+			<ul class="nav buy-pbxs-dropdown">
+				<li class="dropdown">
+					<a href="#" id="buy_pbxs" class="dropdown-toggle buy-dropdown action-pbx" data-toggle="dropdown" data-target="#"><i class="fa fa-shopping-cart monster-green"></i><span class="action-text">{{ i18n.buyPbx }}</span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a class="buy-pbxs-link" data-type="regular" href="#">{{i18n.buyPbxLinks.regular}}</a></li>
+						<li><a class="buy-pbxs-link" data-type="services" href="#">{{i18n.buyPbxLinks.services}}</a></li>
+					</ul>
+				</li>
+			</ul>
+			{{/if}}
+			<span class="search-box pull-right">
+				<i class="fa fa-search"></i>
+				<input type="text" class="search-query" placeholder="{{ i18n.search }}..."></input>
+			</span>
+		</form>
+	</div>
+
+	<div id="numbers_wrapper" class="numbers-wrapper">
+	</div>
+	<div id="search_results"></div>
+</div>

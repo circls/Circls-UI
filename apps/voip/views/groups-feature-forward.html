@@ -1,0 +1,26 @@
+<div class="feature-popup-container" data-feature="forward">
+	<div class="feature-popup-title">
+		<div class="feature-fa-wrapper">
+			<i class="{{group.extra.mapFeatures.forward.icon}}"></i>
+		</div>
+		{{ i18n.groups.forward.headline }}
+		<div class="switch">
+		{{#monsterSwitch}}
+			<input class="switch-state" type="checkbox" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}"{{#if group.extra.mapFeatures.forward.active}} checked="checked"{{/if}}></input>
+		{{/monsterSwitch}}
+		</div>
+	</div>
+
+	{{#monsterText}}
+		{{ i18n.groups.forward.description }}
+	{{/monsterText}}
+
+	<!-- <div class="content{{#unless group.extra.mapFeatures.forward.active}} disabled{{/unless}}"></div> -->
+
+	<div class="actions clearfix">
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+			<button type="button" class="monster-button monster-button-success save">{{ i18n.saveChanges }}</button>
+		</div>
+	</div>
+</div>

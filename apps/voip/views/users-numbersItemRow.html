@@ -1,0 +1,35 @@
+<div class="item-row" data-id="{{number.phoneNumber}}">
+	<div class="features-block pull-right">
+		<div class="edit-features">
+			<div class="navbar">
+				<ul class="nav pull-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+						<ul class="dropdown-menu">
+						{{#unless number.isLocal}}
+							<li><a class="callerId-number" href="#"><i class="fa fa-user"></i>{{ i18n.callerId }}</a></li>
+							<li><a class="e911-number" href="#"><i class="fa fa-ambulance"></i>{{ i18n.e911 }}</a></li>
+                                                        <li><a class="failover-number" href="#"><i class="fa fa-thumbs-down"></i>{{ @root.i18n.failover }}</a></li>
+                                                {{/unless}}
+                                                        <li><a class="prepend-number" href="#"><i class="fa fa-file-text-o"></i>{{ @root.i18n.numberPrepend }}</a></li>
+                                                        <li><a class="regextern-number" href="#"><i class="fa fa-refresh fa-spin"></i>{{ @root.i18n.regextern }}</a></li>
+							<li><a class="blacklist-number" href="#"><i class="fa fa-user-secret"></i>{{ @root.i18n.blacklist }}</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="features">
+		{{#compare number.state '===' 'port_in'}}
+				<i class="fa fa-exclamation-triangle monster-red active help-popover" data-toggle="tooltip" data-placement="top" data-original-title="{{@root.i18n.portIconHelp}}"></i>
+		{{/compare}}
+			{{#each number.viewFeatures}}
+				<i class="{{icon}} {{active}} help-popover" data-toggle="tooltip" data-placement="top" data-original-title="{{ help }}"></i>
+			{{/each}}
+		</div>
+	</div>
+	<div class="number">
+		<button type="button" class="monster-button monster-button-danger remove-number">{{ i18n.unassign }}</button>
+		{{ formatPhoneNumber number.phoneNumber }}
+	</div>
+</div>

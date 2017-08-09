@@ -1,0 +1,27 @@
+<div class="grid-row" data-id="{{id}}" data-search="{{userName}} {{friendlyType}} {{type}} {{name}} {{macAddress}}" data-assigned="{{isAssigned}}" data-registered="{{isRegistered}}">
+	<div class="devices-cells">
+		<div class="type grid-cell settings centered {{classStatus}}">
+			<div class="first-line">
+				<span><i class="fa fa-wrench fa_editable"></i></span> 
+				<i class="{{friendlyIconClass}} fa fa-device"></i>
+			</div>
+			<div class="second-line">
+				{{friendlyType}}
+			</div>
+		</div>
+		<div class="mac-address grid-cell">
+			<div class="first-line{{#compare macAddress '===' ''}} bigger{{/compare}}">{{name}}</div>
+			<div class="second-line">{{macAddress}}</div>
+		</div>
+		<div class="user grid-cell{{#compare isAssigned '===' 'false'}} centered{{/compare}}">
+			{{userName}}
+		</div>
+		<div class="enable grid-cell centered">
+			<div class="switch">
+			{{#monsterSwitch}}
+				<input class="switch-state" type="checkbox"{{#if enabled}} checked="checked"{{/if}}></input>
+			{{/monsterSwitch}}
+			</div>
+		</div>
+	</div>
+</div>

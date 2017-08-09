@@ -1,0 +1,60 @@
+@import url('../submodules/devices/devices.css');
+@import url('../submodules/groups/groups.css');
+@import url('../submodules/myOffice/myOffice.css');
+@import url('../submodules/numbers/numbers.css');
+@import url('../submodules/strategy/strategy.css');
+@import url('../submodules/callLogs/callLogs.css');
+@import url('../submodules/users/users.css');
+@import url('../submodules/featureCodes/featureCodes.css');
+@import url('../submodules/vmboxes/vmboxes.css');
+
+#voip_container .left-menu #myOffice {
+	margin-bottom: 20px;
+}
+
+#voip_container .left-menu > div {
+	margin-top: 10px;
+}
+
+/* Feature Popups */
+.feature-popup-container {
+	width: 510px;
+}
+
+.feature-popup-container .actions,
+.feature-popup-container .content {
+	padding: 15px 25px;
+	border-top: 1px solid #ccc;
+}
+
+.feature-popup-container .actions .monster-link {
+	margin-right: 10px;
+}
+
+.feature-popup-container .switch {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.feature-popup-container .content.disabled {
+	display: none;
+}
+
+.feature-popup-container form {
+	margin-bottom: 40px;
+}
+
+.feature-popup-container form .main-line {
+	position: relative;
+	height: 70px; /* Adding extra space for validation messages */
+	line-height: 60px;
+}
+
+.feature-popup-container form .main-line label.monster-invalid {
+	top: 45px;
+}
+
+.feature-popup-container input,
+.feature-popup-container select {
+	margin-left: 10px;
+}

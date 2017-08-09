@@ -1,0 +1,22 @@
+{
+	"defaultApp": {
+		"title": "app implicit",
+		"label": "având o aplicație implicit vă permite să se arunca cu capul direct în care app odată ce sunteți conectat la."
+	},
+	"noDefaultApp": {
+		"label": "nu app implicit selectat"
+	},
+	"appDescription": {
+		"title": "stabilirea unui aplicație implicită",
+		"label": "pentru a seta sau modifica aplicația implicită, trageți aplicația dorită în interiorul careului, desemnată de mai sus."
+	},
+	"searchQuery": {
+		"placeholder": "aplicații de căutare"
+	},
+	"appstore": {
+		"button": "app de schimb"
+	},
+	"appList": {
+		"title": "aplicațiile"
+	}
+}

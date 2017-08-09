@@ -1,0 +1,78 @@
+<div class="detail-numbers">
+	<div class="list-wrapper">
+		<div class="list-assigned-items number-list">
+			<div class="empty-row{{#if emptyAssigned}} visible{{/if}}">
+				{{ i18n.groups.noAssignedNumbers }}
+			</div>
+			{{#each assignedNumbers}}
+				<div class="item-row" data-id="{{@key}}" data-search="{{formatPhoneNumber @key}} {{@key}} {{locality.city}} {{locality.country}}">
+					<div class="features-block pull-right">
+						<div class="edit-features">
+							<div class="navbar">
+								<ul class="nav pull-right">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+										<ul class="dropdown-menu">
+										{{#unless isLocal}}
+											<li><a class="callerId-number" href="#"><i class="fa fa-user"></i>{{ @root.i18n.callerId }}</a></li>
+											<li><a class="e911-number" href="#"><i class="fa fa-ambulance"></i>{{ @root.i18n.e911 }}</a></li>
+                                                                                        <li><a class="failover-number" href="#"><i class="fa fa-thumbs-down"></i>{{ @root.i18n.failover }}</a></li>
+                                                                                {{/unless}}
+                                                                                        <li><a class="prepend-number" href="#"><i class="fa fa-file-text-o"></i>{{ @root.i18n.numberPrepend }}</a></li>
+                                                                                        <li><a class="regextern-number" href="#"><i class="fa fa-refresh fa-spin"></i>{{ @root.i18n.regextern }}</a></li>
+											<li><a class="blacklist-number" href="#"><i class="fa fa-user-secret"></i>{{ @root.i18n.blacklist }}</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="features">
+						{{#compare this.state '===' 'port_in'}}
+							<i class="fa fa-exclamation-triangle monster-red active help-popover" data-toggle="tooltip" data-placement="top" data-original-title="{{@root.i18n.portIconHelp}}"></i>
+						{{/compare}}
+							{{#each viewFeatures}}
+								<i class="{{icon}} {{active}} help-popover" data-toggle="tooltip" data-placement="top" data-original-title="{{ help }}"></i>
+							{{/each}}
+						</div>
+					</div>
+					<div class="number">
+						<button type="button" class="monster-button monster-button-danger remove-number">{{ @root.i18n.unassign }}</button>
+						{{ formatPhoneNumber @key }}
+					</div>
+					<!--<div class="locality">
+						{{#if localityEnabled}}
+							<span class="flag"><img src="css/assets/flags/32/{{ locality.iso }}.png" height="32" width="32"></img></span>
+							<span class="city">{{ locality.city }}, {{ locality.country }}</span>
+						{{else}}
+							N/A
+						{{/if}}
+					</div>
+					-->
+				</div>
+			{{else}}
+
+			{{/each}}
+		</div>
+	</div>
+
+	<div class="actions">
+		<a href="#" class="spare-link monster-link pull-left{{#if emptySpare}} disabled{{/if}}">
+			<i class="fa fa-plus monster-green fa-lg"></i>{{ i18n.groups.addFromSpare }}
+		</a>
+		<ul class="nav pull-left">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle buy-dropdown monster-link" data-toggle="dropdown" data-target="#"><i class="fa fa-shopping-cart monster-green fa-lg"></i>{{ i18n.strategy.numberLinks.buy.link }}</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a class="buy-link" data-type="regular" href="#">{{i18n.strategy.numberLinks.buy.regular}}</a></li>
+					<li><a class="buy-link" data-type="tollfree" href="#">{{i18n.strategy.numberLinks.buy.tollfree}}</a></li>
+<!--					<li><a class="buy-link" data-type="vanity" href="#">{{i18n.strategy.numberLinks.buy.vanity}}</a></li>
+-->				</ul>
+			</li>
+		</ul>
+
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+			<button type="button" class="monster-button monster-button-success save-numbers">{{ i18n.saveChanges }}</button>
+		</div>
+	</div>
+</div>

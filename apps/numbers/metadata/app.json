@@ -1,0 +1,126 @@
+{
+   "name": "numbers",
+   "source_url": "http://kazoo.allip.ovh/apps/numbers",
+   "i18n": {
+       "en-US": {
+           "label": "Number Manager",
+           "description": "Number Manager app allows you to easily buy, port and manage all numbers in your account.",
+           "extended_description": "When you're managing a PBX or running a business there are more numbers in your hands than you can manage. Number Manager allows you to easily purchase and delete numbers, port numbers away from other carriers, and assign them to your own clients.",
+           "features": [
+               "Purchase new numbers",
+               "Delete numbers",
+               "Port numbers from other carriers",
+               "Set a Caller ID for each number",
+               "Set a Failover Number",
+               "Associate e911 address to each number"
+           ]
+       },
+       "de-DE": {
+           "label": "Nummer Manager",
+           "description": "Mit dem Nummer Manager können Wiederverkäufer Ihre Nummern stelbständig deren Kundenkonten verwalten.",
+           "extended_description": "Management von verschiedenen Arten von Nummern (Lokale-, Mehrwert- und Handy Nummern)",
+           "features": [
+               "Nummern einpflegen, mieten, zurücklegen",
+               "Nummern löschen, portieren",
+               "Setzen der Anruf ID für jede Nummer",
+               "Setzen der Ausfallnummer für eingehende Nummern",
+               "Setzen des Notrufnummerstandort"
+           ]
+       },
+       "it-IT": {
+           "label": "Number Manager",
+           "description": "Number manager app ti permette di acquistare facilmente, porto e gestire tutti i numeri nel tuo account.",
+           "extended_description": "Quando si sta gestendo un PBX o la gestione di un'impresa ci sono più numeri nelle vostre mani di quello che può gestire Number Manager consente di asily acquistare e cancellare i numeri, numeri di porta lontano da altri vettori, e assegnarli ai vostri clienti.",
+           "caratteristiche": [
+               "Acquista nuovi numeri",
+               "Elimina i numeri",
+               "I numeri di porta da altri vettori",
+               "Impostare un ID chiamante per ogni numero",
+               "Impostare un numero di failover",
+               "Indirizzo E911 associare ad ogni numero"
+           ]
+       },
+       "fr-FR": {
+           "label": "Nombre Manager",
+           "description": "app Manager Nombre vous permet d'acheter facilement, le port et de gérer tous les numéros de votre compte.",
+           "extended_description": "Quand vous gérez un PBX ou d'exploiter une entreprise il ya plus de numéros de vos mains que vous pouvez gérer Manager Nombre vous permet asily acheter et supprimer des numéros, des numéros de port écart des autres transporteurs, et les assigner à vos propres clients.",
+           "features": [
+               "Achetez de nouveaux numéros",
+               "Supprimer les numéros",
+               "Les numéros de port d'autres supports",
+               "Définir un Caller ID pour chaque numéro",
+               "Définir un numéro de basculement",
+               "Adresse e911 associé à chaque numéro"
+           ]
+       },
+       "es-ES": {
+           "label": "Number Manager",
+           "description": "Number Manager app allows you to easily buy, port and manage all numbers in your account.",
+           "extended_description": "When you're managing a PBX or running a business there are more numbers in your hands than you can manage. Number Manager allows you to easily purchase and delete numbers, port numbers away from other carriers, and assign them to your own clients.",
+           "features": [
+               "Purchase new numbers",
+               "Delete numbers",
+               "Port numbers from other carriers",
+               "Set a Caller ID for each number",
+               "Set a Failover Number",
+               "Associate e911 address to each number"
+           ]
+       },
+       "ro-RO": {
+           "label": "Number Manager",
+           "description": "Number Manager app allows you to easily buy, port and manage all numbers in your account.",
+           "extended_description": "When you're managing a PBX or running a business there are more numbers in your hands than you can manage. Number Manager allows you to easily purchase and delete numbers, port numbers away from other carriers, and assign them to your own clients.",
+           "features": [
+               "Purchase new numbers",
+               "Delete numbers",
+               "Port numbers from other carriers",
+               "Set a Caller ID for each number",
+               "Set a Failover Number",
+               "Associate e911 address to each number"
+           ]
+       },
+       "ru-RU": {
+           "label": "Number Manager",
+           "description": "Number Manager app allows you to easily buy, port and manage all numbers in your account.",
+           "extended_description": "When you're managing a PBX or running a business there are more numbers in your hands than you can manage. Number Manager allows you to easily purchase and delete numbers, port numbers away from other carriers, and assign them to your own clients.",
+           "features": [
+               "Purchase new numbers",
+               "Delete numbers",
+               "Port numbers from other carriers",
+               "Set a Caller ID for each number",
+               "Set a Failover Number",
+               "Associate e911 address to each number"
+           ]
+       },
+       "nl-NL": {
+           "label": "Number Manager",
+           "description": "Number Manager app allows you to easily buy, port and manage all numbers in your account.",
+           "extended_description": "When you're managing a PBX or running a business there are more numbers in your hands than you can manage. Number Manager allows you to easily purchase and delete numbers, port numbers away from other carriers, and assign them to your own clients.",
+           "features": [
+               "Purchase new numbers",
+               "Delete numbers",
+               "Port numbers from other carriers",
+               "Set a Caller ID for each number",
+               "Set a Failover Number",
+               "Associate e911 address to each number"
+           ]
+       }
+   },
+   "tags": [ "reseller", "carrier" ],
+   "icon": "NumberManager_app.png",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "author": "2600Hz",
+   "version": "1.0",
+   "license": "GPL",
+   "price": "0.00",
+   "screenshots": [
+       "numbermanager1.png",
+       "numbermanager2.png",
+       "numbermanager3.png"
+   ],
+   "urls": {
+       "documentation": "{documentation_url}",
+       "howto": "{howto_video_url}"
+   },
+   "pvt_type": "app"
+}

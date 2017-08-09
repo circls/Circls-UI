@@ -1,0 +1,147 @@
+{
+	"menuTitles": {
+		"general": "algemeen",
+		"advanced": "gevorderd",
+		"templates": "sjablonen"
+	},
+	"alertMessages": {
+		"logoWrongType": "uw logo moet in ofwel een jpeg of png-formaat.",
+		"logoWrongSize": "uw logo mag niet groter zijn dan 190px breed en 72px hoog.",
+		"deleteConfirm": "Dit zal zowel algemene en geavanceerde branding informatie volledig te wissen. wilt u doorgaan?",
+		"closeTemplateConfirm": "alle niet opgeslagen wijzigingen aangebracht in dit sjabloon wordt weggegooid. wilt u doorgaan?",
+		"templateUpdateSuccess": "sjabloon bijgewerkt.",
+		"templatePreviewSuccess": "de voorvertoning kennisgeving is gestuurd naar {{ EMAIL_ADDRESS }}"
+	},
+	"generalBranding": {
+		"mainTitle": "algemene ui branding",
+		"logoLabel": "upload uw bedrijfslogo",
+		"logoSize": "maximumgrootte",
+		"logoFormat": "formaat",
+		"companyNameLabel": "naam bedrijf",
+		"companyWebsiteLabel": "bedrijf website link",
+		"domainLabel": "domeinnaam",
+		"languageLabel": "taal",
+		"helpLabel": "hulp/wiki koppeling",
+		"termsLabel": "voorwaarden koppeling",
+		"poweredByLabel": "aangedreven door 2600hz",
+		"welcomeLabel": "aangepaste welkomstbericht"
+	},
+	"advancedBranding": {
+		"mainTitle": "geavanceerde branding",
+		"porting": {
+			"title": "nummerportering",
+			"allowCustomerRequest": {
+				"title": "het indienen van de haven aanvragen",
+				"yes": "kunnen klanten een haven te vragen",
+				"no": "Ik zal vragen havens in opdracht van klanten"
+			},
+			"manageCustomerPorts": {
+				"title": "het beheren van de haven aanvragen",
+				"yes": "ik zal de haven verzoeken beheren van mijn rekening",
+				"no": "2600hz zal poort verzoeken beheren van mijn rekening"
+			},
+			"supportLabel": "ondersteuning contact",
+			"supportPlaceholder": "support@domain.com",
+			"loaLabel": "brief van de vergunning",
+			"loaPlaceholder": "http",
+			"resporgLabel": "resporg",
+			"resporgPlaceholder": "http"
+		},
+		"carrier": {
+			"title": "drager",
+			"choices": {
+				"title": "keuzes voor de gebruiker in te stellen zijn no_match route",
+				"list": {
+					"useBlended": "Gebruik wereldwijde middelen",
+					"useReseller": "Gebruik reseller middelen",
+					"byoc": "breng uw eigen vervoerder"
+				},
+				"help1": "de eerste optie wordt de standaard ingesteld op de rekening een.",
+				"help2": "waardoor meer dan een optie laat de gebruiker deze instelling aan te passen."
+			}
+		}
+	},
+	"templatesBranding": {
+		"mainTitle": "sjablonen beheren",
+		"templateNames": {
+			"reset_password": "reset wachtwoord",
+			"welcome": "van harte welkom",
+			"new_account": "nieuw account",
+			"first_registration": "eerste registratie",
+			"first_call": "eerste gesprek",
+			"transaction": "transactie",
+			"low_balance": "lage balans",
+			"abnormal_hangup": "abnormale hangup",
+			"system_alert": "waarschuwingssysteem",
+			"deregister": "uitschrijven",
+			"fax_to_email": "faxen naar e-mail",
+			"inbound_error_to_email": "inbound fout naar e-mail",
+			"inbound_to_email": "inbound naar e-mail",
+			"outbound_error_to_email": "outbound fout naar e-mail",
+			"outbound_to_email": "outbound naar e-mail",
+			"voicemail_to_email": "voicemail naar e-mail",
+			"voicemail_full": "voicemail vol",
+			"denied_emergency_bridge": "Denied Emergency Bridge",
+			"new_port_request": "nieuwe haven verzoek",
+			"ported": "geport",
+			"port_cancelled": "poort geannuleerd",
+			"cnam_request": "cnam verzoek",
+			"vanity_number_request": "ijdelheid nummer verzoek"
+		},
+		"templateCategories": {
+			"account": "rekening categorie",
+			"billing": "factureercategorie",
+			"system": "categorie systeem",
+			"reseller": "reseller/account waarschuwingen",
+			"fax": "fax categorie",
+			"voicemail": "voicemail categorie",
+			"porting": "porten categorie",
+			"numbers": "nummerbeheer",
+			"misc": "Diversen"
+		},
+		"from": "met ingang van",
+		"to": "om het",
+		"bcc": "bcc",
+		"subject": "onderwerp",
+		"macros": "macro's",
+		"recipientTypes": {
+			"specific": "specifiek",
+			"admins": "admins",
+			"original": "oorspronkelijke gebruiker"
+		},
+		"htmlBody": "html lichaam",
+		"textBody": "platte tekst lichaam",
+		"restoreButton": "herstellen naar standaard",
+		"restoreWarning": "deze sjabloon kennisgeving zal worden hersteld naar de standaard waarden, en enige aanpassing die u gemaakt zal worden weggegooid."
+	},
+	"saveInfoMessage": "sommige veranderingen zullen pas van kracht na het herladen van de applicatie.",
+	"welcomeWysiwyg": {
+		"fontSizes": {
+			"1": "kleinste",
+			"2": "klein",
+			"3": "medium -small",
+			"4": "medium",
+			"5": "medium-large",
+			"6": "groot",
+			"7": "De grootste"
+		}
+	},
+        "accessForbidden": "Sorry, the Branding App is only available for reseller accounts.",
+        "dnsBranding": {
+                "check": "Check",
+                "label": "Domain name you wish to white-label:",
+                "info": "Base on your selection of {{variable}} as your domain name, please configure your DNS for the following setup:",
+                "table": {
+                        "purpose": "Purpose",
+                        "subDomain": "Sub-domain",
+                        "recordType": "Record Type",
+                        "recordData": "Record Data",
+                        "setupProperly": "Setup Properly"
+                },
+                "toastr": {
+                        "error": {
+                                "invalidDomain": "Please specify a domain name to check!"
+                        }
+                }
+        }
+}

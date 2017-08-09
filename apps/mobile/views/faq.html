@@ -1,0 +1,19 @@
+<div class="app-content faq">
+	<h3 class="title">{{i18n.mobileApp.faq.title}}</h3>
+	<div class="accordion" id="faq_accordion">
+	{{#each i18n.mobileApp.faq.questions}}
+		<div class="accordion-group">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#faq_accordion" href="#collapse_{{@key}}">
+					{{question}}
+				</a>
+			</div>
+			<div id="collapse_{{@key}}" class="accordion-body collapse">
+				<div class="accordion-inner">
+					{{answer}}
+				</div>
+			</div>
+		</div>
+	{{/each}}
+	</div>
+</div>

@@ -1,0 +1,602 @@
+{
+        "regextern": {
+                "dialogTitle": "External Number-Registration",
+                "title": "External Registration",
+                "label": "External Registration",
+                "help": "This Number will be external registered for incomming calls.",
+                "successUpdate": "You successfully updated the external registration of the number {{phoneNumber}}",
+               "type": "Type",
+               "proxy": "Proxy",
+               "username": "Username",
+               "extension": "Extension",
+               "password": "Passwort",
+               "active": "Reg. active",
+               "didtype": "DID-Typ",
+               "didprovider": "Origin Country",
+               "didprovider": "Provider-Name",
+               "didinfo": "Informations",
+               "providerurl": "Provider-URL-Portal",
+               "providerurltype": "API-Typ",
+               "providerusr": "Regname",
+               "providerpass": "Reg-Passwort",
+               "reged_email": "Reg-Email",
+               "pvt_activestart": "Date Activ",
+               "pvt_activestartHelp": "At this date will automatic assigent this number to use",
+               "pvt_activestop": "Date Inactiv",
+               "pvt_activestopHelp": "At this Time it will automatic unassigent this number to use",
+               "pvt_created": "Date created",
+               "pvt_changed": "System actived",
+               "pvt_modified": "Date modified",
+               "placeholder_type": "gateway",
+               "placeholder_proxy": "sip.voip.com",
+               "placeholder_username": "0525081922",
+               "placeholder_extension": "+41525081922",
+               "placeholder_password": "********",
+               "placeholder_active": "false",
+               "placeholder_didtype": "sip",
+               "placeholder_didprovider": "NETSTREAM",
+               "placeholder_didinfo": "host=sip.voip.com",
+               "placeholder_providerurl": "www.voip.com",
+               "placeholder_providerurltype": "json",
+               "placeholder_providerusr": "",
+               "placeholder_providerpass": "",
+               "placeholder_reged_email": "",
+               "placeholder_pvt_activestart": "1431282897",
+               "placeholder_pvt_activestop": "1431282897",
+               "placeholder_pvt_created": "1431282897",
+               "placeholder_pvt_modified": "1431282897",
+               "status": "Regedstate",
+               "numberstate": "Number State",
+               "force_outbound": "OnNet No. use",
+               "didemergency": "Emergency-Provider"
+        },
+	"accountBrowser": {
+		"missingInfo": "Information Manquante",
+		"addAccount": "Ajouter un compte",
+		"searchDatabase": "Rechercher dans tous les comptes:",
+		"__comment": "UI-786 (v3.19_s3): adding search-related labels",
+		"breadcrumbSearchResults": "résultats de la recherche pour \"{{searchValue}}\"",
+		"__comment": "UI-1271: Updating the search link",
+		"__version": "v3.20_s3",
+		"searchReset": "Cliquez pour effacer la recherche",
+		"backButton": "Retour au parent"
+	},
+	"numbers":{
+		"mainNumber":"Numéro du bureau",
+		"conferenceNumber":"Numéro de conférence",
+		"dialogSpare":{
+			"title":"Liste des numéros disponibles",
+			"headline":"Numéros disponibles de",
+			"headlineNoAccount":"Sélectionner numéros",
+			"noMatchingNumbers":"Aucun numéro correspondant à votre recherche.",
+			"noNumberSelected":"Vous n'avez sélectionné aucun numéro. Vous pouvez en sélectionner en cliquant sur une ligne dans la liste!",
+			"proceed":"Ajouter les numéros sélectionnés"
+		},
+		"bulkActions":"Actions globales",
+		"buy":"Acheter",
+		"buyNumberLinks":{
+			"regular":"Local",
+			"tollfree":"Numéro vert",
+			"vanity":"Personnalisable"
+		},
+		"port":"Porter",
+		"assignTo":"Assigner à",
+		"confirmDelete":"Êtes-vous sûr de vouloir supprimer de ce compte les numéros sélectionnés?",
+		"delete":"Supprimer",
+		"deleteE911Error": {
+			"message": "Les numéros suivants ne peuvent pas être supprimés car ce sont les seuls de leur compte respectif ayant E911 configuré. Vous devez avoir au moins un numéro ayant E911 configuré par compte.",
+			"account": "Compte:",
+			"numbers": "Numéros:"
+		},
+		"numbers":"Numéros",
+		"addNumbers":"Ajouter Numéros",
+		"moveNumbers":"Déplacer vers",
+		"searchNumbers":"Chercher un numéro...",
+		"go":"Aller",
+		"deleteNumbers":"Supprimer",
+		"successDelete":"Vous avez supprimé {{count}} numéros des compte sélectionnés avec succès!",
+		"successMove":"Vous avez deplacé {{count}} numéros vers le compte \"{{ accountName }}\" avec succès",
+		"noSpareNumber":"Aucun numéro disponible pour ce compte.",
+		"noUsedNumber":"Aucun numéro n'est utilisé par ce compte.",
+		"spareNumbers":"Numéros disponibles",
+		"usedNumbers":"Numéros utilisés",
+		"helpSpareNumbers":"Ceci est la liste des numéros disponibles de ce compte. Vous pouvez assigner ces numéros à vos sous-comptes ou à vos applications, ainsi que supprimer ces numéros si vous n'en avez plus l'utilité.",
+		"helpUsedNumbers":"Cette liste regroupe tous vos numéros utilisés par une de vos applications ou par un de vos sous-comptes.",
+		"callflow":"Smart PBX",
+		"trunkstore":"Trunking",
+		"notUsedNumber":"{{number}}: Ce numéro est un numéro disponible du compte suivant: \"{{accountName}}\". (Cliquer sur Numéros disponibles pour voir ce numéro)",
+		"notSpareNumber":"{{number}}: Ce numéro est utilisé par le compte suivant: \"{{accountName}}\". (Cliquer sur Numéros utilisés pour voir ce numéro)",
+		"numberNotFound":"Aucun numéro correspondant à votre recherche.",
+		"failoverIconHelp":"Cette icône indique que le Num. de rechange a été configuré sur ce numéro",
+		"cnamOutboundIconHelp":"Cette icône indique que le Caller-ID sortant a été configuré sur ce numéro",
+		"cnamInboundIconHelp":"Cette icône indique que le Caller-ID entrant a été configuré sur ce numéro",
+		"e911IconHelp":"Cette icône indique que l'adresse d'urgence a été configurée sur ce numéro",
+		"localIconHelp":"Cette icône indique ce numéro est un numéro interne",
+		"dialogConfirm":{
+			"from":"De ",
+			"cancel":"Annuler",
+			"delete":{
+				"title":"Supprimer Numéros - Confirmation",
+				"questionPartOne":"Êtes-vous sûrs de vouloir supprimer ",
+				"questionPartTwo":" numéro(s)?",
+				"button":"supprimer numéro(s)"
+			},
+			"move":{
+				"title":"Déplacer Numéros - Confirmation",
+				"questionPartOne":"Êtes-vous sûrs de vouloir déplacer ",
+				"questionPartTwo":" numéro(s) vers ",
+				"questionPartThree":"?",
+				"button":"déplacer numéro(s)"
+			}
+		},
+
+		"__comment": "UI-1285: Adding the Sync Action to the Number Manager",
+		"__version": "3.19",
+		"sync": {
+			"label": "Sync",
+			"success": "Mise à jour des numéros réussie",
+			"help": "Si certains numéros n'apparaissent pas dans la bonne colonne, vous pouvez cliquer sur ce lien afin d'essayer de régler ce problème."
+		},
+
+		"portIconHelp": "Ce numéro est en cours de transfert et sera supprimé si celui-ci échoue. Il peut être configuré mais ne sera pas utilisable",
+
+		"__comment": "UI-901: Delete recap popup",
+		"__version": "3.20",
+		"deleteRecapDialog": {
+			"headline": "Vous pouvez consulter le récapitulatif de l'opération ci-dessous. Cliquez sur Continuez pour retourner à la liste des Numéros.",
+			"title": "Récapitulatif de l'opération",
+			"continue": "Continuer"
+		},
+
+		"mobile": "Mobile Manager",
+		"mobileIconHelp": "Ce numéro est associé à un téléphone mobile, ce qui le rend dépendant de ce téléphone."
+	},
+	"callerId":{
+		"callerIdName":"Nom de Caller ID",
+		"callerIdPlaceholder":"Jean Dupont",
+		"dialogTitle":"Sélection du Nom de Caller ID",
+		"errorUpdate":"Impossible de mettre à jour le Caller-ID de ce numéro",
+		"help":{
+			"outbound": "Ce nom apparaîtra en tant que Caller-ID lorsque l'utilisateur passerez des appels depuis ce numéro (15 caractères maximum). Cette requête peut prendre jusqu'à 72 heures.",
+			"inbound": "Si vous activez cette fonctionalité, le nom de l'interlocuteur apparaîtra lorsque l'utilisateur recevra des appels sur ce numéro."
+		},
+		"label":"Caller-ID",
+		"successCnam":"Mise à jour du Caller-ID de {{phoneNumber}} réussie!",
+		"successRemoveCnam": "Vous avez supprimé avec succès le Caller-ID de {{phoneNumber}}",
+		"noCallerId": "Il n'y a aucun Caller-ID pour le numéro {{phoneNumber}}",
+		"inboundTitle": "Caller-ID d'Appels Entrants",
+		"outboundTitle": "Caller-ID d'Appels Sortants"
+	},
+	"e911":{
+		"addressLine1":"Ligne Adresse 1",
+		"addressLine2":"Ligne Adresse 2",
+		"city":"Ville",
+		"dialogTitle":"Modifier location d'urgence",
+		"gmapPinLabel":"Votre+Adresse+d'Urgence",
+		"infoBox":"Cette adresse sera affichée lorsque vous appelerez les services d'urgence depuis ce numéro.",
+		"label":"Adresse d'urgence (e911)",
+		"lastE911Error":"Vous devez configurer l'Adresse d'Urgence (E911) sur un au moins un numéro de votre compte, veuillez le configurer sur un autre numéro avant de le retirer de celui-ci.",
+		"postalCode":"Code Postal",
+		"rotatedText":"Pour Services d'Urgences",
+		"state":"État",
+		"successE911":"Mise à jour de l'Adresse d'Urgence de <br> {{phoneNumber}} réussie",
+		"title":"Adresse d'Urgence",
+		"verifyLocation":"Vérifier Adresse",
+		"invalidAddress": "Malheureusement, l'adresse que vous avez entré n'a pas été trouvé. Veuillez la vérifier et essayez à nouveau.",
+		"chooseAddressPopup": {
+			"title": "Choisissez une adresse",
+			"youEntered": "Vous avez entré:",
+			"choicesAvailable": "Choix disponibles:",
+			"content": "Plusieurs adresses correpondent à celle que vous avez entré. Peut-être que vous n'avez pas spécifié un numéro de rue ou le bâtiment à plusieurs appartements."
+		}
+	},
+	"failover":{
+		"activate":"Activer",
+		"alternateNumber":"Numéro de rechange",
+		"errorUpdate":"Impossible de mettre à jour le numéro de rechange pour ce numéro.",
+		"failoverTitle":"Configurer Num. de rechange",
+		"failoverText":"Lorsque ce numéro est indisponible, diriger les appels vers",
+		"helpFailover":"Si votre système téléphonique est indisponible, nous pouvons rediriger les appels vers un Numéro de rechange. Si ce numéro est un numéro externe, l'appel vous coûtera les frais d'appels entrants et sortants à la fois.",
+		"invalidFailoverNumber":"Numéro de rechange invalide",
+		"label":"Numéro de rechange",
+		"noDataFailover":"Aucune donnée entrée, veuillez réessayer",
+		"or":"OU",
+		"removeFailover":"Supprimer",
+		"sipAddress":"Adresse SIP",
+		"successFailover":"Mise à jour du numéro de Rechange de {{ phoneNumber }} réussie",
+		"successRemove":"Suppression du numéro de rechange de {{ phoneNumber }} réussie"
+	},
+	"buyNumbers":{
+                "defaultCountry": "FR",
+		"buyDialogTitle":"Acheter numéros",
+		"countrySelectLabel":"Sélectionner Pays",
+		"cityInputLabel":"Chercher par Indicatif téléphonique",
+		"cityInputLabelZipCode": " ou code postal",
+		"seqCheckboxLabel":"Montrer uniquement des numéros séquentiels.",
+		"seqInputLabel":"Combien à la suite?",
+		"seqNumAlert":"Vous devez spécifier combien de numéros séquentiels vous souhaitez acheter (chiffre compris entre 2 et 999 ).",
+		"seqNumParamLabel":"pour {{sequentialNumbers}} numéros séquentiels",
+		"areaCodeRadioLabel":"Sélectionner Indicatif téléphonique",
+		"noInputAlert":"Vous devez entrer un indicatif téléphonique ou une Ville pour continuer!",
+		"searchResults":"Chercher pour",
+		"backToSearch":"Retourner à la recherche",
+		"loadingNumbers":"Chargement...",
+		"numberAddedSingle": "Numéro ajouté",
+		"numberAddedPlural": "Numéros ajoutés",
+		"selectedNumbers":"Sélectionner Numéros",
+		"moreInfo":"Cliquer ici pour plus d'infos",
+		"tollfreeRadioLabel":"Choisissez un prefixe de numéro verts:",
+		"buyNumbers":"Acheter Numéros",
+		"noSelectedNumAlert":"Vous n'avez pas sélectionné de numéros à acheter.",
+		"buyNumber":"Acheter Numéro",
+		"searchAgain":"Chercher un autre numéro",
+		"summaryTotalNumbers":"Nombre de numéros sélectionnés",
+		"summaryTotalCharges":"Charges totales",
+		"noSearchResult":"Aucun numéro correspondant à votre recherche, veuillez réessayer avec des paramètres différents.",
+		"partialNumAlert":"Veuillez entrer un numéro valide. Les Numéros partiels ne sont pas autorisés.",
+		"areaCode":"Indicatif téléphonique",
+		"add":"Ajouter",
+		"month":"Mois",
+		"search":"Chercher",
+		"checkingMessage":"Vérification des numéros...",
+		"processingMessage1":"Activation des numéros...",
+		"processingMessage2":"Veuillez attendre que le processus soit terminé.",
+		"unavailable": "Non Disponible",
+		"unavailableMessage":"Oups! Ces numéros viennent d'être pris, continuer avec les numéros disponibles restants ou retourner à la recherche pour rajouter plus de numéros?",
+		"unavailableServiceAlert":"Service indisponible. Réessayer plus tard.",
+		"continue":"Continuer",
+		"backToSearchResults":"Retourner à la recherche",
+		"cancel":"Annuler",
+		"confirm":"Confirmer",
+		"confirmInfoMsg1":"Les numéros seront ajoutés à votre compte et seront prêts environ 15 minutes après l'achat.",
+		"confirmInfoMsg2":"Votre carte de crédit sera directement chargée pour les services récurrents (Les frais seront calculés au pro rata pour votre cycle actuel).",
+		"vanitySearchLabel":"Chercher un numéro local, vert ou personnalisable:",
+		"vanitySearchInfo1":"Vous pouvez entrer n'importe quelle combinaison de chiffres et de lettres.",
+		"vanitySearchInfo2":"Si vous ne trouvez pas un numéro et souhaitez vraiment l'avoir, vous pouvez nous contacter et nous rechercherons dans toutes les bases de données disponibles. Une charge de $20 sera appliquée pour une telle requête.",
+		"sendRequest":"Envoyer une requête",
+		"to":"à",
+		"partialPurchaseFailure":"Désolé, les numéros suivants n'ont pas pu être achetés :",
+		"areaCodeDoesNotExist": "Le code postal que vous cherchez n'existe pas",
+		"markerAreaCodes": "Indicatif téléphonique pour ",
+		"singleSelectInfo": "Un seul numéro peut être sélectionné pour cette opération."
+	},
+	"port":{
+		"dialogTitle":"Transfert de numéros",
+		"addButton":"ajouter",
+		"saveButtonPartOne":"sauvegarder",
+		"saveButtonPartTwo":"continuer plus tard",
+		"labelSaveButton":"Si vous n'avez pas tout les documents requis, sauvegardez et revenez plus tard.",
+		"cancelButton":"annuler",
+		"cancelOrderButton":"annuler ce transfert",
+		"cancelOrderPopup": "Souhaitez-vous vraiment annuler ce transfert ?",
+		"faqLink":"Voir la FAQ sur le transfert de numéros",
+		"videoLink":"Regarder la vidéo",
+		"contactUsLink":"Contactez nous",
+		"nextButton":"suivant",
+		"progressBarLeft":"Ajouter des numéros",
+		"progressBarMiddle":"Envoyer les documents",
+		"progressBarRight":"Confirmer le transfert",
+		"requiredConditions": "Veuillez accepter les condictions",
+		"comingSoon": "Prochainement",
+		"unknownCarrier": "Opérateur inconnu",
+		"state": {
+			"completed": "Effectué",
+			"pending": "En attente",
+			"rejected": "Refusé",
+			"scheduled": "Programmé",
+			"submitted": "Envoyé",
+			"unconfirmed": "En cours de création"
+		},
+		"commentsPopup": {
+			"title": "Commentaires",
+			"private": "Privé",
+			"comment": "Commenter",
+			"timestamp": "a ajouté un commentaire"
+		},
+		"infoPopup": {
+			"title": "Détail de la requête",
+			"transfer": {
+				"legend": "Détail du transfert",
+				"label": {
+					"name": "Nom",
+					"notificationEmail": "Adresse à notifier",
+					"transferDate": "Date demandée du transfert",
+					"temporaryNumbers": "Numéros temporaires",
+					"carrier": "Opérateur",
+					"downloadLoa": "Télécharger la LdA"
+				}
+			},
+			"bill": {
+				"legend": "Détail de la facture",
+				"label": {
+					"downloadBill": "Télécharger la facture"
+				}
+			},
+			"numbers": {
+				"legend": "Numéros"
+			},
+			"confirm": {
+				"deleteComment": "Êtes-vous sur de vouloir supprimer ce commentaire ?"
+			}
+		},
+		"addNumbers":{
+			"title":"Nous sommes impatient de transférer vos numéro sur notre service !",
+			"labelAddNumbers":"Quels numéros voulez-vous transférer ? Entrez un numéro à la fois ou copiez-collez les. Aucun autre caractère que des chiffre ne sera accepté."
+		},
+		"confirmOrder":{
+			"titlePartOne":"Génial!",
+			"titlePartTwo":"noméro est prêt à être transféré !",
+			"titlePartTwoBis":"numéros sont prêts à être transférés !",
+			"labelEmail":"Quelle adressw devons nous prévenir lorsque le transfert sera achevé ?",
+			"labelDate":"À quelle date voulez-vous transférer les numéros?",
+			"dateInfoPartOne":"important:",
+			"dateInfoPartTwo":"Nous ne garantisons pas que le transfert sera achevé à la date sélectionnée mais essayerons de faire de notre mieux. Notez qu'un transfert peut prendre entre 3 et 30 jours.",
+			"labelTemporaryNumbers":"Voudriez-vous avoir des numéros temporaires ?",
+			"toggleButtonOn":"OUI",
+			"toggleButtonOff":"NON",
+			"labelTemporaryNumbersCount":"Combien de numéros temporaire voudriez-vous acheter ?",
+			"temporaryNumbersInfoPartOne":"Ces numéros serons automatiquement ajoutés à votre comptes et vous serez facturés.",
+			"temporaryNumbersInfoPartTwo":"1/Mois/Numéro. Supprimez ces numéros une fois que le transfert sera effectué pour évité de continuer à être facturé.",
+			"orderSummaryTitle":"Résumé du transfert",
+			"labelOrderDate":"Date de demande du transfert:",
+			"labelTransferDate":"Date du transfert demandée:",
+			"labelNumbersTotal":"Total des numéros:",
+			"submitButton":"envoyer"
+		},
+		"manageOrders":{
+			"orderListInfo":"Dû à le nature de vos numéros ou de vos opérateurs téléphonique, il est possible que nous séparions votre transfert en plusieurs. Il vous sera possbile de traiter ces transferts séparemment.",
+			"eulaInfo":"Durant la prochaine étape, nous devons récupérer la facture pour prouver que vous êtes le propriétaire légitime des numéros. Ceci est exigé par la loi. Il est possbile que nous séparions vous numéros si il ne sont pas mentionnés sur la facture.",
+			"eulaWarningPartOne":"Important!",
+			"eulaWarningPartTwo":"Veuillez lire et accepter ce qui suit",
+			"labelCancelService":"Je n'annulerai pas mon ancien service avant que le transfert ne soit complètement terminé,",
+			"labelCancelNumbers":"Je comprend que d'autres numéros puissent être annuler par votre ancien fournisseur,",
+			"labelChangeFee":"Je comprend que mon ancien fournisseur puisse me facturer des frais de résiliation anticipée,",
+			"labelStandardNumbers":"Je n'ai saisi aucun numéros spéciaux."
+		},
+		"pendingOrders":{
+			"title":"Transferts en attente",
+			"newPortLink":"Commencer un nouveau transfert",
+			"tableOrderName":"Nom",
+			"tableOrderDate":"Date demandé",
+			"tableOrderStatus":"État",
+			"continueButton":"Continuer",
+			"deleteButton": "Supprimer",
+			"infoButton":"Information",
+			"commentsButton": "Commentaires",
+			"noOrder":"Aucun transfert",
+			"tableOrderScheduled": "Date prévue",
+			"scheduledDatePopup": {
+				"title": "Modifier la date prévue",
+				"label": {
+					"scheduledDate": "Date prévue",
+					"scheduledTime": "Heure prévue"
+				}
+			},
+			"searchANumber": "Cherchez un numéro...",
+			"searchingFor": "En train de chercher"
+		},
+		"resumeOrder":{
+			"title":"Compléter les demandes de transfert, un à la fois !",
+			"labelOrder":"Transfert",
+			"completeOrderButton":"Continuer cet transfert"
+		},
+		"submitDocuments":{
+			"labelOrderName":"Nom vous permettant de vous rappeler de ce trasnfert",
+			"labelOrderNameHelper":"Par exemple: numéros du bureau de la companie",
+			"billInfoPartOne":"Veuillez envoyer votre facture de téléphone actuelle and remplir les informations de votre compte mentionnées sur votre facture.",
+			"billInfoPartTwo":"En savoir plus",
+			"uploadBillButton":"Envoyer la facture",
+			"uploadBillHelper":"format pdf seulement",
+			"labelAccountName":"Nom sur la facture",
+			"labelAddress":"Adresse",
+			"labelCity":"Ville",
+			"labelState":"Département",
+			"labelZipCode":"Code postal",
+			"orderListInfoPartOne":"Veuillez vérifier que les numéros suivant sont mentionnés sur la facture envoyée.",
+			"orderListInfoPartTwo":"Si des numéros ne sont pas mentionnés sur la facture, veulliez les supprimer, sinon le transfert de tout les autres numéros échouera.",
+			"loaTitlePartOne":"Veulliez remplir la Lettre d'Autorisation (LdA)",
+			"loaTitlePartTwo":"Qu'est-ce que la LdA ?",
+			"loaDownloadStep":"Télécharger la LdA",
+			"loaSignStep":"Signez la LdA",
+			"loaUploadStep":"Envoyez la LdA",
+			"loaHelperPartOne":"Pour ceux qui n'ont pas d'imprimante ou de scanner, nous proposont un service de signature numérique pour",
+			"loaHelperPartTwo":"5 de frais unique",
+			"loaHelperPartThree":"Formulaire LdA numérique.",
+            "loaHelperPartFour": "Comment signer un docment",
+            "loaHelperPartFive": "électroniquement sans avoir à payer.",
+            "buttonChange": "changer"
+		},
+		"toastr": {
+			"success": {
+				"request": {
+					"update": "La demande de transfert a été mise à jour",
+					"delete": "La demande de transfert a été supprimé"
+				},
+				"comment": {
+					"delete": "Le commentaire a été suprimé avec succès"
+				}
+			},
+			"error": {
+				"request": {
+					"update": "La mise à jour de la demande de transfert à échoué"
+				},
+				"mimeType": "Les fichiers suivants ne sont pas dans un format accepter: ",
+				"size": "Les fichiers suivants sont trop volumineux: ",
+				"submit": {
+					"document": "Veuillez joindre la lettre d'autorisation signée ainsi que la facture correspondant aux numéros que vous souhaitez transférer"
+				},
+				"numbers": "Un ou plusieurs numéros saisis ne sont pas dans le bon format ou sont déjà listés !",
+				"number": "Vous n'avez pas saisi un numéro valide !"
+
+			}
+		},
+		"noScheduledDate": "Aucune",
+		"addDate": "Ajouter",
+		"addMoreNumbers": "ajouter des numéros",
+		"faqContent": [
+			{
+				"question": "Quelle est la différence entre LdA et RespOrg ?",
+				"answer": "Une LdA (Lettre d'Autorisation) est utilisée lors du transfert de numéros de téléphone normaux. Une RespOrg (Responsible Organization) est utilisé lors du transfert de numéros Verts."
+			},
+			{
+				"question": "Combien de temps prendra la procédure de transfert ?",
+				"answer": "Le temps du transfert ne peut pas être déterminé lors de sa soumission. Nous avons enregistré des transferts programmés trois à quatre jours après leur soumission ainsi que des transferts prenant entre plusieurs semaines à un mois avoir d'être programmés (à cause de plusieurs rejets du transfert)."
+			},
+			{
+				"question": "J'ai insepecté une copie récente de ma facture et remarqué que les numéros que je souhaite transférer ne sont pas listés. Puis-je utiliser cette facture pour soumettre les numéros à un transfert ?",
+				"answer": "Vous pouvez toujours soumettre une demande transfert avec une copie de cette facture, tant que vous connaissez tous les numéros associés à cette facture/compte."
+			},
+			{
+				"question": "Serai-je informé de la date prévu du transfert pour que je puisse m'assurer que le compte de mon client est convenablement configuré ?",
+				"answer": "Vous serez informé de la date prévu du transfert entre un à deux jours avant celle-ci. Vous serez aussi informé lorsque le transfert sera effectué."
+			},
+			{
+				"question": "Est-ce que je peux configurer le routage d'appels avant que le transfert ne soit accepté ?",
+				"answer": "Oui, et nous recommendont de le faire pour assurer que le transfert soit fluide."
+			},
+			{
+				"question": "Mon client à des numéros internationaux. Est-il possible de transférer ces numéros ?",
+				"answer": "Pour l'instant, nous pouvont seulement transférer certains numéros Canadien. Cela peut aussi dépendre de votre fournisseur et s'il couvre la région des numéros concernés."
+			},
+			{
+				"question": "À quel moment serai-je informé que mon transfert a été rejeté ?",
+				"answer": "Vous serez informé qu'un transfert a été rejecté le jour même ou le jour suivant le reçu de la notification du rejet."
+			},
+			{
+				"question": "Comment puis-je annuler un transfert en cours ?",
+				"answer": "Si vous décidez d'annuler un transfert, postez un commentaire dans la section commentaires du transfert concerné dans l'application Gestionnaire de Transferts ou Smart PBX."
+			},
+			{
+				"question": "Qu'est-ce que le processus de 'port-out' (de votre fournisseur à un nouveau fournisseur) ?",
+				"answer": "Pour transérer un numéro, soumettez une demande chez le nouveau forunisseur. Si vous recevez une notification de refus du nouveau fournisseur, veulliez contacter notre centre de Support et nous ferons notre possible pour vous aider. Une fois que la date du transfert vous a été spécifié par le nouveau fournisseur, vous êtez tenu de supprimer de votre compte les numéros transférés."
+			},
+			{
+				"question": "Qu'est-ce qu'un 'transfert en gros' ?",
+				"answer": "Nous considérons un transfert comme étant 'en gros' au dela de cent numéros transférés."
+			},
+			{
+				"question": "Existe-t-il une réduction pour les 'transferts en gros' ?",
+				"answer": "Les 'transferts en gros' consernent plus de cent numéros. Pour plus d'information sur les réductions disponibles, veuillez contacter le gestionnaire de votre compte."
+			},
+			{
+				"question": "Dois-je soumettre un 'transfert en gros' à travers l'interface utilisateur ?",
+				"answer": "Non, les 'transfers en gros' doivent être soumis à notre centre de Support et nous nous chargerons de les gérer pour vous. En soumettant un ticket à notre centre de Support, assurer vous d'y joindre une LdA (Lettre d'Autorisation) et une facture récente."
+			}
+		]
+	},
+	"chooseModel": {
+		"brandHeadline": "Sélectionner la marque du téléphone:",
+		"deviceHeadline": "Sélectionner le modèle du téléphone:",
+		"deviceSelected": "Vous avez sélectionner le {{brand}} {{model}}",
+		"missingBrand": "La marque de mon téléphone ne figure pas dans cette liste",
+		"missingDevice": "Le modèle de mon téléphone n'est pas listé",
+		"title": "Sélection du téléphone",
+		"create": "Créer le téléphone"
+	},
+	"servicePlanDetails": {
+		"rate": "Taux :",
+		"activationCharge": "Coût d'activation :",
+		"exceptions": "Exceptions :",
+		"planLines": {
+			"phone_numbers": "Numéros de téléphone",
+			"number_services": "Services liés aux numéros",
+			"limits": "Limites",
+			"devices": "Appareils",
+			"users": "Utilisateurs"
+		},
+		"noServicePlan": "Aucun abonnement sélectionné."
+	},
+
+	"ringingDurationControl": {
+		"distribute": "Répartir",
+		"maxDurationTooltip": "Cliquez sur le label ci-contre pour changer la durée maximale de ce groupe d'appel. Vous devez saisir un nombre crompris entre 30 et 999.",
+		"doNotRing": "Ne pas faire sonner"
+	},
+	
+	"__comment": "UI-966: We want to be able to customize the carrier choice in different plances, so we build a common control",
+	"__version": "v3.20_s0",
+	"carrierSelector": {
+		"title": "Opérateur téléphonique",
+		"headline": "Sélectionner comment configurer les opérateurs de ce compte",
+		"useBlended": {
+			"friendlyName": "Utiliser les Opérateurs mixtes",
+			"help": "En sélectionnant \"Utiliser les opérateurs mixtes\", tous les appels de ce compte utiliseront les opérateurs configurés sur le compte principal"
+		},
+		"useReseller": {
+			"friendlyName": "Utiliser les opérateurs de {{variable}}",
+			"help": "En sélectionnant \"Utiliser les opérateurs de {{variable}}\", tous les appels de ce compte utiliseront les opérateurs configurés de {{variable}}",
+			"__comment": "UI-1041: Needed to add a default message for people who aren't white labeling",
+			"__version": "v3.19_s3",
+			"defaultFriendlyName": "Utiliser les opérateurs de votre revendeur",
+			"defaultHelp": "En sélectionnant \"Utiliser les opérateurs de votre revendeur\", tous les appels de ce compte utiliseront les opérateurs configurés de votre revendeur"
+		},
+		"byoc": {
+			"friendlyName": "Configurer vos propres opérateurs",
+			"help": "En sélectionnant \"Configurer vos propres opérateurs\", vous laisserez ce compte configurer ses opérateurs manuellement via la Carrier App."
+		},
+		"saveSuccess": "Vous avez mis à jours les options d'opérateurs avec succès!",
+		"huntError": "Vos réglages d'opérateur actuels ne fonctionnent pas dans cette interface, si vous souhaitez conserver ces réglages, ne changez rien dans ce menu. Sinon, vous pouvez sélectionner une option dans le menu et sauvegarder!"
+	},
+
+	"__comment": "UI-228: Adding the numberSelector common control",
+	"__version": "v3.20_s4",
+	"numberSelector": {
+		"emptyValue": "- Selectionnez un numéro -",
+		"removeLink": "Retirer",
+		"spareLink": "Choisir un numéro disponible",
+		"buyLink": "Acheter un nouveau numéro"
+	},
+
+	"__comment": "UI-1386: Adding the numberListing common control",
+	"__version": "v3.20_s4",
+	"monsterListing": {
+		"numbers": {
+			"title": "Liste des numéros disponibles",
+			"headline": "Sélectionner numéros",
+			"headlineSingle": "Sélectionner un numéro",
+			"noMatch": "Aucun numéro correspondant à votre recherche.",
+			"noData": "Aucun numéro disponible.",
+			"noDataSelected": "Vous n'avez sélectionné aucun numéro. Vous pouvez en sélectionner en cliquant sur une ligne dans la liste!",
+			"okButton": "Sélectionner",
+			"cancelButton": "Annuler"
+		},
+		"devices": {
+			"title": "Liste des téléphones disponibles",
+			"headline": "Sélectionner téléphones",
+			"headlineSingle": "Sélectionner un téléphone",
+			"noMatch": "Aucun téléphone correspondant à votre recherche.",
+			"noData": "Aucun téléphone disponible.",
+			"noDataSelected": "Vous n'avez sélectionné aucun téléphone. Vous pouvez en sélectionner en cliquant sur une ligne dans la liste!",
+			"okButton": "Sélectionner",
+			"cancelButton": "Annuler"
+		},
+		"default": {
+			"title": "Liste des éléments disponibles",
+			"headline": "Sélectionner éléments",
+			"headlineSingle": "Sélectionner un élément",
+			"noMatch": "Aucun élément correspondant à votre recherche.",
+			"noData": "Aucun élément disponible.",
+			"noDataSelected": "Vous n'avez sélectionné aucun élément. Vous pouvez en sélectionner en cliquant sur une ligne dans la liste!",
+			"okButton": "Sélectionner",
+			"cancelButton": "Annuler"
+		}
+	},
+
+	"accountAncestors": {
+		"tooltip": "Cliquez ici pour vous rendre sur ce compte",
+		"entities": {
+			"account": {
+				"text": "Voici les parents du compte sélectionné:"
+			},
+			"number": {
+				"ownedBy": "Ce numéro se trouve dans le sous-compte {{variable}}.",
+				"usedBy": "Il est utilisé par {{variable}}.",
+				"notUsed": "Il n'est pas utilisé."
+			},
+			"macAddress": {
+				"ownedBy": "Cette adresse MAC se trouve dans le sous-compte {{variable}}.",
+				"usedBy": "Elle correspond au téléphone nommé {{variable}}."
+			}
+		}
+	}
+}

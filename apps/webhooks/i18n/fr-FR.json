@@ -1,0 +1,56 @@
+{
+	"webhooks": {
+		"addCD": "+ Ajouter des données personnalisées",
+		"addWebhook": "créer de nouvelles webhook",
+		"delete": "effacer",
+		"deleteRequest": "etes-vous sûr que vous voulez supprimer",
+		"deleteTitle": "supprimer ?",
+		"dialogWebhook": {
+			"addTitle": "créer de nouvelles webhook",
+			"createWebhook": "créer",
+			"editTitle": "modifier webhook",
+			"enterName": "nom",
+			"enterHook": "crochet",
+			"enterRequest": "demande",
+			"enterRetries": "nombre de tentatives réessayer",
+			"enterURL": "URL",
+			"Hooks": {
+				"ALL": "tous",
+				"ca": "channel_answer",
+				"cc": "channel_create",
+				"cd": "channel_destroy"
+			},
+			"placeholderName": "nom personnalisé",
+			"Request": {
+				"get": "obtenir",
+				"post": "poste"
+			},
+			"save": "sauver"
+		},
+		"dialogHistory": {
+			"title": "histoire des tentatives sur ce webhook"
+		},
+		"editCD": "+ Modifier des données personnalisées",
+		"empty-row": "Aucun résultat ne est webhooks mathing votre recherche.",
+		"info": "webhooks est une capacité où notre système peut notifier votre programme Web à tout moment quelque chose d'intéressant se passe. par exemple, si quelqu'un remplit un appel téléphonique, nous pouvons vous informer en temps réel et vous dire qui ils parlaient, et pour combien de temps.",
+		"info2": "Pour utiliser cette fonction, configurer une URL pour votre serveur web et nous dire quel type d'événements que vous voulez être notifié de, et dans quel format. Cette fonction se applique à l'ensemble de votre compte et des applications au sein de ce compte, mais pas les sous- comptes.",
+		"less": "cacher info sur webhooks",
+		"more": "plus d'informations sur webhooks",
+		"no-webhooks": "il n'y a pas webhooks configurés.",
+		"search": "la recherche",
+		"toastr": {
+			"addSuccess": "vous avez ajouté avec succès",
+			"deleteSuccess": "vous avez supprimé avec succès",
+			"editSuccess": "vous avez modifié avec succès"
+		},
+		"warning": "vous ne pouvez pas sauvegarder les données personnalisées avec le même identifiant. se il vous plaît entrer un identifiant différent.",
+		"editTooltip": "modifier les paramètres",
+		"historyTooltip": "afficher la liste des tentatives sur ce webhook",
+		"deleteTooltip": "effacer",
+		"attemptSuccess": "le succès!",
+		"message": "message",
+		"date": "date",
+		"retriesLeft": "Nombre de tentatives gauche",
+		"noAttempts": "le système na pas détecter toute tentative de ce webhook..."
+	}
+}

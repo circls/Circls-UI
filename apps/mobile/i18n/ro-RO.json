@@ -1,0 +1,231 @@
+{
+	"mobileApp": {
+		"appName": "Mobile Manager",
+		"menus": {
+			"devicesList": "Your Devices",
+			"activateDevice": "Activate Your Device",
+			"provisioning": "Provisioning",
+			"checkCoverage": "Check Coverage",
+			"faq": "FAQ"
+		},
+		"devicesList": {
+			"title": "It looks like you haven't activated any mobile devices yet.",
+			"text": "Hmm... this blue button seems important...",
+			"button": "Activate New Device",
+			"table": {
+				"headers": {
+					"name": "Name",
+					"mdn": "MDN",
+					"esn": "ESN"
+				}
+			}
+		},
+		"deviceInfo": {
+			"header": {
+				"editName": "Edit Name",
+				"deviceCarrierInfo": "Device & Carrier Info"
+			},
+			"legends": {
+				"deviceInfo": "Device Info",
+				"subscriptionInfo": "Subscription Info"
+			},
+			"labels": {
+				"manufacturer": "Manufacturer",
+				"modelName": "Model Name",
+				"modelNumber": "Model Number",
+				"deviceSerialNumber": "Device Serial Number",
+				"deviceType": "Device Type",
+				"esn": "ESN",
+				"imsi": "IMSI",
+
+				"mdn": "MDN",
+				"msid": "MSID",
+				"msl": "MSL",
+				"nai": "NAI",
+				"csa": "CSA",
+				"sim": "SIM",
+				"activationDate": "Activation Date",
+				"expirationDate": "Expiration Date",
+				"plan": "Plan",
+				"features": "Features"
+			},
+			"buttons": {
+				"backToDevices": "Back To Devices",
+				"updateDevice": "Update Device"
+			}
+		},
+		"esnCheck": {
+			"title": "Before you activate your device, let's check if it's valid first",
+			"text": "In order to do this, all you need is the device's ESN",
+			"placeholder": "ESN",
+			"button": "Validate"
+		},
+		"deviceValidation": {
+			"success": {
+				"title": "Device validation successful",
+				"text": "It is recommended that you check service coverage for the area in which the phone will be primarily used. If you have previously checked coverage and/or are already aware of service availability, you can skip ahead to the Ownership Swap phase.",
+				"buttons": {
+					"cancel": "Cancel",
+					"checkCoverage": "Check Coverage",
+					"skipToActivation": "Skip To Activation"
+				}
+			},
+			"error": {
+				"title": "Oh no! This device could not be validated",
+				"texts": {
+					"esnInUse": "The ESN is already in use.",
+					"invalidEsn": "Please check the ESN and try again."
+				},
+				"button": "Back"
+			}
+		},
+		"deviceActivation": {
+			"title": "Alright, let's activate that device now!",
+			"text": "In order to activate your deivce, enter your desired area code. If you do not have a desired area code, please enter the ZIP code in which the phone will primarily be used. You will also need to name your device so you can configure it throughout the system.",
+			"placeholders": {
+				"sim": "SIM Number (ICC)",
+				"zipCode": "Area code or ZIP code",
+				"deviceName": "Name your device"
+			},
+			"labels": {
+				"linkDevice": "Link this device to a user",
+				"LinkVoicemailBox": "Link a voicemail box to this device"
+			},
+			"button": "Activate Device"
+		},
+		"activationSuccess": {
+			"titles": {
+				"overview": "Device successfuly activated!",
+				"provisioning": "Almost finished ... only one more step required for this device."
+			},
+			"texts": {
+				"overview": "Here is your device overview:",
+				"provisioning": "In order to make and receive calls using this newly activated device, it will need to be provisioned on the network. After provisioning this device, it will become available in SmartPBX. From there, all you need to do is assign a user and an associated callflow to use this device."
+			},
+			"labels": {
+				"deviceName": "Device Name",
+				"deviceMdn": "Device MDN",
+				"deviceEsn": "Device ESN",
+				"zipCode": "ZIP Code"
+			},
+			"button": "Provision This Device"
+		},
+		"checkZipCode": {
+			"titles": {
+				"normal": "Check service coverage",
+				"activating": "Next, it's highly recommended to check service coverage"
+			},
+			"text": "To check coverage, enter the ZIP code for the area in which the phone will be primarily used.",
+			"placeholder": "ZIP Code",
+			"button": "Check Coverage"
+		},
+		"coverageInfo": {
+			"title": "Service coverage for:",
+			"signalTypes": {
+				"lte": "LTE",
+				"cdma": "CDMA",
+				"wimaz": "WIMAZ"
+			},
+			"buttons": {
+				"check": "Check Another ZIP Code",
+				"activate": "Proceed To Activation"
+			}
+		},
+		"provisioning": {
+			"titles": {
+				"selectCategory": "Please select the category that your device falls under.",
+				"instructions": "provisioning instructions"
+			},
+			"categories": {
+				"iphone": {
+					"label": "iPhone",
+					"instructions": [
+						"Connect to a Wi-Fi network",
+						"Restart phone",
+						"Within 2-3 minutes, the phone should start a Hands Free Activation on its own"
+					]
+				},
+				"nexus_5": {
+					"label": "Nexus 5",
+					"instructions": [
+						"Carrier Wipe - Open Dialer, Dial *#*#72786#*#* , Phone will restart and indicate that it is activating",
+						"Update Profile - Apps -> Settings -> More -> Mobile networks -> Carrier settings -> Update Profile",
+						"Update PRL - Apps -> Settings -> More -> Mobile networks -> Carrier settings -> Update PRL"
+					]
+				},
+				"nexus_other": {
+					"label": "Nexus (Other)",
+					"instructions": [
+						"Carrier Wipe - Open Dialer, Dial *#*#72786#*#*, Enter MSL, Touch OK",
+						"System Update - Application->Settings->About Phone->Sprint System Updates",
+						"Update Profile - Application->Settings->About Phone->Sprint System Updates->Update Profile",
+						"Update PRL - Application->Settings->About Phone->Sprint System Updates->Update PRL"
+					]
+				},
+				"most_samsung_motorola_htc_devices": {
+					"label": "Most Samsung / Motorola / HTC Devices",
+					"instructions": [
+						{
+							"label": "Carrier Wipe - Open Dialer, Dial ##72786#,  enter MSL (6 digits), then...",
+							"instructions": [
+								"Samsung: Touch OK",
+								"Motorola: Touch YES",
+								"HTC:  Press \"MENU\", Select Reset, Phone should powercycle"
+							]
+						},
+						"System Update - Appliction->Settings->System Updates",
+						"Profile Update - Application->Settings->System Updates->Update Profile",
+						"PRL Update - Application->Settings->System Updates->Update PRL"
+					]
+				},
+				"htc_arrice_most_windows_devices": {
+					"label": "HTC Arrive & Most Windows Devices",
+					"instructions": [
+						"Settings -> Cellular -> Make sure Data Connection is on -> Change Network Profile -> Close -> Change PRL -> Close"
+					]
+				},
+				"feature_unlisted_generic": {
+					"label": "Feature / Unlisted / Generic",
+					"instructions": [
+						"Carrier Wipe - Open Dialer, Dial ##72786#,  enter MSL, Touch OK",
+						"System Update - Appliction->Settings->System Updates",
+						"Profile Update - Application->Settings->System Updates->Update Profile",
+						"PRL Update - Application->Settings->System Updates->Update PRL"
+					]
+				}
+			},
+			"buttons": {
+				"back": "Back To Device Categories",
+				"done": "I'm Done"
+			}
+		},
+		"loadingTitles": {
+			"titles": {
+				"searchingDevice": "Searching device...",
+				"validatingDevice": "Validating device...",
+				"checkingCoverage": "Checking coverage...",
+				"activatingDevice": "Activating device..."
+			},
+			"texts": {
+				"default": "This may take a few moments.",
+				"activatingDevice": "This will take up to two minutes... thanks for your patience."
+			}
+		},
+		"confirmPopup": {
+			"leavingActivation": "You are about to leave the activation process! Are you sure?",
+			"deleteDevice": {
+				"title": "Are you sure you want to delete the device: ",
+				"text": "You can always re-activate a device after deleting it. However, you may permenatly lose the phone number attached to this device, and upon re-activation , be assigned a new number.",
+				"confirmButton": "Delete Device"
+			}
+		},
+		"toastr": {
+			"error": {
+				"invalidZipCode": "Invalid ZIP code!"
+			}
+		},
+		"misc": {
+			"callflowName": "Mobile Callflow ({{variable}})"
+		}
+	}
+}

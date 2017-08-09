@@ -1,0 +1,8 @@
+<div class="app-content provisioning">
+	<h3 class="title">{{i18n.mobileApp.provisioning.titles.selectCategory}}</h3>
+	<ul class="provisioning-models">
+	{{#each i18n.mobileApp.provisioning.categories}}
+		<li><a href="#" class="model-type" data-model="{{@key}}">{{label}}</a></li>
+	{{/each}}
+	</ul>
+</div>

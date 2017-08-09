@@ -1,0 +1,96 @@
+<div class="advanced-branding-container">
+	<legend>{{i18n.advancedBranding.mainTitle}}</legend>
+	<div class="advanced-branding-content">
+		<form id="advanced_branding_form">
+
+			<div class="advanced-section">
+				<div class="advanced-section-header">{{i18n.advancedBranding.porting.title}}</div>
+				<div class="advanced-section-content centered-content">
+					<div class="input-div clearfix">
+						<div class="section-subtitle">{{i18n.advancedBranding.porting.allowCustomerRequest.title}}</div>
+						<label>
+							{{#monsterRadio i18n.advancedBranding.porting.allowCustomerRequest.no}}
+							<input type="radio" name="hide_port" value="true" {{#if brandingDoc.hide_port}}checked{{/if}}>
+							{{/monsterRadio}}
+						</label>
+						<label>
+							{{#monsterRadio i18n.advancedBranding.porting.allowCustomerRequest.yes}}
+							<input type="radio" name="hide_port" value="false" {{#unless brandingDoc.hide_port}}checked{{/unless}}>
+							{{/monsterRadio}}
+						</label>
+					</div>
+					<div class="input-div clearfix">
+						<div class="section-subtitle">{{i18n.advancedBranding.porting.manageCustomerPorts.title}}</div>
+						<label>
+							{{#monsterRadio i18n.advancedBranding.porting.manageCustomerPorts.no}}
+							<input type="radio" name="port.authority" value="" {{#unless brandingDoc.port.authority}}checked{{/unless}}>
+							{{/monsterRadio}}
+						</label>
+						<label>
+							{{#monsterRadio i18n.advancedBranding.porting.manageCustomerPorts.yes}}
+							<input type="radio" name="port.authority" value="{{portAuthority}}" {{#if brandingDoc.port.authority}}checked{{/if}}>
+							{{/monsterRadio}}
+						</label>
+					</div>
+					<div class="input-div clearfix advanced-info" {{#unless brandingDoc.port.authority}}style="display:none"{{/unless}}>
+						<div class="left-col">
+							<label>
+								<div class="input-label">{{i18n.advancedBranding.porting.loaLabel}}</div>
+								<input type="text" name="port.loa" value="{{brandingDoc.port.loa}}" placeholder="{{i18n.advancedBranding.porting.loaPlaceholder}}">
+							</label>
+							<label>
+								<div class="input-label">{{i18n.advancedBranding.porting.supportLabel}}</div>
+								<input type="email" name="port.support_email" value="{{brandingDoc.port.support_email}}" placeholder="{{i18n.advancedBranding.porting.supportPlaceholder}}">
+							</label>
+						</div>
+						<div class="right-col">
+							<label>
+								<div class="input-label">{{i18n.advancedBranding.porting.resporgLabel}}</div>
+								<input type="text" name="port.resporg" value="{{brandingDoc.port.resporg}}" placeholder="{{i18n.advancedBranding.porting.resporgPlaceholder}}">
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="advanced-section">
+				<div class="advanced-section-header">{{i18n.advancedBranding.carrier.title}}</div>
+				<div class="advanced-section-content centered-content">
+					<div class="input-div clearfix">
+						<div class="section-subtitle">{{i18n.advancedBranding.carrier.choices.title}}</div>
+						<ul class="choices-list">
+							{{#each selectedChoices}}
+							<li class="choices-element clickable-box" data-value="{{key}}">
+								{{#monsterCheckbox name}}
+									<input class="choices-element-ckb" type="checkbox" checked>
+								{{/monsterCheckbox}}
+							</li>
+							{{/each}}
+							{{#each unselectedChoices}}
+							<li class="choices-element flat-box" data-value="{{key}}">
+								{{#monsterCheckbox name}}
+									<input class="choices-element-ckb" type="checkbox">
+								{{/monsterCheckbox}}
+							</li>
+							{{/each}}
+						</ul>
+
+						{{#monsterText 'info' 'choices-list-help'}}
+							<p>{{ i18n.advancedBranding.carrier.choices.help1 }}</p>
+							<p>{{ i18n.advancedBranding.carrier.choices.help2 }}</p>
+						{{/monsterText}}
+					</div>
+				</div>
+			</div>
+		</form>
+
+		{{#monsterText}}
+			{{i18n.saveInfoMessage}}
+		{{/monsterText}}
+	</div>
+	<div class="action-bar clearfix">
+		<div class="pull-right">
+			<button type="button" class="monster-button monster-button-success save">{{i18n.save}}</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,338 @@
+<div>
+	<div>
+		<div class="whapp-header clearfix">
+			{{#if data.id}}
+				<h1>{{ i18n.callflows.queues.edit_queues }}</h1>
+			{{else}}
+				<h1>{{ i18n.callflows.queues.create_queues }}</h1>
+			{{/if}}
+			<div class="buttons-right pasted view-buttons">
+				<button class="btn black basic activate">{{ i18n.callflows.queues.basic }}</button>
+				<button class="btn black advanced">{{ i18n.callflows.queues.advanced }}</button>
+			</div>
+		</div>
+	</div>
+	<div>
+		<ul class="tabs" data-tabs="tabs">
+			<li class="active"><a href="#basic"><span class="icon user"></span>{{ i18n.callflows.queues.agents }}</a></li>
+			<li><a href="#options"><span class="icon wrench_screw"></span>{{ i18n.callflows.queues.options }}</a></li>
+			<li><a href="#notifications"><span class="icon lightbulb_on"></span>{{ i18n.callflows.queues.notifications }}</a></li>
+		</ul>
+		<form id="queues-form" action="" method="post">
+			<div class="pill-content">
+				<div class="active basic_view" id="basic">
+					<div class="clearfix">
+						<label for="name">{{ i18n.callflows.queues.name }}</label>
+						<div class="input">
+							<input class="span3" id="name" name="name" type="text" placeholder="{{ i18n.callflows.queues.name }}" value="{{ data.name }}" rel="popover" data-content="{{ i18n.callflows.queues.name_data_content }}" required/>
+							<button type="button" id="callcenterlink" class="directlink callback-button monster-button-secondary" data-queues_id="{{ data.id }}">{{ i18n.callflows.queues.callcenterLink }}</button>
+						</div>
+					</div>
+
+					<div class="clearfix">
+						<div id="tab_users">
+							<div class="row row-user title">
+								<div class="column first">{{ i18n.callflows.queues.user }}&nbsp;&nbsp;<span class="icon medium user"/></div>
+								<div class="column third">{{ i18n.callflows.queues.remove }}</div>
+							</div>
+							<div class="rows">
+							</div>
+						</div>
+
+						<div class="add_user">
+							<div class="add_user_title">{{ i18n.callflows.queues.add_user }}</div>
+							<div class="add_content_wrapper">
+								<div class="add_user_fields">
+									<ul class="controls">
+										<div id="user_list_select">
+											<li>
+												<label>{{ i18n.callflows.queues.user }}</label>
+												<select name="select_user_id" id="select_user_id">
+													<option id="empty_option_user" value="empty_option_user">-- {{ i18n.callflows.directory.select }} --</option>
+													{{#each field_data.users}}
+														<option value="{{ id }}" id="option_user_{{ id }}">{{ first_name }} {{ last_name }}</option>
+													{{/each}}
+												</select>
+											</li>
+											<div class="clear"/>
+										</div>
+										<div class="clear"/>
+									</ul>
+								</div>
+								<div class="add_user_div">
+									<span class="fa fa-plus-circle"/>&nbsp;
+									<a class="add_user_link" href="javascript:void(0);" data-queues_id="{{ data.id }}">{{ i18n.callflows.queues.add_this_user }}</a>
+									<div class="clear"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="options" class="clearfix">
+		                    <div class="clearfix r48_list">
+		                        <div class="input">
+		                            <ul class="inputs-list">
+		                                <li>
+		                                    <label>
+		                                        <span rel="popover" data-content="{{ i18n.callflows.queues.call_recording_data_content }}">
+		                                            {{#compare data.record_caller "===" true}}
+		                                                <input type="checkbox" id="record_caller" name="record_caller" checked="checked" />
+		                                            {{else}}
+		                                                <input type="checkbox" id="record_caller" name="record_caller" />
+		                                            {{/compare}}
+		                                            <span>{{ i18n.callflows.queues.call_recording }}</span>
+		                                        </span>
+		                                    </label>
+		                                </li>
+		                            </ul>
+		                        </div>
+		                    </div>
+		
+
+<!---                                    <div class="clearfix r48_list">
+                                        <label for="announce_media_id">{{ i18n.callflows.queues.announce }}</label>
+                                        <div class="input">
+                                                <span rel="popover" data-content="{{ i18n.callflows.queues.announce_data_content }}">
+                                                        <select name="announce" id="announce_media_id" class="medium" style="width: 180px">
+                                                                {{#each field_data.media}}
+                                                                        {{#compare ../data.announce "===" id}}
+                                                                                <option value="{{id}}" id="{{id}}" selected="selected">{{name}}</option>
+                                                                        {{else}}
+                                                                                <option value="{{id}}" id="{{id}}">{{name}}</option>
+                                                                        {{/compare}}
+                                                                {{/each}}
+                                                        </select>
+                                                        <div class="edit_create">
+                                                                <a id="announce_link_media" class="announce_action_media" data-action="edit" href="#">{{ i18n.callflows.queues.edit }}</a>
+                                                                <a class="announce_action_media" data-action="create" href="#">{{ i18n.callflows.queues.create }}</a>
+                                                        </div>
+                                                </span>
+                                        </div>
+                                    </div>
+-->
+                                    <div class="clearfix r48_list">
+                                        <label for="music_on_hold_media_id">{{ i18n.callflows.queues.music_on_hold }}</label>
+                                        <div class="input">
+                                                <span rel="popover" data-content="{{ i18n.callflows.queues.music_on_hold_data_content }}">
+                                                        <select name="moh" id="music_on_hold_media_id" class="medium" style="width: 180px">
+                                                                {{#each field_data.media}}
+                                                                        {{#compare ../data.moh "===" id}}
+                                                                                <option value="{{id}}" id="{{id}}" selected="selected">{{name}}</option>
+                                                                        {{else}}
+                                                                                <option value="{{id}}" id="{{id}}">{{name}}</option>
+                                                                        {{/compare}}
+                                                                {{/each}}
+                                                        </select>
+                                                        <div class="edit_create">
+                                                                <a id="moh_link_media" class="moh_action_media" data-action="edit" href="#">{{ i18n.callflows.queues.edit }}</a>
+                                                                <a class="moh_action_media" data-action="create" href="#">{{ i18n.callflows.queues.create }}</a>
+                                                        </div>
+                                                </span>
+                                        </div>
+
+		                    </div>
+		
+		                    <div class="clearfix r48_list">
+		                        <label>{{ i18n.callflows.queues.strategy }}</label>
+		                        <div class="input">
+		                            <span rel="popover" data-content="{{ i18n.callflows.queues.strategy_data_content }}">
+		                                <select name="strategy">
+		                                    {{#if data.strategy}}
+		                                    {{#compare data.strategy "===" 'most_idle'}}
+		                                        <option value="round_robin">{{ i18n.callflows.queues.round_robin }}</option>
+		                                        <option value="most_idle" SELECTED="SELECTED">{{ i18n.callflows.queues.most_idle }}</option>
+		                                        <option value="ringall">{{ i18n.callflows.queues.ringall }}</option>
+		                                        <option value="linear">{{ i18n.callflows.queues.linear }}</option>
+		                                    {{/compare}}
+		                                    {{#compare data.strategy "===" 'round_robin'}}
+		                                        <option value="round_robin" SELECTED="SELECTED">{{ i18n.callflows.queues.round_robin }}</option>
+		                                        <option value="most_idle">{{ i18n.callflows.queues.most_idle }}</option>
+		                                        <option value="ringall">{{ i18n.callflows.queues.ringall }}</option>
+		                                        <option value="linear">{{ i18n.callflows.queues.linear }}</option>
+		                                    {{/compare}}
+		                                    {{#compare data.strategy "===" 'ringall'}}
+		                                        <option value="round_robin">{{ i18n.callflows.queues.round_robin }}</option>
+		                                        <option value="most_idle">{{ i18n.callflows.queues.most_idle }}</option>
+		                                        <option value="ringall" SELECTED="SELECTED">{{ i18n.callflows.queues.ringall }}</option>
+		                                        <option value="linear">{{ i18n.callflows.queues.linear }}</option>
+		                                    {{/compare}}
+		                                    {{#compare data.strategy "===" 'linear'}}
+		                                        <option value="round_robin">{{ i18n.callflows.queues.round_robin }}</option>
+		                                        <option value="most_idle">{{ i18n.callflows.queues.most_idle }}</option>
+		                                        <option value="ringall">{{ i18n.callflows.queues.ringall }}</option>
+		                                        <option value="linear" SELECTED="SELECTED">{{ i18n.callflows.queues.linear }}</option>
+		                                    {{/compare}}
+		                                    {{else}}
+		                                        <option value="round_robin" SELECTED="SELECTED">{{ i18n.callflows.queues.round_robin }}</option>
+		                                        <option value="most_idle">{{ i18n.callflows.queues.most_idle }}</option>
+		                                        <option value="ringall">{{ i18n.callflows.queues.ringall }}</option>
+		                                        <option value="linear">{{ i18n.callflows.queues.linear }}</option>
+		                                    {{/if}}
+		                                </select>
+		                            </span>
+		                        </div>
+		                    </div>
+		
+		                    <div class="clearfix r48_list">
+								<label for="call_recording_url">{{ i18n.callflows.queues.call_recording_url }}</label>
+								<div class="input">
+									<input class="span3 max_200" id="call_recording_url" name="call_recording_url" type="text" placeholder="http://xxx.yyy.com/call_recordings" value="{{data.call_recording_url}}" rel="popover" data-content="{{ i18n.callflows.queues.call_recording_url_data_content }}"/>
+								</div>
+				    </div>
+		
+		                    <div class="clearfix r48_list">
+								<label for="cdr_url">{{ i18n.callflows.queues.cdr_url }}</label>
+								<div class="input">
+									<input class="span3 max_200" id="cdr_url" name="cdr_url" type="text" placeholder="http://xxx.yyy.com/cdr" value="{{data.cdr_url}}" rel="popover" data-content="{{ i18n.callflows.queues.cdr_url_data_content }}"/>
+								</div>
+				    </div>
+
+		                    <div class="clearfix r48_list">
+								<label for="agent_wrapup_time">{{ i18n.callflows.queues.call_wrapup_time }}</label>
+								<div class="input">
+									<input class="span2" id="agent_wrapup_time" name="agent_wrapup_time" type="text" placeholder="30" value="{{data.agent_wrapup_time}}" rel="popover" data-content="{{ i18n.callflows.queues.call_wrapup_time_data_content }}"/>
+								</div>
+				    </div>
+		
+		                    <div class="clearfix r48_list">
+								<label for="max_queue_size">{{ i18n.callflows.queues.max_number_of_calls }}:</label>
+								<div class="input">
+									<input class="span2" id="max_queue_size" name="max_queue_size" type="text" placeholder="100" value="{{data.max_queue_size}}" rel="popover" data-content="{{ i18n.callflows.queues.max_number_of_calls_data_content }}"/>
+								</div>
+				    </div>
+		
+		                    <div class="clearfix r48_list">
+								<label for="max_hold_timeout">{{ i18n.callflows.queues.max_hold_time }}</label>
+								<div class="input">
+									<input class="span2" id="connection_timeout" name="connection_timeout" type="text" placeholder="0" value="{{data.connection_timeout}}" rel="popover" data-content="{{ i18n.callflows.queues.max_hold_time_data_content }}"/>
+								</div>
+				    </div>
+
+		                    <div class="clearfix r48_list">
+								<label for="agent_ring_timeout">{{ i18n.callflows.queues.agent_ring_timeout }}</label>
+								<div class="input">
+									<input class="span2" id="agent_ring_timeout" name="agent_ring_timeout" type="text" placeholder="15" value="{{data.agent_ring_timeout}}" rel="popover" data-content="{{ i18n.callflows.queues.agent_ring_timeout_data_content }}"/>
+								</div>
+				    </div>
+
+		                    <div class="clearfix r48_list">
+								<label for="ring_simultaneously">{{ i18n.callflows.queues.ring_simultaneously }}</label>
+								<div class="input">
+									<input class="span2" id="ring_simultaneously" name="ring_simultaneously" type="text" placeholder="15" value="{{data.ring_simultaneously}}" rel="popover" data-content="{{ i18n.callflows.queues.ring_simultaneously_data_content }}"/>
+								</div>
+				    </div>
+
+		                    <div class="clearfix r48_list">
+								<label for="max_priority">{{ i18n.callflows.queues.max_priority }}</label>
+								<div class="input">
+									<input class="span2" id="max_priority" name="max_priority" type="text" placeholder="15" value="{{data.max_priority}}" rel="popover" data-content="{{ i18n.callflows.queues.max_priority_data_content }}"/>
+								</div>
+				    </div>
+
+		                    <div class="clearfix r48_list">
+								<label for="caller_exit_key">{{ i18n.callflows.queues.caller_exit_key }}</label>
+								<div class="input">
+									<input class="span2" id="caller_exit_key" name="caller_exit_key" type="text" placeholder="15" value="{{data.caller_exit_key}}" rel="popover" data-content="{{ i18n.callflows.queues.caller_exit_key_data_content }}"/>
+								</div>
+				    </div>
+
+
+		                    <div class="clearfix r48_list">
+								<label for="member_timeout">{{ i18n.callflows.queues.member_timeout }}</label>
+								<div class="input">
+									<input class="span2" id="member_timeout" name="member_timeout" type="text" placeholder="5" value="{{data.member_timeout}}" rel="popover" data-content="{{ i18n.callflows.queues.member_timeout_data_content }}"/>
+								</div>
+				    </div>
+
+		                    <div class="clearfix r48_list">
+		                        <div class="input">
+		                            <ul class="inputs-list">
+		                                <li>
+		                                    <label>
+		                                        <span rel="popover" data-content="">
+		                                            {{#compare data.enter_when_empty "===" true}}
+		                                                <input type="checkbox" id="enter_when_empty" name="enter_when_empty" checked="checked" />
+		                                            {{else}}
+		                                                <input type="checkbox" id="enter_when_empty" name="enter_when_empty" />
+		                                            {{/compare}}
+		                                            <span>{{ i18n.callflows.queues.allows_a_caller_to_enter_this_queue }}</span>
+		                                        </span>
+		                                    </label>
+		                                </li>
+		                            </ul>
+		                        </div>
+		                    </div>
+    	                        </div>
+
+		                <div id="notifications" class="clearfix">
+		                    <div class="clearfix r48_list">
+		                        <label for="cdr_url">{{ i18n.callflows.queues.notification_on_hangup }}</label>
+		                        <div class="input">
+		                            <input class="span3" id="hangup_url" name="notifications.hangup" type="text" placeholder="http://xxx.yyy/script_hangup.php" value="{{data.notifications.hangup}}" rel="popover" data-content="{{ i18n.callflows.queues.notification_on_hangup_data_content }}"/>
+		                        </div>
+		                    </div>
+		                    <div class="clearfix r48_list">
+		                        <label for="cdr_url">{{ i18n.callflows.queues.notification_after_pickup }}</label>
+		                        <div class="input">
+		                            <input class="span3" id="pickup_url" name="notifications.pickup" type="text" placeholder="http://xxx.yyy/script_pickup.php" value="{{data.notifications.pickup}}" rel="popover" data-content="{{ i18n.callflows.queues.notification_after_pickup_data_content }}"/>
+		                        </div>
+		                    </div>
+		                    <div class="clearfix r48_list">
+		                        <label>{{ i18n.callflows.queues.method }}</label>
+		                        <div class="input">
+		                            <span rel="popover" data-content="{{ i18n.callflows.queues.method_data_content }}">
+		                                <select name="notifications.method">
+		                                    {{#compare data.notifications.method "===" 'POST'}}
+		                                        <option value="GET">GET</option>
+		                                        <option value="POST" SELECTED="SELECTED">POST</option>
+		                                    {{else}}
+		                                        <option value="GET" SELECTED="SELECTED">GET</option>
+		                                        <option value="POST">POST</option>
+		                                    {{/compare}}
+		                                </select>
+		                            </span>
+		                        </div>
+		                    </div>
+
+<!---		                    <div class="clearfix r48_list">
+					<label for="position_announcements_enabled">{{ i18n.callflows.queues.position_announcements_enabled }}</label>
+						<div class="input">
+                                                        {{#if data.position_announcements_enabled}}
+                                                        <input type="checkbox" id="position_announcements_enabled" name="position_announcements_enabled" checked="checked" rel="popover" data-content="{{ i18n.callflows.queues.position_announcements_enabled_data_content }}"/>
+                                                        {{else}}
+                                                        <input type="checkbox" id="position_announcements_enabled" name="position_announcements_enabled" rel="popover" data-content="{{ i18n.callflows.queues.position_announcements_enabled_data_content }}"/>
+                                                        {{/if}}
+						</div>
+				    </div>
+
+		                    <div class="clearfix r48_list">
+						<label for="holdtime_announcements_enabled">{{ i18n.callflows.queues.holdtime_announcements_enabled }}</label>
+						<div class="input">
+                                                        {{#if data.holdtime_announcements_enabled}}
+                                                        <input type="checkbox" id="holdtime_announcements_enabled" name="holdtime_announcements_enabled" checked="checked" rel="popover" data-content="{{ i18n.callflows.queues.holdtime_announcements_enabled_data_content }}"/>
+                                                        {{else}}
+                                                        <input type="checkbox" id="holdtime_announcements_enabled" name="holdtime_announcements_enabled" rel="popover" data-content="{{ i18n.callflows.queues.holdtime_announcements_enabled_data_content }}"/>
+                                                        {{/if}}
+						</div>
+				    </div>
+
+
+		                    <div class="clearfix r48_list">
+						<label for="announcements_timer">{{ i18n.callflows.queues.announcements_timer }}</label>
+						<div class="input">
+							<input class="span2" id="announcements_timer" name="announcements_timer" type="text" placeholder="5" value="{{data.announcements_timer}}" rel="popover" data-content="{{ i18n.callflows.queues.announcements_timer_data_content }}"/>
+						</div>
+				    </div>
+-->
+				</div>
+			</div>
+		</form>
+		<div class="buttons-right">
+			{{#if data.id}}
+				<button class="monster-button monster-button-danger queues-delete">{{ i18n.callflows.queues.delete }}</button>
+			{{/if}}
+			<button class="monster-button monster-button-success queues-save">{{ i18n.callflows.queues.save }}</button>
+		</div>
+	</div>
+</div>

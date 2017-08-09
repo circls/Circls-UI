@@ -1,0 +1,50 @@
+<div id="dnscontroller_detail_dialog">
+	<div class="general-info">
+		<h3>{{i18n.dnscontrollerDetail.connectivityTitle}}</h3>
+
+		<div class="sub-title">
+			{{i18n.dnscontrollerDetail.connectivityDescription}}
+		</div>
+
+		<div class="connectivity-info">
+			<div class="info-block device-block">
+			{{#each editlist}}
+                                {{#compare type "===" "select"}}
+                                <div class="input-div edit-detail">
+                                        <label>{{label}}:</label>
+                                        <select id="{{id}}" name="{{name}}" data-original_value="{{value}}">
+                                        {{#each resource}}
+                                            <option value="{{id}}" {{selected}}>{{name}}</option>
+                                        {{/each}}
+                                        </select>
+                                </div>
+                                {{/compare}}
+                                {{#compare type "===" "boolean"}}
+                                <div class="input-div edit-detail">
+                                        <label>{{label}}:</label>
+                                        <div class="{{resource.name}}" data-on="{{resource.on}}" data-off="{{resource.off}}" data-on-label="{{resource.labelon}}" data-off-label="{{resource.labeloff}}">
+                                        {{#monsterSwitch}}<input type="checkbox" id="{{id}}" name="{{name}}" checked="{{resource.checked}}"></input>{{/monsterSwitch}}
+                                        </div>
+                                </div>
+                                {{/compare}}
+                                {{#compare type "===" "hidden"}}
+                                        <input type="{{type}}" id="{{id}}" name="{{key}}" value="{{value}}"/>
+                                {{/compare}}
+                                {{#compare type "===" "text"}}
+                                <div class="input-div edit-detail">
+                                        <label>{{label}}:</label>
+                                        <input type="{{type}}" id="{{id}}" name="{{key}}" value="{{value}}"/>
+                                </div>
+                                {{/compare}}
+			{{/each}}
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="action-bar dialog-buttons-wrapper">
+		<a id="book-detail-delete" class="monster-delete"><i class="fa fa-trash-o monster-red"></i> {{ i18n.delete }}</a> 
+		<a id="cancel" class="cancel-link monster-link blue">{{ i18n.cancel }}</a> 
+		<button id="book-detail-update" class="monster-button monster-button-success save">{{ i18n.save }}</button>
+	</div>
+</div>

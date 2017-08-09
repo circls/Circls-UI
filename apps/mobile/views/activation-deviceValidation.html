@@ -1,0 +1,28 @@
+<div class="app-content device-validation{{#if isValid}} valid{{else}} invalid{{/if}}">
+{{#if isValid}}
+	<i class="fa fa-check-circle-o iconography"></i>
+	<h3 class="title">{{i18n.mobileApp.deviceValidation.success.title}}</h3>
+	<p class="text">{{i18n.mobileApp.deviceValidation.success.text}}</p>
+	<div class="inline-buttons">
+		<button class="monster-button-cancel cancel">{{i18n.mobileApp.deviceValidation.success.buttons.cancel}}</button>
+		<button class="monster-button-primary check-coverage">{{i18n.mobileApp.deviceValidation.success.buttons.checkCoverage}}</button>
+		<button class="monster-button-secondary activate-device">
+			<i class="fa fa-step-forward"></i>
+			{{i18n.mobileApp.deviceValidation.success.buttons.skipToActivation}}
+		</button>
+	</div>
+{{else}}
+	<i class="fa fa-times-circle-o iconography"></i>
+	<h3 class="title">{{i18n.mobileApp.deviceValidation.error.title}}</h3>
+	<p class="text">
+	{{#if isInUse}}
+		{{i18n.mobileApp.deviceValidation.error.texts.esnInUse}}
+	{{else}}
+		{{i18n.mobileApp.deviceValidation.error.texts.invalidEsn}}
+	{{/if}}
+	</p>
+	<div class="inline-buttons">
+		<button class="monster-button-cancel cancel">{{i18n.mobileApp.deviceValidation.error.button}}</button>
+	</div>
+{{/if}}
+</div>

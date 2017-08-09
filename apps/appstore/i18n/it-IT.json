@@ -1,0 +1,33 @@
+{
+	"description": "descrizione",
+	"featuresTitle": "le caratteristiche",
+	"undefinedFeatures": "elenco delle caratteristiche in arrivo...",
+	"author": "autore",
+	"version": "versione",
+	"license": "licenza",
+	"price": "prezzo",
+	"free": "gratis",
+	"save": "salvare",
+	"filters": {
+		"all": "tutte le applicazioni",
+		"installed": "le mie applicazioni",
+		"resellers": "rivenditori apps",
+		"carriers": "vettori apps",
+		"developers": "sviluppatori di applicazioni"
+	},
+	"permissions": {
+		"title": "chi può utilizzare questa applicazione ?",
+		"all": "tutti gli utenti",
+		"admins": "solo amministratori",
+		"specific": "utenti specifici"
+	},
+	"selectedUsers": "utenti selezionati",
+	"selectAll": "seleziona tutto",
+	"unselectAll": "deselezionare tutto",
+	"selectUsersLink": "utenti selezionati ({{selectedUsers}})",
+	"noselected": "utente non selezionato",
+	"alerts": {
+		"noUserSelected": "è necessario selezionare almeno un utente per questa applicazione. <br> <br> se non volete ogni utente di utilizzare questa applicazione, è possibile disattivarlo."
+	},
+	"ok": "ok"
+}

@@ -1,0 +1,23 @@
+{{#each spareNumbers}}
+	<div class="number-box" data-phoneNumber="{{this.phoneNumber}}">
+		<input type="checkbox"></input>
+		<div class="phone-number">{{formatPhoneNumber this.phoneNumber}}</div>
+		<span class="locality">
+			{{#if this.isoCountry }}
+				<span class="flag"><img src="css/assets/flags/32/{{ this.isoCountry }}.png" height="32" width="32"></img></span>
+			{{/if}}
+			{{#if this.friendlyLocality }}
+				<span class="city">{{ this.friendlyLocality }}</span>
+			{{/if}}
+		</span>
+		{{#compare this.state '===' 'port_in'}}
+			<div class="features pull-right">
+				<i class="fa fa-exclamation-triangle monster-red active" data-toggle="tooltip" data-placement="top" data-original-title="{{@root.i18n.numbers.portIconHelp}}"></i>
+			</div>
+		{{/compare}}
+	</div>
+{{else}}
+	<div class="number-box no-data">
+		{{ i18n.numbers.noSpareNumber }}
+	</div>
+{{/each}}

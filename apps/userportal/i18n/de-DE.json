@@ -1,0 +1,363 @@
+{
+	"userportal": {
+		"vmstatus": {
+                    "new": "Neu",
+                    "saved": "Gespeichert",
+                    "deleted": "Gelöscht"
+		},
+		"my_voicemails": "Meine VoiceBox",
+		"my_call_history": "Meine Anrufe",
+		"my_settings": "Meine Einstellungen",
+		"forward_calls_to": "Umleitung zu",
+		"also_ring_my_voip_phone": "VoIP-Telefon mitklingeln",
+		"send_voicemail_to_email": "Sende Voicemail an",
+		"email_address": "Email Adresse",
+		"keep_caller_id": "Original Anruf-ID",
+		"save": "Speichern",
+		"my_devices": "Meine Geräte",
+		"registered_devices_are_displayed": "Angemeldete Geräte sind grün markiert.",
+		"my_contact_list": "Meine Kontaktliste",
+		"in_order_to_use_the_quickcall_feature": "Um den Schnellanruf zu benutzen, können Sie eine Nummer in das Feld eingeben oder eine Nummer in der Kontaktliste drücken.",
+		"the_quickcall_feature_will_ring_your_selected_device": "Der Schnellanruf wird Ihr Telefon anrufen und wird Sie, zur gewählten Nummer verbinden.",
+		"mark_as_new": "Als Neu",
+		"mark_as_saved": "Als Gespeichert",
+		"delete": "Löschen",
+		"date": "Datum",
+		"from_caller_id": "Herkunft",
+		"to_dialed_number": "Ziel",
+		"duration": "Dauer",
+		"caller_id": "Herkunft",
+		"status": "Status",
+		"listen": "Liste",
+		"download": "Download",
+		"play": "Abspielen",
+		"name": "Name",
+		"internal_number": "Interne Nummer",
+		"external_number": "Externe Nummer",
+		"you_need_to_select_a_registered_device": "Für den Schnellanruf müssen Sie ein Gerät auswählen!",
+		"quickcall_device": "Schnellanruf Gerät: ",
+		"quickcall_startedto": "Schnellanruf ausgelöst zu: ",
+		"call": "Anruf",
+		"start_date": "Von",
+		"end_date": "bis",
+		"filter": "Filter",
+		"dates_in_the_filter": "Datum für den Filter, sind nicht im Format (mm/dd/yyyy)",
+		"message_index": "Nachrichten Index",
+		"voicemail_box_id": "VoiceBox-ID",
+		"are_you_sure_that_you_want_to_delete": "Sind Sie sicher, dass Sie die gewählte Nachricht löschen möchten?",
+		"enable_call_forward": "Umleitung einschalten",
+		"rangeTooLarge": "Die Auswahl ist grösser als {{variable}} Tage, bitte korrigieren.",
+                "device_types": {
+                        "cellphone": "Handy",
+                        "sip_device": "SIP Telefon",
+                        "smartphone": "Smartphone",
+                        "mobile": "Mobile",
+                        "softphone": "Soft Phone",
+                        "landline": "Festnetz",
+                        "fax": "Fax-Maschine",
+                        "ata": "ATA-Gerät",
+                        "sip_uri": "SIP URI"
+                },
+                "setquickcallDevice": "Bitte, zuerst ein Schnellanruf-Gerät in den Kontoeinstellungen auswählen."
+	},
+
+	"devices": {
+		"add": "Mein neues Gerät zufügen",
+		"createDevice": "Mein neues Gerät anlegen",
+		"confirmDeleteDevice": "Dieses Gerät wird vollständig gelöscht. Weiter?",
+		"deleteDevice": "Gerät löschen",
+		"addedDevice": "Sie haben erfolgreich das Gerät \"{{deviceName}}\" zugefügt.",
+		"deletedDevice": "Sie haben erfolgreich das Gerät von \"{{deviceName}}\" gelöscht.",
+                "unregistinfo": "Benachrichtigen, wenn nicht registriert",
+                "unregistinfoHelp": "Möchten Sie den Administrator benachrichtigen wenn dieses Gerät abgemeldet ist?",
+		"useiax2infoHelp": "Möchten Sie den das Protokoll IAX2 benutzen, stellen Sie es auf ein!",
+		"popupSettings": {
+			"advancedTitle": "Erweitert",
+			"brandDownloads": "Produkteinfo",
+			"basicTitle": "Basis Einstellungen",
+			"basicSectionTitle": "Basis Einstellungen",
+			"dragAndDropAudio": "Mit den Sprech- und Höhrregler können Sie das Volume der Übertragung anpassen. Speziell bei (Echo Reduzierung) Volume unter -1 fahren. Um einen Codec auszuwählen, müssen Sie in per Drag und Drop von der \"Möglichen\" in die \"Ausgewählte\" Box verschieben",
+			"dragAndDrop": "Um einen Codec auszuwählen, müssen Sie in per Drag und Drop von der \"Möglichen\" in die \"Ausgewählte\" Box verschieben",
+			"options": {
+				"menuTitle": "Optionen"
+			},
+			"sip": {
+				"menuTitle": "SIP",
+				"sectionTitle": "SIP-Kontodaten",
+				"download": "Softphone installieren",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Wie installiere ich ein Softwaretelefon einfach und schnell",
+                                                "hideInfo": "Keine Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "Sie können automatisch, die Einstellungen des Softphones ausführen lassen, ohne die technischen Details zu kennen.",
+                                                "software": "Über den Download-Link 'Softphone installieren' laden Sie das Softwaretelefon und installieren es, wie gewohnt.",
+                                                "qrcode": "Nun scannen Sie mit dem installierten Softwaretelefon den angezeigen QR-Code (Im Wählfeld unten links), und sofort ist das Telefon beriebsbereit.",
+                                                "security": "Erfreuen Sie sich einer einfachen und sicheren Installation."
+                                        }
+                                },
+                                "types": {
+                                        "none": "Keine",
+                                        "autoprovision": "Automatisch einstellen",
+                                        "software": "Software installation",
+                                        "qrcode": "QR-Code",
+                                        "security": "Sicherheit"
+                                }
+			},
+			"audio": {
+				"menuTitle": "Audio",
+				"sectionTitle": "Audio Einstellungen",
+				"selectedCodecs": "Ausgewählte Codecs",
+				"unselectedCodecs": "Mögliche Codecs",
+				"codecs": {
+					"OPUS": "OPUS",
+					"CELT@32000h": "Siren @ 32Khz",
+					"G7221@32000h": "G722.1 @ 32khz",
+					"G7221@16000h": "G722.1 @ 16khz",
+					"G722": "G722 (HD)",
+					"speex@32000h": "Speex @ 32khz",
+					"speex@16000h": "Speex @ 16khz",
+					"PCMU": "G711u / PCMU - 64kbps (ISDN-US)",
+					"PCMA": "G711a / PCMA - 64kbps (ISDN-EU)",
+					"G729":"G729 - 8kbps (Benötigt eine Lizenz)",
+					"GSM":"GSM (Analog)",
+					"CELT@48000h": "Siren (HD) @ 48kHz",
+					"CELT@64000h": "Siren (HD) @ 64kHz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "Notruf Anruf-ID",
+				"sectionTitle": "Notruf Anruf-ID",
+				"emergency": "Nummer",
+				"notSet": "- Konto Normal -",
+				"noE911Numbers": "Sie haben keine Notruffunktion auf diesem Gerät gesetzt. Bitte mit dem Nummer Manager eine einstellen.",
+				"address": "Adresse"
+			},
+			"miscellaneous": {
+				"menuTitle": "Verschiedenes",
+				"sectionTitle": "Verschiedenes",
+				"rtp": {
+					"enable": "Verschlüsselung der Audioübertragung",
+					"type": "Verschlüsselungstyp: ",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+                                "ignoreCompletedElsewhere": {
+                                        "label": "Entgangener Anruf ignorieren",
+                                        "help": "Wenn aktiviert wird ein Anruf der von jemand anderes entgegengenommen wurde, nicht als entgangener Anruf gewertet."
+                                },
+                                "restart": {
+                                        "label": "Neustart IP-Telefon",
+                                        "button": "Neustart",
+                                        "help": "Es wird ein Neustart an das Telefon gesendet. Es funktioniert nur wenn sich das Telefon an dieser Anlage registriert hat.",
+                                        "success": "Der Neustartbefehl wurde erfolgreich gesendet!"
+                                }
+			},
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Benutze dies mit Aboluter Vorsicht!",
+                                        "help": "Um einen Knopf für WebRTC zu benutzen, muss diese Nebenstelle mit Limiten versehen werden, die es erlaubt NUR intern verbunden zu werden, ohne sonstige Nummern! Am besten machen Sie auch ein Zeitlimit um bei Abwesenheit NUR eine Ansage zu übertragen."
+                                }
+                        },
+			"restrictions": {
+				"menuTitle": "Beschränkungen",
+				"sectionTitle": "Einstellungen zur Beschränkung",
+				"inherit": "Erlaubt",
+				"deny": "Verboten",
+				"matcher": {
+					"help": "Geben Sie eine Nummer (im Internationalen Format => +[Landesvorwahl]...) ein, und drücken Sie \"Testen\" um zu sehen wo die Nummer zur Anwendung kommt.",
+					"placeholder": "+41525081922",
+					"button": "Testen",
+					"label": "Die Nummer kommt hier zu Anwendung.",
+                                        "allowMessage": "Anruf zu [ {{phoneNumber}} ] ist erlaubt",
+                                        "denyMessage": "Anruf zu [ {{phoneNumber}} ] ist nicht erlaubt."
+                                },
+				"disabledRestrictionsInfo": "Für Ihr Konto wurde eine Sperre für einige Typen definiert, die Sie nicht auf dem Geräte auflösen können.",
+				"allow": "Erlaubt"
+			},
+			"video": {
+				"menuTitle": "Video",
+				"sectionTitle": "Video Einstellungen",
+				"selectedCodecs": "Ausgewählte Codecs",
+				"unselectedCodecs": "Mögliche Codecs",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "H264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			},
+                        "featureKeys": {
+                                "menuTitle": "Funktionstasten",
+                                "description": "Funktionstaste",
+                                "labels": {
+                                        "user": "Benutzer",
+                                        "parkingSpot": "Parkplatz",
+                                        "value": "Wert"
+                                },
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Wie stelle ich die Funktionstasten ein?",
+                                                "hideInfo": "Keine Info zeigen"
+                                        },
+                                        "types": {
+                                                "presence": "Lampe zeigt dass die Nebenstelle besetzt ist. Diese kann benutzt werden um einen Anruf zu übernehmen oder um die Nebenstelle anzurufen.",
+                                                "parking": "Lampe zeigt dass ein Anruf geparkt ist, für die Firma. Dies kann für einen Transfer zu oder von geparkten Anrufen bentuzt werden.",
+                                                "personal_parking": "Lampe zeigt dass ein Anruf geparkt ist, für diesen Benutzer. Dies kann für einen Transfer zu oder von geparkten Anrufen bentuzt werden.",
+                                                "speed_dial": "Lamape zeigt keinen Status. Kann zum Anrufen einer Nummer benutzt werden."
+                                        }
+                                },
+                                "types": {
+                                        "none": "Keine",
+                                        "presence": "Nebenstelle",
+                                        "parking": "Parken",
+                                        "personal_parking": "Parkplatz Benutzer",
+                                        "speed_dial": "Direktwahl"
+                                },
+                                "keytemplateHelp": "Beim Klicken, wird die Tastenvorlage übernommen. Stellen Sie im Konto eine Tastenvorlage ein, um bei neuen Geräten, diese automatisch zu übernehmen"
+                        }
+                },
+		"buy": "Gerät kaufen",
+		"classifiers": {
+			"unknown": {
+			    "name": "Alle andern",
+			    "help": "Wählen Sie diese Option, wenn Sie möchten dass dieses Konto alle Verbindungen herstellen kann. (Auch wenn das Format nicht bekannt ist.)"
+			}
+		},
+		"noMatchingDevices": "Es wurden keine Geräte mit Ihrer Suche gefunden",
+		"noDevicesConfigured": "Es wurden keine Geräte konfiguriert",
+		"provisionerPopup": {
+			"brandHeadline": "Wählen Sie den Hersteller des Gerätes:",
+			"deviceHeadline": "Wählen Sie das Modell des Gerätes:",
+			"deviceSelected": "Sie haben gewählt {{brand}} {{model}}",
+			"missingBrand": "Der Hersteller des Gerätes ist nicht in der Liste",
+			"missingDevice": "Mein Gerät ist nicht in der Liste",
+			"title": "Wählen des Gerätes",
+			"macAddress": "MAC-Adresse",
+			"deviceName": "Gerätebezeichnung"
+		},
+		"sip_device": {
+			"addTitle": "SIP-Gerät zufügen",
+			"editTitle": "SIP-Gerät: {{name}} ändern",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Neues SIP-Gerät",
+			"macAddress": "MAC-Adresse",
+			"deviceName": "Gerätebezeichnung"
+		},
+                "spare": "Freie",
+		"assigned": "Zugeordnet",
+		"sip_uri": {
+			"addTitle": "SIP-URI zufügen",
+			"deviceName": "Gerätebezeichnung",
+			"editTitle": "SIP-URI: {{name}} ändern",
+			"new": "Neue SIP-URI anlegen",
+			"uri": "SIP-URI",
+			"uriPlaceholder": "sip:device@my.company.com",
+			"hideContactList": "Nicht in die Kontaktliste"
+		},
+		"landline": {
+			"addTitle": "Festnetz zufügen",
+			"deviceName": "Gerätebezeichnung",
+			"editTitle": "Festnetz: {{name}} ändern",
+			"new": "Neuer Festnetzanschluss",
+			"number": "Nummer",
+			"numberPlaceholder": "+41445223121",
+			"requireKeypress": "Require Key Press",
+			"keepCallerId": "Behalte Original Anruf-ID",
+			"hideContactList": "Nicht in die Kontaktliste"
+		},
+		"cellphone": {
+			"addTitle": "Handy zufügen",
+			"deviceName": "Gerätebezeichnung",
+			"editTitle": "Handy: {{name}} ändern",
+			"new": "Neues Handy",
+			"number": "Nummer",
+			"numberPlaceholder": "+415223112",
+			"requireKeypress": "Handybeantworter benutzen",
+			"keepCallerId": "Behalte Original Anruf-ID",
+			"hideContactList": "Nicht in die Kontaktliste"
+		},
+		"mobile": {
+			"addTitle": "Mobile zufügen",
+			"deviceName": "Gerätebezeichnung",
+			"editTitle": "Mobile: {{name}} ändern",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10-Stellen Telefonnummer",
+			"new": "Neues Mobile"
+		},
+		"smartphone": {
+			"addTitle": "Smartphone zufügen",
+			"deviceName": "Gerätebezeichnung",
+			"editTitle": "Smartphone: {{name}} ändern",
+			"new": "Neues Smartphone",
+			"requireKeypress": "Smartphone-Beantworter benutzen",
+			"keepCallerId": "Behalte Original Anruf-ID",
+			"hideContactList": "Nicht in die Kontaktliste"
+		},
+		"fax": {
+			"addTitle": "Fax Maschine zufügen",
+			"editTitle": "Fax Maschine: {{name}} ändern",
+			"macAddress": "MAC-Adresse",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Fax Maschine",
+			"deviceName": "Gerätebezeichnung",
+			"t38": "T38",
+			"disabled": "Aus",
+			"auto": "Automatisch",
+			"force": "Immer Ein"
+		},
+		"softphone": {
+			"addTitle": "Ein Softphone zufügen",
+			"editTitle": "Softphone: {{name}} ändern",
+			"new": "Neues Softphone",
+			"deviceName": "Gerätebezeichnung"
+		},
+		"ata": {
+			"addTitle": "Ein ATA-Gerät zufügen",
+			"editTitle": "ATA-Gerät: {{name}} ändern",
+			"new": "Neues ATA-Gerät",
+			"deviceName": "Gerätebezeichnung"
+		},
+		"sip": {
+			"username": "SIP Benutzername",
+			"password": "SIP Passwort",
+			"realm": "Realm",
+			"deviceName": "Gerätebezeichnung"
+		},
+		"spare": "Freie",
+		"title": "Geräte",
+		"titleGrid": {
+			"edit": "Ändern",
+			"enable": "Ein",
+			"user": "Benutzer",
+			"modelMacAddress": "Name / Mac-Adresse",
+			"type": "Typ"
+		},
+		"types": {
+			"cellphone": "Handy",
+			"sip_device": "SIP Telefon",
+			"smartphone": "Smartphone",
+			"mobile": "Mobile",
+			"softphone": "Soft Phone",
+			"landline": "Festnetz",
+			"fax": "Fax-Maschine",
+			"ata": "ATA-Gerät",
+			"sip_uri": "SIP URI"
+		},
+		"unassignedDevice": "-",
+                "microphone": "Microfon",
+                "speaker": "Hörer",
+                "walkthrough": {
+                        "steps": {
+                                "1": "Hier können Sie eine Gruppe zufügen um mehrere Nebenstellen klingeln zu lassen. Sie können die Benutzer einfach in die Liste übernehmen, einen Gruppennamen angeben und eine Gruppennummer zuweisen. Danach wird die Gruppe in der Liste darunter gelistet.",
+                                "2": "Ist eine Gruppe erstellt, sind seine Felder in dieser Liste. Hier können Sie klicken um die Einstellungen für diese Gruppe und deren Mitgliedern zu ändern.",
+                                "3": "Um öffentliche Nummern die frei sind zu übernehmen, bestehende zu portierungen oder neu zu mieten drücken Sie auf diesen Knopf. Wenn Sie fertig sind wird es diesem Benutzer zugewiesen, und ist sofort betriebsbereit.",
+                                "4": "Anrufabläufe können Sie hier einstellen. Sie können verschiedene Einstellungen wie \"Klingelzeichen\", \"Aufnahmen\", \"Nächste Aktion\" und \"Weiterleitung erlauben\" Ihren Benürnissen anpassen."
+                        }
+                }
+	},
+	"useiax2Gateway": "Benutze IAX2 Gateway"
+}

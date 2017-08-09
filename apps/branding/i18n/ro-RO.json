@@ -1,0 +1,147 @@
+{
+	"menuTitles": {
+		"general": "general",
+		"advanced": "avansat",
+		"templates": "șabloane"
+	},
+	"alertMessages": {
+		"logoWrongType": "logo-ul trebuie să fie în nici un format JPEG sau PNG.",
+		"logoWrongSize": "logo-ul dvs. nu trebuie să depășească 190px în lățime și 72px in inaltime.",
+		"deleteConfirm": "acest lucru va șterge complet de informații atât generale, cât și avansat branding. vrei să continuați ?",
+		"closeTemplateConfirm": "orice modificare nesalvate făcut la acest format vor fi eliminate. vrei să continuați ?",
+		"templateUpdateSuccess": "șablon actualizat.",
+		"templatePreviewSuccess": "previzualizare notificare a fost trimisa la { { EMAIL_ADDRESS } }"
+	},
+	"generalBranding": {
+		"mainTitle": "branding generală ui",
+		"logoLabel": "încărcați logo-ul companiei",
+		"logoSize": "dimensiunea maximă",
+		"logoFormat": "format",
+		"companyNameLabel": "numele companiei",
+		"companyWebsiteLabel": "societate site-ul link",
+		"domainLabel": "nume de domeniu",
+		"languageLabel": "limbă",
+		"helpLabel": "Ajutor/link wiki",
+		"termsLabel": "termeni și condiții link",
+		"poweredByLabel": "powered by 2600hz",
+		"welcomeLabel": "mesaj personalizat de bun venit"
+	},
+	"advancedBranding": {
+		"mainTitle": "branding avansat",
+		"porting": {
+			"title": "numărul de portare",
+			"allowCustomerRequest": {
+				"title": "depunerea cererilor de port",
+				"yes": "permite clienților să solicite un port",
+				"no": "i se va solicita porturi, în numele clienților"
+			},
+			"manageCustomerPorts": {
+				"title": "gestionare a cererilor de port",
+				"yes": "i se va administra cererile de port din contul meu",
+				"no": "2600hz va gestiona cererile de port din contul meu"
+			},
+			"supportLabel": "de contact sprijin",
+			"supportPlaceholder": "support@domain.com",
+			"loaLabel": "scrisoare de autorizare",
+			"loaPlaceholder": "http",
+			"resporgLabel": "resporg",
+			"resporgPlaceholder": "http"
+		},
+		"carrier": {
+			"title": "purtător",
+			"choices": {
+				"title": "opțiuni disponibile pentru utilizator pentru a seta ruta lui no_match",
+				"list": {
+					"useBlended": "utilizați resursele globale",
+					"useReseller": "să utilizeze resursele reseller",
+					"byoc": "aduce propriul purtător"
+				},
+				"help1": "prima opțiune este va fi cel setat implicit într-un cont.",
+				"help2": "permițând mai mult de o opțiune va permite utilizatorului personaliza această setare."
+			}
+		}
+	},
+	"templatesBranding": {
+		"mainTitle": "gestiona șabloane",
+		"templateNames": {
+			"reset_password": "reseteaza parola",
+			"welcome": "bun venit",
+			"new_account": "cont nou",
+			"first_registration": "primei înmatriculări",
+			"first_call": "primul apel",
+			"transaction": "tranzacție",
+			"low_balance": "echilibru redus",
+			"abnormal_hangup": "Închidere anormal",
+			"system_alert": "alertă sistem",
+			"deregister": "radierea",
+			"fax_to_email": "fax la e-mail",
+			"inbound_error_to_email": "eroare de intrare a trimite un email",
+			"inbound_to_email": "intrare a trimite un email",
+			"outbound_error_to_email": "eroare de ieșire a trimite un email",
+			"outbound_to_email": "ieșire a trimite un email",
+			"voicemail_to_email": "mesagerie vocală a trimite un email",
+			"voicemail_full": "mesagerie vocală complet",
+			"denied_emergency_bridge": "Denied Emergency Bridge",
+			"new_port_request": "nouă cerere de port",
+			"ported": "portat",
+			"port_cancelled": "Port anulat",
+			"cnam_request": "cerere CNAM",
+			"vanity_number_request": "cerere Număr vanitate"
+		},
+		"templateCategories": {
+			"account": "categoria cont",
+			"billing": "categorie de facturare",
+			"system": "categorie sistem",
+			"reseller": "alerte reseller/cont",
+			"fax": "categorie fax",
+			"voicemail": "categorie de mesagerie vocală",
+			"porting": "categorie de portare",
+			"numbers": "management număr",
+			"misc": "diverse"
+		},
+		"from": "de la",
+		"to": "pentru",
+		"bcc": "bcc",
+		"subject": "subiect",
+		"macros": "macro-uri",
+		"recipientTypes": {
+			"specific": "specific",
+			"admins": "administratori",
+			"original": "utilizator originală"
+		},
+		"htmlBody": "corp html",
+		"textBody": "corp text simplu",
+		"restoreButton": "restabili la valorile implicite",
+		"restoreWarning": "acest șablon notificare va fi restabilite la valorile implicite, precum și orice personalizare aveti si voi vor fi eliminate."
+	},
+	"saveInfoMessage": "unele modificări vor intra în vigoare numai după ce reîncărcarea cererii.",
+	"welcomeWysiwyg": {
+		"fontSizes": {
+			"1": "cel mai mic",
+			"2": "mic",
+			"3": "mediu- mic",
+			"4": "mediu",
+			"5": "mediu mare",
+			"6": "mare",
+			"7": "cel mai mare"
+		}
+	},
+        "accessForbidden": "Sorry, the Branding App is only available for reseller accounts.",
+        "dnsBranding": {
+                "check": "Check",
+                "label": "Domain name you wish to white-label:",
+                "info": "Base on your selection of {{variable}} as your domain name, please configure your DNS for the following setup:",
+                "table": {
+                        "purpose": "Purpose",
+                        "subDomain": "Sub-domain",
+                        "recordType": "Record Type",
+                        "recordData": "Record Data",
+                        "setupProperly": "Setup Properly"
+                },
+                "toastr": {
+                        "error": {
+                                "invalidDomain": "Please specify a domain name to check!"
+                        }
+                }
+        }
+}

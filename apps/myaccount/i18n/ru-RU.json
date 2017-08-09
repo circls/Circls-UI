@@ -1,0 +1,360 @@
+{
+	"hello": "Привет",
+    "signout": "Выйти",
+    "myaccount": "Учётная запись",
+    "closeSlide": "Закрыть",
+    "store": "Магазин",
+
+    "settingsCategory": "Настройки",
+    "billingCategory": "Биллинг",
+    "trunkingCategory": "Транки",
+
+	"editSettings": "Редактировать",
+	"changesSaved": "Изменения сохранены!",
+	"placeholderEmail": "jon_doe@company.com",
+	"phoneNumber": "Телефонный номер",
+	"placeholderNumber": "74951111111",
+
+	"walkthrough": {
+		"greetingsDialog": {
+			"go": "Давайте начнём",
+			"content": "Этот пошаговый гид поможет вам освоиться с параметрами учётной записи, чтобы вы смогли начать настраивать свою телефонную систему. Вся необходимая информация уже была введена во время регистрации.",
+			"title": "Добро пожаловать в ВАТС"
+		},
+		"steps": {
+			"1": "Получите доступ к настройкам учётной записи, кликнув на её название.",
+			"2": "Настройки администратора могут быть заданы в разделе Пользователь. Индивидуальные настройки, такие как Часовой пояс, язык и формат даты и времени могут быть настроены для вашего удобства.",
+			"3": "Настройки учётной записи находятся в разделе Учётная запись. Здесь вы можете задать данные контактных лиц и установить настройки языка для всей учётной записи.",
+			"4": "Если вы хотите обновить данные платёжной карты, сделайте это здесь. Имейте  в виду, что платёжная карта, использованная при регистрации уже занесена в систему.",
+			"5": "Если вы собираетесь звонить на международные направления, вам нужно настроить оплату звонков с поминутной тарификацией.",
+			"6": "Проверьте ваш текущий сервисный план и соответствующие платежи",
+			"7": "Посмотреть все платежи и списания"
+
+		},
+		"endDialog": {
+			"roger": "Спасибо, всё понятно",
+			"content": "Теперь, когда вы изучили настройки, пожалуйста, настройте вашу учётную запись. Когда вы будете готовы настраивать свою ВАТС, нажмите кнопку Закрыть в правом верхнем углу, или нажмите на имя учётной записи",
+			"title": "Готово!"
+		}
+	},
+
+	"user": {
+		"title": "Пользователь",
+		"passwordsNotMatching": "Введённые пароли не совпадают",
+
+		"email": "Email",
+
+		"password": "Пароль",
+		"newPassword": "Новый пароль",
+		"confirmPassword": "Подтвердите  новый  пароль",
+
+		"timezoneTitle": "Язык и часовой пояс",
+		"userTimezone": "Часовой пояс",
+		"userLanguage": "Язык",
+
+		"colorblindTitle": "Режим для слабовидящих",
+		"colorblindEnabled": "Включен",
+		"colorblindDisabled": "Выключен",
+		"enableColorblind": "Включить режим для слабовидящих",
+
+		"__comment": "UI-1335: Adding hours settings to the user settings",
+		"__version": "v3.20_s3",
+		"dateTimeTitle": "Отображение даты и времени",
+		"twelveHoursModeEnabled": "12-часовой режим (AM/PM)",
+		"twelveHoursModeDisabled": "24-часовой режим",
+		"enableTwelveHoursMode": "Время в 12-часовом режиме (AM/PM)",
+		"dateFormatTitle": "Формат даты",
+		"dateFormats": {
+			"dmy": "День/Месяц/Год",
+			"mdy": "Месяц/День/Год",
+			"ymd": "Год/Месяц/День"
+		},
+                "contactSync": "Contact Sync",
+                "contactsyncUser": "Contactsync User",
+                "contactsyncPassword": "Contactsync Password",
+                "contactsyncURL": "Contactsync URL",
+                "quickcallDevice": "Quickcall Device",
+                "quickcalldeviceLabel": "Quickcall Device (Default)",
+                "quickcalldeviceTitle": "Quickcall Device"
+	},
+
+	"account": {
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "Devicesetting in userportal",
+                        "firmwareupdate": "Firmwareupdate enabled"
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "account": "Own Account-Dialplan",
+                        "descript": "Own Account-Dialplan",
+                        "enabled": "Own Account-Dialplan",
+                        "disabled": "None"
+                },
+		"title": "Учётная запись",
+
+		"accountName": "Имя учётной записи (код клиента)",
+		"accountId": "ID учётной записи",
+
+		"accountRealm": "SIP-домен (realm)",
+
+		"technicalContact": "техническим вопросам",
+		"technicalContactname": "Связь по техническим вопросам",
+		"technicalContactEmail": "Адрес email специалиста по техническим вопросам",
+		"technicalContactNumber": "Телефон",
+
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No",
+
+		"timezoneTitle": "Язык и часовой пояс",
+		"userTimezone": "Часовой пояс",
+		"userLanguage": "Язык",
+		"__comment": "UI-966: Added common control to select carrier in myaccount",
+		"__version": "v3.20_s0",
+		"carrierTitle": "Настройки оператора",
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Business"
+	},
+
+	"billing": {
+		"title": "Банковская карта",
+		"missingCard": "Данные по вашей банковской карте неверны, неактуальны или отсутствуют - пожалуйста, обновите и сохраните изменения.",
+
+		"cardOnFile": "Карта для оплаты",
+		"billingName": "Имя",
+		"firstName": "Имя",
+		"lastName": "Фамилия",
+		"creditCardNumber": "Номер карты",
+		"expirationDate": "Дата окончания срока действия",
+		"year": "YYYY",
+		"month": "MM",
+		"securityCode": "Код безопасности / CVV",
+		"changeCard": "Изменить данные карты",
+
+		"accountAdministrator": "Связь по вопросам оплаты",
+		"accountAdministratorEmail": "Адрес email специалиста по финансовым вопросам",
+		"accountAdministratorNumber": "Телефон"
+	},
+
+	"trunks": {
+		"title": "Каналы",
+		"outbound": "Исходящие",
+		"inbound": "Входящие",
+		"outboundTitle": "Ограничение на исходящие каналы",
+		"inboundTitle": "Ограничение на входящие каналы",
+		"inboundCalling": "Неограниченные входящие каналы",
+		"simultaneousTwoway": "_Variable__/месяц",
+		"simultaneousInbound": "$_Variable__/месяц",
+		"perMonth": "/месяц",
+		"quantity": "Количество",
+		"trunks": "Каналы",
+		"twoWayCalling": "Неограниченные двунаправленные каналы",
+		"updateLimits": "Обновить ограничения",
+		"helpTwoway": "Количество двунаправленных каналов определяет сколько одновременных звонков ваша телефонная система способна обслуживать одновременно (Пример: 10 двунаправленных каналов позволит обслуживать 6 входящих и 4 исходящих звонка одновременно)",
+		"helpInbound": "Количество входящих каналов определяет сколько одновременных входящих звонков ваша телефонная система способна обслуживать одновременно (Пример: 5 входящих каналов позволяют обслуживать 5 одновременных входящих звонков)",
+		"monthlyCharges": "Ежемесячные платежи",
+		"__comment": "UI-664: Adding the real twoway sliders",
+		"__version": "v3.19_s2",
+		"twowayTitle": "Ограничение двунаправленных каналов",
+		"twoway": "Двунаправленные",
+		"outboundCalling": "Неограниченные исходящие каналы",
+		"helpOutbound": "Количество исходящих каналов определяет сколько одновременных исходящих звонков ваша телефонная система способна обслуживать одновременно (Пример: 5 исходящих каналов позволяют обслуживать 5 одновременных исходящих звонков)",
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"currentLimit": "Текущие лимиты",
+		"exampleTwoway": "ПРИМЕР: 10 двунаправленных транков позволят вашей системе принимать 6 входящих и совершать 4 исходящих вызова одновременно.",
+		"exampleInbound": "ПРИМЕР: 5 входящих транков позволят вам принимать до 5 звонков одновременно",
+		"exampleOutbound": "ПРИМЕР: 10 исходящих транков позволят вам совершать до 10 одновременных звонков на внешние направления"
+	},
+
+	"balance" : {
+		"availableCredits": "Доступные средства",
+		"minutesUsed": "Использовано минут",
+		"callCharges": "Начислено за звонки",
+                "callResell": "Reseller Charges",
+		"activeCall": "активный",
+
+		"title": "Поминутная тарификация",
+		"creditBalance": "Доступные средства",
+		"addCreditOne": "Пополнить баланс",
+		"helpAddCreditOne": "Здесь можно добавить средств на ваш счёт, что позволит подключать новые услуги или расходовать их на звонки.",
+		"autoRecharge": "Автоматическое пополнение",
+		"whenBalanceFalls": "когда баланс опускается ниже",
+		"recharge": "пополнить",
+		"helpAutoRecharge": "Включив автоматическое пополнение, вы определяете нижний порог баланса вашего счёта и сумму автоматического пополнения.",
+		"helpWhenBalanceFalls": "Введите пороговую сумму, при достижении которой ваш счёт будет автоматически пополнен",
+		"helpRecharge": "Введите сумму, на которую ваш счёт будет пополнен автоматически при достижении порога",
+		"payPerMinute": "Поминутная тарификация позволяет платить только за фактически использованные минуты разговоров. Пополните ваш баланс для начала работы и затем пополняйте его по мере надобности.",
+		"currentBalance": "Ваш текущий баланс: ",
+		"turnoffRechargeConfirm": "Отключив автоматическое пополнение, вы будете должны самостоятельно пополнять баланс вашего счёта чтобы продолжать пользоваться услугами телефонной системы. Вы уверены что хотите продолжить?",
+		"amount": "Сумма",
+		"confirm": "Подтвердить",
+		"placeholderThresholdRecharge": "5.00",
+		"placeholderRecharge": "50.00",
+		"placeholderAmount": "10.00",
+		"addCredit": "Пополнить баланс",
+		"invalidAmount": "Введённая сумма неверна. Пожалуйста, вводите только цифры, можно использовать символы точки или запятой",
+		"autoRechargeEnabled": "Автоматическое пополнение включено!",
+		"autoRechargeCancelled": "Вы успешно отменили автоматическое пополнение баланса вашего счёта.",
+		"creditsAdded": "Вы успешно пополнили ваш баланс на сумму: {{amount}}",
+		"addCreditDialogTitle": "Пополнение счёта",
+
+		"dateColumn": "Дата",
+		"durationColumn": "Минуты",
+		"amountColumn": "Сумма",
+                "InamountColumn": "E-Price",
+		"fromColumn": "От",
+		"toColumn": "Кому",
+		"directionColumn": " ",
+		"accountColumn": "Клиент",
+		"__comment": "UI-1324: Adding the option to disable Braintree through a config flag",
+		"__version": "v3.20_s4",
+		"disabledAddCreditTooltip": "Для выполнения этой операции требуется подключение к Braintree"
+	},
+
+		"servicePlan": {
+		"discount": "Скидка",
+		"dueOn": "Срок",
+		"empty": "Ваш текущий сервисный план пуст!",
+		"monthlyChargesTitle": "Ежемесячные платежи",
+		"quantityTitle": "Количество",
+		"rateTitle": "Цена минуты",
+		"serviceTitle": "Тариф",
+		"title": "Тарифный план",
+		"titleHeader": "Тарифный план",
+		"titles": {
+			"cnam": "CNAM",
+			"did_us": "US DIDs",
+			"e911": "E911",
+			"inbound_cnam": "Входящий CNAM",
+			"inbound_trunk": "Входящий канал",
+			"inbound_trunks": "Входящие каналы",
+			"port": "Перенос номеров",
+			"sip_device": "SIP-устройство",
+			"sip_devices": "SIP-устройства",
+			"tollfree_us": "US Tollfree",
+			"twoway_trunk": "Двунаправленный канал",
+			"twoway_trunks": "Двунаправленные каналы",
+			"__comment": "UI-815: Improve how the prices and categories are displayed for the Trunks",
+			"__version": "v3.19_s1",
+			"outbound_trunk": "Исходящий канал",
+			"outbound_trunks": "Исходящие каналы",
+			"user": "Пользователь",
+			"users": "Пользователи"
+		},
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"dueAmount": "Сумма до"
+	},
+
+	"transactions": {
+		"title": "Транзакции",
+		"billingCycle": "Период тарификации",
+		"oneTimeCharge": "Однократный платёж",
+		"monthlyCharge": "Ежемесячный платёж",
+		"serviceCharge": "Оплата услуг - пропорционально",
+
+		"noData": "В выбранный период транзакций не было!",
+
+		"serviceTitle": "Тариф",
+		"discount": "Скидка",
+		"rateTitle": "Цена минуты",
+		"quantityTitle": "Количество",
+		"monthlyChargesTitle": "Ежемесячные платежи",
+		"declined": "Отклонено",
+
+		"database_rollup": "Итог",
+		"per_minute_call": "Звонки с поминутной тарификацией",
+		"sub_account_per_minute_call": "Звонки с поминутной тарификацией (дочерние клиенты)",
+		"feature_activation": "Активация услуг",
+		"sub_account_feature_activation": "Активация услуг (дочерние клиенты)",
+		"number_activation": "Активация номеров",
+		"sub_account_number_activation": "Активация номеров (дочерние клиенты)",
+		"manual_addition": "Ручное добавление",
+		"sub_account_manual_addition": "Ручное добавление (дочерние клиенты)",
+		"admin_discretion": "Прочее",
+		"__comment": "UI-383: Fixing transactions for good",
+		"__version": "v3.20_s0",
+		"unknown": "Оплатить",
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"startDate": "С",
+		"endDate": "По",
+		"total": "Всего",
+
+		"__comment": "UI-1248: Work on transactions to fix the way they're displayed",
+		"__version": "3.19",
+		"refundText": "(Вернуть)",
+		"codes": {
+			"1001": "Звонки с поминутной тарификацией",
+			"1002": "Звонки дочерей учётной записи с поминутной тарификацией",
+			"2001": "Активация функций",
+			"2002": "Активация функций дочерней учётной записью",
+			"2003": "Активация номера",
+			"2004": "Активация номера дочерней учётной записью",
+			"3001": "Ручной добавление",
+			"3002": "Ручное добавление дочерней учётной записью",
+			"3003": "Автоматические добавление",
+			"3004": "Автоматическое добавление дочерней учётной записью",
+			"3005": "Прочее",
+			"3006": "Пополнение",
+			"4000": "Перенос баланса",
+			"5000": "Регулярный",
+			"5001": "Ежемесячный регулярный",
+			"5002": "Ежемесячный регулярный (Pro-rated)",
+			"9999": "Неизвестно"
+		},
+		"errorStatuses": {
+			"voided": "Аннулировано",
+			"declined": "Отклонено",
+			"processor_declined": "Отклонено"
+		}
+	},
+
+	"miscCategory": "Разное",
+	"errorTracker": {
+		"title": "Журнал ошибок UI",
+		"errorTotal": "Количество ошибок:",
+		"apiTotal": "Erlang",
+		"jsTotal": "Javascript",
+		"viewDetails": "Детали"
+	},
+
+	"__comment": "UI-1397: Clean up topbar of unnecessary HTML",
+	"__version": "v3.20_s4",
+	"isMasquerading": {
+		"switchBackTo": "Переключиться обратно",
+		"myAccount": "Моя учётная запись",
+		"currentlyViewing": "Сейчас смотрим"
+	}}

@@ -1,0 +1,152 @@
+<div id="myaccount">
+	<div class="myaccount-container">
+		<div class="myaccount-right clearfix">
+			<div class="myaccount-titlebar">
+				<div class="myaccount-module-title"></div>
+				<div class="myaccount-close">
+					<button type="button" class="monster-button">
+						<i class="fa fa-times"></i>{{i18n.close}}
+					</button>
+				</div>
+			</div>
+			<div class="myaccount-content container-fluid">
+
+			</div>
+		</div>
+
+		<div class="myaccount-menu">
+			<ul class="nav nav-list">
+				{{#if restrictions.categories.settings.show}}
+				<li id="settingsCategory" class="nav-header">
+					{{ i18n.settingsCategory }}
+				</li>
+				{{/if}}
+
+				{{#if restrictions.user.show_tab}}
+				<li class="myaccount-element" data-module="user">
+					<a href="javascript:void(0);">
+						<span class="active-highlight">
+							<i class="fa fa-user"></i>
+							<span class="element-name">{{ i18n.user.title }}</span>
+						</span>
+					</a>
+				</li>
+				{{/if}}
+				{{#if restrictions.account.show_tab}}
+				<li class="myaccount-element" data-module="account">
+					<a href="javascript:void(0);">
+						<span class="active-highlight">
+							<i class="fa fa-cogs"></i>
+							<span class="element-name">{{ i18n.account.title }}</span>
+						</span>
+					</a>
+				</li>
+				{{/if}}
+
+				{{#if restrictions.categories.billing.show}}
+				<li id="billingCategory" class="nav-header">
+					{{ i18n.billingCategory }}
+				</li>
+				{{/if}}
+				{{#if restrictions.billing.show_tab}}
+				<li class="myaccount-element" data-module="billing">
+					<a href="javascript:void(0);">
+						<span class="active-highlight">
+							<i class="fa fa-credit-card"></i>
+							<span class="element-name">{{ i18n.billing.title }}</span>
+						</span>
+					</a>
+				</li>
+				{{/if}}
+				{{#if restrictions.balance.show_tab}}
+				<li class="myaccount-element" data-module="balance">
+					<a href="javascript:void(0);">
+						<div class="active-highlight">
+						{{#compare restrictions.balance.show_credit '!==' false }}
+							<span class="badge pull-right">{{ ../i18n.currencyUsed }} <span class="amount">{{ amount }}</span></span>
+						{{/compare}}
+							<i class="fa fa-clock-o"></i>
+							<span class="element-name">{{ i18n.balance.title }}</span>
+						</div>
+					</a>
+				</li>
+				{{/if}}
+				{{#if restrictions.service_plan.show_tab}}
+				<li class="myaccount-element" data-module="servicePlan">
+					<a href="javascript:void(0);">
+						<div class="active-highlight">
+							<i class="fa fa-calendar"></i>
+							<span class="element-name">{{ i18n.servicePlan.title }}</span>
+						</div>
+					</a>
+				</li>
+				{{/if}}
+				{{#if restrictions.transactions.show_tab}}
+				<li class="myaccount-element" data-module="transactions">
+					<a href="javascript:void(0);">
+						<div class="active-highlight">
+							<i class="fa fa-dollar"></i>
+							<span class="element-name">{{ i18n.transactions.title }}</span>
+						</div>
+					</a>
+				</li>
+				{{/if}}
+				{{#if restrictions.categories.trunking.show}}
+				<li id="trunkingCategory" class="nav-header">
+					{{ i18n.trunkingCategory }}
+				</li>
+				{{/if}}
+
+				{{#if restrictions.outbound.show_tab}}
+				<li class="myaccount-element" data-module="trunks" data-key="outbound">
+					<a href="javascript:void(0);">
+						<div class="active-highlight">
+							<span class="badge pull-right"></span>
+							<i class="fa fa-arrow-left"></i>
+							<span class="element-name">{{ i18n.trunks.outbound }}</span>
+						</div>
+					</a>
+				</li>
+				{{/if}}
+				{{#if restrictions.inbound.show_tab}}
+				<li class="myaccount-element" data-module="trunks" data-key="inbound">
+					<a href="javascript:void(0)">
+						<div class="active-highlight">
+							<span class="badge pull-right"></span>
+							<i class="fa fa-arrow-right"></i>
+							<span class="element-name">{{ i18n.trunks.inbound }}</span>
+						 </div>
+					</a>
+				</li>
+				{{/if}}
+				{{#if restrictions.twoway.show_tab}}
+				<li class="myaccount-element" data-module="trunks" data-key="twoway">
+					<a href="javascript:void(0)">
+						<div class="active-highlight">
+							<span class="badge pull-right"></span>
+							<i class="fa fa-arrows-h"></i>
+							<span class="element-name">{{ i18n.trunks.twoway }}</span>
+						</div>
+					</a>
+				</li>
+				{{/if}}
+
+				{{#if restrictions.categories.misc.show}}
+				<li id="misc" class="nav-header">
+					{{ i18n.miscCategory }}
+				</li>
+				{{/if}}
+				{{#if restrictions.errorTracker.show_tab}}
+				<li class="myaccount-element" data-module="errorTracker">
+					<a href="javascript:void(0);">
+						<span class="active-highlight">
+							<i class="fa fa-bug"></i>
+							<span class="element-name">{{ i18n.errorTracker.title }}</span>
+						</span>
+					</a>
+				</li>
+				{{/if}}
+			</ul>
+		</div>
+	</div>
+</div>

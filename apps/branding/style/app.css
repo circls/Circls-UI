@@ -1,0 +1,407 @@
+#branding_container .access-forbidden {
+	color: #22a5ff;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 60px;
+	text-shadow: 1px 1px 0px #ccc;
+}
+#branding_container .left-menu .category-group {
+	margin-top: 10px;
+}
+#branding_container .action-bar {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 20px;
+}
+#branding_container .action-bar button:not(:last-child) {
+	margin-right: 10px;
+}
+#branding_container .clearfix::after {
+	clear: right;
+}
+#branding_container .clickable-box {
+	padding: 10px;
+	border: 1px solid #dcdcdc;
+	border-radius: 4px;   
+	background-color: #f6f6f6;
+	background-image: -webkit-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image:    -moz-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image:     -ms-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image:      -o-linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	background-image:         linear-gradient(top, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 100%);
+	color: #555;
+	cursor: pointer;
+}
+#branding_container .clickable-box:hover {
+	background: #eee;
+}
+#branding_container .flat-box {
+	padding: 10px;
+	border: 1px solid #dcdcdc;
+	border-radius: 4px;   
+	background-color: #f3f3f3;
+	color: #555;
+}
+#branding_container .centered-content {
+	width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#branding_container .centered-content input[type="text"],
+#branding_container .centered-content select {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	width: 100%;
+	height: 28px;
+}
+#branding_container .centered-content textarea {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	width: 100%;
+}
+#branding_container .centered-content div[class*="-col"] {
+	display: inline-block;
+	width: 220px;
+	vertical-align: top;
+}
+#branding_container .centered-content .left-col {
+	margin-right: 40px;
+}
+#branding_container .centered-content .input-div:not(:first-child) {
+	margin-top: 15px;
+}
+#branding_container .general-branding-container {
+	padding: 10px;
+}
+#branding_container .general-branding-container .image-preview {
+	position: relative;
+	border: solid 1px #ddd;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+#branding_container .general-branding-container .image-preview.empty {
+	border-color: #22a5ff;
+	box-shadow: 0px 0px 20px #22a5ff;
+}
+#branding_container .general-branding-container .reset-image {
+	position: absolute;
+	top: 1px;
+	right: 2px;
+	cursor: pointer;
+	display: none;
+}
+#branding_container .general-branding-container .reset-image:hover {
+	color: red !important;
+}
+#branding_container .general-branding-container .upload-label {
+	font-size: 12px;
+}
+#branding_container .general-branding-container .file-upload {
+	display: flex;
+}
+#branding_container .general-branding-container .file-upload input {
+	flex-shrink: 1;
+}
+#branding_container .general-branding-container .file-upload button {
+	flex-shrink: 0;
+}
+#branding_container .general-branding-container .logo-upload-div {
+	margin-bottom: 20px;
+}
+#branding_container .general-branding-container .logo-upload-div > * {
+	vertical-align: top;
+}
+#branding_container .general-branding-container .logo-upload-div .logo-preview {
+	height: 72px;
+	margin: 10px 0px 0px auto;
+	width: 190px;
+	background-color: grey;
+}
+#branding_container .general-branding-container .logo-upload-div .right-col {
+	line-height: 30px;
+}
+#branding_container .general-branding-container .favicon-upload-div .left-col {
+	position: relative;
+}
+#branding_container .general-branding-container .favicon-upload-div .favicon-preview {
+	height: 64px;
+	width: 64px;
+	float: right;
+	background-color: grey;
+}
+#branding_container .general-branding-container .favicon-upload-div .input-label {
+	position: absolute;
+	width: 150px;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#branding_container .general-branding-container .welcome-toggle {
+	margin-bottom: 10px;
+}
+#branding_container .general-branding-container .welcome-toggle > span {
+	margin-left: 10px;
+}
+#branding_container .general-branding-container label.monster-invalid[for="domain"] {
+	margin-top: -31px;
+	margin-left: 10px;
+	pointer-events: none;
+}
+#branding_container .general-branding-container .hide-powered-wrapper {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#branding_container .advanced-branding-container .advanced-section {
+	margin: 20px;
+}
+#branding_container .advanced-branding-container .advanced-section input[type="radio"]{
+	margin: -2px 8px 0 0;
+}
+#branding_container .advanced-branding-container .advanced-section-header {
+	font-size: 18px;
+	border-bottom: solid 1px #eee;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+#branding_container .advanced-branding-container .section-subtitle {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+#branding_container .advanced-branding-container .choices-list {
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+#branding_container .advanced-branding-container .choices-list .choices-element {
+	padding: 10px 20px;
+	margin-bottom: 5px;
+}
+#branding_container .advanced-branding-container .choices-list .choices-element.clickable-box {
+	cursor: move;
+}
+#branding_container .advanced-branding-container .choices-list .choices-element.flat-box {
+	color: #999;
+	cursor: default;
+}
+#branding_container .advanced-branding-container .choices-list-help {
+	display: inline-block;
+	max-width: 250px;
+	margin-left: 20px;
+	vertical-align: top;
+}
+#branding_templates_overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .3;
+}
+#branding_container .templates-branding-container .category-container {
+	margin-top: 20px;
+}
+#branding_container .templates-branding-container .category-header {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+}
+#branding_container .templates-branding-container .category-header .title {
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+#branding_container .templates-branding-container .category-header i {
+	float: right;
+	color: #999;
+}
+#branding_container .templates-branding-container .category-container.open .category-header .title,
+#branding_container .templates-branding-container .category-container.open .category-header i {
+	color: #22a5ff;
+}
+#branding_container .templates-branding-container .template-container {
+	margin-top: 2px;
+}
+#branding_container .templates-branding-container .template-container.open {
+	position: relative;
+	z-index: 2;
+}
+#branding_container .templates-branding-container .template-container.open .template-content {
+	border-color: #999;
+}
+#branding_container .templates-branding-container .template-header .title {
+	display: inline-block;
+}
+#branding_container .templates-branding-container .template-content {
+	display: none;
+}
+#branding_container .templates-branding-container .template-content .header {
+	margin: 10px 0px 15px 0px;
+}
+#branding_container .templates-branding-container .template-content .header .title {
+	font-size: 16px;
+	line-height: 30px;
+}
+#branding_container .templates-branding-container .template-content .content {
+	border-top: 1px solid #e5e5e5;  padding-top: 20px;
+	margin-bottom: 20px;
+}
+#branding_container .templates-branding-container .template-content .content.disabled {
+	 display: none; 
+}
+#branding_container .templates-branding-container .template-content .form-line {
+	margin-bottom: 10px;
+}
+#branding_container .templates-branding-container .template-content .form-line > * {
+	padding: 0px 5px;
+	display: inline-block;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+#branding_container .templates-branding-container .template-content .form-line .first-col {
+	width: 10%;
+	text-align: right;
+}
+#branding_container .templates-branding-container .template-content .form-line .second-col {
+	width: 70%;
+}
+#branding_container .templates-branding-container .template-content .form-line .second-col input {
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+#branding_container .templates-branding-container .template-content .form-line .third-col {
+	width: 20%;
+}
+#branding_container .templates-branding-container .template-content .form-line .third-col button {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0;
+}
+#branding_container .templates-branding-container .template-content .body-tabs {
+	margin-bottom: 20px
+}
+#branding_container .templates-branding-container .template-content .tab-link {
+	display: inline-block;
+	color: #bbb;
+	border-bottom: solid 3px #bbb;
+	font-size: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	cursor: pointer;
+}
+#branding_container .templates-branding-container .template-content .tab-link:hover {
+	color: #777;
+	border-bottom: solid 3px #777;
+}
+#branding_container .templates-branding-container .template-content .tab-link.active {
+	color: #22a5ff;
+	border-bottom-color: #22a5ff;
+}
+#branding_container .templates-branding-container .template-content .tab-link a {
+	background: inherit;
+	border: initial;
+	color: inherit !important;
+	padding: 10px 20px;
+}
+#branding_container .templates-branding-container .template-content .tab-content {
+	background-color: inherit;
+	border: none;
+}
+#branding_container .templates-branding-container .template-content .template-text-body {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	height: 262px;
+	resize: none;
+	border-radius: 0px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+#branding_container .templates-branding-container .template-content .template-text-header {
+	border: solid 1px #ccc;
+	padding: 6px;
+	border-bottom: none;
+}
+#branding_container .templates-branding-container .template-content .preview-email-header {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-style: italic;
+}
+#branding_container .templates-branding-container .template-content .preview-email-content form,
+#branding_container .templates-branding-container .template-content .preview-email-content input {
+	margin: 0;
+}
+#branding_container .templates-branding-container .template-content .preview-email-content form > *:not(:first-child) {
+	margin-left: 10px;
+}
+#branding_container .templates-branding-container .template-content .preview-email-content span {
+	vertical-align: middle;
+}
+#branding_container .templates-branding-container .template-content .preview-email-container.disabled {
+	position: relative;
+	opacity: 0.8;
+}
+#branding_container .templates-branding-container .template-content .preview-email-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;  
+	opacity: 0.3;
+	border-radius: inherit;
+	cursor: progress;
+	display: none;
+}
+#branding_container .templates-branding-container .template-content .preview-email-container.disabled .preview-email-overlay {
+	display: block;
+}
+#branding_container .templates-branding-container .btn-group .tooltip-inner {
+	white-space: initial;
+	width: 200px;
+	text-align: justify;
+}
+#branding_container .templates-branding-container .pull-right>.dropdown-menu:before {
+	right: 9px;
+	left: auto;
+}
+#branding_container .templates-branding-container .pull-right>.dropdown-menu:after {
+	left: auto;
+	right: 10px;
+}
+#branding_container .wysiwyg-container .btn-group a.btn {
+	padding: 4px 5px;
+}
+#branding_container .wysiwyg-container .wysiwyg-editor {
+	height: 240px;
+}
+#branding_container .dns-branding-container #domain {
+	margin-left: 30px;
+}
+#branding_container .dns-branding-container .check {
+	margin-left: 10px;
+}
+#branding_container .dns-listing-content {
+	margin-top: 30px;
+}
+#branding_container .dns-listing-content table {
+	border-top: 1px solid #ddd;
+}
+#branding_container .dns-listing-content table td {
+	vertical-align: middle;
+}
+#branding_container .dns-listing-content table th:last-child,
+#branding_container .dns-listing-content table td:last-child {
+	text-align: center;
+}

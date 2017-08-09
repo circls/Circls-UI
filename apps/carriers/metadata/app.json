@@ -1,0 +1,94 @@
+{
+   "name": "carriers",
+   "i18n": {
+       "en-US": {
+           "label": "Carriers",
+           "description": "Set up and manage your carriers.",
+           "extended_description": "The purpose of this application is to allow VoIP administrators to manage the carriers used by their account.",
+           "features": [
+               "Manage your carriers by selecting the ones you're using and configure them in order to avoid interruptions of service",
+               "Set priorities based on classifiers (e911, international...)",
+               "Import numbers from external carriers"
+           ]
+       },
+       "de-DE": {
+           "label": "Carrier",
+           "description": "Stellen Sie selbst Ihre Carrier ein.",
+           "extended_description": "Das Ziel dieser Anwendung ist es, VoIP-Administratoren die Möglichkeit zu bieten, von ihrem Konto die Ausgehenden Routen selbst zu verwalten.",
+           "features": [
+                "Verwalten Sie Carrier, um Unterbrechungen zu vermeiden",
+                "Setzen Sie Prioritäten auf der Grundlage von Klassen (National, International ...)",
+                "Importiere Nummern von externen Carriern."
+           ]
+       },
+       "fr-FR": {
+           "label": "Carriers",
+           "description": "Mettre en place et gérer vos transporteurs.",
+           "extended_description": "extended_description: Le but de cette application est de permettre aux administrateurs de VoIP pour gérer les supports utilisés par leur compte.",
+           "features": [
+                "Gérer vos transporteurs en sélectionnant ceux que vous utilisez et les configurer afin d'éviter les interruptions de service",
+                "Définir des priorités basées sur les classificateurs (emergency, international ...)",
+                "Numéros importation des transporteurs externes"
+           ]
+       },
+       "it-IT": {
+           "label": "Carriers",
+           "description": "Impostare e gestire i vettori.",
+           "extended_description": "extended_description: Lo scopo di questa applicazione è quello di consentire agli amministratori di gestire VoIP vettori utilizzati dai loro conto.",
+           "features": [
+                "Gestire i vettori selezionando quelle che si sta utilizzando e configurarli in modo da evitare interruzioni di servizio",
+                "Imposta priorità sulla base classificatori (chiamate di emergenza, internazionale ...)",
+                "Numeri Importa da vettori esterni"
+           ]
+       },
+       "es-ES": {
+           "label": "Carriers",
+           "description": "Set up and manage your carriers.",
+           "extended_description": "The purpose of this application is to allow VoIP administrators to manage the carriers used by their account.",
+           "features": [
+               "Manage your carriers by selecting the ones you're using and configure them in order to avoid interruptions of service",
+               "Set priorities based on classifiers (e911, international...)",
+               "Import numbers from external carriers"
+           ]
+       },
+       "ro-RO": {
+           "label": "Carriers",
+           "description": "Set up and manage your carriers.",
+           "extended_description": "The purpose of this application is to allow VoIP administrators to manage the carriers used by their account.",
+           "features": [
+               "Manage your carriers by selecting the ones you're using and configure them in order to avoid interruptions of service",
+               "Set priorities based on classifiers (e911, international...)",
+               "Import numbers from external carriers"
+           ]
+       },
+       "ru-RU": {
+           "label": "Carriers",
+           "description": "Set up and manage your carriers.",
+           "extended_description": "The purpose of this application is to allow VoIP administrators to manage the carriers used by their account.",
+           "features": [
+               "Manage your carriers by selecting the ones you're using and configure them in order to avoid interruptions of service",
+               "Set priorities based on classifiers (e911, international...)",
+               "Import numbers from external carriers"
+           ]
+       },
+       "nl-NL": {
+           "label": "Carriers",
+           "description": "Set up and manage your carriers.",
+           "extended_description": "The purpose of this application is to allow VoIP administrators to manage the carriers used by their account.",
+           "features": [
+               "Manage your carriers by selecting the ones you're using and configure them in order to avoid interruptions of service",
+               "Set priorities based on classifiers (e911, international...)",
+               "Import numbers from external carriers"
+           ]
+       }
+   },
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "source_url": "http://kazoo.allip.ovh/apps/carriers",
+   "tags": [ "carrier" ],
+   "author": "2600hz",
+   "version": "1.0",
+   "license": "MPL",
+   "price": 0,
+   "icon": "Carrier_app.png",
+   "screenshots": [ "carrier1.png", "carrier2.png", "carrier3.png" ]
+}

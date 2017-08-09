@@ -1,0 +1,35 @@
+{
+	"description": "descriere",
+	"featuresTitle": "caracteristici",
+	"undefinedFeatures": "Lista de facilitate în curând...",
+	"author": "autor",
+	"version": "versiune",
+	"license": "licență",
+	"price": "preț",
+	"free": "liber",
+	"save": "cu excepția",
+	"filters": {
+		"all": "toate aplicațiile",
+		"installed": "Aplicațiile mele",
+		"resellers": "Revinzatori aplicații",
+		"carriers": "purtători aplicații",
+		"developers": "dezvoltatorii de aplicații"
+	},
+	"permissions": {
+		"title": "care pot folosi această aplicație ?",
+		"all": "toți utilizatorii",
+		"admins": "doar administratori",
+		"specific": "utilizatorii specifici"
+	},
+	"selectedUsers": "utilizatorii selectate",
+	"selectAll": "selectează tot",
+	"unselectAll": "Acceptă toate",
+	"selectUsersLink": "Utilizatorii selectate ({ { selectedusers }})",
+	"noselected": "utilizator nu selectat",
+	"alerts": {
+		"noUserSelected": "Trebuie să selectați cel puțin un utilizator pentru această aplicație. <br> <br> dacă nu vrei orice utilizator de a utiliza această aplicație, puteți opri."
+	},
+	"__comment": "ui-1190",
+	"__version": "v3.20_s2",
+	"ok": "bine"
+}

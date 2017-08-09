@@ -1,0 +1,126 @@
+<div id="buy_device">
+	<div class="content">
+
+		<div class="device-search pbx-search">
+			<div id="search_top_div">
+
+				<div class="device-search">
+					<div class="row-fluid row-popup">
+						<div class="input-div">
+							<label>{{i18n.buyDevices.countrySelectLabel}}</label>
+							<select id="metadata_country" name="prefix" data-original_value="{{metadata.country}}"></select>
+						</div>
+					</div>
+				{{#if isPhonebookConfigured}}
+					<div class="row-fluid row-popup" id="area_code_map"></div>
+				{{/if}}
+					<div id="area_code_radio_div" class="radio-group start-hidden">
+					</div>
+
+					<div class="row-fluid row-popup top-splitter">
+						<div id="seq_num_div">
+							<span id="seq_num_checkbox_span">
+								<label>
+									<input type="checkbox" class="checkbox" id="seq_num_checkbox" />
+									<span for="seq_num_checkbox">{{i18n.buyDevices.seqCheckboxLabel}}</span>
+								</label>
+							</span>
+						</div>
+						<button class="monster-button monster-button-primary" type="submit" id="search_devices_button">
+							<i class="fa fa-search"></i>&nbsp;&nbsp;{{i18n.buyDevices.search}}
+						</button>
+					</div>
+				</div>
+
+				<div class="row-fluid row-popup pbx-search">
+					<div id="pbx_search_top_div">
+						<div class="clearfix ddlist-mini">
+							<div class="input-div">
+								<label>{{i18n.buyDevices.countrySelectLabel}}</label>
+								<select id="meta_country" name="prefix" data-original_value="{{meta.country}}"></select>
+							</div>
+						</div>
+						<div class="clearfix">
+							<div id="pbx_radio_label">{{i18n.buyDevices.pbxRadioLabel}}</div>
+						</div>
+						<div class="clearfix">
+							<div id="pbx_radio_group" class="radio-group pull-left">
+							</div>
+							<button class="monster-button monster-button-primary pull-right" type="submit" id="pbx_search_button">
+								<i class="fa fa-search"></i>&nbsp;&nbsp;{{i18n.buyDevices.search}}
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="search_result_div" class="start-hidden">
+
+				<div class="row-fluid row-popup device-search">
+					<div class="result-top-div">
+						{{i18n.buyDevices.searchResults}} <span id="search_parameters"></span>
+						<a id="back_to_search" href="#">{{i18n.buyDevices.backToSearch}}</a>
+					</div>
+				</div>
+				<div class="row-fluid row-popup top-splitter">
+					<div class="result-content-div clearfix">
+						<div class="left-div"></div>
+
+						<div class="right-div">
+							<div class="top-div">
+								<span id="total_num_span">0</span>
+								<span class="device-added">{{i18n.buyDevices.deviceAddedSingle}}</span>
+								<i class="fa fa-shopping-cart monster-green"></i>
+							</div>
+							<div class="center-div top-splitter"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-fluid row-popup top-splitter">
+					<div class="result-bottom-div">
+						<!--<a id="more_info_link" class="whitelabel-field" href="" target="_blank">&gt;&gt;{{i18n.buyDevices.moreInfo}}</a>-->
+						<button id="buy_devices_button" class="monster-button monster-button-success">{{i18n.buyDevices.buyDevices}}</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="check_devices_div" class="start-hidden">
+				<div class="checking-div">
+					<div class="row-fluid row-popup">
+						<i class="fa fa-spinner fa-2x monster-blue"></i>
+						<span>{{i18n.buyDevices.checkingMessage}}</span>
+					</div>
+				</div>
+				<div class="unavailable-div start-hidden">
+					<div class="summary-div">
+						<div class="row-fluid row-popup">
+							<div class="summary-label unavailable-label">{{i18n.buyDevices.unavailableMessage}}</div>
+						</div>
+						<div class="row-fluid row-popup top-splitter">
+							<div class="unavailable-devices">
+							</div>
+						</div>
+						<div class="row-fluid row-popup top-splitter">
+							<button id="continue_buy_button" class="monster-button monster-button-success pull-right">{{i18n.buyDevices.continue}}</button>
+							<a id="back_to_results_link" class="cancel-link pull-right" href="#">{{i18n.buyDevices.backToSearchResults}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="processing_purchase_div" class="start-hidden">
+				<div class="row-fluid row-popup">
+					<div>
+						<i class="fa fa-spinner fa-2x monster-blue"></i>
+						<span>{{i18n.buyDevices.processingMessage1}}</span>
+					</div>
+					<div>
+						<span>{{i18n.buyDevices.processingMessage2}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

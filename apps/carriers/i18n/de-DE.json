@@ -1,0 +1,303 @@
+{
+	"carriers": {
+		"ips": {
+			"title": "Willkommen zur Carrier Auswahl",
+			"subtitle": "Ihrem Konto wurden nicht genügend IP-Adressen zugewiesen. Sie müssen mindestens 2 IP-Adresse aus 2 verschiedenen Zonen des Clusters erwerben. Setzen Sie sich mit Ihrem Verkäufer in Verbindung!",
+			"purchase": "IP's Kaufen",
+			"zones": {
+				"fr_1": "Frankreich 1",
+				"fr_2": "Frankreich 2",
+				"fr_3": "Frankreich 3",
+				"fr_4": "Frankreich 4",
+				"fr_5": "Frankreich 5",
+				"fr_6": "Frankreich 6",
+				"fr_7": "Frankreich 7",
+				"ch_1": "Schweiz 1",
+				"ch_2": "Schweiz 2",
+				"ch_3": "Schweiz 3",
+				"ch_4": "Schweiz 4",
+				"ch_5": "Schweiz 5",
+				"ch_6": "Schweiz 6",
+				"ch_7": "Schweiz 7",
+				"de_1": "Deutschland 1",
+				"de_2": "Deutschland 2",
+				"de_3": "Deutschland 3",
+				"de_4": "Deutschland 4",
+				"de_5": "Deutschland 5",
+				"de_6": "Deutschland 6",
+				"de_7": "Deutschland 7"
+			},
+			"noZones": "Leider ist keine Zone mit freien IP-Adressen für Ihr Konto verfügbar. Kontaktieren Sie bitte einen Weiderverkäufer!",
+			"noMore": "Keine freien IP's in dieser Zone",
+			"skip": "Ich benutze diese App ohne eine Eingabe einer IP-Adresse"
+		},
+		"brands": {
+			"efon": "e-fon CH",
+			"winet": "Winet CH",
+			"netvoip": "Netvoip CH",
+			"netswiss": "Netswisstelecom CH",
+			"sipcall": "Sipcall CH",
+			"sipgate": "Sipgate DE",
+			"swisscom": "Swisscom CH",
+			"sunrise": "Sunrise CH",
+			"calltrade": "CallTrade CH",
+			"mitto": "Mitto CH",
+			"oblcom": "OBLcom CH",
+			"horisen": "Horisen CH",
+			"quickcom": "Quickcom CN",
+			"att": "AT&T US",
+			"telekom": "Deutsche Telekom DE",
+                        "sky_telecom": "Sky-Telecom CH",
+			"bt": "British Telecom UK",
+			"t42com": "42Com DE",
+			"bandwidth": "Bandwidth US",
+			"broadvox": "Broadvox US",
+			"call_centric": "Call Centric US",
+			"level3": "Level3 US",
+			"onsip": "Onsip US",
+			"onvoy": "Onvoy US",
+			"peatec": "Peatec US",
+			"verizon": "Verizon",
+			"vitelity": "Vitelity US",
+			"voice_plus": "Voice-Plus US",
+			"voip_innovations": "Voip Innovationen US",
+			"quckcom": "Quickcom Global CN",
+			"other": "Andere",
+			"noTemplate": "keine Vorlage",
+			"custom": "Eigenen",
+			"skype": "Skype",
+			"freetdm": "FreeTDM",
+			"amqp": "AMQP"
+		},
+		
+		"toastrMessages": {
+			"carrierCreated": "Sie haben {{name}} erfolgreich als Carrier zu Ihrem Konto hinzugefügt!",
+			"carrierUpdated": "Sie haben {{name}} erfolgreich aktualisiert!",
+			"noNamePlaceholder": "Dieser Carrier",
+			"providerDeleted": "Sie haben {{name}} als Carrier von Ihrem Konto erfolgreich entfernt",
+			"templateDeleted": "Sie haben {{name}} als Vorlage von Ihrem Konto erfolgreich entfernt",
+			"warningDeleteProvider": "Sind Sie sicher, dass Sie ({{name}}) als Carrier von Ihrem Konto entfernen wollen?",
+			"warningDeleteTemplate": "Sind Sie sicher, dass Sie ({{name}}) als Vorlage von Ihrem Konto entfernen wollen?"
+		},
+		"menuTitles": {
+			"dashboard": "Übersicht",
+			"carrierTemplates": "Carrier Vorlagen",
+			"serviceProviders": "Carrier Auswahl",
+			"callingPriorities": "Wahlprioritäten",
+			"importNumbers": "Import Nummern",
+			"setLocally": "Ihr Carrier",
+			"setGlobally": "Global Carrier"
+		},
+		"resourcesChoice": "Carrier Kategorie",
+		"resourcesHelp": "\"Ihr Carrier\" wirkt sich nur auf Ihr Konto aus. Der \"Global Carrier\", wird für alle Konten im System verwendet, wenn er auf \"Global Carrier\" eingestellt hat!",
+		"toggleAdmin": {
+			"global": "Systemweit",
+			"local": "Kontoweit"
+		},
+
+		"callingPriorities": {
+			"differentPriorities": "Wählen Sie Prioritäten für verschiedene ausgehende Routen",
+			"differentTitle": "Wählen Sie den Anbieter und die Priorität für jede Kategorie",
+			"samePriorities": "Wählen Sie den Anbieter und die Prioritäten für alle Routen",
+			"sameTitle": "Sie priorisieren den Anbieter für alle ausgehenden Rufe",
+			"titleTemplate": "Prioritäten für ausgehende Anrufe",
+			"noCarriers": "Sie haben derzeit keinen Carrier in Ihrem Konto eingestellt. Sie können deshalb nur diese einsehen. Wählen Sie zuerst einen Carrier aus!",
+			"warningNoCarriers": "Sie haben derzeit keine Carrier für diese Kategorie aktiviert!",
+			"noCarriersForClassifier": "Sie haben keinen Carrier für diese Kategorie festgelegt. Sie müssen zuerst für diese Kategorie einen festlegen!",
+			"warningNoCarriersEnabled": "Es scheint Sie haben alle Carrier abgeschaltet. Möchten Sie wirklich diese jetzt Speichern?",
+			"prioritiesUpdated": "Sie haben erfolgreich Ihre Anruf Prioritäten aktualisiert!",
+			"lcrRoute": "Priorisiere alle Anrufe durch LCR-Modul",
+			"lcrRouteHelp": "Priorisiere alle Anrufe und stelle die minimale (Marge in Prozent) ein. z.B 30, Der Anruf wird nur bei mindestens 30% Marge EP / VP geroutet.",
+			"lcrrouteActivated": "Alle Carrier werden entsprechend dem tiefsten Preis, der eingestellten Kategorie gereoutet. Die Preise sind im Modul LCR-Lieferantenpreise",
+			"nolcrrouteActivated": "Alle Carrier werden entsprechend der eingestellten Priorität (Kategorie) gereoutet. LCR-Modul ist deaktiviert!"
+		},
+
+		"serviceProviders": {
+			"editResource": {
+				"titles": {
+					"advanced": "Erweitert",
+					"basic": "Basis Einstellungen",
+					"audio": "Audio",
+					"video": "Video",
+					"flags": "Flags",
+					"gateway": "Gateway",
+					"numbers": "Nummern",
+					"misc": "Notiz"
+				},
+				"server": {
+					"title": "Server",
+					"placeholder": "12.13.14.15",
+					"help": "IP-Adressen des Sip-Proxys um ausgehende Anrufe zu tätigen"
+				},
+				"subtitles": {
+					"audio": "Audio Einstellungen",
+					"video": "Video Einstellungen",
+					"flags": "Flag Einstellungen",
+					"gateway": "Gateway Einstellungen",
+					"numbers": "Nummern Einstellungen",
+					"misc": "Kontaktdetails & Notizen"
+				},
+				"codecs": {
+					"dragAndDrop": "Verschieben Sie einen Codec per Drag & Drop aus der \"Verfügbaren\", in die \"Ausgewählte\" Liste",
+					"selectedCodecs": "Ausgewählte Codecs",
+					"unselectedCodecs": "Verfügbare Codecs"
+				},
+				"add": "zur Liste hinzufügen",
+				"update": "Speichern",
+				"addCarrierTitle": "Einen Carrier zu Ihrem Konto hinzufügen",
+				"editCarrierTitle": "Einstellungen von {{variable }} bearbeiten",
+				"addTemplateTitle": "Volage für Ihr Konto zufügen",
+				"editTemplateTitle": "Einstellungen der folgenden Vorlage bearbeiten",
+				"newCarrier": "Neuer Carrier",
+				"creatingCustomCarrier": "Erstellen von benutzerdefiniertem Carrier",
+				"name": "Name",
+				"templateName": "Carrier",
+				"customName": "Eigener Carrier",
+				"username": "Benutzername",
+				"password": "Passwort",
+				"flags": {
+					"name": "Flagname",
+					"create": "Neues Flag",
+					"require": "Erforderliche Flags?",
+					"requireHelp": "Wenn aktiviert, sind diese Flags erforderlich um diesen Gateway zu wählen!"
+				},
+
+				"rules": {
+					"add": "Neue Regel zufügen",
+					"empty": "Sie haben derzeit keine Regeln für diesen Carrier gesetzt! Wählen Sie eine um die Kategorie festzulgen.",
+					"title": "Regeln",
+					"prefix": "Präfix",
+					"suffix": "Suffix",
+					"customizeMatch": "Benutzerdefinierter (Regular Expression)",
+					"match": " Übereinstimmung",
+					"test": "Test",
+					"success": "Ja!",
+					"failure": "Nein!",
+					"testPlaceholder": "Testnummer eingeben...",
+					"testTitle": "Wird diese Nummer in diese Kategorie fallen?",
+					"formattedNumberTitle": "Nummer nach dem Test",
+					"customizeMatchHelp": "Hier können Sie den (Regular Expression) anzupassen, damit die Route {{variable}} mit den Nummern reagiert."
+				},
+				"authentication": {
+					"title": "Authentifizierungsart",
+					"help": "Wählen Sie die Authentifizierungsart, wenn Anrufe über diesen Carrier getätigt werden. Oder fragen Sie Ihren Carrier!"
+				},
+				"realm": {
+					"title": "Realm",
+					"help": "Wenn die SIP-Realm dieses Carriers vorgesehen ist und die Passwort-Authentifizierung benutzt wird, müssen Sie dieses Feld einstellen."
+				},
+                                "span": {
+                                        "title": "Geräteteil",
+                                        "help": "Wenn es mehrere Teilgeräte-Adressen inerhalb eines Gerätes gibt, benötigen Sie eine Nummer anzugenben z.B. 1"
+                                },
+                                "channel_selection": {
+                                        "title": "Kanal-Reihenfolge",
+                                        "help": "Sie können die Reihenfolge der Kanalbelegung mit aufsteigend oder absteigend angeben."
+                                },
+                                "endpoint_type": {
+                                        "title": "Gateway Typ",
+                                        "help": "Folgende Typen stehen zur Auswahl: freetdm (lokales Gerät), sip (SIP-Protokoll), amqp (AMQP-Protokoll), skype (lokales Skype-Gerät)"
+                                },
+                                "skype_rr": {
+                                        "title": "Skype Vermittlung",
+                                        "subtitle": "Skype Round-Robin",
+                                        "help": "Bestimmt, ob mittels Round-Robin die Anrufe zwischen allen Schnittstellen vermitteln solle (Überschreibt die \"Skype Interface\" - Einstellungen)"
+                                },
+                                "skype_interface": {
+                                        "title": "Skype Interface",
+                                        "help": "Der Name des Skype Interface um den Ruf zu lenken."
+                                },
+				"progressTimeout": {
+					"title": "Timeout Fehler",
+					"help": "Wie lange soll gewartet werden, bis sie das (Klingeln) beginnt. Bei Internationalen Anrufe kann es bis zu 15 Sek. dauern. Regionale sollten nach 6 Sekunden verbunden sein. Große Werte verzögern das Weiterschalten."
+				},
+				"dialstring_prefix": {
+					"title": "Anruf-ID Präfix",
+					"help": "Wenn dieser Carrier eine Präfix für eine Anruf-ID benötigt, müssen Sie dieses Feld einstellen."
+				},
+				"dialstring_suffix": {
+					"title": "Anruf-ID Suffix",
+					"help": "Wenn dieser Carrier eine Suffix für eine Anruf-ID benötigt, müssen Sie dieses Feld einstellen."
+				},
+				"dialstring_format": {
+					"title": "Anruf-ID Format",
+					"help": "Welches Format des Anruf-ID soll über diesen Carrier signalisiert werden."
+				},
+				"supportsT38": {
+					"title": "T.38 Unterstützung",
+					"help": "Unterstützt Ihr Carrier die Verwendung von Faxgeräten mit T.38 Protokoll? Wenn nicht können T.38 Anrufe nicht über diesen Carrier verbunden werden, und werden weitergeschaltet."
+				},
+				"staticRoute": {
+					"title": "Statische Route",
+					"help": "Wenn Anrufe auf derselben URI gesendet werden, können Sie das Ziel hier einstellen."
+				},
+				"staticRouteSIPURI": {
+					"title": "SIP-URI"
+				},
+				"formatFromURI": {
+					"title": "URI-Format",
+					"help": "Überprüfen Sie dies, um den Header (oft für Anrufer-ID verwendet) mit dem folgenden Bereich zu ersetzen"
+				},
+				"formatFromURIRealm": {
+					"title": "Realm-Format"
+				},
+				"customSIPInterface": {
+					"title": "Benutzerdefinierte SIP-Schnittstelle",
+					"help": "Wenn Ihr System mit mehreren SIP-Schnittstellen konfiguriert ist, überprüfen Sie diese Option, um den Namen der Schnittstelle für ausgehende Anrufe zu verwenden."
+				},
+				"customSIPInterfaceName": {
+					"title": "SIP-Interfacename"
+				},
+				"ip": "IP-Adresse",
+				"ipPlaceholder": "1.2.3.4",
+				"creds": "Benutzername und Passwort",
+				"missingIP": "Es scheint, dass Sie nicht über die entsprechende dedizierte IP zu Ihrem Konto zugeordnet sind. man kann diese Carrier ohne eine hinzufügen möchten, sollten Sie sich an Ihren VoIP- Unternehmen, eins zu bekommen.",
+				"notes": {
+					"title": "Notiz",
+					"help": "Hier können Sie Notizen für Ihre Carriereinstellungen eingeben (Hat keine Auswirkungen!)"
+				},
+				"contractExpirationDate": {
+					"title": "Ablösedatum Info",
+					"help": "Wenn Sie Vertraglich mit diesem Carrier eine Abmachung haben. Sie sehen dieses Datum 1 Monat zuvor, in der Carrier Liste!"
+				}
+			},
+			"listTitleTemplate": "Liste der Vorlagen",
+			"listTitleCarriers": "Liste der ausgewählten Carrier",
+			"titleTemplate": "Fügen Sie eine Vorlage hinzu, indem Sie ein Profil wählen",
+			"titleCarriers": "Fügen Sie einen Carrier hinzu, indem Sie seine Vorlage wählen",
+			"providerMissing": "Meinem Provider ist nicht in der Liste",
+			"noCarriers": "Sie haben keinen Carrier für dieses Konto konfiguriert. Wählen Sie eine Vorlage aus der oberen Leiste mit Ihren Einstellungen!",
+			"noTemplates": "Sie haben keine Vorlage für Ihre Unterkonto konfiguriert! Momentan sind Ihre Unterkonten nicht in der Lage, einen Carrier aus einer Vorlage zu wählen."
+		},
+
+		"listingJobs": {
+			"titleTemplate": "Liste von Aufträgen für den Nummerimport",
+			"refreshTooltip": "Auftragsliste aktualisieren",
+			"create": "Neuer Importierungsauftrag",
+			"statuses": {
+				"success": "Erfolgreich",
+				"failed": "Nicht Erfolgt",
+				"pending": "In Bearbeitung",
+				"errors": "Fehler"
+			},
+			"dialogAdd": {
+				"created": "Sie haben einen neuen Auftrag mit dem Namen {{name}} erfolgreich erstellt. Sie können seinen Status in der Liste zu überprüfen, und am Ende die Ergebnisse sehen!",
+				"name": "Auftragsname",
+				"selectProvider": "Wählen Sie Ihren Nummernprovider",
+				"inputNumbers": "Eingabe von Nummern, die importiert werden sollen",
+				"beginImport": "Import von Nummern beginnen",
+				"formatHelp": "Format Beispiel (41525081922,41525081234,41526822507,41526822506)",
+				"inputHelp": "Wenn Sie Nummern importiern, müssen diesem mit einem Komma unterteilt werden."
+			},
+			"dialogView": {
+				"title": "Status des Auftrages: {{name}}",
+				"errors": {
+					"unauthorized": "nicht berechtigt, gewünschte Anzahl Operation durchzuführen",
+					"not_routable": "Die Nummer entspricht nicht den Anforderungen für die Ausführung"
+				}
+			}
+		},
+		"on": "Ein",
+		"off": "Aus"
+	}
+}

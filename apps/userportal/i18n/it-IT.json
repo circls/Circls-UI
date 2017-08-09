@@ -1,0 +1,325 @@
+{
+	"userportal": {
+                "vmstatus": {
+                    "new": "New",
+                    "saved": "Saved",
+                    "deleted": "Deleted"
+                },
+		"my_voicemails": "La mia messaggi vocali",
+		"my_call_history": "La mia chiamate",
+		"my_settings": "I miei Impostazioni",
+		"forward_calls_to": "inoltrare le chiamate",
+		"also_ring_my_voip_phone": "Suona anche il mio VoIP Phone",
+		"send_voicemail_to_email": "Invia Voicemail a e-mail",
+		"email_address": "Indirizzo e-mail",
+		"keep_caller_id": "Keep Caller ID",
+		"save": "Salva",
+		"my_devices": "I miei dispositivi",
+		"registered_devices_are_displayed": "I dispositivi registrati vengono visualizzati in verde in basso.",
+		"my_contact_list": "Il mio referente List",
+		"in_order_to_use_the_quickcall_feature": ". Per poter utilizzare la funzione Quickcall, è possibile immettere un numero nella casella di testo in basso, oppure selezionare direttamente un numero dalla lista dei contatti",
+		"the_quickcall_feature_will_ring_your_selected_device": ". La funzione di QuickCall suonerà il dispositivo selezionato, e poi cercare di raggiungere il numero selezionato una volta che avete preso la chiamata",
+		"mark_as_new": "Mark come nuovo",
+		"mark_as_saved": "Segna come Saved",
+		"delete": "Elimina",
+		"data": "Data",
+		"from_caller_id": "Da (Caller ID)",
+		"to_dialed_number": "A (Numero composto)",
+		"duration": "Durata",
+		"Caller_id": "Caller ID",
+		"status": "Stato",
+		"listen": "Ascolta",
+		"download": "Scarica",
+                "play": "Play Message",
+		"name": "Nome",
+		"internal_number": "Numero interno",
+		"external_number": "Numero esterno",
+		"you_need_to_select_a_registered_device": "È necessario selezionare un dispositivo registrato dall'elenco a discesa per poter utilizzare la funzione QuickCall!",
+		"quickcall_device": "Quickcall dispositivo:",
+		"quickcall_startedto": "Quickcall started to: ",
+		"call": "Chiama",
+		"start_date": "Start",
+		"end_date": "End",
+		"filter": "Filtro",
+		"dates_in_the_filter": "Le date del filtro non sono nel formato corretto (gg / mm / aaaa)",
+		"message_index": "Indice dei messaggi",
+		"voicemail_box_id": "Voicemail Box ID",
+		"are_you_sure_that_you_want_to_delete": "Sei sicuro di voler cancellare il messaggio vocale selezionato (s)?",
+		"enable_call_forward": "Enable Call Forward",
+		"rangeTooLarge": "La gamma è più grande di {{variabile}} giorni, si prega di correggerlo",
+                "device_types": {
+                        "cellphone": "cellulare",
+                        "sip_device": "telefono sip",
+                        "smartphone": "smartphone",
+                        "mobile": "mobile",
+                        "softphone": "softphone",
+                        "landline": "fisso",
+                        "fax": "fax",
+                        "ata": "essi",
+                        "sip_uri": "URI SIP"
+                },
+                "setquickcallDevice": "Please, go to your account settings and select first a quickcall device."
+	},
+
+	"devices": {
+		"add": "aggiungere dispositivo",
+		"assigned": "addetto",
+		"createDevice": "creare dispositivo",
+		"confirmDeleteDevice": "questo dispositivo verrà eliminato definitivamente. continuare?",
+		"deleteDevice": "eliminare dispositivo",
+		"deletedDevice": "è stato eliminato con successo il seguente dispositivo {{ device }}.",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+		"popupSettings": {
+			"advancedTitle": "avanzato",
+			"basicTitle": "impostazioni di base",
+			"brandDownloads": "Productinfo",
+			"basicSectionTitle": "impostazioni di base",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "per selezionare un codec, drag and drop dalla casella codec disponibili al dialogo codec selezionata",
+			"options": {
+				"menuTitle": "opzioni"
+			},
+			"sip": {
+				"menuTitle": "sorso",
+				"sectionTitle": "Info sip",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+			},
+			"audio": {
+				"menuTitle": "audio",
+				"sectionTitle": "impostazioni audio",
+				"selectedCodecs": "codec selezionati",
+				"unselectedCodecs": "codec disponibili",
+				"codecs": {
+					"OPUS": "lavoro",
+					"CELT@32000h": "sirena @ 32 kHz",
+					"G7221@32000h": "g722.1 @ 32 kHz",
+					"G7221@16000h": "g722.1 @ 16kHz",
+					"G722": "G722",
+					"speex@32000h": "Speex @ 32 kHz",
+					"speex@16000h": "Speex @ 16kHz",
+					"speex": "Speex",
+					"PCMU": "G711u/PCMU-64kbps (na)",
+					"PCMA": "G711A/PCMA-64kbps (altrove)",
+					"G729": "G729-8kbps (richiede licenza)",
+					"GSM": "gsm",
+					"CELT@48000h": "sirena (hd) @ 48kHz",
+					"CELT@64000h": "sirena (hd) @ 64kHz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "emergenza caller-id",
+				"sectionTitle": "emergenza caller-id",
+				"emergency": "numero",
+				"notSet": "- Account predefinito -",
+				"noE911Numbers": "voi non ha ancora impostato e911 su uno qualsiasi dei numeri, si prega di configurarlo tramite il manager numero e tornare su questo schermo una volta il suo fare",
+				"address": "indirizzo"
+			},
+			"miscellaneous": {
+				"menuTitle": "miscellaneo",
+				"sectionTitle": "miscellaneo",
+				"rtp": {
+					"enable": "crittografare l' audio",
+					"type": "tipo di crittografia",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"ignoreCompletedElsewhere": {
+					"label": "ignorare completato altrove",
+					"help": "quando i telefoni che supportano controllato mostreranno una chiamata persa, se fosse parte di un gruppo di anello risposto altrove."
+				},
+                                "restart": {
+                                        "label": "Envoyer une requête de redémarrage",
+                                        "button": "Redémarrer",
+                                        "help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+                                        "success": "Vous avez envoyé une requête de redémarrage avec succès!"
+                                }
+                        },
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+			},
+			"restrictions": {
+				"menuTitle": "restrizioni",
+				"sectionTitle": "impostazioni restrizioni",
+				"inherit": "ereditare",
+				"deny": "negare",
+				"matcher": {
+					"help": "digitare un numero (international format => +[Countryprefix]...) e fare clic su test per vedere se sarebbe stato permesso la chiamata.",
+					"placeholder": "+18554443333",
+					"button": "test",
+					"label": "il numero di cui sopra hanno soddisfatto questa regola.",
+					"__comment": "ui-727, v3.19_s2",
+					"allowMessage": "sarà consentito di effettuare una chiamata di questo dispositivo {{ phonenumber }}",
+					"denyMessage": "non sarà permesso di effettuare una chiamata di questo dispositivo {{ phonenumber }}."
+				},
+				"__comment": "ui-727, v3.19_s2",
+				"allow": "consentire",
+				"disabledRestrictionsInfo": "alcuni tipi di chiamate sono state limitate per l'intero account e non possono essere abilitati per dispositivo."
+			},
+			"video": {
+				"menuTitle": "il video",
+				"sectionTitle": "impostazioni video",
+				"selectedCodecs": "codec selezionati",
+				"unselectedCodecs": "codec disponibili",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "h264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			}
+		},
+		"buy": "acquistare dispositivo",
+		"classifiers": {
+			"unknown": {
+			    "name": "diversi dai precedenti",
+			    "help": "selezionare questa opzione quando si desidera questo account per effettuare chiamate a qualsiasi numero diverso da quelli menzionati nella lista. (quando il formato del numero è sconosciuto al sistema.)"
+			}
+		},
+		"noMatchingDevices": "non c'erano dispositivi trovati corrispondono alla tua ricerca",
+		"noDevicesConfigured": "non ci sono dispositivi configurati",
+		"provisionerPopup": {
+			"brandHeadline": "selezionare la marca del dispositivo",
+			"deviceHeadline": "selezionare il modello del dispositivo",
+			"deviceSelected": "è stato selezionato il {{ }} marchio {{ modello }}",
+			"missingBrand": "la marca del mio dispositivo non è elencata qui",
+			"missingDevice": "Il dispositivo non è elencata qui",
+			"title": "selezione del dispositivo"
+		},
+		"sip_device": {
+			"addTitle": "l'aggiunta di un dispositivo SIP",
+			"editTitle": "Dispositivo editing sip",
+			"macAddress": "indirizzo mac",
+			"macAddressPlaceholder": "19",
+			"new": "nuovo dispositivo SIP",
+			"deviceName": "nome del dispositivo"
+		},
+		"sip_uri": {
+			"addTitle": "l'aggiunta di un uri sorso",
+			"deviceName": "nome",
+			"editTitle": "editing URI SIP",
+			"new": "nuovo uri SIP",
+			"uri": "URI SIP",
+			"uriPlaceholder": "sorso",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"landline": {
+			"addTitle": "l'aggiunta di una linea fissa",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "editing fisso",
+			"new": "nuovo telefono fisso",
+			"number": "numero",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "richiedono premere il tasto",
+			"keepCallerId": "mantenere originale caller-id",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"cellphone": {
+			"addTitle": "aggiungendo un telefono cellulare",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "cellulare editing",
+			"new": "nuovo telefono cellulare",
+			"number": "numero",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "consentire l'uso del cellulare voicemail",
+			"keepCallerId": "mantenere originale caller-id",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"mobile": {
+			"addTitle": "aggiungendo un cellulare",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "editing mobili",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10 cifre numero di telefono",
+			"new": "nuovo cellulare"
+		},
+		"smartphone": {
+			"addTitle": "aggiungendo uno smartphone",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "editing smartphone",
+			"new": "nuovo smartphone",
+			"requireKeypress": "consentire l'uso del cellulare voicemail",
+			"keepCallerId": "mantenere originale caller-id",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"fax": {
+			"addTitle": "l'aggiunta di un fax",
+			"editTitle": "fax editing",
+			"macAddress": "indirizzo mac",
+			"macAddressPlaceholder": "19",
+			"new": "fax",
+			"deviceName": "nome del dispositivo",
+			"t38": "T38",
+			"disabled": "diversamente abili",
+			"auto": "auto detect",
+			"force": "forza sempre"
+		},
+		"softphone": {
+			"addTitle": "l'aggiunta di un softphone",
+			"editTitle": "editing softphone",
+			"new": "nuovo softphone",
+			"deviceName": "nome del dispositivo"
+		},
+		"ata": {
+			"addTitle": "l'aggiunta di un ata",
+			"editTitle": "editing ata",
+			"new": "nuove ata",
+			"deviceName": "nome del dispositivo"
+		},
+		"sip": {
+			"username": "sip nome utente",
+			"password": "Password sip",
+			"realm": "regno"
+		},
+		"spare": "di ricambio",
+		"title": "dispositivi totali",
+		"titleGrid": {
+			"edit": "modifica",
+			"enable": "permettere",
+			"user": "utente",
+			"modelMacAddress": "Nome/mac address",
+			"type": "tipo"
+		},
+		"types": {
+			"cellphone": "cellulare",
+			"sip_device": "telefono sip",
+			"smartphone": "smartphone",
+			"mobile": "mobile",
+			"softphone": "softphone",
+			"landline": "fisso",
+			"fax": "fax",
+			"ata": "essi",
+			"sip_uri": "URI SIP"
+		},
+		"unassignedDevice": "-",
+                "microphone": "Micrphone",
+                "speaker": "Speaker"
+	}
+}

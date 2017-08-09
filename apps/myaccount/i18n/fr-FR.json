@@ -1,0 +1,261 @@
+{
+        "defaultTimezone": "Europe/Zurich",
+        "defaultLanguaage": "fr-FR",
+	"hello": "Bonjour",
+	"signout": "Deconnexion",
+	"myaccount": "Compte",
+	"closeSlide": "Fermer",
+	"store": "Boutique",
+
+	"editSettings": "Changer",
+	"changesSaved": "Changements sauvegardés!",
+	"placeholderEmail": "jon_doe@company.com",
+	"phoneNumber": "Numéro de téléphone",
+	"placeholderNumber": "4152223333",
+
+	"user": {
+		"title": "Utilisateur",
+		"passwordsNotMatching": "Les mots de passes entrés ne correspondent pas",
+
+		"email": "Email",
+
+		"password": "Mot de Passe",
+		"newPassword": "Nouveau Mot de Passe",
+		"confirmPassword": "Confirmer MDP",
+
+		"timezoneTitle": "Fuseau horaire & langage",
+		"userTimezone": "Fuseau horaire",
+		"userLanguage": "Langage",
+
+		"colorblindTitle": "Mode Daltonien",
+		"colorblindEnabled": "Oui",
+		"colorblindDisabled": "Non",
+		"enableColorblind": "Activer le Mode Daltonien",
+
+		"__comment": "UI-1335: Adding hours settings to the user settings",
+		"__version": "v3.20_s3",
+		"dateTimeTitle": "Affichage des heures",
+		"twelveHoursModeEnabled": "Mode 12 heures (AM/PM)",
+		"twelveHoursModeDisabled": "Mode 24 heures",
+		"enableTwelveHoursMode": "Activer le mode 12 heures (AM/PM)",
+		"dateFormatTitle": "Format des dates",
+		"dateFormats": {
+			"dmy": "Jour/Mois/Année",
+			"mdy": "Mois/Jour/Année",
+			"ymd": "Année/Mois/Jour"
+		},
+                "contactSync": "Contact Sync",
+                "contactsyncUser": "Contactsync User",
+                "contactsyncPassword": "Contactsync Password",
+                "contactsyncURL": "Contactsync URL",
+                "quickcallDevice": "Quickcall Device",
+                "quickcalldeviceLabel": "Quickcall Device (Default)",
+                "quickcalldeviceTitle": "Quickcall Device"
+	},
+
+	"account": {
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "Devicesetting in userportal",
+                        "firmwareupdate": "Firmwareupdate enabled"
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "account": "Own Account-Dialplan",
+                        "descript": "Own Account-Dialplan",
+                        "enabled": "Own Account-Dialplan",
+                        "disabled": "None"
+                },
+		"title": "Compte",
+
+		"accountName": "Nom de compte",
+		"accountId": "ID du compte",
+
+		"accountRealm": "Royaume du compte",
+
+		"technicalContact": "Contact technique",
+		"technicalContactEmail": "Email",
+		"technicalContactNumber": "Numéro de téléphone",
+
+                "technicalContactMobile": "Mobilenumber",
+		"technicalContactname": "Name technicals",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No",
+
+		"timezoneTitle": "Fuseau horaire & langage",
+		"userTimezone": "Fuseau horaire",
+		"userLanguage": "Langage",
+
+		"__comment": "UI-966: Added common control to select carrier in myaccount",
+		"__version": "v3.20_s0",
+		"carrierTitle": "Réglages Opérateur téléphonique",
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Business"
+	},
+
+	"billing": {
+		"title": "Facturation",
+		"missingCard": "Your credit card information is invalid, expired or missing - please update your credit card and save the changes.",
+
+		"cardOnFile": "Carte bleue",
+		"billingName": "Nom",
+		"firstName": "Prénom",
+		"lastName": "Nom de famille",
+		"creditCardNumber": "Numéro",
+		"expirationDate": "Date d'expiration",
+		"year": "YYYY",
+		"month": "MM",
+		"securityCode": "Code de sécurité / CVV",
+		"changeCard": "Changer carte",
+
+		"accountAdministrator": "Changer carte",
+		"accountAdministratorEmail": "Email",
+		"accountAdministratorNumber": "Numéro de téléphone"
+	},
+
+	"balance": {
+		"availableCredits": "Crédits disponibles",
+		"minutesUsed": "Minutes utilisées",
+		"callCharges": "Frais d'appels",
+                "callResell": "Reseller Charges",
+		"activeCall": "en cours",
+
+		"title": "Par Minute",
+		"payPerMinute": "Le paiement à la minute vous permet de ne payer que ce que vous utilisez. Déposez de l'argent sur votre compte pour commencer et payer en fonction de votre utilisation ensuite.",
+		"currentBalance": "Balance actuelle: $",
+		"amount": "Montant",
+		"invalidAmount": "Le montant de crédits à rajouter est invalide!",
+		"creditsAdded": "Vous venez d'ajouter {{amount}} à votre balance!",
+		"autoRechargeEnabled": "La recharge automatique de vos crédits est désormais activée!",
+		"autoRechargeCancelled": "Vous avez annulé la recharge automatique de crédits avec succès.",
+		"addCreditDialogTitle": "Add Credits",
+
+		"dateColumn": "Date",
+		"directionColumn": "Direction",
+		"durationColumn": "Minutes",
+		"amountColumn": "Montant",
+                "InamountColumn": "E-Price",
+		"fromColumn": "De",
+		"toColumn": "À",
+		"accountColumn": "Compte",
+
+		"disabledAddCreditTooltip": "Braintree est requis pour ajouter du crédit. Pour plus d'informations, veuillez contacter votre administrateur."
+	},
+
+	"transactions": {
+		"title": "Transactions",
+		"titleHeader": "Historique des transactions",
+		"billingCycle": "Cycle de facturation",
+		"to": "à",
+		"oneTimeCharge": "Paiement unique",
+		"monthlyCharge": "Frais mensuels",
+		"serviceCharge": "Frais de service - Prorata",
+
+		"noData": "Pas de transactions durant cet intervalle !",
+
+		"declined": "Refusé",
+		"serviceTitle": "Service",
+		"discount": "Réduction",
+		"rateTitle": "Taux",
+		"quantityTitle": "Quantité",
+		"monthlyChargesTitle": "Frais mensuels",
+
+		"per_minute_call": "Appels à la minute",
+		"sub_account_per_minute_call": "Per-Minute Call (Sous-comptes)",
+		"feature_activation": "Nouvelle fonctionnalité",
+		"sub_account_feature_activation": "Nouvelle fonctionnalité (Sous-comptes)",
+		"number_activation": "Activation de numéro",
+		"sub_account_number_activation": "Activation de numéro (Sous-comptes)",
+		"manual_addition": "Ajout manuel",
+		"sub_account_manual_addition": "Ajout manuel (Sous-comptes)",
+		"admin_discretion": "Opération d'administrateur",
+		"__comment": "UI-383: Fixing transactions for good",
+		"__version": "v3.20_s0",
+		"unknown": "Frais divers"
+	},
+
+	"servicePlan": {
+		"title": "Abonnement",
+		"titleHeader": "Abonnement",
+		"dueOn": "Avant le",
+
+		"serviceTitle": "Service",
+		"discount": "Réduction",
+		"rateTitle": "Tarif",
+		"quantityTitle": "Quantité",
+		"monthlyChargesTitle": "Frais mensuels",
+
+		"titles": {
+			"twoway_trunks": "Twoway Trunks",
+			"inbound_trunks": "Inbound Trunks",
+			"twoway_trunk": "Twoway Trunks",
+			"inbound_trunk": "Inbound Trunks",
+			"did_us": "US DIDs",
+			"sip_device": "Appareils SIP",
+			"sip_devices": "Appareils SIP",
+			"inbound_cnam": "Inbound CNAM",
+			"e911": "E911",
+			"cnam": "CNAM",
+			"port": "Port",
+			"tollfree_us": "US Tollfree",
+			"__comment": "UI-815: Improve how the prices and categories are displayed for the Trunks",
+			"__version": "v3.19_s1",
+			"outbound_trunk": "Outbound Trunks",
+			"outbound_trunks": "Outbound Trunks",
+			"user": "Utilisateurs",
+			"users": "Utilisateurs"
+		}
+	},
+
+	"trunks": {
+		"title": "Trunks",
+		"outbound": "Sortants",
+		"inbound": "Entrants",
+		"outboundTitle": "Limite d'appels sortants",
+		"inboundTitle": "Limite d'appels entrants",
+		"inboundCalling": "Appels entrants",
+		"perMonth": "/mois",
+		"quantity": "Quantité",
+		"trunks": "Trunks",
+		"twoWayCalling": "Appels sortants",
+		"updateLimits": "Mettre à jour",
+		"helpTwoway": "Ceci contrôle le nombre d'appels sortants simultanés que votre système permet.",
+		"helpInbound": "Ceci contrôle le nombre d'appels entrants simultanés que votre système permet.",
+		"monthlyCharges": "Frais mensuels"
+	},
+
+	"isMasquerading": {
+		"switchBackTo": "Revenir à",
+		"myAccount": "Mon compte",
+		"currentlyViewing": "Compte actif"
+	}}

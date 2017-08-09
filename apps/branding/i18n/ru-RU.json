@@ -1,0 +1,147 @@
+{
+	"menuTitles": {
+		"general": "генеральный",
+		"advanced": "продвинутый",
+		"templates": "шаблоны"
+	},
+	"alertMessages": {
+		"logoWrongType": "Логотип должен быть либо в JPEG или PNG формате.",
+		"logoWrongSize": "Ваш логотип не должен превышать 190px в ширину и 72px в высоту.",
+		"deleteConfirm": "Это позволит полностью удалить как общий, так и расширенный брендинга информацию. вы хотите продолжить?",
+		"closeTemplateConfirm": "несохраненные изменения, внесенные в этот шаблон будет удален. вы хотите продолжить?",
+		"templateUpdateSuccess": "Шаблон успешно обновлен.",
+		"templatePreviewSuccess": "Уведомление просмотр был отправлен {{ email_address }}"
+	},
+	"generalBranding": {
+		"mainTitle": "Вообще UI брендинг",
+		"logoLabel": "загрузить логотип Вашей компании",
+		"logoSize": "максимальный размер",
+		"logoFormat": "формат",
+		"companyNameLabel": "название компании",
+		"companyWebsiteLabel": "Сайт компании ссылку",
+		"domainLabel": "доменное имя",
+		"languageLabel": "язык",
+		"helpLabel": "Помощь/вики ссылку",
+		"termsLabel": "сроки и условия ссылку",
+		"poweredByLabel": "питание от 2600Гц",
+		"welcomeLabel": "пользовательских приветствие"
+	},
+	"advancedBranding": {
+		"mainTitle": "Расширенный брендинг",
+		"porting": {
+			"title": "количество портирование",
+			"allowCustomerRequest": {
+				"title": "подачи заявок портов",
+				"yes": "позволяют клиентам запрашивать порт",
+				"no": "я буду просить порты по поручению клиентов"
+			},
+			"manageCustomerPorts": {
+				"title": "управления запросами портов",
+				"yes": "я будет управлять запросами порт с моего счета",
+				"no": "2600Гц будет управлять запросами порт с моего счета"
+			},
+			"supportLabel": "обратитесь в службу поддержки",
+			"supportPlaceholder": "support@domain.com",
+			"loaLabel": "Доверенность",
+			"loaPlaceholder": "HTTP",
+			"resporgLabel": "resporg",
+			"resporgPlaceholder": "HTTP"
+		},
+		"carrier": {
+			"title": "перевозчик",
+			"choices": {
+				"title": "выбор, доступные пользователю в настройке его no_match маршрута",
+				"list": {
+					"useBlended": "использовать глобальные ресурсы",
+					"useReseller": "использовать набор ресурсов",
+					"byoc": "принести свой носитель"
+				},
+				"help1": "Первый вариант будетодин установлен по умолчанию в счет.",
+				"help2": "что позволяет более одного варианта позволитпользователю настроить этот параметр."
+			}
+		}
+	},
+	"templatesBranding": {
+		"mainTitle": "управлять шаблонами",
+		"templateNames": {
+			"reset_password": "сбросить пароль",
+			"welcome": "милости просим",
+			"new_account": "новый аккаунт",
+			"first_registration": "первая регистрация",
+			"first_call": "первый вызов",
+			"transaction": "сделка",
+			"low_balance": "низкий баланс",
+			"abnormal_hangup": "ненормальный зависание",
+			"system_alert": "система оповещения",
+			"deregister": "отменить регистрацию",
+			"fax_to_email": "факс по электронной почте",
+			"inbound_error_to_email": "входящих ошибке по электронной почте",
+			"inbound_to_email": "входящих по электронной почте",
+			"outbound_error_to_email": "исходящий ошибке по электронной почте",
+			"outbound_to_email": "исходящий по электронной почте",
+			"voicemail_to_email": "Голосовая почта по электронной почте",
+			"voicemail_full": "Голосовая почта переполнена",
+			"denied_emergency_bridge": "Denied Emergency Bridge",
+			"new_port_request": "Новый запрос порт",
+			"ported": "портирована",
+			"port_cancelled": "порт отменен",
+			"cnam_request": "CNAM запрос",
+			"vanity_number_request": "Запрос тщеславие"
+		},
+		"templateCategories": {
+			"account": "счетом категория",
+			"billing": "категория счетов",
+			"system": "система категорий",
+			"reseller": "оповещения реселлера/счета",
+			"fax": "факс категории",
+			"voicemail": "голосовая почта категория",
+			"porting": "перенос категория",
+			"numbers": "Инвентарный номер",
+			"misc": "Разное"
+		},
+		"from": "родом из",
+		"to": "для",
+		"bcc": "BCC",
+		"subject": "тема",
+		"macros": "макрос",
+		"recipientTypes": {
+			"specific": "удельный",
+			"admins": "администраторы",
+			"original": "Оригинальный пользователь"
+		},
+		"htmlBody": "HTML тело",
+		"textBody": "текстовый тело",
+		"restoreButton": "восстановить по умолчанию",
+		"restoreWarning": "Этот шаблон уведомления будут восстановлены значения по умолчанию, и любые настройки вы сделали будут отменены."
+	},
+	"saveInfoMessage": "некоторые изменения вступят в силу только после перезагрузки приложения.",
+	"welcomeWysiwyg": {
+		"fontSizes": {
+			"1": "маленький",
+			"2": "небольшой",
+			"3": "средне- малый",
+			"4": "среда",
+			"5": "средних и больших",
+			"6": "большой",
+			"7": "крупнейший"
+		}
+	},
+        "accessForbidden": "Sorry, the Branding App is only available for reseller accounts.",
+        "dnsBranding": {
+                "check": "Check",
+                "label": "Domain name you wish to white-label:",
+                "info": "Base on your selection of {{variable}} as your domain name, please configure your DNS for the following setup:",
+                "table": {
+                        "purpose": "Purpose",
+                        "subDomain": "Sub-domain",
+                        "recordType": "Record Type",
+                        "recordData": "Record Data",
+                        "setupProperly": "Setup Properly"
+                },
+                "toastr": {
+                        "error": {
+                                "invalidDomain": "Please specify a domain name to check!"
+                        }
+                }
+        }
+}

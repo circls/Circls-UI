@@ -1,0 +1,122 @@
+<div id="calling_priorities_wrapper">
+	<h4>{{ i18n.carriers.callingPriorities.titleTemplate }}</h4>
+
+	{{#compare resources.length ">" 0}}
+                <div class="actions" data-original-title="{{i18n.carriers.callingPriorities.lcrRouteHelp}}" data-placement="top" data-toggle="tooltip">
+                        <div class="switch">
+                                <span>{{ i18n.carriers.callingPriorities.lcrRoute }} </span>
+                        {{#monsterSwitch }}
+                                <input id="lcrroute" type="checkbox" name="extra.lcrroute"{{#if extra.lcrroute}} checked{{/if}}>
+                        {{/monsterSwitch}}
+                                 <i class="help-popover fa fa-question-circle"></i> 
+                                <input class="input-micro" type="text" name="extra.lcrmargin" placeholder="%" value="{{extra.lcrmargin}}">
+                        </div>
+                </div>
+		<div class="main-checkbox">
+			<div>
+				{{#monsterRadio i18n.carriers.callingPriorities.samePriorities}}
+				<input type="radio" name="extra.priority" value="same"{{#unless account.resources_by_classifiers}} checked{{/unless}}>
+				{{/monsterRadio}}
+			</div>
+
+			<div>
+				{{#monsterRadio i18n.carriers.callingPriorities.differentPriorities}}
+				<input type="radio" name="extra.priority" value="different"{{#if account.resources_by_classifiers}} checked{{/if}}>
+				{{/monsterRadio}}
+			</div>
+		</div>
+
+
+		<div class="priorities-wrapper">
+			<div class="basic priority-type-wrapper{{#unless account.resources_by_classifiers}} active{{/unless}}" data-type="same">
+				<h4>{{ i18n.carriers.callingPriorities.sameTitle }} </h4>
+
+				<ul class="ordered-carriers carriers-list">
+					{{#each resources}}
+						<li class="carrier-block item-selector" data-id="{{id}}">
+							<div class="item-handle"></div>
+							<div class="carrier-logo {{brandName}}">
+								{{#compare brandName "===" "custom"}}
+									<div class="text-wrapper">{{ template_name }}</div>
+								{{else}}
+									{{#compare brandName "===" "other"}}
+										<div class="text-wrapper">{{ ../../../i18n.carriers.brands.noTemplate }}</div>
+									{{/compare}}
+								{{/compare}}
+							</div>
+							<div class="carrier-text">
+								<div class="name"><span class="rank">{{rank}}</span> - {{name}}</div>
+								<div class="active-classifiers">{{stringClassifier}}</div>
+							</div>
+							<div class="switch">
+							{{#monsterSwitch}}
+								<input type="checkbox" name="{{id}}.enabled"{{#if enabled}} checked{{/if}}>
+							{{/monsterSwitch}}
+							</div>
+						</li>
+					
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="advanced priority-type-wrapper clearfix{{#if account.resources_by_classifiers}} active{{/if}}" data-type="different">
+				<h4>{{ i18n.carriers.callingPriorities.differentTitle }} </h4>
+
+				<div class="classifiers-selector">
+					<div class="search-box">
+						<i class="fa fa-search"></i>
+						<input type="text" placeholder="{{ i18n.search }}" class="search-query">
+					</div>
+					<ul class="list-classifiers">
+						{{#each classifiers}}
+							<div class="classifier-item{{#if default}} selected{{/if}}" data-classifier="{{ @key }}" data-search="{{ @key }} {{ friendly_name }}">
+								<span class="title">{{ friendly_name }}</span>
+								{{#unless hasCarriersOn}}
+									<i class="help-popover fa fa-exclamation-triangle monster-red pull-right" data-toggle="tooltip" data-placement="top" data-original-title="{{ ../../i18n.carriers.callingPriorities.warningNoCarriers }}"></i>
+								{{/unless}}
+							</div>
+						{{/each}}
+					</ul>
+				</div>
+
+				<div class="carriers-list-group">
+					{{#each classifiers}}
+						<ul class="carriers-list ordered-carriers{{#if default}} active{{/if}}" data-classifier="{{@key}}">
+							{{#each carriers}}
+								<li class="carrier-block item-selector" data-id="{{id}}">
+									<div class="item-handle"></div>
+									<div class="carrier-logo {{brandName}}">
+										{{#compare brandName "===" "custom"}}
+											<div class="text-wrapper">{{ template_name }}</div>
+										{{else}}
+											{{#compare brandName "===" "other"}}
+												<div class="text-wrapper">{{ ../../../../i18n.carriers.brands.noTemplate }}</div>
+											{{/compare}}
+										{{/compare}}
+									</div>
+									<div class="carrier-text">
+										<div class="name"><span class="rank">{{rank}}</span> - {{name}}</div>
+									</div>
+									<div class="switch">
+									{{#monsterSwitch}}
+										<input type="checkbox" name="{{id}}.enabled"{{#if enabled}} checked{{/if}}>
+									{{/monsterSwitch}}
+									</div>
+								</li>
+							{{else}}
+								<div class="no-carriers alert">{{ ../../../i18n.carriers.callingPriorities.noCarriersForClassifier }}</div>
+							{{/each}}
+						</ul>
+					{{/each}}
+				</div>
+			</div>
+
+			<div class="actions">
+				<a href="javascript:void(0);" class="monster-link blue cancel-priorities">Cancel</a>
+				<button class="monster-button monster-button-success save-priorities">{{ i18n.saveChanges }}</button>
+			</div>
+		</div>
+	{{else}}
+		<div class="alert">{{ i18n.carriers.callingPriorities.noCarriers }}</div>
+	{{/compare}}
+</div>

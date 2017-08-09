@@ -1,0 +1,86 @@
+{
+	"menuTitles": {
+		"lcrrates": "LCR-Rates",
+		"currencies": "Currencies",
+		"taxes": "Taxes"
+	},
+
+	"lcrrates": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+		"title": "LCR-Rates",
+		"tableTitles": {
+                        "rate_name":       "Ratename",
+                        "prefix":          "Prefix",
+                        "rate_surcharge":  "Surcharge",
+                        "rate_cost":       "Rate",
+                        "direction":       "Direction",
+                        "routes":          "Routes",
+                        "action":          "Action",
+                        "ratename":        "Destname",
+                        "iso_country_code":"ISO",
+                        "weight":          "Weight",
+                        "flatrate":        "Flatrate incl.",
+                        "rate_increment":  "Clocking ",
+                        "rate_minimum":    "Min. Clocking",
+                        "description":     "Description",
+                        "options":         "Options",
+                        "carrierid":       "Carrier"
+		},
+		"detailDialog": {
+			"popupTitle": "Edit lcrrates entry"
+		},
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of lcrrates data"
+                }
+	},
+	
+	"currencies": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+		"title": "Currencies",
+		"tableTitles": {
+                        "id": "Currency-ID",
+                        "name": "Longname",
+                        "rate": "Basic-Rate",
+                        "sign": "Sign"
+		},
+		"detailDialog": {
+			"popupTitle": "Edit currencies entry"
+		},
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of currencies data"
+                }
+	},
+
+	"taxes": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+		"title": "Taxes",
+		"tableTitles": {
+                        "id": "Currency",
+                        "name": "Name",
+                        "rate": "Rate",
+                        "description": "Description",
+                        "group": "Group",
+                        "view": "View"
+		},
+		"detailDialog": {
+			"popupTitle": "Edit taxes entry"
+		},
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of taxes data"
+                }
+
+	}
+
+}

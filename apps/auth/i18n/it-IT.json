@@ -1,0 +1,161 @@
+{
+	"welcome": "la piattaforma di comunicazione unificata",
+	"password": "parola d'ordine",
+	"rememberMe": "ricordami",
+	"forgotPassword": "dimenticato informazioni?",
+	"username": "nome utente",
+	"registerMessage": "utilizzare un unico account per tutti i servizi 2600Hz",
+	"registerLink": "registro",
+	"or": "o",
+	"errorLoadingAccount": "è verificato un errore durante il caricamento tuo conto",
+
+	"confirmLogout": "sei sicuro di voler uscire ?",
+        "confirmHttps": "Sorry, you have to install that certificat in folder Certificate Authority (CA) and select to trust for secure websites!",
+
+	"account": {
+		"name": "nome utente",
+		"namePlaceholder": "nome dell'azienda",
+		"realm": "conto regno",
+		"realmPlaceholder": "conto regno"
+	},
+
+	"login":{
+		"buttonText": "registrati",
+                "certbuttonText": "Install CA-Certificate",
+                "certbuttonLink": "root-cert.der",
+                "howtocertbuttonText": "Howto install a this certificate?",
+                "howtocertbuttonLink": "https://wiki.mozilla.org/MozillaRootCertificate",
+                "installcert": {
+                        "certTitle": "Guide to install CA Certificat",
+                        "certFirefox": "Download for Firefox (install as CA-Certificate!)",
+                        "certWin": "Download for Chrome und Internet Explorer (install as Trustworthy Certification!)",
+                        "certnameFirefox": "Firefox->Settings->Advanced->Certificates->CA-Certificate_OPEN_PHONE_NET_AG.der",
+                        "certnameWindows": "Internet->Settings->Security->Certificates_Trustworthy-Certification_OPEN_PHONE_NET_AG.cer"
+                }
+	},
+
+	"conferenceLogin": {
+		"userTab": "utente",
+		"adminTab": "amministratore",
+		"headerLabel": "login convegno",
+		"pinLabel": "codice pin",
+		"nameLabel": "nome",
+		"callInLabel": "il tuo numero di telefono call- in",
+		"optionalSplitter": "opzionale",
+		"buttonLabel": "log-in per conferenza"
+	},
+
+	"passwordRecovery": {
+		"title": "recupero della password",
+		"label": {
+			"phoneNumber": "numero di telefono"
+		},
+		"placeholder": {
+			"username": "john@doe.com",
+			"account": {
+				"name": "2600Hz",
+				"realm": "sip.2600hz.com"
+			},
+			"phoneNumber": "+14151234567"
+		},
+		"help": {
+			"text": "prego inserire nome utente e sia un nome di account, un regno account o un numero di telefono collegato al tuo account."
+		},
+		"button": {
+			"recover": "recuperare la password"
+		},
+		"toastr": {
+			"success": {
+				"reset": "La password è stata resettata con successo"
+			},
+			"error": {
+				"reset": {
+					"account_name": "il nome account fornito non è stato trovato",
+					"account_realm": "l'account regno fornito non è stato trovato",
+					"phone_number": "il numero di telefono fornito non è stato trovato",
+					"username": "il nome utente fornito non è stato trovato"
+				},
+				"missing": "Si prega di inserire un nome di conto, un regno account o un numero di telefono collegati al tuo account"
+			}
+		}
+	},
+
+	"passwordUpdate": {
+		"title": "aggiornamento della password",
+		"label": {
+			"password": {
+				"new": "nuova password",
+				"confirmation": "conferma la nuova password"
+			}
+		},
+		"help": {
+			"text": "hai reimpostare la password e ora state utilizzando una password temporanea. è possibile modificare o continuare ad usarlo."
+		},
+		"button": {
+			"update": "aggiornamento della password"
+		},
+		"toastr": {
+			"success": {
+				"update": "la password è stata aggiornata con successo"
+			},
+			"error": {
+				"password": "password digitata partita Dont. si prega di digitare nuovamente la nuova password"
+			}
+		}
+	},
+
+	"toastrMessages": {
+		"appListError": "un problema si è verificato durante il caricamento l'elenco delle applicazioni."
+	},
+
+        "trialDaysLeft": "{{variable}} days left in trial",
+        "trialExpired": "Trial Expired!",
+        "trialPopup": {
+                "title": "Trial status",
+                "closeButton": "Continue Trial",
+                "upgradeButton": "Upgrade Now",
+                "mainMessage": "Welcome back to your trial. You have {{variable}} days left to try out the platform.",
+                "trialExpired": "Your trial expired, please click on the Upgrade button to continue using the platform.",
+                "alreadyUpgraded": "Welcome back to your trial. You have already requested an upgrade for your account, you will be notified via email when the upgradeis active!"
+        },
+
+        "trial": {
+                "noCreditCard": "Please try to upgrade again once you filled your credit card information...",
+                "successUpgrade": {
+                        "content": "Once your order is processed, you will receive instructions via email on how to sign into your new account. If you have any questions in the meantime, please contact us at {{wholsale_email}}, or call us {{wholesale_phone}} and someone will assist you.",
+                        "title": "Thank you for your order!"
+                }
+        },
+
+        "recoverPassword": {
+                "toastr": {
+                        "success": {
+                                "reset": "Votre mot de passe a été réinitialisé avec succès. Un email a été envoyé à votre adresse de login."
+                        },
+                        "error": {
+                                "reset": {
+                                        "account_name": "Le nom de compte fourni n'a pas pu être trouvé",
+                                        "account_realm": "Le royaume de compte fourni n'a pas pu être trouvé",
+                                        "phone_number": "Le numéro de téléphone fourni n'a pas pu être trouvé",
+                                        "username": "Le nom d'utilisateur founi n'a pas pu être trouvé"
+                                },
+                                "missing": "Veuillez spécifier un nom de compte ou un numéro de téléphone lié à votre compte"
+                        }
+                },
+                "successReset": "Votre mot de passe a été réinitialisé avec succès. Un email a été envoyé à votre adresse de login.",
+                "headline": "Afin de récuperer votre mot de passe, vous devez fournir votre identifiant:",
+                "emailPlaceholder": "Identifiant",
+                "headline2": "Et un de ces deux champs (un seul est nécessaire):",
+                "accountNamePlaceholder": "Nom de Compte",
+                "phoneNumberPlaceholder": "Numéro de téléphone",
+                "resetPassword": "Réinitialiser Mot de Passe",
+                "rememberPassword": "Vous vous souvenez de votre mot de passe?",
+                "backToSignIn": "Retourner à l'identification"
+        },
+
+        "trialGreetingsDialog": {
+                "title": "Welcome to the Platform!",
+                "content": "The step-by-step wizard will help familiarize you with the platform so that you can begin setting up your business phone system.",
+                "go": "Go"
+        }
+}

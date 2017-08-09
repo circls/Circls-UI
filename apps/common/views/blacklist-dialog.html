@@ -1,0 +1,28 @@
+<div class="blacklist_popup blacklist">
+	<div class="header {{radio}}"></div>
+
+	<form id="blacklist" action="#">
+		<div class="row-fluid">
+			<h4 class="content-centered">{{ i18n.blacklist.blacklistText }}</h4>
+			<div class="row-fluid block-container">
+			        <div class="section-slider clearfix">
+			                <div class="slider-title">{{ i18n.blacklist.Infotext }}</div>
+			                <div class="slider-wrapper">
+			                        <div id="slider_blacklist"></div>
+			                        <div class="slider-value">{{blackweight}}</div>
+			                </div>
+			        </div>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			{{#monsterText}}
+				{{i18n.blacklist.helpBlacklist}}
+			{{/monsterText}}
+		</div>
+
+		<div class="row-fluid buttons">
+			<button class="monster-button monster-button-success submit_btn">{{ i18n.update }}</button>
+		</div>
+	</form>
+</div>

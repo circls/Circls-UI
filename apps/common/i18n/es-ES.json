@@ -1,0 +1,823 @@
+{
+        "regextern": {
+                "dialogTitle": "External Number-Registration",
+                "title": "External Registration",
+                "label": "External Registration",
+                "help": "This Number will be external registered for incomming calls.",
+                "successUpdate": "You successfully updated the external registration of the number {{phoneNumber}}",
+               "type": "Type",
+               "proxy": "Proxy",
+               "username": "Username",
+               "extension": "Extension-return",
+               "password": "Passwort",
+               "active": "Reg. Active",
+               "didtype": "DID-Typ",
+               "didprovider": "Provider-Name",
+               "didinfo": "Informations",
+               "providerurl": "Provider-URL-Portal",
+               "providerurltype": "API-Typ",
+               "providerusr": "Regname",
+               "providerpass": "Reg-Passwort",
+               "reged_email": "Reg-Email",
+               "pvt_activestart": "Date Activ",
+               "pvt_activestartHelp": "At this date will automatic assigent this number to use",
+               "pvt_activestop": "Date Inactiv",
+               "pvt_activestopHelp": "At this Time it will automatic unassigent this number to use",
+               "pvt_created": "Date created",
+               "pvt_changed": "System actived",
+               "pvt_modified": "Date modified",
+               "placeholder_type": "gateway",
+               "placeholder_proxy": "sip.voip.com",
+               "placeholder_username": "0525081922",
+               "placeholder_extension": "+41525081922",
+               "placeholder_password": "********",
+               "placeholder_active": "false",
+               "placeholder_didtype": "sip",
+               "placeholder_didprovider": "NETSTREAM",
+               "placeholder_didinfo": "host=sip.voip.com",
+               "placeholder_providerurl": "www.voip.com",
+               "placeholder_providerurltype": "json",
+               "placeholder_providerusr": "",
+               "placeholder_providerpass": "",
+               "placeholder_reged_email": "",
+               "placeholder_pvt_activestart": "1431282897",
+               "placeholder_pvt_activestop": "1431282897",
+               "placeholder_pvt_created": "1431282897",
+               "placeholder_pvt_modified": "1431282897",
+               "status": "Regedstate",
+               "numberstate": "Number State",
+               "force_outbound": "OnNet No. use",
+               "didemergency": "Emergency-Provider"
+        },
+	"accountBrowser": {
+		"missingInfo": "Missing Information",
+		"addAccount": "Add New Account",
+		"searchDatabase": "Search in every account for",
+		"__comment": "UI-786 (v3.19_s3): adding search-related labels",
+		"breadcrumbSearchResults": "search results for \"{{searchValue}}\"",
+		"__comment": "UI-1271: Updating the search link",
+		"__version": "v3.20_s3",
+		"searchReset": "Click again to clear the search",
+		"backButton": "Back to parent"
+	},
+	"numbers": {
+		"mainNumber": "Office Number",
+		"conferenceNumber": "Main Conference Number",
+		"dialogSpare": {
+			"title": "List of Spare Numbers",
+			"headline": "Spare Numbers of",
+			"headlineNoAccount": "Select numbers",
+			"noMatchingNumbers": "No numbers matched your search.",
+			"noNumberSelected": "You didn't select any number. You need to select at least one number by clicking on a number in the list.",
+			"proceed": "Add selected numbers"
+		},
+		"bulkActions": "Bulk Actions",
+		"buy": "Buy",
+		"buyNumberLinks" : {
+			"regular": "Local",
+			"tollfree": "Toll-free",
+			"vanity": "Vanity"
+		},
+		"port": "Port",
+		"assignTo": "Assign To",
+		"confirmDelete": "Are you sure you want to delete the selected numbers from your account?",
+		"delete": "Delete",
+		"deleteE911Error": {
+			"message": "The following numbers can not be delete as they are the only numbers with e911 set up for their respective accounts. You need at least one number with e911 set up on an account.",
+			"account": "Account:",
+			"numbers": "Numbers:"
+		},
+		"numbers": "Numbers",
+		"addNumbers": "Add Numbers",
+		"moveNumbers": "Move To",
+		"searchNumbers": "Search a number...",
+		"go": "Go",
+		"deleteNumbers": "Delete",
+		"successDelete": "You successfully deleted {{count}} phone number(s) from your account(s)",
+		"successMove": "You successfully moved {{count}} phone number(s) to the following account: {{ accountName }}",
+		"noSpareNumber": "There are no spare numbers in this account.",
+		"noUsedNumber": "There are no numbers used in any application for this account.",
+		"spareNumbers": "Spare Numbers",
+		"usedNumbers": "Numbers in use",
+		"helpSpareNumbers": "This shows the list of numbers not used anywhere in this account. You can assign those numbers to your sub-accounts or delete these numbers from your account.",
+		"helpUsedNumbers": "This list displays where your numbers are used. You can also see the list of numbers used by your sub-accounts.",
+		"callflow": "Smart PBX",
+		"trunkstore": "Trunking",
+		"notUsedNumber": "{{number}}: This number is not used but belongs to {{accountName}}. (Switch to Spare Numbers view to see this number)",
+		"notSpareNumber": "{{number}}: This number is not a spare number but is used by {{accountName}}. (Switch to the Numbers in Use view to see this number)",
+		"numberNotFound": "The number you searched was not found! Make sure to enter the full number as we don't allow partial searches (but the formatting doesn't matter).",
+		"failoverIconHelp": "This icon means that you set up a failover number for this phone number",
+		"blacklistIconHelp": "This icon means that you set up a blacklist for this phone number",
+		"cnamOutboundIconHelp": "This icon means that you set up the Outbound Caller-ID for this phone number",
+		"cnamInboundIconHelp": "This icon means that you set up the Inbound Caller-ID for this phone number",
+		"e911IconHelp": "This icon means that you set up e911 for this phone number",
+		"localIconHelp": "This icon means that this number is a local number",
+
+		"dialogConfirm": {
+			"from": "From ",
+			"cancel": "Cancel",
+			"delete": {
+				"title": "Delete Numbers - Confirmation",
+				"questionPartOne": "Are you sure you want to delete ",
+				"questionPartTwo": " number(s)?",
+				"button": "Delete number(s)"
+			},
+			"move": {
+				"title": "Move Numbers - Confirmation",
+				"questionPartOne": "Are you sure you want to move ",
+				"questionPartTwo": " number(s) to ",
+				"questionPartThree": "?",
+				"button": "move number(s)"
+			}
+		},
+
+		"__comment": "UI-1219: Adding the prepend feature to numbers",
+		"__version": "v3.20_s1",
+		"prependIconHelp": "This icon means that this number will show up with a custom prepended text on your phone",
+
+		"__comment": "UI-1285: Adding the Sync Action to the Number Manager",
+		"__version": "3.19",
+		"sync": {
+			"label": "Sync",
+			"success": "You successfully re-synced the numbers with the database",
+			"help": "If you think some of the numbers are not displayed in the right category (Spare/In Use), you can use this feature to re-synchronize your numbers with the database."
+		},
+
+		"__comment": "UI-1153: Show warning icon next to numbers being transfered",
+		"__version": "v3.20_s3",
+		"portIconHelp": "This number is in the process of being ported and will be deleted if the port fails. It only appears for setting up purposes and is not configured to handle calls",
+
+		"__comment": "UI-901: Delete recap popup",
+		"__version": "3.20",
+		"deleteRecapDialog": {
+			"headline": "Find below the summary of which numbers have been successfully deleted and the ones which haven't. Click on Continue to go back to the Numbers inventory.",
+			"title": "Recap of the Delete operation",
+			"continue": "Continue"
+		},
+		"__comment": "UI-1802: Adding a search popup",
+		"__version": "3.22",
+		"searchPopup": {
+			"numberFound": "This number was found in the sub-account {{variable}}.",
+			"usedBy": "It is currently used by {{variable}}",
+			"notUsed": "It is currently not in use.",
+			"masqueradeTooltip": "Click here to masquerade to this account"
+		},
+
+		"__comment": "UI-1888: List MDNs in Numbers Manager without the ability to configure features (e911, cnam, prepend)",
+		"__version": "3.22",
+		"mobile": "Mobile Manager",
+		"mobileIconHelp": "This number is linked to a Mobile device and therefore, the only way to move it around, is by managing the corresponding device",
+
+		"__comment": "UI-1285: Adding the Add External Action to the Number Manager",
+		"__version": "3.22",
+		"addExternal": {
+			"label": "Add",
+			"help": "Add numbers to the selected account (You have access to this option because you're logged in with an account that has the wnm_allow_additions flag set to true).",
+			"dialog": {
+				"title": "Add your phone numbers to the platform",
+				"fieldText": "Input numbers to be imported",
+				"beginImport": "Begin Import",
+				"help1": "Format Example: +14157775555 (+[country code][phone number])",
+				"help2": "** If importing multiple numbers, each number must be separated by a space.",
+				"invalidNumbers": "We couldn't find any valid phone number to add to the system in the list of numbers you submitted."
+			}
+		},
+
+		"__comment": "UI-1935: Properly display a description next to a used number",
+		"__version": "3.22",
+		"unassigned": "Unassigned",
+		"callflows": "Callflows"
+	},
+
+	"callerId": {
+		"callerIdName": "Caller ID Name",
+		"callerIdPlaceholder": "John Doe",
+		"dialogTitle": "Caller ID Name Selection",
+		"errorUpdate": "Failed to update the Caller ID for this phone number",
+		"help": {
+			"outbound": "This name will appear as your Caller ID when you make outbound calls (15 char. maximum). This request may take up to 72 hours to process.",
+			"inbound": "If you turn on this feature, the Caller's Name will appear in your Caller ID when you receive incoming calls."
+		},
+		"label": "Caller-ID",
+		"successCnam": "You successfully updated the Caller-ID of {{phoneNumber}}",
+		"successRemoveCnam": "You successfully removed the Caller-ID of {{phoneNumber}}",
+		"noCallerId": "There is no Caller-ID for the phone number {{phoneNumber}}",
+		"inboundTitle": "Inbound Caller ID Name",
+		"outboundTitle": "Outbound Caller ID Name"
+	},
+
+	"e911": {
+		"addressLine1": "Address Line",
+		"addressLine2": "Floor",
+		"city": "City",
+		"dialogTitle": "Edit 911 Location",
+		"gmapPinLabel": "Your+E911+Location",
+		"infoBox": "This address will show up to 911 emergency services when you dial it from your number.",
+		"label": "e911",
+		"lastE911Error": "You must have e911 set up on at least one number in your account. Please set it up on another number before removing it from this one.",
+		"postalCode": "Zip Code",
+		"rotatedText": "For emergency services",
+		"state": "State",
+		"successE911": "You successfully updated the e911 address of {{phoneNumber}}",
+		"title": "E911 Address",
+		"verifyLocation": "Verify Location",
+		"__comment": "UI-1355: Add USPS format to addresses",
+		"__version": "v3.20_s4",
+		"invalidAddress": "Unfortunately, the address you specified wasn't found. Please double-check it and try again.",
+		"chooseAddressPopup": {
+			"title": "Choose correct address",
+			"youEntered": "You entered:",
+			"choicesAvailable": "Choices available:",
+			"content": "Several addresses matched the information you provided. Perhaps you didn't enter a street number or the building has multiple units."
+		}
+	},
+
+	"failover": {
+		"activate": "Activate",
+		"alternateNumber": "Alternate Number",
+		"errorUpdate": "Failed to update the Failover for this phone number.",
+		"failoverTitle": "Setup Failover",
+		"failoverText": "When Inbound call is unreachable, place your call to",
+		"helpFailover": "If your phone system is unreachable for any reason, we can redirect a caller to an alternate phone number or VoIP device. If the Failover number is an external number this call will cost you for both inbound and outbound.",
+		"invalidFailoverNumber": "Invalid Failover Number, please type it again",
+		"label": "Failover",
+		"noDataFailover": "No data entered, please type it again",
+		"or": "OR",
+		"removeFailover": "Remove",
+		"sipAddress": "SIP Address",
+		"successFailover": "You successfully updated the failover number of {{ phoneNumber }}",
+		"successRemove": "You successfully removed the failover settings of {{ phoneNumber }}"
+	},
+
+	"blacklist": {
+                "errorUpdate": "Failed to update the callcheck status.",
+                "blacklistTitle": "sets for callcheck status",
+                "blacklistText": "Incoming call can be checked automatic by your whishes.",
+                "helpBlacklist": "In the case of the callcheck, the caller is prompted for his name, to receive prompted name first. You can then decide whether you want, to do this in the future is dismissed or without the the callcheck immediately. (You can also set this by speeddial, to put the last caller to the blocked list. The blacklists for a number is in the account-phonebook)",
+                "label": "Incoming-Callcheck",
+                "step_0": "no check",
+                "step_1": "anonymous do callcheck",
+                "step_2": "anonymous + no phonebook entry do callcheck",
+                "step_3": "anonymous + no phonebook entry + Callcenter do callcheckkein",
+                "successBlacklist": "You successfully updated the callcheck number of {{ phoneNumber }}"
+	},
+
+	"buyNumbers": {
+                "defaultCountry": "ES",
+		"buyDialogTitle": "Buy Numbers",
+		"countrySelectLabel": "Select Country",
+		"cityInputLabel": "Area Code",
+		"cityInputLabelZipCode": " or ZIP code",
+		"seqCheckboxLabel": "Display only sequential numbers.",
+		"seqInputLabel": "How many in a row?",
+		"seqNumAlert": "You must specify how many sequential numbers you want in a row (any integer between 2 and 999).",
+		"seqNumParamLabel": "for {{sequentialNumbers}} sequential numbers",
+		"areaCodeRadioLabel": "Select Area Code",
+		"noInputAlert": "You must enter an Area Code or a City name to continue!",
+		"searchResults": "Search results for",
+		"backToSearch": "Go back to search",
+		"loadingNumbers": "Loading numbers...",
+		"numberAddedSingle": "Number added",
+		"numberAddedPlural": "Numbers added",
+		"selectedNumbers": "Selected Numbers",
+		"moreInfo": "Click here for more info",
+		"tollfreeRadioLabel": "Select a tollfree prefix:",
+		"buyNumbers": "Buy Numbers",
+		"noSelectedNumAlert": "You didn't select any number to buy.",
+		"buyNumber": "Buy Number",
+		"searchAgain": "Search another number",
+		"summaryTotalNumbers": "Total selected numbers",
+		"summaryTotalCharges": "Total charges",
+		"noSearchResult": "Sorry, we could not find any number matching your request. Please try again with different parameters.",
+		"partialNumAlert": "Please enter a valid number. Partial numbers are not allowed.",
+		"areaCode": "Area Code",
+		"add": "Add",
+		"month": "Month",
+		"search": "Search",
+		"checkingMessage": "Checking numbers availability...",
+		"processingMessage1": "Activating numbers...",
+		"processingMessage2": "Please wait until the process has been completed.",
+		"unavailable": "Unavailable",
+		"unavailableMessage": "Oops! These numbers just became unavailable. Continue with the remaining available numbers or go back to search results and add more numbers.",
+		"unavailableServiceAlert": "Service currently unavailable, sorry for the inconvenience. Please try again later.",
+		"continue": "Continue",
+		"backToSearchResults": "Go back to search results",
+		"cancel": "Cancel",
+		"confirm": "Confirm",
+		"confirmInfoMsg1": "Numbers will be added to your account and will be ready 15 minutes after the purchase.",
+		"confirmInfoMsg2": "Your on-file credit card will immediately be charged for recurring services. Charges will be pro-rated for your billing cycle.",
+		"vanitySearchLabel": "Search a Local or Tollfree Vanity Number:",
+		"vanitySearchInfo1": "You can search for any combination of numbers or letters.",
+		"vanitySearchInfo2": "If you can not find a specific number then feel free to send us a request. We can look through all the databases and see if we can get you the number you want. There would be a onetime 20.- fee for requesting a special number.",
+		"sendRequest": "Send us a request",
+		"to": "to",
+		"partialPurchaseFailure": "Sorry, the following numbers could not be purchased:",
+		"__comment": "UI-1716: Handle errors when the ZIP code searched does not exist and show a toastr",
+		"__version": "3.22",
+		"zipCodeDoesNotExist": "The ZIP code you entered does not exist",
+		"__comment": "UI-1716: Use an external script to load the google maps script",
+		"__version": "3.22",
+		"markerAreaCodes": "Area codes for ",
+		"__comment": "UI-1210: Add singleSelect flag to allow users to only buy one number at a time",
+		"__version": "3.22",
+		"singleSelectInfo": "You can only select one number for this action."
+	},
+
+	"port": {
+		"dialogTitle": "Port numbers",
+		"addButton": "add",
+		"saveButtonPartOne": "save",
+		"saveButtonPartTwo": "continue later",
+		"labelSaveButton": "If you do not have all the required documents, save and come back later.",
+		"cancelButton": "cancel",
+		"cancelOrderButton": "cancel this order",
+		"cancelOrderPopup": "Are you sure you want to cancel this transfer?",
+		"faqLink": "View Porting FAQs",
+		"videoLink": "Watch Video",
+		"contactUsLink": "Contact Us",
+		"nextButton": "next",
+		"progressBarLeft": "Add Numbers",
+		"progressBarMiddle": "Submit Documents",
+		"progressBarRight": "Confirm Order",
+		"requiredConditions": "Please agree with all the conditions",
+		"comingSoon": "Coming Soon!",
+		"unknownCarrier": "Unknown Carrier",
+		"state": {
+			"completed": "Completed",
+			"pending": "Pending",
+			"rejected": "Rejected",
+			"scheduled": "Scheduled",
+			"submitted": "Submitted",
+			"unconfirmed": "Unconfirmed",
+			"canceled": "Canceled"
+		},
+		"commentsPopup": {
+			"title": "Comments",
+			"private": "Private",
+			"comment": "Comment",
+			"timestamp": "added a comment"
+		},
+		"infoPopup": {
+			"title": "Request Info",
+			"transfer": {
+				"legend": "Transfer info",
+				"label": {
+					"name": "Name",
+					"notificationEmail": "Notification email",
+					"temporaryNumbers": "Temporary numbers",
+					"carrier": "Carrier",
+					"__comment": "UI-1750: Change label to 'Requested transfer date'",
+					"__version": "3.21",
+					"transferDate": "Requested transfer date"
+				}
+			},
+			"bill": {
+				"legend": "Bill info"
+			},
+			"numbers": {
+				"legend": "Numbers"
+			},
+			"confirm": {
+				"deleteComment": "Are you sure you want to delete this comment?"
+			}
+		},
+		"addNumbers": {
+			"title": "We are excited you are moving numbers to our service!",
+			"labelAddNumbers": "What numbers do you want to transfer? Type one number in at a time or paste all. No extra characters beside number."
+		},
+		"confirmOrder" : {
+			"titlePartOne": "Great!",
+			"titlePartTwo": "number is ready to transfer!",
+			"titlePartTwoBis": "numbers are ready to transfer!",
+			"labelEmail": "Who should we notify upon completion?",
+			"labelDate": "When do you want to transfer the numbers?",
+			"dateInfoPartOne": "important:",
+			"dateInfoPartTwo": "We do not guarantee same date but we will try our best or inform you if any changes. Please note that ports can take from 3 to 30 days.",
+			"labelTemporaryNumbers": "Would you like to have temporary numbers?",
+			"toggleButtonOn": "YES",
+			"toggleButtonOff": "NO",
+			"labelTemporaryNumbersCount": "How many numbers would you like to buy?",
+			"temporaryNumbersInfoPartOne": "These numbers will automatically be added to your current application. You will be charged",
+			"temporaryNumbersInfoPartTwo": "1/Month/Number. Delete these numbers once your existing number transfer get completed to avoid charges.",
+			"orderSummaryTitle": "Order Summary",
+			"labelOrderDate": "Order Date:",
+			"labelTransferDate": "Transfer Schedule Date:",
+			"labelNumbersTotal": "Total Numbers:",
+			"submitButton": "submit"
+		},
+		"manageOrders": {
+			"orderListInfo": "Due to the nature of your numbers or the carriers, we may split your order. You will be able to process all the orders, one at a time.",
+			"eulaInfo": "In the next step we need to collect the bill to show that you are the rightful owner of these numbers. This is required by law. We may split your order further if the numbers are not mentioned in the bill you will upload.",
+			"eulaWarningPartOne": "Important!",
+			"eulaWarningPartTwo": "Please understand and agree with the following",
+			"labelCancelService": "I will not cancel my old service until after the numbers are completely transfered,",
+			"labelCancelNumbers": "I understand any other numbers on the old account may be cancelled by the old provider,",
+			"labelChangeFee": "I understand my old carrier may charge an early termination fee,",
+			"labelStandardNumbers": "These are standard phone numbers, not featured (like [star-ring])."
+		},
+		"pendingOrders": {
+			"title": "Pending Orders",
+			"newPortLink": "New Port Request",
+			"tableOrderName": "Request name",
+			"tableOrderDate": "Created on",
+			"tableOrderState": "Request state",
+			"continueButton": "Continue",
+			"deleteButton": "Delete",
+			"infoButton": "Info",
+			"commentsButton": "Comments",
+			"noOrder": "No existing port request for this state",
+			"__comment": "UI-1302: Add scheduled date when state is set to pending",
+			"__version": "v3.20_s3",
+			"tableOrderScheduled": "Scheduled date",
+			"scheduledDatePopup": {
+				"title": "Edit Scheduled Date",
+				"label": {
+					"scheduledDate": "Scheduled date",
+					"__comment": "UI-1753: Add ability to customize the time when setting a scheduled date",
+					"__version": "3.21",
+					"scheduledTime": "Scheduled time"
+				}
+			},
+			"__comment": "UI-1303: ",
+			"__version": "v3.20_3",
+			"accounts": "Accounts",
+			"requests": "Requests",
+			"all": "All",
+			"__comment": "UI-1690: Changing the filter buttons into a dropdown",
+			"__version": "v3.21",
+			"portState": "State:",
+			"__comment": "UI-1786: Add search number feature to Port Manager",
+			"__version": "v3.22",
+			"searchANumber": "Search a number...",
+			"searchingFor": "Searching for"
+		},
+		"resumeOrder": {
+			"title": "Complete the following orders, one at a time!",
+			"labelOrder": "Order",
+			"completeOrderButton": "Complete this order"
+		},
+		"submitDocuments": {
+			"labelOrderName": "Name that helps you remember this transfer",
+			"labelOrderNameHelper": "For eg. company office local DIDs, NY office numbers",
+			"billInfoPartOne": "Please submit your current phone bill and fill out account details as mentioned on the bill you upload.",
+			"billInfoPartTwo": "Learn More",
+			"uploadBillButton": "upload phone bill",
+			"uploadBillHelper": "pdf format only",
+			"labelAccountName": "Name on the account",
+			"labelAddress": "Address",
+			"labelCity": "City",
+			"labelState": "State",
+			"labelZipCode": "ZIP Code",
+			"orderListInfoPartOne": "Please verify that the following numbers are mentioned on the bill you upload.",
+			"orderListInfoPartTwo": "If the numbers are not mentioned on the bill, please REMOVE them or this order will fail to transfer all the numbers.",
+			"loaTitlePartOne": "Please fill out the Letter of Authorization (LoA)",
+			"loaTitlePartTwo": "What is LOA?",
+			"loaDownloadStep": "download loa",
+			"loaSignStep": "sign loa form",
+			"loaUploadStep": "upload loa",
+			"loaHelperPartOne": "For those who don’t have time, printer or scanner, we also offer digital sign for",
+			"loaHelperPartTwo": "5 one-time charge.",
+			"loaHelperPartThree": "Digital LOA form.",
+			"loaHelperPartFour": "How to sign documents",
+			"loaHelperPartFive": "electronically without paying.",
+			"changeButton": "change"
+		},
+		"toastr": {
+			"success": {
+				"request": {
+					"update": "The port request has been updated",
+					"delete": "The port request has been deleted"
+				},
+				"comment": {
+					"delete": "The comment was deleted successfully"
+				}
+			},
+			"error": {
+				"request": {
+					"update": "The port request failed to update"
+				},
+				"mimeTypes": "The following files are not in a supported format: ",
+				"size": "The following files are too big: ",
+				"submit": {
+					"document": "Please upload the signed LOA and the bill corresponding to the numbers you want to port"
+				},
+				"numbers": "One or more numbers you entered are not in the right format or are already listed!",
+				"__comment": "UI-1786: Add search number feature to Port Manager",
+				"__version": "v3.22",
+				"number": "You did not entered a valid number!"
+			}
+		},
+		"__comment": "UI-1302: Add scheduled date when state is set to pending",
+		"__version": "v3.20_s3",
+		"noScheduledDate": "None",
+		"addDate": "Add date",
+		"__comment": "UI-1144: Can now add numbers to port request even after its creation",
+		"__version": "v3.20_s3",
+		"addMoreNumbers": "add more numbers",
+		"__comment": "UI-1756: Add FAQ popup for Port Manager app",
+		"__version": "v3.22",
+                "faqdialogTitle": "Porting Manager FAQ",
+		"faqContent": [
+			{
+				"question": "What is the difference between an LOA and a RespOrg?",
+				"answer": "The LOA (Letter Of Authorization) is used when porting regular telephone numbers. The RespOrg (Responsible Organization) is used when porting Toll-free numbers."
+			},
+			{
+				"question": "How long will my port take?",
+				"answer": "This cannot be determined until the port request is submitted. We have seen port requests scheduled within 3 to 4 days from the submittal date, but have come across some that take several weeks to a month before a scheduled date is granted, due to rejections."
+			},
+			{
+				"question": "I looked at the current bill copy and noticed the numbers I am requesting to port are not listed. Can I still submit the request using this bill copy?",
+				"answer": "Yes, you are more than welcome to submit using the bill copy as long as you know all numbers that are associated with the bill/account."
+			},
+			{
+				"question": "Will I be notified of a scheduled port date so I can ensure my client's account is set up?",
+				"answer": "Yes, we will notify you of the scheduled port date at least a day or two prior to the scheduled date. We will also notify you once the port completes."
+			},
+			{
+				"question": "Can I set up call routing prior to the scheduled port date?",
+				"answer": "Yes, and we recommend this for a smooth transition."
+			},
+			{
+				"question": "My client has international numbers. Can I port international numbers?",
+				"answer": "At this time, we can only port some Canadian numbers. This may vary depending upon if your provider has coverage in the region of the number(s)."
+			},
+			{
+				"question": "How quickly will I know if my port request has been rejected?",
+				"answer": "You will be notified, by our Porting Department, that a request has been rejected within that day or the subsequent day we receive the notice."
+			},
+			{
+				"question": "How do I cancel a port in progress?",
+				"answer": "If you decide to cancel a port, update the note section in the Porting Manager App of Smart PBX"
+			},
+			{
+				"question": "What is the port-out process (from your provider to a new provider)?",
+				"answer": "To port out a number, submit the request to the gaining provider. If you receive a rejection notification from the gaining carrier for an additional document, please contact Support and we will try to help. Once you receive a port date from the gaining provider, you are responsible for deleting the number from the Account."
+			},
+			{
+				"question": "What is a bulk port?",
+				"answer": "We consider a bulk port to be 100+ numbers."
+			},
+			{
+				"question": "Is there a discount available for bulk ports?",
+				"answer": "Bulk ports are considered over 100 numbers. For inquiries about discounts, please contact your Account Manager."
+			},
+			{
+				"question": "Do I have to submit a bulk port through the UI?",
+				"answer": "No, submit bulk ports to Support and our Porting Department will handle them for you. When submitting a Support Ticket ensure to include the LOA (Letter Of Authorization?  and a current bill pay."
+			}
+		]
+	},
+
+	"chooseModel": {
+		"brandHeadline": "Select the brand of the device:",
+		"deviceHeadline": "Select the model of the device:",
+		"deviceSelected": "You have selected the {{brand}} {{model}}",
+		"missingBrand": "The brand of my device is not listed here",
+		"missingDevice": "My device is not listed here",
+		"title": "Selection of the device",
+		"create": "Create Device",
+		"deviceInformation": "Device Info",
+		"deviceLink": "More Productinfo from Vendor",
+                "macAddress": "MAC-Address",
+                "deviceName": "Devicename",
+                "deviceNameplaceholder": "John Doo",
+                "macaddress_havetochange": "For change of a phone, you have to enter a new mac-address, this can be found on the backside of your SIP-Phone!",
+                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+	},
+
+	"servicePlanDetails": {
+		"planLines": {
+			"phone_numbers": "Abo Phone Numbers",
+			"number_services": "Abo Number Services",
+			"limits": "Abo Limits",
+			"devices": "Abo Devices",
+			"users": "Abo Users",
+                        "supports": "Abo Support",
+                        "connects": "Abo Internet",
+			"branding": "Abo Branding",
+			"ips": "Abo Carrier-IPs",
+			"ui_apps": "Abo UI Apps"
+		},
+		"noServicePlan": "No Service Plan selected.",
+		"__comment": "UI-1662: Adding minimum to customization",
+		"__version": "3.22",
+		"overrides": "Overrides",
+		"addOverrides": "Add",
+		"noOverrides": "No Overriden Values. Click on the Add link to customize this service plan!",
+		"planTitle": "Details Service Plan",
+		"keys": {
+			"phone_numbers": "Phone Numbers",
+			"number_services": "Number Services",
+			"limits": "Limits",
+			"devices": "Devices",
+			"users": "Users",
+			"branding": "Branding",
+			"ips": "IPs",
+			"ui_apps": "UI Apps",
+			"port": "Port Request",
+			"cnam": "CNAM Update",
+			"e911": "e911 allow",
+			"ata": "ATA",
+			"cellphone": "Cell Phone",
+			"fax": "Fax",
+			"landline": "Landline",
+			"mobile": "Mobile",
+			"sip_device": "SIP Device",
+			"sip_uri": "SIP URI",
+			"smartphone": "Smartphone",
+			"softphone": "Softphone",
+			"outbound_trunks": "Outbound Trunks",
+			"inbound_trunks": "Inbound Trunks",
+			"twoway_trunks": "Twoway Trunks",
+			"did_us": "US DID",
+			"tollfree_us": "US Tollfree",
+			"rate": "Rate",
+			"activation_charge": "Activation charge",
+			"minimum": "Minimum",
+			"exceptions": "Exceptions",
+                        "supports": "Support",
+                        "service_pbxs": "PBX-Support",
+                        "security_pbxs": "PBX-Updates",
+                        "connects": "Internet",
+                        "dsl_ch_min": "DSL-Internet CH Minimal",
+                        "dsl_ch_standard": "DSL-Internet CH Standard",
+                        "dsl_ch_high": "DSL-Internet CH Premium",
+                        "dsl_modem": "DSL-Modem",
+                        "qos_router": "QoS-Router (without WLAN)",
+                        "qos_router_wlan": "QoS-Router (with WLAN)",
+                        "ui_apps": "UI Apps",
+                        "ata": "ATA-Gerät",
+                        "cellphone": "Handy",
+                        "Outbound_cnam": "Outgoing phonebook",
+                        "Inbound_cnam": "Incomming phonebook",
+                        "inbound_cnam": "Incomming phonebook",
+                        "outbound_cnam": "Outgoing phonebook",
+                        "prepend": "Prepend text",
+                        "emergency_ch": "Emergency Numbers",
+                        "service_ch": "Service Numbers Swiss",
+                        "service_pbx": "Service Numbers PBX",
+                        "internal": "PBX Internal",
+                        "names": "Names",
+                        "toll_ch": "Toll Numbers CH",
+                        "tollfree_ch": "0800-Numbers CH",
+                        "toll_de": "0900-Mehrwert Numbers DE",
+                        "tollfree_de": "0800-Numbers DE",
+                        "mobile_ch": "Mobile Numbers",
+                        "did_ch": "Landline Numbers Swiss",
+                        "did_de": "Landline Numbers Germany",
+                        "fixnet_ch": "Landline Numbers Swiss",
+                        "business_ch": "Business Numbers Swiss",
+                        "activation_charge": "activate",
+                        "minimum": "Minimal",
+                        "exceptions": "Exceptions",
+                        "rate": "monthly:",
+                        "CH_Numbers": "CH Numbers",
+                        "CH_Tollfree": "CH Tollfree",
+                        "Two-Way_Trunk": "Twoway Trunks",
+                        "Inbound_Trunk": "Inbound Trunks",
+                        "Outbound_Trunk": "Outbound Trunks",
+                        "Outbound_CNAM": "Outbound phonebook",
+                        "Inbound_CNAM": "Inbound phonebook",
+                        "Port_Request_Single": "Porting Single Request",
+                        "Port_Request_DID": "Porting Request (DDI)",
+                        "Emergency_Service": "Emergency Numbers",
+                        "user": "User",
+                        "admin": "Administrator",
+                        "callflows": "Callflow",
+                        "numbers": "Numbers",
+                        "branding": "Branding",
+                        "pivot": "Pivot",
+                        "userportal": "Userportal",
+                        "carrier": "Carrier",
+                        "Cluster-Manager": "Cluster-Manager",
+                        "rates": "Connection-Rates",
+                        "voip": "SmartPBX",
+                        "conferences": "Conference App",
+                        "accounts": "Accounts",
+                        "migration": "Migrations App",
+                        "mobile": "Handy Integration",
+                        "debug": "Monitoring",
+                        "pbxs": "PBX-Trunking",
+                        "ports": "Port Requests",
+                        "reporting": "Sales Reporting",
+                        "webhooks": "Webhooks",
+                        "alarms": "Pikett-Alarms",
+			"as": "As",
+			"user": "Standard User",
+			"admin": "Account Admin",
+			"accounts": "Accounts Manager",
+			"branding": "Branding",
+			"callflows": "Advanced Callflows",
+			"carriers": "Carriers",
+			"cluster": "Cluster Manager",
+			"migration": "Migration",
+			"mobile": "Mobile",
+			"numbers": "Numbers Manager",
+			"pbxs": "PBX Connector",
+			"pivot": "Pivot",
+			"port": "Port Manager",
+			"provisioner": "Provisioner",
+			"reporting": "Reseller Reporting",
+			"userportal": "Userportal",
+			"voip": "Smart PBX",
+			"webhooks": "Webhooks",
+			"discounts": "Discounts",
+			"maximum": "Maximum",
+                        "webhooks": "Webhooks-Integrieren",
+                        "alarms": "Pikett-Alarms",
+                        "apiexplorer": "API-Docummentation",
+                        "phonebook": "Phonebook / Blacklists",
+                        "kazooexchange": "Kazoo-Exchange",
+                        "developer": "API-Docummentation",
+                        "dialplans": "Dialplan-Editor"
+		}
+	},
+
+	"ringingDurationControl": {
+		"distribute": "Distribute",
+		"maxDurationTooltip": "Click this box to change the maximum duration for your ring group. You must enter a number between 30 and 999.",
+		"doNotRing": "Do not ring",
+                "timeoutSec": "Sec"
+	},
+
+	"__comment": "UI-966: We want to be able to customize the carrier choice in different plances, so we build a common control",
+	"__version": "v3.20_s0",
+	"carrierSelector": {
+		"title": "Carrier",
+		"headline": "Select the carrier strategy for this account",
+		"useBlended": {
+			"friendlyName": "Use System-wide Carriers",
+			"help": "This will route the calls to the global carriers set up on the master account"
+		},
+		"useReseller": {
+			"friendlyName": "Use Partner \"{{variable}}\" Carriers",
+			"help": "This will route the calls to {{variable}}'s carriers.",
+			"__comment": "UI-1041: Needed to add a default message for people who aren't white labeling",
+			"__version": "v3.19_s3",
+			"defaultFriendlyName": "Use your Reseller's Carriers",
+			"defaultHelp": "This will route the calls to your Reseller's Carriers"
+		},
+		"byoc": {
+			"friendlyName": "Use Carriers defined on This Account",
+			"help": "This will route the calls to the carriers set up for this account via the Carriers app."
+		},
+		"saveSuccess": "You successfully updated the Carrier settings for this account!",
+		"huntError": "Your existing settings for your no_match route are not supported in Monster UI, don't change anything in this screen if you wish to continue to use these settings. Otherwise, select one of the option in the dropdown!"
+	},
+
+	"__comment": "UI-1219: Adding the prepend feature to numbers",
+	"__version": "v3.20_s1",
+	"numberPrepend": {
+		"dialogTitle": "Number Prepend Setup",
+		"title": "Text to prepend",
+		"label": "Prepend",
+		"help": "This text will appear before your number when receiving a call. This can be used to better identify which number was called when you use more than one.",
+		"successUpdate": "You successfully updated the prepended text for {{phoneNumber}}"
+	},
+
+	"__comment": "UI-228: Adding the numberSelector common control",
+	"__version": "v3.20_s4",
+	"numberSelector": {
+		"emptyValue": "- Select a number -",
+		"removeLink": "Remove",
+		"spareLink": "Select a spare number",
+		"buyLink": "Buy a new number"
+	},
+
+	"__comment": "UI-1386: Adding the numberListing common control",
+	"__version": "v3.20_s4",
+	"monsterListing": {
+		"numbers": {
+			"title": "List of Numbers",
+			"headline": "Select numbers",
+			"headlineSingle": "Select a number",
+			"noMatch": "No numbers matched your search.",
+			"noData": "No numbers are available.",
+			"noDataSelected": "You didn't select any number. You need to select at least one number by clicking on a number in the list.",
+			"okButton": "Select",
+			"cancelButton": "Cancel"
+		},
+		"devices": {
+			"title": "List of devices",
+			"headline": "Select devices",
+			"headlineSingle": "Select a device",
+			"noMatch": "No device matched your search.",
+			"noData": "No devices are available.",
+			"noDataSelected": "You didn't select any device. You need to select at least one device by clicking on an device in the list.",
+			"okButton": "Select",
+			"cancelButton": "Cancel"
+		},
+		"default": {
+			"title": "List of items",
+			"headline": "Select items",
+			"headlineSingle": "Select an item",
+			"noMatch": "No item matched your search.",
+			"noData": "No items are available.",
+			"noDataSelected": "You didn't select any item. You need to select at least one item by clicking on an item in the list.",
+			"okButton": "Select",
+			"cancelButton": "Cancel"
+		}
+	}
+}

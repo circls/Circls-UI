@@ -1,0 +1,274 @@
+<div class="edit-device" data-id="{{id}}">
+	<div class="title-bar clearfix">
+		<div class="device-title pull-left">
+			<div class="device-icon">
+				<i class="icon-telicon-mobile-phone"></i>
+			</div>
+
+			{{#if id}}
+				<div class="device-model">{{name}}</div>
+			{{else}}
+				<div class="device-model">{{i18n.devices.smartphone.new}}</div>
+			{{/if}}
+		</div>
+
+		<ul class="nav nav-pills pull-right">
+			<li class="tabs-main-selector main-section active">
+				<a class="tabs-selector change-section" data-section="basic" href="javascript:void(0)">{{ i18n.devices.popupSettings.basicTitle }}</a>
+			</li>
+			<li class="tabs-main-selector main-section dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">{{ i18n.devices.popupSettings.advancedTitle }}
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a class="tabs-selector change-section" data-section="options" href="javascript:void(0)"><i class="fa fa-cogs"></i>{{ i18n.devices.popupSettings.options.menuTitle }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="audio" href="javascript:void(0)"><i class="fa fa-music"></i>{{ i18n.devices.popupSettings.audio.menuTitle }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="video" href="javascript:void(0)"><i class="fa fa-video-camera"></i>{{ i18n.devices.popupSettings.video.menuTitle }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="restrictions" href="javascript:void(0)"><i class="fa fa-ban"></i>{{ i18n.devices.popupSettings.restrictions.menuTitle }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="callerId" href="javascript:void(0)"><i class="fa fa-ambulance"></i>{{ i18n.devices.popupSettings.callerId.menuTitle }}</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<form id="form_device" class="form-horizontal">
+			<div class="tabs-section clearfix" data-section="basic">
+                            <div id="howtosoftphone" class="type-info helper">
+                                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#help_smartphone"><i class="fa fa-question-circle"></i><span class="text">{{ i18n.devices.popupSettings.sip.info.link.showInfo }}</span></a>
+                                    <div id="help_smartphone" class="collapse">
+                                                    <p><strong>{{i18n.devices.popupSettings.sip.types.autoprovision}}</strong>: {{i18n.devices.popupSettings.sip.info.types.autoprovision}}</p>
+                                                    <p><strong>{{i18n.devices.popupSettings.sip.types.software}}</strong>: {{i18n.devices.popupSettings.sip.info.types.software}}</p>
+                                                    <p><strong>{{i18n.devices.popupSettings.sip.types.qrcode}}</strong>: {{i18n.devices.popupSettings.sip.info.types.qrcode}}</p>
+                                                    <p><strong>{{i18n.devices.popupSettings.sip.types.security}}</strong>: {{i18n.devices.popupSettings.sip.info.types.security}}</p>
+                                    </div>
+                            </div>
+
+			    <div class="sip-list">
+				<div class="sips-left clearfix">
+				    <div class="control-group">
+					<label class="control-label" for="name">{{ i18n.devices.smartphone.deviceName }}</label>
+					<div class="controls">
+						<input type="text" id="name" name="name" value="{{name}}">
+					</div>
+				    </div>
+				    <div class="control-group">
+					<label class="control-label" for="number">{{ i18n.devices.cellphone.number }}</label>
+					<div class="controls">
+						<input type="text" name="call_forward.number" placeholder="{{ i18n.devices.cellphone.numberPlaceholder }}" value="{{call_forward.number}}">
+					</div>
+				    </div>
+				    <div class="control-group">
+					<label class="control-label" for="sip_username">{{ i18n.devices.sip.username }}</label>
+					<div class="controls">
+						<input type="text" id="sip_username" name="sip.username" value="{{sip.username}}">
+					</div>
+				    </div>
+
+				    <div class="control-group">
+					<label class="control-label" for="sip_password">{{ i18n.devices.sip.password }}</label>
+					<div class="controls">
+						<input type="password" id="sip_password" name="sip.password" value="{{sip.password}}">
+					</div>
+				    </div>
+
+				    <div class="control-group">
+					<label class="control-label" for="sip_username">{{ i18n.devices.sip.realm }}</label>
+					<div class="controls">
+						<span class="displayed-realm">{{ sip.realm }}</span>
+					</div>
+				    </div>
+
+                                       <div class="control-group">
+                                                <label class="control-label">{{ i18n.devices.unregistinfo }}
+                                                <i class="help-popover fa fa-question-circle" data-original-title="{{ i18n.devices.unregistinfoHelp }}" data-placement="top" data-toggle="tooltip"></i>
+                                                </label>
+                                                <div class="controls">
+                                                        <div class="switch">
+                                                        {{#monsterSwitch}}
+                                                                <input class="switch_state" type="checkbox" name="extra.notify_unregister" id="notify_unregister" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}" {{#unless suppress_unregister_notifications}}checked{{/unless}}{{#if this.disabled}} disabled{{/if}} />
+                                                        {{/monsterSwitch}}
+                                                        </div>
+                                                        <i class="restriction-matcher-sign fa-lg fa fa-check monster-green"></i>
+                                                </div>
+                                        </div>
+                                       <div class="control-group">
+                                                <label class="control-label">{{ i18n.useiax2Gateway }}
+                                                <i class="help-popover fa fa-question-circle" data-original-title="{{ i18n.devices.useiax2infoHelp }}" data-placement="top" data-toggle="tooltip"></i>
+                                                </label>
+                                                <div class="controls">
+                                                        <div class="switch">
+                                                        {{#monsterSwitch}}
+                                                                <input class="switch_state" type="checkbox" name="useiax2_gateway" id="useiax2_gateway" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}" {{#if useiax2_gateway}} checked{{/if}} />
+                                                        {{/monsterSwitch}}
+                                                        </div>
+                                                </div>
+                                        </div>
+
+				</div>
+
+				<div class="sips-right clearfix">
+                                    <p><a target="_blank" href="https://www.zoiper.com/en/voip-softphone/download/zoiper3" id="getLinkfromBrand">{{ i18n.devices.popupSettings.sip.download }}</a></p>
+				</div>
+				<div class="sips-right clearfix">
+				{{#if id}}
+                                    <img style="max-width: 200px;" src="https://oem.zoiper.com/qr.php?provider_id={{ account.provision.zoipertoken }}&u={{ sip.username }}&h={{ sip.realm }}&p={{ sip.password }}&o=&t=&x=&a=&tr=" alt="QR image" />
+				{{else}}
+                                    <img style="max-width: 200px;" src="https://oem.zoiper.com/qr.php?provider_id=&u={{ sip.username }}&h={{ sip.realm }}&p={{ sip.password }}&o=&t=&x=&a=&tr=" alt="QR image" />
+				{{/if}}
+				</div>
+			    </div>
+
+			</div>
+
+			<div class="tabs-section" data-section="options">
+				<div class="control-group">
+					<label class="control-label" for="require_keypress"></label>
+					<div class="controls">
+						<label>
+							{{#monsterCheckbox i18n.devices.smartphone.requireKeypress }}
+								<input id="require_keypress" type="checkbox" name="extra.allowVMCellphone"{{#if extra.allowVMCellphone}} checked="checked"{{/if}}></input>
+							{{/monsterCheckbox}}
+						</label>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="keep_caller_id"></label>
+					<div class="controls">
+						<label>
+							{{#monsterCheckbox i18n.devices.smartphone.keepCallerId }}
+								<input id="keep_caller_id" type="checkbox" name="call_forward.keep_caller_id"{{#if call_forward.keep_caller_id}} checked="checked"{{/if}}></input>
+							{{/monsterCheckbox}}
+						</label>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="hide_contact_list"></label>
+					<div class="controls">
+						<label>
+							{{#monsterCheckbox i18n.devices.smartphone.hideContactList }}
+								<input id="hide_contact_list" type="checkbox" name="contact_list.exclude"{{#if contact_list.exclude}} checked="checked"{{/if}}></input>
+							{{/monsterCheckbox}}
+						</label>
+					</div>
+				</div>
+			</div>
+
+                        <div class="tabs-section clearfix" data-section="audio">
+                                <div class="volume-wrapper pull-left">
+                                        <div class="title">
+                                                {{ i18n.devices.popupSettings.audio.sectionTitle }}
+                                        </div>
+                                </div>
+                                <div class="volume-wrapper pull-right">
+                                        <div id="volume-tab-tx">
+                                            <div class="section_tx">
+                                                <span class="tooltip_tx"></span>
+                                                    <div id="slider_tx"></div>
+                                                <span class="volume_tx"></span>
+                                            </div>
+                                        </div>
+                                        <div id="volume-tab-rx">
+                                            <div class="section_rx">
+                                                <span class="tooltip_rx"></span>
+                                                    <div id="slider_rx"></div>
+                                                <span class="volume_rx"></span>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="helper pull-left">
+                                        <i class="icon-info-sign"></i>
+                                        {{ i18n.devices.popupSettings.dragAndDropAudio }}
+                                </div>
+                                <div class="items-selector codec-selector clearfix" id="audio_codec_selector"></div>
+                        </div>
+
+			<div class="tabs-section clearfix" data-section="video">
+				<div class="title">
+					{{ i18n.devices.popupSettings.video.sectionTitle }}
+				</div>
+				<div class="helper">
+					<i class="fa fa-info-circle"></i>
+					{{ i18n.devices.popupSettings.dragAndDrop }}
+				</div>
+
+				<div class="items-selector codec-selector" id="video_codec_selector"></div>
+			</div>
+
+			<div class="tabs-section clearfix" data-section="restrictions">
+				<div class="restrictions-container">
+					{{#if extra.hasDisabledRestrictions}}
+						{{#monsterText 'info' 'disabled-restrictions-info'}}
+							<p>{{ i18n.devices.popupSettings.restrictions.disabledRestrictionsInfo }}</p>
+						{{/monsterText}}
+					{{/if}}
+					<div class="restriction-message help-box">
+					</div>
+					<div class="restriction-matcher-div">
+						<i class="help-popover fa fa-question-circle fa-lg" data-original-title="{{i18n.devices.popupSettings.restrictions.matcher.help}}" data-placement="top" data-toggle="tooltip"></i>
+						<input type="text" class="restriction-matcher-input" placeholder="{{i18n.devices.popupSettings.restrictions.matcher.placeholder}}" />
+						<button type="button"  class="monster-button monster-button-primary restriction-matcher-button">{{i18n.devices.popupSettings.restrictions.matcher.button}}</button>
+					</div>
+					<div class="title">
+						{{ i18n.devices.popupSettings.restrictions.sectionTitle }}
+					</div>
+					<div class="restriction-list">
+					{{#each extra.restrictions}}
+                                        <div class="clearfix restrictions-list">
+						<div class="control-group restriction-line{{#if this.disabled}} disabled{{/if}}" data-restriction="{{@key}}">
+							<label class="control-label">{{this.friendly_name}}
+								{{#if this.help}}
+									<i class="help-popover fa fa-question-circle" data-original-title="{{this.help}}" data-placement="top" data-toggle="tooltip"></i>
+								{{/if}}
+							</label>
+							<div class="controls">
+								<div class="switch">
+								{{#monsterSwitch}}
+									<input class="restrictions-switch" type="checkbox" name="call_restriction.{{@key}}.action" data-on="{{@root.i18n.devices.popupSettings.restrictions.allow}}" data-off="{{@root.i18n.devices.popupSettings.restrictions.deny}}" {{#compare this.action '===' 'inherit'}}{{#unless this.disabled}} checked{{/unless}}{{/compare}}{{#if this.disabled}} disabled{{/if}}></input>
+								{{/monsterSwitch}}
+								</div>
+								<i class="restriction-matcher-sign fa-lg fa fa-check monster-green"></i>
+							</div>
+						</div>
+					</div>
+					{{/each}}
+					</div>
+				</div>
+			</div>
+
+			<div class="tabs-section clearfix" data-section="callerId">
+				<div class="title">
+					{{ i18n.devices.popupSettings.callerId.sectionTitle }}
+				</div>
+
+				{{#if extra.hasE911Numbers}}
+					<div class="control-group">
+						<label class="control-label">{{ i18n.devices.popupSettings.callerId.emergency }}</label>
+						<div class="controls emergency-number"></div>
+					</div>
+				{{else}}
+					{{#monsterText 'error'}}
+						{{ i18n.devices.popupSettings.callerId.noE911Numbers }}
+					{{/monsterText}}
+				{{/if}}
+			</div>
+		</form>
+	</div>
+
+	<div class="actions clearfix">
+		{{#if id}}
+			<a id="delete_device" class="monster-link"><i class="fa fa-trash-o monster-red"></i>{{ i18n.devices.deleteDevice }}</a>
+		{{/if}}
+
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+				<button type="button" class="monster-button monster-button-success save">
+				{{#if id}}
+					{{ i18n.saveChanges }}
+				{{else}}
+					{{ i18n.devices.createDevice }}
+				{{/if}}
+				</button>
+		</div>
+	</div>
+</div>

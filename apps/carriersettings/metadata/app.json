@@ -1,0 +1,63 @@
+{
+   "name": "carriersettings",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "source_url": "http://kazoo.allip.ovh/apps/carriersettings",
+   "i18n": {
+       "en-US": {
+           "label": "Carrier-Settings",
+           "description": "Set up and manage Carrier-Settings from your suppliers.",
+           "extended_description": "You can setup and manage your Carrier-Settings per web.",
+           "features": [ "rateentry per web manage", "create new Carrier-Settings per csv upload" ]
+       },
+       "ro-RO": {
+           "label": "Carrier-Settings",
+           "description": "Set up and manage Carrier-Settings from your suppliers.",
+           "extended_description": "You can setup and manage your Carrier-Settings per web.",
+           "features": [ "rateentry per web manage", "create new Carrier-Settings per csv upload" ]
+       },
+       "ru-RU": {
+           "label": "Carrier-Settings",
+           "description": "Set up and manage Carrier-Settings from your suppliers.",
+           "extended_description": "You can setup and manage your Carrier-Settings per web.",
+           "features": [ "rateentry per web manage", "create new Carrier-Settings per csv upload" ]
+       },
+       "nl-NL": {
+           "label": "Carrier-Settings",
+           "description": "Set up and manage Carrier-Settings from your suppliers.",
+           "extended_description": "You can setup and manage your Carrier-Settings per web.",
+           "features": [ "rateentry per web manage", "create new Carrier-Settings per csv upload" ]
+       },
+       "de-DE": {
+           "label": "Carrier-Einstellungen",
+           "description": "Einrichten und verwalten Liefereranten, Währungs- und Steuertarife.",
+           "extended_description": "Sie können die Verbindungstarife einpflegen und verändern.",
+           "features": [ "Einzelne Tarife erstellen und anpassen", "Neue Tarife upload per csv" ]
+       },
+       "it-IT": {
+           "label": "Carrier-Settings",
+           "description": "Set up and manage Carrier-Settings from your suppliers.",
+           "extended_description": "You can setup and manage your Carrier-Settings per web.",
+           "features": [ "rateentry per web manage", "create new Carrier-Settings per csv upload" ]
+       },
+       "fr-FR": {
+           "label": "Carrier-Settings",
+           "description": "Set up and manage Carrier-Settings from your suppliers.",
+           "extended_description": "You can setup and manage your Carrier-Settings per web.",
+           "features": [ "rateentry per web manage", "create new Carrier-Settings per csv upload" ]
+       },
+       "es-ES": {
+           "label": "Carrier-Settings",
+           "description": "Set up and manage Carrier-Settings from your suppliers.",
+           "extended_description": "You can setup and manage your Carrier-Settings per web.",
+           "features": [ "rateentry per web manage", "create new Carrier-Settings per csv upload" ]
+       }
+   },
+   "tags": [ "carrier", "reseller" ],
+   "author": "ALLIP.ovh",
+   "version": "1.0",
+   "license": "MPL",
+   "price": "0.00",
+   "icon": "Carriersettings_app.png",
+   "screenshots": [ "carriersettings_1.png", "carriersettings_2.png" ],
+   "pvt_type": "app"
+}

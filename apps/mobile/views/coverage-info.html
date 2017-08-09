@@ -1,0 +1,51 @@
+<div class="app-content coverage-info{{#if isActivating}} step-1{{/if}}">
+	<h3 class="title">{{i18n.mobileApp.coverageInfo.title}}</h3>
+	<p class="text">{{coverage.formatted_address}}</p>
+	<div class="coverage-info">
+		<div class="signal-indicator-container">
+			<div class="signal-strength" data-strength="{{coverage.LTE}}">
+				<div class="signal optimal">
+					<div class="signal strong">
+						<div class="signal medium">
+							<div class="signal weak">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="signal-type">{{i18n.mobileApp.coverageInfo.signalTypes.lte}}</div>
+		</div>
+		<div class="signal-indicator-container">
+			<div class="signal-strength" data-strength="{{coverage.CDMA}}">
+				<div class="signal optimal">
+					<div class="signal strong">
+						<div class="signal medium">
+							<div class="signal weak">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="signal-type">{{i18n.mobileApp.coverageInfo.signalTypes.cdma}}</div>
+		</div>
+		<div class="signal-indicator-container">
+			<div class="signal-strength" data-strength="{{coverage.WIMAZ}}">
+				<div class="signal optimal">
+					<div class="signal strong">
+						<div class="signal medium">
+							<div class="signal weak">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="signal-type">{{i18n.mobileApp.coverageInfo.signalTypes.wimaz}}</div>
+		</div>
+	</div>
+	<div class="inline-buttons">
+		<button class="monster-button-cancel check-zipCode">{{i18n.mobileApp.coverageInfo.buttons.check}}</button>
+	{{#if isActivating}}
+		<button class="monster-button-primary activate">{{i18n.mobileApp.coverageInfo.buttons.activate}}</button>
+	{{/if}}
+	</div>
+</div>

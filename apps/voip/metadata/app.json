@@ -1,0 +1,188 @@
+{
+   "name": "voip",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "i18n": {
+       "en-US": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX gives you full control to set up and manage office phone system.",
+           "extended_description": "It's a complete web portal that allows you to visualize and manage your full-featured PBX without an ounce of hardware. Manage your users, departments, numbers, devices, voicemails, conference bridges in just few simple clicks.",
+           "features": [
+               "Call flows",
+               "Unlimited extensions",
+               "Phone auto-provisioner",
+               "Conferencing",
+               "Feature codes",
+               "Manage devices for all users",
+               "Time of Day Routing",
+               "Call History",
+               "All standard call handling features",
+               "Directory",
+               "Voicemail boxes"
+           ]
+       },
+       "dk-DK": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX gives you full control to set up and manage office phone system.",
+           "extended_description": "It's a complete web portal that allows you to visualize and manage your full-featured PBX without an ounce of hardware. Manage your users, departments, numbers, devices, voicemails, conference bridges in just few simple clicks.",
+           "features": [
+               "Call flows",
+               "Unlimited extensions",
+               "Phone auto-provisioner",
+               "Conferencing",
+               "Feature codes",
+               "Manage devices for all users",
+               "Time of Day Routing",
+               "Call History",
+               "All standard call handling features",
+               "Directory",
+               "Voicemail boxes"
+           ]
+       },
+       "ro-RO": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX gives you full control to set up and manage office phone system.",
+           "extended_description": "It's a complete web portal that allows you to visualize and manage your full-featured PBX without an ounce of hardware. Manage your users, departments, numbers, devices, voicemails, conference bridges in just few simple clicks.",
+           "features": [
+               "Call flows",
+               "Unlimited extensions",
+               "Phone auto-provisioner",
+               "Conferencing",
+               "Feature codes",
+               "Manage devices for all users",
+               "Time of Day Routing",
+               "Call History",
+               "All standard call handling features",
+               "Directory",
+               "Voicemail boxes"
+           ]
+       },
+       "ru-RU": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX gives you full control to set up and manage office phone system.",
+           "extended_description": "It's a complete web portal that allows you to visualize and manage your full-featured PBX without an ounce of hardware. Manage your users, departments, numbers, devices, voicemails, conference bridges in just few simple clicks.",
+           "features": [
+               "Call flows",
+               "Unlimited extensions",
+               "Phone auto-provisioner",
+               "Conferencing",
+               "Feature codes",
+               "Manage devices for all users",
+               "Time of Day Routing",
+               "Call History",
+               "All standard call handling features",
+               "Directory",
+               "Voicemail boxes"
+           ]
+       },
+       "it-IT": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX offre un controllo completo per creare e gestire il sistema telefonico dell'ufficio.",
+           "extended_description": "E 'un portale web completo, che permette di visualizzare e gestire il vostro PBX completo senza un grammo di hardware Gestisci i tuoi utenti, Dipartimenti, i numeri, i dispositivi, messaggi vocali, ponti conferenze in pochi semplici click. ",
+           "features": [
+               "Flussi di chiamata",
+               "Estensioni illimitati",
+               "Phone auto-provisioner",
+               "Conferencing",
+               "Codici Feature",
+               "Gestire i dispositivi per tutti gli utenti",
+               "Ora del giorno Routing",
+               "Call History",
+               "Tutto chiamata standard di funzioni di gestione",
+               "Directory",
+               "Scatole Voicemail"
+           ]
+       },
+       "fr-FR": {
+           "label": "Hosted PBX",
+           "description": "PBX hébergé vous donne le plein contrôle à mettre en place et gérer le système de téléphone de bureau.",
+           "extended_description": "Ce est un portail web complet qui vous permet de visualiser et de gérer votre PBX complet sans une once de matériel Gérer vos utilisateurs, Des ministères, des chiffres, des dispositifs, des messages vocaux, des ponts de conférence en seulement quelques clics. ",
+           "caractéristiques": [
+               "Les flux d'appels",
+               "Extensions illimitées",
+               "Téléphone auto-approvisionneur",
+               "Conférence",
+               "Codes de fonction",
+               "Gérer les périphériques pour tous les utilisateurs",
+               "Time of Day Routing",
+               "Historique des appels",
+               "Tout appel standard manipulation caractéristiques",
+               "Répertoire",
+               "Boîtes de messagerie vocale"
+           ]
+       },
+       "de-DE": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX gibt Ihnen volle Kontrolle für die Einrichtung und Verwaltung ihrer Netzwerk-Telefonanlage.",
+           "extended_description": "Dies ist ein komplettes Web-Portal für Ihre Telefonanlage. Ohne zusätzliche Hardware können Sie Benutzer, Abteilungen, Nummern, Geräte, Sprachnachrichten und Konferenzen mit nur wenigen Mausklicks verwalten.",
+           "features": [
+               "Geräte für alle Benutzer verwalten",
+               "Zeitgesteuerte Anrufe",
+               "Anrufe steuern",
+               "Automatische Telefoneinrichtung",
+               "Konferenzen einrichten und steuern",
+               "Funktionsnummern einrichten",
+               "Ruf Statistik",
+               "Ruffunktionen einrichten",
+               "Telefon Verzeichnis",
+               "Beantworter mit eMail Benachrichtigung",
+               "Aufnahme der Gespräche"
+           ]
+       },
+       "nl-NL": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX gives you full control to set up and manage office phone system.",
+           "extended_description": "It's a complete web portal that allows you to visualize and manage your full-featured PBX without an ounce of hardware. Manage your users, departments, numbers, devices, voicemails, conference bridges in just few simple clicks.",
+           "features": [
+               "Call flows",
+               "Unlimited extensions",
+               "Phone auto-provisioner",
+               "Conferencing",
+               "Feature codes",
+               "Manage devices for all users",
+               "Time of Day Routing",
+               "Call History",
+               "All standard call handling features",
+               "Directory",
+               "Voicemail boxes"
+           ]
+       },
+       "es-ES": {
+           "label": "Hosted PBX",
+           "description": "Hosted PBX gives you full control to set up and manage office phone system.",
+           "extended_description": "It's a complete web portal that allows you to visualize and manage your full-featured PBX without an ounce of hardware. Manage your users, departments, numbers, devices, voicemails, conference bridges in just few simple clicks.",
+           "features": [
+               "Call flows",
+               "Unlimited extensions",
+               "Phone auto-provisioner",
+               "Conferencing",
+               "Feature codes",
+               "Manage devices for all users",
+               "Time of Day Routing",
+               "Call History",
+               "All standard call handling features",
+               "Directory",
+               "Voicemail boxes"
+           ]
+       }
+   },
+   "tags": [
+       "reseller", "carrier", "business"
+   ],
+   "icon": "SmartPBX_app.png",
+   "author": "2600Hz",
+   "version": "1.0",
+   "license": "MPL",
+   "price": "0.00",
+   "screenshots": [
+       "smartpbx1.png",
+       "smartpbx2.png",
+       "smartpbx3.png",
+       "smartpbx4.png",
+       "smartpbx5.png"
+   ],
+   "urls": {
+       "documentation": "{documentation_url}",
+       "howto": "{howto_video_url}"
+   },
+   "pvt_type": "app"
+}

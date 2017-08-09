@@ -1,0 +1,630 @@
+{
+        "regextern": {
+                "dialogTitle": "External Number-Registration",
+                "title": "External Registration",
+                "label": "External Registration",
+                "help": "This Number will be external registered for incomming calls.",
+                "successUpdate": "You successfully updated the external registration of the number {{phoneNumber}}",
+               "type": "Type",
+               "proxy": "Proxy",
+               "username": "Username",
+               "extension": "Extension",
+               "password": "Passwort",
+               "active": "Reg. active",
+               "didtype": "DID-Typ",
+               "didprovider": "Origin Country",
+               "didprovider": "Provider-Name",
+               "didinfo": "Informations",
+               "providerurl": "Provider-URL-Portal",
+               "providerurltype": "API-Typ",
+               "providerusr": "Regname",
+               "providerpass": "Reg-Passwort",
+               "reged_email": "Reg-Email",
+               "pvt_activestart": "Date Activ",
+               "pvt_activestartHelp": "At this date will automatic assigent this number to use",
+               "pvt_activestop": "Date Inactiv",
+               "pvt_activestopHelp": "At this Time it will automatic unassigent this number to use",
+               "pvt_created": "Date created",
+               "pvt_changed": "System actived",
+               "pvt_modified": "Date modified",
+               "placeholder_type": "gateway",
+               "placeholder_proxy": "sip.voip.com",
+               "placeholder_username": "0525081922",
+               "placeholder_extension": "+41525081922",
+               "placeholder_password": "********",
+               "placeholder_active": "false",
+               "placeholder_didtype": "sip",
+               "placeholder_didprovider": "NETSTREAM",
+               "placeholder_didinfo": "host=sip.voip.com",
+               "placeholder_providerurl": "www.voip.com",
+               "placeholder_providerurltype": "json",
+               "placeholder_providerusr": "",
+               "placeholder_providerpass": "",
+               "placeholder_reged_email": "",
+               "placeholder_pvt_activestart": "1431282897",
+               "placeholder_pvt_activestop": "1431282897",
+               "placeholder_pvt_created": "1431282897",
+               "placeholder_pvt_modified": "1431282897",
+               "status": "Regedstate",
+               "numberstate": "Number State",
+               "force_outbound": "OnNet No. use",
+               "didemergency": "Emergency-Provider"
+        },
+	"accountBrowser": {
+		"missingAccount": "account non trovato",
+		"addAccount": "Aggiungi account",
+		"searchDatabase": "Numero di ricerca in banca dati"
+	},
+	"numbers": {
+		"mainNumber": "numero dell'ufficio",
+		"conferenceNumber": "hauptkonferenz nummer",
+		"dialogSpare": {
+			"title": "lista di numeri",
+			"headline": "disponibile il numero di",
+			"headlineNoAccount": "numeri di selezione",
+			"noMatchingNumbers": "nessun numero con loro informativa trovato.",
+			"noNumberSelected": "hanno scelto un numero qualsiasi. essi devono selezionare almeno un numero dalla lista.",
+			"proceed": "Aggiungi numeri selezionati"
+		},
+		"bulkActions": "tutti insieme",
+		"buy": "numero affitto",
+		"buyNumberLinks" : {
+			"regular": "numero locale",
+			"tollfree": "vale più il numero",
+			"vanity": "Ricerca per codice"
+		},
+		"port": "porte",
+		"assignTo": "appartiene a",
+		"confirmDelete": "vogliono cancellare i numeri selezionati dal loro conto ancora ?",
+		"delete": "cancellare",
+		"deleteE911Error": {
+			"message": "I numeri non possono essere cancellati. esso deve essere configurato con almeno un numero di emergenza.",
+			"account": "conto",
+			"numbers": "numeri"
+		},
+		"numbers": "numeri",
+		"addNumbers": "Aggiungi numero",
+		"moveNumbers": "spostarsi",
+		"searchNumbers": "numero Ricerca...",
+		"go": "continuare a",
+		"deleteNumbers": "cancellare",
+		"successDelete": "hanno {{ count }} numero di telefono (s) rimosso dal proprio conto.",
+                "successMove": "hanno successo {{ count }} numero di telefono (s) sul seguente conto",
+                "noSpareNumber": "non ci sono numeri gratuiti a questo account.",
+                "noUsedNumber": "non ci sono numeri coinvolti in questo account.",
+                "spareNumbers": "numeri gratuiti",
+                "usedNumbers": "numeri attivi in uso",
+                "helpSpareNumbers": "mostra la lista dei numeri che non sono attivi per questo account e conti.",
+                "helpUsedNumbers": "L'elenco mostra i numeri utilizzati per questo conto e sotto i loro conti.",
+                "callflow": "hosted PBX",
+                "trunkstore": "trunking",
+                "notUsedNumber": "questi numeri non sono utilizzati, ma appartengono al conto {{ nome }} conto",
+                "notSpareNumber": "{{numero }}",
+                "numberNotFound": "il numero inserito non è stato trovato. assicurarsi che siano che sono entrati l'intero numero di numeri di parte sono alla ricerca di ciò non è supportato (la formattazione in realtà non rotolare!)",
+                "failoverIconHelp": "Questo simbolo significa che è impostata una deviazione fallire su questo numero.",
+                "cnamOutboundIconHelp": "Questo simbolo indica che il chiamante-id in uscita è impostata su questo numero.",
+                "cnamInboundIconHelp": "Questo simbolo significa che è impostato per questo numero entrante caller- id.",
+                "e911IconHelp": "Questo simbolo significa che sia impostato l'indirizzo di emergenza su questo numero.",
+                "localIconHelp": "Questo simbolo indica che il numero è un numero locale.",
+		"dialogConfirm": {
+			"from": "vanno dal",
+			"cancel": "troncare",
+			"delete": {
+				"title": "eliminare i numeri-Conferma",
+				"questionPartOne": "Sei sicuro di questo?",
+				"questionPartTwo": "il numero da eliminare (s) ?",
+				"button": "Elimina numero (s)"
+			},
+			"move": {
+				"title": "spostare i numeri-Conferma",
+				"questionPartOne": "sei sicuro che il",
+				"questionPartTwo": "numero (s) a",
+				"questionPartThree": "vuole spostare ??",
+				"button": "numero mossa (s)"
+			}
+		},
+		"prependIconHelp": "Questo simbolo indica che il numero viene visualizzato con un testo vorgestelltem.",
+                "sync": {
+                        "label": "sincronizzare",
+                        "success": "hanno completato con successo la sincronizzazione con il database.",
+                        "help": "se non hanno i numeri nella categoria, è necessario synchronisatione per active."
+                },
+                "portIconHelp": "Ce numéro est en cours de transfert et sera supprimé si celui-ci échoue. Il peut être configuré mais ne sera pas utilisable",
+                "deleteRecapDialog": {
+                        "headline": "Vous pouvez consulter le récapitulatif de l'opération ci-dessous. Cliquez sur Continuez pour retourner à la liste des Numéros.",
+                        "title": "Récapitulatif de l'opération",
+                        "continue": "Continuer"
+                }
+	},
+	"callerId": {
+                "CallerIdName": "caller-id- nome",
+                "callerIdPlaceholder": "Peter Miller",
+                "dialogTitle": "caller id nome scelta",
+                "errorUpdate": "errore quando update il caller- id con il numero.",
+                "help": {
+                        "outbound": "Questo nome viene visualizzato come l'ID del chiamante, se fanno le chiamate in uscita. (15 caratteri max.) Una conversione può richiedere fino a 72 ore in più esigenti.",
+                        "inbound": "Se si attiva questa funzione, il nome del chiamante viene visualizzato nel loro id chiamante quando chiamano in entrata ricevuto."
+                },
+                "label": "caller id",
+                "successCnam": "hanno aggiornato con successo il numero di call- id di {{ numero di telefono }}",
+                "successRemoveCnam": "hanno rimosso con successo il call- id di {{ numero di telefono }}",
+                "noCallerId": "non vi è alcun call- id per il numero {{numero di telefono }}",
+                "inboundTitle": "incoming caller-id- nome",
+                "outboundTitle": "call- id -name in uscita"
+        },
+        "e911": {
+                "addressLine1": "indirizzo linea",
+                "addressLine2": "piano",
+                "city": "città",
+                "dialogTitle": "Modifica dell'indirizzo Notruf",
+                "errorUpdate": "nell'aggiornamento chiamata di emergenza indirizzo è verificato un errore.",
+                "gmapPinLabel": "+ Notruf indirizzo",
+                "infoBox": "Questo indirizzo è il servizio di soccorso indicano quando scelgono al loro interno dei servizi d'emergenza.",
+                "label": "notrufdienste",
+                "lastE911Error": "devono aver fatto almeno un numero nei bandi conto di emergenza. si prega di mettere su un numero diverso prima che il numero può essere cancellato.",
+                "postal": "codice postale",
+                "rotatedText": "per i servizi di soccorso",
+                "state": "regione",
+                "successE911": "il numero di emergenza dell'indirizzo {{numero di telefono }} è stato aggiornato con successo.",
+                "title": "notrufadresse",
+                "verifyLocation": "Recensione dell'indirizzo chiamata di emergenza"
+        },
+	"failover": {
+		"activate": "attivare",
+		"alternateNumber": "altro numero",
+		"errorUpdate": "errore durante l'aggiornamento del numero fallimento reindirizzamento.",
+		"failoverTitle": "impostare il numero di reindirizzamento fail",
+		"failoverText": "se non è possibile collegare la chiamata ricevuta, collegarsi con",
+		"helpFailover": "se non può essere collegato chiamata in arrivo, per esempio, (Con l'interruzione, il fallimento) può un numero alternativo o selezionare dispositivo voip. se è un numero esterno portano logicamente il costo per esso.",
+		"invalidFailoverNumber": "numero fallimento reindirizzamento non è corretto, per favore riprova",
+		"label": "fallimento deviazione",
+		"noDataFailover": "nessuna voce è fatta, si cerca ancora",
+		"or": "o",
+		"removeFailover": "cancellare",
+		"sipAddress": "sip-indirizzo",
+		"successFailover": "hanno erfogeich aggiornato il fail del numero deviazione {{ numero di telefono }}.",
+		"successRemove": "hanno eliminato con successo il fail del numero deviazione {{ numero di telefono }}."
+	},
+	"buyNumbers": {
+                "defaultCountry": "IT",
+		"buyDialogTitle": "numero affitto",
+		"countrySelectLabel": "seleziona il paese",
+		"cityInputLabel": "Ricerca per città o il codice",
+		"seqCheckboxLabel": "visualizzare solo numeri consecutivi.",
+		"seqInputLabel": "come molte serie in questo ?",
+		"seqNumAlert": "hanno la dimensione del blocco del numero collegate in serie (ha) specificare. (Un numero 2-999)",
+		"seqNumParamLabel": "di {{ }} sequentialnumbers in serie collegati numeri (fatto)",
+		"areaCodeRadioLabel": "Selezionare il codice",
+		"noInputAlert": "hanno bisogno di inserire un codice o più vicino per continuare",
+		"searchResults": "Ricerca per",
+		"backToSearch": "Torna alla ricerca",
+		"loadingNumbers": "Caricare i numeri...",
+		"numberAddedSingle": "Aggiungi numero",
+		"numberAddedPlural": "numeri aggiunti",
+		"selectedNumbers": "selezione di numeri",
+		"moreInfo": "Clicca qui per maggiori informazioni",
+		"tollfreeRadioLabel": "scegliere un codice per i numeri gratuiti",
+		"buyNumbers": "numero affitto",
+		"noSelectedNumAlert": "essi non selezionare un numero in affitto.",
+		"buyNumber": "numero affitto",
+		"searchAgain": "Cerca un altro numero",
+		"summaryTotalNumbers": "numeri totalmente composti",
+		"summaryTotalCharges": "costo totale",
+		"noSearchResult": "non poteva essere con il suo numero di selezione trovata. provare con altri digitato di nuovo.",
+		"partialNumAlert": "inserisci un numero valido. numeri di parte non sono ammessi.",
+		"areaCode": "codice regionale",
+		"add": "causa",
+		"month": "il mese",
+		"search": "cercare",
+		"checkingMessage": "numeri sono controllati...",
+		"processingMessage1": "i numeri sono attivati...",
+		"processingMessage2": "attendere fino a quando il processo è completo.",
+		"unavailable": "inaccessibile",
+		"unavailableMessage": "oops! alcuni numeri non sono selezionabili. senza di loro, o tornano ai risultati della ricerca.",
+		"unavailableServiceAlert": ". servizio non è attualmente disponibile, mi spiace per l'inconveniente. per favore riprova più tardi.",
+                "continue": "continuare a",
+                "backToSearchResults": "Torna ai risultati della ricerca",
+                "cancel": "troncare",
+                "confirm": "applicare",
+                "confirmInfoMsg1": "pagherà aggiunti al proprio account e 15 minuti dopo l'acquisto per essere pronti.",
+                "confirmInfoMsg2": "loro carta on-file di credito avrà un costo immediato per i ricorrenti servizi personalizzazione direttamente per il loro ciclo di istruzione sarà proporzionalmente..",
+                "vanitySearchLabel": "cercare una vanità numero locale o numero verde",
+                "vanitySearchInfo1": "possono pagare per qualsiasi combinazione di lettere o di ricerca.",
+                "vanitySearchInfo2": "se non riescono a trovare un numero specifico, non esitano a inviare una richiesta, tutto ciò che possiamo per i database e vedere se il numero che vogliono. sarebbe un una tantum 20.- di spese per la richiesta di un numero speciale.",
+                "sendrequest": "Inviaci una richiesta",
+                "to": "a",
+                "partialPurchaseFailure": "scusate, pagare il seguente non poteva essere acquisita"
+        },
+        "port": {
+                "numberExample": "+41525081922",
+                "dialogTitle": "numero-porting",
+                "addButton": "causa",
+                "saveButtonPartOne": "salvare",
+                "saveButtonPartTwo": "continuare in seguito",
+                "labelSaveButton": "se non hanno salvato i documenti necessari Nocht, premere salvare e tornare a questa pagina.",
+                "cancelButton": "troncare",
+                "cancelOrderButton": "Annulla questo ordine",
+                "cancelOrderPopup": "sei sicuro di voler annullare questo trasferimento ?",
+                "faqLink": "Vista port-faq-help",
+                "videoLink": "Guarda un video",
+                "contactUsLink": "contattaci",
+                "nextButton": "continuare a",
+                "progressBarLeft": "numeri in entrata",
+                "progressBarMiddle": "Invia per documenti",
+                "progressBarRight": "per ordinare",
+                "requiredConditions": "Please agree with all the conditions",
+                "comingSoon": "Coming Soon!",
+                "unknownCarrier": "unknown Carrier",
+                "state": {
+                        "completed": "completato",
+                        "pending": "Pending",
+                        "rejected": "respinto",
+                        "scheduled": "previsto",
+                        "submited": "consegnato",
+                        "unconfirmed": "non confermato"
+                },
+                "commentsPopup": {
+                        "title": "commenti",
+                        "Privat": "privato",
+                        "comment": "commento",
+                        "timestamp": "ha un commento"
+                },
+                "infoPopup": {
+                                "title": "Richiesta informazioni",
+                                "transfer": {
+                                        "legende": "informazioni porting",
+                                        "label": {
+                                                "name": "nome",
+                                                "notificationEmail": "Notifica via e-mail",
+                                                "transferDate": "il termine",
+                                                "temporaryNumbers": "numeri temporanei",
+        					"carrier": "vettore"
+        				}
+			},
+			"bill": {
+				"legend": "Info bill"
+			},
+			"confirm": {
+				"deleteComment": "siete sicuri di voler eliminare il promemoria ?"
+			}
+		},
+		"addNumbers": {
+                        "title": "Vorremmo ringraziarli per quella porta che il loro numero a noi e esprimerci così fido.",
+                        "labelAddNumbers": "quali numeri vogliono porto. invia uno o più numeri nel prossimo telaio piedi."
+                },
+                "confirmOrder": {
+                        "titlePartOne": "fantastico!",
+                        "titlePartTwo": "numero è pronto a trasferire!",
+                        "titlePartTwoBis": "pay're pronti a trasferire!",
+                        "labelEmail": "chi siamo comunicati dopo la laurea ?",
+                        "labelDate": "se si propongono di trasferire la paga",
+                        "dateInfoPartOne": "importante",
+                        "dateInfoPartTwo": "non possiamo garantire lo stesso giorno, ma faremo del nostro meglio, o informarti quando i cambiamenti si precisa che le porte possono essere 3 a 30 giorni nel sofisticato take..",
+                        "labelTemporaryNumbers": "vogliono avere numeri temporanei ?",
+                        "toggleButtonOn": "e la",
+                        "toggleButtonOff": "non",
+                        "labelTemporaryNumbersCount": "quanti numeri vuoi affittare ?",
+                        "temporaryNumbersInfoPartOne": "pagare queste verranno automaticamente aggiunti alla domanda attuale, saranno fatturati.",
+                        "temporaryNumbersInfoPartTwo": "1/mese/numero di cancellare questi numeri quando vengono completati trasferimento il tuo numero attuale per evitare costi..",
+                        "orderSummaryTitle": "riepilogo ordine",
+                        "labelOrderDate": "data ordine",
+                        "labelTransferDate": "transfer termine datum",
+                        "labelNumbersTotal": "totale pay",
+                        "labelOrderTotal": "ordine totale",
+                        "orderTotalInfoPartOne": "Una volta pedaggio",
+                        "orderTotalInfoPartTwo": "5/numero sarà addebitato sul conto.",
+                        "submitButton": "inserire"
+                },
+                "manageOrders": {
+                        "orderListInfo": "a causa della natura della retribuzione o del vettore, possiamo dividerli loro richiesta nella posizione di tutti gli ordini, per elaborare una alla volta",
+                        "eulaInfo": "Nella fase successiva dobbiamo raccogliere il disegno di legge, per dimostrare che stanno pagando i legittimi proprietari di questi lo fanno per legge, siamo in grado di dividere il loro ord ulteriormente se non pagare il conto sono menzionati carico.",
+                        "eulaWarningPartOne": "importante!",
+                        "eulaWarningPartTwo": "Si prega di capire e d'accordo con la seguente",
+                        "labelCancelService": "Voglio che il mio vecchio servizio fino a dopo la paga completamente trasmesso non annullare,",
+                        "labelCancelNumbers": "Capisco tutti gli altri numeri sul vecchio account possono essere risolti dal vecchio fornitore,",
+                        "labelChangeFee": "Capisco il mio vecchio vettore può addebitare una tassa di risoluzione anticipata,",
+                        "labelStandardNumbers": "sono i numeri di telefono standard, non previsti (ad esempio [ stella anello ])."
+                },
+                "pendingOrders": {
+                        "title": "ordini aperti",
+                        "newPortLink": "porting richiesta (porting)",
+                        "tableOrderName": "nome",
+                        "tableOrderDate": "tempo desiderato",
+                        "tableOrderStatus": "stato",
+                        "tableOrderAction": "azione",
+                        "continueButton": "continuare a",
+                        "Infobutton": "informazioni",
+                        "noOrder": "nessun ordine",
+                        "states": {
+                                "completion": "è fatta",
+                                "progress": "in corso",
+                                "ready": "adottato",
+                                "rejection": "respinto",
+                                "waiting": "aspettare",
+                                "unconfirmed": "non confermato"
+                        }
+                },
+                "resumeOrder": {
+                        "title": "condurli i seguenti comandi, uno alla volta",
+                        "labelOrder": "ordine di acquisto",
+                        "completeOrderButton": "conducono questa missione"
+                },
+                "submitDocuments": {
+                        "labelOrderName": "nome memorabile per questo porting",
+                        "labelOrderNameHelper": "z.b. società con numeri locali -office, Zurigo",
+                        "billInfoPartOne": "caricare la loro bolletta telefonica attuale e compilare i dati dell'account, come il calcolo del loro fornitore di corrente.",
+                        "billInfoPartTwo": "saperne di più",
+                        "uploadBillButton": "caricare la bolletta del telefono",
+                        "uploadBillHelper": "supporto solo in formato pdf",
+                        "labelAccountName": "nome sul disegno di legge",
+                        "labelAddress": "indirizzo stradale",
+                        "labelCity": "città",
+                        "labelState": "regione",
+                        "labelZipCode": "codice postale",
+                        "orderListInfoPartOne": "assicurarsi i seguenti numeri sul disegno di legge, che sono caricati sono mostrati.",
+                        "orderListInfoPartTwo": "se i numeri non guardare il disegno di legge, rimuovere o il contratto per tutti i numeri è ostacolato.",
+                        "loaTitlePartOne": "Si prega di compilare la dichiarazione di delega (loa) in pieno.",
+                        "loaTitlePartTwo": "qual è il loa ?",
+                        "loaDownloadStep": "scaricare",
+                        "loaSignStep": "numeri in formato loa",
+                        "loaUploadStep": "caricare",
+                        "loaHelperPartOne": "per coloro che non hanno uno scanner, ci può identificare per lettera o via fax.",
+                        "loaHelperPartTwo": "una tantum di 5,00",
+                        "loaHelperPartThree": "forma loa digitale.",
+                        "loaHelperPartFour": "come firmare documenti",
+                        "loaHelperPartFive": "elettronicamente senza pagare.",
+                        "changeButton": "cambiare"
+                },
+                "toastr": {
+                        "success": {
+                                "request": {
+                                        "update": "The port request has been updated",
+                                        "delete": "The port request has been deleted"
+                                },
+                                "comment": {
+                                        "delete": "The comment was deleted successfully"
+                                }
+                        },
+                        "error": {
+                                "request": {
+                                        "update": "The port request failed to update"
+                                },
+                                "mimeTypes": "The following files are not in a supported format: ",
+                                "size": "The following files are too big: ",
+                                "submit": {
+                                        "document": "Please upload the signed LOA and the bill corresponding to the numbers you want to port"
+                                },
+                                "number": "the number is not valid!",
+                                "numbers": "One or more numbers you entered are not in the right format or are already listed!",
+                        }
+                },
+                "noScheduledDate": "None",
+                "addDate": "Add date",
+                "addMoreNumbers": "add more numbers",
+                "faqdialogTitle": "Porting Manager FAQ",
+                "faqContent": [
+                        {
+                                "question": "What is the difference between an LOA and a RespOrg?",
+                                "answer": "The LOA (Letter Of Authorization) is used when porting regular telephone numbers. The RespOrg (Responsible Organization) is used when porting Toll-free numbers."
+                        },
+                        {
+                                "question": "How long will my port take?",
+                                "answer": "This cannot be determined until the port request is submitted. We have seen port requests scheduled within 3 to 4 days from the submittal date, but have come across some that take several weeks to a month before a scheduled date is granted, due to rejections."
+                        },
+                        {
+                                "question": "I looked at the current bill copy and noticed the numbers I am requesting to port are not listed. Can I still submit the request using this bill copy?",
+                                "answer": "Yes, you are more than welcome to submit using the bill copy as long as you know all numbers that are associated with the bill/account."
+                        },
+                        {
+                                "question": "Will I be notified of a scheduled port date so I can ensure my client's account is set up?",
+                                "answer": "Yes, we will notify you of the scheduled port date at least a day or two prior to the scheduled date. We will also notify you once the port completes."
+                        },
+                        {
+                                "question": "Can I set up call routing prior to the scheduled port date?",
+                                "answer": "Yes, and we recommend this for a smooth transition."
+                        },
+                        {
+                                "question": "My client has international numbers. Can I port international numbers?",
+                                "answer": "At this time, we can only port some Canadian numbers. This may vary depending upon if your provider has coverage in the region of the number(s)."
+                        },
+                        {
+                                "question": "How quickly will I know if my port request has been rejected?",
+                                "answer": "You will be notified, by our Porting Department, that a request has been rejected within that day or the subsequent day we receive the notice."
+                        },
+                        {
+                                "question": "How do I cancel a port in progress?",
+                                "answer": "If you decide to cancel a port, update the note section in the Porting Manager App of Smart PBX"
+                        },
+                        {
+                                "question": "What is the port-out process (from your provider to a new provider)?",
+                                "answer": "To port out a number, submit the request to the gaining provider. If you receive a rejection notification from the gaining carrier for an additional document, please contact Support and we will try to help. Once you receive a port date from the gaining provider, you are responsible for deleting the number from the Account."
+                        },
+                        {
+                                "question": "What is a bulk port?",
+                                "answer": "We consider a bulk port to be 100+ numbers."
+                        },
+                        {
+                                "question": "Is there a discount available for bulk ports?",
+                                "answer": "Bulk ports are considered over 100 numbers. For inquiries about discounts, please contact your Account Manager."
+                        },
+                        {
+                                "question": "Do I have to submit a bulk port through the UI?",
+                                "answer": "No, submit bulk ports to Support and our Porting Department will handle them for you. When submitting a Support Ticket ensure to include the LOA (Letter Of Authorization?  and a current bill pay."
+                        }
+                    ]
+                },
+                "chooseModel": {
+                    "brandHeadline": "scegliere il marchio",
+                    "deviceHeadline": "scegliere il modello",
+                    "deviceSelected": "hanno scelto",
+                    "missingBrand": "mia marca non è elencata qui",
+                    "missingDevice": "Il modello non è elencata qui",
+                    "title": "selezione dell'apparecchio",
+                    "create": "concludere Impostazioni dispositivo",
+		    "macAddress": "indirizzo mac",
+		    "deviceName": "propria denominazione attrezzature",
+		    "deviceInfo": "informazioni sul dispositivo"
+                    "deviceNameplaceholder": "John Doo",
+                    "macaddress_havetochange": "For change of a phone, you have to enter a new mac-address, this can be found on the backside of your SIP-Phone!",
+                    "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                    "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+		},
+		"servicePlanDetails": {
+		    "rate": "tariffe",
+		    "activationCharge": "costi capitalizzati",
+		    "exceptions": "eccezioni",
+		    "planLines": {
+			"phone_numbers": "Abo numero di telefono",
+			"number_services": "Abo numeri di abbonamento",
+			"limits": "Abo limite",
+			"devices": "Abo dispositivi",
+			"users": "Abo utente",
+                        "supports": "Abo Support",
+                        "connects": "Abo Internet",
+                        "branding": "Abo Branding",
+                        "ips": "Abo Carrier-IPs",
+                        "ui_apps": "Abo UI-Apps"
+		    },
+		    "noServicePlan": "nessun piano tariffario scelto.",
+            	    "overrides": "Overrides",
+            	    "addOverrides": "Add",
+            	    "noOverrides": "No Overriden Values. Click on the Add link to customize this service plan!",
+            	    "planTitle": "Details Service Plan",
+            	    "keys": {
+                        "phone_numbers": "Phone Numbers",
+                        "number_services": "Number Services",
+                        "limits": "Limits",
+                        "devices": "Devices",
+                        "users": "Users",
+                        "branding": "Branding",
+                        "ips": "IPs",
+                        "ui_apps": "UI Apps",
+                        "port": "Port Request",
+                        "cnam": "CNAM Update",
+                        "e911": "e911 allow",
+                        "ata": "ATA",
+                        "cellphone": "Cell Phone",
+                        "fax": "Fax",
+                        "landline": "Landline",
+                        "mobile": "Mobile",
+                        "sip_device": "SIP Device",
+                        "sip_uri": "SIP URI",
+                        "smartphone": "Smartphone",
+                        "softphone": "Softphone",
+                        "outbound_trunks": "Outbound Trunks",
+                        "inbound_trunks": "Inbound Trunks",
+                        "twoway_trunks": "Twoway Trunks",
+                        "did_us": "US DID",
+                        "tollfree_us": "US Tollfree",
+                        "rate": "Rate",
+                        "activation_charge": "Activation charge",
+                        "minimum": "Minimum",
+                        "exceptions": "Exceptions",
+
+                       "supports": "Support",
+                        "service_pbxs": "PBX-Support",
+                        "security_pbxs": "PBX-Updates",
+                        "connects": "Internet",
+                        "dsl_ch_min": "DSL-Internet CH Minimal",
+                        "dsl_ch_standard": "DSL-Internet CH Standard",
+                        "dsl_ch_high": "DSL-Internet CH Premium",
+                        "dsl_modem": "DSL-Modem",
+                        "qos_router": "QoS-Router (without WLAN)",
+                        "qos_router_wlan": "QoS-Router (with WLAN)",
+                        "ui_apps": "UI Apps",
+                        "ata": "ATA-Gerät",
+                        "cellphone": "Handy",
+                        "Outbound_cnam": "Outgoing phonebook",
+                        "Inbound_cnam": "Incomming phonebook",
+                        "inbound_cnam": "Incomming phonebook",
+                        "outbound_cnam": "Outgoing phonebook",
+                        "prepend": "Prepend text",
+                        "emergency_ch": "Emergency Numbers",
+                        "service_ch": "Service Numbers Swiss",
+                        "service_pbx": "Service Numbers PBX",
+                        "internal": "PBX Internal",
+                        "names": "Names",
+                        "toll_ch": "Toll Numbers CH",
+                        "tollfree_ch": "0800-Numbers CH",
+                        "toll_de": "0900-Mehrwert Numbers DE",
+                        "tollfree_de": "0800-Numbers DE",
+                        "mobile_ch": "Mobile Numbers",
+                        "did_ch": "Landline Numbers Swiss",
+                        "did_de": "Landline Numbers Germany",
+                        "fixnet_ch": "Landline Numbers Swiss",
+                        "business_ch": "Business Numbers Swiss",
+                        "activation_charge": "activate",
+                        "minimum": "Minimal",
+                        "exceptions": "Exceptions",
+                        "rate": "monthly:",
+                        "CH_Numbers": "CH Numbers",
+                        "CH_Tollfree": "CH Tollfree",
+                        "Two-Way_Trunk": "Twoway Trunks",
+                        "Inbound_Trunk": "Inbound Trunks",
+                        "Outbound_Trunk": "Outbound Trunks",
+                        "Outbound_CNAM": "Outbound phonebook",
+                        "Inbound_CNAM": "Inbound phonebook",
+                        "Port_Request_Single": "Porting Single Request",
+                        "Port_Request_DID": "Porting Request (DDI)",
+                        "Emergency_Service": "Emergency Numbers",
+                        "user": "User",
+                        "admin": "Administrator",
+                        "callflows": "Callflow",
+                        "numbers": "Numbers",
+                        "branding": "Branding",
+                        "pivot": "Pivot",
+                        "userportal": "Userportal",
+                        "carrier": "Carrier",
+                        "Cluster-Manager": "Cluster-Manager",
+                        "rates": "Connection-Rates",
+                        "voip": "SmartPBX",
+                        "conferences": "Conference App",
+                        "accounts": "Accounts",
+                        "migration": "Migrations App",
+                        "mobile": "Handy Integration",
+                        "debug": "Monitoring",
+                        "pbxs": "PBX-Trunking",
+                        "ports": "Port Requests",
+                        "reporting": "Sales Reporting",
+                        "webhooks": "Webhooks",
+                        "alarms": "Pikett-Alarms",
+                        "_all": "All",
+                        "as": "As",
+                        "user": "Standard User",
+                        "admin": "Account Admin"
+                }
+        },
+        "ringingDurationControl": {
+                "distribute": "distribuzione automatica delle chiamate",
+                "maxDurationTooltip": "premere sul campo di secondi per modificare il tempo massimo di chiamata. essi devono 30-999 sec. essere.",
+                "doNotRing": "non anello",
+                "timeoutSec": "sek"
+        },
+        "carrierSelector": {
+                "title": "vettore",
+                "headline": "scegliere la strategia portante per questo account.",
+                "useBlended": {
+                        "friendlyName": "utilizzare qualsiasi vettore",
+                        "help": "che usano per le loro chiamate in uscita, il vettore preinstallato dei loro fornitori."
+                },
+                "useReseller": {
+                        "friendlyName": "utilizzare {{ variabile }} carrier",
+                        "help": "lo usano con {{ variabile }} vettori.",
+                        "defaultFriendlyName": "utilizzare il vettore del rivenditore acquistato.",
+                        "defaultHelp": "che usano per le loro chiamate in uscita, il vettore dei loro rivenditori."
+                },
+                "byoc": {
+                        "friendlyName": "essi hanno anche un vettore (personalizzato)",
+                        "help": "che usano per le loro chiamate in uscita, il vettore che possono essere regolati con l'applicazione vettore stesso."
+                },
+                "saveSuccess": "hanno salvato con successo il vettore per l'account!",
+                "huntError": "le impostazioni per la rotta (sconosciuto) non è integrato. Si prega di apportare modifiche, se vogliono mantenere queste impostazioni. In caso contrario, selezionare un'opzione dalla lista!"
+        },
+        "numberPrepend": {
+                "dialogTitle": "impostazione numero lettera il testo del prefisso",
+                "title": "testo vorgestellter",
+                "label": "presentato",
+                "help": "questo testo è il nome aggiunto quando si chiama questo numero. Sembrano così chiamato il numero era quello.",
+                "successUpdate": "il testo presentato è stato salvato con successo per il numero {{ numero di telefono }}."
+        }
+}

@@ -1,0 +1,47 @@
+<div class="balance-content-wrapper">
+	{{#compare uiRestrictions.balance.show_header '!==' false }}
+	<div class="title-bar clearfix">
+		{{#compare uiRestrictions.balance.show_credit '!==' false }}
+		<div class="title-box-group">
+			<div class="title-box">
+				<div class="value">{{ i18n.currencyUsed }}<span id="amount"> {{amount}}</span></div>
+				<div class="title">{{ i18n.balance.availableCredits }}</div>
+			</div>
+			{{#compare is_adminreseller '==' true }}
+			<div class="title-box primary-box" id="add_credits">
+				<div class="value"><i class="fa fa-plus-circle monster-white"></i></div>
+				<div class="title">{{ i18n.balance.addCredit }}</div>
+			</div>
+			{{/compare}}
+			{{#compare is_admincustomer '==' true }}
+			<div class="title-box primary-box" id="add_credits">
+				<div class="value"><i class="fa fa-plus-circle monster-white"></i></div>
+				<div class="title">{{ i18n.balance.addCredit }}</div>
+			</div>
+			{{/compare}}
+		</div>
+		<div class="title-box pull-right">
+			<div class="value">{{ i18n.currencyUsed }}<span id="call_charges"> {{totalCharges}}</span></div>
+			<div class="title">{{ i18n.balance.callCharges }}</div>
+		</div>
+		{{/compare}}
+		{{#compare uiRestrictions.balance.show_minutes '!==' false }}
+		<div class="title-box pull-right">
+			<div class="value"><span id="minutes_used">{{totalMinutes}}</span></div>
+			<div class="title">{{ i18n.balance.minutesUsed }}</div>
+		</div>
+		{{/compare}}
+		{{#compare is_adminreseller '==' true }}
+		<div class="title-box pull-right">
+			<div class="value">{{ i18n.currencyUsed }}<span id="call_resell"> {{totalResell}}</span></div>
+			<div class="title">{{ i18n.balance.callResell }}</div>
+		</div>
+		{{/compare}}
+	</div>
+	{{/compare}}
+
+	<div class="table-wrapper">
+		<table id="transactions_grid" class="display table">
+		</table>
+	</div>
+</div>

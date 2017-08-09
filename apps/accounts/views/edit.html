@@ -1,0 +1,904 @@
+<div class="row-fluid">
+	<div class="span12">
+		<div class="tab-bar">
+			<button type="button" id="accountsmanager_use_account_btn" class="monster-button-success pull-right">{{ i18n.useAccount }}</button>
+			<ul class="nav nav-tabs account-tabs">
+				<li class="tab-overview active"><a href="#accountsmanager_overview_tab">{{ i18n.tabTitles.overview }}</a></li>
+<!--				<li class="tab-rates {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_rates_tab">{{ i18n.tabTitles.rates }}</a></li>
+				<li class="tab-allotments {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_allotments_tab">{{ i18n.tabTitles.allotments }}</a></li>
+-->				<li class="tab-serviceplans {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_serviceplans_tab">{{ i18n.tabTitles.servicePlans }}</a></li>
+				<li class="tab-limits {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_limits_tab">{{ i18n.tabTitles.limits }}</a></li>
+				<li class="tab-charging {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_charging_tab">{{ i18n.tabTitles.charging }}</a></li>
+				<li class="tab-restrictions {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_restrictions_tab">{{ i18n.tabTitles.restrictions }}</a></li>
+				<li class="tab-numbersfeatures">
+					<a href="#accountsmanager_numbersfeatures_tab">{{ i18n.tabTitles.numbersFeatures }}</a>
+				</li>
+				{{#unless carrierInfo.disabled}}
+					<li class="tab-carrier {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_carrier_tab"> {{ i18n.carrierTab }}</a></li>
+				{{/unless}}
+				<li class="tab-notes"><a href="#accountsmanager_notes_tab">{{ i18n.tabTitles.notes }}</a></li>
+				<li class="tab-appstore"><a href="#accountsmanager_appstore_tab">{{ i18n.tabTitles.appstore }}</a></li>
+			</ul>
+		</div>
+		<div class="tab-content">
+			<div class="tab-pane active" id="accountsmanager_overview_tab">
+				<ul class="list-settings">
+					<!-- Account Status -->
+					<li class="settings-item" data-name="accountsmanager_account_status">
+						<a class="settings-link clearfix">
+							<span class="title">{{ i18n.accountStatus }}</span>
+							<span class="description">
+								{{#if account.enabled}}
+									{{ i18n.active }}
+								{{else}}
+									{{ i18n.disabled }}
+								{{/if}}
+								{{#if account.created}}
+								<span class="date">({{ i18n.createdOn }} {{account.created}})</span>
+								{{/if}}
+							</span>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+									<form class="form-horizontal" id="form_accountsmanager_account_status">
+										<div class="control-group">
+											<label class="control-label">
+												{{ i18n.accountId }}
+											</label>
+											<div class="controls">
+												<div class="plain-text">{{account.id}}</div>
+											</div>
+										</div>
+									{{#if isSuperDuperAdmin}}
+										<div class="control-group">
+											<label class="control-label">{{i18n.accountType}}</label>
+											<div class="controls">
+												<div class="plain-text">
+													{{#if accountIsReseller}}{{i18n.reseller}}{{else}}{{i18n.standard}}{{/if}}
+												</div>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">
+												{{i18n.reserllerAction}}
+											</label>
+											<div class="controls">
+											{{#if account.is_reseller}}
+												<button class="monster-button-cancel resellerAction" data-action="demote">
+													{{i18n.demoteAccount.button}}
+												</button>
+											{{else}}
+												<button class="monster-button-primary resellerAction" data-action="promote">
+													{{i18n.promoteAccount.button}}
+												</button>
+											{{/if}}
+											</div>
+										</div>
+									{{/if}}
+										<div class="control-group">
+											<label class="control-label">
+												{{#if account.enabled}}
+													{{ i18n.disableAccount }}
+												{{else}}
+													{{ i18n.enableAccount }}
+												{{/if}}
+											</label>
+											<div class="controls">
+												{{#if account.enabled}}
+												<input type="hidden" name="enabled" value="false"/>
+												<button type="button" data-field="accountsmanager_account_status" class="monster-button-warning change">
+													{{ i18n.disable }}
+												</button>
+												{{else}}
+												<input type="hidden" name="enabled" value="true"/>
+												<button type="button" data-field="accountsmanager_account_status" class="monster-button-success change">
+													{{ i18n.enable }}
+												</button>
+												{{/if}}
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">
+												{{ i18n.deleteAccount }}
+											</label>
+											<div class="controls">
+												<button type="button" id="accountsmanager_delete_account_btn" class="monster-button-danger">{{ i18n.delete }}</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Account name -->
+					<li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="accountsmanager_account_name">
+						<a class="settings-link clearfix">
+							<span class="title">{{ i18n.accountName }}</span>
+							<span class="description">{{account.name}}</span>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+									<form class="form-horizontal" id="form_accountsmanager_account_name">
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_account_name">{{ i18n.accountName }}</label>
+											<div class="controls">
+												<input required type="text" id="accountsmanager_account_name" name="name" value="{{account.name}}" data-original_value="{{account.name}}" maxlength="32" />
+											</div>
+										</div>
+
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="account_is_business">{{ i18n.account.is_business }}</label>
+                                                                                        <div class="controls checkbox-container">
+                                                                                                {{#monsterCheckbox}}
+                                                                                                        <input type="checkbox" id="account_is_business" name="is_business" {{#if account.is_business}}checked{{/if}} />
+                                                                                                {{/monsterCheckbox}}
+                                                                                        </div>
+                                                                                </div>
+<!--
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="account_is_reseller">{{ i18n.account.is_reseller }}</label>
+                                                                                        <div class="controls checkbox-container">
+                                                                                                {{#monsterCheckbox}}
+                                                                                                    <input type="checkbox" id="account_is_reseller" name="is_reseller" {{#if account.is_reseller}}checked{{/if}} />
+                                                                                            {{/monsterCheckbox}}
+                                                                                        </div>
+                                                                                </div>
+-->
+										<div class="action-group clearfix">
+											<div class="action-bar">
+												<button type="button" class="cancel monster-button">{{ i18n.cancel }}</button>
+												<button type="submit" class="monster-button-success change" data-field="accountsmanager_account_name">{{ i18n.saveChanges }}</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Account realm -->
+					<li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="accountsmanager_account_realm">
+						<a class="settings-link clearfix">
+							<span class="title">{{ i18n.accountRealm }}</span>
+							<span class="description">{{account.realm}}</span>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+									<form class="form-horizontal" id="form_accountsmanager_account_realm">
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_account_realm">{{ i18n.accountRealm }}</label>
+											<div class="controls">
+												<input required type="text" id="accountsmanager_account_realm" name="realm" value="{{account.realm}}" data-original_value="{{account.realm}}" maxlength="32" />
+											</div>
+										</div>
+										<div class="action-group clearfix">
+											<div class="action-bar">
+												<button type="button" class="cancel monster-button">{{ i18n.cancel }}</button>
+												<button type="submit" class="monster-button-success change" data-field="accountsmanager_account_realm">{{ i18n.saveChanges }}</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Account admins -->
+					<li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="accountsmanager_account_admins">
+						<a class="settings-link clearfix">
+							<span class="title">{{ i18n.accountAdmins }} (<span class="total-admins">{{accountAdmins.length}}</span>)</span>
+								<div class="description">
+									<ul>
+										<li class="first-admin-name">
+											{{#if accountAdmins.length}}
+												{{accountAdmins.0.first_name}}&nbsp;{{accountAdmins.0.last_name}}
+											{{else}}
+												-
+											{{/if}}
+										</li>
+										<li class="first-admin-email">{{accountAdmins.0.email}}</li>
+									</ul>
+								</div>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+									<div id="form_accountsmanager_account_admins">
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Technical Contact -->
+					<li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="accountsmanager_technical_contact">
+						<a class="settings-link clearfix">
+							<span class="title">{{ i18n.technicalContact.label }}</span>
+							<div class="description">
+								<ul>
+								{{#if account.contact.technical.name}}
+									<li>{{account.contact.technical.name}} {{account.contact.technical.email}}</li>
+								{{/if}}
+								{{#if account.contact.technical.number}}
+									<li>{{formatPhoneNumber account.contact.technical.number}} {{formatPhoneNumber account.contact.technical.mobilenumber}}</li>
+								{{/if}}
+								</ul>
+							</div>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+									<form class="form-horizontal" id="form_accountsmanager_technical_contact">
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_name">{{ i18n.technicalContact.name }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_technical_contact_name" name="contact.technical.name" value="{{account.contact.technical.name}}" data-original_value="{{account.contact.technical.name}}" maxlength="32" />
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_email">{{ i18n.technicalContact.email }}</label>
+											<div class="controls">
+												<input type="email" id="accountsmanager_technical_contact_email" name="contact.technical.email" value="{{account.contact.technical.email}}" data-original_value="{{account.contact.technical.email}}" maxlength="32" />
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_number">{{ i18n.technicalContact.number }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_technical_contact_number" name="contact.technical.number" value="{{account.contact.technical.number}}" data-original_value="{{account.contact.technical.number}}" maxlength="25" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_mobilenumber">{{ i18n.technicalContact.technicalContactMobile }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_technical_contact_mobilenumber" name="contact.technical.mobilenumber" value="{{account.contact.technical.mobilenumber}}" data-original_value="{{account.contact.technical.mobilenumber}}" maxlength="32" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_address">{{ i18n.technicalContact.technicalAddress }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_technical_contact_address" name="contact.technical.address" value="{{account.contact.technical.address}}" data-original_value="{{account.contact.technical.address}}" maxlength="32" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_zip">{{ i18n.technicalContact.technicalZIP }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_technical_contact_zip" name="contact.technical.zip" value="{{account.contact.technical.zip}}" data-original_value="{{account.contact.technical.zip}}" maxlength="32" />
+												<input type="text" id="accountsmanager_technical_contact_city" name="contact.technical.city" value="{{account.contact.technical.city}}" data-original_value="{{account.contact.technical.city}}" maxlength="32" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_connect">{{ i18n.technicalContact.technicalConnect }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_technical_contact_connect" name="contact.technical.connect" value="{{account.contact.technical.connect}}" data-original_value="{{account.contact.technical.connect}}" maxlength="32" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_technical_contact_line">{{ i18n.technicalContact.technicalLine }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_technical_contact_line" name="contact.technical.line" value="{{account.contact.technical.line}}" data-original_value="{{account.contact.technical.line}}" maxlength="32" />
+											</div>
+										</div>
+
+										<div class="action-group clearfix">
+											<div class="action-bar">
+												<button type="button" class="cancel monster-button">{{ i18n.cancel }}</button>
+												<button type="submit" class="monster-button-success change" data-field="accountsmanager_technical_contact">{{ i18n.saveChanges }}</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+                                       <li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="fraud_settings">
+                                                        <a class="settings-link clearfix">
+                                                                <span class="title">{{ i18n.account.fraud.title }}</span>
+                                                                <span class="description">{{ i18n.account.fraud.perday_descript }}: {{account.limits.fraud.perday}}</span>
+								</span>
+								<span class="update">
+									<i class="fa fa-cog icon-small"></i>
+									<span class="text">{{ i18n.editSetting }}</span>
+								</span>
+								<span class="changes-saved">{{ i18n.changesSaved }}</span>
+							</a>
+							<div class="settings-item-content">
+								<div class="row-fluid">
+								<div class="span12">
+                                                                            <form id="form_fraud_contact" class="form-horizontal">
+                                                                                    <div class="control-group">
+                                                                                            <label class="control-label" for="fraud_limit_perday">{{ i18n.account.fraud.perday }}</label>
+                                                                                            <div class="controls">
+                                                                                                    <input type="text" id="fraud_limit_perday" name="limits.fraud.perday" value="{{account.limits.fraud.perday}}" placeholder="{{ i18n.account.fraud.perdaydefault }}" data-original_value="{{account.limits.fraud.perday}}"/>
+                                                                                            {{ i18n.account.fraud.perday_descript }}</div>
+                                                                                    </div>
+                                                                                    <div class="action-group clearfix">
+                                                                                            <div class="action-bar">
+                                                                                                    <button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+                                                                                                    <button type="submit" class="monster-button-success change" data-module="account" data-field="fraud_contact">{{ i18n.saveChanges }}</button>
+                                                                                            </div>
+                                                                                    </div>
+                                                                            </form>
+                                                                    </div>
+                                                            </div>
+                                                    </div>
+                                        </li>
+
+                                       <li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="dialplan_settings">
+                                                <a class="settings-link clearfix">
+                                                    <span class="title">{{ i18n.account.dialplan.title }}</span>
+                                                    <span class="description">
+                                                        <ul>
+                                                            <li>{{ i18n.account.dialplan.descript }}: {{ regiodialplanlocal }}</li>
+                                                            <li>{{ i18n.account.emergencyplan.descript }}: {{ emergencydialplanlocal }}</li>
+                                                        </ul>
+                                                    </span>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+                                                                            <form id="form_dialplan_account" class="form-horizontal">
+                                                                                    <div class="control-group">
+                                                                                        <label class="control-label" for="accountsmanager_account_regiodialplan">{{ i18n.account.dialplan.descript }}
+                                                                                            <div class="help-popover" data-original-title="{{ i18n.account.dialplan.descriptHelp }}" data-placement="top" data-toggle="tooltip">
+                                                                                                     <i class="help-popover fa fa-question-circle"></i>
+                                                                                            </div>
+                                                                                        </label>
+                                                                                        <div class="controls">
+                                                                                                <select id="accountsmanager_account_regiodialplan" name="regiodialplan" data-original_value="{{ account.regiodialplan }}"></select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="control-group">
+                                                                                                <label class="control-label" for="accountsmanager_account_emergencyplan">{{ i18n.account.emergencyplan.descript }}
+                                                                                                <div class="help-popover" data-original-title="{{ i18n.account.emergencyplan.descriptHelp }}" data-placement="top" data-toggle="tooltip">
+                                                                                                         <i class="help-popover fa fa-question-circle"></i>
+                                                                                                </div>
+                                                                                                </label>
+                                                                                        <div class="controls">
+                                                                                                <select id="accountsmanager_account_emergencyplan" name="emergencyplan" data-original_value="{{ account.emergencyplan }}"></select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="action-group clearfix">
+                                                                                            <div class="action-bar">
+                                                                                                    <button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+                                                                                                    <button type="submit" class="monster-button-success change" data-module="account" data-field="dialplan_account">{{ i18n.saveChanges }}</button>
+                                                                                            </div>
+                                                                                    </div>
+                                                                            </form>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </li>
+
+                                       <li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" clearfix" data-name="provision_settings">
+                                                <a class="settings-link clearfix">
+                                                        <span class="title">{{ i18n.account.provision.title }}</span>
+                                                       <span class="description">
+                                                                {{#if account.provision.provision_enabled}}
+                                                                        {{ i18n.account.provision.provisionEnabled }}
+                                                                {{else}}
+                                                                        {{ i18n.account.provision.provisionDisabled }}
+                                                                {{/if}}
+                                                        </span>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+                                                                        <form id="form_provision_settings" class="form-horizontal">
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="provision_urlpass">{{ i18n.account.provision.urlPass }}</label>
+                                                                                        <div class="controls">
+                                                                                                <input type="text" id="provision_urlpass" name="provision.urlpass" value="{{account.provision.urlpass}}" placeholder="FDreGe64Fd564tggdff" data-original_value="{{account.provision.urlpass}}"/></div>
+                                                                                </div>
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="provision_provisiondomain">{{ i18n.account.provision.provisionDomain }}</label>
+                                                                                        <div class="controls">
+                                                                                                <input type="text" id="provision_provisiondomain" name="provision.provisiondomain" value="{{account.provision.provisiondomain}}" placeholder="you-home.allip.ovh" data-original_value="{{account.provision.provisiondomain}}"/></div>
+                                                                                </div>
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="provision_provisionpass">{{ i18n.account.provision.provisionPass }}</label>
+                                                                                        <div class="controls">
+                                                                                                <input type="text" id="provision_provisionpass" name="provision.provisionpass" value="{{account.provision.provisionpass}}" placeholder="" data-original_value="{{account.provision.provisionpass}}"/></div>
+                                                                                </div>
+
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="provision_zoipertoken">{{ i18n.account.provision.zoiperToken }}</label>
+                                                                                        <div class="controls">
+                                                                                                <input type="text" id="provision_zoipertoken" name="provision.zoipertoken" value="{{account.provision.zoipertoken}}" placeholder="" data-original_value="{{account.provision.zoipertoken}}"/></div>
+                                                                                </div>
+
+                                                                               <div class="control-group">
+                                                                                        <label class="control-label" for="account_provision_enabled">{{ i18n.account.provision.supportProvision }}</label>
+                                                                                        <div class="controls checkbox-container">
+                                                                                                {{#monsterCheckbox}}
+                                                                                                        <input type="checkbox" id="account_provision_enabled" name="provision.provision_enabled" {{#if account.provision.provision_enabled}}checked{{/if}} />
+                                                                                                {{/monsterCheckbox}}
+                                                                                        </div>
+                                                                                </div>
+
+                                                                               <div class="control-group">
+                                                                                        <label class="control-label" for="account_createnew_enabled">{{ i18n.account.provision.supportCreatenew }}</label>
+                                                                                        <div class="controls checkbox-container">
+                                                                                                {{#monsterCheckbox}}
+                                                                                                        <input type="checkbox" id="account_createnew_enabled" name="provision.createnew_enabled" {{#if account.provision.createnew_enabled}}checked{{/if}} />
+                                                                                                {{/monsterCheckbox}}
+                                                                                        </div>
+                                                                                </div>
+                                                                               <div class="control-group">
+                                                                                        <label class="control-label" for="account_firmware_enabled">{{ i18n.account.provision.firmwareupdate }}</label>
+                                                                                        <div class="controls checkbox-container">
+                                                                                                {{#monsterCheckbox}}
+                                                                                                        <input type="checkbox" id="account_firmware_enabled" name="provision.firmware_enabled" {{#if account.provision.firmware_enabled}}checked{{/if}} />
+                                                                                                {{/monsterCheckbox}}
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="action-group clearfix">
+                                                                                        <div class="action-bar">
+                                                                                                <button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+                                                                                                <button type="submit" class="monster-button-success change" data-module="account" data-field="provision_settings">{{ i18n.saveChanges }}</button>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </form>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </li>
+
+					<!-- Billing Contact -->
+					<li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="accountsmanager_billing_contact">
+						<a class="settings-link clearfix">
+							<span class="title">{{ i18n.billingContact.label }}</span>
+							<div class="description">
+								<ul>
+								<li>
+								{{#if account.contact.billing.email}}
+									{{formatPhoneNumber account.contact.billing.email}}
+								{{/if}}
+								</li>
+                                                                <li>{{#if account.contact.billing.usepostbilling_enabled }} {{ i18n.billingContact.usepostbillingEnabled }} 
+                                                                    {{else}} {{ i18n.billingContact.usepostbillingDisabled }} {{/if}} 
+                                                                </li>
+								</ul>
+							</div>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+									<form class="form-horizontal" id="form_accountsmanager_billing_contact">
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_billing_contact_name">{{ i18n.billingContact.name }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_billing_contact_name" name="contact.billing.name" value="{{account.contact.billing.name}}" placeholder="{{ i18n.billing.name }}" data-original_value="{{account.contact.billing.name}}" maxlength="32" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_billing_contact_address">{{ i18n.billingContact.address }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_billing_contact_address" name="contact.billing.address" value="{{account.contact.billing.address}}" placeholder="{{ i18n.billing.address }}" data-original_value="{{account.contact.billing.address}}" maxlength="32" />
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_billing_contact_zip">{{ i18n.billingContact.zip }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_billing_contact_zip" name="contact.billing.zip" value="{{account.contact.billing.zip}}" placeholder="{{ i18n.billing.zip }}" data-original_value="{{account.contact.billing.zip}}" maxlength="15" /> 
+												<input type="text" id="accountsmanager_billing_contact_city" name="contact.billing.city" value="{{account.contact.billing.city}}" placeholder="{{ i18n.billing.city }}" data-original_value="{{account.contact.billing.city}}" maxlength="45" />
+											</div>
+										</div>
+
+
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_billing_contact_email">{{ i18n.billingContact.email }}</label>
+											<div class="controls">
+												<input type="email" id="accountsmanager_billing_contact_email" name="contact.billing.email" value="{{account.contact.billing.email}}" data-original_value="{{account.contact.billing.email}}" maxlength="32" />
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_billing_contact_number">{{ i18n.billingContact.number }}</label>
+											<div class="controls">
+												<input type="text" id="accountsmanager_billing_contact_number" name="contact.billing.number" value="{{account.contact.billing.number}}" data-original_value="{{account.contact.billing.number}}" maxlength="32" />
+											</div>
+										</div>
+
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="usepostbilling_enabled">{{ i18n.billingContact.usepostBilling }}</label>
+                                                                                        <div class="controls checkbox-container">
+                                                                                                {{#monsterCheckbox}}
+                                                                                                        <input type="checkbox" id="usepostbilling_enabled" name="contact.billing.usepostbilling_enabled" {{#if account.contact.billing.usepostbilling_enabled}}checked{{/if}} /> 
+                                                                                                {{/monsterCheckbox}}
+                                                                                                <span> {{ i18n.billingContact.payExtra }} {{ whitelabelcost }} </span>
+                                                                                        </div>
+                                                                                </div>
+
+										<div class="action-group clearfix">
+											<div class="action-bar">
+												<button type="button" class="cancel monster-button">{{ i18n.cancel }}</button>
+												<button type="submit" class="monster-button-success change" data-field="accountsmanager_billing_contact">{{ i18n.saveChanges }}</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- Account timezone -->
+					<li class="settings-item {{#unless account.enabled}}disabled{{/unless}}" data-name="accountsmanager_account_timezone">
+						<a class="settings-link clearfix">
+							<span class="title">{{ i18n.accountTimezoneTitle }}</span>
+							<div class="description">
+								<ul>
+									<li>{{account.timezone}}</li>
+									<li>{{account.language}}</li>
+								</ul>
+							</div>
+							<span class="update">
+								<i class="fa fa-cog icon-small"></i>
+								<span class="text">{{ i18n.editSetting }}</span>
+							</span>
+							<span class="changes-saved">{{ i18n.changesSaved }}</span>
+						</a>
+						<div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+									<form class="form-horizontal" id="form_accountsmanager_account_timezone">
+										<div class="control-group">
+											<label class="control-label" for="accountsmanager_account_timezone">{{ i18n.accountTimezone }}</label>
+											<div class="controls">
+												<select id="accountsmanager_account_timezone" name="timezone" data-original_value="{{account.timezone}}"></select>
+											</div>
+										</div>
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="account_language">{{ i18n.accountLanguage }}</label>
+                                                                                        <div class="controls">
+                                                                                                <select id="accountsmanager_account_language" name="language" data-original_value="{{account.language}}"></select>
+                                                                                        </div>
+                                                                                </div>
+										<div class="action-group clearfix">
+											<div class="action-bar">
+												<button type="button" class="cancel monster-button">{{ i18n.cancel }}</button>
+												<button type="submit" class="monster-button-success change" data-field="accountsmanager_account_timezone">{{ i18n.saveChanges }}</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</li>
+
+                                        <li class="settings-item clearfix" data-name="callerid_settings">
+                                            <a class="settings-link clearfix">
+                                                    <span class="title">{{ i18n.account.callerid.title }}</span>
+                                                    <span class="description">{{ i18n.account.callerid.external }}: {{account.caller_id.external.number}}{{#if account.caller_id.external.number}} {{/if}}</span>
+						    <span class="update">
+							<i class="fa fa-cog icon-small"></i>
+							<span class="text">{{ i18n.editSetting }}</span>
+						    </span>
+						    <span class="changes-saved">{{ i18n.changesSaved }}</span>
+					    </a>
+					    <div class="settings-item-content">
+							<div class="row-fluid">
+								<div class="span12">
+                                                                    <form id="form_callerid_settings" class="form-horizontal">
+                                                                            <div class="control-group">
+                                                                                    <label class="control-label" for="callerid_external">{{ i18n.account.callerid.external }}</label>
+                                                                                    <div class="controls">
+                                                                                            <input type="text" id="callerid_external" name="caller_id.external.number" value="{{account.caller_id.external.number}}" placeholder="{{ i18n.account.callerid.externaldefault }}" data-original_value="{{account.caller_id.external.number}}"/>
+                                                                                    {{ i18n.account.callerid.external_descript }}</div>
+                                                                            </div>
+                                                                            <div class="control-group">
+                                                                                    <label class="control-label" for="callerid_emergency">{{ i18n.account.callerid.emergency }}</label>
+                                                                                    <div class="controls">
+                                                                                            <input type="text" id="callerid_emergency" name="caller_id.emergency.number" value="{{account.caller_id.emergency.number}}" placeholder="{{ i18n.account.callerid.emergencydfault }}" data-original_value="{{account.caller_id.emergency.number}}"/> 
+                                                                                   {{ i18n.account.callerid.emergency_descript }}</div>
+                                                                            </div>
+                                                                            <div class="action-group clearfix">
+                                                                                    <div class="action-bar">
+                                                                                            <button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+                                                                                            <button type="submit" class="monster-button-success change" data-module="account" data-field="callerid_settings">{{ i18n.saveChanges }}</button>
+                                                                                    </div>
+                                                                            </div>
+                                                                    </form>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                    </li>
+
+                                    <li class="settings-item clearfix" data-name="connector_settings">
+                                                <a class="settings-link clearfix">
+                                                        <span class="title">{{ i18n.account.connector.title }}</span>
+                                                        <div class="description">
+                                                            <ul>
+                                                                <li>{{ i18n.account.connector.url }}: {{account.connector.url}}{{#if account.connector.url}} {{/if}}</li>
+                                                                <li>{{ i18n.account.connector.apikey }}: {{account.connector.apikey}}{{#if account.connector.apikey}} {{/if}}</li>
+                                                            </ul>
+                                                        </div>
+                                                        <span class="update">
+                                                                <i class="fa fa-cog icon-small"></i>
+                                                                <span class="text">{{ i18n.editSettings }}</span>
+                                                        </span>
+                                                        <span class="changes-saved">{{ i18n.changesSaved }}</span>
+                                                </a>
+                                                <div class="settings-item-content">
+                                                        <div class="row-fluid">
+                                                                <div class="span12">
+                                                                        <form id="form_connector_settings" class="form-horizontal">
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="connector_url">{{ i18n.account.connector.url }}</label>
+                                                                                        <div class="controls">
+                        				{{#if isReseller}}
+                        					{{#if accountAdmins}}
+                                                                                                <input type="text" id="connector_url" name="connector.url" value="{{account.connector.url}}" placeholder="{{ i18n.account.connector.urldefault }}" data-original_value="{{account.connector.url}}"/> {{ i18n.account.connector.url_descript }}
+                        					{{else}}
+                                                                                                <div class="plain-text">{{account.connector.url}} {{ i18n.account.connector.url_descript }}</div>
+                        					{{/if}}
+                        				{{/if}}
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="control-group">
+                                                                                        <label class="control-label" for="connector_apikey">{{ i18n.account.connector.apikey }}</label>
+                                                                                        <div class="controls">
+                        				{{#if isReseller}}
+                        					{{#if accountAdmins}}
+                                                                                                <input type="text" id="connector_apikey" name="connector.apikey" value="{{account.connector.apikey}}" placeholder="{{ i18n.account.connector.apikeydfault }}" data-original_value="{{account.connector.apikey}}"/> {{ i18n.account.connector.apikey_descript }}
+                        					{{else}}
+                                                                                                <div class="plain-text">{{account.connector.apikey}} {{ i18n.account.connector.apikey_descript }}</div>
+                        					{{/if}}
+                        				{{/if}}
+                                                                                        </div>
+                                                                                </div>
+                        				{{#if isReseller}}
+                        					{{#if accountAdmins}}
+                                                                                <div class="action-group clearfix">
+                                                                                        <div class="action-bar">
+                                                                                                <button type="button" class="monster-button cancel">{{ i18n.cancel }}</button>
+                                                                                                <button type="submit" class="monster-button-success change" data-module="account" data-field="connector_settings">{{ i18n.saveChanges }}</button>
+                                                                                        </div>
+                                                                                </div>
+                        					{{/if}}
+                        				{{/if}}
+                                                                        </form>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </li>
+
+
+				</ul>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_serviceplans_tab">
+				<div class="serviceplans-container">
+					{{#compare isReseller "===" true}}
+					<div class="serviceplans-maintenance clearfix">
+						<form>
+							<legend>{{ i18n.servicePlanMaintenance }}</legend>
+							<div class="controls-group">
+								<div class="controls">
+									<button type="button" id="accountsmanager_serviceplan_reconciliation" class="monster-button-secondary" data-toggle="tooltip" data-placement="top" data-original-title="{{ i18n.servicePlanReconciliation.tooltip }}">{{ i18n.servicePlanReconciliation.button }}</button>
+									<button type="button" id="accountsmanager_serviceplan_synchronization" class="monster-button-secondary" data-toggle="tooltip" data-placement="top" data-original-title="{{ i18n.servicePlanSynchronization.tooltip }}">{{ i18n.servicePlanSynchronization.button }}</button>
+									<button type="button" id="accountsmanager_serviceplan_change" class="monster-button-primary pull-right">{{ i18n.change }}</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					{{/compare}}
+					<div class="serviceplans-update clearfix">
+
+						<legend>{{ i18n.activeServicePlan }}</legend>
+						{{#compare isReseller "===" true}}
+						<form>
+							<div class="serviceplans-details-container"></div>
+						</form>
+						{{else}}
+							<div class="serviceplans-details-container"></div>
+						{{/compare}}
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_rates_tab">
+				<form id="accountsmanager_rates_form">
+
+				</form>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_rates_save" class="monster-button-success">{{ i18n.update }}</button>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_allotments_tab">
+				<form id="accountsmanager_allotments_form">
+
+					<div class="top-table">
+						<div class="actions pull-left">
+							<i class="fa fa-plus-circle monster-green allotments-wrapper"></i><a id="accountsmanager_allotments_add" class="monster-link blue">{{ i18n.account.allotments.addCallflow }}</a>
+						</div>
+
+						<div class="search-box pull-right">
+							<i class="fa fa-search"></i>
+							<input type="text" class="search-query" placeholder="{{ i18n.search }}">
+						</div>
+					</div>
+
+					<div class="table-container">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th class="blue-gradient-reverse">{{ i18n.account.allotments.tableTitles.name }}</th>
+									<th class="blue-gradient-reverse">{{ i18n.account.allotments.tableTitles.number }}</th>
+									<th class="blue-gradient-reverse">{{ i18n.account.allotments.tableTitles.actions }}</th>
+								</tr>
+							</thead>
+							<tbody>
+								{{#each routes}}
+									<tr class="route-row" data-id="{{id}}" data-number="{{number}}" data-search="{{id}} {{name}} {{number}} {{ formatPhoneNumber number }}">
+										<td>{{ name }}</td>
+										<td>{{ formatPhoneNumber number }} </td>
+										<td>
+											<a class="quickcall monster-link" href="#">
+												<i class="fa fa-phone monster-blue allotments-wrapper"></i>
+												{{ ../i18n.account.allotments.tryNow }}
+											</a>
+
+											<a class="edit monster-link" href="#">
+												<i class="fa fa-cog"></i>
+											</a>
+
+											<a class="delete monster-link" href="#">
+												<i class="fa fa-trash-o monster-red"></i>
+											</a>
+										</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</div>
+
+				</form>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_limits_tab">
+				<form id="accountsmanager_callrestrictions_form">
+				</form>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_limits_save" class="monster-button-success">{{ i18n.update }}</button>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_restrictions_tab">
+				<form class="clearfix" id="accountsmanager_uirestrictions_form">
+				</form>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_uirestrictions_save" class="monster-button-success">{{ i18n.update }}</button>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_charging_tab">
+				<form id="accountsmanager_chargerestrictions_form">
+				</form>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_charge_save" class="monster-button-success">{{ i18n.update }}</button>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_numbersfeatures_tab">
+				<form id="accountsmanager_numbersfeatures_form" class="form-horizontal">
+					<legend>{{ i18n.numbersFeatures.legend }}</legend>
+					<div class="control-group">
+						<label for="e911_enabled" class="control-label">{{ i18n.numbersFeatures.features.e911 }}</label>
+						<div class="controls">
+						{{#monsterSwitch}}
+						{{#if account.numbers_features}}
+							<input type="checkbox" name="e911_enabled"{{#if account.numbers_features.e911_enabled}} checked{{/if}}>
+						{{else}}
+							<input type="checkbox" name="e911_enabled" checked>
+						{{/if}}
+						{{/monsterSwitch}}
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="cnam_enabled" class="control-label">{{ i18n.numbersFeatures.features.cnam }}</label>
+						<div class="controls">
+						{{#monsterSwitch}}
+						{{#if account.numbers_features}}
+							<input type="checkbox" name="cnam_enabled"{{#if account.numbers_features.cnam_enabled}} checked{{/if}}>
+						{{else}}
+							<input type="checkbox" name="cnam_enabled" checked>
+						{{/if}}
+						{{/monsterSwitch}}
+						</div>
+					</div>
+				</form>
+				<div class="clearfix buttons-div">
+					<button id="accountsmanager_numbersfeatures_save" class="monster-button-success">{{i18n.update}}</button>
+				</div>
+			</div>
+
+			{{#unless carrierInfo.disabled}}
+				<div class="tab-pane" id="accountsmanager_carrier_tab">
+				</div>
+			{{/unless}}
+
+			<div class="tab-pane" id="accountsmanager_notes_tab">
+				<legend>{{ i18n.announcementLegend }}</legend>
+				<div class="clearfix wysiwyg-container announcement"></div>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_announcement_save" class="monster-button-success">{{ i18n.update }}</button>
+					<button type="button" id="accountsmanager_announcement_delete" class="monster-button-danger">{{ i18n.deleteAnnouncement }}</button>
+				</div>
+
+				<legend>{{ i18n.notesLegend }}</legend>
+				<div class="clearfix wysiwyg-container notes"></div>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_notes_save" class="monster-button-success">{{ i18n.update }}</button>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_appstore_tab">
+				<legend>{{ i18n.appstoreLegend }}</legend>
+				<div class="apps-container">
+					{{#each appsList}}
+					<div class="app-row clearfix{{#if blacklisted}} blacklisted{{/if}}">
+						<div class="app-row-content">
+							<div class="app-icon{{#if icon}}" style="background-image:url({{icon}})"{{else}} monster-default-app-icon"{{/if}}></div>
+							<div class="app-name" data-toggle="tooltip" data-placement="top" data-original-title="{{description}}">{{name}}</div>
+							<div class="app-toggle-container pull-right">
+								{{#monsterSwitch}}
+								<input type="checkbox" data-id={{id}} class="app-toggle"{{#unless blacklisted}} checked{{/unless}}/>
+								{{/monsterSwitch}}
+							</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_appstore_save" class="monster-button-success">{{ i18n.update }}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

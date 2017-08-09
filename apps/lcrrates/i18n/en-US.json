@@ -1,0 +1,55 @@
+{
+	"lcrrates": {
+		"addCD": "+ Add Supplier rate",
+		"addrates": "Create New rate",
+		"delete": "Delete of rate",
+		"deleteRequest": "Are you sure you want to delete rate ",
+		"deleteTitle": "Delete?",
+		"dialograte": {
+                        "addTitle": "Create New rate",
+                        "editTitle": "Edit rate",
+                        "ratename":               "Destname",
+                        "isocode":                "ISO Code",
+                        "direction":              "In / Out",
+                        "weight":                 "Weight",
+                        "surcharge":              "Surcharge",
+                        "pvttype":                "Type",
+                        "flatrate":               "Flatrate incl.",
+                        "prefix":                 "Prefix",
+                        "routecode":              "Route Code",
+                        "ratecost":               "Price",
+                        "internal":               "P-Price",
+                        "routes":                 "Route (Regex)",
+                        "max":                    "Clocking ",
+                        "min":                    "Min. Clocking",
+                        "description":            "Description",
+                        "ratenochargetime":       "rate after",
+                        "options":                "Options",
+                        "carrier":                "Carriername",
+                        "Direction": {
+                                "incoming": "Incoming",
+                                "outgoing": "Outgoing"
+                        },
+                        "placeholderName": "Username",
+                        "createrates": "add rate",
+			"save": "Ssve"
+		},
+		"editCD": "+ Edit Supplier Data",
+		"empty-row": "There were no rates found mathing your search.",
+		"info_superduper": "LCR-Rates is a app there you can change global LCR-Rates table for your Supplierers. To use this app for your Supplierers you have activate in \"Accounts\" your accounts and subaccounts.",
+		"info_reseller": "Rates is a app there you can see your LCR-Rates for your accounts and subaccounts. (Changing LCR-Rates is planning)",
+		"info_user": "Rates is a app there you can see your personal rates for your account.",
+		"less": "Hide Info",
+		"more": "More Info of Rates",
+		"no-rates": "There are no rates configured.",
+		"search": "Search",
+		"toastr": {
+			"addSuccess": "You have rate successfully added",
+			"addresellernotMasquarde": "You canot add rates for your self!",
+			"deleteSuccess": "You have rate successfully deleted",
+			"editSuccess": "You have rate successfully changed",
+			"editresellernotMasquarde": "You rate is without P-Price successfully changed!"
+		},
+		"warning": "You cannot save Supplier Data with the same identifier. Please enter a different identifier."
+	}
+}

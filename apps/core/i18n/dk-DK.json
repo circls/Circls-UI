@@ -1,0 +1,667 @@
+{
+        "defaultttsvoice": "female/dk-DK",
+	"none": "None",
+        "poweredBy": "CIRCLS",
+        "poweredByWebsite": "http://www.circls.co",
+	"error": "Error",
+	"olderVersion": "It appears that the data you're updating was created outside of this UI, would you like to proceed anyway?",
+	"errors": {
+		"generic": "An unknown error happened, please try again in a few seconds!",
+		"genericLabel": "API Response",
+		"401": "Invalid credentials, please check that your username and account name are correct.",
+		"403": "Access forbidden.",
+		"500": "Internal server error, please contact your administrator",
+		"api": "Internal server error, please update you API-Engine to ",
+		"invalidData": {
+			"errorLabel": "Invalid Data:",
+			"required": "The field \"{{field}}\" is required.",
+			"minimum": "The value for the field \"{{field}}\" must be at least {{value}}.",
+			"maximum": "The value for the field \"{{field}}\" must not be more than {{value}}.",
+			"minLength": "The string for the field \"{{field}}\" must be at least {{value}} characters.",
+			"maxLength": "The string for the field \"{{field}}\" must not be more than {{value}} characters.",
+			"enum:": "The value for the field \"{{field}}\" was not found in the enumerated list of acceptable values.",
+			"minItems": "The list for the field \"{{field}}\" must contain at least {{value}} items.",
+			"maxItems": "The list for the field \"{{field}}\" must not contain more than {{value}} items.",
+			"minProperties": "The object for the field \"{{field}}\" does not have enough children.",
+			"uniqueItems": "The list for the field \"{{field}}\" must be unique.",
+			"pattern": "The value for the field \"{{field}}\" failed to match the pattern \"{{value}}\".",
+			"divisibleBy": "The value for the field \"{{field}}\" is not divisible by {{value}}.",
+			"disallow": "The value for the field \"{{field}}\" is not allowed.",
+			"type": "The value for the field \"{{field}}\" must be of the \"{{value}}\" type.",
+			"unique": "The value for the field \"{{field}}\" must be unique.",
+			"forbidden": "The value for the field \"{{field}}\" can not be updated.",
+			"__comment": "UI-883 (v3.19_s1): adding i18n for service_restriction error",
+			"service_restriction": "Not enought credit to purchase the number \"{{field}}\" ({{value}})."
+		},
+		"__comment": "UI-951 (v3.20_s0): adding i18n for some 500 & 409 errors",
+		"errorMessages": {
+			"datastore_conflict": "An error was caused by conflicting database documents. Please try again, and contact your administrator if it reoccurs.",
+			"account_has_descendants": "You can not delete an account that has sub-accounts."
+		}
+	},
+	"apps": "Apps",
+	"add": "Add",
+	"alertLogout": "Your current session is expiring and you're about to be logged off due to inactivity. Please move your cursor if you want to remain logged in.",
+	"cancel": "Cancel",
+	"change": "Change",
+	"chargeReminder" : {
+		"line1": "Your on-file credit card will immediately be charged for any changes you make. If you have changed any recurring services, new charges will be pro-rated for your billing cycle.",
+		"line2": "Are you sure you want to continue?"
+	},
+	"close" : "Close",
+	"conferencingLogo": "Conferencing",
+	"csv": "CSV",
+	"currencyUsed": "USD",
+	"delete": "Delete",
+	"dialog" : {
+		"showError": "Show Error",
+		"confirm": "Confirm",
+		"confirmOk": "OK",
+		"confirmCancel" : "Cancel",
+		"confirmTitle" : "Confirmation",
+		"errorTitle": "Oops! Something went wrong!",
+		"infoTitle": "Info",
+		"warningTitle": "Warning!"
+	},
+	"disabled": "Disabled",
+	"download": "Download",
+	"enabled": "Enabled",
+	"endDate": "End:",
+	"examplePhoneNumber": "+1 (415) 482-9912",
+	"filter": "Filter",
+	"info": "Info",
+	"next": "Next",
+	"on": "On",
+	"off": "Off",
+	"show": "Show",
+	"hide": "Hide",
+	"paging": {
+		"first": "First",
+		"previous": "Previous",
+		"next": "Next",
+		"last": "Last"
+	},
+	"pdf": "PDF",
+	"previous": "Previous",
+	"remove": "Remove",
+	"save": "Save",
+	"saveChanges": "Save Changes",
+	"search": "Search",
+	"select": "Select",
+	"startDate": "Start:",
+	"submit": "Submit",
+	"table" : {
+		"search": "Search...",
+		"empty" : "No data available in table",
+		"processing" : "Processing...",
+		"showEntries": "Show _MENU_ entries",
+		"startEndTotal": "Showing _START_ to _END_ of _TOTAL_ entries",
+		"zeroRecords": "No matching records found",
+		"loading": "Loading...",
+		"filtered": "(filtered from _MAX_ total entries)",
+		"infoEmpty": ""
+	},
+	"unexpectedError": "An unexpected error happened, please try again!",
+	"update": "Update",
+	"upload": "Upload",
+	"validation": {
+		"defaultRules": {
+			"required": "This field is required.",
+			"remote": "Please fix this field.",
+			"email": "Please enter a valid email address.",
+			"url": "Please enter a valid URL.",
+			"date": "Please enter a valid date.",
+			"dateISO": "Please enter a valid date (ISO).",
+			"number": "Please enter a valid number.",
+			"digits": "Please enter only digits.",
+			"creditcard": "Please enter a valid credit card number.",
+			"equalTo": "Please enter the same value again.",
+			"maxlength": "Please enter no more than {0} characters.",
+			"minlength": "Please enter at least {0} characters.",
+			"rangelength": "Please enter a value between {0} and {1} characters long.",
+			"range": "Please enter a value between {0} and {1}.",
+			"max": "Please enter a value less than or equal to {0}.",
+			"min": "Please enter a value greater than or equal to {0}."
+		},
+		"customRules": {
+			"checkList": "Already exists",
+			"mac": "Please enter a valid MAC address.",
+			"ipv4": "Please enter a valid IP v4 address.",
+			"time12h": "Please enter a valid time in 12-hour AM/PM format.",
+			"greaterDate": "The starting hour must be prior to the ending hour.",
+			"realm": "Please enter alphanumeric characters, dot or dash only.",
+			"__comment": "UI-1335: Adding validation rule for 24-hour date format",
+			"__version": "v3.20_s3",
+			"time24h": "Please enter a valid time in 24-hour format."
+		},
+		"required": "Required."
+	},
+	"warning": "Warning!",
+	"confirmCharges": {
+		"title": "Charges Confirmation",
+		"oneTimeFee": "One-time fee",
+		"detail": "Here are the updated details of the monthly charges that will be made to your account for this service:",
+		"rate": "Rate",
+		"quantity": "Quantity",
+		"discount": "Discount",
+		"monthlyCharges": "Monthly Charges",
+		"amount": "{{variable}}"
+	},
+	"languages": {
+		"auto": "Default",
+		"americanEnglish": "English (en-US)",
+		"frenchFrench": "French (fr-FR)",
+		"russianRussian": "Russian (ru-RU)",
+		"__comment": "Add Spanish to the list of selectable languages in My Account",
+		"__version": "v3.22",
+		"spainSpanish": "Spanish (es-ES)"
+	},
+	"services": {
+		"cnam": "CNAM",
+		"did_us": "US DIDs",
+		"e911": "E911",
+		"inbound_cnam": "Inbound CNAM",
+		"inbound_trunk": "Inbound Trunks",
+		"inbound_trunks": "Inbound Trunks",
+		"port": "Port",
+		"sip_devices": "SIP Devices",
+		"sip_device": "SIP Devices",
+		"tollfree_us": "US Tollfree",
+		"twoway_trunk": "Twoway Trunks",
+		"twoway_trunks": "Twoway Trunks",
+		"outbound_trunk": "Outbound Trunks",
+		"outbound_trunks": "Outbound Trunks",
+		"user": "Users"
+	},
+	"wysiwyg": {
+		"toastr": {
+			"error": {
+				"format": " is not a supported format",
+				"upload": "Error while uploading the file"
+			}
+		},
+		"title": {
+			"fontSize": "Font Size",
+
+			"bold": "Bold (Ctrl/Cmd+B)",
+			"italic": "Italic (Ctrl/Cmd+I)",
+			"underline": "Underline (Ctrl/Cmd+U)",
+			"strikethrough" : "Strikethrough",
+
+			"fontColor": "Font Color",
+
+			"alignment": "Alignment",
+			"alignLeft": "Align Left (Ctrl/Cmd+L)",
+			"center": "Center (Ctrl/Cmd+E)",
+			"alignRight": "Align Right (Ctrl/Cmd+R)",
+			"justify": "Justify (Ctrl/Cmd+J)",
+
+			"list": "List",
+
+			"bulletList": "Bullet list",
+			"numberList": "Number list",
+
+			"reduceIndent": "Reduce indent (Shift+Tab)",
+			"indent": "Indent (Tab)",
+
+			"createLink": "Hyperlink",
+			"removeLink": "Remove Hyperlink",
+
+			"upload": "Insert picture (or just drag & drop)",
+
+			"undo": "Undo (Ctrl/Cmd+Z)",
+			"redo": "Redo (Ctrl/Cmd+Y)",
+
+			"horizontalRule": "Horizontal Rule",
+
+			"macro": "Macro"
+		},
+		"text": {
+			"big": "Big",
+			"normal": "Normal",
+			"small" : "Small"
+		},
+		"placeholder": {
+			"createLink": "URL"
+		}
+	},
+	"calendar": {
+		"suffix": {
+			"am": "AM",
+			"pm": "PM"
+		},
+		"day": {
+			"0": "Sunday",
+			"1": "Monday",
+			"2": "Tuesday",
+			"3": "Wednesday",
+			"4": "Thursday",
+			"5": "Friday",
+			"6": "Saturday"
+		},
+		"month": {
+			"0": "January",
+			"1": "February",
+			"2": "March",
+			"3": "April",
+			"4": "May",
+			"5": "June",
+			"6": "July",
+			"7": "August",
+			"8": "September",
+			"9": "October",
+			"10": "November",
+			"11": "December"
+		}
+	},
+	"__comment": "UI-735: Added codec/linked column common control",
+	"__version": "v3.20_s0",
+	"linkedColumns": {
+		"available": "Available",
+		"selected": "Selected"
+	},
+	"codecs": {
+		"audio": {
+			"OPUS": "OPUS",
+			"CELT@32000h": "Siren @ 32Khz",
+			"G7221@32000h": "G722.1 @ 32khz",
+			"G7221@16000h": "G722.1 @ 16khz",
+			"G722": "G722",
+			"speex@32000h": "Speex @ 32khz",
+			"speex@16000h": "Speex @ 16khz",
+			"PCMU": "G711u / PCMU - 64kbps (NA)",
+			"PCMA": "G711a / PCMA - 64kbps (Elsewhere)",
+			"G729":"G729 - 8kbps (Requires License)",
+			"GSM":"GSM",
+			"CELT@48000h": "Siren (HD) @ 48kHz",
+			"CELT@64000h": "Siren (HD) @ 64kHz"
+		},
+		"video": {
+			"VP8": "VP8",
+			"H264": "H264",
+			"H263": "H263",
+			"H261": "H261"
+		}
+	},
+	"__comment": "UI-1014: Redesign of MyAccount",
+	"__version": "v3.20_s0",
+	"refresh": "Refresh",
+
+	"__comment": "UI-1177: Say Un-assign instead of remove in Main Number",
+	"__version": "v3.20_s2",
+	"unassign": "Un-assign",
+
+	"__comment": "UI-1074: New Error Popup",
+	"__version": "v3.20_s2",
+	"advancedErrorDialog": {
+		"title": "Oops...",
+		"viewDetails": "More Information",
+		"requestId": "Request ID",
+		"apiUrl": "API URL",
+		"verb": "API Type"
+	},
+
+	"javascriptErrorDialog": {
+		"title": "A wild Javascript error appears...",
+		"message": "Message",
+		"line": "Line",
+		"column": "Column",
+		"stackTrace": "Stack Trace",
+		"file": "File Name"
+	},
+
+	"__comment": "UI-553: More help regarding the Hangup causes",
+	"__version": "v3.20_s3",
+	"hangupCauses": {
+		"SUCCESS": {
+			"inbound": "The call was forwarded to a different number successfully",
+			"friendlyName": "SUCCESS"
+		},
+		"NO_RESPONSE": {
+			"inbound": "Call forwarding was attempted, but failed because the forwarded user did not respond or there was a routing error during forwarding.",
+			"friendlyName": ""
+
+		},
+		"UNSPECIFIED": {
+			"friendlyName": "UNSPECIFIED"
+			},
+		"UNALLOCATED_NUMBER": {
+			"outbound": "The number dialed is not a valid number and/or can not be reached via the requested carrier",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured, or the number is not currently in use.",
+			"friendlyName": "UNALLOCATED NUMBER"
+		},
+		"NO_ROUTE_TRANSIT_NET": {
+			"friendlyName": "NO ROUTE TRANSIT NET"
+		},
+		"NO_ROUTE_DESTINATION": {
+			"outbound": "The number dialed is not a valid number and/or can not be reached via the requested carrier",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured.",
+			"friendlyName": "NO ROUTE DESTINATION"
+		},
+		"CHANNEL_UNACCEPTABLE": {
+			"friendlyName": "CHANNEL UNACCEPTABLE"
+		},
+		"CALL_AWARDED_DELIVERED": {
+			"friendlyName": "CALL AWARDED DELIVERED"
+		},
+		"NORMAL_CLEARING": {
+			"inbound": "Everything is OK. The call ended normally",
+			"outbound": "Everything is OK. The call ended normally",
+			"friendlyName": "NORMAL CLEARING"
+		},
+		"USER_BUSY": {
+			"inbound": "Could be 2 things: Under 1 second, The phone was busy or unavailable; over 1 second: The end-user rejected the inbound call while it was ringing.",
+			"friendlyName": "User Busy"
+		},
+		"NO_USER_RESPONSE": {
+			"friendlyName": "NO_USER_RESPONSE"
+		},
+		"NO_ANSWER": {
+			"friendlyName": "NO_ANSWER"
+		},
+		"SUBSCRIBER_ABSENT": {
+			"friendlyName": "SUBSCRIBER_ABSENT"
+		},
+		"CALL_REJECTED": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other non-fatal issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "At under 1 second: The phone is in Do-Not-Disturb locally, on the phone, or all the lines available on the phone are in use, At over 1 second: The user of the phone pushed the “reject” button to reject the call",
+			"friendlyName": "CALL_REJECTED"
+		},
+		"NUMBER_CHANGED": {
+			"friendlyName": "NUMBER_CHANGED"
+		},
+		"REDIRECTION_TO_NEW_DESTINATION": {
+			"inbound": "Could be 2 things: Under 1 second, The phone is configured with call-forwarding locally. This should be disabled; Over 1 second: The phone is configured with “call-forwarding no answer” locally. This should be disabled.",
+			"friendlyName": ""
+		},
+		"EXCHANGE_ROUTING_ERROR": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other non-fatal issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured.",
+			"friendlyName": "EXCHANGE_ROUTING_ERROR"
+		},
+		"DESTINATION_OUT_OF_ORDER": {
+			"friendlyName": "DESTINATION_OUT_OF_ORDER"
+		},
+		"INVALID_NUMBER_FORMAT": {
+			"friendlyName": "INVALID_NUMBER_FORMAT"
+		},
+		"FACILITY_REJECTED": {
+			"friendlyName": "FACILITY_REJECTED"
+		},
+		"RESPONSE_TO_STATUS_ENQUIRY": {
+			"friendlyName": "RESPONSE_TO_STATUS_ENQUIRY"
+		},
+		"NORMAL_UNSPECIFIED": {
+			"friendlyName": "NORMAL_UNSPECIFIED"
+		},
+		"NORMAL_CIRCUIT_CONGESTION": {
+			"friendlyName": "NORMAL_CIRCUIT_CONGESTION"
+		},
+		"NETWORK_OUT_OF_ORDER": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other non-fatal issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured.",
+			"friendlyName": "NETWORK_OUT_OF_ORDER"
+		},
+		"NORMAL_TEMPORARY_FAILURE": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other temporary issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "This should not happen. This is an error condition.",
+			"friendlyName": "NORMAL_TEMPORARY_FAILURE"
+		},
+		"SWITCH_CONGESTION": {
+			"friendlyName": "SWITCH_CONGESTION"
+		},
+		"ACCESS_INFO_DISCARDED": {
+			"friendlyName": "ACCESS_INFO_DISCARDED"
+		},
+		"REQUESTED_CHAN_UNAVAIL": {
+			"friendlyName": "REQUESTED_CHAN_UNAVAIL"
+		},
+		"FACILITY_NOT_SUBSCRIBED": {
+			"friendlyName": "FACILITY_NOT_SUBSCRIBED"
+		},
+		"OUTGOING_CALL_BARRED": {
+			"friendlyName": "OUTGOING_CALL_BARRED"
+		},
+		"INCOMING_CALL_BARRED": {
+			"friendlyName": "INCOMING_CALL_BARRED"
+		},
+		"BEARERCAPABILITY_NOTAUTH": {
+			"friendlyName": "BEARERCAPABILITY_NOTAUTH"
+		},
+		"BEARERCAPABILITY_NOTAVAIL": {
+			"friendlyName": "BEARERCAPABILITY_NOTAVAIL"
+		},
+		"SERVICE_UNAVAILABLE": {
+			"friendlyName": "SERVICE_UNAVAILABLE"
+		},
+		"BEARERCAPABILITY_NOTIMPL": {
+			"friendlyName": "BEARERCAPABILITY_NOTIMPL"
+		},
+		"CHAN_NOT_IMPLEMENTED": {
+			"friendlyName": "CHAN_NOT_IMPLEMENTED"
+		},
+		"FACILITY_NOT_IMPLEMENTED": {
+			"friendlyName": "FACILITY_NOT_IMPLEMENTED"
+		},
+		"SERVICE_NOT_IMPLEMENTED": {
+			"friendlyName": "SERVICE_NOT_IMPLEMENTED"
+		},
+		"INVALID_CALL_REFERENCE": {
+			"friendlyName": "INVALID_CALL_REFERENCE"
+		},
+		"INCOMPATIBLE_DESTINATION": {
+			"outbound": "The carrier requested or required a certain codec or encryption, but we did not offer that method of communication. Thus, the call could not be completed. This can also happen when fax connectivity is requested but T38 is not available.",
+			"inbound": "The carrier requested or required a certain codec or encryption, but we did not offer that method of communication. Thus, the call could not be completed. This can also happen when fax connectivity is requested but T38 is not available.",
+			"friendlyName": "INCOMPATIBLE_DESTINATION"
+		},
+		"INVALID_MSG_UNSPECIFIED": {
+			"friendlyName": "INVALID_MSG_UNSPECIFIED"
+		},
+		"MANDATORY_IE_MISSING": {
+			"friendlyName": "MANDATORY_IE_MISSING"
+		},
+		"MESSAGE_TYPE_NONEXIST": {
+			"friendlyName": "MESSAGE_TYPE_NONEXIST"
+		},
+		"WRONG_MESSAGE": {
+			"friendlyName": "WRONG_MESSAGE"
+		},
+		"IE_NONEXIST": {
+			"friendlyName": "IE_NONEXIST"
+		},
+		"INVALID_IE_CONTENTS": {
+			"friendlyName": "INVALID_IE_CONTENTS"
+		},
+		"WRONG_CALL_STATE": {
+			"outbound": "This is a carrier failure or a misconfiguration on the hosted service and should result in a support ticket.",
+			"inbound": "The user attempted to dial an extension but hung up before the call could be processed, OR, the system is having trouble processing the user’s calls.",
+			"friendlyName": "WRONG_CALL_STATE"
+		},
+		"RECOVERY_ON_TIMER_EXPIRE": {
+			"outbound": "This is a carrier failure or a misconfiguration on the hosted service and should result in a support ticket.",
+			"inbound": "The remote user’s internet or firewall blocked our request to ring the phone",
+			"friendlyName": "RECOVERY_ON_TIMER_EXPIRE"
+		},
+		"MANDATORY_IE_LENGTH_ERROR": {
+			"friendlyName": "MANDATORY_IE_LENGTH_ERROR"
+		},
+		"PROTOCOL_ERROR": {
+			"friendlyName": "PROTOCOL_ERROR"
+		},
+		"INTERWORKING": {
+			"friendlyName": "INTERWORKING"
+		},
+		"ORIGINATOR_CANCEL": {
+			"inbound": "The caller hung up before this party answered the phone (hang up while phone is still ringing)",
+			"friendlyName": "ORIGINATOR_CANCEL"
+		},
+		"CRASH": {
+			"friendlyName": "CRASH"
+		},
+		"SYSTEM_SHUTDOWN": {
+			"friendlyName": "SYSTEM_SHUTDOWN"
+		},
+		"LOSE_RACE": {
+			"inbound": "Multiple phones were being rung at the same time, and a different phone was answered before this one was.",
+			"friendlyName": "LOSE_RACE"
+		},
+		"MANAGER_REQUEST": {
+			"friendlyName": "MANAGER_REQUEST"
+		},
+		"BLIND_TRANSFER": {
+			"friendlyName": "BLIND_TRANSFER"
+		},
+		"ATTENDED_TRANSFER": {
+			"inbound": "This leg was the “consult” portion of an attended transfer, meaning this part of the call indicates the transferer was asking the final recipient if they wanted the call or not (I.e. “Hi Frank, I have Mr. Adams on the line, would you like to take his call now?”)",
+			"friendlyName": "ATTENDED_TRANSFER"
+		},
+		"ALLOTTED_TIMEOUT": {
+			"friendlyName": "ALLOTTED_TIMEOUT"
+		},
+		"USER_CHALLENGE": {
+			"friendlyName": "USER_CHALLENGE"
+		},
+		"MEDIA_TIMEOUT": {
+			"inbound": "A network or firewall issue caused the conversation to fail mid-stream.",
+			"friendlyName": "MEDIA_TIMEOUT"
+		},
+		"PICKED_OFF": {
+			"friendlyName": "PICKED_OFF"
+		},
+		"USER_NOT_REGISTERED": {
+			"friendlyName": "USER_NOT_REGISTERED"
+		},
+		"PROGRESS_TIMEOUT": {
+			"outbound": "We waited up many seconds for the carrier to connect the requested call, and it didn’t respond. This usually means the carrier was trying to find an available circuit to process the call on but took too long. This is something that should result in a support ticket if it happens frequently. Occasionally is not unexpected.",
+			"inbound": "The remote user’s internet or firewall blocked our request to ring the phone",
+			"friendlyName": "PROGRESS_TIMEOUT"
+		},
+		"GATEWAY_DOWN": {
+			"friendlyName": "GATEWAY_DOWN"
+		}
+	},
+
+	"__comment": "UI-243: Adding a password strength control",
+	"__version": "v3.20_s4",
+	"passwordStrength": {
+		"strong": "Strong",
+		"good": "Good",
+		"medium": "Okay",
+		"weak": "Weak",
+		"bad": "Bad",
+		"empty": "Enter a password"
+	},
+
+	"__comment": "UI-1388: Adding a message when 401 error",
+	"__version": "3.20",
+	"invalidCredentialsMessage": "Your session expired. Close this popup to be redirected to the login page.",
+
+	"__comment": "UI-901: Show a recap of deleting numbers",
+	"__version": "3.20",
+	"monsterResults": {
+		"titles": {
+			"success": "Success",
+			"error": "Error"
+		}
+	},
+	"__comment": "UI-1474: Show the name of myaccount app when the dropdown is open and update click event accordingly",
+	"__version": "v3.20_s5",
+	"controlCenter": "Control Center",
+	"__comment": "UI-343: Added an uploading progress bar",
+	"__version": "v3.20_s5",
+	"uploadProgressTitle": "Uploading file(s)...",
+	"__comment": "UI-1499: Added an account default option to timezones",
+	"__version": "v3.20_s5",
+	"defaultTimezone": "- Account/User default -",
+
+	"__comment": "UI-1421: Adding walkthrough to Monster",
+	"__version": "3.21",
+	"stepByStep": {
+		"nextLabel": "Next",
+		"prevLabel": "Back",
+		"skipLabel": "Skip",
+		"doneLabel": "Done"
+	},
+
+	"__comment": "UI-1772: Add internationalization support for the jQuery timepicker plugin",
+	"__version": "3.22",
+	"timepicker": {
+		"am": "am",
+		"pm": "pm",
+		"AM": "AM",
+		"PM": "PM",
+		"decimal": ".",
+		"min": "mins",
+		"hr": "hr",
+		"hrs": "hrs"
+	},
+        "ttsvoice": {
+              "femaleenUS": "Female English US",
+              "maleenUS": "Male English US",
+              "femaleenCA": "Female English CA",
+              "femaleenAU": "Female English AU",
+              "femaleenGB": "Female English GB",
+              "maleenGB": "Male English GB",
+              "femaleesUS": "Female Spanish US",
+              "maleesUS": "Male Spanish US",
+              "femalezhCN": "Female Chinesish",
+              "malezhCN": "Male Chinesish CN",
+              "femalezhHK": "Female chinese ",
+              "femalezhTW": "Female chinese",
+              "femalejaJP": "Female japanese",
+              "malejaJP": "Male japanese",
+              "femalekoKR": "Female korean",
+              "malekoKR": "Male korean",
+              "femaledaDK": "Female german",
+              "femaledeDE": "Female german",
+              "maledeDE": "Male german",
+              "femalecaES": "Female spanish",
+              "maleesES": "Male Spanish",
+              "femalefiFI": "Female Finish",
+              "femalefrCA": "Female Frances",
+              "malefrCA": "Male Frances",
+              "femalefrFR": "Female Frances",
+              "malefrFR": "Male Fraances",
+              "femaleitIT": "Female Italienish",
+              "maleitIT": "Male Italienish",
+              "femalenbNO": "Female Norwegian",
+              "femalenlNL": "Female Nederland",
+              "femaleplPL": "Female Polnish",
+              "femaleptBR": "Female Portugish BR",
+              "femaleptPT": "Female Portugish PT",
+              "maleptPT": "Male Portugisish",
+              "femaleruRU": "Female Russish",
+              "maleruRU": "Male Russish",
+              "femalesvSE": "Female Schwedish",
+              "femalehuHU": "Female Ungarish",
+              "femalecsCZ": "Female Tschechish",
+              "femaletrTR": "Female Turcish",
+              "maletrTR": "Male Turkish"
+        },
+        "YES": "YES",
+        "NO":  "NO",
+	"__comment": "CM-150: Adding i18n for verbose timers",
+	"__version": "3.22",
+	"friendlyTimer": {
+		"minutesAnd": "minutes and",
+		"hours": "hours",
+		"seconds": "seconds"
+	},
+
+	"__comment": "UI-1779: Adding account toggle",
+	"__version": "3.22",
+	"accountToggle": {
+		"currentAccountLabel": "Browsing",
+		"toggleTooltip": "Account Jump"
+	},
+	"triggerMasquerading": "You are now masquerading the account \"{{accountName}}\".",
+	"restoreMasquerading": "You are not masquerading anymore.",
+
+	"__comment": "UI-1814: Adding warning for app we can't masquerade",
+	"__version": "3.22",
+	"noMasqueradingAllowed": "We are redirecting you to your \"Apps\" page because the app you were using doesn't allow \"Account Jumping\".",
+
+	"__comment": "OOB: Only allow Kazoo APIs to automatically logout user on authentication error (invalid/expired token)",
+	"__version": "3.22",
+	"authenticationIssue": "An authentication error occurred during this operation!"
+}

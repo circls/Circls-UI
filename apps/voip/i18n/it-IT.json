@@ -1,0 +1,1101 @@
+{
+	"defaulttLang": "it-IT",
+	"defaultttsvoice": "female/it-IT",
+	"callerId": "caller-id",
+	"e911": "E911",
+	"failover": "failover",
+        "numberPrepend": "Prepend",
+        "regextern": "External Registration",
+        "blacklist": "Incoming-Numberblockings",
+
+	"menuTitles": {
+		"myOffice": "cruscotto",
+		"users": "utenti",
+		"groups": "gruppi",
+		"numbers": "numeri",
+		"devices": "dispositivi",
+		"mainNumber": "numero principale",
+		"callLogs": "registri delle chiamate",
+		"quickLinks": "argomenti della Guida",
+		"featureCodes": "Codes & Howto",
+		"vmboxes": "caselle vocali"
+	},
+
+	"groups": {
+		"addFromSpare": "aggiungere dai numeri di ricambio",
+		"add": "aggiungere gruppo",
+		"addExtension": "aggiungere l'estensione",
+		"addNewExtension": "numero di interno",
+		"buy": "acquistare numeri",
+		"confirmDeleteGroup": "questo gruppo verrà eliminato definitivamente. continuare?",
+		"delete": "eliminare il gruppo",
+		"dialogCreationGroup": {
+			"availableUsers": "gli utenti disponibili",
+			"createGroup": "creare gruppo",
+			"extension": "estensione",
+			"name": "chiamare questo gruppo",
+			"selectedUsers": "utenti selezionati",
+			"title": "la creazione di un gruppo",
+			"missingDataAlert": "è necessario scegliere un nome e una estensione per questo gruppo"
+		},
+		"groupDeleted": "è stato eliminato con successo {{ }} nome del gruppo s",
+		"name": "nome del gruppo",
+		"noAssignedExtensions": "ma in questo momento non interno assegnato a questo gruppo.",
+		"noExtension": "nessuno",
+		"noFeatures": "nessuno",
+		"noMatchingGroup": "non sono state trovate le tessere uguali la ricerca",
+		"noGroupsConfigured": "si prega di aggiungere un gruppo di utenti per iniziare",
+		"noNumber": "nessuno",
+		"noAssignedNumbers": "non ci sono numeri assegnati a questo gruppo.",
+		"noUnassignedNumbers": "non ci sono numero disponibile a sinistra per assegnare a questo gruppo.",
+		"noAssignedNumbers": "ma in questo momento alcun numero assegnato a questo gruppo.",
+		"noMoreSpareNumbers": "ci sono nessun numero di riserva a sinistra, è possibile acquistare nuovi numeri cliccando sul link qui sotto",
+		"noMatchingNumbers": "non c'erano numeri trovati corrispondono alla tua ricerca",
+		"port": "numeri di porta",
+		"ringThisMemberFor": "anello di questa persona per",
+		"ringGroupMissing": "nessun gruppo anello sono definiti per questo gruppo (group_id manca di flussi di chiamate)",
+		"userDeleted": "utente eliminato",
+		"removeMember": "rimuovi membro",
+		"distribute": "distribuire",
+		"maxDurationTooltip": "selezionare questa casella per modificare la durata massima per il gruppo suoneria. è necessario immettere un numero compreso tra 30 e 999.",
+		"title": "gruppi totali",
+		"titleGrid": {
+			"groups": "nome del gruppo",
+			"members": "membri",
+			"extensions": "estensione",
+			"phoneNumbers": "numero di telefono",
+			"features": "caratteristiche di gruppo"
+		},
+		"toastrMessages": {
+			"numbersUpdated": "aggiornato con successo i numeri telefonici delle {{ nome }}",
+			"extensionsUpdated": "aggiornato con successo le estensioni numero di {{ nome }}"
+		},
+		"callRecording": {
+			"title": "registrazione delle chiamate",
+			"headline": "impostazioni di registrazione delle chiamate di gruppo",
+			"formatLabel": "formato",
+			"urlLabel": "url",
+			"urlPlaceholder": "http",
+			"timeLimitLabel": "limite di tempo (sec)",
+                        "noNumber": "If your activate callrecord, you need a number for your extension.",
+                        "bestoreDB": "Callrecords will be stored for 6 months in the database."
+		},
+		"ringback": {
+			"title": "ringback",
+			"headline": "Impostazioni gruppo risponderie",
+			"dropdownLabel": "supporti risponderie",
+			"silence": "il silenzio",
+                        "germanRing": "Ringback Geramany",
+                        "usaRing": "Ringback USA",
+                        "asiaRing": "Ringback China",
+			"defaultRingback": "richiamata predefinito",
+			"emptyUploadAlert": "selezionare un file da caricare",
+			"fileTooBigAlert": "non è possibile caricare un file con una dimensione superiore a 5MB"
+		},
+		"nextAction": {
+			"title": "azione successiva",
+			"headline": "aggiungere un'azione quando nessuno raccoglie",
+			"label": "se nessuno risponde, inoltrare la chiamata a",
+			"menu": "menu",
+			"mainMenu": "menu principale (orari di apertura)",
+			"voicemails": "caselle vocali",
+			"users": "utenti"
+		},
+		"outdatedGroupsError": "i dati dei gruppi è obsoleto e non può essere reso. si prega di contattare l'amministratore per aggiornare i dati.",
+                "forward": {
+                        "title": "Allow Call-Forward",
+                        "headline": "Allow Call-Forward",
+                        "description": "Enable this option if you want to allow this group's users to press their device \"Forward\" button to forward a call fromthis ring group. If this option is disabled, it will ignore the user's command."
+                },
+                "walkthrough": {
+                        "steps": {
+                                "1": "Add a specific User Group by clicking on the button. The handy drag and drop allows you to add users, create a group name and add an extension number. Once complete, each User Group and its settings will be populated below.",
+                                "2": "Once a User Group is created, it will pre-populate the area here. Make any necessary changes such as the group name, number of members and extension number.",
+                                "3": "Purchase, Port and Assign numbers. Once complete, it will automatically be assigned to the specific User Group.",
+                                "4": "Turn on/off and seamlessly manage any of the User Features specific to the User Group."
+                        }
+                },
+                "prepend": {
+                        "title": "Caller ID change",
+                        "headline": "Caller ID change",
+                        "cidNameLabel": "Caller ID Name prefix",
+                        "cidNumberLabel": "Caller ID Number prefix"
+                },
+                "suffix": {
+                        "cidNumberLabel": "Caller ID Number suffix"
+		}
+	},
+
+	"devices": {
+		"add": "aggiungere dispositivo",
+		"assigned": "addetto",
+		"createDevice": "creare dispositivo",
+		"confirmDeleteDevice": "questo dispositivo verrà eliminato definitivamente. continuare?",
+		"deleteDevice": "eliminare dispositivo",
+		"deletedDevice": "è stato eliminato con successo il seguente dispositivo {{ device }}.",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+                "provstringinfoHelp": "To use this, open per Webbrowser your phone, and write this string in his config field, and restart this phone manually.",
+		"popupSettings": {
+			"advancedTitle": "avanzato",
+			"basicTitle": "impostazioni di base",
+			"brandDownloads": "Productinfo",
+			"basicSectionTitle": "impostazioni di base",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "per selezionare un codec, drag and drop dalla casella codec disponibili al dialogo codec selezionata",
+			"options": {
+				"menuTitle": "opzioni"
+			},
+			"sip": {
+				"menuTitle": "sorso",
+				"sectionTitle": "Info sip",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!",
+                                "provstring_notsupported": "This device in this version is not supported, please ask for additional support!"
+			},
+			"audio": {
+				"menuTitle": "audio",
+				"sectionTitle": "impostazioni audio",
+				"selectedCodecs": "codec selezionati",
+				"unselectedCodecs": "codec disponibili",
+				"codecs": {
+					"OPUS": "lavoro",
+					"CELT@32000h": "sirena @ 32 kHz",
+					"G7221@32000h": "g722.1 @ 32 kHz",
+					"G7221@16000h": "g722.1 @ 16kHz",
+					"G722": "G722",
+					"speex@32000h": "Speex @ 32 kHz",
+					"speex@16000h": "Speex @ 16kHz",
+					"speex": "Speex",
+					"PCMU": "G711u/PCMU-64kbps (na)",
+					"PCMA": "G711A/PCMA-64kbps (altrove)",
+					"G729": "G729-8kbps (richiede licenza)",
+					"GSM": "gsm",
+					"CELT@48000h": "sirena (hd) @ 48kHz",
+					"CELT@64000h": "sirena (hd) @ 64kHz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "emergenza caller-id",
+				"sectionTitle": "emergenza caller-id",
+				"emergency": "numero",
+				"notSet": "- Account predefinito -",
+				"noE911Numbers": "voi non ha ancora impostato e911 su uno qualsiasi dei numeri, si prega di configurarlo tramite il manager numero e tornare su questo schermo una volta il suo fare",
+				"address": "indirizzo"
+			},
+			"miscellaneous": {
+				"menuTitle": "miscellaneo",
+				"sectionTitle": "miscellaneo",
+				"rtp": {
+					"enable": "crittografare l' audio",
+					"type": "tipo di crittografia",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"ignoreCompletedElsewhere": {
+					"label": "ignorare completato altrove",
+					"help": "quando i telefoni che supportano controllato mostreranno una chiamata persa, se fosse parte di un gruppo di anello risposto altrove."
+				},
+                                "restart": {
+                                        "label": "Envoyer une requête de redémarrage",
+                                        "button": "Redémarrer",
+                                        "help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+                                        "success": "Vous avez envoyé une requête de redémarrage avec succès!"
+                                }
+                        },
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+			},
+			"restrictions": {
+				"menuTitle": "restrizioni",
+				"sectionTitle": "impostazioni restrizioni",
+				"inherit": "ereditare",
+				"deny": "negare",
+				"matcher": {
+					"help": "digitare un numero (international format => +[Countryprefix]...) e fare clic su test per vedere se sarebbe stato permesso la chiamata.",
+					"placeholder": "+18554443333",
+					"button": "test",
+					"label": "il numero di cui sopra hanno soddisfatto questa regola.",
+					"__comment": "ui-727, v3.19_s2",
+					"allowMessage": "sarà consentito di effettuare una chiamata di questo dispositivo {{ phonenumber }}",
+					"denyMessage": "non sarà permesso di effettuare una chiamata di questo dispositivo {{ phonenumber }}."
+				},
+				"__comment": "ui-727, v3.19_s2",
+				"allow": "consentire",
+				"disabledRestrictionsInfo": "alcuni tipi di chiamate sono state limitate per l'intero account e non possono essere abilitati per dispositivo."
+			},
+                        "video": {
+                                "menuTitle": "Video",
+                                "sectionTitle": "Video Settings",
+                                "selectedCodecs": "Selected Codecs",
+                                "unselectedCodecs": "Available Codecs",
+                                "codecs": {
+                                        "VP8": "VP8",
+                                        "H264": "H264",
+                                        "H263": "H263",
+                                        "H261": "H261"
+                                }
+                        },
+                        "featureKeys": {
+                                "menuTitle": "Feature Keys",
+                                "description": "Feature key",
+                                "labels": {
+                                        "user": "User",
+                                        "parkingSpot": "Parking Spot",
+                                        "value": "Value"
+                                },
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Info",
+                                                "hideInfo": "Hide Info"
+                                        },
+                                        "types": {
+                                                "presence": "Indicate when a user has an incoming call or is on the phone. The indicator can be used to pick up ringing calls or speed dial thatuser.",
+                                                "parking": "Indicate when a call is placed on a parking slot available to the entire company. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+                                                "extension": "Nebenstelle",
+                                                "line": "Leitung",
+                                                "personal_parking": "Indicate when a call is placed on a parking slot dedicated to the selected user. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+                                                "speed_dial": "Does not indicate for any calls event but can be used to rapidly call the configured number."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "presence": "Presence",
+                                        "extension": "Nebenstelle",
+                                        "line": "Leitung",
+                                        "parking": "Parking",
+                                        "personal_parking": "Personal Parking",
+                                        "speed_dial": "Speed Dial"
+                                },
+                                "keytemplateHelp": "By click on this, template will be taken from this phone. Select an account wide template to take it at device create."
+                        }
+		},
+		"buy": "acquistare dispositivo",
+		"classifiers": {
+			"unknown": {
+			    "name": "diversi dai precedenti",
+			    "help": "selezionare questa opzione quando si desidera questo account per effettuare chiamate a qualsiasi numero diverso da quelli menzionati nella lista. (quando il formato del numero è sconosciuto al sistema.)"
+			}
+		},
+		"noMatchingDevices": "non c'erano dispositivi trovati corrispondono alla tua ricerca",
+		"noDevicesConfigured": "non ci sono dispositivi configurati",
+		"provisionerPopup": {
+			"brandHeadline": "selezionare la marca del dispositivo",
+			"deviceHeadline": "selezionare il modello del dispositivo",
+			"deviceSelected": "è stato selezionato il {{ }} marchio {{ modello }}",
+			"missingBrand": "la marca del mio dispositivo non è elencata qui",
+			"missingDevice": "Il dispositivo non è elencata qui",
+			"title": "selezione del dispositivo"
+		},
+		"sip_device": {
+			"addTitle": "l'aggiunta di un dispositivo SIP",
+			"editTitle": "Dispositivo editing sip",
+			"macAddress": "indirizzo mac",
+			"macAddressPlaceholder": "19",
+			"new": "nuovo dispositivo SIP",
+			"deviceName": "nome del dispositivo"
+		},
+		"sip_uri": {
+			"addTitle": "l'aggiunta di un uri sorso",
+			"deviceName": "nome",
+			"editTitle": "editing URI SIP",
+			"new": "nuovo uri SIP",
+			"uri": "URI SIP",
+			"uriPlaceholder": "sorso",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"landline": {
+			"addTitle": "l'aggiunta di una linea fissa",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "editing fisso",
+			"new": "nuovo telefono fisso",
+			"number": "numero",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "richiedono premere il tasto",
+			"keepCallerId": "mantenere originale caller-id",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"cellphone": {
+			"addTitle": "aggiungendo un telefono cellulare",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "cellulare editing",
+			"new": "nuovo telefono cellulare",
+			"number": "numero",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "consentire l'uso del cellulare voicemail",
+			"keepCallerId": "mantenere originale caller-id",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"mobile": {
+			"addTitle": "aggiungendo un cellulare",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "editing mobili",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10 cifre numero di telefono",
+			"new": "nuovo cellulare"
+		},
+		"smartphone": {
+			"addTitle": "aggiungendo uno smartphone",
+			"deviceName": "nome del dispositivo",
+			"editTitle": "editing smartphone",
+			"new": "nuovo smartphone",
+			"requireKeypress": "consentire l'uso del cellulare voicemail",
+			"keepCallerId": "mantenere originale caller-id",
+			"hideContactList": "nascondere dalla lista dei contatti"
+		},
+		"fax": {
+			"addTitle": "l'aggiunta di un fax",
+			"editTitle": "fax editing",
+			"macAddress": "indirizzo mac",
+			"macAddressPlaceholder": "19",
+			"new": "fax",
+			"deviceName": "nome del dispositivo",
+			"t38": "T38",
+			"disabled": "diversamente abili",
+			"auto": "auto detect",
+			"force": "forza sempre"
+		},
+		"softphone": {
+			"addTitle": "l'aggiunta di un softphone",
+			"editTitle": "editing softphone",
+			"new": "nuovo softphone",
+			"deviceName": "nome del dispositivo"
+		},
+		"ata": {
+			"addTitle": "l'aggiunta di un ata",
+			"editTitle": "editing ata",
+			"new": "nuove ata",
+			"deviceName": "nome del dispositivo"
+		},
+		"sip": {
+			"username": "sip nome utente",
+			"password": "Password sip",
+			"realm": "regno"
+		},
+		"spare": "di ricambio",
+		"title": "dispositivi totali",
+		"titleGrid": {
+			"edit": "modifica",
+			"enable": "permettere",
+			"user": "utente",
+			"modelMacAddress": "Nome/mac address",
+			"type": "tipo"
+		},
+		"types": {
+			"cellphone": "cellulare",
+			"sip_device": "telefono sip",
+			"smartphone": "smartphone",
+			"mobile": "mobile",
+			"softphone": "softphone",
+			"landline": "fisso",
+			"fax": "fax",
+			"ata": "essi",
+			"sip_uri": "URI SIP"
+		},
+		"unassignedDevice": "-",
+                "microphone": "Micrphone",
+                "speaker": "Speaker"
+	},
+
+	"users": {
+		"Sec": "Sec",
+		"admin": "Admin",
+		"add": "aggiungere utente",
+		"addExtension": "aggiungere un interno a questo utente",
+		"addNewExtension": "numero di interno",
+		"addFromSpare": "aggiungere dai numeri di ricambio",
+		"addFromSpareDevices": "aggiungere da dispositivi di ricambio",
+		"buy": "acquistare numeri",
+		"confirmDeleteAdmin": "sei per eliminare un amministratore! l'eliminazione di un amministratore cancellerà il suo utente kazoo, così come le sue caselle di posta vocale e numeri, sarà anche impedirgli di gestione di questo ui. vuoi continuare?",
+		"confirmDeleteUser": "l'eliminazione di un utente elimina questo utente e la casella vocale, e annullare l'assegnazione dei dispositivi e dei numeri che sono stati assegnati a questo utente. vuoi continuare?",
+		"dialogChangePassword": {
+			"help": "è possibile impostare una nuova password semplicemente digitando una password che si desidera, con l' indirizzo di posta elettronica!",
+			"password": "parola d'ordine",
+			"passwordPlaceholder": "Password (min. 8 caratteri)",
+			"title": "email e password",
+			"username": "gli utenti e-mail"
+		},
+		"dialogChangePin": {
+			"help": "è possibile utilizzare questo popup per impostare un pin temporanea per un utente che ha perso il suo pin per esempio.",
+			"pin": "perno",
+			"pinPlaceholder": "min. 4 cifre",
+			"title": "aggiornamento pin"
+		},
+		"dialogCreationUser": {
+			"createUser": "creare utente",
+			"errorOnCreation": "è verificato un errore durante il tentativo di creare questo utente",
+			"extension": "numero di interno principale",
+			"extensionAlreadyExist": "questa estensione è già preso, si prega di scegliere un numero di interno diverso.",
+			"firstName": "nome",
+			"lastName": "cognome",
+			"loginEmail": "e-mail utilizzato per il login",
+			"notificationEmail": "notifica e-mail",
+			"password": "Password (min. 8 caratteri)",
+			"sendToDifferentEmail": "inviare e-mail a un indirizzo alternativo",
+			"title": "creare utente",
+			"vmboxAlreadyExist": "numero vmbox è già preso, si prega di scegliere un altro numero di casella di posta vocale.",
+			"vmboxNumber": "vm scatola #",
+			"sendWelcomeEmail": "Send credentials to this user"
+		},
+		"editionForm": {
+			"changePIN": "Cambia PIN",
+			"changeUsername": "il cambiamento",
+			"firstName": "nome",
+			"lastName": "cognome",
+			"role": "ruolo",
+			"timezone": "fuso orario",
+			"vmboxNumber": "vmbox #",
+			"timeout": "timeout di chiamata",
+			"timeoutSec": "sec",
+			"timeoutEdit": "Modifica in find-me-follow -me feature",
+			"timeoutEditHint": "il timeout di chiamata viene sovrascritto dalla funzione find- me-follow -me. clicca sul link sottostante per modificarlo.",
+			"disabledTimeoutHint": "avete bisogno di almeno un numero o un interno per impostare il timeout di chiamata.",
+			"presenceId": "numero di interno principale",
+			"noPresenceID": "nessuno",
+			"nameHelp": "digitare gli utenti Nome del primo ingresso, e il cognome degli utenti nel secondo",
+			"loginHelp": "questo è il nome di questo utente, utilizzato per accedere all'applicazione",
+			"vmboxHelp": "questo è il numero della casella di posta vocale di questo utente, cliccare su Modifica PIN per ripristinare il pin della casella vocale di questo utente",
+			"roleHelp": "l'amministratore dovrà diritti di accesso allo scambio app e aggiungere applicazioni per questo accoutn, mentre l' utente sarà in grado di accedere alle applicazioni abilitate per lui",
+			"languageHelp": "questo cambierà la lingua del testo visualizzato nell'interfaccia utente e anche i dispositivi",
+			"timezoneHelp": "questo imposterà il fuso orario utilizzato per questo dispositivo gli utenti e casella vocale",
+			"ringingHelp": "questo imposterà il timeout di chiamata per l'utente e le sue periferiche. per esempio, se si imposta su 20, l'utente sarà suonata per 20 secondi prima che il sistema si muove per la sua casella vocale",
+			"mainExtensionHelp": "questo definirà il chiamante -id utilizzato per questo utente per le chiamate all'interno del sistema, così come la sua impostazione id presenza di quel numero"
+		},
+		"delete": "eliminare l'utente",
+		"errorCallerId": "prima di configurare il caller- id di questo utente, è necessario assegnare un numero di lui",
+		"errorNumberFaxing": "prima di configurare il numero di fax di questo utente, è necessario per ottenere alcuni numeri di ricambio sul tuo account (è possibile acquistare nuovi numeri nella sezione numeri nel menu a sinistra).",
+		"featureOn": "in poi",
+		"includeInDirectory": "includere utenti di aziende",
+		"noMatchingDevices": "nessun dispositivo che corrispondono ai criteri di ricerca",
+		"noMatchingNumbers": "non c'erano numeri trovati corrispondono alla tua ricerca",
+		"noMatchingUser": "Nessun dato trovato che corrispondono alla ricerca",
+		"noUsersConfigured": "si prega di aggiungere un utente per cominciare",
+		"noMoreSpareDevices": "ci sono nessun dispositivo di riserva a sinistra, è possibile acquistare nuovi dispositivi andando nell'inventario dispositivi",
+		"noMoreSpareNumbers": "ci sono nessun numero di riserva a sinistra, è possibile acquistare nuovi numeri cliccando sul link qui sotto",
+		"noAssignedDevices": "ma in questo momento nessun dispositivo assegnato a questo utente.",
+		"noAssignedNumbers": "ma in questo momento alcun numero assegnato a questo utente.",
+		"noAssignedExtensions": "ma in questo momento non interno assegnato a questo utente.",
+		"noNumber": "nessuno",
+		"noNumberCallflow": "è necessario assegnare almeno un interno o il numero di telefono di questo utente prima di salvarlo",
+		"needExtensionFirst": "si richiedono agli utenti di avere una proroga prima di assegnare loro un numero di telefono, si prega di cliccare sulla sezione di estensione e aggiungere uno da lì.",
+		"noExtension": "nessuno",
+		"noAssignedNumbers": "non ci sono numeri assegnati a questo utente.",
+		"noUnassignedNumbers": "non ci sono numero disponibile a sinistra per assegnare a questo utente.",
+		"noUserDevices": "nessuno",
+		"noUserFeatures": "nessuno",
+		"noUserCallflow": "si è verificato un errore. non ci sono flussi di chiamate assegnato a questo utente, quindi lui non potete aggiungere alla directory aziendale",
+		"port": "numeri di porta",
+		"resetPassword": "resettare la password",
+		"resendInstructions": "inviare nuovamente le istruzioni",
+		"title": "utenti totali",
+		"titleGrid": {
+			"users": "impostazioni degli utenti",
+			"extensions": "estensioni",
+			"phoneNumbers": "numero di telefono",
+			"devices": "dispositivi",
+			"features": "funzioni utente"
+		},
+		"toastrMessages": {
+			"devicesUpdated": "aggiornato con successo i dispositivi assegnati a {{ nome }}.",
+			"instructionsSent": "una e-mail è stata inviata a {{ email}} con tutte le istruzioni per l'uso su come iniziare con il ui!",
+			"numbersUpdated": "aggiornato con successo i numeri telefonici delle {{ nome }}.",
+			"passwordReseted": "la password è stata reimpostata, una e-mail è stata inviata a {{ email}} con le istruzioni su come creare una nuova password.",
+			"userDelete": "è stato eliminato con successo {{ nome }} dal centralino intelligente!",
+			"userUpdated": "si correttamente aggiornati { } { nome } impostazioni.",
+			"pinUpdated": "aggiornato con successo il perno di {{ nome}}.",
+			"__comment": "ui -1033",
+			"__version": "3.20",
+			"callerIDDeleted": "il numero del chiamante -id di questo utente è stato impostato su un numero che non era più assegnato a lui, così abbiamo disabilitato la funzione caller-id."
+		},
+		"uploadPicture": "caricare una foto",
+		"user": "utente",
+		"call_forward": {
+			"directCallsOnly": "solo chiamate dirette a termine",
+			"headline": "impostazioni di deviazione utente",
+			"keepCallerId": "mantenere il caller-id",
+			"label": "inoltrare tutte le chiamate a",
+			"mobile": "un telefono cellulare",
+			"deskphone": "un telefono da scrivania",
+			"number": "questo numero",
+			"placeholder": "+14157283992",
+			"requireKeyPress": "lasciare messaggi vocali su numeri trasmessi",
+			"title": "inoltro chiamata",
+			"timeoutWarning": "al fine di lasciare messaggi vocali sui numeri trasmesse, il tuo timeout suoneria deve essere impostato per almeno 30 secondi. salvando ora, si verrà automaticamente reindirizzati alla versione dell'utente in cui è possibile aggiornare il timeout di chiamata."
+		},
+		"callRecording": {
+			"title": "registrazione delle chiamate in entrata",
+			"headline": "impostazioni di registrazione delle chiamate dell'utente",
+			"formatLabel": "formato",
+			"urlLabel": "url",
+			"urlPlaceholder": "http",
+			"timeLimitLabel": "limite di tempo (sec)",
+			"noNumber": "prima di configurare la funzione di registrazione delle chiamate in entrata per l'utente, è necessario assegnare lui un numero o un interno",
+			"bestoreDB": "Recording will be stored for 6 months in database."
+		},
+		"conferencing": {
+			"title": "bridge di conferenza",
+			"headline": "bridge di conferenza personale",
+			"pinLabel": "numero sala conferenze personale",
+			"number": "il numero di telefono di conferenza (s)",
+			"help": "è possibile creare una chiamata in conferenza, fornendo un numero di telefono per conferenze e il numero della camera personale ai partecipanti",
+			"noConfNumbers": "è necessario aggiungere un numero conferenza principale (nella sezione numero principale sulla sinistra del smartpbx) per consentire i ponti personnals conferenze"
+		},
+		"faxing": {
+			"title": "FaxBox",
+			"headline": "FaxBox",
+			"text": "l'utente riceverà i fax in {{ variabile }} come allegato.",
+			"helpOne": "per gli utenti che eseguono Windows, ecco un link alla",
+			"helpTwo": "installer stampante nuvola",
+			"form": {
+				"label": {
+					"callerId": "numero FaxBox",
+					"linkToPrinter": "Link a stampante",
+					"smtpEmailAddress": "indirizzo di posta elettronica smtp"
+				}
+			},
+			"defaultSettings": {
+				"nameExtension": "s FaxBox",
+				"headerExtension": "stampante fax"
+			}
+		},
+		"vm_to_email": {
+			"deleteAfterNotify": "eliminare i messaggi dal database dopo l'invio della notifica.",
+			"headline": "voicemail -to -email impostazioni",
+			"help": "se si desidera cambiare notifiche e-mail in cui andare, si prega di modificare l'indirizzo di posta elettronica degli utenti nella sezione gestione utenti",
+			"label": "una e-mail verrà inviato {{ variabile }} per ogni nuovo messaggio vocale",
+			"title": "messaggi vocali"
+		},
+		"find_me_follow_me": {
+			"title": "trovare me, mi segua",
+			"headline": "me trovare, mi segua impostazioni",
+			"disableDevice": "non squilla",
+			"ringThisPhoneFor": "suonare questo telefono per",
+			"noDevice": "avete bisogno di almeno un dispositivo per abilitare questa funzione.",
+			"noNumber": "prima di configurare il ritrovamento me-follow-me a rendere per l'utente, è necessario assegnare lui un numero o un interno",
+			"distribute": "distribuire"
+		},
+		"caller_id": {
+			"title": "numero del chiamante -id",
+			"dropdownLabel": "mostrare il proprio numero caller- id come",
+			"headline": "impostazioni del numero chiamante id utente",
+			"help": "se non abilitare questa funzione, il caller- ID visualizzato di default sarà quello configurato sul numero principale di questo account."
+		},
+		"music_on_hold": {
+			"title": "musica su attesa",
+			"headline": "impostazioni utente music-on-hold",
+			"dropdownLabel": "musica di attesa",
+			"silence": "il silenzio",
+			"emptyUploadAlert": "selezionare un file da caricare",
+			"fileTooBigAlert": "non è possibile caricare un file con una dimensione superiore a 5MB"
+		},
+		"hotdesk": {
+			"id": "HotDesk id",
+			"label": "esso richiede uno spillo ?",
+			"keep_logged_in_elsewhere": "consentire l'accesso a più dispositivi",
+			"title": "hot-desking",
+			"headline": "Impostazioni hot-desking utenti",
+			"help": "l' id hot-desking viene impostato automaticamente come numero estensioni utenti."
+		},
+		"__comment": "ui-1129",
+		"__version": "3.19",
+		"migration": {
+			"confirmMigration": "abbiamo trovato una di flussi di chiamate esistente con il numero youre cercando di aggiungere, sembra possiamo migrare questa flussi di chiamate al smartpbx. prima di procedere, vogliamo essere sicuri di capire che voi non sarà permesso di aggiornare questo flussi di chiamate in kazoo-ui o in app Flussi chiamate mostro-ui dopo questa modifica. vuoi continuare?",
+			"tooManyCallflows": "sembra che il numero di youre cercando di aggiungere appartengono a più Flussi chiamate kazoo-ui. non c'è modo di migrare correttamente questi Flussi chiamate in monster-ui si prega di contattare il vostro sostegno per risolvere il problema."
+		},
+		"__commment": "ui-1109",
+		"__version": "3.19",
+		"presenceIDPopup": {
+			"title": "selezionare la nuova estensione principale",
+			"header": "sembra che si desidera rimuovere il numero si era impostato come interno principale. inserisci la tua nuova estensione principale dalle opzioni qui sotto",
+			"none": "Non voglio impostare una nuova estensione principale"
+		}
+	},
+
+	"strategy": {
+		"noNumberHelp": "note",
+		"sectionTitles": {
+			"numbers": "principali numeri aziendali",
+			"confnum": "numero conferenza principale",
+			"hours": "orario di ufficio strategia",
+			"holidays": "vacanze ufficio",
+			"calls": "gestione delle chiamate in arrivo",
+			"faxingnum": "Main Faxbox Number"
+		},
+		"noNumberTitle": "aggiungere il numero principale",
+		"noNumberMessage": "si prega di aggiungere o comprare un numero dai link qui sotto per continuare.",
+		"noConfNumMessage": "si prega di aggiungere un numero di conferenza principale.",
+		"numberLinks": {
+			"spare": "aggiungere dai numeri di ricambio",
+			"buy": {
+				"link": "acquistare numeri",
+				"regular": "locale",
+				"tollfree": "numero verde",
+				"vanity": "vanità"
+			},
+			"port": "numeri di porta"
+		},
+		"hours": {
+			"alwaysOpenTitle": "24 ore di ricevimento aperto",
+			"alwaysOpenDescription": "scegliere questa opzione se si desidera che le chiamate in arrivo per essere trattati allo stesso modo tutto il tempo.",
+			"customHoursTitle": "orario di ufficio su ordinazione",
+			"customHoursDescription": "scegliere questa opzione se si desidera che le chiamate in arrivo per essere gestite in modo diverso quando il tuo ufficio è chiuso.",
+			"listTitle": "ore personalizzate",
+			"timezone": "fuso orario società",
+			"to": "a",
+			"lunchbreakTitle": "stai chiuso per l'ora di pranzo ?",
+			"__comment": "ui -1250",
+			"__version": "3.20_s2",
+			"helpAfterHours": "non dimenticare di impostare la chiamata di routing per quando il vostro ufficio è chiuso per la notte! per configurarlo, andare nella sezione di gestione delle chiamate in entrata di questa pagina, e selezionare la scheda dopo ore.",
+			"helpLunchHours": "se il vostro ufficio è chiuso a pranzo, è anche necessario scegliere l' instradamento delle chiamate per questo. è possibile configurarlo nella sezione gestione delle chiamate in arrivo e, nella scheda ora di pranzo."
+		},
+		"holidays": {
+			"enableTitle": "stai chiuso per le vacanze ?",
+			"addLink": "aggiungi vacanza",
+			"singleLink": "un solo giorno",
+			"rangeLink": "intervallo di date",
+			"advancedLink": "avanzato",
+			"__comment": "ui -1250",
+			"__version": "3.20_s2",
+			"helpHolidays": "non dimenticare di impostare la chiamata di routing per quando il vostro ufficio è chiuso per le feste! per configurarlo, andare nella sezione di questa pagina gestione delle chiamate in arrivo, e selezionare la scheda vacanze."
+		},
+		"calls": {
+			"openHoursTitle": "orari di apertura",
+			"lunchHoursTitle": "a pranzo",
+			"afterHoursTitle": "dopo ore",
+			"holidaysTitle": "le ferie",
+			"incomingCall": "chiamata in arrivo",
+			"virtualReceptionist": "receptionist virtuale",
+			"voicemail": "segreteria telefonica",
+			"groupOther": "altro",
+			"optionNone": "skip to voicemail",
+			"callTabsMessages": {
+				"MainOpenHours": "selezionare il modo in cui si desidera che i chiamanti arriveranno quando il vostro ufficio è aperto.",
+				"MainLunchHours": "selezionare il modo in cui si desidera che i chiamanti a raggiungerli anche a pranzo.",
+				"MainAfterHours": "selezionare il modo in cui si desidera che i chiamanti arriveranno quando l'ufficio è chiuso.",
+				"MainHolidays": "selezionare il modo in cui si desidera che i chiamanti arriveranno quando siete chiusi durante le vacanze."
+			}
+		},
+		"popup": {
+			"title": "receptionist virtuale",
+			"infoBlock": "receptionist virtuale risponderà alle chiamate in arrivo con professionalità e automaticamente trasferirli su un reparto o di una persona adeguata. menu principale permette di impostare percorsi di chiamata. digita o registrare saluto che corrisponde al menu principale.",
+			"menuTitle": "menu principale",
+			"greetingsTitle": "gli auguri",
+			"addRouteLink": "aggiungere route",
+			"ttsGreetingTitle": "text to speech",
+			"ttsGreetingPlaceholder": "inserisci il tuo messaggio di benvenuto qui.",
+			"uploadGreetingTitle": "caricare il proprio file",
+			"recordGreetingTitle": "registrare per telefono",
+			"recordGreetingInfo": "registrare il messaggio di saluto da soli al telefono, seguendo le istruzioni riportate di seguito",
+			"recordGreetingLines": {
+				"line1": "prendere un telefono registrato in questo account.",
+				"line2": "comporre il numero principale dell'ufficio.",
+				"line3": "immettere questo pin quando richiesto",
+				"line4": "registrare il/menù saluti."
+			},
+			"pressKey": "la stampa",
+			"for": "per",
+			"fileUploadButton": "Choisir fichier",
+			"greetingsHelp": "Vous devez cliquer sur le bouton \"Mettre à jour\" pour sauvegarder les changements apportés au message d'accueil.",
+			"defaultAction": "Default action"
+		},
+		"open": "aperto",
+		"closed": "chiuso",
+		"weekdays": {
+			"monday": "lunedi",
+			"tuesday": "martedì",
+			"wednesday": "mercoledì",
+			"thursday": "giovedi",
+			"friday": "venerdì",
+			"saturday": "sabato",
+			"sunday": "domenica"
+		},
+		"ordinals": {
+			"first": "per primo",
+			"second": "secondo",
+			"third": "terzo",
+			"fourth": "il quarto",
+			"fifth": "quinto",
+			"last": "lo scorso"
+		},
+		"monthsShort": {
+			"january": "Gennaio",
+			"february": "Febbraio",
+			"march": "mare",
+			"april": "aprile",
+			"may": "può",
+			"june": "Giugno",
+			"july": "Di Natale",
+			"august": "Agosto",
+			"september": "Settembre",
+			"october": "ottobre",
+			"november": "novembre",
+			"december": "dicembre"
+		},
+		"callEntities": {
+			"user": "utenti",
+			"device": "dispositivi",
+			"ring_group": "gruppi",
+			"voicemail": "caselle vocali",
+			"directory": "elenco",
+                        "advancedCallflows": "Advanced Callflows"
+		},
+		"confirmMessages": {
+			"deleteHoliday": "questa festa verrà eliminato definitivamente. continuare?",
+			"disableHolidays": "tutti i giorni festivi esistenti verranno eliminati definitivamente. continuare?"
+		},
+		"alertMessages": {
+			"uniqueHoliday": "ogni vacanza deve avere un nome univoco.",
+			"undefinedMenu": "è stato selezionato un receptionist virtuale senza la sua creazione. si prega di configurarlo cliccando sul link receptionist virtuale, oppure scegliere una diversa opzione.",
+			"emptyTtsGreeting": "è necessario digitare il messaggio di saluto per consentire il testo alla funzionalità vocale.",
+			"emptyUploadGreeting": "selezionare un file da caricare",
+			"fileTooBigAlert": "non è possibile caricare un file con una dimensione superiore a 5MB",
+			"uniqueMenuNumbers": "numeri all'interno del menu devono essere univoci e non vuoto.",
+			"lastE911Error": "è necessario E911 istituito su almeno uno dei numeri principali. impostare up e911 su un altro numero principale prima di eliminare questo."
+		},
+		"toastrMessages": {
+			"updateHolidaySuccess": "vacanze con successo aggiornati.",
+			"updateCallSuccess": "strategia chiamata con successo aggiornato.",
+			"buyNumbersSuccess": "i numeri sono stati acquistati.",
+			"buyNumbersError": "è verificato un errore durante l'acquisto di numeri.",
+			"removeNumberSuccess": "numero rimosso con successo dal flussi di chiamate principale."
+		},
+		"popupRemoveFeatures": {
+			"title": "le caratteristiche",
+			"questionPartOne": "vuoi rimuovere funzionalità da",
+			"questionPartTwo": "?",
+			"featuresToRemove": "Controllare la funzione (s) per rimuovere",
+			"features": {
+				"cnam": "caller-id",
+				"dash_e911": "E911"
+			}
+		},
+
+                "walkthrough": {
+                        "first": {
+                                "steps": {
+                                        "1": "Setup your main company number within SmartPBX by purchasing or porting a number. This is different than User Phone Numbers because it represents the main phone number for the entire company."
+                                }
+                        },
+                        "second": {
+                                "steps": {
+                                        "1": "Set up your office hours phone strategy to your convenience. You can set up a 24 hour open office strategy or if your office is ever closed, create custom hours. You can even close your office during lunch hours.",
+                                        "2": "Is your office closed on holidays? Create specific dates or time frames when your office will be closed",
+                                        "3": "Virtual Receptionist allows you to seamlessly answer incoming calls. Add call routes to contact the appropriate department or person within the system. You can also create customized greetings using text-to-speech, uploading your own file or recording it over the phone.",
+                                        "4": "Create a main Conference Number for your business. Purchase, port or add an existing number and set up a Conference Number seamlessly.",
+                                        "5": "Create a main Faxbox Number for your business. Purchase, port or add an existing number and set up a Faxbox Number seamlessly."
+                                }
+                        }
+                },
+                "noFaxingNumMessage": "Please add a main faxbox number.",
+                "faxing": {
+                        "nameExtension": "'s Main Faxbox",
+                        "headerExtension": " Fax Printer"
+                },
+                "customConferenceGreeting": {
+                        "title": "Custom Conference Greeting",
+                        "link": "Custom Greeting",
+                        "info": "Customize your conference greeting message using our Text-to-Speech feature. Simply type your greeting message in the input field below.",
+                        "mainConfMissing": "Your Main Conference could not be found.",
+                        "tooltip": "Your Main Conference has a custom greeting message."
+                }
+	},
+
+	"callLogs": {
+		"title": "registri delle chiamate",
+		"dateRangeTo": "a",
+		"noSearchMatch": "si cerca criteri non corrisponde con nessun registro delle chiamate.",
+		"detailsPopupTitle": "registro chiamate dettagli",
+		"applyFilter": "filtrare per date selezionate",
+		"resetFilter": "più scelte di default date",
+		"gridHeaders": {
+			"inboundCall": "inbound",
+			"outboundCall": "in uscita",
+			"dateTime1": "appuntamento",
+			"from": "a partire",
+			"to": "a",
+			"duration1": "la durata",
+			"duration2": "(Min)",
+			"hangup1": "appendere",
+			"hangup2": "causa",
+			"details1": "chiamata",
+			"details2": "dettagli",
+			"report1": "presentare",
+			"report2": "relazione"
+		},
+		"reportCall": "chiamata relazione",
+		"loaderMessage": "scorrere verso il basso o clicca qui per caricare i registri delle chiamate aggiuntive.",
+		"loadingMessage": "caricare i registri delle chiamate aggiuntive...",
+		"alertMessages": {
+			"getDetailsError": "un errore durante il recupero dei registri delle chiamate dettagli."
+		},
+		"key": "chiave",
+		"value": "valore",
+		"thisDay": "Oggi",
+		"custom": "Cliente",
+		"callsFrom": "Mostra chiamate da",
+		"callsTo": "a",
+		"thisMonth": "Questo mese",
+		"thisWeek": "Questa Settimana"
+	},
+
+	"myOffice": {
+		"topBarLinks": {
+			"callerID": "caller id",
+			"musicOnHold": "musica d'attesa",
+			"callRecording": "registrazione",
+			"hours": "orario"
+		},
+		"musicOnHold": {
+			"title": "musica su attesa",
+			"headline": "installazione di musica su attesa per l'account",
+			"dropdownLabel": "musica di attesa",
+			"silence": "il silenzio",
+			"default": "musicale predefinito",
+			"emptyUploadAlert": "selezionare un file da caricare",
+			"fileTooBigAlert": "non è possibile caricare un file con una dimensione superiore a 5MB"
+		},
+		"callerId": {
+			"title": "società caller id",
+			"headline": "selezionare un numero Caller ID per l'account",
+			"numberLabel": "azienda numero ID chiamante",
+			"numberHelp": "questo numero viene visualizzato come ID chiamante quando si effettua una chiamata in uscita.",
+			"nameLabel": "azienda nome del chiamante id",
+			"nameHelp": "questo nome verrà visualizzato come ID chiamante quando si effettua una chiamata in uscita.",
+			"emergencyLabel": "ditta di emergenza (E911)",
+			"emergencyZipcode": "cap",
+			"emergencyAddress1": "indirizzo linea 1",
+			"emergencyAddress2": "indirizzo 2",
+			"emergencyCity": "città",
+			"emergencyState": "stato",
+			"emergencyHelp1": "questo indirizzo apparirà come indirizzo di id chiamante quando si effettua in uscita chiamata di emergenza di un ente governativo (ad esempio, 911 negli Stati Uniti).",
+			"emergencyHelp2": "note",
+			"mandatoryE911Alert": "è necessario specificare le informazioni E911 per la tua azienda numero id chiamante."
+		},
+		"missingMainNumberForCallerId": "è necessario aggiungere un numero principale al vostro ufficio prima di configurare il caller- id!",
+		"missingE911Message": "si prega di configurazione della vostra azienda id chiamante e E911 su un numero principale.",
+		"missingMainNumberMessage": "si prega di aggiungere un numero principale al tuo account.",
+		"totalUsers": "utenti totali",
+		"totalDevices": "dispositivi totali",
+		"totalConfs": "ponti conferenza",
+		"mainNumberLabel": "numero principale",
+		"noMainNumber": "aggiungere il numero principale",
+		"confNumberLabel": "numero di conferenza",
+		"faxNumberLabel": "numero di fax",
+		"totalNumbers": "numero totale",
+		"unregisteredDevices": "dispositivi non registrati",
+		"accountId": "account id",
+		"accountRealm": "conto regno",
+		"numberChartLegend": {
+			"assigned": "numeri assegnati",
+			"spare": "numeri di ricambio",
+			"local": "numeri locali",
+			"tollfree": "numeri verdi",
+			"international": "numeri internazionali",
+			"noNumber": "no numero disponibile"
+		},
+		"mainVMBoxName": "casella vocale principale",
+		"faxingNumberLabel": "Faxbox Number",
+                "directoryLabel": "Company Directory Users:"
+	},
+
+	"featureCodes": {
+		"title": "codici funzione disponibili",
+		"noFeatureCodeMessage": "non ci sono codici funzione abilitati sul tuo conto ancora. codici funzione vengono creati automaticamente quando si carica la pagina numero principale.",
+		"mainNumberLink": "vai al numero principale",
+		"labels": {
+			"call_forward[action=activate]": "attivare call- forward",
+			"call_forward[action=deactivate]": "disabilitare call- forward",
+			"call_forward[action=toggle]": "ginocchiera call- forward",
+			"call_forward[action=update]": "update call- forward",
+			"call_forward[action=on_busy_enable]": "attivare call- forward su occupato",
+			"call_forward[action=on_busy_disable]": "disabilitare call- forward su occupato",
+			"call_forward[action=no_answer_enable]": "attivare call- inoltrare nessuna risposta",
+			"call_forward[action=no_answer_disable]": "Disattiva chiamate avanzare nessuna risposta",
+			"hotdesk[action=login]": "consentire hot desking",
+			"hotdesk[action=logout]": "disabilitare hot desking",
+			"hotdesk[action=toggle]": "ginocchiera hot desking",
+			"voicemail[action=check]": "controllare voicemail",
+			"voicemail[action=direct]": "direttamente alla segreteria",
+			"intercom": "citofono",
+			"privacy[mode=full]": "vita privata",
+			"park_and_retrieve": "parcheggiare e recuperare",
+			"valet": "la scelta",
+			"retrieve": "richiamare",
+			"donotdisturb[action=enable]": "consentire non disturbare",
+			"donotdisturb[action=disable]": "disabilitare non disturbare",
+			"donotdisturb[action=toggle]": "alternare non disturbare",
+			"directory": "elenco",
+			"time": "controllare il tempo",
+			"call_waiting[action=enable]": "consentire di avviso di chiamata",
+			"call_waiting[action=disable]": "disattivare avviso di chiamata",
+			"sound_test_service": "servizio di prova del suono",
+			"call_recording": "registrazione delle chiamate"
+		},
+		"__comment": "ui -1028, v3.20_s0",
+		"categories": {
+			"call_forward": "call- forward",
+			"hotdesk": "hot-desking",
+			"parking": "il parcheggio",
+			"do_not_disturb": "non disturbare",
+			"misc": "miscellaneo"
+		},
+                "installBox": {
+                        "avmTitle": "AVM FRITZ! Clip: Die FRITZ!Box -- the top model for Internet, telephony and multimedia (All-IP)",
+                        "avmDescript": "The FRITZ!Box offers the new Wireless AC standard for ultra-fast wireless speed as well as considerably more range. The latest hardware, lightning-fast gigabit LAN ports, and always the latest version of FRITZ!OS for your Smart Home.",
+                        "avmAllipYtLink": "http://www.youtube.com/watch?v=XXXk9ARdZH8"
+                },
+                "installIos": {
+                        "iosTitle": "QoS-Modem for stable and save internet connections at (All-IP)",
+                        "iosDescript": "Das QoS-Modem is able to hold your internet stable as well, the perfect fit for all your home networking needs.",
+                        "iosAllipYtLink": "http://www.youtube.com/watch?v=Gwg4K-B6RwM"
+                },
+                "installSoft": {
+                        "softTitle": "Zoiper App: The Softphone App on your Smartphone oder PC over (All-IP)",
+                        "softDescript": "The Softphone App on your Smartphone over WLAN-Connection can you have phone cheep as well!"
+                },
+                "installSip": {
+                        "sipTitle": "Easy installation for your SIP-Phones at IP-Connections with (All-IP)",
+                        "sipDescript": "The SIP-Phone is easy to use, just setup and plugin the sip-phone."
+                },
+                "walkthrough": {
+                        "steps": {
+                                "1": "Service Nummern: Give you the overview o possible service numbers.",
+                                "2": "Installation FritzBox: The Guide for install a Fritzbox.",
+                                "3": "Installation QoS-Modem: The Guide for install the QoS-Modem.",
+                                "4": "Installation Softphone: The Guide for install a Softphone.",
+                                "5": "Installation SIP-Phone: The Guide for install a SIP-Phone."
+                        }
+                }
+	},
+
+	"__comment": "ui -1220",
+	"__version": "3.19",
+	"vmboxes": {
+		"addTitle": "l'aggiunta di una casella vocale",
+		"editTitle": "la modifica di una casella vocale",
+		"title": "totale caselle vocali",
+		"add": "aggiungere casella vocale",
+		"new": "nuova casella vocale",
+		"createVmbox": "creare nuova casella vocale",
+		"deleteVmbox": "eliminare casella",
+		"deleteNotAllowed": "Non è possibile cancellare la casella di posta vocale perché appartiene ad un utente",
+		"confirmDeleteVmbox": "la casella di posta vocale verrà eliminato definitivamente. continuare?",
+		"deletedVmbox": "è stato eliminato con successo la seguente casella di posta vocale {{ vmboxname }}.",
+		"titleGrid": {
+			"name": "nome",
+			"number": "numero",
+			"owner": "utente",
+			"edit": "modifica"
+		},
+		"noMatchingVMBoxes": "non c'erano le caselle vocali trovati corrispondono alla tua ricerca",
+		"noVMBoxesConfigured": "non ci sono caselle di posta vocale configurati",
+		"popupSettings": {
+			"advancedTitle": "avanzato",
+			"basicTitle": "impostazioni di base",
+			"basicSectionTitle": "impostazioni di base",
+			"basic": {
+				"name": {
+					"label": "nome"
+				},
+				"number": {
+					"label": "numero della segreteria telefonica"
+				},
+				"pinNumber": {
+					"label": "codice pin"
+				}
+			},
+			"options": {
+				"menuTitle": "opzioni",
+				"sectionTitle": "opzioni",
+				"timezone": {
+					"label": "fuso orario"
+				},
+				"unavailableMessage": {
+					"label": "messaggio non disponibile"
+				},
+				"timezone": {
+					"label": "fuso orario"
+				},
+				"alreadySetup": {
+					"label": "già messa a punto ?",
+					"help": "è la casella di posta vocale già considerato inizializzato ? se non, la prima volta che l'utente accede a essi saranno costretti a cambiare il loro pin e l'impostazione di un saluto."
+				},
+				"requirePIN": {
+					"label": "Richiedi PIN ?",
+					"help": "controllare se voicemail richiede un pin."
+				},
+				"autoLogin": {
+					"label": "Auto-login abilitato ?",
+					"help": "Controllare per abilitare l'auto-login per questa casella vocale ? (se l'utente chiama il proprio voicemail, va dritto ai suoi messaggi)"
+				},
+				"skipGreetings": {
+					"label": "saltare saluti ?",
+					"help": "Controllare per saltare saluti di default"
+				},
+				"skipInstructions": {
+					"label": "ignorare le istruzioni ?",
+					"help": "Controllare per saltare le istruzioni di default"
+				},
+				"deleteAfterNotify": {
+					"label": "eliminare dopo la notifica ?",
+					"help": "eliminare il messaggio vocale dopo che è stata inviata la notifica"
+				},
+				"configurable": {
+					"label": "configurabile tramite il menu ?",
+					"help": "se deselezionata, impedirà all'utente di configurare Voicemail tramite il menu"
+				}
+			},
+			"recipients": {
+				"menuTitle": "destinatari",
+				"sectionTitle": "destinatari",
+				"header": "Questo pannello consente di gestire, che sarà notificato quando qualcuno lascia un messaggio su questa casella di posta vocale. Fare clic su Aggiungi nuovo destinatario per aggiungere un indirizzo e-mail alla lista",
+				"create": "aggiungere nuovo destinatario"
+			},
+                        "greeting": {
+                                "menuTitle": "Greeting Media",
+                                "sectionTitle": "Greeting Media",
+                                "dropdownLabel": "Media:",
+                                "noGreeting": "- None -",
+                                "audioUploadButton": "Browse...",
+                                "fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+                                "emptyUploadAlert": "Please select a file to upload"
+                        }
+                }
+        },
+        "installservices": {
+                "title": "Install and Service-Numbers",
+                "featureCodes": "Service-Numbers",
+                "installFritzBox": "Inst. FritzBox",
+                "installIosmodem": "Inst. QoS-Modem",
+                "installSoftphone": "Inst. Phone App",
+                "installSipphone": "Inst. SIP-Phone"
+        },
+	"numberPrepend": "prepend",
+	"portIconHelp": "This number is in the process of being ported and will be deleted if the port fails. It only appears for setting up purposes and is not configured to handle calls"
+}

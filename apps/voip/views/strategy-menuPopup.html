@@ -1,0 +1,96 @@
+<div id="strategy_menu_popup">
+	<div class="info-block">
+		{{i18n.strategy.popup.infoBlock}}
+	</div>
+	<div class="menu-block clearfix">
+		<div class="left">
+			<div class="title">{{i18n.strategy.popup.menuTitle}}</div>
+			<div class="content">
+			</div>
+			<div class="add-menu-line">
+				<a class="monster-link blue" href="#">{{i18n.strategy.popup.addRouteLink}}</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="title">{{i18n.strategy.popup.greetingsTitle}}</div>
+			<div class="content">
+				<div id="strategy_menu_popup_accordion">
+					<div class="greeting-option accordion-group {{#compare greeting.media_source '===' 'tts'}}active{{/compare}}">
+						<div class="greeting-option-header" data-toggle="collapse" 
+							 data-parent="#strategy_menu_popup_accordion" 
+							 data-target="#strategy_menu_popup_tts_greeting">
+							<div class="pull-right"><i class="fa fa-comment"></i></div>
+							<div>{{i18n.strategy.popup.ttsGreetingTitle}}
+                                                            <i class="text-center fa fa-play-circle"></i>
+                                                        </div>
+						</div>
+						<div class="collapse" id="strategy_menu_popup_tts_greeting">
+							<div class="greeting-option-content">
+								{{#monsterText}}
+									{{i18n.strategy.popup.greetingsHelp}}
+								{{/monsterText}}
+								<textarea placeholder="{{i18n.strategy.popup.ttsGreetingPlaceholder}}">
+									{{#compare greeting.media_source '===' 'tts'}}{{greeting.tts.text}}{{/compare}}
+								</textarea>
+								<div class="tts_voice greeting-option-actions clearfix">
+                                                                    <select id="tts_voice" name="greeting.tts.voice" data-original_value="{{greeting.tts.voice}}" class="pull-left monster-button-mini" style="width: 100px; height:22px;"></select>
+								<button class="update-greeting pull-right monster-button-mini monster-button-primary">{{i18n.update}}</button>
+								<button class="cancel-greeting pull-right monster-button-mini">{{i18n.cancel}}</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="greeting-option accordion-group {{#compare greeting.media_source '===' 'upload'}}active{{/compare}}">
+						<div class="greeting-option-header" data-toggle="collapse" 
+							 data-parent="#strategy_menu_popup_accordion" 
+							 data-target="#strategy_menu_popup_upload_greeting">
+							<div class="pull-right"><i class="fa fa-upload"></i></div>
+							<div>{{i18n.strategy.popup.uploadGreetingTitle}}
+                                                            <i class="text-center fa fa-play-circle"></i>
+							</div>
+						</div>
+						<div class="collapse" id="strategy_menu_popup_upload_greeting">
+							<div class="greeting-option-content">
+								{{#monsterText}}
+									{{i18n.strategy.popup.greetingsHelp}}
+								{{/monsterText}}
+								<input type="file" class="upload-input" accept="audio/*">
+								<div class="greeting-option-actions clearfix">
+									<button class="update-greeting pull-right monster-button-mini monster-button-primary">{{i18n.update}}</button>
+									<button class="cancel-greeting pull-right monster-button-mini">{{i18n.cancel}}</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="greeting-option accordion-group {{#compare greeting.media_source '===' 'recording'}}active{{/compare}}">
+						<div class="greeting-option-header" data-toggle="collapse" 
+							 data-parent="#strategy_menu_popup_accordion" 
+							 data-target="#strategy_menu_popup_record_greeting">
+							<div class="pull-right"><i class="fa fa-info-circle"></i></div>
+							<div>{{i18n.strategy.popup.recordGreetingTitle}}
+                                                            <i class="text-center fa fa-play-circle"></i>
+                                                        </div>
+						</div>
+						<div class="collapse" id="strategy_menu_popup_record_greeting">
+							<div class="greeting-option-content">
+								<div>
+									{{i18n.strategy.popup.recordGreetingInfo}}
+								</div>
+								<ol style=" margin-top: 15px; margin-bottom: 0; ">
+									<li>{{i18n.strategy.popup.recordGreetingLines.line1}}</li>
+									<li>{{i18n.strategy.popup.recordGreetingLines.line2}}</li>
+									<li>{{i18n.strategy.popup.recordGreetingLines.line3}} <span class="record-pin">{{menu.record_pin}}</span></li>
+									<li>{{i18n.strategy.popup.recordGreetingLines.line4}}</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="action-block clearfix">
+		<button class="save-button monster-button monster-button-success pull-right">{{i18n.save}}</button>
+		<a href="#" class="monster-link blue cancel-link pull-right">{{i18n.cancel}}</a>
+	</div>
+</div>

@@ -1,0 +1,134 @@
+/* blacklist POPUP */
+.blacklist_popup.blacklist {
+    padding: 0px;
+}
+
+.blacklist_popup.blacklist .buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.blacklist_popup.blacklist .buttons > button {
+    width: 150px;
+    padding: 10px;
+}
+
+.blacklist_popup.blacklist .buttons > button:not(:last-child) {
+	margin-right: 10px;
+}
+
+.blacklist_popup.blacklist .header {
+    background: url('static/images/blacklist_0.png') no-repeat center;
+    width: 540px;
+    height: 136px;
+}
+
+.blacklist_popup.blacklist .block-container {
+    margin-top: 30px;
+    margin: 30px 0;
+}
+
+.blacklist_popup.blacklist .block-container .wrapper-phone-icon {
+    margin-bottom: 10px;
+}
+
+.blacklist_popup.blacklist .block-container label {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.blacklist_popup.blacklist .block-container input {
+    padding: 10px 15px;
+    text-align: center;
+    width: 150px;
+}
+
+.blacklist_popup.blacklist .block-container > .span2 {
+    margin-top: 87px;
+}
+
+.blacklist_popup.blacklist .fa-phone {
+    background-color: #BBBBBB;
+    border-radius: 22px 22px 22px 22px;
+    color: #EEEEEE;
+    font-size: 32px;
+    padding: 6px 10px;
+}
+
+.blacklist_popup.blacklist .wrapper-phone-icon.selected .fa-phone {
+    background-color: #44cc44;
+}
+
+.blacklist_popup.blacklist form {
+    margin:  0 20px;
+    padding: 0 0 10px;
+}
+
+.blacklist_popup.blacklist .slider-title {
+        display: inline-block;
+}
+        
+.blacklist_popup.blacklist .slider-wrapper {
+        display: inline-block;
+        width: 85%;
+        text-allign: center;
+        margin-left: 20px;
+        padding-top: 90px;
+        position: relative;
+}
+
+.blacklist_popup.blacklist .ui-slider-range {
+        background: #22a5ff;
+}
+
+.blacklist_popup.blacklist .slider-wrapper .ui-slider {
+        border: solid 1px #c0c0c9;
+        height: 6px;
+        background: #fff;
+}
+
+.blacklist_popup.blacklist .slider-wrapper .ui-slider .ui-slider-handle {
+        height: 18px;
+        width: 18px;
+        border-radius: 10px;
+        top: -7px;
+        background: #f0f0f9;
+        border: solid 1px #c0c0c9;
+        cursor: pointer;
+}
+
+.blacklist_popup.blacklist .slider-wrapper .slider-value {
+        position: absolute;
+        top: 0px;
+        color: #22a5ff;
+        border: solid 1px #0297e5;
+        padding: 6px 4px;
+        font-size: 12px;
+        transform: translateX(-50%);
+        margin-left: 0.5%;
+        background: #fff;
+}
+
+.blacklist_popup.blacklist .slider-wrapper .slider-value:after {
+        border-color: #fff transparent;
+        border-style: solid;
+        border-width: 9px 6px 0;
+        content: "";
+        left: 50%;
+        bottom: -7px;
+        transform: translateX(-50%);
+        position: absolute;
+
+}
+
+.blacklist_popup.blacklist .slider-wrapper .slider-value:before {
+        border-color: #22a5ff transparent;
+        border-style: solid;
+        border-width: 9px 6px 0;
+        content: "";
+        left: 50%;
+        bottom: -9px;
+        transform: translateX(-50%);
+        position: absolute;
+}

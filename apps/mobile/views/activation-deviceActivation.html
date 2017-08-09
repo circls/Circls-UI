@@ -1,0 +1,36 @@
+<div class="app-content device-activation step-2">
+	<h3 class="title">{{i18n.mobileApp.deviceActivation.title}}</h3>
+	<p class="text">{{i18n.mobileApp.deviceActivation.text}}</p>
+	<form class="input-container" id="activation_form">
+		<input type="text" name="device.zip_code" id="zip_code" placeholder="{{i18n.mobileApp.deviceActivation.placeholders.zipCode}}" value="{{#if zipCode}}{{zipCode}}{{/if}}">
+		<input type="text" name="device.device_name" id="device_name" placeholder="{{i18n.mobileApp.deviceActivation.placeholders.deviceName}}">
+	{{#if isSimRequired}}
+		<input type="text" name="device.sim" id="sim" placeholder="{{i18n.mobileApp.deviceActivation.placeholders.sim}}">
+	{{/if}}
+	{{#monsterCheckbox i18n.mobileApp.deviceActivation.labels.linkDevice}}
+		<input type="checkbox" name="is_smartpbx_user" id="is_smartpbx_user">
+	{{/monsterCheckbox}}
+		<div id="user_id_container">
+			<select name="user_id" id="user_id">
+			{{#select currentUserId}}
+				{{#each users}}
+					<option value="{{id}}">{{first_name}} {{last_name}}</option>
+				{{/each}}
+			{{/select}}
+			</select>
+		</div>
+		<div id="voicemail_box_container">
+		{{#monsterCheckbox i18n.mobileApp.deviceActivation.labels.LinkVoicemailBox}}
+			<input type="checkbox" name="has_voicemail_box" id="has_voicemail_box">
+		{{/monsterCheckbox}}
+			<div id="voicemail_box_id_container">
+				<select name="voicemail_box_id" id="voicemail_box_id">
+				{{#each voicemailBoxes}}
+					<option value="{{id}}" data-owner_id="{{owner_id}}">{{name}}</option>
+				{{/each}}
+				</select>
+			</div>
+		</div>
+		<button class="monster-button-primary activate-device">{{i18n.mobileApp.deviceActivation.button}}</button>
+	</form>
+</div>

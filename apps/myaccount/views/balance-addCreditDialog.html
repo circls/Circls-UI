@@ -1,0 +1,115 @@
+<div class="add-credits-popup-wrapper">
+	<div class="add-credits-header-wrapper">
+		<div class="add-credits-header">
+			<div class="add-credits-header-text pull-left">
+				{{i18n.balance.addCreditPopup.creditBalance}}
+			</div>
+			<div class="add-credits-header-balance pull-right">{{ i18n.currencyUsed }} {{amount}}</div>
+		</div>
+	</div>
+	<nav class="add-credits-menu-wrapper monster-navbar">
+		<ul class="navbar-menu">
+			<li class="navbar-menu-item">
+				<a href="#manage_credit" class="navbar-menu-item-link active">
+					{{i18n.balance.addCreditPopup.menus.manageCredits}}
+				</a>
+			</li>
+			<li class="navbar-menu-item">
+				<a href="#threshold_alerts" class="navbar-menu-item-link">
+					{{i18n.balance.addCreditPopup.menus.thresholdAlerts}}
+				</a>
+			</li>
+			<li class="navbar-menu-item">
+				<a href="#auto_recharge" class="navbar-menu-item-link">
+					{{i18n.balance.addCreditPopup.menus.autoRecharge}}
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="add-credits-content-wrapper active" id="manage_credit">
+		<div class="add-credits-content">
+			<div class="text">
+				{{i18n.balance.addCreditPopup.manageCredits.text}}
+			</div>
+			<label for="amount">
+				{{ i18n.currencyUsed }} 
+				<input type="text" pattern="\d+(\.\d{2})?" class="span2" id="amount" name="amount" placeholder="{{i18n.balance.addCreditPopup.manageCredits.placeholder}}">
+			</label>
+		</div>
+		<div class="add-credits-actions">
+			<button class="monster-button-success pull-right" id="add_credit">
+				{{i18n.balance.addCreditPopup.manageCredits.button}}
+			</button>
+		</div>
+	</div>
+	<div class="add-credits-content-wrapper" id="threshold_alerts">
+		<div class="add-credits-content">
+			<div class="text">
+				{{i18n.balance.addCreditPopup.thresholdAlerts.text}}
+			</div>
+			<label for="threshold_alerts">
+				{{i18n.balance.addCreditPopup.thresholdAlerts.labels.turnOn}}
+			{{#monsterSwitch}}
+				<input type="checkbox" id="threshold_alerts_switch">
+			{{/monsterSwitch}}
+			</label>
+			<form class="dynamic-content" id="threshold_alerts_content">
+				<label for="threshold_alerts_amount">
+					{{i18n.balance.addCreditPopup.thresholdAlerts.labels.notifyMe}}
+					<span class="currency-container">
+						{{ i18n.currencyUsed }}
+						<input type="text" pattern="\d+(\.\d{2})?" class="span2" id="threshold_alerts_amount" name="threshold_alerts_amount" placeholder="{{i18n.balance.addCreditPopup.thresholdAlerts.placeholder}}" value="{{threshold.threshold}}">
+					</span>
+				</label>
+				<div class="add-credits-actions">
+					<button class="monster-button-success pull-right" id="save_threshold">
+						{{i18n.balance.addCreditPopup.thresholdAlerts.button}}
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="add-credits-content-wrapper" id="auto_recharge">
+		<div class="add-credits-content">
+			<div class="text">
+				{{i18n.balance.addCreditPopup.autoRecharge.text}}
+			</div>
+			<label for="auto_recharge">
+				{{i18n.balance.addCreditPopup.autoRecharge.labels.turnOn}}
+			{{#monsterSwitch}}
+				<input type="checkbox" id="auto_recharge_switch">
+			{{/monsterSwitch}}
+			</label>
+			<form class="dynamic-content" id="auto_recharge_content">
+				<label for="auto_recharge_threshold">
+					{{i18n.balance.addCreditPopup.autoRecharge.labels.balanceFalls}}
+					<span class="currency-container">
+						{{ i18n.currencyUsed }}
+						<input type="text" pattern="\d+(\.\d{2})?" class="span2" id="auto_recharge_threshold" name="auto_recharge_threshold" placeholder="{{i18n.balance.addCreditPopup.autoRecharge.placeholders.balanceFalls}}" value="{{topup.threshold}}">
+					</span>
+				</label>
+				<label for="auto_recharge_amount">
+					{{i18n.balance.addCreditPopup.autoRecharge.labels.rechargeAccount}}
+					<span class="currency-container">
+						{{ i18n.currencyUsed }}
+						<input type="text" pattern="\d+(\.\d{2})?" class="span2" id="auto_recharge_amount" name="auto_recharge_amount" placeholder="{{i18n.balance.addCreditPopup.autoRecharge.placeholders.rechargeAccount}}" value="{{topup.amount}}">
+						</span>
+				</label>
+				{{#monsterText}}
+					<p>
+						{{i18n.balance.addCreditPopup.autoRecharge.help.firstPart}}
+						<strong>
+							{{i18n.balance.addCreditPopup.autoRecharge.help.secondPart}}
+						</strong>
+						{{i18n.balance.addCreditPopup.autoRecharge.help.thirdPart}}
+					</p>
+				{{/monsterText}}
+				<div class="add-credits-actions">
+					<button class="monster-button-success pull-right" id="confirm_recharge">
+						{{i18n.balance.addCreditPopup.autoRecharge.button}}
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

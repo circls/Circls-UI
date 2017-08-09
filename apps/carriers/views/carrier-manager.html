@@ -1,0 +1,65 @@
+<div id="carrier_manager" class="clearfix container-menu not-responsive">
+	<div class="left-menu">
+		<div class="category-group">
+			<div id="service_providers" class="category active">
+				<div class="title">
+					<i class="fa fa-globe"></i>
+					<span class="title-text">{{ i18n.carriers.menuTitles.serviceProviders }}</span>
+				</div>
+			</div>
+
+			<div id="calling_priorities" class="category">
+				<div class="title">
+					<i class="fa fa-list-ul"></i>
+					<span class="title-text">{{ i18n.carriers.menuTitles.callingPriorities }}</span>
+				</div>
+			</div>
+
+			{{#if hasImportJobs}}
+			<div id="import_numbers" class="category">
+				<div class="title">
+					<i class="fa fa-th larger-margin"></i>
+					<span class="title-text">{{ i18n.carriers.menuTitles.importNumbers }}</span>
+				</div>
+			</div> 
+			{{/if}}
+
+			{{#if isReseller}}
+				<div id="carrier_templates" class="category">
+					<div class="title">
+						<i class="fa fa-wrench"></i>
+						<span class="title-text">{{ i18n.carriers.menuTitles.carrierTemplates }}</span>
+					</div>
+				</div>
+			{{/if}}
+		</div>
+
+
+		{{#if isSuperDuper}}
+			<div class="toggle-wrapper">
+				<div data-original-title="{{i18n.carriers.resourcesHelp}}" data-placement="top" data-toggle="tooltip">
+					<div class="title"> {{ i18n.carriers.resourcesChoice }} <i class="help-popover fa fa-question-circle"></i></div>
+				</div>
+			</div>
+
+			<div class="category-group">
+				<div class="category level" data-level="global">
+					<div class="title">
+						<i class="fa fa-globe"></i>
+						<span class="title-text">{{ i18n.carriers.menuTitles.setGlobally }}</span>
+					</div>
+				</div>
+				<div class="category level selected" data-level="local">
+					<div class="title">
+						<i class="fa fa-thumb-tack"></i>
+						<span class="title-text">{{ i18n.carriers.menuTitles.setLocally }}</span>
+					</div>
+				</div>
+			</div>
+		{{/if}}
+	</div>
+
+	<div class="right-content clearfix">
+
+	</div>
+</div>

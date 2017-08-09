@@ -1,0 +1,46 @@
+
+.carrier-selector .choices-wrapper {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.carrier-selector .choices-wrapper .table-split {
+	display: table-cell;
+	width: 45px;
+}
+
+.carrier-selector .choices-wrapper .carrier-choice {
+	background: #FFF;
+	border: 1px solid #C4C3E9;
+	border-radius: 2px;
+	color: #333;
+	font-size: 18px;
+	height: 100px;
+	margin-right: 60px;
+	text-align: center;
+	width: 200px;
+	padding: 5px;
+
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.carrier-selector .choices-wrapper .carrier-choice i {
+	color: #555;
+	margin-right: 5px;
+}
+
+.carrier-selector .choices-wrapper .carrier-choice:last-child {
+	margin-right: 0;
+}
+
+.carrier-selector .choices-wrapper .carrier-choice:hover {
+	border: 1px solid #22a5ff;
+	cursor: pointer;
+}
+
+.carrier-selector .choices-wrapper .carrier-choice.selected {
+	border: 1px solid #22a5ff;
+	color: #FFF;
+	background: #22a5ff;
+}

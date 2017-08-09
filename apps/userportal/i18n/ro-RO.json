@@ -1,0 +1,327 @@
+{
+	"userportal": {
+                "vmstatus": {
+                    "new": "New",
+                    "saved": "Saved",
+                    "deleted": "Deleted"
+                },
+		"my_voicemails": "My mesaje vocale",
+		"my_call_history": "istoricul apelurilor",
+		"my_settings": "Setările mele",
+		"forward_calls_to": "Apeluri cu nerăbdare să",
+		"also_ring_my_voip_phone": "De asemenea, inelul meu VoIP Phone",
+		"send_voicemail_to_email": "Trimiteți Voicemail la e-mail",
+		"email_address": "Adresa de e-mail",
+		"keep_caller_id": "Păstrați Caller ID",
+		"save": "Salvați",
+		"my_devices": "Dispozitivele mele",
+		"registered_devices_are_displayed": "dispozitivele înregistrate sunt afișate în verde de mai jos.",
+		"my_contact_list": "lista mea de contacte",
+		"in_order_to_use_the_quickcall_feature": ". Pentru a utiliza funcția Quickcall, puteți fie introduce un număr în caseta de text de mai jos, sau selectați direct un număr din lista de Contact",
+		"the_quickcall_feature_will_ring_your_selected_device": ". Caracteristica QuickCall va suna aparatul selectat, și va încerca apoi să ajungă la numărul ați selectat După ce a luat apel",
+		"mark_as_new": "Marcare ca noi",
+		"mark_as_saved": "Marcare ca Saved",
+		"sterge": "Delete",
+		"data": "Data",
+		"from_caller_id": "De la (Caller ID)",
+		"to_dialed_number": "Pentru a (număr format)",
+		"duration": "Durata",
+		"caller_id": "Caller ID",
+		"status": "Stare",
+		"listen": "Ascultă",
+		"download": "Download",
+                "play": "Play Message",
+		"name": "Name",
+		"internal_number": "număr intern",
+		"external_number": "Numărul extern",
+		"you_need_to_select_a_registered_device": "Trebuie să selectați un dispozitiv înregistrat din meniul derulant pentru a utiliza caracteristica QuickCall!",
+		"quickcall_device": "Quickcall Dispozitiv:",
+		"quickcall_startedto": "Quickcall started to: ",
+		"call": "Apel",
+		"start_date": "Start",
+		"end_date": "End",
+		"filter": "Filtre",
+		"dates_in_the_filter": "Date în filtru nu sunt în formatul adecvat (mm/dd/yyyy)",
+		"message_index": "Indexul de mesaje",
+		"voicemail_box_id": "Voicemail Box ID",
+		"are_you_sure_that_you_want_to_delete": "Ești sigur că doriți să ștergeți mesajul de poștă vocală selectat (e)?",
+		"enable_call_forward": "Enable Call Forward",
+		"rangeTooLarge": "Gama este mai mare decât {{}} variabile zile, vă rugăm să le corecteze",
+                "device_types": {
+                        "cellphone": "telefon mobil",
+                        "sip_device": "telefon SIP",
+                        "smartphone": "smartphone",
+                        "mobile": "mobil",
+                        "softphone": "telefon moale",
+                        "landline": "fix",
+                        "fax": "fax",
+                        "ata": "ei",
+                        "sip_uri": "sip uri"
+                },
+                "setquickcallDevice": "Please, go to your account settings and select first a quickcall device."
+	},
+
+	"devices": {
+		"add": "adauga dispozitiv",
+		"assigned": "alocate",
+		"createDevice": "crea dispozitiv",
+		"confirmDeleteDevice": "acest dispozitiv vor fi șterse definitiv. continua ?",
+		"deleteDevice": "șterge dispozitiv",
+		"deletedDevice": "ați șters cu succes următorul dispozitiv {{ devicename }}.",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+		"popupSettings": {
+			"advancedTitle": "avansat",
+			"basicTitle": "setările de bază",
+			"brandDownloads": "Productinfo",
+			"basicSectionTitle": "setările de bază",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "pentru a selecta un codec, drag and drop din caseta codec-urile disponibile pentru caseta de codec-uri selectat",
+			"options": {
+				"menuTitle": "opțiuni"
+			},
+			"sip": {
+				"menuTitle": "înghițitură",
+				"sectionTitle": "info SIP",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+			},
+			"audio": {
+				"menuTitle": "audio",
+				"sectionTitle": "setările audio",
+				"selectedCodecs": "codec-uri selectate",
+				"unselectedCodecs": "codec-uri disponibile",
+				"codecs": {
+					"OPUS": "lucru",
+					"CELT@32000h": "sirenă @ 32kHz",
+					"G7221@32000h": "g722.1 @ 32kHz",
+					"G7221@16000h": "g722.1 @ 16kHz",
+					"G722": "g722",
+					"speex@32000h": "speex @ 32kHz",
+					"speex@16000h": "speex @ 16kHz",
+					"speex": "speex",
+					"PCMU": "g711u/pcmu-64kbps (na)",
+					"PCMA": "g711a/PCMA-64kbps (în altă parte)",
+					"G729": "G729-8kbps (necesită licență)",
+					"GSM": "gsm",
+					"CELT@48000h": "sirena (HD) @ 48kHz",
+					"CELT@64000h": "sirena (HD) @ 64khz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "de urgență apelantului -id",
+				"sectionTitle": "de urgență apelantului -id",
+				"emergency": "număr",
+				"notSet": "- Cont implicit -",
+				"noE911Numbers": "tu didnt stabilit E911 pe oricare din numerele, vă rugăm să o configurați prin managerul de numărul și reveni de pe acest ecran odată sale terminat",
+				"address": "adresa"
+			},
+			"miscellaneous": {
+				"menuTitle": "diverse",
+				"sectionTitle": "diverse",
+				"rtp": {
+					"enable": "cripta audio",
+					"type": "tip de criptare",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"__comment": "ui 1119",
+				"__version": "3.19",
+				"ignoreCompletedElsewhere": {
+					"label": "ignora finalizat în altă parte",
+					"help": "când telefoanele justificative verificate va arăta un apel ratat, dacă aceasta a fost parte dintr-un grup inel răspuns în altă parte."
+				},
+                                "restart": {
+                                        "label": "Envoyer une requête de redémarrage",
+                                        "button": "Redémarrer",
+                                        "help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+                                        "success": "Vous avez envoyé une requête de redémarrage avec succès!"
+                                }
+                        },
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+			},
+			"restrictions": {
+				"menuTitle": "restricții",
+				"sectionTitle": "setările restricții",
+				"inherit": "moșteni",
+				"deny": "nega",
+				"matcher": {
+					"help": "tastați un număr (international format => +[Countryprefix]...) și apăsați pe test pentru a vedea dacă apelul ar fi permis.",
+					"placeholder": "+18554443333",
+					"button": "încercare",
+					"label": "numărul de mai sus corespund cu această regulă.",
+					"__comment": "ui-727, v3.19_s2",
+					"allowMessage": "acest dispozitiv va fi permis să plaseze un apel la {{ }} Număr de telefon",
+					"denyMessage": "acest dispozitiv nu va fi permis să plaseze un apel la {{ }} Număr de telefon."
+				},
+				"__comment": "ui-727, v3.19_s2",
+				"allow": "permite",
+				"disabledRestrictionsInfo": "unele tipuri de apel a fost restricționată pentru întregul cont și nu pot fi activate pe- dispozitiv."
+			},
+			"video": {
+				"menuTitle": "video",
+				"sectionTitle": "setări video",
+				"selectedCodecs": "codec-uri selectate",
+				"unselectedCodecs": "codec-uri disponibile",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "H264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			}
+		},
+		"buy": "cumpăra dispozitiv",
+		"classifiers": {
+			"unknown": {
+			    "name": "altele decât sus",
+			    "help": "vă rugăm să selectați această opțiune atunci când doriți acest cont de a efectua apeluri către orice număr altele decât cele menționate în lista. (când formatul numărului este necunoscut la sistem.)"
+			}
+		},
+		"noMatchingDevices": "nu au existat aparate găsite se potrivesc dvs. de căutare",
+		"noDevicesConfigured": "nu există dispozitive configurate",
+		"provisionerPopup": {
+			"brandHeadline": "selectați marca dispozitivului",
+			"deviceHeadline": "selectațimodelul aparatului",
+			"deviceSelected": "Ati selectat{{ brand}} {{ }} Marci",
+			"missingBrand": "marca de aparatul meu nu este listat aici",
+			"missingDevice": "aparatul meu nu este listat aici",
+			"title": "selectarea dispozitivului"
+		},
+		"sip_device": {
+			"addTitle": "adăugarea unui dispozitiv înghițitură",
+			"editTitle": "Dispozitiv de editare SIP",
+			"macAddress": "adresa mac",
+			"macAddressPlaceholder": "19",
+			"new": "nou dispozitiv SIP",
+			"deviceName": "nume dispozitiv"
+		},
+		"sip_uri": {
+			"addTitle": "adăugând o înghițitură uri",
+			"deviceName": "nume",
+			"editTitle": "editare SIP uri",
+			"new": "nou uri SIP",
+			"uri": "sip uri",
+			"uriPlaceholder": "înghițitură",
+			"hideContactList": "ascunde din lista de contacte"
+		},
+		"landline": {
+			"addTitle": "adăugând un fix",
+			"deviceName": "nume dispozitiv",
+			"editTitle": "editare fix",
+			"new": "nou fix",
+			"number": "număr",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "necesită apăsați tasta",
+			"keepCallerId": "păstra versiunea originală apelantului-id",
+			"hideContactList": "ascunde din lista de contacte"
+		},
+		"cellphone": {
+			"addTitle": "adăugarea unui telefon mobil",
+			"deviceName": "nume dispozitiv",
+			"editTitle": "telefon celular editare",
+			"new": "nou telefon mobil",
+			"number": "număr",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "permite utilizarea de telefoane mobile de mesagerie vocală",
+			"keepCallerId": "păstra versiunea originală apelantului-id",
+			"hideContactList": "ascunde din lista de contacte"
+		},
+		"mobile": {
+			"addTitle": "adăugarea unui mobil",
+			"deviceName": "nume dispozitiv",
+			"editTitle": "editare mobil",
+			"mdn": "mdn",
+			"mdnPlaceholder": "10 cifre numărul de telefon",
+			"new": "nou mobil"
+		},
+		"smartphone": {
+			"addTitle": "adăugând un smartphone",
+			"deviceName": "nume dispozitiv",
+			"editTitle": "editare smartphone",
+			"new": "nou smartphone",
+			"requireKeypress": "permite utilizarea de telefoane mobile de mesagerie vocală",
+			"keepCallerId": "păstra versiunea originală apelantului-id",
+			"hideContactList": "ascunde din lista de contacte"
+		},
+		"fax": {
+			"addTitle": "adăugarea unui aparat fax",
+			"editTitle": "editare fax",
+			"macAddress": "adresa mac",
+			"macAddressPlaceholder": "19",
+			"new": "fax",
+			"deviceName": "nume dispozitiv",
+			"t38": "T38",
+			"disabled": "invalid",
+			"auto": "auto detectare",
+			"force": "mereu vigoare"
+		},
+		"softphone": {
+			"addTitle": "adăugând un softphone",
+			"editTitle": "editare softphone",
+			"new": "nou softphone",
+			"deviceName": "nume dispozitiv"
+		},
+		"ata": {
+			"addTitle": "adăugarea unui ata",
+			"editTitle": "editare ata",
+			"new": "noi ata",
+			"deviceName": "nume dispozitiv"
+		},
+		"sip": {
+			"username": "SIP numele de utilizator",
+			"password": "parola SIP",
+			"realm": "tărâm"
+		},
+		"spare": "de rezervă",
+		"title": "totalul dispozitive",
+		"titleGrid": {
+			"edit": "edita",
+			"enable": "permite",
+			"user": "utilizator",
+			"modelMacAddress": "numele/adresa mac",
+			"type": "tip"
+		},
+		"types": {
+			"cellphone": "telefon mobil",
+			"sip_device": "telefon SIP",
+			"smartphone": "smartphone",
+			"mobile": "mobil",
+			"softphone": "telefon moale",
+			"landline": "fix",
+			"fax": "fax",
+			"ata": "ei",
+			"sip_uri": "sip uri"
+		},
+		"unassignedDevice": "-",
+                "microphone": "Micrphone",
+                "speaker": "Speaker"
+	}
+}

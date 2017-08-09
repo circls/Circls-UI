@@ -1,0 +1,138 @@
+<div class="account-settings-container">
+	<div class="entity-header">
+		<div class="entity-title">{{ i18n.callflows.accountSettings.title }}</div>
+		<button type="button" class="back-button monster-button-secondary">{{ i18n.entityManager.backButton }}</button>
+	</div>
+	<div class="entity-content">
+		<form id="account_settings_form" class="form-horizontal">
+		    <div class="clearfix">
+
+			<div class="settings-section">
+				<div class="section-title">{{ i18n.callflows.accountSettings.record.title }}</div>
+				<div class="section-content">
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.record.label }}</label>
+						<div class="controls">
+                                                    <label class="add-on">
+                                                        <input type="checkbox" id="dbrecord_enabled" name="dbrecord_enabled" {{#if account.dbrecord_enabled}}checked{{/if}} />
+                                                    </label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="settings-section">
+				<div class="section-title">{{ i18n.callflows.accountSettings.callerId.titleInbound }}</div>
+				<div class="section-content">
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.callerId.nameLabel }}</label>
+						<div class="controls">
+							<input type="text" name="caller_id.internal.name" value="{{account.caller_id.internal.name}}"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.callerId.numberLabel }}</label>
+						<div class="controls">
+						<select name="caller_id.internal.number" class="cid-number-select">
+							<option value="">{{ i18n.callflows.accountSettings.callerId.defaultNumber }}</option>
+							{{#each numberList}}
+								<option value="{{@key}}" {{#compare ../account.caller_id.internal.number '===' @key}}selected{{/compare}}>{{formatPhoneNumber @key}}</option>
+							{{/each}}
+						</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="settings-section">
+				<div class="section-title">{{ i18n.callflows.accountSettings.callerId.titleOutbound }}</div>
+				<div class="section-content">
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.callerId.nameLabel }}</label>
+						<div class="controls">
+							<input type="text" name="caller_id.external.name" value="{{account.caller_id.external.name}}"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.callerId.numberLabel }}</label>
+						<div class="controls">
+						<select name="caller_id.external.number" class="cid-number-select">
+							<option value="">{{ i18n.callflows.accountSettings.callerId.defaultNumber }}</option>
+							{{#each numberList}}
+								<option value="{{@key}}" {{#compare ../account.caller_id.external.number '===' @key}}selected{{/compare}}>{{formatPhoneNumber @key}}</option>
+							{{/each}}
+						</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="settings-section">
+				<div class="section-title">{{ i18n.callflows.accountSettings.callerId.titleEmergency }}</div>
+				<div class="section-content">
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.callerId.nameLabel }}</label>
+						<div class="controls">
+							<input type="text" name="caller_id.emergency.name" value="{{account.caller_id.emergency.name}}"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.callerId.numberLabel }}</label>
+						<div class="controls">
+						<select name="caller_id.emergency.number" class="cid-number-select">
+							<option value="">{{ i18n.callflows.accountSettings.callerId.defaultNumber }}</option>
+							{{#each numberList}}
+								<option value="{{@key}}" {{#compare ../account.caller_id.emergency.number '===' @key}}selected{{/compare}}>{{formatPhoneNumber @key}}</option>
+							{{/each}}
+						</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="settings-section">
+				<div class="section-title">{{ i18n.callflows.accountSettings.acdc.titlemaxconnect }}</div>
+				<div class="section-content">
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.acdc.maxconnectfailuresLabel }}</label>
+						<div class="controls">
+							<input type="text" name="max_connect_failures" value="{{account.max_connect_failures}}" placeholder="{{ i18n.callflows.accountSettings.acdc.maxconnectfailuresPlaceholder }}"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="settings-section">
+				<div class="section-title">{{ i18n.callflows.accountSettings.musicOnHold.title }}</div>
+				<div class="section-content">
+					<div class="control-group">
+						<label class="control-label">{{ i18n.callflows.accountSettings.musicOnHold.dropdownLabel }}</label>
+						<div class="controls">
+							<select name="music_on_hold.media_id" class="media-dropdown media-choose">
+								<option value="" {{#unless account.music_on_hold.media_id}}selected{{/unless}}>
+									{{ i18n.callflows.accountSettings.musicOnHold.default }}
+								</option>
+								<option value="{{silenceMedia}}" {{#compare account.music_on_hold.media_id '===' silenceMedia}}selected{{/compare}}>
+									{{ i18n.callflows.accountSettings.musicOnHold.silence }}
+								</option>
+								{{#each mediaList}}
+									<option value="{{this.id}}" {{#compare ../account.music_on_hold.media_id '===' this.id}}selected{{/compare}}>{{this.name}}</option>
+								{{/each}}
+							</select>
+							<button type="button" class="monster-button-primary upload-toggle" data-toggle="button">{{ i18n.upload }}</button>
+						</div>
+					</div>
+					<div class="upload-div">
+						<input type="file" class="upload-input" accept="audio/*">
+						<button type="button" class="monster-button-success upload-action upload-submit"><i class="fa fa-upload"></i></button>
+						<button type="button" class="monster-button-danger upload-action upload-cancel"><i class="fa fa-times"></i></button>
+					</div>
+				</div>
+			</div>
+
+		    </div>
+		    <div class="action-bar clearfix">
+			<button type="button" class="monster-button-success account-settings-update pull-right">{{i18n.update}}</button>
+		    </div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,92 @@
+{
+   "name": "mobile",
+   "source_url": "http://kazoo.allip.ovh/apps/mobile",
+   "i18n": {
+       "en-US": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       },
+       "dk-DK": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       },
+       "ro-RO": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       },
+       "ru-RU": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       },
+       "nl-NL": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       },
+       "de-DE": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider für die Mobile integration",
+           "extended_description": "Das Mobiletelefon als Nebenstelle ist das herausragende Merkmal für die Mobile integration",
+           "features": [
+                "Ermöglicht die Integration von Mobile Telefonen als Nebenstelle",
+                "Aktivierung und Deaktivierung der Mobiledienste"
+           ]
+       },
+       "it-IT": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       },
+       "fr-FR": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       },
+       "es-ES": {
+           "label": "MVO-Mobile-Integration",
+           "description": "MVO-Provider mobile integration",
+           "extended_description": "The Mobile Phone as an extension is the outstanding feature of the Mobile Integration",
+           "features": [
+               "Allows the user to activate a her mobilephone in the hosted-pbx as a extension over the MVO-Provider"
+           ]
+       }
+   },
+   "tags": [ "carrier" ],
+   "icon": "Mobile_app.png",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "author": "2600Hz",
+   "version": "1.0",
+   "license": "MPL",
+   "price": 0,
+   "screenshots": [ "mobile_1.png", "mobile_2.png" ],
+   "urls": {
+       "documentation": "{documentation_url}",
+       "howto": "{howto_video_url}"
+   },
+   "pvt_type": "app"
+}

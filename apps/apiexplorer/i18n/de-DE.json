@@ -1,0 +1,13 @@
+{
+	"main": {
+		"main_block": "API",
+		"search_block": "Suche",
+		"request": "Anfrage",
+		"invalid_form": "Formular nicht vollständig!",
+		"show_all": "Zeige alles",
+		"animation": "Animation",
+		"title_config": "Einstellungen",
+		"save_config": "Speichern",
+		"query_param": "Anfrage Parameter"
+	}
+}

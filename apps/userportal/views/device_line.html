@@ -1,0 +1,9 @@
+<div class="device_line">
+	<span class="icon medium {{ device_type }}"/>
+{{#if editDevice}}
+	<div data-id="{{id}}" class="grid-cell centered device_edit">
+		<i class="fa fa-wrench settings"></i>
+	</div>
+{{/if}}
+	<div class="device_name {{status}}"> {{name}} ({{friendly_type}})</div>
+</div>

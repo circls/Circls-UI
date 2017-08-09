@@ -1,0 +1,32 @@
+<div class="existing-jobs">
+	{{#each listJobs}}
+		<div class="job-wrapper" data-id="{{ id }}">
+			<div class="name">{{ name }}</div>
+			<div class="carrier-status-wrapper" data-status="{{ extra.status }}">
+				{{#compare extra.status "===" "failed"}}
+					<i class="fa fa-exclamation-triangle monster-red"></i>
+					{{ ../../i18n.carriers.listingJobs.statuses.failed }}
+				{{else}}
+					{{#compare extra.status "===" "errors"}}
+						<i class="fa fa-exclamation-triangle monster-yellow"></i>
+						{{ ../../../i18n.carriers.listingJobs.statuses.errors }}
+					{{else}}
+						{{#compare extra.status "===" "pending"}}
+							<i class="fa fa-question monster-blue"></i>
+							{{ ../../../../i18n.carriers.listingJobs.statuses.pending }}
+						{{else}}
+							<i class="fa fa-check monster-green"></i>
+							{{ ../../../../i18n.carriers.listingJobs.statuses.success }}
+						{{/compare}}
+					{{/compare}}
+				{{/compare}}
+			</div>
+			<div class="visible-desktop timestamp">{{toFriendlyDate timestamp}}</div>
+			{{#compare extra.status "!==" "pending"}}
+			<div class="job-actions">
+				<i class="fa fa-eye view-job"></i>
+			</div>
+			{{/compare}}
+		</div>
+	{{/each}}
+</div>

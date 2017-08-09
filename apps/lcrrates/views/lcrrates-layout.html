@@ -1,0 +1,118 @@
+<div id="lcrrates_wrapper">
+
+        {{#if is_adminreseller }}
+
+	<div class="lcrrates-list">
+	
+		<div class="slider">
+		{{ i18n.lcrrates.info_superduper }}
+		</div>
+
+		<div class="lcrrates_container">
+			<div class="lcrrates-grid">
+				<div class="lcrrates-rows">
+					<div class="info-bar">
+						<div class="info-control">
+							<i class="info-cell fa fa-question help"></i>
+							<div class="info-cell info-text">
+								<div class="less">{{i18n.lcrrates.less}}</div>
+								<div class="more">{{i18n.lcrrates.more}}</div>
+							</div>
+							<span class="info-cell search-box pull-right">
+								<i class="fa fa-search"></i>
+								<input type="text" class="search-query" placeholder="{{ i18n.lcrrates.search }}..."></input>
+							</span>
+						</div>
+					</div>
+					
+        {{#if is_showaddButton }}
+					<div class="addlcrrates-cells">
+						<a class="add-lcrrates"><i class="fa fa-plus"></i> {{ i18n.lcrrates.addrates }} </a>
+					</div>
+        {{/if}}
+					<div class="empty-search-row">{{ i18n.lcrrates.empty-row }} </div>
+					<div class="no-lcrrates-row">{{ i18n.lcrrates.no-lcrrates }} </div>
+					
+					<div class="grid-head">
+						<div class="head-cells">
+							<div class="lcrrates-20 grid-cell left"> {{ i18n.lcrrates.dialograte.carrier }} </div>
+							<div class="lcrrates-20 grid-cell left"> {{ i18n.lcrrates.dialograte.ratename }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.direction }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.flatrate }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.prefix }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.ratecost }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.surcharge }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.max }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.min }} </div>
+						</div>
+					</div>
+					{{#each lcrrates}}
+					<div class="grid-row" data-id="{{ id }}" data-search="{{ rate_name }}">
+						<div class="lcrrates-cells">
+							<div class="lcrrates-20 grid-cell left"> {{ carrier }} </div>
+							<div class="lcrrates-20 grid-cell left"> {{ rate_name }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ direction }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ flatrate }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ prefix }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ rate_cost }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ rate_surcharge }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ rate_increment }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ rate_minimum }} </div>
+							<div class="lcrrates-10 grid-cell actions">
+								<a class="edit" data-id="{{id}}"><i class="fa fa-wrench"></i></a>
+								<a class="delete" data-id="{{id}}"><i class="fa fa-trash"></i></a>
+							</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+        {{else}}
+
+	<div class="lcrrates-list">
+
+		<div class="lcrrates_container">
+			<div class="lcrrates-grid">
+				<div class="lcrrates-rows">
+					<div class="info-bar">
+						<div class="info-control">
+							<span class="info-cell search-box pull-right">
+								<i class="fa fa-search"></i>
+								<input type="text" class="search-query" placeholder="{{ i18n.lcrrates.search }}..."></input>
+							</span>
+						</div>
+					</div>
+					<div class="grid-head">
+						<div class="head-cells">
+							<div class="lcrrates-30 grid-cell left"> {{ i18n.lcrrates.dialograte.carrier }} </div>
+							<div class="lcrrates-30 grid-cell left"> {{ i18n.lcrrates.dialograte.ratename }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.flatrate }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.prefix }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.ratecost }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ i18n.lcrrates.dialograte.max }} </div>
+						</div>
+					</div>
+					{{#each lcrrates}}
+					<div class="grid-row" data-id="{{ id }}" data-search="{{ rate_name }}">
+						<div class="lcrrates-cells">
+							<div class="lcrrates-30 grid-cell left"> {{ carrier }} </div>
+							<div class="lcrrates-30 grid-cell left"> {{ rate_name }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ flatrate }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ prefix }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ lcrratesum }} </div>
+							<div class="lcrrates-10 grid-cell left"> {{ rate_increment }} </div>
+						</div>
+					</div>
+					{{/each}}
+					<div class="empty-search-row">{{ i18n.lcrrates.empty-row }} </div>
+					<div class="no-lcrrates-row">{{ i18n.lcrrates.no-lcrrates }} </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+        {{/if}}
+</div>

@@ -1,0 +1,64 @@
+<div id="presence_detail_dialog">
+
+    <div class="general-info">
+        <h3>{{i18n.registrationDetail.connectivityTitle}}</h3>
+
+        <div class="sub-title">
+            {{i18n.registrationDetail.connectivityDescription}}
+        </div>
+    </div>
+
+    <div id="canvas">
+        
+        <div id="left">
+        
+        <div class="connectivity-info">
+           {{#each metadata}}
+           {{#compare kind "proxy"}}
+            <div class="info-block server-block">
+                <pre style="display:none">{{{this.body}}}</pre>
+                <i class="connectivity-icon fa fa-laptop fa-4x"></i>
+                <div class="info-line">
+                    <span class="title">Server</span>
+                    <span class="value">{{ proxy }}</span>
+                </div>
+                <div class="info-line">
+                    <span class="title">Type</span>
+                    <span class="value">{{ type }}</span>
+                </div>
+                <div class="info-line">
+                    <span class="title">Row</span>
+                    <span class="value">{{ rowid }}</span>
+                </div>
+            </div>
+            {{/compare}}
+
+           {{#compare kind "subscriber"}}
+            <div class="info-block server-block">
+                <pre style="display:none">{{{this.notify.body}}}</pre>
+                <div class="{{css}}"></div>
+                <div class="info-line">
+                    <span class="value">{{ id }}</span>
+                </div>
+                <div class="info-line">
+                    <span class="value">{{ user_agent }}</span>
+                </div>
+            </div>
+            {{/compare}}
+
+            {{/each}}
+        </div>
+        
+        </div>
+        <div id="right">
+
+           <div id="presentityBody">
+             <pre class="prettyprint"></pre>
+           </div>
+        </div>
+    </div>
+
+	<div class="action-bar dialog-buttons-wrapper" style="float:left">
+		<button id="close" class="monster-button">{{ i18n.close }}</button>
+	</div>
+</div>

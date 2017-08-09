@@ -1,0 +1,68 @@
+{{#if key }}
+	<div class="classifier" data-type="{{ key }}">
+		<div class="header clearfix">
+			<span class="title">{{ friendly_name }}</span>
+			<div class="actions">
+				<i class="edit-classifier fa fa-cog"></i>
+				<div class="switch">
+				{{#monsterSwitch}}
+					<input type="checkbox" name="classifiers.{{key}}.enabled"{{#if this.enabled}} checked{{/if}}>
+				{{/monsterSwitch}}
+				</div>
+				<i class="fa fa-trash-o monster-red remove-classifier"></i>
+			</div>
+		</div>
+		<div class="settings clearfix">
+			<div class="fields">
+				<div class="control-group inline">
+					<label class="control-label" for="server">{{ i18n.carriers.serviceProviders.editResource.rules.prefix }}</label>
+					<div class="controls">
+						<input type="text" name="classifiers.{{key}}.prefix" value="{{this.prefix}}" class="input-small prefix">
+					</div>
+				</div>
+				<div class="control-group inline">
+					<label class="control-label" for="server">{{ i18n.carriers.serviceProviders.editResource.rules.suffix }}</label>
+					<div class="controls">
+						<input type="text" name="classifiers.{{key}}.suffix" value="{{this.suffix}}" class="input-small suffix">
+					</div>
+				</div>
+				<div class="control-group inline">
+					<div class="controls customize">
+						<label class="checkbox">
+							{{#monsterCheckbox i18n.carriers.serviceProviders.editResource.rules.customizeMatch}}
+								<input type="checkbox" name="classifiers.{{key}}.extra.isCustom" class="checkbox-show-div"{{#if this.isCustom}} checked{{/if}}>
+							{{/monsterCheckbox}}<i class="help-popover fa fa-question-circle" data-original-title="{{replaceVar i18n.carriers.serviceProviders.editResource.rules.customizeMatchHelp friendly_name}}" data-placement="top" data-toggle="tooltip"></i>
+						</label>
+						<div class="linked-to-select{{#if this.isCustom}} active{{/if}}">
+							<input class="regex-input" type="text" name="classifiers.{{key}}.extra.customized_match" placeholder="{{ i18n.carriers.serviceProviders.editResource.rules.match }}" value="{{this.regex}}">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="testing">
+				<input type="text" class="input-medium number-test" name="extra.testing" autocomplete="off" placeholder="{{ i18n.carriers.serviceProviders.editResource.rules.testPlaceholder }}">
+
+				<div class="result-testing-container">
+					<span>{{ i18n.carriers.serviceProviders.editResource.rules.testTitle }}</span>
+
+					<span class="result-testing success">
+						<i class="monster-green fa fa-check"></i>{{ i18n.carriers.serviceProviders.editResource.rules.success }}
+						<div class="formatted-number-wrapper">
+							<div class="formatted-number-title">{{ i18n.carriers.serviceProviders.editResource.rules.formattedNumberTitle }}</div>
+							<div class="formatted-number"></div>
+						</div>
+					</span>
+
+					<span class="result-testing failure">
+						<i class="fa fa-ban monster-red"></i>{{ i18n.carriers.serviceProviders.editResource.rules.failure }}
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+{{ else }}
+	<div class="alert empty">
+		{{ i18n.carriers.serviceProviders.editResource.rules.empty }}
+	</div>
+{{/if}}

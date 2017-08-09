@@ -1,0 +1,27 @@
+<div class="app-content provisioning">
+	<h3 class="title">{{model.label}} {{i18n.mobileApp.provisioning.titles.instructions}}</h3>
+	<div class="instructions-container">
+		<ol class="provisioning-instructions">
+		{{#each model.instructions}}
+			{{#if this.instructions}}
+				<li>
+					{{label}}
+					<ol type="a">
+					{{#each instructions}}
+						<li>{{this}}</li>
+					{{/each}}
+					</ol>
+				</li>
+			{{else}}
+				<li>{{this}}</li>
+			{{/if}}
+		{{/each}}
+		</ol>
+	</div>
+	<div class="inline-buttons">
+		<button class="monster-button-cancel device-categories">{{i18n.mobileApp.provisioning.buttons.back}}</button>
+	{{#if comingFromActivationSuccess}}
+		<button class="monster-button-success done">{{i18n.mobileApp.provisioning.buttons.done}}</button>
+	{{/if}}
+	</div>
+</div>

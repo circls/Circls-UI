@@ -1,0 +1,703 @@
+{
+        "defaultttsvoice": "female/it-IT",
+        "none": "None",
+	"poweredBy": "programmato da",
+	"welcome": "servizi di telecomunicazione ospitati",
+	"hello": "Ben Arrivati!",
+	"error": "errore",
+	"olderVersion": "sembra che i dati sono stati creati per l'aggiornamento, al di fuori di questo programma, vogliono continuare ?",
+	"errors": {
+		"generic": "Si è verificato un errore imprevisto, riprova!",
+		"genericLabel": "api-risposta",
+		"401": "errore di registrazione, controllare il nome utente e la considerazione se è corretto.",
+		"403": "accesso negato.",
+		"500": "Errore interno del server, si prega di contattare l'amministratore.",
+		"api": "Internal server error, please update you API-Engine to ",
+		"invalidData": {
+			"errorLabel": "ingresso errore",
+			"required": "il campo {{ }} campo deve essere completato.",
+			"minimum": "deve essere almeno {{ value}} valore per questo campo {{ }} campo.",
+			"maximum": "che possono essere nel valore massimo {{valore }} per questo campo {{ campo }}.",
+			"minLength": "la lunghezza di questo campo {{ }} campo deve avere almeno sign {{valore }}.",
+			"maxLength": "la lunghezza di questo campo {{ field}} deve essere carattere nella massima {{valore }}.",
+			"enum:": "Der Wert für dieses Feld \"{{field}}\" wurde nicht in der Liste der zulässigen Werte gefunden.",
+			"minItems": "la lista per questo campo {{ campo }} {{ valore deve contenere almeno }} voci.",
+			"maxItems": "la lista per questo campo {{ campo }} non deve contenere nelle {{value}} voci massimi.",
+			"minProperties": "l'oggetto di questo telaio {{ }} campo non ha abbastanza voci.",
+			"uniqueItems": "le voci di questo campo {{ }} campo devono essere univoci.",
+			"pattern": "non è degno di questo campo campo {{ }} secondo {{valore }}.",
+			"divisibleBy": "vale la pena di questo campo {{ campo }} {{ non divisibile con valore }}.",
+			"disallow": "il valore di questo campo campo {{ }} non sono ammessi.",
+			"type": "il valore di questo campo {{ }} campo deve essere di tipo {{valore }}.",
+			"unique": "che deve essere un valore unico per questo campo {{ }} campo.",
+			"forbidden": "il valore di questo campo {{ }} campo non può essere modificato."
+		}
+	},
+	"apps": "apps",
+	"add": "causa",
+	"alertLogout": "la sessione è scaduta per inattività prolungata. prego mdelden di nuovo.",
+	"cancel": "troncare",
+	"change": "Cambiare",
+	"chargeReminder" : {
+		"line1": "non sarà addebitato cambi liberi. se sono cambiati i servizi ricorrenti, le nuove tariffe per il loro ciclo di istruzione saranno addebitati pro rata.",
+                "line2": "Si prega di bestägigen che vogliono fare il cambiamento ?"
+	},
+	"close" : "chiudere",
+	"conferencingLogo": "conferencing",
+	"csv": "csv",
+	"currencyUsed": "CHF",
+	"delete": "cancellare",
+	"dialog" : {
+		"showError": "spettacolo errore",
+		"confirmOk": "ok",
+		"confirmCancel" : "troncare",
+		"confirmTitle" : "la conferma"
+	},
+	"disabled": "spento",
+	"download": "scaricare",
+	"enabled": "acceso",
+	"endDate": "data di fine",
+	"examplePhoneNumber": "+41 52 508 19 22",
+	"filter": "filtro",
+	"info": "informazioni",
+	"next": "notti",
+	"on": "un",
+	"off": "fuori di",
+	"show": "fare vedere",
+	"hide": "nascondere",
+	"paging": {
+		"first": "per primo",
+		"previous": "precedente",
+		"next": "il prossimo",
+		"last": "più recenti"
+	},
+	"pdf": "pdf",
+	"previous": "precedente",
+	"remove": "cancellare",
+	"save": "spreichern",
+	"saveChanges": "Salva I Cambiamenti",
+	"search": "cercare",
+	"select": "scegliere",
+	"startDate": "data di inizio",
+	"submit": "presentare",
+	"table" : {
+		"search": "cercare...",
+		"empty" : "nessuna voce in questa tabella",
+		"processing" : "attendere prego...",
+		"showEntries": "mostrare _menu_ voci",
+		"startEndTotal": "mostrando _start_ a _end_ di _total_ voci",
+		"zeroRecords": "Nessuna informazione disponibile",
+		"loading": "Sto caricando...",
+		"filtered": "(Filtrato per annunci _max_ totale)",
+		"infoEmpty": "leggere"
+	},
+	"unexpectedError": "Si è verificato un errore, per favore riprova!",
+	"update": "aggiornare",
+	"upload": "caricare",
+	"validation": {
+		"defaultRules": {
+			"required": "Questo campo è obbligatorio.",
+			"remote": "Si prega di compilare questo campo.",
+			"email": "Si prega di inserire un indirizzo e-mail corretto.",
+			"url": "inserisci un URL corretto.",
+			"date": "inserisci la data corretta.",
+			"dateISO": "Si prega di dare una data corretta (iso).",
+			"number": "Si prega di dare un numero valido.",
+			"digits": "immetterlo pagare solo.",
+			"creditcard": "Si prega di dare un numero di carta di credito valida A.",
+			"equalTo": "Ripetere il vostro input.",
+			"maxlength": "dare loro più di { 0 } un segno.",
+			"minlength": "immetterlo mini almeno { 0 } è un segno.",
+			"rangelength": "loro ingresso deve essere almeno { 0 } e { 1 } caratteri lunghezza massima.",
+			"range": "inserisci un numero compreso tra { 0 } e { 1 }.",
+			"max": "inserisci un numero inferiore a { 0 }.",
+			"min": "inserisci un numero maggiore di { 0 }."
+		},
+		"customRules": {
+			"checkList": "è occupato",
+			"mac": "Si prega di dare un indirizzo MAC valido.",
+			"ipv4": "Si prega di dare un indirizzo IP v4 valido.",
+			"time12h": "Si prega di dare un tempo valido in 12 ore in formato am/pm a.",
+			"greaterDate": "l'ora di inizio non deve essere superiore al tempo della fine.",
+			"realm": "essi possono solo lettere, numeri, punti e linee usare."
+		},
+		"required": "richiesto."
+	},
+	"warning": "ATTENZIONE!",
+	"confirmCharges": {
+		"title": "Conferma costo",
+                "oneTimeFee": "OneTime Fee",
+		"withChargesPartOne": "Il prezzo per questo è di {{ variabile }}",
+		"withChargesPartTwo": "unico {{ variabile }}.",
+		"withoutCharges": "non è un {{ variabile }}.",
+		"detail": "Ecco i dettagli del sindacato mont depositato costo per proprio conto",
+		"service": "il servizio",
+		"rate": "prezzo",
+		"quantity": "numero",
+		"discount": "Rabbat",
+		"monthlyCharges": "spese condominiali",
+		"amount": "{{ variabile }}",
+		"actions": "premere OK per confermare o annullare."
+	},
+	"languages": {
+		"auto": "automaticamente (en-us)",
+		"germanGermany": "Deutsch (de- de)",
+		"frenchFrench": "francese (fr-fr)",
+		"italianItalian": "italiano (it-IT)",
+		"americanEnglish": "inglese (en-us)",
+                "russianRussian": "russo (it-it)"
+	},
+	"services": {
+		"cnam": "CNAM",
+		"did_us": "noi facevamo",
+		"did_eu": "europa ha fatto",
+		"did_af": "Arika fatto",
+		"e911": "numeri di emergenza",
+		"inbound_cnam": "CNAM arrivo",
+		"inbound_trunk": "linea esterna in entrata",
+		"inbound_trunks": "tronchi in arrivo",
+		"port": "porting",
+		"sip_devices": "dispositivo SIP",
+		"sip_device": "dispositivo SIP",
+		"tollfree_us": "noi tollfree",
+		"tollfree_ch": "ch gratisnummern",
+		"twoway_trunk": "Collegamento tronco",
+		"twoway_trunks": "collegamento tronchi",
+		"user": "utente"
+                "branding": "Branding",
+                "ips": "IPs",
+                "ui_apps": "UI Apps",
+                "port": "Port Request",
+                "cnam": "CNAM Update",
+                "e911": "e911 allow",
+                "ata": "ATA",
+                "cellphone": "Cell Phone",
+                "fax": "Fax",
+                "landline": "Landline",
+                "mobile": "Mobile",
+                "sip_device": "SIP Device",
+                "sip_uri": "SIP URI",
+                "smartphone": "Smartphone",
+                "softphone": "Softphone",
+                "outbound_trunks": "Outbound Trunks",
+                "inbound_trunks": "Inbound Trunks",
+                "twoway_trunks": "Twoway Trunks",
+                "did_us": "US DID",
+                "tollfree_us": "US Tollfree",
+                "rate": "Rate",
+                "activation_charge": "Activation charge",
+                "minimum": "Minimum",
+                "exceptions": "Exceptions",
+                "supports": "Support",
+                "service_pbxs": "PBX-Support",
+                "security_pbxs": "PBX-Updates",
+                "connects": "Internet",
+                "dsl_ch_min": "DSL-Internet CH Minimal",
+                "dsl_ch_standard": "DSL-Internet CH Standard",
+                "dsl_ch_high": "DSL-Internet CH Premium",
+                "dsl_modem": "DSL-Modem",
+                "qos_router": "QoS-Router (without WLAN)",
+                "qos_router_wlan": "QoS-Router (with WLAN)",
+                "ui_apps": "UI Apps",
+                "ata": "ATA-Gerät",
+                "cellphone": "Handy",
+                "Outbound_cnam": "Outgoing phonebook",
+                "Inbound_cnam": "Incomming phonebook",
+                "inbound_cnam": "Incomming phonebook",
+                "outbound_cnam": "Outgoing phonebook",
+                "prepend": "Prepend text",
+                "emergency_ch": "Emergency Numbers",
+                "service_ch": "Service Numbers Swiss",
+                "service_pbx": "Service Numbers PBX",
+                "internal": "PBX Internal",
+                "inbound_cnam": "Incomming phonebook",
+                "outbound_cnam": "Outgoing phonebook",
+                "prepend": "Prepend text",
+                "emergency_ch": "Emergency Numbers",
+                "service_ch": "Service Numbers Swiss",
+                "service_pbx": "Service Numbers PBX",
+                "internal": "PBX Internal",
+                "names": "Names",
+                "toll_ch": "Toll Numbers CH",
+                "tollfree_ch": "0800-Numbers CH",
+                "toll_de": "0900-Mehrwert Numbers DE",
+                "tollfree_de": "0800-Numbers DE",
+                "mobile_ch": "Mobile Numbers",
+                "did_ch": "Landline Numbers Swiss",
+                "did_de": "Landline Numbers Germany",
+                "fixnet_ch": "Landline Numbers Swiss",
+                "business_ch": "Business Numbers Swiss",
+                "activation_charge": "activate",
+                "minimum": "Minimal",
+                "exceptions": "Exceptions",
+                "rate": "monthly:",
+                "CH_Numbers": "CH Numbers",
+                "CH_Tollfree": "CH Tollfree",
+                "Two-Way_Trunk": "Twoway Trunks",
+                "Inbound_Trunk": "Inbound Trunks",
+                "Outbound_Trunk": "Outbound Trunks",
+                "Outbound_CNAM": "Outbound phonebook",
+                "Inbound_CNAM": "Inbound phonebook",
+                "Port_Request_Single": "Porting Single Request",
+                "Port_Request_DID": "Porting Request (DDI)",
+                "Emergency_Service": "Emergency Numbers",
+                "user": "User",
+                "admin": "Administrator",
+                "callflows": "Callflow",
+                "numbers": "Numbers",
+                "branding": "Branding",
+                "pivot": "Pivot",
+                "userportal": "Userportal",
+                "carrier": "Carrier",
+                "Cluster-Manager": "Cluster-Manager",
+                "rates": "Connection-Rates",
+                "voip": "SmartPBX",
+                "conferences": "Conference App",
+                "accounts": "Accounts",
+                "migration": "Migrations App",
+                "mobile": "Handy Integration",
+                "debug": "Monitoring",
+                "pbxs": "PBX-Trunking",
+                "ports": "Port Requests",
+                "reporting": "Sales Reporting",
+                "webhooks": "Webhooks",
+                "alarms": "Pikett-Alarms"
+	},
+	"wysiwyg": {
+		"toastr": {
+			"error": {
+				"format": "è un formato non assistita",
+				"upload": "errore quando il file da caricare"
+			}
+		},
+		"title": {
+			"fontSize": "dimensione del carattere",
+
+			"bold": "bold (ctrl/cmd + b)",
+			"italic": "italic (ctrl/cmd + i)",
+			"underline": "sottolineato (ctrl/cmd + u)",
+			"strikethrough" : "barrato",
+
+			"fontColor": "colore del carattere",
+
+			"alignment": "orientamento",
+			"alignLeft": "link (ctrl/cmd + l)",
+			"center": "centrato (ctrl/cmd + e)",
+			"alignRight": "rechts (ctrl/cmd + r)",
+			"justify": "Allineare (ctrl/cmd + j)",
+
+			"list": "lista",
+
+			"bulletList": "shortlist",
+			"numberList": "track list",
+
+			"reduceIndent": "ridurre trattino (shift + tab)",
+			"indent": "trattino (scheda)",
+
+			"createLink": "hyperlink",
+			"removeLink": "Elimina collegamento ipertestuale",
+
+			"upload": "formando pasta (o drag &amp; amp; drop)",
+
+			"undo": "rückgänging (ctrl/cmd + z)",
+			"redo": "ripetizione (ctrl/cmd + y)",
+
+			"horizontalRule": "Orientamento orizzontale",
+
+			"macro": "macro"
+		},
+		"text": {
+			"big": "lordo",
+			"normal": "normale",
+			"small" : "piccolo"
+		},
+		"placeholder": {
+			"createLink": "url"
+		}
+	},
+	"calendar": {
+		"suffix": {
+			"am": "prima di mezzogiorno",
+			"pm": "nel pomeriggio"
+		},
+		"day": {
+			"0": "domenica",
+			"1": "lunedi",
+			"2": "martedì",
+			"3": "mercoledì",
+			"4": "Giovedi",
+			"5": "venerdì",
+			"6": "sabato"
+		},
+		"month": {
+			"0": "gennaio",
+			"1": "febbraio",
+			"2": "a marzo",
+			"3": "aprile",
+			"4": "maggio",
+			"5": "giugno",
+			"6": "luglio",
+			"7": "agosto",
+			"8": "settembre",
+			"9": "ottobre",
+			"10": "novembre",
+			"11": "dicembre"
+		}
+	},
+	"description": "descrizione",
+	"featuresTitle": "di proprietà",
+	"undefinedFeatures": "elenco delle proprietà in arrivo...",
+	"author": "autore",
+	"version": "versione",
+	"license": "licenza",
+	"price": "prezzo",
+	"free": "gratuito",
+	"save": "salvare",
+	"filters": {
+		"all": "tutte le applicazioni",
+		"installed": "le mie applicazioni",
+		"resellers": "apps rivendita",
+		"carriers": "apps distributore",
+		"developers": "apps developer"
+	},
+	"permissions": {
+		"title": "Chi può utilizzare l'applicazione ?",
+		"all": "tutti gli utenti",
+		"admins": "solo amministratore",
+		"specific": "speciale personalizzato"
+	},
+	"selectedUsers": "utente selezionato",
+	"selectAll": "seleziona tutto",
+	"unselectAll": "deselezionare tutto",
+	"noselected": "no selezionato dall'utente",
+	"selectUsersLink": "Selezionare l'utente ({{ SelectedUsers }})",
+	"alerts": {
+		"noUserSelected": "hanno bisogno per questa applicazione per selezionare un utente. <br> <br> o tutti possono utilizzare nessuno, per non permettere."
+	},
+	"refresh": "rinnovare",
+        "unassign": "copertina",
+        "advancedErrorDialog": {
+                "title": "un fallimento...",
+                "viewDetails": "maggiori informazioni",
+                "requestId": "richiesta id",
+                "apiUrl": "api url",
+                "verb": "tipo API"
+        },
+	"javascriptErrorDialog": {
+                "title": "un errore di javascript verificato...",
+                "message": "messaggio",
+                "line": "linea",
+                "column": "klonne",
+                "stackTrace": "stack trace",
+                "file": "nome del file"
+        },
+	"linkedColumns": {
+                "available": "possibile selezione",
+                "selected": "selezionato"
+        },
+	"codecs": {
+                "audio": {
+                        "OPUS": "lavoro",
+                        "CELT@32000h": "sirena @ 32 kHz",
+                        "G7221@32000h": "g722.1 @ 32 kHz",
+                        "G7221@16000h": "g722.1 @ 16kHz",
+                        "G722": "G722",
+                        "speex@32000h": "Speex @ 32 kHz",
+                        "speex@16000h": "Speex @ 16kHz",
+                        "PCMU": "G711u/PCMU-64kbps (ISDN)",
+                        "PCMA": "G711A/PCMA-64kbps (ISDN)",
+                        "G729": "G729-8kbps (richiede licenza)",
+                        "GSM": "gsm",
+                        "CELT@48000h": "sirena (hd) @ 48kHz",
+                        "CELT@64000h": "sirena (hd) @ 64kHz"
+                },
+		"video": {
+                        "VP8": "VP8",
+                        "H264": "h264",
+                        "H263": "H263",
+                        "H261": "H261"
+                }
+	},
+	"refresh": "Refresh",
+	"unassign": "Un-assign",
+	"advancedErrorDialog": {
+		"title": "Oops...",
+		"viewDetails": "More Information",
+		"requestId": "Request ID",
+		"apiUrl": "API URL",
+		"verb": "API Type"
+	},
+
+	"javascriptErrorDialog": {
+		"title": "A wild Javascript error appears...",
+		"message": "Message",
+		"line": "Line",
+		"column": "Column",
+		"stackTrace": "Stack Trace",
+		"file": "File Name"
+	},
+        "javascriptErrorDialog": {
+                "title": "A wild Javascript error appears...",
+                "message": "Message",
+                "line": "Line",
+                "column": "Column",
+                "stackTrace": "Stack Trace",
+                "file": "File Name"
+        },
+	"hangupCauses": {
+		"SUCCESS": {
+			"inbound": "The call was forwarded to a different number successfully"
+		},
+		"NO_RESPONSE": {
+			"inbound": "Call forwarding was attempted, but failed because the forwarded user did not respond or there was a routing error during forwarding."
+		},
+		"UNSPECIFIED": {
+			
+			},
+		"UNALLOCATED_NUMBER": {
+			"outbound": "The number dialed is not a valid number and/or can not be reached via the requested carrier",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured, or the number is not currently in use."
+		},
+		"NO_ROUTE_TRANSIT_NET": {
+		},
+		"NO_ROUTE_DESTINATION": {
+			"outbound": "The number dialed is not a valid number and/or can not be reached via the requested carrier",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured."
+		},
+		"CHANNEL_UNACCEPTABLE": {
+		},
+		"CALL_AWARDED_DELIVERED": {
+		},
+		"NORMAL_CLEARING": {
+			"inbound": "Everything is OK. The call ended normally",
+			"outbound": "Everything is OK. The call ended normally"
+		},
+		"USER_BUSY": {
+			"inbound": "Could be 2 things: Under 1 second, The phone was busy or unavailable; over 1 second: The end-user rejected the inbound call while it was ringing."
+		},
+		"NO_USER_RESPONSE": {
+		},
+		"NO_ANSWER": {
+		},
+		"SUBSCRIBER_ABSENT": {
+		},
+		"CALL_REJECTED": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other non-fatal issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "At under 1 second: The phone is in Do-Not-Disturb locally, on the phone, or all the lines available on the phone are in use, At over 1 second: The user of the phone pushed the “reject” button to reject the call"
+		},
+		"NUMBER_CHANGED": {
+		},
+		"REDIRECTION_TO_NEW_DESTINATION": {
+			"inbound": "Could be 2 things: Under 1 second, The phone is configured with call-forwarding locally. This should be disabled; Over 1 second: The phone is configured with “call-forwarding no answer” locally. This should be disabled."
+		},
+		"EXCHANGE_ROUTING_ERROR": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other non-fatal issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured."
+		},
+		"DESTINATION_OUT_OF_ORDER": {
+		},
+		"INVALID_NUMBER_FORMAT": {
+		},
+		"FACILITY_REJECTED": {
+		},
+		"RESPONSE_TO_STATUS_ENQUIRY": {
+		},
+		"NORMAL_UNSPECIFIED": {
+		},
+		"NORMAL_CIRCUIT_CONGESTION": {
+		},
+		"NETWORK_OUT_OF_ORDER": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other non-fatal issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "Usually for PBX Connector, but indicates the device on the customer’s side is misconfigured."
+		},
+		"NORMAL_TEMPORARY_FAILURE": {
+			"outbound": "The carrier which was attempted doesn’t service the area the call was being placed to, or didn’t have enough capacity to complete the call (or some other temporary issue). The next carrier in the available carrier list should be tried. This error is NOT indicative of a failure or problem as not every carrier services every area of the world.",
+			"inbound": "This should not happen. This is an error condition."
+		},
+		"SWITCH_CONGESTION": {
+		},
+		"ACCESS_INFO_DISCARDED": {
+		},
+		"REQUESTED_CHAN_UNAVAIL": {
+		},
+		"FACILITY_NOT_SUBSCRIBED": {
+		},
+		"OUTGOING_CALL_BARRED": {
+		},
+		"INCOMING_CALL_BARRED": {
+		},
+		"BEARERCAPABILITY_NOTAUTH": {
+		},
+		"BEARERCAPABILITY_NOTAVAIL": {
+		},
+		"SERVICE_UNAVAILABLE": {
+		},
+		"BEARERCAPABILITY_NOTIMPL": {
+		},
+		"CHAN_NOT_IMPLEMENTED": {
+		},
+		"FACILITY_NOT_IMPLEMENTED": {
+		},
+		"SERVICE_NOT_IMPLEMENTED": {
+		},
+		"INVALID_CALL_REFERENCE": {
+		},
+		"INCOMPATIBLE_DESTINATION": {
+			"outbound": "The carrier requested or required a certain codec or encryption, but we did not offer that method of communication. Thus, the call could not be completed. This can also happen when fax connectivity is requested but T38 is not available.",
+			"inbound": "The carrier requested or required a certain codec or encryption, but we did not offer that method of communication. Thus, the call could not be completed. This can also happen when fax connectivity is requested but T38 is not available."
+		},
+		"INVALID_MSG_UNSPECIFIED": {
+		},
+		"MANDATORY_IE_MISSING": {
+		},
+		"MESSAGE_TYPE_NONEXIST": {
+		},
+		"WRONG_MESSAGE": {
+		},
+		"IE_NONEXIST": {
+		},
+		"INVALID_IE_CONTENTS": {
+		},
+		"WRONG_CALL_STATE": {
+			"outbound": "This is a carrier failure or a misconfiguration on the hosted service and should result in a support ticket.",
+			"inbound": "The user attempted to dial an extension but hung up before the call could be processed, OR, the system is having trouble processing the user’s calls."
+		},
+		"RECOVERY_ON_TIMER_EXPIRE": {
+			"outbound": "This is a carrier failure or a misconfiguration on the hosted service and should result in a support ticket.",
+			"inbound": "The remote user’s internet or firewall blocked our request to ring the phone"
+		},
+		"MANDATORY_IE_LENGTH_ERROR": {
+		},
+		"PROTOCOL_ERROR": {
+		},
+		"INTERWORKING": {
+		},
+		"ORIGINATOR_CANCEL": {
+			"inbound": "The caller hung up before this party answered the phone (hang up while phone is still ringing)"
+		},
+		"CRASH": {
+		},
+		"SYSTEM_SHUTDOWN": {
+		},
+		"LOSE_RACE": {
+			"inbound": "Multiple phones were being rung at the same time, and a different phone was answered before this one was."
+		},
+		"MANAGER_REQUEST": {
+		},
+		"BLIND_TRANSFER": {
+		},
+		"ATTENDED_TRANSFER": {
+			"inbound": "This leg was the “consult” portion of an attended transfer, meaning this part of the call indicates the transferer was asking the final recipient if they wanted the call or not (I.e. “Hi Frank, I have Mr. Adams on the line, would you like to take his call now?”)"
+		},
+		"ALLOTTED_TIMEOUT": {
+		},
+		"USER_CHALLENGE": {
+		},
+		"MEDIA_TIMEOUT": {
+			"inbound": "A network or firewall issue caused the conversation to fail mid-stream."
+		},
+		"PICKED_OFF": {
+		},
+		"USER_NOT_REGISTERED": {
+		},
+		"PROGRESS_TIMEOUT": {
+			"outbound": "We waited up many seconds for the carrier to connect the requested call, and it didn’t respond. This usually means the carrier was trying to find an available circuit to process the call on but took too long. This is something that should result in a support ticket if it happens frequently. Occasionally is not unexpected.",
+			"inbound": "The remote user’s internet or firewall blocked our request to ring the phone"
+		},
+		"GATEWAY_DOWN": {
+		}
+	},
+
+	"passwordStrength": {
+		"strong": "Strong",
+		"good": "Good",
+		"medium": "Okay",
+		"weak": "Weak",
+		"bad": "Bad",
+		"empty": "Enter a password"
+	},
+
+	"invalidCredentialsMessage": "Your session expired. Close this popup to be redirected to the login page.",
+
+	"monsterResults": {
+		"titles": {
+			"success": "Success",
+			"error": "Error"
+		}
+	},
+        "controlCenter": "Control Center",
+        "uploadProgressTitle": "Uploading file(s)...",
+        "defaultTimezone": "- Account/User default -",
+        "stepByStep": {
+                "nextLabel": "Next",
+                "prevLabel": "Back",
+                "skipLabel": "Skip",
+                "doneLabel": "Done"
+        },
+        "ttsvoice": {
+              "femaleenUS": "female Englisch US",
+              "maleenUS": "male Englisch US",
+              "femaleenCA": "female Englisch CA",
+              "femaleenAU": "female Englisch AU",
+              "femaleenGB": "female Englisch GB",
+              "maleenGB": "male Englisch GB",
+              "femaleesUS": "female Spanisch US",
+              "maleesUS": "male Spanisch US",
+              "femalezhCN": "female Chinesisch",
+              "malezhCN": "male Chinesisch CN",
+              "femalezhHK": "female Chinesisch CN",
+              "femalezhTW": "female Chinesisch TW",
+              "femalejaJP": "female Japanisch",
+              "malejaJP": "male Japanisch",
+              "femalekoKR": "female Koreanisch",
+              "malekoKR": "male Koreanisch",
+              "femaledaDK": "female Dänisch",
+              "femaledeDE": "female Deutsch",
+              "maledeDE": "male Deutsch",
+              "femalecaES": "female Spanisch ES",
+              "maleesES": "male Spanisch ES",
+              "femalefiFI": "female Finisch",
+              "femalefrCA": "female Französich CA",
+              "malefrCA": "male Französisch CA",
+              "femalefrFR": "female Französisch",
+              "malefrFR": "male Französisch",
+              "femaleitIT": "female Italienisch",
+              "maleitIT": "male Italienisch",
+              "femalenbNO": "female Norwegisch",
+              "femalenlNL": "female Niederländisch",
+              "femaleplPL": "female Polnisch",
+              "femaleptBR": "female Portugisisch BR",
+              "femaleptPT": "female Portugisisch PT",
+              "maleptPT": "male Portugisisch",
+              "femaleruRU": "female Russisch",
+              "maleruRU": "male Russisch",
+              "femalesvSE": "female Schwedisch",
+              "femalehuHU": "female Ungarisch",
+              "femalecsCZ": "female Tschechisch",
+              "femaletrTR": "female Türkisch",
+              "maletrTR": "male Türkisch"
+        },
+        "timepicker": {
+                "am": "am",
+                "pm": "pm",
+                "AM": "AM",
+                "PM": "PM",
+                "decimal": ".",
+                "min": "mins",
+                "hr": "hr",
+                "hrs": "hrs"
+        },
+        "friendlyTimer": {
+                "minutesAnd": "minutes and",
+                "hours": "hours",
+                "seconds": "seconds"
+        },
+        "accountToggle": {
+                "currentAccountLabel": "Browsing",
+                "toggleTooltip": "Account Jump"
+        },
+        "triggerMasquerading": "You are now masquerading the account \"{{accountName}}\".",
+        "restoreMasquerading": "You are not masquerading anymore.",
+        "noMasqueradingAllowed": "We are redirecting you to your \"Apps\" page because the app you were using doesn't allow \"Account Jumping\".",
+        "authenticationIssue": "An authentication error occurred during this operation!"
+}

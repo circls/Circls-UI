@@ -1,0 +1,25 @@
+{
+	"defaultApp": {
+		"title": "Default App",
+		"label": "Having a default app allows you to dive straight into that app once you are signed in."
+	},
+	"noDefaultApp": {
+		"label": "No Default App Selected"
+	},
+	"appDescription": {
+		"title": "Setting a default app",
+		"label": "To set or change your default app, drag the desired app inside the designated area above."
+	},
+	"searchQuery": {
+		"placeholder": "Search Apps"
+	},
+	"appstore": {
+		"button": "App Exchange"
+	},
+	"appList": {
+		"title": "Your Apps"
+	},
+	"__comment": "UI-1814: Adding warning for app we can't masquerade",
+	"__version": "3.22",
+	"noMasqueradingError": "Sorry but this app is only usable with the account you used to log in. Please go back at your account level to use this app normally."
+}

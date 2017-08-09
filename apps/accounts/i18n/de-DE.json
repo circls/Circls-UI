@@ -1,0 +1,474 @@
+{
+       "account": {
+                "menuTitles": {
+                        "routing": "Nummer Routing",
+                        "debug": "Live Debug",
+                        "getStarted": "Dokumentation"
+                },
+                "allotments": {
+                        "addCallflow": "Neues Kontingent zufügen",
+                        "edit": "Ändern",
+                        "delete": "Löschen",
+                        "tryNow": "Verbindungstest",
+                        "pingSuccess": "Der Aufruf wurde erfolgreich für diese Anruf-ML Aktion versendet!",
+                        "tableTitles": {
+                                "name": "Name",
+                                "number": "Nummer",
+                                "routesTo": "Verbinden mit",
+                                "actions": "Aktion",
+                                "numberRouting": "Anruf-ML Verbindungen",
+                                "configureHelp": "Einstellungen mit welcher Telefonnummer die Anfrage an welchen Webserver gesendet wird."
+                        },
+                        "creationForm": {
+                                "title": "Neue Anruf-ML zufügen",
+                                "editTitle": "Ändern der Anruf-ML",
+                                "save": "Speichern",
+                                "name": {
+                                        "help": "Fügen Sie einen Name für Ihre Anruf-ML hinzu",
+                                        "placeholder": "Anruf-ML",
+                                        "label": "Name"
+                                },
+                                "number": {
+                                        "help": "Fügen Sie eine Nummer von Ihnen zu, um diesen über die Anruf-ML Aufruf auszuführen.",
+                                        "placeholder": "+41525081922",
+                                        "label": "Nummer"
+                                },
+                                "url": {
+                                        "help": "URL für Ihr Anruf-ML Script",
+                                        "placeholder": "http://ihre.server.com",
+                                        "label": "URL"
+                                },
+                                "method": {
+                                        "help": "Methode",
+                                        "placeholder": "POST/GET",
+                                        "label": "Methode",
+                                        "post": "POST",
+                                        "get": "GET"
+                                }
+                        }
+                },
+
+                "fraud": {
+                        "title": "Konto-Kostenschutz",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Kontoschutz pro Tag",
+                        "perday_descript": "Maximalkosten pro Tag",
+                        "perday_descript_short": "pro Tag",
+                        "permin": "Kontoschutz pro Anruf",
+                        "permin_descript": "Maximalkosten pro Minute",
+                        "permin_descript_short": "pro Minute"
+                },
+                "callerid": {
+                        "title": "Konto-Anruf-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "Externe Anruf-ID",
+                        "emergency": "Notruf-ID",
+                        "external_descript": "(Anruf-ID bei externen Anrufen)",
+                        "emergency_descript": "(Anruf-ID bei Anrufen zu Notdiensten)"
+                },
+                "provision": {
+                        "title": "Automatische Gerätekonfiguration",
+                        "urlPass": "URL-Passwort",
+                        "provisionDomain": "Domainschutz",
+                        "provisionPass": "Telefon Passwort",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatische Gerätekonfiguration ein",
+                        "provisionEnabled": "Ist Eingeschaltet",
+                        "provisionDisabled": "Ist Ausgeschaltet",
+                        "supportCreatenew": "Gerätekonfiguration im Benutzerportal",
+                        "firmwareupdate": "Firmwareupdate erlauben"
+                },
+                "dialplan": {
+                        "title": "Konto-Rufplan",
+                        "account": "Kontorufplan",
+                        "descript": "Kontorufplan",
+                        "descriptHelp": "Hier stellen Sie Ihr lokales wähl Anrufmuster ein",
+                        "enabled": "Eigener Kontorufplan",
+                        "disabled": "Nein"
+                },
+                "emergencyplan": {
+                        "account": "Notrufplan",
+                        "descript": "Notrufplan",
+                        "descriptHelp": "Hier stellen Sie Ihre Polizei, Feuerwehr und Sanitätzentrale für Notrufe ein.",
+                        "enabled": "Notrufplan",
+                        "disabled": "Nein"
+                },
+                "connector": {
+                        "title": "Wiederverkauf-Synchronisation",
+                        "urldefault": "http://localhost/connector.php",
+                        "url": "URL API-Connect",
+                        "url_descript": "(URL API-Connect)",
+                        "apikey": "API-Key",
+                        "apikey_descript": "(API-Key for API-Connect)"
+                },
+                "is_reseller": "Ist ein Wiederverkäufer",
+                "is_business": "Ist ein Businesskunde"
+        },
+        "servicePlanDetails": {
+                "rate": "Monatlich:",
+                "activationCharge": "Aktivierungskosten:",
+                "exceptions": "Ausnahmen:",
+                "planLines": {
+                        "phone_numbers": "Abonnement Nummern",
+                        "number_services": "Abonnement Zusatzoptionen",
+                        "apps": "Abonnement Apps",
+                        "rates": "Tarife & Pauschalverbindungen",
+                        "limits": "Abonnement Pauschale-Verbindungen",
+                        "devices": "Abonnement Geräte",
+                        "users": "Abonnement Benutzer",
+                        "supports": "Abonnement Support",
+                        "connects": "Abonnement Internetanschluss"
+                },
+                "noServicePlan": "Kein Tarifplan ausgewählt.",
+                "CH_Numbers": "CH Nummer",
+                "CH_Tollfree": "CH Gratisnummer",
+                "Two-Way_Trunk": "Flatrate Verbindungen",
+                "Inbound_Trunk": "Eingehende Verbindungen",
+                "Outbound_Trunk": "Ausgehende Verbindungen",
+                "Outbound_CNAM": "Ausgehendes Telefonbuch",
+                "Inbound_CNAM": "Eingehendes Telefonbuch",
+                "Port_Request_Single": "Portierung Auftrag",
+                "Port_Request_DID": "Portierung Auftrag (DID Blöcke)",
+                "Emergency_Service": "Notfall Nummern",
+                "SIP_Device": "SIP Geräte Anschluss",
+                "User": "System Benutzer",
+                "cellphone": "Mobile",
+                "landline":  "Festnetz",
+                "sip_phone": "SIP-Anschlüsse"
+        },
+	"addAccount": "Neues Konto zufügen",
+	"editSetting": "Ändern",
+	"saveChanges": "Speichern",
+	"closeSetting": "Schliessen",
+	"disable": "Ausschalten",
+	"disabled": "Aus",
+	"active": "Aktiv",
+	"delete": "Löschen",
+	"enable": "Einschalten",
+	"add": "Zufügen",
+	"save": "Speichern",
+	"update": "Erneuern",
+	"none": "Kein",
+	"month": "Monat",
+	"missingAccount": "Konto nicht gefunden",
+	"disableAccount": "Konto deaktivieren",
+	"enableAccount": "Konto aktivieren",
+	"deleteAccount": "Konto löschen",
+	"useAccount": "Benutze Konto",
+	"changesSaved": "Änderungen speichern!",
+	"createdOn": "Zufügt am",
+	"accountStatus": "Konto Status",
+	"accountId": "Konto ID",
+	"accountName": "Konto Name",
+	"accountRealm": "Konto Realm",
+	"accountTimezone": "Zeitzone",
+	"accountLanguage": "Sprache",
+	"accountTimezoneTitle": "Zeitzone & Sprache",
+	"accountAdmins": "Administratoren",
+	"noAdminMessage": "Dieses Konto hat kein Administrator",
+	"noUserMessage": "Dieses Konto hat kein aktiver Benutzer",
+	"newAdmin": "Neuer Administrator zufügen",
+	"newUser": "Neuer Benutzer",
+	"existingUser": "Aktiver Benutzer",
+	"autogenPassword": "Passwort erzeugen",
+	"manuallyTypePassword": "Passwort eingeben",
+	"billingContact": {
+		"label": "Rechnungskontakt",
+		"name": "Rechnungskontakt Name",
+		"address": "Rechnungsadresse",
+		"zip": "Postleitzahl",
+		"city": "Ortschaft",
+                "usepostBilling": "Postrechnung",
+                "payExtra": "Rechnung per Post zusätzlich",
+                "usepostbillingDisabled": "Postrechnung Aus",
+                "usepostbillingEnabled": "Postrechnung Ein",
+		"email": "Rechnungskontakt Email",
+		"number": "Telefonnummer"
+	},
+	"technicalContact": {
+		"label": "Lieferung und Technik",
+		"name": "Name bei Technikfragen",
+		"email": "Email bei Technikfragen",
+		"number": "Telefonnummer",
+                "technicalContactMobile": "Mobilenummer",
+                "technicalAddress": "Adresse",
+                "technicalZIP": "Postleitzahl",
+                "technicalCity": "Ortschaft",
+                "technicalConnect": "Anschlussnummer",
+                "technicalLine": "Adernummer"
+	},
+	"chargeReminder": {
+		"line1": "Wenn Sie wiederkehrende Leistungen geändert haben, werden die Gebühren Anteilig für Ihren Rechnungszyklus verrechnet. Der Betrag wird jetzt von Ihrem Konto beglichen.",
+                "line2": "Bitte bestägigen, dass Sie dies durchführen wollen?"
+	},
+	"tabTitles": {
+		"overview": "Konto",
+		"servicePlans": "Abonnementsplan",
+		"rates": "Gesprächstarife",
+		"allotments": "Kontingente",
+		"limits": "Limiten",
+		"charging": "Verrechnung",
+		"restrictions": "Kontoansicht",
+		"notes": "Notizen",
+		"appstore": "Apps",
+		"numbersFeatures": "Nummern"
+	},
+	"classifiers": {
+		"unknown": {
+			"name": "Alle andern Nummern",
+			"help": "Wählen Sie diese Option, wenn dieses Konto ohne Einschränkung wählen soll (Auch Nummern die nicht im Abonnementsplan enthalten sind)"
+		}
+	},
+	"activeServicePlan": "Aktiver Abonnementsplan",
+	"servicePlanMaintenance": "Wartung des Abonnementsplanes",
+	"servicePlanReconciliation": {
+		"button": "Akzeptieren",
+		"tooltip": "Versichern Sie sich, dass die Zahlen korrekt sind."
+	},
+	"servicePlanSynchronization": {
+		"button": "Abgleichen",
+		"tooltip": "Aktualisieren Sie die Zahlungsinformationen auf der Kreditkarteninformationen."
+	},
+	"servicePlanWizardLegend": "Wählen Sie ein Abonnementsplan für dieses Konto:",
+	"servicePlanResellerOnly": "Nur Wiederverkäufer sind Berechtigt die Abonnemetspläne zu ändern.",
+	"trunksLegend": "Volumenbeschränkung",
+	"twowayTrunks": "Flatrate-Verbindungen",
+	"twowayTrunkshelp": "Anzahl gleichzeitiger Flatrate-Verbindungen (Flatrate Trunks) Um Flatrate zu benutzen, muss Ein- und Ausgehende Trunks auf 0 sein!",
+	"inboundTrunks": "Eingehende Verbindungen",
+	"inboundTrunkshelp": "Max. Anzahl gleichzeitiger eingehender Verbindungen (Um Flatrate zu benutzen, muss Ein- und Ausgehende Trunks auf 0 sein!)",
+	"outboundTrunks": "Ausgehende Verbindungen",
+	"outboundTrunkshelp": "Max. Anzahl gleichzeitiger ausgehender Verbindungen (Um Flatrate zu benutzen, muss Ein- und Ausgehende Trunks auf 0 sein!)",
+        "callsTrunks": "Verbindungslimit hart",
+        "callsTrunkshelp": "Hartes Limit der gleichzeitigen Verbindungen total",
+        "burstTrunks": "Überhöhte-Flatrate",
+        "burstTrunkshelp": "Anzahl Überhöhte-Flatrate gleichzeitiger Verbindungen zulassen. (Wird nicht zusätzlich verrechnet)",
+        "resourceconsumingCalls": "Verbindungsresourcen Hart",
+        "resourceconsumingCallshelp": "Hartes Limit der gleichzeitigen (Ein- und Ausgehenden Anrufe) total",
+        "creditTooltip": "Der Kreditausgleich werden die Kosten dem Kunden verrechnet!",
+        "creditTitle": "Guthaben und Verrechnung",
+        "underlimitTitle": "Unterlimit Einstellungen",
+        "underlimitTooltip": "Wenn der Kunde unter dem Mindestesbetrag ist, wie wird dann verfahren.",
+        "allowCallinunderlimit": "Wenn der Kunde unter dem Mindestestbetrag ist, erlaube Ihm noch eingehende Anrufe zu erhalten.",
+        "allowSayunderlimit": "Wenn der Kunde unter dem Mindestestbetrag ist, soll eine Ansage beim Anrufen erfolgen, nicht nur das Besetzt-Signal.",
+	"callRestrictionsLegend": "Verbindungsbeschränkung / Verrechnungsart",
+	"callRestrictionsTitle": "Ausgehende Verbindungen zulassen",
+	"balanceTitle": "Verrechnung ausserhalb Flatrate",
+	"PostpayTitle": "Verrechnungsart",
+	"allowPostpay": "Erlaube diesem Kunden, dass sein Kontostand unter 0 sinken darf. (Postpay)",
+	"balancePerMinute": "Kredit Kontostand: ",
+	"balanceTooltip": "Diese Kreditlimite wird für Verbindungen im Minutentarif verwendete (Kostenpflichtige Verbindungen bei Postpay)",
+	"addToBalance": "Zufügen einer Zahlung:",
+	"allowPrepay": "Erlaube diesem Kunden den Minutentarif wenn die max. Anzahl der Flatrate-Verbindungen (inkl. überhöhte Flatrate) überstiegen wird, um zusätzlich im Minutentarif zu verrechnen. (Prepay)",
+	"havetoPayonnet": "Verrechnet diesem Kunden auch OnNet-Verbindungen (ohne interne Verbindungen zu Nebenstellen!)",
+        "flatelistTitle": "Verrechnung von Flatrate",
+        "flatelistTooltip": "Diese Liste definert die Flatrate Nummern und die nicht erlaubten Nummern für das Flatrate für diesen Kunden. Wenn aktiviert, werden nur diese Regeln bentuzt!",
+        "flatelist": "Aktivieren Sie diese Listen von Flatrate Nummern für diesen Kunden. Wenn nicht werden nur die Systemweiten Regeln angewendet!",
+        "whitelist": "Regex Flatrate",
+        "blacklist": "Regex nicht Flatrate",
+        "postpayamount": "Max Betrag für Rechnung bei Postpay",
+        "reserveamount": "Reserve Betrag bei Prepay",
+        "allotmentsTitle": "Verrechnung von Kontingenten",
+        "allotmentsTooltip": "Die Verrechnung von Zeitlichen inklusiv-Verbindungen, können Sie hier für dieses Konto einstellen!",
+        "allotmentName": "Kontigentname",
+        "allotmentAmount": "Betrag",
+        "allotmentCycle": "Zeitdauer",
+        "allotmentIncrement": "Steigung",
+        "allotmentMinimum": "Minimum",
+        "allotmentNoconsumetime": "Nichtberechnet",
+        "allotmentGroupconsume": "Gruppen",
+	"addAdminLink": {
+		"toggleOn": "Ein Administrator zum Konto zufügen",
+		"toggleOff": "Administrator wird nicht benötigt"
+	},
+	"adminLabels": {
+		"firstName": "Administrator Vorname",
+		"lastName": "Administrator Nachname",
+		"email": "Administrator Email-Adresse",
+		"emailTooltip": "Diese Email-Adresse wird als Benutzername für das Anmelden dieser Oberfläche benutzt.",
+		"number": "Administrator Nummer",
+		"password": "Administrator Passwort",
+		"confirm": "wiederhole Passwort",
+		"sendCredentialsEmail": "Sende Zusammenfassung mit den Benutzerdaten an diesen Administrator",
+		"sendCredentialsEmailShort": "Sende Zusammenfassung der Benutzerdaten"
+	},
+	"adminPlaceholders": {
+		"firstName": "Vorname",
+		"lastName": "Nachname",
+		"email": "Email-Adresse",
+		"number": "Telefonnummer",
+		"password": "Passwort",
+		"confirm": "Passwort wiederholen"
+	},
+	"wizardStepTitles": {
+		"setupAccount": "Neues Konto einrichten",
+		"servicePlan": "Wähle ein Abonnement",
+		"rates": "Gesprächstarife",
+		"limits": "Beschränkungen",
+		"charging": "Verrechnung",
+		"restrictions": "Berechtigungen"
+	},
+	"wizardErrorMessages": {
+		"pleaseCorrect": "Bitte die folgenden Fehler beheben:",
+		"accountMandatoryFields": "Der Kontoname und das Realm-Feld sind obligatorisch.",
+		"adminMandatoryFields": "Wenn Sie einen Administrator zufügen sind die Vor-, Nachnamen und Email-Adressen obligatorisch.",
+		"adminPasswordError": "Das Passwort muss mindestens 6 Zeichen lang sein, und aus Buchstaben und Zahlen sein.",
+		"adminPasswordConfirmError": "Die Passwort Wiederholung stimmt nicht überein.",
+		"incorrectBalanceFormat": "Das Format für eine Zahlungsangabe entspricht nicht dem Format, Sie müssen eine Zahl mit 2 Stellen nach dem Komma eingeben.",
+		"balanceMinimumAmount": "Der minimale Betrag für eine Zahlung beträgt 5.00."
+	},
+	"wizardProcessingMessage1": "Bitte warten...",
+	"wizardProcessingMessage2": "Bitte warten, während das Konto erstellt wird.",
+	"autogenPasswordPopup": {
+		"message": "Das Passwort für den Administrator {{adminName}} wurde automatisch erzeugt. DAS PASSWORT WIRD NUR DIESES MAL ANGEZEIGT. Sie sollten es sich unbedingt aufschreiben, oder einprägen.",
+		"login": "Anmelden:",
+		"password": "Passwort:"
+	},
+	"deleteUserConfirm": "Dieser Benutzer wird vollständig gelöscht. Weiter?",
+	"deleteAccountConfirm": "Dieses Konto wird vollständig gelöscht. Weiter?",
+	"toastrMessages": {
+		"servicePlanUpdateSuccess": "Aktive Abonnemente wurden erfolgreich aktualisiert!",
+		"servicePlanUpdateError": "Ein unerwarteter Fehler ist aufgetreten! Bitte wiederholen Sie den Vorgang.",
+                "servicePlanReconciliationSuccess": "Überleitung erfolgreich abgeschlossen!",
+                "servicePlanReconciliationError": "Fehler beim Versöhnungsprozess aufgetreten Bitte versuchen Sie es noch einmal!",
+                "servicePlanSynchronizationSuccess": "Synchronisation erfolgreich abgeschlossen!",
+                "servicePlanSynchronizationError": "Es ist ein Fehler bei der Synchronisation aufgetreten. Bitte versuchen Sie es noch einmal!",
+                "ratesUpdateSuccess": "Gesprächstarife erfolgreich aktualisiert!",
+                "limitsUpdateSuccess": "Limiten erfolgreich aktualisiert!",
+                "ratesUpdateError": "Während der Aktualisierung der Gesprächstarife ist ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es erneut.",
+                "limitsUpdateError": "Während der Aktualisierung der Limiten ist ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es erneut.",
+                "creditAddSuccess": "Zahlung wurde erfolgreich dem aktuellen Kontostand hinzugefügt!",
+                "creditAddError": "Ein unerwarteter Fehler ist beim Hinzufügen der Zahlung aufgetreten. Versuchen Sie es erneut.",
+                "deleteAccountError": "Beim Löschen des Kontos ist ein Fehler ist aufgetreten, versuchen Sie es erneut.",
+                "NewAccount": {
+                        "accountError": "Ein unerwarteter Fehler beim Erstellen der Rechnung aufgetreten.",
+                        "adminError": "Das Konto des Administrator konnte nicht erstellt werden.",
+                        "ratesError": "Ein Fehler beim Einrichten der Gesprächstarife ist aufgetreten.",
+                        "limitsError": "Fehler beim Einrichten der Limiten ist aufgetreten.",
+                        "forbiddenLimitsError": "Es ist nicht erlaubt, diese Limiten zu setzen. Bitte wenden Sie sich an Ihren Wiederverkäufer..",
+                        "creditError": "Es ist ein Fehler bei der Gutschrift auf das Konto aufgetreten.",
+                        "servicePlanError": "Bei der Zuordnung der Abonnemente auf das Konto ist ein Fehler aufgetreten."
+                },
+                "uiRestrictionsUpdateSuccess": "Kontoansicht erfolgreich aktualisiert!",
+                "uiRestrictionsUpdateError": "Bei der Aktualisierung der Kontoansicht, ist ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es nocheinmal.",
+                "notesUpdateSuccess": "Notiz erfolgreich aktualisiert!",
+                "notesUpdateError": "Bei der Aktualisierung der Tarife ist ein unerwarteter Fehler ist aufgetreten, versuchen Sie es nocheinmal.",
+                "triggerMasquerading": "Ihr Konto {{accountname}} ist jetzt nicht sichtbar",
+                "restoreMasquerading": "Ihr Konto ist wieder sichtbar.",
+                "callRestrictionsUpdateSuccess": "Anrufbeschränkungen erfolgreich aktualisiert!",
+                "callRestrictionsUpdateError": "Während die Anrufbeschränkungen gespeichert wurden, ist ein unbekannter Fehler aufgetreten. Bitte versuchen Sie es nocheinmal.",
+                "appstoreUpdateSuccess": "Apps erfolgreich aktualisiert!",
+                "appstoreUpdateError": "Während die Apps gespeichert wurden, ist ein unbekannter Fehler aufgetreten. Bitte versuchen Sie es nocheinmal.",
+                "numbersfeaturesUpdateSuccess": "Nummerneigenschaften erfolgreich aktualisiert!",
+                "numbersfeaturesUpdateError": "Während die Nummerneigenschaften gespeichert wurden, ist ein unbekannter Fehler aufgetreten. Bitte versuchen Sie es nocheinmal."
+        },
+        "uiRestrictionsLegend": "Wählen Sie, was Ihre Kunden sehen können",
+	"uiRestrictionsTooltip": "Sie können die Ansicht der Kontoanzeige für Ihre Unterkonten beschränken. Dadurch kann dieses Unterkonto nur die ihm Freigegebenen Menüs sehen.",
+	"uiRestrictionsMenu": {
+		"settings": "Einstellungen",
+		"user": "Benutzer",
+		"account": "Konto",
+		"billing": "Verrechnung",
+		"creditCard": "Kreditkarte",
+		"transactions": "Buchungen",
+		"servicePlan": "Abonnemente",
+		"perMinute": "Verrechnung per Minute",
+		"trunking": "Trunking (Flatrates)",
+		"inbound": "Eingehend (Flatrates)",
+		"outbound": "Ausgehend (Flatrates)",
+                "calls": "Verbindungslimit hart",
+                "burst": "Überhöhte-Flatrate",
+                "resourceconsumingcalls": "Verbindungsresourcen total",
+		"twoway": "Flatrate",
+		"errorTracker": "Fehleraufzeichnung",
+		"misc": "Verschiedenes",
+		"numbersFeatures": "Nummern"
+	},
+	"uiRestrictionsExtraSettings": {
+		"perMinute": {
+			"legend":"Zahlungseinstellungen",
+			"showCreditInfo":"Zeige Kreditinformationen",
+			"showMinutesInfo": "Zeige Minuteninformationen"
+		}
+	},
+	"validationMessages": {
+		"invalidPasswordConfirm": "Die Passwörter stimmen nicht überein."
+	},
+	"notesLegend": "Notizen für dieses Konto",
+	"landingContent": [
+		"Sie können ein Unterkonto bearbeiten, oder ein neues erstellen.",
+		"",
+		""
+	],
+	"carrier": {
+		"title": "Carrier",
+		"useBlended": {
+			"friendlyName": "Benutze Global Carrier",
+			"help": "Durch Auswahl von \"Benutze Global Carrier\", werden alle Anrufe über die Carrier des Hauptkontos hergestellt."
+		},
+		"useReseller": {
+			"friendlyName": "Benutze {{variable}} Carrier",
+			"help": "Durch Auswahl von \"Benutze {{variable}} Carrier\", werden alle Anrufe nur über den Carrier {{variable}}' hergestellt."
+		},
+		"byoc": {
+			"friendlyName": "Benutze Dein Carrier",
+			"help": "Durch Auswahl von \"Benutze Dein Carrier\", werden alle Anrufe nur über den selbst erstellten Carrier hergestellt."
+		},
+		"saveSuccess": "Sie haben erfolgreich die Einstellungen für Ausgehende Verbindungen dieses Kontos aktualisiert!",
+		"huntError": "Ihre Verbindungen die keinem Muster entsprechen, werden momentan nicht in diesem UI unterstützt.!"
+	},
+        "accountType": "Konto Typ",
+        "reseller": "Wiederverkäufer",
+        "standard": "Standard",
+        "carrierTab": "Carrier",
+        "sentEmailPopup": "Ein eMail mit den Anmeldedaten wurde an {{email}} gesendet.",
+        "disabledAddCreditTooltip": "Braintree wird benötigt um eine Aufladung zu tätigen. Oder kontaktieren Sie Ihren Administrator für mehr Informationen.",
+        "deleteAccountDialog": {
+                "title": "Kontolöschung bestätigen",
+                "cancel": "Abbrechen",
+                "deleteAccount": "Konto Löschen",
+                "deleteKey": "LÖSCHEN",
+                "deleteMessageIntro": "Sind Sie sicher das Sie das Konto (\"{{variable}}\") löschen möchten?",
+                "deleteMessageExplanation": "Bestätigen Sie mit dem Wort \"{{variable}}\" die Löschung und drücken Sie auf das \"LÖSCHEN\" Feld!"
+        },
+        "updateCreditDialog": {
+                "title": "Erneuerung Kredit Betrag",
+                "creditBalance": "Aktueller Kontostand",
+                "addCredit": "Zufügen",
+                "removeCredit": "Abbuchen",
+                "addCreditOne": "Betrag einmal zufügen",
+                "removeCreditOne": "Betrag einmal abbuchen",
+                "helpAddCreditOne": "Wenn Sie mindestens einen Betrag von 100.00 auf Ihrem Konto haben, können Sie dadurch die Notrufe oder die Anruf-ID selbst einstellen, auch Anrufe mit Minutenabrechnung sind dann erlaubt ",
+                "helpRemoveCreditOne": "Wenn zuviel Kredit aufgeladen wurde, können Sie für Ihre Unterkontos diese abbuchen.",
+                "placeholderAmount": "100.00",
+                "successfulUpdate": "Sie haben erfolgreich den Betrag dieses Kontos ausgeglichen! :)"
+        },
+        "account_has_descendants": "Sie müssen zuerst alle Unterkontos löschen, um diess Konto zu löschen zu können.",
+        "changeServicePlanDialog": {
+                "title": "Anpassung des Abonnementsplan",
+                "successUpdate": "Sie haben den Abonnementsplan für dieses Konto erfolgreich gespeichert!"
+        },
+        "appstoreLegend": "Bestimmen Sie welche App dieses Konto einschalten kann",
+        "numbersFeatures": {
+                "legend": "Nummerneigenschaften",
+                "features": {
+                        "e911": "Notanrufe",
+                        "cnam": "Nameübermittlung"
+                }
+        },
+        "announcementLegend": "Bei Anmeldung in dieses Konto wird diese Meldung jedam angezeigt.",
+        "deleteAnnouncement": "Meldung löschen",
+        "reserllerAction": "Wiederverkäufer",
+        "promoteDemoteError": "Ein Fehler ist während dieser Operation aufgetreten. Bitte versuchen Sie es nocheinmal.",
+        "promoteAccount": {
+                "button": "Aktivieren",
+                "confirm": "Dass dieses Konto zum Wiederverkäufer wird",
+                "success": "Dieses Konto wurde als Wiederverkäufer aktiviert"
+        },
+        "demoteAccount": {
+                "button": "Deaktivieren",
+                "confirm": "Dass dieses Konto zum normalen Kunden zurückgestuft wird",
+                "success": "Dieses Konto wurde den Wiederverkaufsstatus entzogen"
+        }
+}

@@ -1,0 +1,40 @@
+<div class="feature-popup-container" data-feature="find_me_follow_me">
+	<div class="feature-popup-title">
+		<div class="feature-fa-wrapper">
+			<i class="{{currentUser.extra.mapFeatures.find_me_follow_me.icon}}"></i>
+		</div>
+		{{ i18n.users.find_me_follow_me.headline }}
+		<div class="switch">
+		{{#monsterSwitch}}
+			<input class="switch-state" type="checkbox" id="checkbox_find_me_follow_me" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}"{{#if currentUser.extra.mapFeatures.find_me_follow_me.active}} checked="checked"{{/if}}></input>
+		{{/monsterSwitch}}
+		</div>
+	</div>
+
+	<div class="content{{#unless currentUser.extra.mapFeatures.find_me_follow_me.active}} disabled{{/unless}}">
+                <div>
+                        <span>{{ i18n.groups.ringback.dropdownLabel }}</span>
+                        <select name="format" class="media-dropdown">
+                                <option value="{{silenceMedia}}" {{#compare media '===' silenceMedia}}selected{{/compare}}>{{ i18n.groups.ringback.silence }}</option>
+                                <option value="{{usaRingMedia}}" {{#compare media '===' usaRingMedia}}selected{{/compare}}>{{ i18n.groups.ringback.usaRing }}</option>
+                                <option value="{{germanRingMedia}}" {{#compare media '===' germanRingMedia}}selected{{/compare}}>{{ i18n.groups.ringback.germanRing }}</option>
+                                <option value="{{chinaRingMedia}}" {{#compare media '===' asiaRingMedia}}selected{{/compare}}>{{ i18n.groups.ringback.asiaRing }}</option>
+                                {{#each mediaList}}
+                                        <option value="{{this.id}}" {{#compare ../media '===' this.id}}selected{{/compare}}>{{this.name}}</option>
+                                {{/each}}
+                        </select>
+                </div>
+	</div>
+
+	<div class="content{{#unless currentUser.extra.mapFeatures.find_me_follow_me.active}} disabled{{/unless}}">
+		<form id="find_me_follow_me_form">
+		</form>
+	</div>
+
+	<div class="actions clearfix">
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+			<button type="button" class="monster-button monster-button-success save">{{ i18n.saveChanges }}</button>
+		</div>
+	</div>
+</div>

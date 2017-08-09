@@ -1,0 +1,55 @@
+{
+	"lcrrates": {
+		"addCD": " + Zufügen Lieferantentarif",
+		"addrates": "Zufügen eines Lieferantentarifs",
+		"delete": "Löschen des Tarif",
+		"deleteRequest": "Löschen des Lieferantentarif ",
+		"deleteTitle": "Löschen des Tarif?",
+		"dialograte": {
+			"addTitle":          "Lieferantentarif zufügen",
+			"editTitle":         "Lieferantentarif ändern",
+			"ratename":               "Zielname",
+			"isocode":                "ISO Code",
+			"direction":              "Richtung",
+			"weight":                 "Gewichtung",
+			"surcharge":              "Zuschlag",
+			"pvttype":                "Typ",
+			"flatrate":               "Flatrate inkl.",
+			"prefix":                 "Vorwahl",
+			"routecode":              "Route Code",
+			"ratecost":               "Tarif",
+			"internal":               "EP Tarif",
+			"routes":                 "Route (Regex)",
+			"max":                    "Taktung",
+			"min":                    "Min. Taktung",
+			"description":            "Beschreibung",
+			"ratenochargetime":       "Verrechnung ab",
+			"options":                "Optionen",
+			"carrier":                "Carriername",
+			"Direction": {
+				"incoming": "Eingehend",
+				"outgoing": "Ausgehend"
+			},
+			"placeholderName": "Benutzername",
+			"save": "Speichern",
+			"createrates": "Zufügen"
+		},
+		"editCD": " + Lieferantentarif ändern",
+		"empty-row": "Es wurden keine Lieferantentarife gemäss Ihrer Suche gefunden.",
+		"info_superduper": "Lieferantentarife ist eine App die Lieferantentarife anpassen kann. Ohne ein anders Konto aktiviert werden die global gültigen Tarife bearbeitet. Um diese App für Ihre Lieferanten zu benutzen, müssen Sie in den Kontenverwaltung das Konto auswählen und mit \"Benutze Konto\" aktivieren. Dann können Sie dessen Tarife anpassen.",
+		"info_reseller": "Lieferantentarife ist eine App die Ihre Lieferantentarife für Wiederverkäufer anzeigt",
+		"info_user": "Lieferantentarife ist eine App die Ihre Lieferantentarife anezeigt",
+		"less": "Keine Info",
+		"more": "Info Lieferantentarife",
+		"no-rates": "Es sind keine Lieferantentarife vorhanden.",
+		"search": "Suche",
+		"toastr": {
+			"addSuccess": "Lieferantentarif wurde erfolgreich hinzugefügt.",
+			"addresellernotMasquarde": "Lieferantentarif können nicht hinzugefügt werden.",
+			"deleteSuccess": "Lieferantentarif wurde erfolgreich gelöscht.",
+			"editSuccess": "Lieferantentarif wurde erfolgreich geändert.",
+			"editresellernotMasquarde": "Lieferantentarif wurde ohne EP-Tarif erfolgreich geändert."
+		},
+		"warning": "Sie können nicht zweimal den gleichen Namen verwenden. Bitte geben Sie einen andern ein."
+	}
+}

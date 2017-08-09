@@ -1,0 +1,174 @@
+<div class="app-content device-info">
+	<div class="info-header-wrapper">
+		<div class="info-header">
+			<header>
+				<div class="device-image"></div>
+				<div class="device-contact">
+					<div class="device-name">
+						<span class="device-name-text">{{device_name}}</span>
+						<input type="text" class="device-name-input" value="{{device_name}}">
+						<a href="#" class="monster-link edit">{{i18n.mobileApp.deviceInfo.header.editName}}</a>
+					</div>
+					<div class="device-mdn">{{formatPhoneNumber mdn}}</div>
+				</div>
+			</header>
+			<nav class="monster-navbar reverse">
+				<ul class="navbar-menu">
+					<li class="navbar-menu-item">
+						<a href="#" class="navbar-menu-item-link active">{{i18n.mobileApp.deviceInfo.header.deviceCarrierInfo}}</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="info-content-wrapper">
+		<div class="info-content row-fluid">
+			<form class="device-info span6 form-horizontal">
+				<legend class="title">{{i18n.mobileApp.deviceInfo.legends.deviceInfo}}</legend>
+			{{#if service_info.manufacturer}}
+				<div class="control-group">
+					<label for="manufacturer" class="control-label">{{i18n.mobileApp.deviceInfo.labels.manufacturer}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.manufacturer}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.model_name}}
+				<div class="control-group">
+					<label for="model_name" class="control-label">{{i18n.mobileApp.deviceInfo.labels.modelName}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.model_name}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.model_number}}
+				<div class="control-group">
+					<label for="model_number" class="control-label">{{i18n.mobileApp.deviceInfo.labels.modelNumber}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.model_number}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.device_serial_number}}
+				<div class="control-group">
+					<label for="device_serial_number" class="control-label">{{i18n.mobileApp.deviceInfo.labels.deviceSerialNumber}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.device_serial_number}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.device_type}}
+				<div class="control-group">
+					<label for="device_type" class="control-label">{{i18n.mobileApp.deviceInfo.labels.deviceType}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.device_type}}</div>
+					</div>
+				</div>
+			{{/if}}
+				<div class="control-group">
+					<label for="esn" class="control-label">{{i18n.mobileApp.deviceInfo.labels.esn}}</label>
+					<div class="controls">
+						<div class="control-text">{{esn}}</div>
+					</div>
+				</div>
+			{{#if service_info.imsi}}
+				<div class="control-group">
+					<label for="imsi" class="control-label">{{i18n.mobileApp.deviceInfo.labels.imsi}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.imsi}}</div>
+					</div>
+				</div>
+			{{/if}}
+			</form>
+			<form class="subscription-info span6 form-horizontal">
+				<legend class="title">{{i18n.mobileApp.deviceInfo.legends.subscriptionInfo}}</legend>
+				<div class="control-group">
+					<label for="mdn" class="control-label">{{i18n.mobileApp.deviceInfo.labels.mdn}}</label>
+					<div class="controls">
+						<div class="control-text">{{mdn}}</div>
+					</div>
+				</div>
+			{{#if service_info.msid}}
+				<div class="control-group">
+					<label for="msid" class="control-label">{{i18n.mobileApp.deviceInfo.labels.msid}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.msid}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.msl}}
+				<div class="control-group">
+					<label for="msl" class="control-label">{{i18n.mobileApp.deviceInfo.labels.msl}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.msl}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.sprint_nai}}
+				<div class="control-group">
+					<label for="nai" class="control-label">{{i18n.mobileApp.deviceInfo.labels.nai}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.sprint_nai}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.csa}}
+				<div class="control-group">
+					<label for="csa" class="control-label">{{i18n.mobileApp.deviceInfo.labels.csa}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.csa}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if icc}}
+				<div class="control-group">
+					<label for="sim" class="control-label">{{i18n.mobileApp.deviceInfo.labels.sim}}</label>
+					<div class="controls">
+						<div class="control-text">{{icc}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.activation_date}}
+				<div class="control-group">
+					<label for="activation_date" class="control-label">{{i18n.mobileApp.deviceInfo.labels.activationDate}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.activation_date}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.expiration_date}}
+				<div class="control-group">
+					<label for="expiration_date" class="control-label">{{i18n.mobileApp.deviceInfo.labels.expirationDate}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.expiration_date}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if service_info.price_plan}}
+				<div class="control-group">
+					<label for="price_plan" class="control-label">{{i18n.mobileApp.deviceInfo.labels.plan}}</label>
+					<div class="controls">
+						<div class="control-text">{{service_info.price_plan}}</div>
+					</div>
+				</div>
+			{{/if}}
+			{{#if activesocs}}
+				<div class="control-group">
+					<label for="activesocs" class="control-label">{{i18n.mobileApp.deviceInfo.labels.features}}</label>
+					<div class="controls">
+					{{#each activesocs}}
+						<div class="control-text">{{toLowerCase this}}</div>
+					{{/each}}
+					</div>
+				</div>
+			{{/if}}
+			</form>
+		</div>
+		<div class="info-actions">
+			<div class="actions pull-right">
+				<button class="monster-button-cancel back">{{i18n.mobileApp.deviceInfo.buttons.backToDevices}}</button>
+				<button class="monster-button-success update">{{i18n.mobileApp.deviceInfo.buttons.updateDevice}}</button>
+			</div>
+		</div>
+	</div>
+</div>

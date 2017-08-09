@@ -1,0 +1,44 @@
+<div class="feature-popup-container" data-feature="hotdesk">
+	<div class="feature-popup-title">
+		<div class="feature-fa-wrapper">
+			<i class="{{extra.mapFeatures.hotdesk.icon}}"></i>
+		</div>
+		{{ i18n.users.hotdesk.headline }}
+		<div class="switch">
+		{{#monsterSwitch}}
+			<input class="switch-state" type="checkbox" name="enabled" id="checkbox_hotdesk" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}"{{#if extra.mapFeatures.hotdesk.active}} checked="checked"{{/if}}></input>
+		{{/monsterSwitch}}
+		</div>
+	</div>
+
+	<div class="content{{#unless extra.mapFeatures.hotdesk.active}} disabled{{/unless}}">
+		<form id="hotdesk_form">
+			<div>
+				{{ i18n.users.hotdesk.id }}
+				<input required minlength="4" class="input-small" type="text" name="id" value="{{hotdesk.id}}"></input>
+			</div>
+
+			<div class="main-line">
+
+				{{#monsterCheckbox i18n.users.hotdesk.label}}
+					<input type="checkbox" name="require_pin"{{#if hotdesk.require_pin}} checked{{/if}}></input>
+				{{/monsterCheckbox}}
+
+				<input required minlength="4" id="pin" type="text" name="pin" class="input-small" placeholder="{{ i18n.users.hotdesk.placeholder }}" value="{{hotdesk.pin}}"{{#unless hotdesk.require_pin}}disabled{{/unless}}></input>
+			</div>
+
+			<label class="fix-left">
+				{{#monsterCheckbox i18n.users.hotdesk.keep_logged_in_elsewhere}}
+					<input type="checkbox" name="keep_logged_in_elsewhere"{{#if hotdesk.keep_logged_in_elsewhere}} checked{{/if}}></input>
+				{{/monsterCheckbox}}
+			</label>
+		</form>
+	</div>
+
+	<div class="actions clearfix">
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+			<button type="button" class="monster-button monster-button-success save">{{ i18n.saveChanges }}</button>
+		</div>
+	</div>
+</div>

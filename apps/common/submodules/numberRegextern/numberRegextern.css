@@ -1,0 +1,81 @@
+/* NUMBER-PREPEND POPUP */
+.trunkstore_popup.number-prepend {
+	width: 510px;
+}
+
+.trunkstore_popup.number-prepend form,
+.trunkstore_popup.number-prepend input {
+	margin: 0;
+}
+
+.trunkstore_popup.number-prepend .popup-content {
+	padding: 15px 25px;
+}
+
+.trunkstore_popup.number-prepend .popup-content:not(:first-child) {
+	border-top: 1px solid #ccc;
+}
+
+.trunkstore_popup.number-prepend .popup-content .popup-label {
+	margin: 0 10px 0 0;
+	display: inline-block;
+}
+
+.trunkstore_popup.number-prepend .help-box {
+	margin-top: 20px;
+}
+
+.trunkstore_popup.number-prepend .popup-actions .cancel-link {
+	margin-right: 10px;
+}.regextern {
+	width: 700px;
+	max-hight: 500px;
+}
+
+.popup-content {
+	padding: 15px 25px;
+}
+
+.regextern-list {
+	float: left;
+}
+
+.regextern-line {
+	float: left;
+	width: 22%;
+	margin-right: 5px;
+	margin-bottom: 1px;
+	min-height: 70px;
+}
+
+.regextern-linedouble {
+	float: left;
+	width: 44%;
+	margin-right: 5px;
+	margin-bottom: 1px;
+	min-height: 70px;
+}
+
+.regextern-line input {
+	width: 110px;
+	margin-right: 5px;
+	margin-bottom: 1px;
+}
+
+.regextern-line textarea {
+	width: 260px;
+	margin-right: 5px;
+	margin-bottom: 1px;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.regextern .popup-content .popup-label {
+	margin: 0 10px 0 0;
+}
+
+.regextern .help-box {
+	width: 100%;
+}

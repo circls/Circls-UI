@@ -1,0 +1,560 @@
+{
+        "defaultTimezone": "Europe/London",
+        "defaultLanguaage": "en-US",
+	"hello": "Hello",
+	"signout": "Sign Out",
+	"myaccount": "Account",
+	"closeSlide": "Close",
+	"store": "Store",
+
+	"settingsCategory": "Settings",
+	"billingCategory": "Billing",
+	"trunkingCategory": "Trunking",
+
+	"editSettings": "Edit",
+	"changesSaved": "Changes Saved!",
+	"placeholderEmail": "jon_doe@company.com",
+	"phoneNumber": "Phone Number",
+	"placeholderNumber": "4152223333",
+
+	"walkthrough": {
+		"greetingsDialog": {
+			"go": "Let's get started",
+			"content": "The step-by-step wizard will help familiarize you with your account settings so that you can begin setting up your business phone system. Your essential account information has been entered during registration.",
+			"title": "Welcome to the platform"
+		},
+		"steps": {
+			"1": "Access your Account Settings by clicking on your name.",
+			"2": "Your Admin User settings can be viewed in the User tab. Individual settings such as Timezone, Language and Date & Time can be changed based on your preferences. Additional you can integration your conatcts to sync this e.g. with your mobile, to have phonenumbers with your in realtime.",
+			"3": "Your Admin Account settings can be viewed in the Account tab. Here you can add a Technical Contact if you wish, and set Timezone & Language for the entire account. The accountname and realm should not reseted, because your device need this domains to connect with it  The account fraudsecurity protects you from password theft, and the cost overrun only to limit. We recommend to put on the maximum daily costs (eg 20.00 per day. ) After saving only your resellers can unlock this again.",
+			"4": "The invoicing is done via e-mail from us automatically. But you can adjust the delivery by mailing to your habits manually. Please note that the credit card that you used during registration is currently on file in this tab.",
+			"5": "Chargeable calls are here listed. When making chargeable calls will be made \"per minute\". Not cost endorse calls are not listed.",
+			"6": "Here you can view your current subscriptions. Details of the respective subscriptions are listed on our website, and explains details. For further questions please contact us.",
+			"7": "Here is view all transactions made under your account, including all one-time fees and charges"
+
+		},
+		"endDialog": {
+			"roger": "Roger that",
+			"content": "Now that you're familiarized with the different settings, you can take a few moments to change or update any of the information to fit your needs. When you're ready to begin setting up your phone system, close out of these settings by clicking the close button in the upper right or by simply clicking on your name again.",
+			"title": "Done!"
+		}
+	},
+
+	"user": {
+		"title": "User",
+		"passwordsNotMatching": "The passwords you typed don't match",
+
+		"email": "Email",
+
+		"password": "Password",
+		"newPassword": "New Password",
+		"confirmPassword": "Confirm New Password",
+
+		"timezoneTitle": "Timezone & Language",
+		"userTimezone": "Timezone",
+		"userLanguage": "Language",
+
+		"colorblindTitle": "Colorblind Mode",
+		"colorblindEnabled": "Enabled",
+		"colorblindDisabled": "Disabled",
+		"enableColorblind": "Enable Colorblind Mode",
+
+		"__comment": "UI-1335: Adding hours settings to the user settings",
+		"__version": "v3.20_s3",
+		"dateTimeTitle": "Date and Time Display",
+		"twelveHoursModeEnabled": "12 Hours Mode (AM/PM)",
+		"twelveHoursModeDisabled": "24 Hours Mode",
+		"enableTwelveHoursMode": "Time in 12 Hours Mode (AM/PM)",
+		"dateFormatTitle": "Date format",
+		"dateFormats": {
+			"dmy": "Day/Month/Year",
+			"mdy": "Month/Day/Year",
+			"ymd": "Year/Month/Day"
+		},
+                "contactSync": "Contact synchronization",
+                "contactsyncUser": "Contactsync User",
+                "contactsyncPassword": "Contactsync Password",
+                "contactsyncURL": "Contactsync URL",
+                "placeholdercontactsyncUser": "user@gamil.com",
+                "placeholdercontactsyncPassword": "password",
+                "quickcallDevice": "Quickcall Device",
+                "quickcalldeviceLabel": "Quickcall Device (Default)",
+                "quickcalldeviceTitle": "Quickcall Device",
+		"quickcalldeviceHelp": "The quickcall device is for set default phone to dialout per mouseclick in the userportal.",
+
+		"contactsyncURLHelp": "Here you can set your URL of Activsync accounts.",
+		"contactsyncPasswordHelp": "Here you set your passwort of Activsync accounts.",
+		"contactsyncUserHelp": "Here your can set your user of Activsync account, to sync all contact data between phones."
+	},
+        "account": {
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "helptip": "We are suggest to set to 10.00 per day. Even if you password was stolen, your account is overflow protected.",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_status": "actual turnover",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "Devicesetting in userportal",
+                        "firmwareupdate": "Firmwareupdate enabled",
+                        "keytemplateLabel": "Key-Template (Default)",
+
+                        "urlPassHelp": "URL-Password is for use phones with a setting url, to protect your userdata for provision.",
+                        "provisionDomainHelp": "With domainrestricktion is possible allow only defined ip-ddress to lookup the provisioning data.",
+                        "provisionPassHelp": "The Phone admin password is to login to the local prosioning ip-phone.",
+                        "zoiperTokenHelp": "The Zoiper Token, is as hash for zoiper provisioning to use. Go to get to http://oem.zoiper.com and login as new provider",
+                        "supportProvisionHelp": "If you want use autoprovision, you have to enable this.",
+                        "supportCreatenewHelp": "There you can allow to add and edit devices for the userportal.",
+                        "firmwareupdateHelp": "If you want enable automatic firmware update, you can set on or off here.",
+                        "keytemplateHelp": "You can define one phone template, to use (audio, video, restrictions, keysettings) this as template for new phone adding."
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "account": "Account-Dialplan",
+                        "descript": "Account-Dialplan",
+                        "descriptHelp": "Here you can define your local dialing rules",
+                        "enabled": "Account-Dialplan",
+                        "disabled": "None"
+                },
+                "emergencyplan": {
+                        "account": "Emergencyplan",
+                        "descript": "Emergencyplan",
+                        "descriptHelp": "Here you define your emergencyplan for call your police and hopitaly.",
+                        "enabled": "Emergencyplan",
+                        "disabled": "None"
+                },
+                "connector": {
+                        "title": "API-Connector",
+                        "urldefault": "http://localhost/connector.php",
+                        "url": "URL API-Connect",
+                        "url_descript": "(URL API-Connect)",
+                        "apikey": "API-Key",
+                        "apikey_descript": "(Key of API-Connector)"
+                },
+                "account_pendingout": "Pending logout agent",
+                "placeholder_pendingout": "6",
+		"title": "Account",
+
+		"accountName": "Account Name",
+		"accountId": "Account ID",
+
+		"accountRealm": "Account Realm",
+
+		"technicalContact": "Delivery and Technicals",
+		"technicalContactname": "Name technicals",
+		"technicalContactEmail": "Technical Contact Email",
+		"technicalContactNumber": "Phone Number",
+
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No",
+
+                "technicalConnectHelp": "Enter your Connectnumber of your provider for your Internet here.",
+                "technicalLineHelp": "Enter your house Line-No for Internetconnect in.",
+
+		"timezoneTitle": "Timezone & Language",
+		"userTimezone": "Timezone",
+		"userLanguage": "Language",
+		"__comment": "UI-966: Added common control to select carrier in myaccount",
+		"__version": "v3.20_s0",
+		"carrierTitle": "Carrier Settings",
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Business"
+	},
+
+	"billing": {
+		"title": "Credit Card",
+		"missingCard": "Your credit card information is invalid, expired or missing - please update your credit card and save the changes.",
+
+		"cardOnFile": "Card on File",
+		"name": "Billing Name",
+                "address": "Billing Address",
+                "zip": "ZIP",
+                "city": "City",
+                "usepostBilling": "use Paperbilling",
+                "payExtra": "pay for Paperbilling extra",
+                "usepostbillingDisabled": "Paperbilling OFF",
+                "usepostbillingEnabled": "Paperbilling ON",
+                "useCreditDisabled": "Creditcard is OFF",
+                "useCreditEnabled": "Creditcard is ON",
+		"firstName": "First",
+		"lastName": "Last",
+		"creditCardNumber": "Number",
+		"expirationDate": "Expiration Date",
+		"year": "YYYY",
+		"month": "MM",
+		"securityCode": "Security Code / CVV",
+		"changeCard": "Change Card Info",
+
+		"accountAdministrator": "Billing Contact",
+		"accountAdministratorEmail": "Billing Contact Email",
+		"accountAdministratorNumber": "Phone Number"
+	},
+
+	"trunks": {
+		"title": "Trunks",
+		"outbound": "Outbound",
+		"inbound": "Inbound",
+		"outboundTitle": "Outbound Trunking Limits",
+		"inboundTitle": "Inbound Trunking Limits",
+		"inboundCalling": "Unlimited Inbound Trunks",
+		"simultaneousTwoway": "$_Variable__/month",
+		"simultaneousInbound": "$_Variable__/month",
+		"perMonth": "/month",
+		"quantity": "Set New Limit",
+		"trunks": "Trunks",
+		"twoWayCalling": "Unlimited Two-way Trunks",
+		"updateLimits": "Update Limits",
+		"helpTwoway": "The number of Two-way trunks defines how many concurrent calls your platform can handle at one time.",
+		"helpInbound": "The number of Inbound trunks defines how many simultaneous calls you can receive to your phone system.",
+		"monthlyCharges": "Monthly Charges",
+		"__comment": "UI-664: Adding the real twoway sliders",
+		"__version": "v3.19_s2",
+		"twowayTitle": "Twoway Trunking Limits",
+		"twoway": "Two-way",
+		"outboundCalling": "Unlimited Outbound Trunks",
+		"helpOutbound": "The number of Outbound trunks defines how many concurrent external calls you can place at one time.",
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"currentLimit": "Current Limit",
+		"exampleTwoway": "EXAMPLE: 10 Two-way Trunks would allow your system to handle 6 inbound calls and 4 outbound calls at the same time.",
+		"exampleInbound": "EXAMPLE: 5 Inbound Trunks allow your platform to handle 5 simultaneous incoming calls",
+		"exampleOutbound": "EXAMPLE: 10 Outbound Trunks allow your platform to handle 10 simultaneous calls to external numbers"
+	},
+
+	"balance" : {
+		"availableCredits": "Available Credits",
+		"minutesUsed": "Minutes Used",
+		"callCharges": "Call Charges",
+		"callResell": "Reseller Charges",
+		"activeCall": "active",
+
+		"title": "Per Minute",
+		"payPerMinute": "Pay-per-minute allows you to pay only for what you use. Deposit money into your account to get started, then pay-as-you-go for usage.",
+		"currentBalance": "Your current balance: $",
+		"amount": "Amount",
+		"addCredit": "Add Credit",
+		"invalidAmount": "There is an error with the amount you typed! Please make sure to type a number using only digits '.' or ','",
+		"autoRechargeEnabled": "The Automatic Recharge of credits is now enabled!",
+		"autoRechargeCancelled": "You successfully cancelled the Automatic Recharge of your credits.",
+		"creditsAdded": "You successfully added {{amount}} to your balance!",
+		"addCreditDialogTitle": "Add Credits",
+
+		"dateColumn": "Date",
+		"durationColumn": "Minutes",
+		"amountColumn": "Amount",
+                "InamountColumn": "E-Price",
+		"fromColumn": "From",
+		"toColumn": "To",
+		"directionColumn": " ",
+		"accountColumn": "Account",
+
+		"__comment": "UI-1324: Adding the option to disable Braintree through a config flag",
+		"__version": "v3.20_s4",
+		"disabledAddCreditTooltip": "Braintree is required to perform this action. Please contact your administrator for more information.",
+
+		"__comment": "UI-1810: Implement new mock-up for 'Add Credits' popup with the ability to set Threshold Alerts",
+		"__version": "v4.0",
+		"thresholdAlertsEnabled": "Threshold Alerts are now enabled!",
+		"thresholdAlertsCancelled": "You successfully disabled Threshold Alerts.",
+		"addCreditPopup": {
+			"creditBalance": "Available Credit Balance",
+			"menus": {
+				"manageCredits": "Manage Credits",
+				"thresholdAlerts": "Threshold Alerts",
+				"autoRecharge": "Auto Recharge"
+			},
+			"alerts": {
+				"missingValue": {
+					"title": "Something seems to be missing!",
+					"threshold_alerts_content": "You've turned on Threshold Alerts, but it looks like you forgot to define the threshold amount. This is required in order for Threshold Alerts to take effect. Please either set a threshold amount, or turn off Threshold Alerts.",
+					"auto_recharge_content": "You've turned on Auto Recharge, but it looks like you forgot to define the Low balance threshold and/or Recharge Amount. These are both required in order for Auto Recharge to work. Please set the Threshold and/or Recharge Amount or turn Auto Recharge off."
+				}
+			},
+			"manageCredits": {
+				"text": "Adding Credits Manually allows you to immediately increase your Current Balance. Maintaining a Current Balance is very important, as it is necessary for international or per-minute calls, e911, caller ID, and other system features that incur a charge.",
+				"placeholder": "10.00",
+				"button": "Add Credit"
+			},
+			"thresholdAlerts": {
+				"text": "Threshold Alerts help you prevent shut off of services to your account by notifying you when your Current Balance gets low. It is strongly recommended to have Threshold Alerts turned on for your account.",
+				"labels": {
+					"turnOn": "Turn on Threshold Alerts",
+					"notifyMe": "Notify me when balance falls bellow this amount"
+				},
+				"placeholder": "10",
+				"button": "Save Threshold Alert",
+				"alert": {
+					"title": "",
+					"text": ""
+				}
+			},
+			"autoRecharge": {
+				"text": "Auto Recharge enables you to set up a threshold to automatically add credit, and determines how much will be refilled each time. Auto Recharge also will notify you via email when an account is recharged.",
+				"labels": {
+					"turnOn": "Turn on Auto Recharge",
+					"balanceFalls": "When balance falls below this amount",
+					"rechargeAccount": "Recharge this account with this amount"
+				},
+				"placeholders": {
+					"balanceFalls": "10",
+					"rechargeAccount": "50"
+				},
+				"help": {
+					"firstPart": "In order to prevent fraud, ",
+					"secondPart": "Auto Recharge will only run once per day.",
+					"thirdPart": "If the low balance threshold hits for the second time in one day and Auto Recharge has already occurred, you will receive an email notifying you that your account has reached the low balance threshold, however, the Account Admin must add more credit manually."
+				},
+				"button": "Confirm Auto Recharge",
+				"alert": {
+					"title": "",
+					"text": ""
+				}
+			}
+		}
+	},
+
+	"servicePlan": {
+		"discount": "Discount",
+		"dueOn": "Due By",
+		"empty": "Your current service plan is empty!",
+		"monthlyChargesTitle": "Monthly Charges",
+		"quantityTitle": "Quantity",
+		"rateTitle": "Rate",
+		"serviceTitle": "Service",
+		"title": "Service Plan",
+		"titleHeader": "Service Plan",
+		"titles": {
+			"cnam": "CNAM",
+			"did_us": "US DIDs",
+			"e911": "E911",
+			"inbound_cnam": "Inbound CNAM",
+			"inbound_trunk": "Inbound Trunks",
+			"inbound_trunks": "Inbound Trunks",
+			"port": "Port",
+			"sip_device": "SIP Devices",
+			"sip_devices": "SIP Devices",
+			"tollfree_us": "US Tollfree",
+			"twoway_trunk": "Twoway Trunks",
+			"twoway_trunks": "Twoway Trunks",
+			"__comment": "UI-815: Improve how the prices and categories are displayed for the Trunks",
+			"__version": "v3.19_s1",
+			"outbound_trunk": "Outbound Trunks",
+			"outbound_trunks": "Outbound Trunks",
+			"user": "Users",
+			"users": "Users"
+		},
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"dueAmount": "Amount Due"
+	},
+
+	"transactions": {
+		"title": "Transactions",
+		"billingCycle": "Billing Cycle",
+		"oneTimeCharge": "One-Time Charge",
+		"monthlyCharge": "Monthly Charge",
+		"serviceCharge": "Service Charge - Prorated",
+
+		"noData": "There are no transactions between the 2 dates selected !",
+
+		"serviceTitle": "Service",
+		"discount": "Discount",
+		"rateTitle": "Rate",
+		"quantityTitle": "Quantity",
+		"monthlyChargesTitle": "Monthly Charges",
+		"declined": "Declined",
+
+		"database_rollup": "Balance Carry-over",
+		"per_minute_call": "Per-Minute Call",
+		"sub_account_per_minute_call": "Per-Minute Call (Sub-Account)",
+		"feature_activation": "Feature Activation",
+		"sub_account_feature_activation": "Feature Activation (Sub-Account)",
+		"number_activation": "Number Activation",
+		"sub_account_number_activation": "Number Activation (Sub-Account)",
+		"manual_addition": "Manual Addition",
+		"sub_account_manual_addition": "Manual Addition (Sub-Account)",
+		"admin_discretion": "Admin Discretion",
+		"__comment": "UI-383: Fixing transactions for good",
+		"__version": "v3.20_s0",
+		"unknown": "Charge",
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"startDate": "Start Date",
+		"endDate": "End Date",
+		"total": "Total",
+
+		"__comment": "UI-1248: Work on transactions to fix the way they're displayed",
+		"__version": "3.19",
+		"refundText": "(Refund)",
+		"codes": {
+			"1001": "Per Minute Call",
+			"1002": "Sub-Account Per Minute Call",
+			"2001": "Feature Activation",
+			"2002": "Sub-Account Feature Activation",
+			"2003": "Number Activation",
+			"2004": "Sub-Account Number Activation",
+			"3001": "Manual Addition",
+			"3002": "Sub-Account Manual Addition",
+			"3003": "Auto-Addition",
+			"3004": "Sub-Account Auto-Addition",
+			"3005": "Admin Discretion",
+			"3006": "Top Up",
+			"4000": "Balance Carry-over",
+			"5000": "Recurring",
+			"5001": "Monthly Recurring",
+			"5002": "Monthly Recurring (Pro-rated)",
+			"9999": "Unknown"
+		},
+		"errorStatuses": {
+			"voided": "Voided",
+			"declined": "Declined",
+			"processor_declined": "Declined"
+		},
+
+                "activation_charges_for_phone_numbers": "Activation charges for Phone Numbers",
+                "activation_charges_for_number_services": "Activation charges for Number Services",
+                "activation_charges_for_limits": "Activation charges for Limits",
+                "activation_charges_for_devices": "Activation charges for Devices",
+                "activation_charges_for_users": "Activation charges for Users",
+                "activation_charges_for_branding": "Activation charges for Branding",
+                "activation_charges_for_ips": "Activation charges for IPs",
+                "activation_charges_for_ui_apps": "Activation charges for UI Apps",
+                "activation_charges_for_port": "Activation charges for Port Request",
+                "activation_charges_for_cnam": "Activation charges for CNAM Update",
+                "activation_charges_for_e911": "Activation charges for e911 allow",
+                "activation_charges_for_ata": "Activation charges for ATA",
+                "activation_charges_for_cellphone": "Activation charges for Cell Phone",
+                "activation_charges_for_fax": "Activation charges for Fax",
+                "activation_charges_for_landline": "Activation charges for Landline",
+                "activation_charges_for_mobile": "Activation charges for Mobile",
+                "activation_charges_for_sip_device": "Activation charges for SIP Device",
+                "activation_charges_for_sip_uri": "Activation charges for SIP URI",
+                "activation_charges_for_smartphone": "Activation charges for Smartphone",
+                "activation_charges_for_softphone": "Activation charges for Softphone",
+                "activation_charges_for_outbound_trunks": "Activation charges for Outbound Trunks",
+                "activation_charges_for_inbound_trunks": "Activation charges for Inbound Trunks",
+                "activation_charges_for_twoway_trunks": "Activation charges for Twoway Trunks",
+                "activation_charges_for_did_us": "Activation charges for US DID",
+                "activation_charges_for_tollfree_us": "Activation charges for US Tollfree",
+                "activation_charges_for_rate": "Activation charges for Rate",
+                "activation_charges_for_activation_charge": "Activation charges for Activation charge",
+                "activation_charges_for_minimum": "Activation charges for Minimum",
+                "activation_charges_for_exceptions": "Activation charges for Exceptions",
+                "activation_charges_for_supports": "Activation charges for Support",
+                "activation_charges_for_service_pbxs": "Activation charges for PBX-Support",
+                "activation_charges_for_security_pbxs": "Activation charges for PBX-Updates",
+                "activation_charges_for_connects": "Activation charges for Internet",
+                "activation_charges_for_dsl_ch_min": "Activation charges for DSL-Internet CH Minimal",
+                "activation_charges_for_dsl_ch_standard": "Activation charges for DSL-Internet CH Standard",
+                "activation_charges_for_dsl_ch_high": "Activation charges for DSL-Internet CH Premium",
+                "activation_charges_for_dsl_modem": "Activation charges for DSL-Modem",
+                "activation_charges_for_qos_router": "Activation charges for QoS-Router (without WLAN)",
+                "activation_charges_for_qos_router_wlan": "Activation charges for QoS-Router (with WLAN)",
+                "activation_charges_for_ui_apps": "Activation charges for UI Apps",
+                "activation_charges_for_ata": "Activation charges for ATA-Gerät",
+                "activation_charges_for_cellphone": "Activation charges for Handy",
+                "activation_charges_for_outbound_cnam": "Activation charges for Outgoing phonebook",
+                "activation_charges_for_inbound_cnam": "Activation charges for Incomming phonebook",
+                "activation_charges_for_inbound_cnam": "Activation charges for Incomming phonebook",
+                "activation_charges_for_outbound_cnam": "Activation charges for Outgoing phonebook",
+                "activation_charges_for_prepend": "Activation charges for Prepend text",
+                "activation_charges_for_emergency_ch": "Activation charges for Emergency Numbers",
+                "activation_charges_for_service_ch": "Activation charges for Service Numbers Swiss",
+                "activation_charges_for_service_pbx": "Activation charges for Service Numbers PBX",
+                "activation_charges_for_internal": "Activation charges for PBX Internal",
+                "activation_charges_for_names": "Activation charges for Names",
+                "activation_charges_for_toll_ch": "Activation charges for Toll Numbers CH",
+                "activation_charges_for_tollfree_ch": "Activation charges for 0800-Numbers CH",
+                "activation_charges_for_toll_de": "Activation charges for 0900-Mehrwert Numbers DE",
+                "activation_charges_for_tollfree_de": "Activation charges for 0800-Numbers DE",
+                "activation_charges_for_mobile_ch": "Activation charges for Mobile Numbers",
+                "activation_charges_for_did_ch": "Activation charges for Landline Numbers Swiss",
+                "activation_charges_for_did_de": "Activation charges for Landline Numbers Germany",
+                "activation_charges_for_fixnet_ch": "Activation charges for Landline Numbers Swiss",
+                "activation_charges_for_business_ch": "Activation charges for Business Numbers Swiss",
+                "activation_charges_for_activation_charge": "Activation charges for activate",
+                "activation_charges_for_minimum": "Activation charges for Minimal",
+                "activation_charges_for_exceptions": "Activation charges for Exceptions",
+                "activation_charges_for_rate": "Activation charges for monthly:",
+                "activation_charges_for_ch_numbers": "Activation charges for CH Numbers",
+                "activation_charges_for_ch_tollfree": "Activation charges for CH Tollfree",
+                "activation_charges_for_two-way_trunk": "Activation charges for Twoway Trunks",
+                "activation_charges_for_inbound_trunk": "Activation charges for Inbound Trunks",
+                "activation_charges_for_outbound_trunk": "Activation charges for Outbound Trunks",
+                "activation_charges_for_outbound_cnam": "Activation charges for Outbound phonebook",
+                "activation_charges_for_inbound_cnam": "Activation charges for Inbound phonebook",
+                "activation_charges_for_port_request_single": "Activation charges for Porting Single Request",
+                "activation_charges_for_port_request_did": "Activation charges for Porting Request (DDI)",
+                "activation_charges_for_emergency_Service": "Activation charges for Emergency Numbers",
+                "activation_charges_for_user": "Activation charges for User",
+                "activation_charges_for_callflows": "Activation charges for Callflow",
+                "activation_charges_for_numbers": "Activation charges for Numbers",
+                "activation_charges_for_branding": "Activation charges for Branding",
+                "activation_charges_for_pivot": "Activation charges for Pivot",
+                "activation_charges_for_userportal": "Activation charges for Userportal",
+                "activation_charges_for_carrier": "Activation charges for Carrier",
+                "activation_charges_for_Cluster-Manager": "Activation charges for Cluster-Manager",
+                "activation_charges_for_rates": "Activation charges for Connection-Rates",
+                "activation_charges_for_hosted_pbx": "Activation charges for SmartPBX",
+                "activation_charges_for_conferences": "Activation charges for Conference App",
+                "activation_charges_for_accounts": "Activation charges for Accounts",
+                "activation_charges_for_migration": "Activation charges for Migrations App",
+                "activation_charges_for_mobile": "Activation charges for Handy Integration",
+                "activation_charges_for_debug": "Activation charges for Monitoring",
+                "activation_charges_for_pbxs": "Activation charges for PBX-Trunking",
+                "activation_charges_for_ports": "Activation charges for Port Requests",
+                "activation_charges_for_reporting": "Activation charges for Sales Reporting",
+                "activation_charges_for_webhooks": "Activation charges for Webhooks",
+                "activation_charges_for_alarms": "Activation charges for Pikett-Alarms",
+                "activation_charges_for_as": "Activation charges for As",
+                "activation_charges_for_user": "Activation charges for Standard User",
+                "activation_charges_for_admin": "Activation charges for Account Admin",
+
+		"ui_apps": "UI-Apps",
+		"sip_device": "SIP-Device"
+},
+
+	"miscCategory": "Misc",
+	"errorTracker": {
+		"title": "UI Errors Log",
+		"errorTotal": "Number of Errors:",
+		"apiTotal": "Erlang",
+		"jsTotal": "Javascript",
+		"viewDetails": "Details"
+	},
+
+	"__comment": "UI-1397: Clean up topbar of unnecessary HTML",
+	"__version": "v3.20_s4",
+	"isMasquerading": {
+		"switchBackTo": "Switch back to",
+		"myAccount": "My account",
+		"currentlyViewing": "Currently Viewing"
+	}
+}

@@ -1,0 +1,145 @@
+{
+	"webhooks": {
+		"addCD": "+ Zufügen eigene Daten",
+		"addWebhook": "Zufügen eines Webvorgangs",
+		"delete": "Löschen",
+		"deleteRequest": "Dieses löschen, sind Sie sicher ",
+		"deleteTitle": "Löschen?",
+		"dialogWebhook": {
+			"addTitle": "Webvorgang zufügen",
+			"createWebhook": "Zufügen",
+			"editTitle": "Webvorgang ändern",
+			"enterName": "Name",
+			"enterHook": "Vorgang",
+			"enterRequest": "Anfrage",
+			"enterRetries": "Anzahl der Anfragen",
+			"enterURL": "URL",
+			"Hooks": {
+				"ALL": "Alle",
+				"ca": "Kanal geantwortet",
+				"cc": "Kanal erstellt",
+				"cd": "Kanal abgebaut"
+			},
+			"placeholderName": "Eigener Name ",
+			"Request": {
+				"get": "GET",
+				"post": "POST"
+			},
+			"save": "Speichern"
+		},
+		"dialogHistory": {
+			"title": "Aufzeichnung der Anfragen dieses Webvorgangs"
+		},
+		"editCD": "+ Daten ändern",
+		"empty-row": "Es wurden keine Webvorgänge für Ihre Suche gefunden.",
+                "info": "Webvorgänge ist eine App die an andere Systeme Informationen über Vorgänge in dieser Anlage übermitteln kann, z.B wenn ein Gespräch zu ende ist, können Sie über die Verbindungsdaten sofort informiert werden.",
+                "info2": "Um diese App zu benutzen, stellen Sie die URL auf Ihren Webserver und geben den Typ und die Funktion der Übermittlung an, Die Übermittlung gilt dabei für alle Apps aber nur für Ihr Konto.",
+                "less": "Keine Appinfo Webvorgänge",
+                "more": "Appinfo Webvorgänge",
+                "no-webhooks": "Es sind keine Webvorgänge eingestellt.",
+                "search": "Suche",
+                "toastr": {
+                        "addSuccess": "Webvorgang wurde erfolgreich gespeichert.",
+                        "deleteSuccess": "Webvorgang wurde erfolgreich gelöscht.",
+                        "editSuccess": "Webvorgang wurde erfolgreich geändert."
+                },
+                "warning": "Sie können nicht zweimal den gleichen Namen verwenden. Bitte geben Sie einen andern ein.",
+                "editTooltip": "Einstellungen ändern",
+                "historyTooltip": "Liste der Aufgezeichneten Webvorgänge",
+                "deleteTooltip": "Löschen",
+                "attemptSuccess": "Erfolgreich!",
+                "message": "Nachricht",
+                "date": "Datum",
+                "retriesLeft": "# verfehlte Anfragen",
+                "dialogHistory": {
+                        "title": "Aufzeichnung der Webvorgänge"
+                },
+                "noAttempts": "Es existiert noch keine aufgezeichneten Webvorgänge...",
+		"webhookCounters": {
+			"active": "Aktiv",
+			"disabled": "Deaktiv",
+			"errors": "Fehler"
+		},
+		"webhookFilters": {
+			"all": "Alle Webvorgänge",
+			"active": "Aktive Vorgänge",
+			"disabled": "Deaktive Vorgänge",
+			"errors": "Fehler"
+		},
+		"noWebhooks": "Es sind keine Webvorgänge für dieses Konto eingestellt.",
+		"emptySearch": "Es konnte keine Webvorgänge für Ihre Suche gefunden werden.",
+		"reenableButton": "Alle Webvorgänge mit Fehler wiederherstellen",
+		"reenableTooltip": "Webvorgänge die manuell ausgeschaltet wurden, bleiben vorhanden. Nur Vorgänge die der Server deaktiviert hat werden wiederaktiviert.",
+		"errorTooltip": "Diese Vorgänge wurden ausgeschaltet durch den das System, Grund: ",
+		"deleteMessage": "Sind Sie sicher dass Sie diesen Webvorgang löschen wollen?",
+		"webhookEdition": {
+			"creationTitle": "Zufügen eines Webvorgangs",
+			"editionTitle": "Webvorgang ändern",
+			"creationSaveButton": "Webvorgang speichern",
+			"editionSaveButton": "Webvorgnagn erneuern",
+			"nameSectionTitle": "Geben Sie einen Namen für diesen Webvorgang ein, und wählen Sie die Art dazu.",
+			"methodSectionTitle": "Wählen Sie eine Methode und die Anzahl Wiederholungen , um eine Anfrage zu senden.",
+			"customDataSectionTitle": "Fügen Sie eigene Daten zu Ihrem Vorgang hinzu (Optional)",
+			"groupSectionTitle": "Sie können die Webvorgänge in Kategoriegruppen zusammenfassen.",
+			"nameLabel": "Name Vorgang",
+			"hookLabel": "Art",
+			"methodLabel": "Anfrage-Methode",
+			"urlLabel": "URL",
+			"urlPlaceholder": "http://mein.server/call_answered.php?account_id=123456",
+			"retriesLabel": "Wiederholung Anfrage",
+			"customDataLabel": "+ Datenzeile",
+			"customDataKey": "Schlüssel",
+			"customDataValue": "Wert",
+			"groupSelectLabel": "Gruppenname",
+			"noGroupOption": "Nicht gruppieren",
+			"newGroupOption": "+ Neue Gruppe erstellen",
+			"existingOptionGroup": "Gruppe existiert:",
+			"newGroupLabel": "Neue Gruppe"
+		},
+		"webhookAttempts": {
+			"backButton": "Zurück zu Webvorgang",
+			"enableButton": "Webvorgang wiederhestellen",
+			"header": "{{webhookName}}'s Aufzeichnung",
+			"noAttempts": "Das System konnte keine Anfragen registrieren...",
+			"date": "Datum",
+			"time": "Zeit",
+			"sent": "Gesendet",
+			"received": "Empfangen",
+			"attempts": "Anfragen"
+		},
+		"webhookList": {
+			"all": {
+				"name": "Alle mögliche",
+				"description": "Dieser Webvorgang wird bei allen Stationen aktiv"
+			},
+			"skel": {
+				"name": "Beispiel",
+				"description": "Beispiel Vorgang"
+			},
+			"outbound_fax": {
+				"name": "Ausgehender Fax",
+				"description": "Fax Ausgehend (oder bei einem Faxfehler)"
+			},
+			"object": {
+				"name": "Objekt geändert",
+				"description": "Wenn ein Objekt in Kazoo sich geändert hat."
+			},
+			"channel_destroy": {
+				"name": "Anruf beendet",
+				"description": "Wenn der Anruf beendet wurde."
+			},
+			"channel_create": {
+				"name": "Anruf gestartet",
+				"description": "Wenn der Anruf gestartet wurde."
+			},
+			"channel_answer": {
+				"name": "Gerätekanal beantwortet",
+				"description": "Wenn der Kanal für das Gerät auf geantwortet wechselt."
+			},
+			"callflow": {
+				"name": "Anrufleitung gestartet",
+				"description": "Wenn eine Anrufleitung aktiviert wurde."
+			}
+		}
+	}
+}

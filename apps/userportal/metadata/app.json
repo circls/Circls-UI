@@ -1,0 +1,104 @@
+{
+   "name": "userportal",
+   "source_url": "http://kazoo.allip.ovh/apps/userportal",
+   "i18n": {
+       "en-US": {
+           "label": "User Portal",
+           "description": "This app is is for every user zu manage his Voicemail, Calls and Settings for self.",
+           "extended_description": "",
+           "features": [
+               "Voicemail managen",
+               "Calllist",
+               "Quickcalls"
+           ]
+       },
+       "de-DE": {
+           "label": "Benutzerportal",
+           "description": "Diese App ist für den einzelen Benutzer konzipiert um seine VoiceBox, Anrufe und Einstellungen zu managen",
+           "extended_description": "",
+           "features": [
+               "VoiceBox abhören, speichern, löschen",
+               "Anrufliste",
+               "Schnellanruf bearbeiten"
+           ]
+       },
+       "fr-FR": {
+           "label": "Portail de l'utilisateur",
+           "description": "Cette application est est pour chaque utilisateur de gérer ses messages vocaux , appels et réglages pour l' auto.",
+           "extended_description": "",
+           "features": [
+              " Messagerie vocale gérer",
+               "Liste des appels",
+               "Appels rapides"
+           ]
+       },
+       "it-IT": {
+           "label": "Portale Utente",
+           "description": "Questa applicazione è è per ogni utente a gestire i suoi segreteria telefonica , chiamate e impostazioni per l'auto.",
+           "extended_description": "",
+           "features": [
+                "Casella vocale gestire",
+                " Lista chiamate",
+                "Chiamate rapide"
+           ]
+       },
+       "ru-RU": {
+           "label": "Портал Пользователь",
+           "description": "Это приложение для каждого пользователя , чтобы управлять его голосовой почты , звонков и настройки для себя.",
+           "extended_description": "",
+           "features": [
+                "Голосовая почта управлять",
+                " Список вызовов ",
+                " Быстрые Звонки"
+           ]
+       },
+       "ro-RO": {
+           "label": "Portal utilizator",
+           "description": "Aceasta aplicatie este pentru fiecare utilizator este de a gestiona de poștă vocală , apeluri și Setări pentru sine.",
+           "extended_description": "",
+           "features": [
+                "Voicemail gestiona",
+                "Lista apeluri",
+                "Solicită rapide"
+           ]
+       },
+       "nl-NL": {
+           "label": "Userportal",
+           "description": "Deze app is voor iedere gebruiker naar zijn voicemail , oproepen en instellingen voor zelf te beheren.",
+           "extended_description": "",
+           "features": [
+                "Voicemail beheren",
+                "Call List",
+                "Quick gesprekken"
+           ]
+       },
+       "es-ES": {
+           "label": "User Portal",
+           "description": "This app is is for every user zu manage his Voicemail, Calls and Settings for self.",
+           "extended_description": "",
+           "features": [
+               "Voicemail managen",
+               "Calllist",
+               "Quickcalls"
+           ]
+       }
+   },
+   "tags": [
+       "all", "reseller", "carrier"
+   ],
+   "icon": "Userportal_app.png",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "author": "2600Hz",
+   "version": "1.0",
+   "license": "MPL",
+   "price": 0.00,
+   "screenshots": [
+       "userportal_1.png",
+       "userportal_2.png"
+   ],
+   "urls": {
+       "documentation": "{documentation_url}",
+       "howto": "{howto_video_url}"
+   },
+   "pvt_type": "app"
+}

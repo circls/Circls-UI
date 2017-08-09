@@ -1,0 +1,516 @@
+html,
+body,
+#main,
+#main section {
+	height: 100%;
+}
+
+body,
+#main_topbar,
+#myaccount,
+#auth_container,
+#monster-content {
+	min-width: 450px;
+}
+
+#monster-content {
+	height: calc(100% - 67px);
+}
+
+/************************************************************/
+/************************** TOPBAR **************************/
+/************************************************************/
+
+#main_topbar {
+	height: 62px;
+	border-top: 5px solid #3F3F3F;
+	background: #4D4D4D;
+}
+#main_topbar .main-links {
+	height: inherit;
+}
+#main_topbar .main-links,
+#main_topbar .nav {
+	float: left;
+	margin: 0;
+}
+#main_topbar .links {
+	line-height: 62px;
+	display: inline-block;
+	color: #c0c0c9;
+}
+#main_topbar .links:hover,
+#main_topbar .links:focus {
+	cursor: pointer;
+	background: transparent;
+}
+#main_topbar .links i {
+	vertical-align: middle;
+	color: #c0c0c9;
+}
+#main_topbar .links .inline-text {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+#main_topbar .links .inline-text.red {
+	color: red;
+}
+#main_topbar .links .cell-text {
+	line-height: 21px;
+	text-align: center;
+}
+#main_topbar .nav {
+	float: right;
+}
+#main_topbar .nav .links {
+	padding: 0 20px;
+}
+#main_topbar .nav > li {
+	background: #303039;
+	border-left: 1px solid #202029;
+}
+#main_topbar .nav > li {
+	float: left;
+	height: 62px;
+	text-decoration: none;
+}
+#main_topbar .links.cell {
+	padding: 10px 20px;
+}
+#main_topbar #main_topbar_brand {
+	width: 192px;
+	height: 100%;
+	padding: 0 24px;
+	background: no-repeat center center;
+}
+#main_topbar #main_topbar_current_app_name {
+	font-size: 18px;
+	max-width: 318px;
+	padding: 0 20px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	color: #fff;
+	border-left: 1px solid #202029;
+}
+#main_topbar #main_topbar_apploader {
+	display: none;
+}
+#main_topbar #main_topbar_links_apps_label {
+	max-width: 70px;
+}
+#main_topbar #main_topbar_switch_masquerade {
+	max-width: 140px;
+}
+#main_topbar #main_topbar_switch_masquerade #main_topbar_masquerade_links {
+	background-color: #303039;
+	border: solid 1px #202029;
+	border-top: none;
+	border-radius: 0px 0px 4px 4px;
+	display: none;
+	z-index: 25;
+	position: relative;
+}
+#main_topbar #main_topbar_switch_masquerade #main_topbar_masquerade_links > div {
+	box-sizing: border-box;
+	height: 30px;
+	padding: 5px;
+	text-align: center;
+	color: #c0c0c9;
+	cursor: pointer;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#main_topbar #main_topbar_switch_masquerade #main_topbar_masquerade_links > div:hover {
+	color: #22a5ff;
+}
+#main_topbar #main_topbar_switch_masquerade:hover #main_topbar_masquerade_links,
+#main_topbar #main_topbar_switch_masquerade:focus #main_topbar_masquerade_links {
+	display: block;
+}
+#main_topbar #main_topbar_myaccount_user,
+#main_topbar #main_topbar_myaccount_masquerade_link {
+	max-width: 190px;
+}
+#main_topbar .links:hover,
+#main_topbar .links:hover i,
+#main_topbar #main_topbar_current_app_name:hover,
+#main_topbar #main_topbar_myaccount_masquerade_label {
+	color: #22a5ff;
+}
+#main_topbar .inline-text,
+#main_topbar .cell-text,
+#main_topbar #main_topbar_current_app_name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+@media (max-width: 1199px) {
+	#main_topbar #main_topbar_links_apps_label {
+		display: none;
+	}
+
+	#main_topbar #main_topbar_current_app_name,
+	#main_topbar .nav .links {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	/* Needed to allow enough space for the account toggle */
+	#main_topbar #main_topbar_myaccount {
+		min-width: 118px;
+		text-align: center;
+	}
+}
+@media (max-width: 999px) {
+	#main_topbar #main_topbar_current_app {
+		display: none !important;
+	}
+	#main_topbar #main_topbar_leave_masquerade {
+		max-width: 120px;
+	}
+	#main_topbar #main_topbar_myaccount_masquerade_link {
+		max-width: 160px;
+	}
+}
+
+/***** Account Toggle *****/
+#main_topbar .links#main_topbar_account_toggle_link {
+	display: none;
+}
+
+#main_topbar .links#main_topbar_account_toggle_link.visible {
+	display: block;
+}
+
+#main_topbar #main_topbar_account_toggle.open {
+	background-color: #202029;
+}
+#main_topbar #main_topbar_account_toggle.open #main_topbar_account_toggle_link i {
+	color: #22a5ff;
+}
+#main_topbar #main_topbar_account_toggle:not(.open) #main_topbar_account_toggle_container {
+	display: none;
+}
+
+#main_topbar #main_topbar_account_toggle_container {
+	position: absolute;
+	z-index: 21; /* 1 more than myAccount */
+}
+
+#main_topbar #main_topbar_account_toggle_container .account-browser-container {
+	background-color: #202029;
+	width: 220px;
+	padding: 1px;
+	border-right: none;
+}
+#main_topbar #main_topbar_account_toggle_container .search-box {
+	width: auto;
+	padding: 10px;
+	border-bottom: none;
+}
+#main_topbar #main_topbar_account_toggle_container .search-box i {
+	color: #c0c0c9;
+	margin: 8px 0 0 8px;
+}
+#main_topbar #main_topbar_account_toggle_container .search-box .search-query {
+	background-color: #404049;
+	color: #c0c0c9;
+	box-sizing: border-box;
+	width: 100%;
+	border-radius: 0px;
+	border: solid 1px #909099;
+	box-shadow: none;
+	height: 30px;
+}
+#main_topbar #main_topbar_account_toggle_container .account-list-container {
+	width: 440px;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-list,
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-list-slider {
+	width: 220px;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-list-element {
+	border-color: #202029;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-list-element > div {
+	background: #303039;
+	color: #c0c0c9;
+	border-color: #202029;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-link .account-name {
+	font-size: 14px;
+}
+#main_topbar #main_topbar_account_toggle_container .account-children-link i:before {
+	content: "\f054";
+	font-size: 10px;
+	color: #c0c0c9;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-search-link {
+	color: #c0c0c9;
+	background: #202029;
+	border-color: #909099;
+	border-top: solid 1px;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-search-link .account-search-value {
+	text-shadow: none;
+	font-weight: 700;
+}
+
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-previous-link {
+	line-height: 20px;
+	border: none;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-previous-link * {
+	color: #909099;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#main_topbar #main_topbar_account_toggle_container .account-browser-container .account-previous-link i:before {
+	content: "\f060";
+}
+
+#main_topbar #main_topbar_account_toggle_container .account-toggle-header {
+	background: #202029;
+	color: #c0c0c9;
+	padding: 10px 12px 0px 12px;
+	position: relative;
+}
+#main_topbar #main_topbar_account_toggle_container .current-account-label {
+	font-size: 12px;
+}
+#main_topbar #main_topbar_account_toggle_container .current-account-container {
+	pointer-events: none;
+}
+#main_topbar #main_topbar_account_toggle_container .current-account-container .account-browser-breadcrumb {
+	text-shadow: none;
+}
+#main_topbar #main_topbar_account_toggle_container .current-account-container .account-browser-breadcrumb:not(:last-child) {
+	display: none;
+}
+#main_topbar #main_topbar_account_toggle_container .current-account-container .account-browser-breadcrumb .divider {
+	display: none;
+}
+#main_topbar #main_topbar_account_toggle_container .current-account-container .account-browser-breadcrumbs {
+	padding: 0;
+	background:  inherit;
+	border-radius: 0;
+	height: 20px;
+}
+#main_topbar #main_topbar_account_toggle_container .home-account-link {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	color: #606069;
+}
+#main_topbar #main_topbar_account_toggle:not(.masquerading) .home-account-link {
+	display: none;
+}
+#main_topbar #main_topbar_account_toggle_container .home-account-link:hover {
+	color: #c0c0c9;
+}
+#main_topbar_account_toggle.masquerading ~ #main_topbar_myaccount i.fa:before {
+	content: "\f085";
+}
+
+/************************************************************/
+/********************** LOADING SPINNER *********************/
+/************************************************************/
+
+.loading-wrapper {
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	display: none;
+	width: 200px;
+	height: 200px;
+	background: #22a5ff;
+	box-shadow: 0px 0px 2px 0px #303039;
+}
+.loading-wrapper.fixed-left {
+	left: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(315deg);
+	   -moz-transform: translateX(-50%) translateY(-50%) rotate(315deg);
+		-ms-transform: translateX(-50%) translateY(-50%) rotate(315deg);
+		 -o-transform: translateX(-50%) translateY(-50%) rotate(315deg);
+			transform: translateX(-50%) translateY(-50%) rotate(315deg);
+}
+.loading-wrapper.fixed-right {
+	right: 0;
+	-webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+	   -moz-transform: translateX(50%) translateY(-50%) rotate(45deg);
+		-ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
+		 -o-transform: translateX(50%) translateY(-50%) rotate(45deg);
+			transform: translateX(50%) translateY(-50%) rotate(45deg);
+}
+.loading-wrapper.active {
+	display: block;
+}
+.loading-wrapper .line {
+	position: relative;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	padding: .5em;
+	text-align: center;
+	vertical-align: middle;
+	border: 5px solid transparent;
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+	border-radius: 50%;
+	background: transparent;
+}
+.loading-wrapper .line.outer {
+	top: 130px;
+	left: 80px;
+	-webkit-animation: half-spin 1s infinite;
+	   -moz-animation: half-spin 1s infinite;
+		 -o-animation: half-spin 1s infinite;
+			animation: half-spin 1s infinite;
+}
+.loading-wrapper .line.inner {
+	-moz-animation: half-spin-reverse 1s infinite;
+	  -o-animation: half-spin-reverse 1s infinite;
+		 animation: half-spin-reverse 1s infinite;
+
+	webkit-animation: half-spin-reverse 1s infinite;
+}
+@-webkit-keyframes half-spin {
+	0% {
+		-webkit-transform: rotateZ(-45deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(135deg);
+	}
+}
+@-webkit-keyframes half-spin-reverse {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(-360deg);
+	}
+}
+@-moz-keyframes half-spin {
+	0% {
+		-moz-transform: rotateZ(-45deg);
+	}
+	100% {
+		-moz-transform: rotateZ(135deg);
+	}
+}
+@-moz-keyframes half-spin-reverse {
+	0% {
+		-moz-transform: rotateZ(0deg);
+	}
+	100% {
+		-moz-transform: rotateZ(-360deg);
+	}
+}
+@-o-keyframes half-spin {
+	0% {
+		-o-transform: rotateZ(-45deg);
+	}
+	100% {
+		-o-transform: rotateZ(135deg);
+	}
+}
+@-o-keyframes half-spin-reverse {
+	0% {
+		-o-transform: rotateZ(0deg);
+	}
+	100% {
+		-o-transform: rotateZ(-360deg);
+	}
+}
+@keyframes half-spin {
+	0% {
+		transform: rotateZ(-45deg);
+	}
+	100% {
+		transform: rotateZ(135deg);
+	}
+}
+@keyframes half-spin-reverse {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(-360deg);
+	}
+}
+
+
+/************************************************************/
+/******************** UPLOAD PROGRESS BAR *******************/
+/************************************************************/
+#upload_progress {
+	display: none;
+}
+
+#upload_progress .upload-progress-overlay {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #303039;
+	opacity: 0.5;
+}
+
+#upload_progress .upload-progress-content {
+	position: absolute;
+	z-index: 10001;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: solid 1px #606069;
+	border-radius: 2px;
+	width: 300px;
+	background: #f0f0f9;
+	box-shadow: 0px 0px 10px 2px #606069;
+}
+
+#upload_progress .upload-progress-title {
+	padding: 10px;
+	text-align: center;
+	border-bottom: solid 1px #606069;
+}
+
+#upload_progress .upload-progress-bar {
+	margin: 20px;
+	height: 20px;
+	line-height: 20px;
+	border: solid 1px #004c80;
+	background: #e0e0e9;
+}
+
+#upload_progress .upload-progress-bar > div {
+	background: #22a5ff;
+	height: 100%;
+	width: 0%;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/************************************************************/
+/********************** FLOATING FOOTER *********************/
+/************************************************************/
+
+.footer-wrapper {
+	position: fixed;
+	right: 2px;
+	bottom: 2px;
+}
+.footer-wrapper .powered-by > * {
+	font-size: 11px;
+	margin-right: 5px;
+	text-decoration: none;
+	color: #333;
+}

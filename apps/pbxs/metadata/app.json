@@ -1,0 +1,103 @@
+{
+   "name": "pbxs",
+   "source_url": "http://kazoo.allip.ovh/apps/pbxs",
+   "i18n": {
+       "en-US": {
+           "label": "PBX Connector",
+           "description": "PBX Connector allows you to connect your existing PBX to minutes and phone lines on our platform.",
+           "extended_description": "If you don't want to change the PBX you have been using, or if you want to continue using the same PBX for security reasons, it has never been easier to bring your own PBX while using Kazoo minutes and phone lines. This application allows you to select the brand of your PBX, create a username and password and get started instantly with your own hybrid PBX!",
+           "features": [
+               "Compliant with all major IP-PBXs (Avaya, Mitel, FreePBX, Asterisk, Cisco, blue.box etc.)",
+               "Simple 3-step process",
+               "Instant hybrid PBX set up"
+           ]
+       },
+       "ro-RO": {
+           "label": "PBX Connector",
+           "description": "PBX Connector allows you to connect your existing PBX to minutes and phone lines on our platform.",
+           "extended_description": "If you don't want to change the PBX you have been using, or if you want to continue using the same PBX for security reasons, it has never been easier to bring your own PBX while using Kazoo minutes and phone lines. This application allows you to select the brand of your PBX, create a username and password and get started instantly with your own hybrid PBX!",
+           "features": [
+               "Compliant with all major IP-PBXs (Avaya, Mitel, FreePBX, Asterisk, Cisco, blue.box etc.)",
+               "Simple 3-step process",
+               "Instant hybrid PBX set up"
+           ]
+       },
+       "ru-RU": {
+           "label": "PBX Connector",
+           "description": "PBX Connector allows you to connect your existing PBX to minutes and phone lines on our platform.",
+           "extended_description": "If you don't want to change the PBX you have been using, or if you want to continue using the same PBX for security reasons, it has never been easier to bring your own PBX while using Kazoo minutes and phone lines. This application allows you to select the brand of your PBX, create a username and password and get started instantly with your own hybrid PBX!",
+           "features": [
+               "Compliant with all major IP-PBXs (Avaya, Mitel, FreePBX, Asterisk, Cisco, blue.box etc.)",
+               "Simple 3-step process",
+               "Instant hybrid PBX set up"
+           ]
+       },
+       "nl-NL": {
+           "label": "PBX Connector",
+           "description": "PBX Connector allows you to connect your existing PBX to minutes and phone lines on our platform.",
+           "extended_description": "If you don't want to change the PBX you have been using, or if you want to continue using the same PBX for security reasons, it has never been easier to bring your own PBX while using Kazoo minutes and phone lines. This application allows you to select the brand of your PBX, create a username and password and get started instantly with your own hybrid PBX!",
+           "features": [
+               "Compliant with all major IP-PBXs (Avaya, Mitel, FreePBX, Asterisk, Cisco, blue.box etc.)",
+               "Simple 3-step process",
+               "Instant hybrid PBX set up"
+           ]
+       },
+       "fr-FR": {
+           "label": "Connecteur PBX",
+           "description": "PBX connecteur vous permet de connecter votre PBX existant pour minutes et les lignes téléphoniques sur notre plate-forme.",
+           "extended_description": "Si vous ne voulez pas changer le PBX vous avez utilisé, ou si vous souhaitez continuer à utiliser le même PBX pour des raisons de sécurité, il n'a jamais  été plus facile d'apporter votre propre PBX tout en utilisant minutes Kazoo et les lignes téléphoniques. Cette application vous permet de sélectionner la marque de votre PBX, créez un nom d'utilisateur et mot de passe et de commencer instantanément avec votre propre PBX hybride!",
+           "caractéristiques": [
+               "Conforme à toutes les grandes IP-PBX (Avaya, Mitel, FreePBX, Asterisk, Cisco, etc.) blue.box",
+               "Simple processus en 3 étapes",
+               "PBX hybride instantanée mis en place"
+           ]
+       },
+       "it-IT": {
+           "label": "PBX Connector",
+           "description": "PBX connettore consente di collegare il PBX esistente per minuti e linee telefoniche sulla nostra piat taforma.",
+           "extended_description": "Se non si desidera cambiare il PBX è stato utilizzato, o se si desidera continuare a utilizzare lo stesso PBX per motivi di sicurezza, non ha mai stato più facile portare il proprio PBX durante l'utilizzo di minuti Kazoo e linee telefoniche. Questa applicazione consente di selezionare la marca del PBX, creare un nome utente e una password e iniziare immediatamente con il proprio PBX ibrido!",
+           "caratteristiche": [
+               "Compatibile con tutti i principali IP-PBX (Avaya, Mitel, FreePBX, Asterisk, Cisco, blue.box etc.)",
+               "Semplice processo 3-step",
+               "PBX ibrido Immediata istituito"
+           ]
+       },
+       "de-DE": {
+           "label": "PBX-Verbindung",
+           "description": "Mit PBX-Verbindung können Sie Ihre PBX an dieses System anbinden.",
+           "extended_description": "Wenn Sie Ihre eigene PBX weiterverwenden möchten, können Sie Ihr System direkt anbinden. Es erlaubt Ihnen einfach und schnell die Einrichtung zu vervollständigen, und diese als Hybrid-PBX zu benutzen!",
+           "features": [
+               "Kompatibel mit den meisten IP-PBX (Avaya, Aastra, Mitel, FreePBX, Cisco, BlueBox usw.)",
+               "Einfacher 3 Schritt Prozess für die Qualitätssicherung"
+           ]
+       },
+       "es-ES": {
+           "label": "PBX Connector",
+           "description": "PBX Connector allows you to connect your existing PBX to minutes and phone lines on our platform.",
+           "extended_description": "If you don't want to change the PBX you have been using, or if you want to continue using the same PBX for security reasons, it has never been easier to bring your own PBX while using Kazoo minutes and phone lines. This application allows you to select the brand of your PBX, create a username and password and get started instantly with your own hybrid PBX!",
+           "features": [
+               "Compliant with all major IP-PBXs (Avaya, Mitel, FreePBX, Asterisk, Cisco, blue.box etc.)",
+               "Simple 3-step process",
+               "Instant hybrid PBX set up"
+           ]
+       }
+   },
+   "tags": [ "reseller", "carrier", "business" ],
+   "icon": "PBXconnector_app.png",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "author": "2600Hz",
+   "version": "1.0",
+   "license": "MPL",
+   "price": 0,
+   "screenshots": [
+       "pbxconnector1.png",
+       "pbxconnector2.png",
+       "pbxconnector3.png",
+       "pbxconnector4.png"
+   ],
+   "urls": {
+       "documentation": "{documentation_url}",
+       "howto": "{howto_video_url}"
+   },
+   "pvt_type": "app"
+}

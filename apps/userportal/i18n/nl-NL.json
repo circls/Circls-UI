@@ -1,0 +1,323 @@
+{
+	"userportal": {
+                "vmstatus": {
+                    "new": "New",
+                    "saved": "Saved",
+                    "deleted": "Deleted"
+                },
+		"my_voicemails": "Mijn voicemails",
+		"my_call_history": "My Call History",
+		"my_settings": "Mijn instellingen",
+		"forward_calls_to": "Vooruit bellen naar",
+		"also_ring_my_voip_phone": "Ook Ring My VoIP Phone",
+		"send_voicemail_to_email": "Stuur Voicemail naar e-mail",
+		"email_address": "E-mailadres",
+		"keep_caller_id": "Keep Caller ID",
+		"save": "Save",
+		"my_devices": "Mijn apparaten",
+		"registered_devices_are_displayed": "Geregistreerd apparaten worden weergegeven in onderstaande groen."
+		"my_contact_list": "My Contact List",
+		"in_order_to_use_the_quickcall_feature": ". Om de functie Quickcall gebruiken, kunt u een nummer invoeren in de tekstbox hieronder, of selecteer direct een nummer uit de lijst met contactpersonen",
+		"the_quickcall_feature_will_ring_your_selected_device": ". De functie QuickCall zal uw geselecteerde apparaat rinkelen, en zal dan proberen om de door u geselecteerde zodra je pakte de nummer te bereiken",
+		"mark_as_new": "Bericht als nieuw",
+		"mark_as_saved": "Markeren als opgeslagen",
+		"delete": "Verwijderen",
+		"date": "Date",
+		"from_caller_id": "Uit (Caller ID)",
+		"to_dialed_number": "Om (gekozen nummer)",
+		"duration": "Duur",
+		"caller_id": "Caller ID",
+		"status": "Status",
+		"luisteren": "Luister",
+		"download": "Download",
+                "play": "Play Message",
+		"name": "Naam"
+		"internal_number": "Intern nummer",
+		"external_number": "Extern nummer",
+		"you_need_to_select_a_registered_device": "Je moet een geregistreerd apparaat uit de dropdown te selecteren om de QuickCall Feature gebruiken!",
+		"quickcall_device": "Quickcall Device:",
+		"quickcall_startedto": "Quickcall started to: ",
+		"call: "Call",
+		"start_date": "Begin",
+		"end_date": "Eind",
+		"filter": "Filter",
+		"dates_in_the_filter": "Data in het filter niet in het juiste formaat (dd / mm / yyyy)",
+		"message_index": "Message Index",
+		"voicemail_box_id": "Voicemail Box ID",
+		"are_you_sure_that_you_want_to_delete": "Weet u zeker dat u het geselecteerde voicemailbericht (s) verwijderen?",
+		"enable_call_forward": "Enable Call Forward",
+		"rangeTooLarge": "Het bereik is groter dan {{variabele}} dagen, dan kunt u corrigeren",
+                "device_types": {
+                        "cellphone": "telefoon",
+                        "sip_device": "sip telefoon",
+                        "smartphone": "smartphone",
+                        "mobile": "mobiel",
+                        "softphone": "softphone",
+                        "landline": "vaste telefoon",
+                        "fax": "fax",
+                        "ata": "zij",
+                        "sip_uri": "sip uri"
+                },
+                "setquickcallDevice": "Please, go to your account settings and select first a quickcall device."
+	},
+
+	"devices": {
+		"add": "add -apparaat",
+		"assigned": "toegewezen",
+		"createDevice": "creëren apparaat",
+		"confirmDeleteDevice": "dit apparaat wordt permanent verwijderd. verder gaan?",
+		"deleteDevice": "verwijderen apparaat",
+		"deletedDevice": "je succes verwijderd het volgende apparaat {{ devicename }}.",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+		"popupSettings": {
+			"advancedTitle": "gevorderd",
+			"basicTitle": "basisinstellingen",
+			"brandDownloads": "Productinfo",
+			"basicSectionTitle": "basisinstellingen",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "om een codec, slepen en neerzetten van de doos beschikbare codecs aan geselecteerde codecs selectievakje",
+			"options": {
+				"menuTitle": "opties"
+			},
+			"sip": {
+				"menuTitle": "nippen",
+				"sectionTitle": "slok info",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+			},
+			"audio": {
+				"menuTitle": "audio",
+				"sectionTitle": "audio-instellingen",
+				"selectedCodecs": "geselecteerde codecs",
+				"unselectedCodecs": "beschikbare codecs",
+				"codecs": {
+					"OPUS": "het werk",
+					"CELT@32000h": "sirene @ 32kHz",
+					"G7221@32000h": "g722.1 @ 32kHz",
+					"G7221@16000h": "g722.1 @ 16kHz",
+					"G722": "G722",
+					"speex@32000h": "speex @ 32kHz",
+					"speex@16000h": "speex @ 16kHz",
+					"speex": "speex",
+					"PCMU": "g711u/PCMU-64 kbps (na)",
+					"PCMA": "G711A/PCMA-64 kbps (elders)",
+					"G729": "G729-8kbps (vereist licentie)",
+					"GSM": "gsm",
+					"CELT@48000h": "sirene (hd) @ 48kHz",
+					"CELT@64000h": "sirene (hd) @ 64khz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "noodgevallen beller-id",
+				"sectionTitle": "noodgevallen beller-id",
+				"emergency": "aantal",
+				"notSet": "- Rekening default -",
+				"noE911Numbers": "u didnt set e911 op een van uw nummers, stel het op via het nummer manager en kom terug op dit scherm zodra zijn gedaan",
+				"address": "adres"
+			},
+			"miscellaneous": {
+				"menuTitle": "Diversen",
+				"sectionTitle": "Diversen",
+				"rtp": {
+					"enable": "versleutelen audio",
+					"type": "type codering",
+					"srtp": "SRTP",
+					"zrtp": "zrtp"
+				},
+				"ignoreCompletedElsewhere": {
+					"label": "negeren elders afgerond",
+					"help": "wanneer gecontroleerd ondersteunende telefoons zal een oproep tonen gemist als het was onderdeel van een ring groep beantwoord elders."
+				},
+                                "restart": {
+                                        "label": "Envoyer une requête de redémarrage",
+                                        "button": "Redémarrer",
+                                        "help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+                                        "success": "Vous avez envoyé une requête de redémarrage avec succès!"
+                                }
+                        },
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+			},
+			"restrictions": {
+				"menuTitle": "beperkingen",
+				"sectionTitle": "beperkingen instellingen",
+				"inherit": "erven",
+				"deny": "ontkennen",
+				"matcher": {
+					"help": "Type een nummer (international format => +[Countryprefix]...) en klik op test om te zien of het gesprek zou worden toegestaan...",
+					"placeholder": "+18554443333",
+					"button": "test",
+					"label": "het bovenstaande nummer geëvenaard deze regel.",
+					"allowMessage": "dit apparaat zal worden toegestaan om een oproep te plaatsen om {{ telefoonnummer }}",
+					"denyMessage": "Dit apparaat zal niet worden toegestaan om een oproep te plaatsen {{ telefoonnummer }}."
+				},
+				"allow": "toestaan",
+				"disabledRestrictionsInfo": "sommige soorten oproepen zijn beperkt voor uw gehele account en kan niet worden ingeschakeld per apparaat."
+			},
+			"video": {
+				"menuTitle": "video",
+				"sectionTitle": "video-instellingen",
+				"selectedCodecs": "geselecteerde codecs",
+				"unselectedCodecs": "beschikbare codecs",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "h264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			}
+		},
+		"buy": "kopen apparaat",
+		"classifiers": {
+			"unknown": {
+			    "name": "anders dan hierboven",
+			    "help": "selecteer deze optie als u wilt dat deze account om te bellen naar een andere dan vermeld op de lijst nummer te plaatsen. (wanneer het formaat van het nummer onbekend het systeem.)"
+			}
+		},
+		"noMatchingDevices": "er waren geen apparaten gevonden die voldoen aan uw zoekopdracht",
+		"noDevicesConfigured": "er geen apparaten geconfigureerd",
+		"provisionerPopup": {
+			"brandHeadline": "Selecteer het merk van het apparaat",
+			"deviceHeadline": "Selecteer het model van het apparaat",
+			"deviceSelected": "u hebt gekozen voor de {{ merk }} {{ model }}",
+			"missingBrand": "het merk van mijn toestel wordt hier niet genoemd",
+			"missingDevice": "mijn toestel wordt hier niet genoemd",
+			"title": "selectie van het apparaat"
+		},
+		"sip_device": {
+			"addTitle": "het toevoegen van een slokje apparaat",
+			"editTitle": "editing slok apparaat",
+			"macAddress": "mac -adres",
+			"macAddressPlaceholder": "19",
+			"new": "nieuwe SIP -apparaat",
+			"deviceName": "toestelnaam"
+		},
+		"sip_uri": {
+			"addTitle": "het toevoegen van een sip uri",
+			"deviceName": "naam",
+			"editTitle": "editing sip uri",
+			"new": "nieuwe sip uri",
+			"uri": "sip uri",
+			"uriPlaceholder": "nippen",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"landline": {
+			"addTitle": "het toevoegen van een vaste lijn",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing vaste lijn",
+			"new": "nieuwe vaste lijn",
+			"number": "aantal",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "vereisen druk op de toets",
+			"keepCallerId": "Bewaar de originele beller-id",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"cellphone": {
+			"addTitle": "toevoegen van een mobiele telefoon",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing mobiele telefoon",
+			"new": "nieuwe mobiele telefoon",
+			"number": "aantal",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "toestaan gebruik van mobiele telefoon voicemail",
+			"keepCallerId": "Bewaar de originele beller-id",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"mobile": {
+			"addTitle": "toevoegen van een mobiel",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing mobiel",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10 cijfers telefoonnummer",
+			"new": "nieuwe mobiele"
+		},
+		"smartphone": {
+			"addTitle": "het toevoegen van een smartphone",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing smartphone",
+			"new": "nieuwe smartphone",
+			"requireKeypress": "toestaan gebruik van mobiele telefoon voicemail",
+			"keepCallerId": "Bewaar de originele beller-id",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"fax": {
+			"addTitle": "het toevoegen van een faxapparaat",
+			"editTitle": "editing faxapparaat",
+			"macAddress": "mac -adres",
+			"macAddressPlaceholder": "19",
+			"new": "fax",
+			"deviceName": "toestelnaam",
+			"t38": "T38",
+			"disabled": "invalide",
+			"auto": "automatische detectie",
+			"force": "altijd van kracht"
+		},
+		"softphone": {
+			"addTitle": "het toevoegen van een softphone",
+			"editTitle": "editing softphone",
+			"new": "nieuwe softphone",
+			"deviceName": "toestelnaam"
+		},
+		"ata": {
+			"addTitle": "het toevoegen van een ata",
+			"editTitle": "editing ata",
+			"new": "nieuwe ata",
+			"deviceName": "toestelnaam"
+		},
+		"sip": {
+			"username": "sip gebruikersnaam",
+			"password": "sip wachtwoord",
+			"realm": "rijk"
+		},
+		"spare": "reserve",
+		"title": "totaal apparaten",
+		"titleGrid": {
+			"edit": "uitgeven",
+			"enable": "mogelijk maken",
+			"user": "gebruiker",
+			"modelMacAddress": "naam/mac adres",
+			"type": "type"
+		},
+		"types": {
+			"cellphone": "telefoon",
+			"sip_device": "sip telefoon",
+			"smartphone": "smartphone",
+			"mobile": "mobiel",
+			"softphone": "softphone",
+			"landline": "vaste telefoon",
+			"fax": "fax",
+			"ata": "zij",
+			"sip_uri": "sip uri"
+		},
+		"unassignedDevice": "-",
+                "microphone": "Micrphone",
+                "speaker": "Speaker"
+	}
+}

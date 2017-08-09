@@ -1,0 +1,44 @@
+<div class="trunkstore_popup failover">
+	<div class="header {{radio}}"></div>
+
+	<form id="failover" action="#">
+		<div class="row-fluid">
+			<h4 class="content-centered">{{ i18n.failover.failoverText }}</h4>
+
+			<div class="row-fluid block-container">
+				<div data-type="number" class="failover-block span5 content-centered">
+					<div class="wrapper-phone-icon {{#compare radio '===' 'number'}} selected {{/compare}}">
+						<i class="fa fa-phone"></i>
+					</div>
+					<label>{{ i18n.failover.alternateNumber }}</label>
+					<input placeholder="+1 415-222-5555" type="text" name="raw_input" class="failover_number" value="{{failover.e164}}"/>
+				</div>
+				<div class="span2 content-centered">
+					{{ i18n.failover.or }}
+				</div>
+				<div data-type="sip" class="failover-block span5 content-centered">
+					<div class="wrapper-phone-icon {{#compare radio '===' 'sip'}} selected {{/compare}}">
+						<i class="fa fa-phone"></i>
+					</div>
+					<label>{{ i18n.failover.sipAddress }}</label>
+					<input placeholder="sip:jon@doe.com" type="text" name="raw_input" value="{{failover.sip}}" class="failover_sip"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			{{#monsterText}}
+				{{i18n.failover.helpFailover}}
+			{{/monsterText}}
+		</div>
+
+		<div class="row-fluid buttons">
+			{{#if radio}}
+				<button class="monster-button monster-button-danger remove_failover">{{ i18n.failover.removeFailover }}</button>
+				<button class="monster-button monster-button-success submit_btn">{{ i18n.change }}</button>
+			{{else}}
+				<button class="monster-button monster-button-success submit_btn">{{ i18n.failover.activate }}</button>
+			{{/if}}
+		</div>
+	</form>
+</div>

@@ -1,0 +1,84 @@
+{
+	"menuTitles": {
+		"phonebook": "Telefonbuch",
+		"speeddial": "Kurzwahl-Liste",
+		"blacklist": "Blockierungen"
+	},
+
+	"phonebook": {
+                "renew": "Erneuern",
+                "add": "Zufügen",
+                "delete": "Löschen",
+		"title": "Telefonbuch",
+		"tableTitles": {
+			"country": "Land",
+			"company": "Geschäft",
+			"name": "Name",
+			"address": "Adresse",
+			"zip": "PLZ",
+			"city": "Ort",
+			"details": "Einzelheiten"
+		},
+		"detailDialog": {
+			"popupTitle": "Telefonbucheintrag ändern"
+		},
+                "quickcallDevice": "Schnellanrufgerät",
+                "setquickcallDevice": "Bitte, zuerst ein Schnellanruf-Gerät in den Kontoeinstellungen auswählen.",
+                "quickcall_startedto": "Schnellanruf ausgelöst zu: ",
+                "deleteSuccess": "Eintrag wurde erfolgreich gelöscht ",
+                "addSuccess": "Eintrag wurde erfolgreich gespeichert ",
+                "uploadDialog": {
+			"popupTitle": "Upload von Telefonbuchdaten"
+		}
+	},
+	
+	"phonebookDetail" : {
+		"connectivityTitle" : "Eintrag ändern",
+                "id": "Nummer",
+                "country": "Land",
+		"company": "Firma",
+                "name": "Name",
+                "address" : "Adresse",
+                "zip" : "PLZ",
+                "city" : "Ort",
+                "local" : "Standort",
+                "email" : "Email",
+                "yes" : "Ja",
+                "no" : "Nein",
+                "key": "Schlüssel",
+                "value": "Wert"
+        },
+
+        "speeddial": {
+                "title": "Kurzwahl-Liste",
+                "tableTitles": {
+                        "from": "Von",
+                        "to": "Zu",
+                        "date": "Datum",
+                        "details": "Detail",
+                        "status": "Status"
+                },
+                "detailDialog": {
+                        "popupTitle": "Technische Detail",
+                        "metadataTitle": "Metadata",
+                        "errorTitle": "Fehler",
+                        "apiKeys": {
+                        }
+                }
+        },
+
+    "blacklist": {
+	"title": "Blockierungen",
+	"tableTitles": {
+	        "subscription": "Abonnement",
+	        "type": "Typ",
+                "mwi": "MWI",
+                "blf": "BLF",
+                "blacklist": "PR",
+	        "subscribersCount": "Abonnement",
+	        "flush": "Reset",
+		"ladder": ""
+	},
+	"flushSent": "Es wurde erfolgreich ein Abonnement-Reset für die Nebenstelle {{variable}} gesendet."
+    }
+}

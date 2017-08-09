@@ -1,0 +1,79 @@
+<div id="service_providers_wrapper">
+	<h4>
+	{{#compare mode "===" "template"}}
+		{{ i18n.carriers.serviceProviders.titleTemplate }}
+	{{else}}
+		{{ i18n.carriers.serviceProviders.titleCarriers }}
+	{{/compare}}
+	</h4>
+
+	<div class="selector-wrapper">
+		<div class="carriers-selector">
+			{{#each availableCarriers}}
+				<div class="available-carrier">
+					<div class="carrier-logo add-carrier {{extra.brandName}}" data-id="{{id}}" data-original-title="{{extra.help}}" data-placement="top" data-toggle="tooltip">
+						{{#compare extra.brandName "===" "custom"}}
+							<div class="text-wrapper">{{ template_name }}</div>
+						{{else}}
+							{{#compare extra.brandName "===" "other"}}
+								<div class="text-wrapper">{{ ../i18n.carriers.brands.noTemplate }}</div>
+							{{/compare}}
+						{{/compare}}
+					</div>
+				</div>
+			{{/each}}
+			<div class="available-carrier">
+				<div class="add-carrier carrier-logo other">
+					<i class="fa fa-plus-circle"></i>
+					<div class="title">
+						{{ i18n.carriers.brands.other }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="carriers-list-wrapper">
+		<h4>
+			{{#compare mode "===" "template"}}
+				{{ i18n.carriers.serviceProviders.listTitleTemplate }}
+			{{else}}
+				{{ i18n.carriers.serviceProviders.listTitleCarriers }}
+			{{/compare}}
+		</h4>
+
+		<div class="carriers-list">
+			{{#each usedCarriers}}
+				<div data-id="{{id}}" data-name="{{name}}" class="carrier-block clearfix">
+					<div class="carrier-actions">
+						<i class="fa fa-cog edit-carrier"></i>
+						<i class="fa fa-trash-o monster-red remove-carrier"></i>
+					</div>
+					<div class="carrier-logo {{extra.brandName}}">
+						{{#compare extra.brandName "===" "custom"}}
+							<div class="text-wrapper">{{ template_name }}</div>
+						{{else}}
+							{{#compare extra.brandName "===" "other"}}
+								<div class="text-wrapper">{{ ../../../i18n.carriers.brands.noTemplate }}</div>
+							{{/compare}}
+						{{/compare}}
+					</div>
+					<div class="carrier-text">
+						<div class="name">{{name}}</div>
+						<div class="active-classifiers">{{extra.stringClassifier}}</div>
+					</div>
+
+				</div>
+			{{else}}
+				<div class="carriers-empty alert">
+					{{#compare mode "===" "template"}}
+						{{ i18n.carriers.serviceProviders.noTemplates }}
+					{{else}}
+						{{ i18n.carriers.serviceProviders.noCarriers }}
+					{{/compare}}
+					
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

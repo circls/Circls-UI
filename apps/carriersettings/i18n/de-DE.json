@@ -1,0 +1,140 @@
+{
+	"menuTitles": {
+		"lcrrates": "LCR-Tarife",
+		"currencies": "Währungen",
+		"taxes": "Steuern",
+                "dnscontroller": "Domains",
+                "subdomains": "Sub-DNS"
+	},
+
+	"lcrrates": {
+                "renew": "Erneuern",
+                "add": "Zufügen",
+                "delete": "Löschen",
+		"title": "LCR-Tarife",
+		"tableTitles": {
+                        "rate_name":       "Zielname",
+                        "prefix":          "Vorwahl",
+                        "rate_surcharge":  "Gebühr",
+                        "rate_cost":       "Kosten",
+                        "direction":       "Richtung",
+                        "routes":          "Routen",
+                        "action":          "Aktion",
+                        "iso_country_code":"ISO",
+                        "weight":          "Gewicht",
+                        "flatrate":        "Flatrat inkl.",
+                        "rate_increment":  "Taktung ",
+                        "rate_minimum":    "Min. Taktung",
+                        "description":     "Beschreibung",
+                        "options":         "Option",
+                        "carrierid":       "Carrier"
+		},
+		"detailDialog": {
+			"popupTitle": "Ändern von LCR-Tarif"
+		},
+                "deleteSuccess": "Eintrag wurde gelöscht ",
+                "addSuccess": "Eintrag wurde hinzugefügt ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload von neuen LCR-Tarifen per csv"
+                }
+	},
+	
+	"currencies": {
+                "renew": "Erneuern",
+                "add": "Zufügen",
+                "delete": "Löschen",
+		"title": "Währungen",
+		"tableTitles": {
+                        "id": "Währung-ID",
+                        "name": "Ausführlicher Name",
+                        "rate": "Basis-Faktor",
+                        "sign": "Zeichen"
+		},
+		"detailDialog": {
+			"popupTitle": "Ändern von LCR-Tarif"
+		},
+                "deleteSuccess": "Eintrag wurde gelöscht ",
+                "addSuccess": "Eintrag wurde hinzugefügt ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload von neuen LCR-Tarifen per csv"
+		}
+	},
+
+	"taxes": {
+                "renew": "Erneuern",
+                "add": "Zufügen",
+                "delete": "Löschen",
+		"title": "Steuern",
+		"tableTitles": {
+                        "id": "ID",
+                        "name": "Name",
+                        "rate": "Tarif",
+                        "description": "Beschreibung",
+                        "group": "Gruppe",
+                        "view": "Sichbar"
+		},
+		"detailDialog": {
+			"popupTitle": "Ändern von Steuern"
+		},
+                "deleteSuccess": "Eintrag wurde gelöscht ",
+                "addSuccess": "Eintrag wurde hinzugefügt ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload von neuen Steueren per csv"
+		}
+
+	},
+
+        "dnscontroller": {
+                "renew": "Erneuern",
+                "add": "Zufügen",
+                "delete": "Löschen",
+                "title": "Domains",
+                "tableTitles": {
+                        "active":          "Aktiv",
+                        "subdomain":       "Domain",
+                        "domain":          "Domain",
+                        "renew":           "Erneuerung",
+                        "expire":          "Ablauf",
+                        "ip4":             "IP4",
+                        "ip6":             "IP6",
+                        "password":        "Passwort",
+                        "action":          "Aktion",
+                        "forsubDNS":       "Für Sub-DNS"
+                },
+                "detailDialog": {
+                        "popupTitle": "Ändern von Domain"
+                },
+                "deleteSuccess": "Eintrag wurde gelöscht ",
+                "addSuccess": "Eintrag wurde hinzugefügt ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload von neuen Domains per csv"
+                }
+        },
+
+        "subdomains": {
+                "renew": "Erneuern",
+                "add": "Zufügen",
+                "delete": "Löschen",
+                "title": "Sub-Domains",
+                "tableTitles": {
+                        "active":          "Aktiv",
+                        "subdomain":       "Sub-Domain",
+                        "domain":          "Domain",
+                        "renew":           "Erneuerung",
+                        "expire":          "Ablauf",
+                        "ip4":             "IP4",
+                        "ip6":             "IP6",
+                        "password":        "Passwort",
+                        "action":          "Aktion"
+                },
+                "detailDialog": {
+                        "popupTitle": "Ändern von Sub-Domains"
+                },
+                "deleteSuccess": "Eintrag wurde gelöscht ",
+                "addSuccess": "Eintrag wurde hinzugefügt ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload von neuen Sub-Domains per csv"
+                }
+        }
+
+}

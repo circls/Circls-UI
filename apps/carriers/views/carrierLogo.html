@@ -1,0 +1,9 @@
+<div class="carrier-logo {{extra.brandName}}">
+	{{#compare extra.brandName "===" "custom"}}
+		<div class="text-wrapper">{{ template_name }}</div>
+	{{else}}
+		{{#compare extra.brandName "===" "other"}}
+			<div class="text-wrapper">{{ i18n.carriers.brands.noTemplate }}</div>
+		{{/compare}}
+	{{/compare}}
+</div>

@@ -1,0 +1,33 @@
+{
+	"name": "debug",
+	"i18n": {
+		"en-US": {
+			"label": "Debug Tool - BETA",
+			"description": "The Debugging App gives you access to different tools to help you debug the things happening on your platform.",
+			"extended_description": "",
+			"features": [
+				"Registrations Tracker",
+				"SMTP Logs",
+				"Call Inspector"
+			]
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "Debug_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"debug_1.png",
+		"debug_2.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

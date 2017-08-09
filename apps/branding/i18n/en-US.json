@@ -1,0 +1,178 @@
+{
+	"menuTitles": {
+		"general": "General",
+		"advanced": "Advanced",
+		"templates": "Templates",
+		"dnsHelper": "DNS Helper"
+	},
+	"alertMessages": {
+		"logoWrongType": "Your logo must be in either a JPEG or PNG format.",
+		"logoWrongSize": "Your logo must not exceed 190px in width and 72px in height.",
+		"deleteConfirm": "This will completely delete both General and Advanced branding information. Do you want to continue?",
+		"closeTemplateConfirm": "Any unsaved change made to this template will be discarded. Do you want to continue?",
+		"templateUpdateSuccess": "Template updated successfully.",
+		"templatePreviewSuccess": "The notification preview has been sent to {{email_address}}",
+		"templateRestoreSuccess": "Template successfully restored to default.",
+		"__comment": "UI-1473: Adding favicon upload",
+		"__version": "v3.20_s5",
+		"iconWrongSize": "Your icon must not exceed 64px in width and 64px in height."
+	},
+	"generalBranding": {
+		"mainTitle": "General UI Branding",
+		"logoLabel": "Upload your Company Logo",
+		"logoSize": "Maximum size: 190px by 72px",
+		"logoFormat": "Format: JPEG or PNG",
+		"companyNameLabel": "Company Name",
+		"companyWebsiteLabel": "Company Website Link",
+		"domainLabel": "Domain Name",
+		"languageLabel": "Language",
+		"helpLabel": "Help / Wiki Link",
+		"termsLabel": "Terms and Conditions Link",
+		"poweredByLabel": "Powered by",
+		"welcomeLabel": "Custom Welcome Message",
+		"__comment": "UI-",
+		"__version": "v3.20_s5",
+		"realmSuffix": "Realm Suffix",
+		"realmSuffixHelp": "This suffix will be used to generate the account realms of accounts created via your white-labeled interface",
+		"__comment": "UI-1470: Adding applicationTitle field",
+		"__version": "v3.20_s5",
+		"applicationTitle": "Browser Tab Name",
+		"__comment": "UI-1473: Adding favicon upload",
+		"__version": "v3.20_s5",
+		"faviconLabel": "Upload your icon",
+		"faviconSize": "Maximum size: 64px by 64px",
+		"__comment": "UI-1497: Adding callReportEmail",
+		"__version": "v3.20_s5",
+		"callReportEmail": "E-mail address for call reports"
+	},
+	"advancedBranding": {
+		"mainTitle": "Advanced Branding",
+		"porting": {
+			"title": "Number Porting",
+			"allowCustomerRequest": {
+				"title": "Submitting port requests:",
+				"yes": "Allow customers to request a port",
+				"no": "I will request ports on behalf of customers"
+			},
+			"manageCustomerPorts": {
+				"title": "Managing port requests:",
+				"yes": "I will manage port requests from my account",
+				"no": "Masteraccount will manage port requests from my account"
+			},
+			"supportLabel": "Support Contact",
+			"supportPlaceholder": "support@domain.com",
+			"loaLabel": "Letter of Authorization",
+			"loaPlaceholder": "http://mycompany.com/loa",
+			"resporgLabel": "Resporg",
+			"resporgPlaceholder": "http://mycompany.com/resporg"
+		},
+		"carrier": {
+			"title": "Carrier",
+			"choices": {
+				"title": "Choices available to the user to setup the no_match route:",
+				"list": {
+					"useBlended": "Use Global Resources",
+					"useReseller": "Use Reseller Resources",
+					"byoc": "Bring Your Own Carrier"
+				},
+				"help1": "The first option is will be the one set by default in the account.",
+				"help2": "Enabling more than one option will let the user customize this setting."
+			}
+		}
+	},
+	"templatesBranding": {
+		"mainTitle": "Manage Templates",
+		"templateNames": {
+			"reset_password": "Reset Password",
+			"welcome": "Welcome",
+			"new_account": "New Account",
+			"first_registration": "First Registration",
+			"first_call": "First Call",
+			"transaction": "Transaction",
+			"low_balance": "Low Balance",
+			"abnormal_hangup": "Abnormal Hangup",
+			"system_alert": "System Alert",
+			"deregister": "Deregister",
+			"fax_to_email": "Fax to Email",
+			"inbound_error_to_email": "Inbound Error to Email",
+			"inbound_to_email": "Inbound to Email",
+			"outbound_error_to_email": "Outbound Error to Email",
+			"outbound_to_email": "Outbound to Email",
+			"voicemail_to_email": "Voicemail to Email",
+			"voicemail_full": "Voicemail Full",
+			"new_port_request": "New Port Request",
+			"ported": "Ported",
+			"port_cancelled": "Port Cancelled",
+			"cnam_request": "CNAM Request",
+			"vanity_number_request": "Vanity Number Request"
+		},
+		"templateCategories": {
+			"account": "Account",
+			"billing": "Billing",
+			"system": "System",
+			"reseller": "Reseller/Account Alerts",
+			"fax": "Faxing",
+			"voicemail": "Voicemail",
+			"port_request": "Porting",
+			"numbers": "Number Management",
+			"misc": "Miscellaneous"
+		},
+		"from": "From:",
+		"to": "To:",
+		"bcc": "BCC:",
+		"subject": "Subject:",
+		"macros": "Macros",
+		"recipientTypes": {
+			"specified": "Specified: Write down a list of comma-separated e-mail addresses.",
+			"admins": "Admins: This e-mail will be sent to all the account administrators.",
+			"original": "Original User: This e-mail will be sent to the original user that triggered it."
+		},
+		"htmlBody": "HTML Body",
+		"textBody": "Plain Text Body",
+		"previewHeader": "You can preview this notification by sending a test e-mail to the following address:",
+		"previewEmail": "E-mail",
+		"previewSend": "Send",
+		"restoreButton": "Restore to default",
+		"restoreButtonDisabled": "No modification has been saved for this notification yet. If you want to keep the default notification, simply click on \"Cancel\".",
+		"restoreWarning": "This notification template will be restored to its default values, and any customization you made will be discarded.",
+		"__comment": "UI-1092: Adding tooltips on the template edition icon",
+		"__version": "v3.20_s3",
+		"editIconTooltips": {
+			"disabled": "DISABLED: This template has been disabled. No email will be sent by the system for this notification until you re-enable it.",
+			"custom": "CUSTOM: This template has been customized. Emails sent by the system for this notification will be using this custom template.",
+			"default": "DEFAULT: This template has not been customized. Emails sent by the system for this notification will be using the default template."
+		}
+	},
+	"saveInfoMessage": "Some changes will only take effect after reloading the application.",
+	"welcomeWysiwyg": {
+		"fontSizes": {
+			"1": "Smallest",
+			"2": "Small",
+			"3": "Medium-Small",
+			"4": "Medium",
+			"5": "Medium-Large",
+			"6": "Large",
+			"7": "Largest"
+		}
+	},
+	"accessForbidden": "Sorry, the Branding App is only available for reseller accounts.",
+	"__comment": "UI-1375: Add DNS Helper tab to Branding App",
+	"__version": "v3.22",
+	"dnsBranding": {
+		"check": "Check",
+		"label": "Domain name you wish to white-label:",
+		"info": "Base on your selection of {{variable}} as your domain name, please configure your DNS for the following setup:",
+		"table": {
+			"purpose": "Purpose",
+			"subDomain": "Sub-domain",
+			"recordType": "Record Type",
+			"expectedRecordData": "Expected Record Data",
+			"setupProperly": "Setup Properly"
+		},
+		"toastr": {
+			"error": {
+				"invalidDomain": "Please specify a domain name to check!"
+			}
+		}
+	}
+}

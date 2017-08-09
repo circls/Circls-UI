@@ -1,0 +1,161 @@
+{
+	"defaultLang": "de-DE",
+	"password": "Passwort",
+	"rememberMe": "Anmeldung merken",
+	"forgotPassword": "Passwort vergessen?",
+	"username": "Benutzername",
+	"or": "ODER",
+	"errorLoadingAccount": "Während Ihr Konto geladen wurde trat ein Fehler auf",
+
+	"confirmLogout": "Möchten Sie sich wirklich abmelden?",
+	"confirmHttps": "Entschuldigung, Sie müssen das Zertifikat als Zertifizierungsstelle installieren (CA Zertifikat installieren) und das Zertifikat für verschlüsselte Websiten zulassen!",
+
+	"account": {
+		"name": "Kontoname",
+		"namePlaceholder": "Name Firma",
+		"realm": "Konto Realm",
+		"realmPlaceholder": "Konto Realm"
+	},
+
+	"login":{
+		"buttonText": "Anmelden",
+		"certbuttonText": "CA Zertifikat installieren",
+		"certbuttonLinkwin": "root-cert.cer",
+		"certbuttonLink": "root-cert.der",
+		"howtocertbuttonText": "Wie installiere ich dieses Zertifikat?",
+		"howtocertbuttonLink": "http://blog.knecht-ruprecht.info/2011/01/eigenen-ssl-zertifikaten-vertrauen.html",
+		"installcert": {
+			"certTitle": "Anleitung CA Zertifikat-Installation",
+			"certFirefox": "Download für Firefox (als Zertifizierungsstelle importieren!)",
+			"certWin": "Download für Chrome und Internet Explorer (als Vertrauenswürdiges Stammzellenzertifikat installieren!)",
+			"certnameFirefox": "Firefox->Einstellungen->Erweitert->Zertifikate->Anzeigen->Zertifizierungsstelle->Importieren_OPEN_PHONE_NET_AG.der",
+			"certnameWindows": "Internet->Einstellungen->Sicherheit->Zertifikate->Vertrauenswürdiges_Stammzellenzertifikat_OPEN_PHONE_NET_AG.cer"
+		}
+	},
+
+	"conferenceLogin": {
+		"userTab": "Benutzer",
+		"adminTab": "Administrator",
+		"headerLabel": "Konferenz Login",
+		"pinLabel": "Pin Nummer",
+		"nameLabel": "Name",
+		"callInLabel": "Ihre 'Eingehende' Telefonnummer",
+		"optionalSplitter": "Optional",
+		"buttonLabel": "Anmeldung Konferenz"
+	},
+
+	"passwordRecovery": {
+		"title": "Password Wiederherstellen",
+		"label": {
+			"phoneNumber": "Telefonnummer"
+		},
+		"placeholder": {
+			"username":  "benutzer@bluewin.ch",
+			"account": {
+				"name": "benutzer",
+				"realm": "sip.allip.ovh"
+			},
+			"phoneNumber": "+41525081922"
+		},
+		"help": {
+			"text": "Geben Sie Ihren Benutzernamen und Kontonamen und ein (Realm oder eine Telefonnummer) ein, die zu Ihrem Konto gehört."
+		},
+		"button": {
+			"recover": "Passwort wiederherstellen"
+		},
+		"toastr": {
+			"success": {
+				"reset": "Ihr Passwort wurde erfolgreich zurückgesetzt"
+			},
+			"error": {
+				"reset": {
+					"account_name": "Der Kontoname konnte nicht gefunden werden",
+					"account_realm": "Der Kontorealm konnte nicht gefunden werden",
+					"phone_number": "Die Telefonnummer konnte nicht gefunden werden",
+					"username": "Den Benutzername konnte nicht gefunden werden"
+				},
+				"missing": "Bitte geben Sie Ihren Benutzernamen und Kontonamen und ein (Realm oder eine Telefonnummer) ein, die zu Ihrem Konto gehört."
+			}
+		}
+	},
+
+	"passwordUpdate": {
+		"title": "Passwort Erneuern",
+		"label": {
+			"password": {
+				"new": "Neues Passwort",
+				"confirmation": "Passwort bestätigen"
+			}
+		},
+		"help": {
+			"text": "Sie haben Ihr Passwort zurückgesetzt und Sie sollten das temporäre Passwort benutzen. Sie können es ändern, oder fortfahren."
+		},
+		"button": {
+			"update": "Passwort erneuern"
+		},
+		"toastr": {
+			"success": {
+				"update": "Ihr Passwort wurde erfolgreich erneuert."
+			},
+			"error": {
+				"password": "Das Passwort stimmt nicht. Bitte ein anderes Passwort"
+			}
+		}
+	},
+
+	"toastrMessages": {
+		"appListError": "Während Ihr Konto geladen wurde trat ein Fehler der Applikationsliste auf"
+	},
+
+        "trialDaysLeft": "{{variable}} Tage des Testabos noch übrig",
+        "trialExpired": "Testabo ist abgelaufen!",
+        "trialPopup": {
+                "title": "Testabostatus",
+                "closeButton": "Ich benötige mehr Testtage",
+                "upgradeButton": "Ich wechsle zum Abonnement",
+                "mainMessage": "Willkommen zurück zu Ihrem Testabo. Sie haben noch {{variable}} Tage übrig, um die Anlage zu testen.",
+                "trialExpired": "Ihr Testabo ist abgelaufen, klicken Sie um auf das Abonnement zu wechseln.",
+                "alreadyUpgraded": "Willkommen zurück zu Ihrem Testabo. Sie haben soeben zum Abonnement gewechselt. Sie werden mittels einer eMaill über den Status informiert!"
+        },
+
+        "trial": {
+                "noCreditCard": "Bitte wählen Sie Ihre Abonnement, mit dem Ausfüllen Ihrer Zahlunginformationen...",
+                "successUpgrade": {
+                        "content": "Sobald Ihre Bestellung eingegangen ist, werden Sie mit einer eMail informiert, um sich auf Ihrem Konto anzumelden. Sollten Sie noch Fragen haben, kontatkieren Sie uns per eMail unter {{wholsale_email}}, oder Rufen Sie uns an unter {{wholesale_phone}}.",
+                        "title": "Vielen Dank für Ihre Bestellung!"
+                }
+        },
+
+        "recoverPassword": {
+                "toastr": {
+                        "success": {
+                                "reset": "Ein eMail wurde an die angegebene Adresse versendet. Bitte prüfen Sie die eMails, um sich auf Ihr temporäres Konto anzumelden. Sobald Sie sich im Konto befinden müssen Sie das Passwort ändern."
+                        },
+                        "error": {
+                                "reset": {
+                                        "account_name": "Das Kontoname konnte nicht gefunden werden",
+                                        "account_realm": "Die Kontorealm konnte nicht gefunden werden",
+                                        "phone_number": "Die Telefonnummer konnte nicht gefunden werden",
+                                        "username": "Der Benutzername konnte nicht gefunden werden"
+                                },
+                                "missing": "Bitte geben Sie ein Kontoname oder eine Telefonnummer von Ihrem Konto an."
+                        }
+                },
+                "successReset": "Ein eMail wurde an die angegebene Adresse versendet. Bitte prüfen Sie die eMails, um sich auf Ihr temporäres Konto anzumelden. Sobald Sie sich im Konto befinden müssen Sie das Passwort ändern.",
+                "headline": "Um das Passwort zu wechseln, geben Sie bitte Ihre eMail/Benutzername ein:",
+                "emailPlaceholder": "eMail/Benutzername",
+                "headline2": "Und ein Kontoname oder eine Telefonnummer z.B. (+41....) Ihres Kontos ein",
+                "accountNamePlaceholder": "Kontoname",
+                "phoneNumberPlaceholder": "Telefonnummer",
+                "resetPassword": "Passwort Zurücksetzen",
+                "rememberPassword": "Passwort vergessen?",
+                "backToSignIn": "Zurück zur Anmeldung"
+        },
+
+        "trialGreetingsDialog": {
+                "title": "Willkommen zum Testabo von {{wholsale_name}}!",
+                "content": "Die Schnellanleitung wird Ihnen helfen, um Ihr Telefonsystem gemäss Ihren Wünschen einzurichten.",
+                "go": "Weiter"
+        },
+        "announcementTitle": "Nachricht"
+}

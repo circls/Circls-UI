@@ -1,0 +1,147 @@
+{
+	"menuTitles": {
+		"general": "generale",
+		"advanced": "avanzato",
+		"templates": "modelli"
+	},
+	"alertMessages": {
+		"logoWrongType": "il logo deve essere, in formato jpeg o png.",
+		"logoWrongSize": "il logo non deve superare 190px di larghezza e 72px in altezza.",
+		"deleteConfirm": "questo eliminerà completamente le informazioni di branding sia generale e avanzato. vuoi continuare?",
+		"closeTemplateConfirm": "qualsiasi modifica non salvata fatte a questo modello verrà scartato. vuoi continuare?",
+		"templateUpdateSuccess": "modello aggiornato con successo.",
+		"templatePreviewSuccess": "l'anteprima segnalazione è stata inviata a { { email_address }}"
+	},
+	"generalBranding": {
+		"mainTitle": "marchio generale ui",
+		"logoLabel": "caricare il tuo logo aziendale",
+		"logoSize": "dimensione massima",
+		"logoFormat": "formato",
+		"companyNameLabel": "nome dell'azienda",
+		"companyWebsiteLabel": "società sito web link",
+		"domainLabel": "nome del dominio",
+		"languageLabel": "lingua",
+		"helpLabel": "help/link wiki",
+		"termsLabel": "Condizioni di collegamento",
+		"poweredByLabel": "alimentato da 2600Hz",
+		"welcomeLabel": "messaggio di benvenuto personalizzato"
+	},
+	"advancedBranding": {
+		"mainTitle": "marchio avanzata",
+		"porting": {
+			"title": "numero porting",
+			"allowCustomerRequest": {
+				"title": "presentazione delle domande di porta",
+				"yes": "consentono ai clienti di richiedere una porta",
+				"no": "io richiedere porte per conto della clientela"
+			},
+			"manageCustomerPorts": {
+				"title": "gestione delle richieste di porta",
+				"yes": "io gestire le richieste di porta dal mio conto",
+				"no": "2600Hz gestirà le richieste di porta dal mio conto"
+			},
+			"supportLabel": "contattare il supporto",
+			"supportPlaceholder": "support@domain.com",
+			"loaLabel": "lettera di autorizzazione",
+			"loaPlaceholder": "http",
+			"resporgLabel": "resporg",
+			"resporgPlaceholder": "http"
+		},
+		"carrier": {
+			"title": "vettore",
+			"choices": {
+				"title": "scelte disponibili per l'utente di impostare la sua rotta no_match",
+				"list": {
+					"useBlended": "utilizzare le risorse globali",
+					"useReseller": "utilizzare le risorse rivenditore",
+					"byoc": "portare il proprio vettore"
+				},
+				"help1": "la prima opzione è sarà quello impostato di default nel conto.",
+				"help2": "consentendo più di una opzione ti consente all'utente di personalizzare questa impostazione."
+			}
+		}
+	},
+	"templatesBranding": {
+		"mainTitle": "gestire i modelli",
+		"templateNames": {
+			"reset_password": "resettare la password",
+			"welcome": "dare il benvenuto",
+			"new_account": "nuovo account",
+			"first_registration": "prima immatricolazione",
+			"first_call": "prima convocazione",
+			"transaction": "operazione",
+			"low_balance": "bassa equilibrio",
+			"abnormal_hangup": "hangup anormale",
+			"system_alert": "alert System",
+			"deregister": "annullare la registrazione",
+			"fax_to_email": "fax a e-mail",
+			"inbound_error_to_email": "errore in entrata alla posta elettronica",
+			"inbound_to_email": "ingresso alla posta elettronica",
+			"outbound_error_to_email": "errore in uscita di posta elettronica",
+			"outbound_to_email": "in uscita a e-mail",
+			"voicemail_to_email": "voicemail a e-mail",
+			"voicemail_full": "voicemail pieno",
+			"denied_emergency_bridge": "Denied Emergency Bridge",
+			"new_port_request": "nuova richiesta port",
+			"ported": "porting",
+			"port_cancelled": "port annullata",
+			"cnam_request": "richiesta CNAM",
+			"vanity_number_request": "vanità richiesta Codice"
+		},
+		"templateCategories": {
+			"account": "conto categoria",
+			"billing": "categoria fatturazione",
+			"system": "categoria sistema",
+			"reseller": "avvisi rivenditore/conto",
+			"fax": "categoria fax",
+			"voicemail": "categoria voicemail",
+			"porting": "categoria porting",
+			"numbers": "gestione numero",
+			"misc": "miscellaneo"
+		},
+		"from": "a partire",
+		"to": "a",
+		"bcc": "bcc",
+		"subject": "soggetto",
+		"macros": "macro",
+		"recipientTypes": {
+			"specific": "specifico",
+			"admins": "amministratori",
+			"original": "utente originale"
+		},
+		"htmlBody": "corpo html",
+		"textBody": "corpo testo normale",
+		"restoreButton": "ripristino di default",
+		"restoreWarning": "questo modello di notifica verrà ripristinato ai valori predefiniti, e qualsiasi personalizzazione che hai fatto sarà scartata."
+	},
+	"saveInfoMessage": "alcune modifiche avranno effetto solo dopo aver ricaricato l'applicazione.",
+	"welcomeWysiwyg": {
+		"fontSizes": {
+			"1": "minore",
+			"2": "piccolo",
+			"3": "medio-piccole",
+			"4": "medio",
+			"5": "medio-grande",
+			"6": "di grandi dimensioni",
+			"7": "maggiore"
+		}
+	},
+        "accessForbidden": "Sorry, the Branding App is only available for reseller accounts.",
+        "dnsBranding": {
+                "check": "Check",
+                "label": "Domain name you wish to white-label:",
+                "info": "Base on your selection of {{variable}} as your domain name, please configure your DNS for the following setup:",
+                "table": {
+                        "purpose": "Purpose",
+                        "subDomain": "Sub-domain",
+                        "recordType": "Record Type",
+                        "recordData": "Record Data",
+                        "setupProperly": "Setup Properly"
+                },
+                "toastr": {
+                        "error": {
+                                "invalidDomain": "Please specify a domain name to check!"
+                        }
+                }
+        }
+}

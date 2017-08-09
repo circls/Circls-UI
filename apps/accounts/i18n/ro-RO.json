@@ -1,0 +1,374 @@
+{
+        "account": {
+                "routing": {
+                        "addCallflow": "Create new Action Pivot",
+                        "edit": "Edit",
+                        "delete": "Delete",
+                        "tryNow": "Connection Test",
+                        "pingSuccess": "O cerere a fost trimis la această acțiune Pivot succes!",
+                        "tableTitles": {
+                                "name": "Name",
+                                "numărul": "Numărul",
+                                "routesTo": "rutele către",
+                                "acțiuni": "Acțiuni",
+                                "numberRouting": "Pivot Routing",
+                                "configureHelp": "Configure care numere de telefon vor apeluri traseu la care HTTP URL-uri pentru manipularea apel."
+                        },
+                        "creationForm": {
+                                "title": "Crearea unei noi Pivot Callflow",
+                                "editTitle": "Editarea unui Pivot Callflow",
+                                "save": "Salvați",
+                                "name": {
+                                        "help": "Name",
+                                        "placeholder": "Name",
+                                        "label": "Name"
+                                },
+                                "number": {
+                                        "help": "Numărul",
+                                        "placeholder": "+15555555555",
+                                        "label": "Numărul"
+                                },
+                                "url": {
+                                        "help": "URL-ul",
+                                        "placeholder": "http://your.server.com",
+                                        "label": "URL"
+                                },
+                                "method": {
+                                        "help": "Metoda",
+                                        "placeholder": "POST / GET",
+                                        "label": "Metoda",
+                                        "post": "POST",
+                                        "get": "GET"
+                                }
+                        }
+                },
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "Devicesetting in userportal",
+                        "firmwareupdate": "Firmwareupdate enabled"
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "descript": "Own Account-Dialplan",
+                        "enabled": "Own Account-Dialplan",
+                        "disabled": "None"
+                },
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Businesscustomer"
+        },
+	"addAccount": "adăuga cont nou",
+	"editSetting": "edita",
+	"saveChanges": "salvează modificările",
+	"closeSetting": "închidere",
+	"disable": "dezactivați",
+	"disabled": "invalid",
+	"active": "activ",
+	"delete": "șterge",
+	"enable": "permite",
+	"add": "adăuga",
+	"save": "cu excepția",
+	"update": "actualizare",
+	"none": "nici unul",
+	"month": "lună",
+	"missingAccount": "contul lipsă",
+	"disableAccount": "dezactiva acest cont",
+	"enableAccount": "activa acest cont",
+	"deleteAccount": "ștergeți acest cont",
+	"useAccount": "utilizați cont",
+	"changesSaved": "Schimbări salvat!",
+	"createdOn": "creată pe",
+	"accountStatus": "starea cont",
+	"accountId": "cont id",
+	"accountName": "numele contului",
+	"accountRealm": "contul domeniu",
+	"accountTimezone": "fus orar",
+	"accountLanguage": "limbă",
+	"accountTimezoneTitle": "fus orar și limbă",
+	"accountAdmins": "administratorii de cont",
+	"noAdminMessage": "acest cont doesnt avea orice admin",
+	"noUserMessage": "acest cont doesnt au nici un utilizator obișnuit",
+	"newAdmin": "adăuga un nou administrator",
+	"newUser": "utilizator nou",
+	"existingUser": "utilizator existent",
+	"autogenPassword": "auto- genera parola",
+	"manuallyTypePassword": "Tipul parola manual",
+	"billingContact": {
+		"label": "de contact de facturare",
+		"name": "facturare nume de contact",
+		"email": "e-mail de contact de facturare",
+		"number": "numar de telefon"
+	},
+	"technicalContact": {
+		"label": "delifery de contact tehnic",
+		"name": "Numele de contact tehnic",
+		"email": "e-mail de contact tehnic",
+		"number": "numar de telefon",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
+	},
+	"chargeReminder" : {
+		"line1": "cardul pe-dosar de credit va fi imediat taxat pentru orice modificare pe care le face. dacă ați schimbat toate serviciile recurente, noi taxe vor fi pro-evaluat pentru ciclul de facturare.",
+		"line2": "sunt sigur că doriți să continuați ?"
+	},
+	"tabTitles": {
+		"overview": "Prezentare generală",
+		"servicePlans": "abonamente",
+		"limits": "limite",
+		"restrictions": "restricții",
+		"notes": "notițe",
+		"rates": "Rates"
+	},
+	"classifiers": {
+		"unknown": {
+			"name": "altele decât sus",
+			"help": "vă rugăm să selectați această opțiune atunci când doriți acest cont de a efectua apeluri către orice număr altele decât cele menționate în lista. (când formatul numărului este necunoscut la sistem.)"
+		}
+	},
+	"activeServicePlan": "abonament activ",
+	"servicePlanMaintenance": "servicii de întreținere Planul",
+	"servicePlanReconciliation": {
+		"button": "fi reconciliate",
+		"tooltip": "asigura că cantitățile de obiecte facturate sunt corecte."
+	},
+	"servicePlanSynchronization": {
+		"button": "sincroniza",
+		"tooltip": "actualizarea informațiilor de facturare pe procesorul card de credit."
+	},
+	"servicePlanWizardLegend": "alege un abonament pentru acest cont",
+	"servicePlanResellerOnly": "doar revânzători au voie să gestioneze abonamentele.",
+	"trunksLegend": "stabili limite pentru simultane incluse apelurile intrare și de ieșire",
+	"twowayTrunks": "trunchiuri twoWay pe opțiunea",
+	"inboundTrunks": "trunchiuri de intrare",
+        "inboundTrunkshelp": "The number of indbound, flat-rate trunks",
+	"outboundTrunks": "trunchiuri de ieșire",
+        "outboundTrunkshelp": "The number of indbound, flat-rate trunks",
+        "callsTrunks": "Hardlimit simultan calls",
+        "callsTrunkshelp": "A hard limit for the total number calls",
+        "burstTrunk": "Burstflatrate Trunk",
+        "burstTrunks": "Burst-flatrate Trunks",
+        "burstTrunkshelp": "The number of two-way, flat-rate trunks used only if no other trunks are available",
+        "resourceconsumingCalls": "Hartlimit consuming resources",
+        "resourceconsumingCallshelp": "A hard limit for the number of resource consuming calls (in- and outbound calls together)",
+	"callRestrictionsLegend": "Restricții de apel",
+	"callRestrictionsTitle": "acest cont poate efectua apeluri în...",
+	"balanceTitle": "gestiona sold creditor",
+	"balancePerMinute": "pe sold creditor minut",
+	"balanceTooltip": "acest credit va fi utilizat pentru a face (plan) de apeluri pe minut, apeluri internaționale și primi apeluri netaxabile.",
+	"addToBalance": "adaugă la soldul curent",
+	"allowPrepay": "permite clienților să efectueze apeluri pe minut care merg peste limita de mai sus, și le-a factura costul pe minut de convorbire",
+        "PostpayTitle": "Manage balance handling",
+        "allowPostpay": "Allow this customer to go minus on balance todo invoiceing after a period time (Postpay).",
+        "addToBalance": "Add to the current balance:",
+        "allowPrepay": "Allow customers to make per-minute calls that go over the above limit, and bill them the per-minute cost of the call. (Prepay)",
+        "havetoPayonnet": "Charge also Onnet-calls for this customer, without internal calls (internal extensions)",
+        "flatelistTitle": "Charging within Flatrate",
+        "flatelistTooltip": "This list define the flatrate White- and Blacklist for this customer. if activate it, does only use this rules!",
+        "flatelist": "Activate this white and blacklist for this Customer. if not only systemwide white- and blacklist will be rule!",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "postpayamount": "Max Postpay amount",
+        "reserveamount": "Reserve Amount",
+	"addAdminLink": {
+		"toggleOn": "adăuga un admin în cont",
+		"toggleOff": "M-am răzgândit, care are nevoie de un admin ?"
+	},
+	"adminLabels": {
+		"firstName": "admin prenume",
+		"lastName": "admin Ultimul nume",
+		"email": "adresă e-mail admin",
+		"emailTooltip": "Adresa de e-mail va servi ca nume de utilizator pentru log-in pentru monstru-ui.",
+		"number": "Numărul de contact admin",
+		"password": "parola admin",
+		"confirm": "confirmă parola",
+		"sendCredentialsEmail": "Send an email to this admin with a reminder of these credentials",
+                "sendCredentialsEmailShort": "Send a summary email with credentials"
+	},
+	"adminPlaceholders": {
+		"firstName": "prenume",
+		"lastName": "nume",
+		"email": "adresa de e-mail",
+		"number": "numar de telefon",
+		"password": "parolă",
+		"confirm": "confirma"
+	},
+	"wizardStepTitles": {
+		"setupAccount": "înființat un cont",
+		"servicePlan": "alege abonament",
+		"limits": "Restricții de apel",
+		"restrictions": "permisiuni"
+	},
+	"wizardErrorMessages": {
+		"pleaseCorrect": "vă rugăm să corectați următoarele erori",
+		"accountMandatoryFields": "numele contului și Realm câmpurile sunt obligatorii.",
+		"adminMandatoryFields": "admin prenumele, numele și adresa de e-mail sunt obligatorii atunci când se adaugă un nou administrator.",
+		"adminPasswordError": "parola trebuie să fie de cel puțin 6 caractere și să includă o scrisoare și un număr.",
+		"adminPasswordConfirmError": "parola și confirmarea acesteia nu se potrivesc.",
+		"incorrectBalanceFormat": "format incorect pentru credit echilibru, puteți introduce doar un număr cu până la 2 zecimale.",
+		"balanceMinimumAmount": "Suma minima pentru credit echilibru este de 5.00 dolari."
+	},
+	"wizardProcessingMessage1": "cerere procesare...",
+	"wizardProcessingMessage2": "vă rugăm să așteptați în timp ce contul este creat.",
+	"autogenPasswordPopup": {
+		"message": "o parolă a ben auto- generat pentru administratorul de { { adminname }}. aceasta este singura dată această parolă va fi afișat, ar trebui să memoreze sau scrie -l jos.",
+		"login": "log in",
+		"password": "parolă"
+	},
+	"deleteUserConfirm": "acest utilizator vor fi șterse definitiv. continua ?",
+	"deleteAccountConfirm": "acest cont vor fi șterse definitiv. continua ?",
+	"toastrMessages": {
+		"servicePlanUpdateSuccess": "abonament activ actualizat cu succes!",
+		"servicePlanUpdateError": "o eroare neașteptată! Vă rugăm să încercați din nou.",
+		"servicePlanReconciliationSuccess": "reconciliere finalizat cu succes!",
+		"servicePlanReconciliationError": "a apărut o eroare în timpul procesului de reconciliere! vă rugăm să încercați din nou mai târziu.",
+		"servicePlanSynchronizationSuccess": "sincronizare finalizat cu succes!",
+		"servicePlanSynchronizationError": "a apărut o eroare în timpul procesului de sincronizare! vă rugăm să încercați din nou mai târziu.",
+		"limitsUpdateSuccess": "Limitele actualizat cu succes!",
+		"limitsUpdateError": "o eroare neașteptată a apărut la actualizarea limitelor, vă rugăm să încercați din nou mai târziu.",
+		"creditAddSuccess": "credit adăugat cu succes la soldul curent!",
+		"creditAddError": "o eroare neașteptată a apărut atunci când se adaugă credit, vă rugăm să încercați din nou mai târziu.",
+		"deleteAccountError": "a apărut o eroare la ștergerea contului, vă rugăm să încercați din nou.",
+		"newAccount": {
+			"accountError": "o eroare neașteptată a apărut la crearea contului.",
+			"adminError": "administratorul de cont nu poate fi creat.",
+			"limitsError": "A apărut o eroare de înființare a limitelor.",
+			"forbiddenLimitsError": "nu vi se permite să stabilească aceste limite. vă rugăm să contactați reprezentantul de vânzări.",
+			"creditError": "A apărut o eroare adăugând credit pentru acest cont nou, asigurați-vă că informațiile cardului de credit este valabil.",
+			"servicePlanError": "A apărut o eroare atribuirea planului de servicii în contul."
+		},
+		"uiRestrictionsUpdateSuccess": "Restricții UI actualizat cu succes!",
+		"uiRestrictionsUpdateError": "o eroare neașteptată a apărut la actualizarea restricțiile UI, vă rugăm să încercați din nou mai târziu.",
+		"notesUpdateSuccess": "note actualizat cu succes!",
+		"notesUpdateError": "o eroare neașteptată a apărut la actualizarea notelor, vă rugăm să încercați din nou mai târziu.",
+		"triggerMasquerading": "tu acum deghizat în contul { { nume de cont }}.",
+		"restoreMasquerading": "tu nu mai sunt masquerading.",
+                "callRestrictionsUpdateSuccess": "Call restrictions updated successfully!",
+                "callRestrictionsUpdateError": "An unexpected error occured when updating the call restrictions, please try again later.",
+                "appstoreUpdateSuccess": "Allowed apps updated successfully!",
+                "appstoreUpdateError": "An unexpected error occured when updating the list of allowed apps, please try again later.",
+                "numbersfeaturesUpdateSuccess": "Numberfeatures updated successfully!",
+                "numbersfeaturesUpdateError": "An unexpected error occured when updating the numberfeatures, please try again later."
+	},
+	"uiRestrictionsLegend": "selectați ce clientul dvs. puteți vizualiza",
+	"uiRestrictionsTooltip": "atunci când faceți clic pe numele dvs. din colțul din dreapta sus al ecranului, veți vedea un meniu vertical. puteți restricționa punctul de vedere al acestor opțiuni pentru dumneavoastră sub- cont prin simpla debifați din cont permisiuni.",
+	"uiRestrictionsMenu": {
+		"settings": "setări",
+		"user": "utilizator",
+		"account": "cont",
+		"billing": "facturare",
+		"creditCard": "card de credit",
+		"transactions": "tranzacții",
+		"servicePlan": "abonament",
+		"perMinute": "pe minut",
+		"trunking": "trunking",
+		"inbound": "intrare",
+		"outbound": "outbound",
+		"twoway": "twoWay pe opțiunea",
+		"errorTracker": "Erori UI jurnal",
+		"misc": "misc",
+		"rates": "Rates",
+                "numbersFeatures": "Numbers"
+	},
+	"uiRestrictionsExtraSettings": {
+		"perMinute": {
+			"legend": "mai multe setări de echilibru",
+			"showCreditInfo": "afișa informații de credit",
+			"showMinutesInfo": "Aratã minute informații"
+		}
+	},
+	"validationMessages": {
+		"invalidPasswordConfirm": "parolele nu se potrivesc."
+	},
+	"notesLegend": "scrie câteva note pe acest cont",
+	"landingContent": [
+		"You can edit a sub-account by selecting it from the list on the left",
+		"Or",
+		"Create a new sub-account by clicking on the \"Add New Account\" button."
+	],
+	"carrierTab": "purtător",
+	"accountType": "tipul contului",
+	"reseller": "reseller",
+	"standard": "standard",
+        "sentEmailPopup": "An email has been sent to {{email}} with the login information.",
+        "disabledAddCreditTooltip": "Braintree is required to add credit. Please contact your administrator for more information.",
+        "deleteAccountConfirmVar": "This account (\"{{accountName}}\") will be permanently deleted. Continue?",
+        "deleteAccountDialog": {
+                "title": "Confirmation of Account Deletion",
+                "cancel": "Cancel",
+                "deleteAccount": "Delete Account",
+                "deleteKey": "DELETE",
+                "deleteMessageIntro": "Do you really want to delete this account (\"{{variable}}\")?",
+                "deleteMessageExplanation": "Please type the word \"{{variable}}\" in the following input and then click on the Delete button to proceed"
+        },
+        "updateCreditDialog": {
+                "title": "Update Credits Amount",
+                "creditBalance": "Available Credit Balance",
+                "addCredit": "Add",
+                "removeCredit": "Remove",
+                "addCreditOne": "Add Credit One Time",
+                "removeCreditOne": "Remove Credit One Time",
+                "helpAddCreditOne": "By using this, you will add some credits to the balance of this account, which will allow it enable features such as e911 or Caller-ID, but also to place per-minute calls.",
+                "helpRemoveCreditOne": "We let you remove credits from your sub-accounts with this feature. If you added too many credits to an account, you could fix it by removing the extra creditshere for example.",
+                "placeholderAmount": "10.00",
+                "successfulUpdate": "Congratulations, you successfuly updated the amount of credits available on that account! :)"
+        },
+        "account_has_descendants": "You need to delete subaccounts before deleting this account",
+        "changeServicePlanDialog": {
+                "title": "Set service plan",
+                "successUpdate": "You successfuly updated the service plan of this account!"
+        },
+        "appstoreLegend": "Choose which apps are enabled on this account",
+
+        "numbersFeatures": {
+                "legend": "Enable/Disable numbers' features",
+                "features": {
+                        "e911": "E911",
+                        "cnam": "CNAM"
+                }
+        },
+
+        "announcementLegend": "Announcement that will popup everytime someone logs in to this account",
+        "deleteAnnouncement": "Delete Announcement",
+        "reserllerAction": "Reseller action",
+        "promoteDemoteError": "An error happened during this operation. Please try again later.",
+        "promoteAccount": {
+                "button": "Promote",
+                "confirm": "You are about to promote this account",
+                "success": "This account was promoted successfully"
+        },
+        "demoteAccount": {
+                "button": "Demote",
+                "confirm": "You are about to demote this account",
+                "success": "This account was demoted successfully"
+        }
+}

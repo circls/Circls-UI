@@ -1,0 +1,51 @@
+<div class="trunkstore_popup number-regextern regextern clearfix">
+        <form id="number_regextern">
+            <div class="clearfix popup-content">
+                    <div class="regextern-list">
+                        <div class="control-group clearfix regextern-line{{#if this.disabled}} disabled{{/if}}" data-restriction="{{@key}}">
+                                    <label class="control-label" for="active">{{ i18n.regextern.active }}</label>
+                                    <div class="active" data-on="true" data-off="false" data-on-label="{{i18n.on}}" data-off-label="{{i18n.off}}">
+                                        {{#monsterSwitch}}<input type="checkbox" id="active" name="active"{{#if active}} checked="checked"{{/if}}></input>{{/monsterSwitch}}
+                                    </div>
+                        </div>
+                        <div class="control-group clearfix regextern-line{{#if this.disabled}} disabled{{/if}}" data-restriction="{{@key}}">
+                                    <label class="control-label" for="pvt_activestart">{{ i18n.regextern.pvt_activestart }}<i class="help-popover icon-question-sign" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.regextern.pvt_activestartHelp }}"></i></label>
+                                    <div class="controls">
+                                        {{ pvt_activestart }}
+                                    </div>
+                        </div>
+                        <div class="control-group clearfix regextern-line{{#if this.disabled}} disabled{{/if}}" data-restriction="{{@key}}">
+                                    <label class="control-label" for="pvt_activestop">{{ i18n.regextern.pvt_activestop }}<i class="help-popover icon-question-sign" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.regextern.pvt_activestopHelp }}"></i></label>
+                                    <div class="controls">
+                                        {{ pvt_activestop }}
+                                    </div>
+                        </div>
+                        <div class="control-group clearfix regextern-line{{#if this.disabled}} disabled{{/if}}" data-restriction="{{@key}}">
+                                    <label class="control-label" for="pvt_modified">{{ i18n.regextern.pvt_modified }}</label>
+                                    <div class="controls">
+                                        {{ toFriendlyDate pvt_modified "shortDate"}} {{ toFriendlyDate pvt_modified "time"}}
+                                    </div>
+                        </div>
+                        <div class="control-group clearfix regextern-line{{#if this.disabled}} disabled{{/if}}" data-restriction="{{@key}}">
+                                    <label class="control-label" for="pvt_changed">{{ i18n.regextern.pvt_changed }}</label>
+                                    <div class="controls">
+                                        {{ toFriendlyDate pvt_changed "shortDate" }} {{ toFriendlyDate pvt_changed "time" }}
+                                    </div>
+                        </div>
+                        <div class="control-group clearfix regextern-line{{#if this.disabled}} disabled{{/if}}" data-restriction="{{@key}}">
+                                    <label class="control-label" for="status">{{ i18n.regextern.status }}</label>
+                                    <div class="controls">
+                                        {{ reged_state }} {{ reged_status }}
+                                    </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="popup-content popup-actions clearfix">
+                        <div class="pull-right">
+                                <a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+                                <button type="button" class="monster-button monster-button-success save">{{ i18n.saveChanges }}</button>
+                        </div>
+                </div>
+        </form>
+</div>

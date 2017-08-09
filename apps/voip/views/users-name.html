@@ -1,0 +1,126 @@
+<div class="detail-user">
+	<form id="form-{{id}}" class="user-fields row-fluid">
+		<div class="basic-fields span6">
+
+			<div class="row-fields">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.nameHelp}}" data-placement="top" data-toggle="tooltip"><i class="fa fa-user"></i></div>
+				<input required type="text" class="input-small" name="first_name" value="{{first_name}}" placeholder="{{i18n.users.editionForm.firstName}}"></input><input required class="input-small fix-left" type="text" name="last_name" value="{{last_name}}" placeholder="{{i18n.users.editionForm.lastName}}"></input>
+			</div>
+
+			<div class="row-fields">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.loginHelp}}" data-placement="top" data-toggle="tooltip"><i class="fa fa-key"></i></div>
+				<span id="username">{{username}}</span>
+				<a href="javascript:void(0);" id="change_username" class="monster-link blue">{{i18n.users.editionForm.changeUsername}}</a>
+			</div>
+
+			<div class="row-fields vmbox">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.vmboxHelp}}" data-placement="top" data-toggle="tooltip"><i class="icon-telicon-voicemail"></i></div>
+				<label for="vmbox_number">
+					{{ i18n.users.editionForm.vmboxNumber }}
+				</label>
+				{{extra.vmbox.mailbox}}
+				<a href="javascript:void(0);" id="change_pin" class="monster-link blue">{{i18n.users.editionForm.changePIN}}</a>
+			</div>
+
+			<div class="email-border{{#if extra.differentEmail }} open{{/if}}">
+				<div class="row-fields email-checkbox">
+					<label class="fix-left">
+						{{#monsterCheckbox i18n.users.dialogCreationUser.sendToDifferentEmail }}
+							<input id="notification_email" type="checkbox" name="extra.differentEmail"{{#if extra.differentEmail}} checked{{/if}}></input>
+						{{/monsterCheckbox}}
+					</label>
+				</div>
+
+				<div class="row-fields email-group">
+					<div class="fa fa-wrapper"><i class="fa fa-envelope"></i></div>
+					<input type="email" name="extra.email" id="email" placeholder="{{i18n.users.dialogCreationUser.notificationEmail}}"{{#if extra.differentEmail}} value="{{email}}"{{/if}}>
+				</div>
+			</div>
+
+			{{#if extra.mainCallflowId}}
+			<div class="row-fields">
+				<label class="fix-left">
+					{{#monsterCheckbox i18n.users.includeInDirectory }}
+						<input id="include_directory" type="checkbox" name="extra.includeInDirectory"{{#if extra.includeInDirectory}} checked="checked"{{/if}}></input>
+					{{/monsterCheckbox}}
+				</label>
+			</div>
+			{{/if}}
+		</div>
+		<div class="basic-fields span6">
+			<div class="row-fields">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.roleHelp}}" data-placement="top" data-toggle="tooltip"><i class="icon-telicon-moderator"></i></div>
+				<select id="priv_level" name="priv_level">
+					{{#compare priv_level '===' 'admin'}}
+						<option value="admin" selected>{{ i18n.users.admin }}</option>
+						<option value="user">{{ i18n.users.user }}</option>
+					{{else}}
+						<option value="admin">{{ i18n.users.admin }}</option>
+						<option value="user" selected>{{ i18n.users.user }}</option>
+					{{/compare}}
+				</select>
+			</div>
+
+			<div class="row-fields">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.timezoneHelp}}" data-placement="top" data-toggle="tooltip"><i class="fa fa-clock-o"></i></div>
+				<select id="user_timezone" name="timezone" data-original_value="{{timezone}}"></select>
+			</div>
+
+			<div class="row-fields">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.languageHelp}}" data-placement="top" data-toggle="tooltip"><i class="fa fa-flag"></i></div>
+                                    <select id="user_language" name="language" data-original_value="{{account.language}}"></select>
+                        </div>
+
+			<div class="row-fields">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.ringingHelp}}" data-placement="top" data-toggle="tooltip"><i class="fa fa-bell-o"></i></div>
+				{{#unless extra.ringingTimeout}}
+					<div class="ringing-timeout disabled" data-original-title="{{i18n.users.editionForm.disabledTimeoutHint}}" data-placement="top" data-toggle="tooltip">
+				{{else}}
+					{{#if extra.groupTimeout}}
+					<div class="ringing-timeout disabled" data-original-title="{{i18n.users.editionForm.timeoutEditHint}}" data-placement="top" data-toggle="tooltip">
+					{{else}}
+					<div class="ringing-timeout">
+					{{/if}}
+				{{/unless}}
+					<label for="ringing_timeout">
+						{{ i18n.users.editionForm.timeout }}
+					</label>
+					<input id="ringing_timeout" class="input-mini" type="text" name="extra.ringingTimeout" value="{{extra.ringingTimeout}}"></input>
+					<span>{{ i18n.users.editionForm.timeoutSec }}</span>
+				</div>
+				{{#if extra.groupTimeout}}
+					<div class="timeout-edit">
+						<a id="open_fmfm_link" href="javascript:void(0);" class="monster-link blue">{{ i18n.users.editionForm.timeoutEdit }}</a>
+					</div>
+				{{/if}}
+			</div>
+
+			<div class="row-fields">
+				<div class="fa fa-wrapper" data-original-title="{{i18n.users.editionForm.mainExtensionHelp}}" data-placement="top" data-toggle="tooltip"><i class="icon-telicon-extensions"></i></div>
+				<label>{{ i18n.users.editionForm.presenceId }}</label>
+				<select name="presence_id" class="presence-id-select">
+					{{#select presence_id}}
+						{{#each extra.presenceIdOptions}}
+							<option value="{{ this.key }}">{{ this.value }}</option>
+						{{/each}}
+					{{/select}}
+				</select>
+			</div>
+		</div>
+		<!--<div class="advanced-fields content-centered span3">
+			<a id="resend_instructions" href="javascript:void(0)">{{ i18n.users.resendInstructions }}</a>
+			<button type="button" id="reset_password" class="monster-button monster-button-primary">{{ i18n.users.resetPassword }}</button>
+		</div>-->
+	</form>
+	<div class="actions">
+		<!-- We forbid users to delete their own user -->
+		{{#compare id "!==" extra.adminId}}
+			<a id="delete_user" class="monster-link" href="javascript:void(0);"><i class="fa fa-trash-o monster-red"></i>{{ i18n.users.delete }}</a>
+		{{/compare}}
+
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+			<button type="button" class="monster-button monster-button-success save-user">{{ i18n.saveChanges }}</button>
+		</div>
+	</div>
+</div>

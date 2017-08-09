@@ -1,0 +1,173 @@
+{
+	"menuTitles": {
+		"general": "Général",
+		"advanced": "Avancé",
+		"templates": "Notifications"
+	},
+	"alertMessages": {
+		"logoWrongType": "Votre logo doit être au format JPEG ou PNG.",
+		"logoWrongSize": "Votre logo ne doit pas excéder 190px en largeur et 72px en hauteur.",
+		"deleteConfirm": "Ceci va complètement supprimer les informations de Branding Général et Avancé. Voulez-vous continuer?",
+		"closeTemplateConfirm": "Tout changement non-sauvegardé fait sur ce template seront perdu. Voulez-vous continuer?",
+		"templateUpdateSuccess": "Template mis à jour avec succès.",
+		"templatePreviewSuccess": "L'apperçu de notification a été envoyé à {{email_address}}",
+		"templateRestoreSuccess": "Template remis à défaut avec succès.",
+		"__comment": "UI-1473: Adding favicon upload",
+		"__version": "v3.20_s5",
+		"iconWrongSize": "Votre icone ne doit pas excéder 64px en largeur et 64px en hauteur."
+	},
+	"generalBranding": {
+		"mainTitle": "Branding Général",
+		"logoLabel": "Téléversez votre logo",
+		"logoSize": "Taille maximum: 190px par 72px",
+		"logoFormat": "Format: JPEG ou PNG",
+		"companyNameLabel": "Nom de votre entreprise",
+		"companyWebsiteLabel": "Lien vers le site de votre entreprise",
+		"domainLabel": "Nom de domaine",
+		"languageLabel": "Langue",
+		"helpLabel": "Lien vers l'Aide / Wiki",
+		"termsLabel": "Lien vers les conditions d'utilisation",
+		"poweredByLabel": "Powered by 2600hz",
+		"welcomeLabel": "Message d'acceuil personalisé",
+		"__comment": "UI-",
+		"__version": "v3.20_s5",
+		"realmSuffix": "Suffixe du Royaume",
+		"realmSuffixHelp": "Ce suffixe sera utilisé lors de la création de compte depuis l'application de Gestion de Comptes",
+		"__comment": "UI-1470: Adding applicationTitle field",
+		"__version": "v3.20",
+		"applicationTitle": "Nom de l'onglet",
+		"__comment": "UI-1473: Adding favicon upload",
+		"__version": "v3.20_s5",
+		"faviconLabel": "Téléversez votre icone",
+		"faviconSize": "Taille maximum: 64px by 64px",
+		"__comment": "UI-1497: Adding callReportEmail",
+		"__version": "v3.20_s5",
+		"callReportEmail": "Adresse e-mail pour les reports d'appel"
+	},
+	"advancedBranding": {
+		"mainTitle": "Branding Avancé",
+		"porting": {
+			"title": "Port de numéros",
+			"allowCustomerRequest": {
+				"title": "Envoi des requêtes de port:",
+				"yes": "Autoriser mes clients à envoyer des requêtes",
+				"no": "J'enverrai moi-même les requêtes pour mes clients"
+			},
+			"manageCustomerPorts": {
+				"title": "Gérer les requêtes de port:",
+				"yes": "Je veux gérer les ports de numéros sur mon compte",
+				"no": "Je veux laisser 2600hz gérer les ports de numéros sur mon compte"
+			},
+			"supportLabel": "Contact de support",
+			"supportPlaceholder": "support@domaine.com",
+			"loaLabel": "\"Letter of Authorization\"",
+			"loaPlaceholder": "http://monentreprise.com/loa",
+			"resporgLabel": "\"Resporg\"",
+			"resporgPlaceholder": "http://monentreprise.com/resporg"
+		},
+		"carrier": {
+			"title": "Carrier",
+			"choices": {
+				"title": "Choix disponible à l'utilisateur afin de configurer la route \"no_match\":",
+				"list": {
+					"useBlended": "Utiliser les resources globales",
+					"useReseller": "Utiliser les resources du revendeur",
+					"byoc": "Utiliser les resources de ce compte"
+				},
+				"help1": "L'option listée en premier sera celle selectionnée par défaut.",
+				"help2": "Autoriser plus d'une option dans cette liste donnera accès à la configuration de cette option à l'utilisateur."
+			}
+		}
+	},
+	"templatesBranding": {
+		"mainTitle": "Gérer les Templates",
+		"templateNames": {
+			"reset_password": "Réinitialisation de mot de passe",
+			"welcome": "Bienvenue",
+			"new_account": "Nouveau Compte",
+			"first_registration": "Premier enregistrement",
+			"first_call": "Premier Appel",
+			"transaction": "Transaction",
+			"low_balance": "Faible Balance",
+			"abnormal_hangup": "Coupure d'Appel",
+			"system_alert": "Alerte Système",
+			"deregister": "Désenregistrement",
+			"fax_to_email": "Fax vers Email",
+			"inbound_error_to_email": "Inbound Error to Email",
+			"inbound_to_email": "Inbound to Email",
+			"outbound_error_to_email": "Outbound Error to Email",
+			"outbound_to_email": "Outbound to Email",
+			"voicemail_to_email": "Voicemail to Email",
+			"voicemail_full": "Voicemail Full",
+			"new_port_request": "New Port Request",
+			"ported": "Ported",
+			"port_cancelled": "Port Cancelled",
+			"cnam_request": "CNAM Request",
+			"vanity_number_request": "Vanity Number Request"
+		},
+		"templateCategories": {
+			"account": "Comptes",
+			"billing": "Facturation",
+			"system": "Système",
+			"reseller": "Alertes Revendeur/Compte",
+			"fax": "Fax",
+			"voicemail": "Boite vocale",
+			"port_request": "Porting",
+			"numbers": "Gestion des numéros",
+			"misc": "Divers"
+		},
+		"from": "From:",
+		"to": "To:",
+		"bcc": "BCC:",
+		"subject": "Subject:",
+		"macros": "Macros",
+		"recipientTypes": {
+			"specified": "Specified: Write down a list of comma-separated e-mail addresses.",
+			"admins": "Admins: This e-mail will be sent to all the account administrators.",
+			"original": "Original User: This e-mail will be sent to the original user that triggered it."
+		},
+		"htmlBody": "HTML Body",
+		"textBody": "Plain Text Body",
+		"previewHeader": "You can preview this notification by sending a test e-mail to the following address:",
+		"previewEmail": "E-mail",
+		"previewSend": "Send",
+		"restoreButton": "Restore to default",
+		"restoreButtonDisabled": "No modification has been saved for this notification yet. If you want to keep the default notification, simply click on \"Cancel\".",
+		"restoreWarning": "This notification template will be restored to its default values, and any customization you made will be discarded.",
+		"editIconTooltips": {
+			"disabled": "DISABLED: This template has been disabled. No email will be sent by the system for this notification until you re-enable it.",
+			"custom": "CUSTOM: This template has been customized. Emails sent by the system for this notification will be using this custom template.",
+			"default": "DEFAULT: This template has not been customized. Emails sent by the system for this notification will be using the default template."
+		}
+	},
+	"saveInfoMessage": "Certains changements ne prendront effet qu'après rechargement de l'application.",
+	"welcomeWysiwyg": {
+		"fontSizes": {
+			"1": "Très Petit",
+			"2": "Petit",
+			"3": "Moyen 1",
+			"4": "Moyen 2",
+			"5": "Moyen 3",
+			"6": "Large",
+			"7": "Très Large"
+		}
+	},
+	"accessForbidden": "L'app de Branding est réservée uniquement aux comptes revendeurs.",
+	"dnsBranding": {
+		"check": "Vérifier",
+		"label": "Nom de domaine que vous souhaitez blanchir:",
+		"info": "Basé sur votre sélection de {{variable}}, veulliez configurer votre DNS comme il suit:",
+		"table": {
+			"purpose": "Objectif",
+			"subDomain": "Sous-domaine",
+			"recordType": "Type d'enregistrement",
+			"expectedRecordData": "Configuration attendue",
+			"setupProperly": "Correctement configuré"
+		},
+		"toastr": {
+			"error": {
+				"invalidDomain": "Veuillez indiquer un nom de domaine à vérifier !"
+			}
+		}
+	}
+}

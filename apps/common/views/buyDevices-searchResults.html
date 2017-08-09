@@ -1,0 +1,8 @@
+{{#each devices}}
+	<div id="{{this.array_index}}_div" class="device-box device-wrapper" {{#if this.selected}}style="display:none;"{{/if}}>
+		<button data-array_index="{{this.array_index}}" class="monster-button monster-button-primary non-fixed add-device">{{@root.i18n.buyDevices.add}}</button>
+		<span class="device-value">{{this.formatted_value}}</span>
+	</div>
+{{else}}
+	<div class="no-result">{{@root.i18n.buyDevices.noSearchResult}}</div>
+{{/each}}

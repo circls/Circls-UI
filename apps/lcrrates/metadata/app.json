@@ -1,0 +1,63 @@
+{
+   "name": "lcrrates",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "source_url": "http://kazoo.allip.ovh/apps/lcrrates",
+   "i18n": {
+       "en-US": {
+           "label": "LCR-Rates",
+           "description": "Set up and manage LCR-Rates from your suppliers.",
+           "extended_description": "You can setup and manage your LCR-Rates per web.",
+           "features": [ "rateentry per web manage", "create new LCR-Rates per csv upload" ]
+       },
+       "ro-RO": {
+           "label": "LCR-Rates",
+           "description": "Set up and manage LCR-Rates from your suppliers.",
+           "extended_description": "You can setup and manage your LCR-Rates per web.",
+           "features": [ "rateentry per web manage", "create new LCR-Rates per csv upload" ]
+       },
+       "ru-RU": {
+           "label": "LCR-Rates",
+           "description": "Set up and manage LCR-Rates from your suppliers.",
+           "extended_description": "You can setup and manage your LCR-Rates per web.",
+           "features": [ "rateentry per web manage", "create new LCR-Rates per csv upload" ]
+       },
+       "nl-NL": {
+           "label": "LCR-Rates",
+           "description": "Set up and manage LCR-Rates from your suppliers.",
+           "extended_description": "You can setup and manage your LCR-Rates per web.",
+           "features": [ "rateentry per web manage", "create new LCR-Rates per csv upload" ]
+       },
+       "de-DE": {
+           "label": "LCR-Lieferantentarife",
+           "description": "Einrichten und verwalten Ihrer Verbindungstarife Ihrer Liefereranten.",
+           "extended_description": "Sie können die Verbindungstarife einpflegen und verändern.",
+           "features": [ "Einzelne Tarife erstellen und anpassen", "Neue Tarife upload per csv" ]
+       },
+       "it-IT": {
+           "label": "LCR-Rates",
+           "description": "Set up and manage LCR-Rates from your suppliers.",
+           "extended_description": "You can setup and manage your LCR-Rates per web.",
+           "features": [ "rateentry per web manage", "create new LCR-Rates per csv upload" ]
+       },
+       "fr-FR": {
+           "label": "LCR-Rates",
+           "description": "Set up and manage LCR-Rates from your suppliers.",
+           "extended_description": "You can setup and manage your LCR-Rates per web.",
+           "features": [ "rateentry per web manage", "create new LCR-Rates per csv upload" ]
+       },
+       "es-ES": {
+           "label": "LCR-Rates",
+           "description": "Set up and manage LCR-Rates from your suppliers.",
+           "extended_description": "You can setup and manage your LCR-Rates per web.",
+           "features": [ "rateentry per web manage", "create new LCR-Rates per csv upload" ]
+       }
+   },
+   "tags": [ "carrier", "reseller" ],
+   "author": "ALLIP.ovh",
+   "version": "1.0",
+   "license": "MPL",
+   "price": "0.00",
+   "icon": "lcrrates_app.png",
+   "screenshots": [ "lcrrates_1.png", "lcrrates_2.png" ],
+   "pvt_type": "app"
+}

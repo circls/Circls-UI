@@ -1,0 +1,629 @@
+{
+        "regextern": {
+                "dialogTitle": "External Number-Registration",
+                "title": "External Registration",
+                "label": "External Registration",
+                "help": "This Number will be external registered for incomming calls.",
+                "successUpdate": "You successfully updated the external registration of the number {{phoneNumber}}",
+               "type": "Type",
+               "proxy": "Proxy",
+               "username": "Username",
+               "extension": "Extension",
+               "password": "Passwort",
+               "active": "Reg. active",
+               "didtype": "DID-Typ",
+               "didprovider": "Origin Country",
+               "didprovider": "Provider-Name",
+               "didinfo": "Informations",
+               "providerurl": "Provider-URL-Portal",
+               "providerurltype": "API-Typ",
+               "providerusr": "Regname",
+               "providerpass": "Reg-Passwort",
+               "reged_email": "Reg-Email",
+               "pvt_activestart": "Date Activ",
+               "pvt_activestartHelp": "At this date will automatic assigent this number to use",
+               "pvt_activestop": "Date Inactiv",
+               "pvt_activestopHelp": "At this Time it will automatic unassigent this number to use",
+               "pvt_created": "Date created",
+               "pvt_changed": "System actived",
+               "pvt_modified": "Date modified",
+               "placeholder_type": "gateway",
+               "placeholder_proxy": "sip.voip.com",
+               "placeholder_username": "0525081922",
+               "placeholder_extension": "+41525081922",
+               "placeholder_password": "********",
+               "placeholder_active": "false",
+               "placeholder_didtype": "sip",
+               "placeholder_didprovider": "NETSTREAM",
+               "placeholder_didinfo": "host=sip.voip.com",
+               "placeholder_providerurl": "www.voip.com",
+               "placeholder_providerurltype": "json",
+               "placeholder_providerusr": "",
+               "placeholder_providerpass": "",
+               "placeholder_reged_email": "",
+               "placeholder_pvt_activestart": "1431282897",
+               "placeholder_pvt_activestop": "1431282897",
+               "placeholder_pvt_created": "1431282897",
+               "placeholder_pvt_modified": "1431282897",
+               "status": "Regedstate",
+               "numberstate": "Number State",
+               "force_outbound": "OnNet No. use",
+               "didemergency": "Emergency-Provider"
+        },
+	"accountBrowser": {
+		"missingAccount": "nu cont găsit",
+		"addAccount": "adaugă cont",
+		"searchDatabase": "căutare număr în baza de date"
+	},
+	"numbers": {
+		"mainNumber": "numărul de birou",
+		"conferenceNumber": "hauptkonferenz nummer",
+		"dialogSpare": {
+			"title": "listă de numere disponibile",
+			"headline": "Numărul disponibil de",
+			"headlineNoAccount": "numerele de selecție",
+			"noMatchingNumbers": "nici un număr cu informații de găsit.",
+			"noNumberSelected": "ei au ales orice număr. acestea trebuie să selectați cel puțin un număr din listă.",
+			"proceed": "Adăugați numere selectate"
+		},
+		"bulkActions": "toți împreună",
+		"buy": "numărul de chirie",
+		"buyNumberLinks" : {
+			"regular": "număr local",
+			"tollfree": "Numărul în valoare de mai mult",
+			"vanity": "Cautare dupa cod"
+		},
+		"port": "usi",
+		"assignTo": "apartine lui",
+		"confirmDelete": "doriți să ștergeți numere selectate din contul lor încă ?",
+		"delete": "șterge",
+		"deleteE911Error": {
+			"message": "Următoarele numerele nu pot fi șterse. trebuie să fie configurat cu cel puțin un număr de apel de urgență.",
+			"account": "cont",
+			"numbers": "numerele"
+		},
+		"numbers": "numerele",
+		"addNumbers": "Adăugați număr",
+		"moveNumbers": "trece la",
+		"searchNumbers": "Numărul de căutare...",
+		"go": "continuă să",
+		"deleteNumbers": "șterge",
+		"successDelete": "ei au {{ count }} numărul de telefon (e) scos din contul lor.",
+                "successMove": "ei au succes {{ count }} numărul de telefon (e) de la următorul cont",
+                "noSpareNumber": "nu există numere gratuite în acest cont.",
+                "noUsedNumber": "nu sunt numere implicate în acest cont.",
+                "spareNumbers": "numere gratuite",
+                "usedNumbers": "Numerele active din uz",
+                "helpSpareNumbers": "prezinta lista de numere care nu sunt active pentru acest cont și conturile.",
+                "helpUsedNumbers": "Lista arată numerele utilizate pentru acest cont și în conturile lor.",
+                "callflow": "Hosted PBX",
+                "trunkstore": "trunking",
+                "notUsedNumber": "aceste numere nu sunt folosite, dar fac parte din contul {{ nume de cont }}",
+                "notSpareNumber": "{{ număr}}",
+                "numberNotFound": "numărul introdus nu a fost găsit. asigurați-vă că sunt că ele au intrat numărul total de numere de piese se uita la acest lucru nu este acceptat (formatarea nu se rostogolească într-adevăr!)",
+                "failoverIconHelp": "Acest simbol înseamnă că este setat un ocol nu pe acest număr.",
+                "cnamOutboundIconHelp": "Acest simbol înseamnă că fostul apelantului-id este setat la acest număr.",
+                "cnamInboundIconHelp": "Acest simbol înseamnă că este setat la acest numărde intrare apelantului-id.",
+                "e911IconHelp": "Acest simbol înseamnă că este setat adresa de urgență în acest număr.",
+                "localIconHelp": "Acest simbol indică faptul că acest număr este un număr local.",
+		"dialogConfirm": {
+			"from": "variind de la",
+			"cancel": "desprinde",
+			"delete": {
+				"title": "șterge numere-Confirmați",
+				"questionPartOne": "sunt sigur că asta ?",
+				"questionPartTwo": "numărul pe care doriți să-l ștergeți (e) ?",
+				"button": "Ștergeți numărul (e)"
+			},
+			"move": {
+				"title": "muta numere-Confirmați",
+				"questionPartOne": "esti sigur ca",
+				"questionPartTwo": "Numărul (numerele) la",
+				"questionPartThree": "vrea să se mute ??",
+				"button": "Numărul mutare (e)"
+			}
+		},
+		"prependIconHelp": "Acest simbol indică faptul că acest număr este afișat cu un text vorgestelltem.",
+                "sync": {
+                        "label": "sincroniza",
+                        "success": "au finalizat cu succes sincronizarea cu baza de date.",
+                        "help": "în cazul în care nu au numerele din categoria, este necesar să se synchronisatione la active."
+                },
+                "portIconHelp": "This number is in the process of being ported and will be deleted if the port fails. It only appears for setting up purposes and is not configured to handle calls",
+                "deleteRecapDialog": {
+                        "headline": "Find below the summary of which numbers have been successfully deleted and the ones which haven't. Click on Continue to go back to the Numbers inventory.",
+                        "title": "Recap of the Delete operation",
+                        "continue": "Continue"
+                }
+        },
+	"callerId": {
+                "CallerIdName": "apelantului-id -name",
+                "callerIdPlaceholder": "peter miller",
+                "dialogTitle": "apelantului alegere ID-ul",
+                "errorUpdate": "eroare atunci când modificareapelantului id-ul cu numărul.",
+                "help": {
+                        "outbound": "Acest nume este afișat ca id-ul lor apelantului, în cazul în care fac apeluri de ieșire. (15 caractere max.) O conversie poate dura pana la 72 de ore în cer.",
+                        "inbound": "Dacă activați această funcție, numele apelantului este afișat în id-ul lor apelantului atunci când apelează intrare primit."
+    		},
+		"label": "ID-ul apelantului",
+                "successCnam": "le-au actualizat numărul de apel de id- a {{ numărul de telefon }}",
+                "successRemoveCnam": "le-au eliminat cu succescall- id-ul {{ numărul de telefon }}",
+                "noCallerId": "nu există nici un apel id pentru numărul {{ numărul de telefon }}",
+                "inboundTitle": "intrare apelantului-id -name",
+                "outboundTitle": "de ieșire call- id -name"
+        },
+	"e911": {
+                "addressLine1": "adresa rândul",
+                "addressLine2": "Podea",
+                "city": "oraș",
+                "dialogTitle": "Schimbarea adresa notruf",
+                "errorUpdate": "în actualizarea apel de urgență adresă a fost o eroare.",
+                "gmapPinLabel": "+ notruf adresa",
+                "infoBox": "Această adresă este serviciile de salvare indica atunci cand aleg din rândul acestora la serviciile de apeluri de urgență.",
+                "label": "notrufdienste",
+                "lastE911Error": "ele trebuie să fi făcut cel puțin un număr de la apelurile lor cont de urgență. vă rugăm să pune-l pe un număr diferit înainte de numărul pot fi șterse.",
+                "postal": "cod poștal",
+                "rotatedText": "pentru serviciile de salvare",
+                "state": "regiune",
+                "successE911": "numărul de apel de urgență de la adresa {{ numărul de telefon }} a fost actualizat.",
+                "title": "notrufadresse",
+                "verifyLocation": "Revizuirea adresa de apel de urgență"
+        },
+	"failover": {
+		"activate": "activa",
+		"alternateNumber": "alt număr",
+		"errorUpdate": "eroare la actualizarea numărului eșec redirecționare.",
+		"failoverTitle": "stabilirea numărului de redirecționare Fail",
+		"failoverText": "dacă apel primit nu poate fi conectat, conectați cu",
+		"helpFailover": "dacă apel primit nu poate fi conectat, de exemplu, (Cu întrerupere, eșec) poate un număr alternativ sau selectați aparat VoIP. în cazul în care este un număr extern se purta logic costul pentru ea.",
+		"invalidFailoverNumber": "Numărul de eșec de redirectionare este incorect, vă rugăm să încercați din nou",
+		"label": "eșec ocol",
+		"noDataFailover": "nu intrare se face, încearcă din nou",
+		"or": "sau",
+		"removeFailover": "șterge",
+		"sipAddress": "SIP-adresa",
+		"successFailover": "ei au actualizat erfogeich Neprezentarea de numărul de ocolire {{ numărul de telefon }}.",
+		"successRemove": "le-au eliminat cu succes Neprezentarea de numărul de ocolire {{ numărul de telefon }}."
+	},
+	"buyNumbers": {
+                "defaultCountry": "RO",
+		"buyDialogTitle": "numărul de chirie",
+		"countrySelectLabel": "selecteaza tara",
+		"cityInputLabel": "Căutare după oraș sau cod",
+		"seqCheckboxLabel": "arată numai numere consecutive.",
+		"seqInputLabel": "cât de multe serii in aceasta ?",
+		"seqNumAlert": "ei au dimensiunea blocului în numerele conectate în serie (a) specifica. (Un număr 2-999)",
+		"seqNumParamLabel": "de {{ }} sequentialnumbers în serie conectat numere (facut)",
+		"areaCodeRadioLabel": "Selectați cod",
+		"noInputAlert": "au nevoie să introduceți un cod sau cel mai apropiat pentru a continua",
+		"searchResults": "Căutare după",
+		"backToSearch": "Înapoi la căutare",
+		"loadingNumbers": "Încărcați numerele...",
+		"numberAddedSingle": "Adăugați număr",
+		"numberAddedPlural": "numerele adăugate",
+		"selectedNumbers": "selecție de numere",
+		"moreInfo": "Click aici pentru mai multe informatii",
+		"tollfreeRadioLabel": "alege un cod pentru numere gratuite",
+		"buyNumbers": "numărul de chirie",
+		"noSelectedNumAlert": "ei nu au selecta un număr de chirie.",
+		"buyNumber": "numărul de chirie",
+		"searchAgain": "Căutați un alt număr",
+		"summaryTotalNumbers": "Numerele total formate",
+		"summaryTotalCharges": "cost total",
+		"noSearchResult": "aceasta nu ar putea fi cu numărul ei de selecție găsit. încercați să-l cu alte tastat din nou.",
+		"partialNumAlert": "vă rugăm să introduceți un număr valid. Numerele de piese nu sunt permise.",
+		"areaCode": "cod regional",
+		"add": "cauza",
+		"month": "lună",
+		"search": "căuta",
+		"checkingMessage": "Numerele sunt verificate...",
+		"processingMessage1": "Numerele sunt activate...",
+		"processingMessage2": "vă rugăm să așteptați până când procesul este complet.",
+		"unavailable": "inaccesibil",
+		"unavailableMessage": "Oops! unele numere nu mai sunt selectabile. pe fără ele, sau se întorc la rezultatele căutării.",
+		"unavailableServiceAlert": ". serviciu este disponibilă în prezent, îmi pare rău pentru neplăcerile create. vă rugăm să încercați din nou mai târziu.",
+                "continue": "continuă să",
+                "backToSearchResults": "Du-te înapoi la rezultate căutare pentru",
+                "cancel": "desprinde",
+                "confirm": "a aplica",
+                "confirmInfoMsg1": "va plăti adăugat la contul lor și la 15 minute după achiziționarea a fi gata.",
+                "confirmInfoMsg2": "cardul la dosar credit va costa imediat pentru recurente servicii de personalizare direct de ciclul lor de declarație va fi proporțional..",
+                "vanitySearchLabel": "căuta un vanitate număr local sau gratuit",
+                "vanitySearchInfo1": "ei pot plăti pentru orice combinație de litere sau căutare.",
+                "vanitySearchInfo2": "în cazul în care nu pot găsi un număr specific, nu ezitati sa ne trimiteti o cerere, tot ce putem bazele de date de către și a vedea dacă ne la numărul doresc. ar fi o singură dată taxa de 20 dolari pentru a solicita un număr special.",
+                "sendrequest": "Trimite-ne o anchetă",
+                "to": "pentru",
+                "partialPurchaseFailure": "îmi pare rău, să plătească următoarele nu a putut fi achiziționate"
+        },
+        "port": {
+                "numberExample": "+41525081922",
+                "dialogTitle": "Număr-portare",
+                "addButton": "cauza",
+                "saveButtonPartOne": "a salva",
+                "saveButtonPartTwo": "continua mai târziu",
+                "labelSaveButton": "în cazul în care nu ați salvat orice documente necesare Nocht, apăsați salvați și a reveni la această pagină.",
+                "cancelButton": "desprinde",
+                "cancelOrderButton": "Anulați această comandă",
+                "cancelOrderPopup": "sunt sigur că doriți să anulați acest transfer ?",
+                "faqLink": "vedere de port-faq -help",
+                "videoLink": "Uita-te la filme",
+                "contactUsLink": "contactați-ne",
+                "nextButton": "continuă să",
+                "progressBarLeft": "numerele de intrare",
+                "progressBarMiddle": "Trimite prin documente",
+                "progressBarRight": "a comanda",
+                "requiredConditions": "Please agree with all the conditions",
+                "comingSoon": "Coming Soon!",
+                "unknownCarrier": "unknown carrier",
+                "state": {
+                        "completed": "terminat",
+                        "rejected": "respins",
+                        "pending": "pending",
+                        "scheduled": "planificat",
+                        "submited": "predat",
+                        "unconfirmed": "neconfirmate"
+                },
+                "commentsPopup": {
+                        "title": "comentarii",
+                        "Privat": "privat",
+                        "comment": "comentariu",
+                        "timestamp": "are un comentariu"
+                },
+                "infoPopup": {
+                                "title": "cerere informatii",
+                                "transfer": {
+                                        "legende": "Informații portarea",
+                                        "label": {
+                                                "name": "nume",
+                                                "notificationEmail": "notificare prin e-mail",
+                                                "transferDate": "termenul",
+                                                "temporaryNumbers": "numerele temporare",
+        					"carrier": "purtător"
+        				}
+			},
+			"bill": {
+				"legend": "info proiect de lege"
+			},
+			"confirm": {
+				"deleteComment": "sunt sigur că doriți să ștergeți nota ?"
+			}
+		},
+		"addNumbers": {
+                        "title": "Ne-ar dori să le mulțumesc pentru că portul ei numerele lor pentru a ne exprima și ne astfel încredere în ea.",
+                        "labelAddNumbers": "care numere doresc să port. da unul sau mai multe numere, în viitor un cadru în picioare."
+                },
+                "confirmOrder": {
+                        "titlePartOne": "mare!",
+                        "titlePartTwo": "Numărul este gata de a transfera!",
+                        "titlePartTwoBis": "pay're gata să transfere!",
+                        "labelEmail": "care ne notificată după absolvire ?",
+                        "labelDate": "în cazul în care doresc să transfere plata",
+                        "dateInfoPartOne": "important",
+                        "dateInfoPartTwo": "nu putem garanta aceeași zi, dar vom încerca noastre cele mai bune, sau vă informeze când schimbările, vă rugăm să rețineți că porturile pot fi de 3 la 30 de zile în adoptarea sofisticat..",
+                        "labelTemporaryNumbers": "ei doresc să aibă numere temporare ?",
+                        "toggleButtonOn": "si",
+                        "toggleButtonOff": "nu face",
+                        "labelTemporaryNumbersCount": "câte numere vrei sa inchiriezi ?",
+                        "temporaryNumbersInfoPartOne": "plătească acestea vor fi adăugate automat la aplicația curentă, acestea vor fi facturate.",
+                        "temporaryNumbersInfoPartTwo": "1/lună/număr ștergeți aceste numere atunci când acestea se completa la transferul numărul dvs. existent, pentru a evita costuri..",
+                        "orderSummaryTitle": "rezumat comanda",
+                        "labelOrderDate": "data comandă",
+                        "labelTransferDate": "Transfer datum termen",
+                        "labelNumbersTotal": "totală de remunerare",
+                        "labelOrderTotal": "Pentru totală",
+                        "orderTotalInfoPartOne": "Odată taxă",
+                        "orderTotalInfoPartTwo": "5/număr va fi debitată din contul tău.",
+                        "submitButton": "introduce"
+                },
+                "manageOrders": {
+                        "orderListInfo": "din cauza naturii de plata lor sau operatorul de transport, le putem împărți cererea lor în poziția de a toate comenzile, pentru a procesa o la un moment dat",
+                        "eulaInfo": "În următorul pas, trebuie să colecteze proiectul de lege, pentru a arăta că plătesc proprietarii de drept ai acestora facă acest lucru prin lege, putem împărți ord lor mai departe, dacă nu plătesc factura care sunt menționate sarcină.",
+                        "eulaWarningPartOne": "Important!",
+                        "eulaWarningPartTwo": "Vă rugăm să înțelegeți și sunteți de acord cu următoarele",
+                        "labelCancelService": "Vreau vechiul meu de serviciu până după plata în întregime a transmis nu anula,",
+                        "labelCancelNumbers": "Înțeleg toate celelalte numere de pe contul vechi poate fi reziliat de vechiul furnizor,",
+                        "labelChangeFee": "Înțeleg vechiul meu purtător poate percepe o taxă de reziliere anticipată,",
+                        "labelStandardNumbers": "sunt numerele de telefon standard, care nu sunt prevăzute (cum ar fi [ stea-inel ])."
+                },
+                "pendingOrders": {
+                        "title": "comenzi deschise",
+                        "newPortLink": "cererea de portare (portare)",
+                        "tableOrderName": "nume",
+                        "tableOrderDate": "timp dorit",
+                        "tableOrderStatus": "starea",
+                        "tableOrderAction": "acțiune",
+                        "continueButton": "continuă să",
+                        "Infobutton": "info",
+                        "noOrder": "nici un ordin",
+                        "states": {
+                                "completion": "este gata",
+                                "progress": "în curs",
+                                "ready": "adoptată",
+                                "rejection": "respins",
+                                "waiting": "a astepta",
+                                "unconfirmed": "nu a confirmat"
+                        }
+                },
+                "resumeOrder": {
+                        "title": "să îi determine următoarele comenzi, una la un moment",
+                        "labelOrder": "comandă de achiziție",
+                        "completeOrderButton": "acestea conduc această misiune"
+                },
+                "submitDocuments": {
+                        "labelOrderName": "Numele memorabil pentru acest portare",
+                        "labelOrderNameHelper": "z.b. companie cu numere locale -office, Zurich",
+                        "billInfoPartOne": "încărcați factura de telefon actual și completați cont de date ca pe calcularea furnizorul lor actual.",
+                        "billInfoPartTwo": "află mai multe",
+                        "uploadBillButton": "încărcați factura de telefon",
+                        "uploadBillHelper": "sprijin numai în format pdf",
+                        "labelAccountName": "numele pe proiectul de lege",
+                        "labelAddress": "adresa stradă",
+                        "labelCity": "oraș",
+                        "labelState": "regiune",
+                        "labelZipCode": "cod poștal",
+                        "orderListInfoPartOne": "Asigurați-vă că următoarele numere de pe proiectul de lege, care sunt afișate de încărcare.",
+                        "orderListInfoPartTwo": "dacă numerele nu te uita la proiectul de lege, șterge sau acest contract pentru toate numerele este împiedicată.",
+                        "loaTitlePartOne": "Vă rugăm să completați declarația proxy (LOA) în întregime.",
+                        "loaTitlePartTwo": "ceea ce este LoA ?",
+                        "loaDownloadStep": "descărcare",
+                        "loaSignStep": "Numerele din LoA format",
+                        "loaUploadStep": "pentru a încărca",
+                        "loaHelperPartOne": "pentru cei care nu au un scaner, ne poate identifica prin scrisoare sau prin fax.",
+                        "loaHelperPartTwo": "singură dată taxa de 5,00",
+                        "loaHelperPartThree": "formular Loa digitală.",
+                        "loaHelperPartFour": "cum de a semna documente",
+                        "loaHelperPartFive": "electronic fără plată.",
+                        "changeButton": "a schimba"
+                },
+                "toastr": {
+                        "success": {
+                                "request": {
+                                        "Update": "cererea de portare a fost actualizat"
+                                },
+                                "comment": {
+                                        "delete": "Comentariul a fost șters cu succes"
+                                }
+                        },
+                        "error": {
+                                "request": {
+                                        "Aktualisieren": "cererea de portare nu a reușit!"
+                                },
+                                "mimeTypes": "Următoarele fișiere nu sunt în format acceptat",
+                                "size": "Următoarele fișiere sunt prea mari",
+                                "submit": {
+                                        "document": "Please upload the signed LOA and the bill corresponding to the numbers you want to port"
+                                },
+                                "number": "the number is not valid!",
+                                "numbers": "numărul introdus este invalid!"
+                        }
+                },
+                "noScheduledDate": "None",
+                "addDate": "Add date",
+                "addMoreNumbers": "add more numbers",
+                "faqdialogTitle": "Porting Manager FAQ",
+                "faqContent": [
+                        {
+                                "question": "What is the difference between an LOA and a RespOrg?",
+                                "answer": "The LOA (Letter Of Authorization) is used when porting regular telephone numbers. The RespOrg (Responsible Organization) is used when porting Toll-free numbers."
+                        },
+                        {
+                                "question": "How long will my port take?",
+                                "answer": "This cannot be determined until the port request is submitted. We have seen port requests scheduled within 3 to 4 days from the submittal date, but have come across some that take several weeks to a month before a scheduled date is granted, due to rejections."
+                        },
+                        {
+                                "question": "I looked at the current bill copy and noticed the numbers I am requesting to port are not listed. Can I still submit the request using this bill copy?",
+                                "answer": "Yes, you are more than welcome to submit using the bill copy as long as you know all numbers that are associated with the bill/account."
+                        },
+                        {
+                                "question": "Will I be notified of a scheduled port date so I can ensure my client's account is set up?",
+                                "answer": "Yes, we will notify you of the scheduled port date at least a day or two prior to the scheduled date. We will also notify you once the port completes."
+                        },
+                        {
+                                "question": "Can I set up call routing prior to the scheduled port date?",
+                                "answer": "Yes, and we recommend this for a smooth transition."
+                        },
+                        {
+                                "question": "My client has international numbers. Can I port international numbers?",
+                                "answer": "At this time, we can only port some Canadian numbers. This may vary depending upon if your provider has coverage in the region of the number(s)."
+                        },
+                        {
+                                "question": "How quickly will I know if my port request has been rejected?",
+                                "answer": "You will be notified, by our Porting Department, that a request has been rejected within that day or the subsequent day we receive the notice."
+                        },
+                        {
+                                "question": "How do I cancel a port in progress?",
+                                "answer": "If you decide to cancel a port, update the note section in the Porting Manager App of Smart PBX"
+                        },
+                        {
+                                "question": "What is the port-out process (from your provider to a new provider)?",
+                                "answer": "To port out a number, submit the request to the gaining provider. If you receive a rejection notification from the gaining carrier for an additional document, please contact Support and we will try to help. Once you receive a port date from the gaining provider, you are responsible for deleting the number from the Account."
+                        },
+                        {
+                                "question": "What is a bulk port?",
+                                "answer": "We consider a bulk port to be 100+ numbers."
+                        },
+                        {
+                                "question": "Is there a discount available for bulk ports?",
+                                "answer": "Bulk ports are considered over 100 numbers. For inquiries about discounts, please contact your Account Manager."
+                        },
+                        {
+                                "question": "Do I have to submit a bulk port through the UI?",
+                                "answer": "No, submit bulk ports to Support and our Porting Department will handle them for you. When submitting a Support Ticket ensure to include the LOA (Letter Of Authorization?  and a current bill pay."
+                        }
+                ]
+        },
+        "chooseModel": {
+                "brandHeadline": "alege brandul",
+                "deviceHeadline": "alege modelul",
+                "deviceSelected": "care le-au ales",
+                "missingBrand": "marca mea nu este listat aici",
+                "missingDevice": "Modelul meu nu este listat aici",
+                "title": "selecție a aparatului",
+                "create": "încheia Setări dispozitiv",
+		"macAddress": "mac- adresa",
+		"deviceName": "propriu denumire echipament",
+		"deviceInformation": "Informații dispozitiv",
+                "deviceLink": "More Productinfo from Vendor",
+                "deviceNameplaceholder": "John Doo",
+                "macaddress_havetochange": "For change of a phone, you have to enter a new mac-address, this can be found on the backside of your SIP-Phone!",
+                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+	},
+	"servicePlanDetails": {
+		"rate": "tarife",
+		"activationCharge": "costurile capitalizate",
+		"exceptions": "excepții",
+		"planLines": {
+			"phone_numbers": "Abo numere de telefon",
+			"number_services": "Abo numerele de abonament",
+			"limits": "Abo limită",
+			"devices": "Abo dispozitive",
+			"users": "Abo utilizator",
+                        "supports": "Abo Support",
+                        "connects": "Abo Internet",
+                        "branding": "Abo Branding",
+                        "ips": "Abo Carrier IPs",
+                        "ui_apps": "Abo UI-Apps"
+		},
+		"noServicePlan": "nici un plan tarifar selectat.",
+                "overrides": "Overrides",
+                "addOverrides": "Add",
+                "noOverrides": "No Overriden Values. Click on the Add link to customize this service plan!",
+                "planTitle": "Details Service Plan",
+                "keys": {
+                        "phone_numbers": "Phone Numbers",
+                        "number_services": "Number Services",
+                        "limits": "Limits",
+                        "devices": "Devices",
+                        "users": "Users",
+                        "branding": "Branding",
+                        "ips": "IPs",
+                        "ui_apps": "UI Apps",
+                        "port": "Port Request",
+                        "cnam": "CNAM Update",
+                        "e911": "e911 allow",
+                        "ata": "ATA",
+                        "cellphone": "Cell Phone",
+                        "fax": "Fax",
+                        "landline": "Landline",
+                        "mobile": "Mobile",
+                        "sip_device": "SIP Device",
+                        "sip_uri": "SIP URI",
+                        "smartphone": "Smartphone",
+                        "softphone": "Softphone",
+                        "outbound_trunks": "Outbound Trunks",
+                        "inbound_trunks": "Inbound Trunks",
+                        "twoway_trunks": "Twoway Trunks",
+                        "did_us": "US DID",
+                        "tollfree_us": "US Tollfree",
+                        "rate": "Rate",
+                        "activation_charge": "Activation charge",
+                        "minimum": "Minimum",
+                        "exceptions": "Exceptions",
+                        "supports": "Support",
+                        "service_pbxs": "PBX-Support",
+                        "security_pbxs": "PBX-Updates",
+                        "connects": "Internet",
+                        "dsl_ch_min": "DSL-Internet CH Minimal",
+                        "dsl_ch_standard": "DSL-Internet CH Standard",
+                        "dsl_ch_high": "DSL-Internet CH Premium",
+                        "dsl_modem": "DSL-Modem",
+                        "qos_router": "QoS-Router (without WLAN)",
+                        "qos_router_wlan": "QoS-Router (with WLAN)",
+                        "ui_apps": "UI Apps",
+                        "ata": "ATA-Gerät",
+                        "cellphone": "Handy",
+                        "Outbound_cnam": "Outgoing phonebook",
+                        "Inbound_cnam": "Incomming phonebook",
+                        "inbound_cnam": "Incomming phonebook",
+                        "outbound_cnam": "Outgoing phonebook",
+                        "prepend": "Prepend text",
+                        "emergency_ch": "Emergency Numbers",
+                        "service_ch": "Service Numbers Swiss",
+                        "service_pbx": "Service Numbers PBX",
+                        "internal": "PBX Internal",
+                        "names": "Names",
+                        "toll_ch": "Toll Numbers CH",
+                        "tollfree_ch": "0800-Numbers CH",
+                        "toll_de": "0900-Mehrwert Numbers DE",
+                        "tollfree_de": "0800-Numbers DE",
+                        "mobile_ch": "Mobile Numbers",
+                        "did_ch": "Landline Numbers Swiss",
+                        "did_de": "Landline Numbers Germany",
+                        "fixnet_ch": "Landline Numbers Swiss",
+                        "business_ch": "Business Numbers Swiss",
+                        "activation_charge": "activate",
+                        "minimum": "Minimal",
+                        "exceptions": "Exceptions",
+                        "rate": "monthly:",
+                        "CH_Numbers": "CH Numbers",
+                        "CH_Tollfree": "CH Tollfree",
+                        "Two-Way_Trunk": "Twoway Trunks",
+                        "Inbound_Trunk": "Inbound Trunks",
+                        "Outbound_Trunk": "Outbound Trunks",
+                        "Outbound_CNAM": "Outbound phonebook",
+                        "Inbound_CNAM": "Inbound phonebook",
+                        "Port_Request_Single": "Porting Single Request",
+                        "Port_Request_DID": "Porting Request (DDI)",
+                        "Emergency_Service": "Emergency Numbers",
+                        "user": "User",
+                        "admin": "Administrator",
+                        "callflows": "Callflow",
+                        "numbers": "Numbers",
+                        "branding": "Branding",
+                        "pivot": "Pivot",
+                        "userportal": "Userportal",
+                        "carrier": "Carrier",
+                        "Cluster-Manager": "Cluster-Manager",
+                        "rates": "Connection-Rates",
+                        "voip": "SmartPBX",
+                        "conferences": "Conference App",
+                        "accounts": "Accounts",
+                        "migration": "Migrations App",
+                        "mobile": "Handy Integration",
+                        "debug": "Monitoring",
+                        "pbxs": "PBX-Trunking",
+                        "ports": "Port Requests",
+                        "reporting": "Sales Reporting",
+                        "webhooks": "Webhooks",
+                        "alarms": "Pikett-Alarms",
+                        "_all": "All",
+                        "as": "As",
+                        "user": "Standard User",
+                        "admin": "Account Admin"
+                }
+        },
+        "ringingDurationControl": {
+                "distribute": "automatic call distribution",
+                "maxDurationTooltip": "apăsați-l pe teren de secunde pentru a schimba timpul maxim de apel. acestea trebuie 30-999 sec. a fi.",
+                "doNotRing": "nu inel",
+                "timeoutSec": "Sec"
+        },
+        "carrierSelector": {
+                "title": "purtător",
+                "headline": "alege strategia purtător pentru acest cont.",
+                "useBlended": {
+                        "friendlyName": "utiliza orice operator de transport",
+                        "help": "le folosesc pentru apelurile lor de ieșire, purtătorul preinstalat furnizorilor lor."
+                },
+                "useReseller": {
+                        "friendlyName": "utilizați {{ variabila }} purtător",
+                        "help": "îl folosesc cu {{ }} variabile transportatori.",
+                        "defaultFriendlyName": "utilizați purtătorul de reseller achiziționat.",
+                        "defaultHelp": "le folosesc pentru apelurile lor de ieșire, purtătorul de detailiștii lor."
+                },
+                "byoc": {
+                        "friendlyName": "ele au chiar un purtător (personalizat)",
+                        "help": "le folosesc pentru apelurile lor de ieșire, purtătorul ele pot fi ajustate cu aplicația de transport în sine."
+                },
+                "saveSuccess": "le-au salvat cu succes purtătorul de cont!",
+                "huntError": "setările pentru ruta (necunoscut) nu este integrat. Vă rugăm să faceți orice modificări în cazul în care doriți să păstrați aceste setări. În caz contrar, selectați o opțiune din lista!"
+        },
+        "numberPrepend": {
+                "dialogTitle": "setare pentru legatura număr de text prefix",
+                "title": "text vorgestellter",
+                "label": "prezentat",
+                "help": "acest text este numele adăugat la apelarea acestui număr. Ei uite așa numitul număr a fost ceea ce.",
+                "successUpdate": "textul prezentat a fost salvat cu succes pentru numărul {{ numărul de telefon }}."
+        }
+}

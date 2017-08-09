@@ -1,0 +1,290 @@
+{
+	"carriers": {
+		"ips": {
+			"title": "Welcome to the Carrier's App",
+			"subtitle": "It appears that the account you're using does not have enough IP addresses assigned. In order to begin using this application, you must select at least 1 IP address from 2 different zones. Please select the zones below: ",
+			"purchase": "Select these IPs",
+			"zones": {
+				"central": "Central",
+				"east": "East",
+				"west": "West"
+			},
+			"noZones": "It appears there are no \"Zones\" available for your account, please contact one of your sales representative!",
+			"noMore": "No More IPs available in this zone :(",
+			"skip": "I don't need to select any IP Address for this account, skip this step"
+		},
+                "brands": {
+                        "efon": "e-fon CH",
+                        "winet": "Winet CH",
+                        "netvoip": "Netvoip CH",
+                        "netswiss": "Netswisstelecom CH",
+                        "sipcall": "Sipcall CH",
+                        "sipgate": "Sipgate DE",
+                        "swisscom": "Swisscom CH",
+                        "sunrise": "Sunrise CH",
+                        "calltrade": "CallTrade CH",
+                        "mitto": "Mitto CH",
+                        "oblcom": "OBLcom CH",
+                        "horisen": "Horisen CH",
+                        "quickcom": "Quickcom CN",
+                        "att": "AT&T US",
+                        "telekom": "Deutsche Telekom DE",
+                        "bt": "British Telecom UK",
+                        "sky_telecom": "Sky-Telecom CH",
+                        "t42com": "42Com DE",
+                        "bandwidth": "Bandwidth US",
+                        "broadvox": "Broadvox US",
+                        "call_centric": "Call Centric US",
+                        "level3": "Level3 US",
+                        "onsip": "Onsip US",
+                        "onvoy": "Onvoy US",
+                        "peatec": "Peatec US",
+                        "verizon": "Verizon",
+                        "vitelity": "Vitelity US",
+                        "voice_plus": "Voice-Plus US",
+                        "voip_innovations": "Voip Innovationen US",
+                        "quckcom": "Quickcom Global CN",
+                        "other": "Andere",
+                        "noTemplate": "keine Vorlage",
+                        "custom": "Eigenen",
+                        "skype": "Skype",
+                        "freetdm": "FreeTDM",
+                        "amqp": "AMQP"
+                },
+		
+		"toastrMessages": {
+			"carrierCreated": "You successfully added {{name}} as a carrier to your account!",
+			"carrierUpdated": "You successfully updated {{name}}!",
+			"noNamePlaceholder": "this carrier",
+			"providerDeleted": "You successfully removed the {{ name }} service provider from your account",
+			"templateDeleted": "You successfully removed the {{ name }} template from your account",
+			"warningDeleteProvider": "Are you sure you want to remove this service provider ({{ name }}) from your account?",
+			"warningDeleteTemplate": "Are you sure you want to remove this template ({{ name }}) from your account?"
+		},
+		"menuTitles": {
+			"dashboard": "Dashboard",
+			"carrierTemplates": "Carrier Templates",
+			"serviceProviders": "Service Providers",
+			"callingPriorities": "Calling Priorities",
+			"importNumbers": "Import Numbers",
+			"setLocally": "Set Locally",
+			"setGlobally": "Set Globally"
+		},
+		"resourcesChoice": "Type of resources",
+		"resourcesHelp": "You can choose what type of resources you want to edit when updating your carriers. Local resources will only impact your account, while Global resources are available to all accounts in the system. Make sure you know what you're doing if you select the Global mode!",
+		"toggleAdmin": {
+			"global": "Global",
+			"local": "Local"
+		},
+
+		"callingPriorities": {
+			"differentPriorities": "Choose different priorities for all outbound services",
+			"differentTitle": "Select each outbound calling service below and set specific providers for each service",
+			"samePriorities": "Choose same priorities for all outbound services",
+			"sameTitle": "Prioritize providers for all outbound calling services",
+			"titleTemplate": "Outbound calling priorities settings",
+			"noCarriers": "You currently have no carriers set up in this account. You'll only be able to manage the priorities of your carriers once you have them set up. Please go in the \"Service Providers\" section and create them there!",
+			"warningNoCarriers": "You currently have no carriers enabled for this category!",
+			"noCarriersForClassifier": "You don't have any service provider set up for this category. Please go in \"Service Providers\" and enable this category on the service provider!",
+			"prioritiesUpdated":" You successfully updated your call priorities settings!",
+			"__comment": "UI-1371: Show a warning when they're about to disable their last active carrier in the calling priorities",
+			"__version": "3.20",
+			"warningNoCarriersEnabled": "It looks like you disabled all your current carriers. Would you still like to save these calling priorities?",
+			"lcrRoute": "Route all calling priorities by LCR-App",
+			"lcrRouteHelp": "Route all calling priorities by LCR-App and set the min. margin of routing. 30 means: that only routes with more 30% margin would be routed.",
+			"lcrrouteActivated": "All carriers will be routed over the cheepest price of each selected categories. You will find this pricelist on module LCR-Rates",
+			"nolcrrouteActivated": "All carriers will be routed of prioritize of each selected categories. LCR-Module is deactive!"
+		},
+
+		"serviceProviders": {
+			"editResource": {
+				"titles": {
+					"advanced": "Advanced",
+					"basic": "Basic",
+					"audio": "Audio",
+					"video": "Video",
+					"flags": "Flags",
+					"gateway": "Gateway",
+					"__comment": "UI-1368: Add notes and contract expiration date to carrier",
+					"__version": "3.20",
+					"misc": "Notes"
+				},
+				"server": {
+					"title": "Server",
+					"placeholder": "255.255.255.255",
+					"help": "IP Address of the carrier (ex: 194.101.30.31). You can add more than one address if your carrier allows it. At least one IP Address is required to continue."
+				},
+				"subtitles": {
+					"audio": "Audio Settings",
+					"video": "Video Settings",
+					"flags": "Flags Manager",
+					"gateway": "Gateway Settings",
+					"__comment": "UI-1368: Add notes and contract expiration date to carrier",
+					"__version": "3.20",
+					"misc": "Contract Details & Notes"
+				},
+				"codecs": {
+					"dragAndDrop": "To select a codec, drag and drop from the available codecs box to selected codecs box",
+					"selectedCodecs": "Selected Codecs",
+					"unselectedCodecs": "Available Codecs"
+				},
+				"add": "Add to the list",
+				"update": "Save",
+				"addCarrierTitle": "Add a carrier to your account",
+				"editCarrierTitle": "Edit settings of {{variable}}",
+				"addTemplateTitle": "Add a template to your account",
+				"editTemplateTitle": "Edit settings of the following template: {{variable}}",
+				"newCarrier": "New Carrier",
+				"creatingCustomCarrier": "Creating Custom Carrier",
+				"name": "Name",
+				"templateName": "Brand",
+				"customName": "Other Brand Name",
+				"username": "Username",
+				"password": "Password",
+				"flags": {
+					"name": "Flag Name:",
+					"create": "Create New Flag",
+					"require": "Require Flags?",
+					"requireHelp": "When checked: this carrier is ignored if the request does not specify outbound flags"
+				},
+				"rules": {
+					"add": "Add new Rule",
+					"empty": "You currently have no rules set up for this carrier! Select a rule in the \"Add new Rule\" dropdown above to add one.",
+					"title": "Rules",
+					"prefix": "Prefix",
+					"suffix": "Suffix",
+					"customizeMatch": "Customize Regular Expression",
+					"match": "Match",
+					"test": "Test",
+					"success": "Yes!",
+					"failure": "Nope...",
+					"testPlaceholder": "Type a test number...",
+					"testTitle": "Does this number fall into this category?",
+					"formattedNumberTitle": "Number after formatting:",
+					"__comment": "UI-1369: Change customize match label and add help",
+					"__version": "3.20",
+					"customizeMatchHelp": "Check this box if you would like to change the PERL regular expression that identifies {{variable}} numbers"
+				},
+				"authentication": {
+					"title": "Authentication Method",
+					"help": "Choose the means by which the carrier will authenticate calls when sent to them. If you don't know, consult your carrier!"
+				},
+				"realm": {
+					"title": "Realm",
+					"help": "If the SIP Realm provided by this carrier is different than its server and you're using password authentication then you MUST set this field for outbound calls to work."
+				},
+				"span": {
+					"title": "Span",
+					"help": "Select the device span with a number e.g. 1"
+				},
+				"channel_selection": {
+					"title": "Channel Selection",
+					"help": "Channel Selection is set to ascending or descending."
+				},
+				"endpoint_type": {
+					"title": "Endpoint type",
+					"help": "There are Types: freetdm (local device), sip (SIP-Protocol), amqp (AMQP-Protocol), skype (local Skype device)"
+				},
+				"skype_rr": {
+					"title": "Skype Routing",
+					"subtitle": "Skype Round-Robin",
+					"help": "Determines whether to round-robin calls amongst all interfaces (overrides \"skype_interface\" setting)"
+				},
+				"skype_interface": {
+					"title": "Skype Interface",
+					"help": "The name of the Skype interface to route the call over"
+				},
+				"progressTimeout": {
+					"title": "Progress Timeout",
+					"help": "How long should calls wait for them to begin (ringing). Sometimes, calls such as international take longer, however if the carrier is down, large values will delay failover."
+				},
+				"dialstring_prefix": {
+					"title": "Caller-ID Prefix",
+					"help": "If this Carrier use a Prefix for a Calleri-ID, this field is used for."
+				},
+				"dialstring_suffix": {
+					"title": "Caller-ID suffix",
+					"help": "If this Carrier use a suffix for a Calleri-ID, this field is used for."
+				},
+				"dialstring_format": {
+					"title": "Caller-ID Format",
+					"help": "Choose format of Caller-ID to signal in right way for this carrier."
+				},
+				"supportsT38": {
+					"title": "Supports T.38",
+					"help": "When using Fax Devices, check this to attempt to switch to T.38. If the carrier doesn't support this codec, the call will be dropped."
+				},
+				"staticRoute": {
+					"title": "Static Route",
+					"help": "If calls need to be sent to the same URI regardless of what was dialed, configure the destination here."
+				},
+				"staticRouteSIPURI": {
+					"title": "SIP URI"
+				},
+				"formatFromURI": {
+					"title": "Format from URI",
+					"help": "Check this to replace the SIP FROM Header (often used for Caller-ID) with the following Realm"
+				},
+				"formatFromURIRealm": {
+					"title": "Realm"
+				},
+				"customSIPInterface": {
+					"title": "Custom SIP Interface",
+					"help": "If your system has been configured with multiple SIP Interfaces, check this option to enter the interface name used to route outbound calls"
+				},
+				"customSIPInterfaceName": {
+					"title": "Name"
+				},
+				"ip": "IP Address",
+				"ipPlaceholder": "255.255.255.255",
+				"creds": "Username and Password",
+				"missingIP": "It appears that you don't have any dedicated IP mapped to your account. You can't add this carrier without one, please contact your VoIP company to get one.",
+				"__comment": "UI-1368: Add notes & contract expiration field",
+				"__version": "3.20",
+				"notes": {
+					"title": "Notes",
+					"help": "You can type anything you'd like to remember about this carrier in this Note field"
+				},
+				"contractExpirationDate": {
+					"title": "Contract Expiration Date",
+					"futureHelp": "This will only be used to remind you when your contract is expiring. When the date gets close (1 month), we'll show you a warning in the Carriers Listing!"
+				}
+			},
+			"listTitleTemplate": "List of the templates available to your sub-accounts",
+			"listTitleCarriers": "List of your configured service providers",
+			"titleTemplate": "Add a template by selecting a profile first:",
+			"titleCarriers": "Add a provider by selecting its template first:",
+			"providerMissing": "My provider is not listed above",
+			"noCarriers": "You don't have any carrier configured for this account. In order to add one, select a template from the top bar and fill in the different settings!",
+			"noTemplates": "You don't have any template configured for your subaccount! Your sub-accounts won't be able to add a carrier from a template until you add them here."
+		},
+
+		"listingJobs": {
+			"titleTemplate": "List of Jobs Import",
+			"refreshTooltip": "Refresh list",
+			"create": "Create New Import Job",
+			"statuses": {
+				"success": "Successful",
+				"failed": "Failed",
+				"pending": "In Progress",
+				"errors": "Errors"
+			},
+			"dialogAdd": {
+				"created": "You successfully created a new job named {{ name }}. You can check its status in the listing, and see the results when it's finished!",
+				"name": "Name of Job",
+				"selectProvider": "Select Provider",
+				"inputNumbers": "Input numbers to be imported",
+				"beginImport": "Begin Import",
+				"formatHelp": "Format Example: +14157775555 (+[country code][phone number])",
+				"inputHelp": "** If importing multiple numbers, each number must be separated by a comma (,)"
+			},
+			"dialogView": {
+				"title": "Status of {{ name }}",
+				"errors": {
+					"unauthorized": "Not authorized to perform requested number operation",
+					"not_routable": "The number does not meet the minium requirements for reconciliation"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,277 @@
+#mobile_app_container .app-content {
+	position: relative;
+}
+#mobile_app_container .app-content:not(.devices-list) {
+	padding: 45px 20px;
+	text-align: center;
+	border: 1px solid #c0c0c9;
+	border-radius: 2px;
+	background-color: #fff;
+}
+#mobile_app_container .app-content h3.title {
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 15px;
+	color: #303039;
+}
+#mobile_app_container .app-content .text {
+	max-width: 560px;
+	margin: 0 auto 40px;
+	color: #909099;
+}
+#mobile_app_container .input-container {
+	max-width: 220px;
+	margin: 0 auto;
+}
+#mobile_app_container .input-container button {
+	width: 100%;
+}
+#mobile_app_container .inline-buttons button:not(:first-child) {
+	margin-left: 10px;
+}
+#mobile_app_container .app-content[class*='step-']::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 3px;
+	content: '';
+	background-color: #22a5ff;
+}
+#mobile_app_container .app-content.step-1::before {
+	width: 33%;
+}
+#mobile_app_container .app-content.step-2::before {
+	width: 66%;
+}
+#mobile_app_container .app-content.step-3::before {
+	width: 100%;
+	background-color: #33db24;
+}
+#mobile_app_container .devices-list-empty {
+	padding: 45px 20px;
+	text-align: center;
+	border: 1px dashed #c0c0c9;
+}
+#mobile_app_container .devices-list-empty .iconography {
+	font-size: 140px;
+	color: #c0c0c9;
+}
+#mobile_app_container .devices-list-empty .title {
+	font-weight: normal;
+	margin: 5px 0;
+	color: #303039;
+}
+#mobile_app_container .devices-list-empty .text {
+	margin-bottom: 25px;
+	color: #909099;
+}
+#mobile_app_container .devices-list .list-header::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+#mobile_app_container .check-zipCode #zip_code {
+	margin-bottom: 0;
+}
+#mobile_app_container .check-zipCode .check-coverage {
+	margin-top: 30px;
+}
+#mobile_app_container .esn-check #esn {
+	margin-bottom: 0;
+}
+#mobile_app_container .esn-check .action-button {
+	margin-top: 30px;
+}
+#mobile_app_container .device-validation .iconography,
+#mobile_app_container .activation-success .iconography {
+	font-size: 84px;
+}
+#mobile_app_container .device-validation.valid .iconography,
+#mobile_app_container .activation-success .iconography {
+	color: #33db24;
+}
+#mobile_app_container .device-validation.invalid .iconography {
+	color: #ff3d24;
+}
+#mobile_app_container .device-validation.invalid .title {
+	color: #ff3d24;
+}
+#mobile_app_container .device-activation input {
+	margin-bottom: 0;
+}
+#mobile_app_container .device-activation input:not(:first-child) {
+	margin-top: 20px;
+}
+#mobile_app_container .device-activation .monster-checkbox {
+	margin-top: 20px;
+}
+#mobile_app_container .device-activation #voicemail_box_container {
+	display: none;
+}
+#mobile_app_container .device-activation #voicemail_box_id_container,
+#mobile_app_container .device-activation #user_id_container {
+	display: none;
+	text-align: left;
+	margin: 10px 0 0;
+}
+#mobile_app_container .device-activation #voicemail_box_id,
+#mobile_app_container .device-activation #user_id {
+	margin: 0;
+}
+#mobile_app_container .device-activation .activate-device {
+	margin-top: 30px;
+}
+#mobile_app_container .activation-success .overview {
+	max-width: 300px;
+	margin: 0 auto 40px;
+	padding: 20px 0;
+	border-top: 1px solid #c0c0c9;
+	border-bottom: 1px solid #c0c0c9;
+}
+#mobile_app_container .activation-success .overview label {
+	min-width: 300px;
+	text-align: left;
+}
+#mobile_app_container .activation-success .overview label span {
+	font-weight: bold;
+	float: right;
+	width: 150px;
+}
+#mobile_app_container .activation-success .text {
+	max-width: 560px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#mobile_app_container .provisioning-models {
+	max-width: 255px;
+	margin: 0 auto;
+	list-style: none;
+}
+#mobile_app_container .provisioning-models .model-type {
+	font-weight: 600;
+	line-height: 28px;
+	display: block;
+	min-height: 28px;
+	padding: 5px;
+	color: #303039;
+}
+#mobile_app_container .provisioning-models .model-type:hover {
+	color: #22a5ff;
+	background-color: #f0f0f9;
+}
+#mobile_app_container .instructions-container {
+	max-width: 580px;
+	margin: 30px auto 40px;
+}
+#mobile_app_container .provisioning-instructions {
+	text-align: left;
+}
+#mobile_app_container .provisioning-instructions li {
+	line-height: 30px;
+}
+#mobile_app_container .coverage-info {
+	margin-bottom: 40px;
+}
+#mobile_app_container .coverage-info .signal-indicator-container {
+	display: inline-block;
+}
+#mobile_app_container .coverage-info .signal-indicator-container:not(:first-child) {
+	margin-left: 50px;
+}
+#mobile_app_container .app-content.device-info {
+	padding: 0;
+	text-align: left;
+	border: 0;
+	background-color: transparent;
+}
+#mobile_app_container .info-header-wrapper {
+	padding: 20px 20px 0;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	background-color: #22a5ff;
+}
+#mobile_app_container .info-content-wrapper {
+	padding: 40px 20px 20px;
+	border: 1px solid #c0c0c9;
+	border-top: 0;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: #fff;
+}
+#mobile_app_container .info-header header {
+	color: #fff;
+}
+#mobile_app_container .info-header .device-image {
+	float: left;
+	width: 40px;
+	height: 75px;
+}
+#mobile_app_container .info-header .device-contact {
+	position: relative;
+	height: 75px;
+	margin-left: 40px;
+	padding-left: 20px;
+}
+#mobile_app_container .info-header .device-name {
+	font-size: 24px;
+	position: absolute;
+	bottom: 25px;
+}
+#mobile_app_container .info-header .device-name-input {
+	font-size: 24px;
+	line-height: 24px;
+	display: none;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+	box-shadow: none;
+}
+#mobile_app_container .info-header .device-name-input:focus {
+	box-shadow: none;
+}
+#mobile_app_container .info-header .device-mdn {
+	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+}
+#mobile_app_container .info-header .edit {
+	font-size: 12px;
+	margin-left: 10px;
+	color: #004c80;
+}
+#mobile_app_container .info-content form {
+	margin-bottom: 0;
+}
+#mobile_app_container .info-content legend {
+	font-size: 14px;
+	font-weight: bold;
+}
+#mobile_app_container .info-content .control-group {
+	margin: 0;
+}
+#mobile_app_container .info-content .control-label {
+	font-weight: bold;
+	text-align: left;
+}
+#mobile_app_container .info-content .controls {
+	margin-left: 200px;
+	padding-top: 5px;
+}
+#mobile_app_container .device-info .info-actions {
+	margin-top: 90px;
+	padding-top: 20px;
+	border-top: 1px solid #c0c0c9;
+}
+#mobile_app_container .device-info .info-actions::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+#mobile_app_container .device-info .info-actions button:not(:first-child) {
+	margin-left: 20px;
+}

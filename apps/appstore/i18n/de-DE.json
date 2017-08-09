@@ -1,0 +1,35 @@
+{
+	"description": "Beschreibung",
+	"featuresTitle": "Eigenschaft:",
+	"undefinedFeatures": "Liste der Eigenschaften kommt bald...",
+	"author": "Autor",
+	"version": "Version",
+	"license": "Lizenz",
+	"price": "Preis",
+	"free": "Kostenlos",
+	"save": "Speichern",
+	"filters": {
+		"all": "Alle Apps",
+		"installed": "Meine Apps",
+		"resellers": "Wiederverkauf Apps",
+		"carriers": "Distributor Apps",
+		"developers": "Entwickler Apps"
+	},
+	"permissions": {
+		"title": "Wie kann das App benutzt werden?",
+		"all": "Alle Benutzer",
+		"admins": "Nur Admin",
+		"specific": "Spezial Benutzer"
+	},
+	"selectedUsers": "Ausgewählte Benutzer",
+	"selectAll": "alle Anwählen",
+	"unselectAll": "alle Abwählen",
+	"noselected": "Kein Benutzer ausgewählt",
+	"selectUsersLink": "Benutzer auswählen ({{selectedUsers}})",
+	"noselected": "Kein Benutzer ausgewählt",
+	"alerts": {
+		"noUserSelected": "Sie müssen ein Benutzer für dies App auswählen.<br><br>Oder Sie können alle Benutzer abwählen, um es nicht zuzulassen."
+	},
+	"__comment": "UI-1190: Updating von App durch AUS und EINSCHALTEN",
+	"ok": "OK"
+}

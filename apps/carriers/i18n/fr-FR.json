@@ -1,0 +1,254 @@
+{
+	"carriers": {
+		"ips": {
+			"title": "Bienvenue dans l'application de gestion de vos fournisseur d'accès",
+			"subtitle": "Vous n'avez pas assez d'IP assignés à votre compte. Afin d'utiliser cette application, vous devez utiliser une adresse IP venant d'au moins 2 zones différentes. Veuillez sélectionner des zones ci-dessous: ",
+			"purchase": "Utiliser ces IPs",
+			"zones": {
+				"central": "Etats-Unis Central",
+				"east": "Etats-Unis Côte Est",
+				"west": "Etats-Unis Côte Ouest"
+			},
+			"noZones": "Vous n'avez aucune \"Zone\" disponible pour ce compte, veuillez contacter votre administrateur VoIP!",
+			"noMore": "Aucune IP disponible dans cette zone :(",
+			"skip": "Je n'ai pas besoin d'acheter d'IP pour ce compte, passer à la suite"
+		},
+                "brands": {
+                        "efon": "e-fon CH",
+                        "winet": "Winet CH",
+                        "netvoip": "Netvoip CH",
+                        "netswiss": "Netswisstelecom CH",
+                        "sipcall": "Sipcall CH",
+                        "sipgate": "Sipgate DE",
+                        "swisscom": "Swisscom CH",
+                        "sunrise": "Sunrise CH",
+                        "calltrade": "CallTrade CH",
+                        "mitto": "Mitto CH",
+                        "oblcom": "OBLcom CH",
+                        "horisen": "Horisen CH",
+                        "quickcom": "Quickcom CN",
+                        "att": "AT&T US",
+                        "telekom": "Deutsche Telekom DE",
+                        "bt": "British Telecom UK",
+                        "sky_telecom": "Sky-Telecom CH",
+                        "t42com": "42Com DE",
+                        "bandwidth": "Bandwidth US",
+                        "broadvox": "Broadvox US",
+                        "call_centric": "Call Centric US",
+                        "level3": "Level3 US",
+                        "onsip": "Onsip US",
+                        "onvoy": "Onvoy US",
+                        "peatec": "Peatec US",
+                        "verizon": "Verizon",
+                        "vitelity": "Vitelity US",
+                        "voice_plus": "Voice-Plus US",
+                        "voip_innovations": "Voip Innovationen US",
+                        "quckcom": "Quickcom Global CN",
+                        "other": "Others",
+                        "noTemplate": "No template",
+                        "custom": "Custom"
+                },
+		
+		"toastrMessages": {
+			"carrierCreated": "Vous venez d'ajouter {{name}} en tant que fournisseur d'accès à votre compte avec succès!",
+			"carrierUpdated": "Vous venez de mettre à jour votre fournisseur d'accès {{name}} avec succès!",
+			"providerDeleted": "Vous avez supprimé votre fournisseur d'accès {{name}} avec succès!",
+			"templateDeleted": "Vous avez supprimé le profil {{name}} avec succès!",
+			"warningDeleteProvider": "Êtes-vous certains de vouloir supprimer le fournisseur {{ carrierName }} de ce compte?",
+			"warningDeleteTemplate": "Êtes-vous certains de vouloir supprimer le profil {{ carrierName }} de ce compte??"
+		},
+		"menuTitles": {
+			"dashboard": "Tableau de bord",
+			"carrierTemplates": "Modèle de Fournisseur",
+			"serviceProviders": "Fournisseur d'accès",
+			"callingPriorities": "Priorité d'appels",
+			"importNumbers": "Import de Numéro",
+			"setLocally": "Mode Local",
+			"setGlobally": "Mode Global"
+		},
+		"resourcesChoice": "Type de Ressource",
+		"resourcesHelp": "Choisir le type de ressources que vous souhaitez modifier. Le Mode local n'affectera que votre compte, tandis que le mode global affectera tous vos sous-comptes également. Soyez sûr de ce que vous faites si vous choisissez le mode Global!",
+		"toggleAdmin": {
+			"global": "Global",
+			"local": "Local"
+		},
+
+		"callingPriorities": {
+			"differentPriorities": "Utiliser des priorités différentes pour les appels sortants",
+			"differentTitle": "Sélectionnez chaque service ci-dessous et definissez l'ordre de choix de fournisseur pour chacun d'entre eux",
+			"samePriorities": "Utiliser les mêmes priorités pour tous les appels sortants",
+			"sameTitle": "Definissez l'ordre de choix de fournisseurs",
+			"titleTemplate": "Réglages de priorité des appels sortants",
+			"noCarriers": "Vous n'avez aucun fournisseur configuré pour votre compte. Vous ne pourrez configurer l'ordre qu'une fois que vous en aurez configurer. Rendez-vous dans la section \"Fournisseur d'accès\" afin d'en créer!",
+			"warningNoCarriers": "Vous n'avez aucun fournisseur configuré pour cette catégorie",
+			"noCarriersForClassifier": "Vous n'avez aucun fournisseur configuré pour cette catégorie. Rendez-vous dans la section \"Fournisseur d'accès\" et ajouter cette catégorie à un de vos fournisseurs!",
+			"prioritiesUpdated":"Les réglages de priorité de vos fournisseurs ont été mis à jour avec succès!",
+			"__comment": "UI-1371: Show a warning when they're about to disable their last active carrier in the calling priorities",
+			"__version": "3.20",
+			"warningNoCarriersEnabled": "Vous n'avez aucun fournisseur d'accès activé. Souhaitez-vous tout de même sauvez ces réglages de priorités?"
+		},
+
+		"serviceProviders": {
+			"editResource": {
+				"titles": {
+					"advanced": "Avancé",
+					"basic": "Basique",
+					"audio": "Audio",
+					"video": "Vidéo",
+					"flags": "Drapeaux",
+					"gateway": "Passerelle",
+					"__comment": "UI-1368: Add notes and contract expiration date to carrier",
+					"__version": "3.20",
+					"misc": "Notes"
+				},
+				"subtitles": {
+					"audio": "Réglages Audio",
+					"video": "Réglages Vidéo",
+					"flags": "Gestion des Drapeaux",
+					"gateway": "Réglages de Passerelle",
+					"__comment": "UI-1368: Add notes and contract expiration date to carrier",
+					"__version": "3.20",
+					"misc": "Détails du contrat & Notes"
+				},
+				"codecs": {
+					"dragAndDrop": "Afin de sélectionner un codec, glisser/déposer les de la colonne de gauche à la colonne de droite!",
+					"selectedCodecs": "Codecs sélectionnés",
+					"unselectedCodecs": "Codecs disponibles"
+				},
+				"add": "Ajouter à la liste",
+				"update": "Sauvegarder",
+				"addTitle": "Ajouter un Fournisseur",
+				"editTitle": "Modifier les Réglages de {{variable}}",
+				"newCarrier": "Nouveau Fournisseur",
+				"creatingCustomCarrier": "Création d'un Fournisseur personnalisé",
+				"name": "Nom",
+				"templateName": "Marque",
+				"customName": "Autre Nom de Marque",
+				"server": {
+					"title": "Serveur",
+					"placeholder": "255.255.255.255",
+					"help": "Adresse IP du fournisseur d'accès. Vous pouvez rajouter plus d'une IP en cliquant sur le bouton +. Au moins une IP est nécessaire pour continuer."
+				},
+				"username": "Nom d'utilisateur",
+				"password": "Mot de Passe",
+				"flags": {
+					"name": "Nom de drapeau:",
+					"create": "Créer nouveau drapeau",
+					"require": "Requiert Drapeaux?",
+					"requireHelp": "Si l'option est activée, ce fournisseur sera ignoré si l'appel n'inclut pas de drapeaux"
+				},
+				"rules": {
+					"add": "Ajouter nouvelle Règle",
+					"empty": "Vous n'avez aucune règle configurée pour ce fournisseur. Sélectionner une règle sous la liste \"Ajouter nouvelle Règle\" ci-dessus afin d'en rajouter une.",
+					"title": "Règles",
+					"prefix": "Préfixe",
+					"suffix": "Suffixe",
+					"customizeMatch": "Personaliser l'expression régulière'",
+					"match": "Valeur",
+					"test": "Test",
+					"success": "Oui!",
+					"failure": "Non :(",
+					"testPlaceholder": "Tapez un numéro...",
+					"testTitle": "Ce numéro fait-il partie de cette catégorie?",
+					"formattedNumberTitle": "Numéro après formattage:",
+					"__comment": "UI-1369: Change customize match label and add help",
+					"__version": "3.20",
+					"customizeMatchHelp": "Cochez cette case si vous souhaitez changer l'expression régulière PERLqui identifie les numéros de type {{variable}}"
+				},
+				"authentication": {
+					"title": "Méthode d'authentification",
+					"help": "Choisissez la manière dont ce fournisseur authentifiera les appels qu'il recevra. Si vous ne savez pas, consultez votre fournisseur!"
+				},
+				"realm": {
+					"title": "Royaume",
+					"help": "Si le Royaume SIP fourni par ce fournisseur est différent du Serveur, et si vous utilisez une authentification par mot de passe, vous DEVEZ remplir ce champ!"
+				},
+				"progressTimeout": {
+					"title": "Progress Timeout",
+					"help": "Le temps d'attente avant de commencer. Parfois, les appels prennent plus "
+				},
+                                "dialstring_prefix": {
+                                        "title": "Caller-ID Prefix",
+                                        "help": "If this Carrier use a Prefix for a Calleri-ID, this field is used for."
+                                },
+                                "dialstring_format": {
+                                        "title": "Caller-ID Format",
+                                        "help": "Choose format of Caller-ID to signal in right way for this carrier."
+                                },
+				"supportsT38": {
+					"title": "Support du T.38",
+					"help": "Cochez cette case pour tenter d'utiliser T.38 quand vous utilisez un Fax. Si le fournisseur ne supporte pas ce codec, l'appel sera terminé."
+				},
+				"staticRoute": {
+					"title": "Route statique",
+					"help": "Si les appels doivent être dirigés vers la même URI sans prendre en compte ce qui a été composé, configurez cette URI ci-dessous."
+				},
+				"staticRouteSIPURI": {
+					"title": "SIP URI"
+				},
+				"formatFromURI": {
+					"title": "Formatter depuis URI",
+					"help": "Cochez cette case pour remplacer l'en-tête SIP FROM (souvent utilisé pour le Caller-ID) par un Royaume différent."
+				},
+				"formatFromURIRealm": {
+					"title": "Royaume"
+				},
+				"customSIPInterface": {
+					"title": "Interface SIP personnalisée",
+					"help": "Si votre système est configuré avec plusieurs interfaces SIP, cochez cette option pour renseigner le nom de l'Interface que vous utilisez pour les appels sortants"
+				},
+				"customSIPInterfaceName": {
+					"title": "Nom"
+				},
+				"ip": "Adresse IP",
+				"ipPlaceholder": "255.255.255.255",
+				"creds": "Nom d'utilisateur et Mot de Passe",
+				"missingIP": "Vous n'avez pas d'IP associé à votre compte. Vous ne pouvez pas rajouter ce fournisseur sans cela, veuillez contacter votre administrateur VoIP pour en obtenir!.",
+				"__comment": "UI-1368: Add notes & contract expiration field",
+				"__version": "3.20",
+				"notes": {
+					"title": "Notes",
+					"help": "Vous pouvez écrire tout ce que vous voulez dans ce champ texte. Il n'est pas utilisé par le système mais vous permet de vous souvenir certains détails que vous pourriez oublier."
+				},
+				"contractExpirationDate": {
+					"title": "Date d'expiration du contrat",
+					"futureHelp": ""
+				}
+			},
+			"listTitleTemplate": "Liste des modèles disponibles pour vos sous-comptes",
+			"listTitleCarriers": "Liste de vos fournisseurs d'accès configurés",
+			"titleTemplate": "Ajouter un modèle en sélectionnant un profil:",
+			"titleCarriers": "Ajouter un fournisseur en sélectionnant un profil:",
+			"providerMissing": "Mon fournisseur n'est pas listé ci-dessus",
+			"noCarriers": "Vous n'avez aucun fournisseur configuré pour ce compte. Afin d'en rajouter un, sélectionner un modèle ci-dessus et remplissez les différentes configurations!",
+			"noTemplates": "Vous n'avez aucun modèle configuré pour vos sous-comptes. Vos sous-comptes ne pourront pas rajouter de fournisseur depuis un modèle sans cela."
+		},
+		"listingJobs": {
+			"titleTemplate": "Importer des numéros de vos opérateurs",
+			"refreshTooltip": "Mettre à jour la liste",
+			"create": "Créer un nouvel Import de Numéros",
+			"statuses": {
+				"success": "Succès",
+				"failed": "Erreur",
+				"pending": "En cours...",
+				"errors": "Erreurs"
+			},
+			"dialogAdd": {
+				"created": "Vous avez créé un nouvel import de numéro nommé {{ name }} avec succès. Vous pouvez vérifier son statut dans la liste, et consulter les résultats lorsque l'import est terminé!",
+				"name": "Nom de l'Import",
+				"selectProvider": "Sélectionner opérateur",
+				"inputNumbers": "Entrez les numéros à importer",
+				"beginImport": "Commencer l'Import",
+				"formatHelp": "Example de Formattage: +14157775555 (+[code pays][numéro de téléphone])",
+				"inputHelp": "** Si vous importez plusieurs numéros, ils doivent être séparés d'une virgule (,)"
+			},
+			"dialogView": {
+				"title": "Statut de {{ name }}",
+				"errors": {
+					"unauthorized": "Pas d'autorisation pour faire l'opération demandée",
+					"not_routable": "Ce numéro ne remplit pas les conditions nécéssaires afin d'effectuer la reconciliation"
+				}
+			}
+		}
+	}
+}

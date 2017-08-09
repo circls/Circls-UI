@@ -1,0 +1,16 @@
+<div>
+    <div class="dialog_popup">
+        <h1>{{ i18n.callflows.queues.presence_id }}</h1>
+        <form name="form" method="post" action="#">
+            <div class="form_content">
+                <div class="popup_field">
+                    <label for="presence_id">{{ i18n.callflows.queues.presence_id }}: </label>
+                    <input type="text" id="presence_id" placeholder="{{ i18n.callflows.queues.optional }}" value="{{ presence_id }}"/>
+                </div>
+            </div>
+        </form>
+        <div class="buttons-center">
+            <button id="add" class="monster-button monster-button-primary">{{ i18n.save }}</button>
+        </div>
+    </div>
+</div>

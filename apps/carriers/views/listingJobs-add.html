@@ -1,0 +1,46 @@
+<div id="add_job_wrapper">
+	<form id="form_add_job">
+		<div class="control-group">
+			<label class="control-label" for="name">{{ i18n.carriers.listingJobs.dialogAdd.name }}</label>
+			<div class="controls">
+				<input required type="text" name="name" placeholder="{{ i18n.carriers.listingJobs.dialogAdd.namePlaceholder }}"></input>
+			</div>
+		</div>
+
+		<div class="line-carrier-selection clearfix">
+			<div class="control-group">
+				<label class="control-label" for="carrier">{{ i18n.carriers.listingJobs.dialogAdd.selectProvider }}</label>
+				<div class="controls">
+					<select id="carrier_selector" name="resource_id">
+						{{#each listCarriers}}
+							<option value="{{id}}">{{name}}</option>
+						{{/each}}
+					</select>
+				</div>
+			</div>
+			<div class="logo-wrapper">
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="list-numbers">
+				{{ i18n.carriers.listingJobs.dialogAdd.inputNumbers }}
+				<div class="help-text">
+					{{ i18n.carriers.listingJobs.dialogAdd.formatHelp }}
+				</div>
+			</label>
+
+			<div class="controls">
+				<textarea name="numbers" class="list-numbers"></textarea>
+				<div class="help-text">
+					{{ i18n.carriers.listingJobs.dialogAdd.inputHelp }}
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div class="dialog-buttons-wrapper">
+		<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+		<button id="create_job" class="monster-button monster-button-success">{{ i18n.carriers.listingJobs.dialogAdd.beginImport }}</button>
+	</div>
+</div>

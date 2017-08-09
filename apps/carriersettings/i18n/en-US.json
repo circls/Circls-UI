@@ -1,0 +1,141 @@
+{
+	"menuTitles": {
+		"lcrrates": "LCR-Rates",
+		"currencies": "Currencies",
+		"taxes": "Taxes",
+		"domains": "Sub-DNS",
+		"dnscontroller": "Domains"
+	},
+
+	"lcrrates": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+		"title": "LCR-Rates",
+		"tableTitles": {
+                        "rate_name":       "Ratename",
+                        "prefix":          "Prefix",
+                        "rate_surcharge":  "Surcharge",
+                        "rate_cost":       "Rate",
+                        "direction":       "Direction",
+                        "routes":          "Routes",
+                        "action":          "Action",
+                        "ratename":        "Destname",
+                        "iso_country_code":"ISO",
+                        "weight":          "Weight",
+                        "flatrate":        "Flatrate incl.",
+                        "rate_increment":  "Clocking ",
+                        "rate_minimum":    "Min. Clocking",
+                        "description":     "Description",
+                        "options":         "Options",
+                        "carrierid":       "Carrier"
+		},
+		"detailDialog": {
+			"popupTitle": "Edit lcrrates entry"
+		},
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of lcrrates data per csv"
+                }
+	},
+	
+	"currencies": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+		"title": "Currencies",
+		"tableTitles": {
+                        "id": "Currency-ID",
+                        "name": "Longname",
+                        "rate": "Basic-Rate",
+                        "sign": "Sign"
+		},
+		"detailDialog": {
+			"popupTitle": "Edit currencies entry"
+		},
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of currencies data per csv"
+                }
+	},
+
+	"taxes": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+		"title": "Taxes",
+		"tableTitles": {
+                        "id": "Currency",
+                        "name": "Name",
+                        "rate": "Rate",
+                        "description": "Description",
+                        "group": "Group",
+                        "view": "View"
+		},
+		"detailDialog": {
+			"popupTitle": "Edit taxes entry"
+		},
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of taxes data per csv"
+                }
+
+	},
+
+        "dnscontroller": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+                "title": "Domain",
+                "tableTitles": {
+                        "active":          "Aktiv",
+                        "subdomain":       "Domain",
+                        "domain":          "Domain",
+                        "renew":           "Renew",
+                        "expire":          "Expire",
+                        "ip4":             "IP4",
+                        "ip6":             "IP6",
+                        "password":        "Password",
+                        "action":          "Action",
+                        "forsubDNS":       "for Sub-DNS"
+                },
+                "detailDialog": {
+                        "popupTitle": "Edit Domain entry"
+                },
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of Domain data per csv"
+                }
+        },
+
+        "subdomains": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+                "title": "Sub-Domain",
+                "tableTitles": {
+                        "active":          "Aktiv",
+                        "subdomain":       "Sub-Domain",
+                        "domain":          "Domain",
+                        "renew":           "Renew",
+                        "expire":          "Expire",
+                        "ip4":             "IP4",
+                        "ip6":             "IP6",
+                        "password":        "Password",
+                        "action":          "Action"
+                },
+                "detailDialog": {
+                        "popupTitle": "Edit Sub-Domain entry"
+                },
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of Sub-Domain data per csv"
+                }
+        }
+
+}

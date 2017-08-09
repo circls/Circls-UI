@@ -1,0 +1,20 @@
+<div>
+	<div class="title">{{ i18n.oldCallflows.actions }}<div class="tooltip"/></div>
+	{{#each categories}}
+		<div id="{{key}}" name="{{key}}" class="category inactive">
+			<div class="open">{{key}}</div>
+			<div class="content">
+				{{#each actions}}
+					<div class="tool" help="{{tip}}">
+						<div name="{{key}}" class="action">
+							<div class="icon medium app_sm {{icon}}"></div>
+							<div class="tool_name">{{name}}</div>
+						</div>
+					</div>
+				{{/each}}
+				<div class="clear"></div>
+				<div class="app_list_nav"></div>
+			</div>
+		</div>
+	{{/each}}
+</div>

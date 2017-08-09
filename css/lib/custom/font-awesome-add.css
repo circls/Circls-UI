@@ -1,0 +1,25 @@
+i {
+	font-size: 18px;
+	color: #555;
+}
+
+i.fa,
+i[class~='icon-']::before {
+	line-height: normal;
+	text-decoration: none;
+}
+
+i.icon-small {
+	font-size: 14px;
+}
+
+/* Custom icons */
+i.fa-info-sign2::before {
+	content: 'i';
+}
+i.fa-question-sign2::before {
+	content: '?';
+}
+i.fa-warning-sign2::before {
+	content: '!';
+}

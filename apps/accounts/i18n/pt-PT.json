@@ -1,0 +1,432 @@
+{
+        "account": {
+                "routing": {
+                        "addCallflow": "Create new Pivot Action",
+                        "edit": "Edit",
+                        "delete": "Delete",
+                        "tryNow": "Test Connection",
+                        "pingSuccess": "A request was sent to this Pivot Action successfully!",
+                        "tableTitles": {
+                                "name": "Name",
+                                "number": "Number",
+                                "routesTo": "Routes To",
+                                "actions": "Actions",
+                                "numberRouting": "Pivot Routing",
+                                "configureHelp": "Configure which phone numbers will route calls to which HTTP URLs for call handling."
+                        },
+                        "creationForm": {
+                                "title": "Create a new Pivot Callflow",
+                                "editTitle": "Editing a Pivot Callflow",
+                                "save": "Save",
+                                "name": {
+                                        "help": "Name",
+                                        "placeholder": "",
+                                        "label": "Name"
+                                },
+                                "number": {
+                                        "help": "Number",
+                                        "placeholder": "+15555555555",
+                                        "label": "Number"
+                                },
+                                "url": {
+                                        "help": "URL",
+                                        "placeholder": "http://your.server.com",
+                                        "label": "URL"
+                                },
+                                "method": {
+                                        "help": "Method",
+                                        "placeholder": "POST/GET",
+                                        "label": "Method",
+                                        "post": "POST",
+                                        "get": "GET"
+                                }
+                        }
+                },
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "Devicesetting in userportal",
+                        "firmwareupdate": "Firmwareupdate enabled"
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "account": "Own Account-Dialplan",
+                        "descript": "Own Account-Dialplan",
+                        "enabled": "Own Account-Dialplan",
+                        "disabled": "None"
+                },
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Businesscustomer",
+		"account_pendingout": "Agent pending out max"
+        },
+	"addAccount": "Add New Account",
+	"editSetting": "Edit",
+	"saveChanges": "Save Changes",
+	"closeSetting": "Close",
+	"disable": "Disable",
+	"disabled": "Disabled",
+	"active": "Active",
+	"delete": "Delete",
+	"enable": "Enable",
+	"add": "Add",
+	"save": "Save",
+	"update": "Update",
+	"none": "None",
+	"month": "Month",
+	"missingAccount": "Missing Account",
+	"disableAccount": "Disable this Account",
+	"enableAccount": "Enable this Account",
+	"deleteAccount": "Delete this Account",
+	"useAccount": "Use Account",
+	"changesSaved": "Changes Saved!",
+	"createdOn": "Created on",
+	"accountStatus": "Account Status",
+	"accountId": "Account ID",
+	"accountName": "Account Name",
+	"accountRealm": "Account Realm",
+	"accountTimezone": "Timezone",
+	"accountLanguage": "Language",
+	"accountTimezoneTitle": "Timezone & Language",
+	"accountAdmins": "Account Administrators",
+	"noAdminMessage": "This account doesn't have any admin",
+	"noUserMessage": "This account doesn't have any regular user",
+	"newAdmin": "Add a new administrator",
+	"newUser": "New User",
+	"existingUser": "Existing User",
+	"autogenPassword": "Auto-generate password",
+	"manuallyTypePassword": "Manually type password",
+	"billingContact": {
+		"label": "Billing Contact",
+		"name": "Billing Contact Name",
+                "address": "Billing Address",
+                "zip": "ZIP",
+                "city": "City",
+                "usepostBilling": "use Postbilling",
+                "payExtra": "pay for postbilling extra",
+                "usepostbillingDisabled": "Postbilling OFF",
+                "usepostbillingEnabled": "Postbilling ON",
+		"email": "Billing Contact Email",
+		"number": "Phone Number"
+	},
+	"technicalContact": {
+		"label": "Delivery and technicals",
+		"name": "Technical Contact Name",
+		"email": "Technical Contact Email",
+		"number": "Phone Number",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
+	},
+	"chargeReminder" : {
+		"line1": "Your on-file credit card will immediately be charged for any changes you make. If you have changed any recurring services, new charges will be pro-rated for your billing cycle.",
+		"line2": "Are you sure you want to continue?"
+	},
+	"tabTitles": {
+		"overview": "Overview",
+		"servicePlans": "Service Plans",
+		"rates": "Rates",
+		"limits": "Limits",
+		"restrictions": "Restrictions",
+		"notes": "Notes",
+		"__comment": "UI-1508: Adding appstore restrictions",
+		"__version": "3.22",
+		"appstore": "App Exchange",
+		"__comment": "UI-1855: Add new section to manage numbers features (e.g. e911, cnam)",
+		"__version": "3.23",
+		"numbersFeatures": "Numbers Features"
+	},
+	"classifiers": {
+		"unknown": {
+			"name": "Other than above",
+			"help": "Please select this option when you want this account to place calls to ANY NUMBER other than mentioned on the list. (When the format of the number is unknown to the system.)"
+		}
+	},
+	"activeServicePlan": "Active service plan",
+	"servicePlanMaintenance": "Service plan maintenance",
+	"servicePlanReconciliation": {
+		"button": "Reconciliate",
+		"tooltip": "Insure that the quantities of billable objects are correct."
+	},
+	"servicePlanSynchronization": {
+		"button": "Synchronize",
+		"tooltip": "Update the billing information on the credit card processor."
+	},
+	"servicePlanWizardLegend": "Choose a service plan for this account:",
+	"servicePlanResellerOnly": "Only resellers are allowed to manage service plans.",
+	"trunksLegend": "Set limits for included simultaneous inbound and outbound calls",
+	"twowayTrunks": "Twoway-flatrate trunks",
+	"twowayTrunkshelp": "The number of two-way, flat-rate trunks",
+	"inboundTrunks": "Inbound trunks",
+        "inboundTrunkshelp": "The number of indbound, flat-rate trunks",
+	"outboundTrunks": "tronchi in uscita",
+        "outboundTrunkshelp": "The number of indbound, flat-rate trunks",
+        "callsTrunks": "Hardlimit simultan calls",
+        "callsTrunkshelp": "A hard limit for the total number calls",
+        "burstTrunk": "Burstflatrate Trunk",
+        "burstTrunks": "Burst-flatrate Trunks",
+        "burstTrunkshelp": "The number of two-way, flat-rate trunks used only if no other trunks are available",
+        "resourceconsumingCalls": "Hartlimit consuming resources",
+        "resourceconsumingCallshelp": "A hard limit for the number of resource consuming calls (in- and outbound calls together)",
+	"callRestrictionsLegend": "restrizioni di chiamata",
+	"callRestrictionsTitle": "questo account può effettuare chiamate ai...",
+	"balanceTitle": "gestire saldo",
+	"balancePerMinute": "al saldo minuto",
+	"balanceTooltip": "questo credito sarà utilizzato per fare (piano) le chiamate al minuto, chiamate internazionali e ricevere chiamate gratuite.",
+	"addToBalance": "aggiungere al saldo corrente",
+	"allowPrepay": "consentono ai clienti di effettuare chiamate al minuto che vanno oltre il limite di cui sopra, e Bill li il costo per minuto di conversazione",
+        "PostpayTitle": "Manage balance handling",
+        "allowPostpay": "Allow this customer to go minus on balance todo invoiceing after a period time (Postpay).",
+        "addToBalance": "Add to the current balance:",
+        "allowPrepay": "Allow customers to make per-minute calls that go over the above limit, and bill them the per-minute cost of the call. (Prepay)",
+        "havetoPayonnet": "Charge also Onnet-calls for this customer, without internal calls (internal extensions)",
+        "flatelistTitle": "Charging within Flatrate",
+        "flatelistTooltip": "This list define the flatrate White- and Blacklist for this customer. if activate it, does only use this rules!",
+        "flatelist": "Activate this white and blacklist for this Customer. if not only systemwide white- and blacklist will be rule!",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "postpayamount": "Max Postpay amount",
+        "reserveamount": "Reserve Amount",
+	"addAdminLink": {
+		"toggleOn": "Add an admin to the account",
+		"toggleOff": "I changed my mind, who needs an admin?"
+	},
+	"adminLabels": {
+		"firstName": "Admin first name",
+		"lastName": "Admin last name",
+		"email": "Admin email address",
+		"emailTooltip": "This email address will serve as the user name to log-in to Monster-UI.",
+		"number": "Admin contact number",
+		"password": "Admin password",
+		"confirm": "Confirm password",
+		"__comment": "UI-1169: Sending an email to newly created admins",
+		"__version": "v3.20_s3",
+		"sendCredentialsEmail": "Send an email to this admin with a reminder of these credentials",
+		"sendCredentialsEmailShort": "Send a summary email with credentials"
+	},
+	"adminPlaceholders": {
+		"firstName": "First name",
+		"lastName": "Last name",
+		"email": "Email address",
+		"number": "Phone number",
+		"password": "Password",
+		"confirm": "Confirm"
+	},
+	"wizardStepTitles": {
+		"setupAccount": "Set up an account",
+		"servicePlan": "Choose Service Plan",
+		"rates": "Account Rates",
+		"limits": "Call Restrictions",
+		"restrictions": "Permissions"
+	},
+	"wizardErrorMessages": {
+		"pleaseCorrect": "Please correct the following errors:",
+		"accountMandatoryFields": "The account name and realm fields are mandatory.",
+		"adminMandatoryFields": "The admin first name, last name and email address are mandatory when adding a new admin.",
+		"adminPasswordError": "The password must be at least 6 characters long and include a letter and a number.",
+		"adminPasswordConfirmError": "The password and its confirmation do not match.",
+		"incorrectBalanceFormat": "Incorrect format for balance credit, you can only enter a number with up to 2 decimals.",
+		"balanceMinimumAmount": "The minimum amount for balance credit is $5.00."
+	},
+	"wizardProcessingMessage1": "Processing request...",
+	"wizardProcessingMessage2": "Please wait while the account is being created.",
+	"autogenPasswordPopup": {
+		"message": "A password has ben auto-generated for your administrator {{adminName}}. This is the only time this password will be displayed, you should memorize it or write it down.",
+		"login": "Login:",
+		"password": "Password:"
+	},
+	"deleteUserConfirm": "This user will be permanently deleted. Continue?",
+	"toastrMessages": {
+		"servicePlanUpdateSuccess": "Active service plan updated successfully!",
+		"servicePlanUpdateError": "An unexpected error occurred! Please try again.",
+		"servicePlanReconciliationSuccess": "Reconciliation completed successfully!",
+		"servicePlanReconciliationError": "An error occurred during reconciliation process! Please try again later.",
+		"servicePlanSynchronizationSuccess": "Synchronization completed successfully!",
+		"servicePlanSynchronizationError": "An error occurred during synchronization process! Please try again later.",
+		"ratesUpdateSuccess": "Accountrates updated successfully!",
+		"limitsUpdateSuccess": "Limits updated successfully!",
+		"ratesUpdateError": "An unexpected error occured when updating the Accountrates, please try again later.",
+		"limitsUpdateError": "An unexpected error occured when updating the limits, please try again later.",
+		"creditAddSuccess": "Credit successfully added to the current balance!",
+		"creditAddError": "An unexpected error occured when adding credit, please try again later.",
+		"deleteAccountError": "An error occured while deleting the account, please try again.",
+		"newAccount": {
+			"accountError": "An unexpected error occured while creating the account.",
+			"adminError": "The account administrator could not be created.",
+			"ratesError": "An error occured while setting up the Accountrates.",
+			"limitsError": "An error occured while setting up the limits.",
+			"forbiddenLimitsError": "You are not allowed to set those limits. Please contact your sales representative.",
+			"creditError": "An error occured while adding credit to this new account, make sure your credit card information is valid.",
+			"servicePlanError": "An error occured while assigning the service plan to the account."
+		},
+		"uiRestrictionsUpdateSuccess": "UI restrictions updated successfully!",
+		"uiRestrictionsUpdateError": "An unexpected error occured when updating the UI restrictions, please try again later.",
+		"notesUpdateSuccess": "Notes updated successfully!",
+		"notesUpdateError": "An unexpected error occured when updating the notes, please try again later.",
+		"__comment": "UI-1498: Moved call restrictions back from limits to the account document",
+		"__version": "v3.20_s5",
+		"callRestrictionsUpdateSuccess": "Call restrictions updated successfully!",
+		"callRestrictionsUpdateError": "An unexpected error occured when updating the call restrictions, please try again later.",
+		"__comment": "UI-1508: Adding appstore restrictions",
+		"__version": "3.22",
+		"appstoreUpdateSuccess": "Allowed apps updated successfully!",
+		"appstoreUpdateError": "An unexpected error occured when updating the list of allowed apps, please try again later.",
+		"numbersfeaturesUpdateSuccess": "Numberfeatures updated successfully!",
+		"numbersfeaturesUpdateError": "An unexpected error occured when updating the numberfeatures, please try again later."
+	},
+	"uiRestrictionsLegend": "Select what your customer can view",
+	"uiRestrictionsTooltip": "When you click on your name from top right corner of the screen, you will see a dropdown menu. You can restrict the view of these options to your Sub-Account by simply uncheck it from account permissions.",
+	"uiRestrictionsMenu": {
+		"settings": "Settings",
+		"user": "User",
+		"account": "Account",
+		"billing": "Billing",
+		"creditCard": "Credit Card",
+		"transactions": "Transactions",
+		"servicePlan": "Service Plan",
+		"perMinute": "Per Minute",
+		"trunking": "Trunking",
+		"inbound": "Inbound",
+		"outbound": "Outbound",
+		"__comment": "UI-664: New restriction for twoway trunks",
+		"__version": "v3.19_s2",
+		"twoway": "Twoway",
+		"__comment": "UI-1074: New restriction for Misc Error Tracker",
+		"__version": "v3.20_s2",
+		"errorTracker": "UI Errors Log",
+		"misc": "Misc",
+		"rates": "rates",
+                "numbersFeatures": "Numbers"
+	},
+	"uiRestrictionsExtraSettings": {
+		"perMinute": {
+			"legend":"More Balance Settings",
+			"showCreditInfo":"Show Credit Information",
+			"showMinutesInfo": "Show Minutes Information"
+		}
+	},
+	"validationMessages": {
+		"invalidPasswordConfirm": "Passwords do not match."
+	},
+	"notesLegend": "Write some notes on this account",
+	"landingContent": [
+		"You can edit a sub-account by selecting it from the list on the left",
+		"Or",
+		"Create a new sub-account by clicking on the \"Add New Account\" button."
+	],
+	"__comment": "UI-966: created common control for carrier selection",
+	"__version": "v3.20_s0",
+	"carrierTab": "Carrier",
+	"__comment": "UI-1171: Add a field to show the type of an account",
+	"__version": "v3.20_s2",
+	"accountType": "Account type",
+	"reseller": "Reseller",
+	"standard": "Standard",
+	"__comment": "UI-1169: Sending an email to newly created admins",
+	"__version": "v3.20_s3",
+	"sentEmailPopup": "An email has been sent to {{email}} with the login information.",
+	"__comment": "UI-1324: Adding the option to disable Braintree through a config flag",
+	"__version": "v3.20_s4",
+	"disabledAddCreditTooltip": "Braintree is required to add credit. Please contact your administrator for more information.",
+	"__comment": "UI-1448: Add name of the account to be deleted in the confirm message for a better UX",
+	"__version": "v3.20_s5",
+	"deleteAccountConfirmVar": "This account (\"{{accountName}}\") will be permanently deleted. Continue?",
+
+	"__comment": "UI-1460: Force user to type a string before deleting an account",
+	"__version": "v3.20_s5",
+	"deleteAccountDialog": {
+		"title": "Confirmation of Account Deletion",
+		"cancel": "Cancel",
+		"deleteAccount": "Delete Account",
+		"deleteKey": "DELETE",
+		"deleteMessageIntro": "This action CANNOT be undone. This will permanently delete the \"{{variable}}\" account, release all phone numbers, deactivate any mobile devices and remove any provisioning files.",
+		"deleteMessageExplanation": "Please type the word \"{{variable}}\" in the following input and then click on the Delete Account button to proceed."
+	},
+
+	"__comment": "UI-1609: Add a way to Remove Credit",
+	"__version": "3.21",
+	"updateCreditDialog": {
+		"title": "Update Credits Amount",
+		"creditBalance": "Available Credit Balance",
+		"addCredit": "Add",
+		"removeCredit": "Remove",
+		"addCreditOne": "Add Credit One Time",
+		"removeCreditOne": "Remove Credit One Time",
+		"helpAddCreditOne": "By using this, you will add some credits to the balance of this account, which will allow it enable features such as e911 or Caller-ID, but also to place per-minute calls.",
+		"helpRemoveCreditOne": "We let you remove credits from your sub-accounts with this feature. If you added too many credits to an account, you could fix it by removing the extra credits here for example.",
+		"placeholderAmount": "10.00",
+		"successfulUpdate": "Congratulations, you successfuly updated the amount of credits available on that account! :)"
+	},
+	"__comment": "UI-1660: Add meaningful error when trying to delete account with descendant(s)",
+	"__version": "3.22",
+	"account_has_descendants": "You need to delete subaccounts before deleting this account",
+
+	"__comment": "UI-1662: Adding a popup to better customize service plan",
+	"__version": "3.22",
+	"changeServicePlanDialog": {
+		"title": "Set service plan",
+		"successUpdate": "You successfuly updated the service plan of this account!"
+	},
+
+	"__comment": "UI-1508: Adding appstore restrictions",
+	"__version": "3.22",
+	"appstoreLegend": "Choose which apps are enabled on this account",
+
+	"__comment": "UI-1855: Add new section to manage numbers features (e.g. e911, cnam)",
+	"__version": "3.23",
+	"numbersFeatures": {
+		"legend": "Enable/Disable numbers' features",
+		"features": {
+			"e911": "E911",
+			"cnam": "CNAM"
+		}
+	},
+
+	"__comment": "UI-1995: Add an announcement to users",
+	"__version": "3.22",
+	"announcementLegend": "Announcement that will popup everytime someone logs in to this account",
+	"deleteAnnouncement": "Delete Announcement",
+
+	"__comment": "UI-2053: Enable super duper admin users to promote/demote accounts",
+	"__version": "3.23",
+	"reserllerAction": "Reseller action",
+	"promoteDemoteError": "An error happened during this operation. Please try again later.",
+	"promoteAccount": {
+		"button": "Promote",
+		"confirm": "You are about to promote this account",
+		"success": "This account was promoted successfully"
+	},
+	"demoteAccount": {
+		"button": "Demote",
+		"confirm": "You are about to demote this account",
+		"success": "This account was demoted successfully"
+	}
+}

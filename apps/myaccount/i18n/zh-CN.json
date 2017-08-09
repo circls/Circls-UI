@@ -1,0 +1,375 @@
+{
+        "defaultTimezone": "Europe/London",
+        "defaultLanguaage": "en-US",
+	"hello": "Hello",
+	"signout": "Sign Out",
+	"myaccount": "Account",
+	"closeSlide": "Close",
+	"store": "Store",
+
+	"settingsCategory": "Settings",
+	"billingCategory": "Billing",
+	"trunkingCategory": "Trunking",
+
+	"editSettings": "Edit",
+	"changesSaved": "Changes Saved!",
+	"placeholderEmail": "jon_doe@company.com",
+	"phoneNumber": "Phone Number",
+	"placeholderNumber": "4152223333",
+
+	"walkthrough": {
+		"greetingsDialog": {
+			"go": "Let's get started",
+			"content": "The step-by-step wizard will help familiarize you with your account settings so that you can begin setting up your business phone system. Your essential account information has been entered during registration.",
+			"title": "Welcome to the platform"
+		},
+		"steps": {
+			"1": "Access your Account Settings by clicking on your name.",
+			"2": "Your Admin User settings can be viewed in the User tab. Individual settings such as Timezone, Language and Date & Time can be changed based on your preferences. Additional you can integration your conatcts to sync this e.g. with your mobile, to have phonenumbers with your in realtime.",
+			"3": "Your Admin Account settings can be viewed in the Account tab. Here you can add a Technical Contact if you wish, and set Timezone & Language for the entire account. The accountname and realm should not reseted, because your device need this domains to connect with it  The account fraudsecurity protects you from password theft, and the cost overrun only to limit. We recommend to put on the maximum daily costs (eg 20.00 per day. ) After saving only your resellers can unlock this again.",
+			"4": "The invoicing is done via e-mail from us automatically. But you can adjust the delivery by mailing to your habits manually. Please note that the credit card that you used during registration is currently on file in this tab.",
+			"5": "Chargeable calls are here listed. When making chargeable calls will be made \"per minute\". Not cost endorse calls are not listed.",
+			"6": "Here you can view your current subscriptions. Details of the respective subscriptions are listed on our website, and explains details. For further questions please contact us.",
+			"7": "Here is view all transactions made under your account, including all one-time fees and charges"
+
+		},
+		"endDialog": {
+			"roger": "Roger that",
+			"content": "Now that you're familiarized with the different settings, you can take a few moments to change or update any of the information to fit your needs. When you're ready to begin setting up your phone system, close out of these settings by clicking the close button in the upper right or by simply clicking on your name again.",
+			"title": "Done!"
+		}
+	},
+
+	"user": {
+		"title": "User",
+		"passwordsNotMatching": "The passwords you typed don't match",
+
+		"email": "Email",
+
+		"password": "Password",
+		"newPassword": "New Password",
+		"confirmPassword": "Confirm New Password",
+
+		"timezoneTitle": "Timezone & Language",
+		"userTimezone": "Timezone",
+		"userLanguage": "Language",
+
+		"colorblindTitle": "Colorblind Mode",
+		"colorblindEnabled": "Enabled",
+		"colorblindDisabled": "Disabled",
+		"enableColorblind": "Enable Colorblind Mode",
+
+		"__comment": "UI-1335: Adding hours settings to the user settings",
+		"__version": "v3.20_s3",
+		"dateTimeTitle": "Date and Time Display",
+		"twelveHoursModeEnabled": "12 Hours Mode (AM/PM)",
+		"twelveHoursModeDisabled": "24 Hours Mode",
+		"enableTwelveHoursMode": "Time in 12 Hours Mode (AM/PM)",
+		"dateFormatTitle": "Date format",
+		"dateFormats": {
+			"dmy": "Day/Month/Year",
+			"mdy": "Month/Day/Year",
+			"ymd": "Year/Month/Day"
+		},
+                "contactSync": "Contact synchronization",
+                "contactsyncUser": "Contactsync User",
+                "contactsyncPassword": "Contactsync Password",
+                "contactsyncURL": "Contactsync URL",
+                "placeholdercontactsyncUser": "user@gamil.com",
+                "placeholdercontactsyncPassword": "password",
+                "quickcallDevice": "Quickcall Device",
+                "quickcalldeviceLabel": "Quickcall Device (Default)",
+                "quickcalldeviceTitle": "Quickcall Device"
+	},
+        "account": {
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "Devicesetting in userportal",
+                        "firmwareupdate": "Firmwareupdate enabled"
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "account": "Own Account-Dialplan",
+                        "descript": "Own Account-Dialplan",
+                        "enabled": "Own Account-Dialplan",
+                        "disabled": "None"
+                },
+                "account_pendingout": "Pending logout agent",
+                "placeholder_pendingout": "6",
+		"title": "Account",
+
+		"accountName": "Account Name",
+		"accountId": "Account ID",
+
+		"accountRealm": "Account Realm",
+
+		"technicalContact": "Delivery and Technicals",
+		"technicalContactname": "Name technicals",
+		"technicalContactEmail": "Technical Contact Email",
+		"technicalContactNumber": "Phone Number",
+
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No",
+
+		"timezoneTitle": "Timezone & Language",
+		"userTimezone": "Timezone",
+		"userLanguage": "Language",
+		"__comment": "UI-966: Added common control to select carrier in myaccount",
+		"__version": "v3.20_s0",
+		"carrierTitle": "Carrier Settings",
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Business"
+	},
+
+	"billing": {
+		"title": "Credit Card",
+		"missingCard": "Your credit card information is invalid, expired or missing - please update your credit card and save the changes.",
+
+		"cardOnFile": "Card on File",
+		"name": "Billing Name",
+                "address": "Billing Address",
+                "zip": "ZIP",
+                "city": "City",
+                "usepostBilling": "use Postbilling",
+                "payExtra": "pay for postbilling extra",
+                "usepostbillingDisabled": "Postbilling OFF",
+                "usepostbillingEnabled": "Postbilling ON",
+                "useCreditDisabled": "Creditcard is OFF",
+                "useCreditEnabled": "Creditcard is ON",
+		"firstName": "First",
+		"lastName": "Last",
+		"creditCardNumber": "Number",
+		"expirationDate": "Expiration Date",
+		"year": "YYYY",
+		"month": "MM",
+		"securityCode": "Security Code / CVV",
+		"changeCard": "Change Card Info",
+
+		"accountAdministrator": "Billing Contact",
+		"accountAdministratorEmail": "Billing Contact Email",
+		"accountAdministratorNumber": "Phone Number"
+	},
+
+	"trunks": {
+		"title": "Trunks",
+		"outbound": "Outbound",
+		"inbound": "Inbound",
+		"outboundTitle": "Outbound Trunking Limits",
+		"inboundTitle": "Inbound Trunking Limits",
+		"inboundCalling": "Unlimited Inbound Trunks",
+		"simultaneousTwoway": "$_Variable__/month",
+		"simultaneousInbound": "$_Variable__/month",
+		"perMonth": "/month",
+		"quantity": "Set New Limit",
+		"trunks": "Trunks",
+		"twoWayCalling": "Unlimited Two-way Trunks",
+		"updateLimits": "Update Limits",
+		"helpTwoway": "The number of Two-way trunks defines how many concurrent calls your platform can handle at one time.",
+		"helpInbound": "The number of Inbound trunks defines how many simultaneous calls you can receive to your phone system.",
+		"monthlyCharges": "Monthly Charges",
+		"__comment": "UI-664: Adding the real twoway sliders",
+		"__version": "v3.19_s2",
+		"twowayTitle": "Twoway Trunking Limits",
+		"twoway": "Two-way",
+		"outboundCalling": "Unlimited Outbound Trunks",
+		"helpOutbound": "The number of Outbound trunks defines how many concurrent external calls you can place at one time.",
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"currentLimit": "Current Limit",
+		"exampleTwoway": "EXAMPLE: 10 Two-way Trunks would allow your system to handle 6 inbound calls and 4 outbound calls at the same time.",
+		"exampleInbound": "EXAMPLE: 5 Inbound Trunks allow your platform to handle 5 simultaneous incoming calls",
+		"exampleOutbound": "EXAMPLE: 10 Outbound Trunks allow your platform to handle 10 simultaneous calls to external numbers"
+	},
+
+	"balance" : {
+		"availableCredits": "Available Credits",
+		"minutesUsed": "Minutes Used",
+		"callCharges": "Call Charges",
+		"callResell": "Reseller Charges",
+		"activeCall": "active",
+
+		"title": "Per Minute",
+		"creditBalance": "Available Credit Balance",
+		"addCreditOne": "Add Credit One Time",
+		"helpAddCreditOne": "By using this, you will add some credits to your current balance, which will allow you to enable features such as e911 or Caller-ID, but also to place per-minute calls.",
+		"autoRecharge": "Auto Recharge",
+		"whenBalanceFalls": "When balance falls below",
+		"recharge": "Recharge this account with",
+		"helpAutoRecharge": "By turning on Auto Recharge, you will define a low threshold and how much credits to add when this threshold is reached and you will no longer need to manually add credits.",
+		"helpWhenBalanceFalls": "Input the amount of credits to reach before auto-recharging your account",
+		"helpRecharge": "Input how much credits you would like to add once the threshold you defined is reached",
+		"payPerMinute": "Pay-per-minute allows you to pay only for what you use. Deposit money into your account to get started, then pay-as-you-go for usage.",
+		"currentBalance": "Your current balance: $",
+		"turnoffRechargeConfirm": "By turning off the Auto-recharge, you will have to manually add credits to your balance in order to continue to place per-minute calls and enable features such as e911 or Caller-ID. Do you want to continue?",
+		"amount": "Amount",
+		"confirm": "Confirm",
+		"placeholderThresholdRecharge": "5.00",
+		"placeholderRecharge": "50.00",
+		"placeholderAmount": "10.00",
+		"addCredit": "Add Credit",
+		"invalidAmount": "There is an error with the amount you typed! Please make sure to type a number using only digits '.' or ','",
+		"autoRechargeEnabled": "The Automatic Recharge of credits is now enabled!",
+		"autoRechargeCancelled": "You successfully cancelled the Automatic Recharge of your credits.",
+		"creditsAdded": "You successfully added {{amount}} to your balance!",
+		"addCreditDialogTitle": "Add Credits",
+
+		"dateColumn": "Date",
+		"durationColumn": "Minutes",
+		"amountColumn": "Amount",
+                "InamountColumn": "E-Price",
+		"fromColumn": "From",
+		"toColumn": "To",
+		"directionColumn": " ",
+		"accountColumn": "Account",
+		"__comment": "UI-1324: Adding the option to disable Braintree through a config flag",
+		"__version": "v3.20_s4",
+		"disabledAddCreditTooltip": "Braintree is required to perform this action. Please contact your administrator for more information."
+	},
+
+	"servicePlan": {
+		"discount": "Discount",
+		"dueOn": "Due By",
+		"empty": "Your current service plan is empty!",
+		"monthlyChargesTitle": "Monthly Charges",
+		"quantityTitle": "Quantity",
+		"rateTitle": "Rate",
+		"serviceTitle": "Service",
+		"title": "Service Plan",
+		"titleHeader": "Service Plan",
+		"titles": {
+			"cnam": "CNAM",
+			"did_us": "US DIDs",
+			"e911": "E911",
+			"inbound_cnam": "Inbound CNAM",
+			"inbound_trunk": "Inbound Trunks",
+			"inbound_trunks": "Inbound Trunks",
+			"port": "Port",
+			"sip_device": "SIP Devices",
+			"sip_devices": "SIP Devices",
+			"tollfree_us": "US Tollfree",
+			"twoway_trunk": "Twoway Trunks",
+			"twoway_trunks": "Twoway Trunks",
+			"__comment": "UI-815: Improve how the prices and categories are displayed for the Trunks",
+			"__version": "v3.19_s1",
+			"outbound_trunk": "Outbound Trunks",
+			"outbound_trunks": "Outbound Trunks",
+			"user": "Users",
+			"users": "Users"
+		},
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"dueAmount": "Amount Due"
+	},
+
+	"transactions": {
+		"title": "Transactions",
+		"billingCycle": "Billing Cycle",
+		"oneTimeCharge": "One-Time Charge",
+		"monthlyCharge": "Monthly Charge",
+		"serviceCharge": "Service Charge - Prorated",
+
+		"noData": "There are no transactions between the 2 dates selected !",
+
+		"serviceTitle": "Service",
+		"discount": "Discount",
+		"rateTitle": "Rate",
+		"quantityTitle": "Quantity",
+		"monthlyChargesTitle": "Monthly Charges",
+		"declined": "Declined",
+
+		"database_rollup": "Balance Carry-over",
+		"per_minute_call": "Per-Minute Call",
+		"sub_account_per_minute_call": "Per-Minute Call (Sub-Account)",
+		"feature_activation": "Feature Activation",
+		"sub_account_feature_activation": "Feature Activation (Sub-Account)",
+		"number_activation": "Number Activation",
+		"sub_account_number_activation": "Number Activation (Sub-Account)",
+		"manual_addition": "Manual Addition",
+		"sub_account_manual_addition": "Manual Addition (Sub-Account)",
+		"admin_discretion": "Admin Discretion",
+		"__comment": "UI-383: Fixing transactions for good",
+		"__version": "v3.20_s0",
+		"unknown": "Charge",
+		"__comment": "UI-1014: Redesign of MyAccount",
+		"__version": "v3.20_s1",
+		"startDate": "Start Date",
+		"endDate": "End Date",
+		"total": "Total",
+
+		"__comment": "UI-1248: Work on transactions to fix the way they're displayed",
+		"__version": "3.19",
+		"refundText": "(Refund)",
+		"codes": {
+			"1001": "Per Minute Call",
+			"1002": "Sub-Account Per Minute Call",
+			"2001": "Feature Activation",
+			"2002": "Sub-Account Feature Activation",
+			"2003": "Number Activation",
+			"2004": "Sub-Account Number Activation",
+			"3001": "Manual Addition",
+			"3002": "Sub-Account Manual Addition",
+			"3003": "Auto-Addition",
+			"3004": "Sub-Account Auto-Addition",
+			"3005": "Admin Discretion",
+			"3006": "Top Up",
+			"4000": "Balance Carry-over",
+			"5000": "Recurring",
+			"5001": "Monthly Recurring",
+			"5002": "Monthly Recurring (Pro-rated)",
+			"9999": "Unknown"
+		},
+		"errorStatuses": {
+			"voided": "Voided",
+			"declined": "Declined",
+			"processor_declined": "Declined"
+		}
+	},
+
+	"miscCategory": "Misc",
+	"errorTracker": {
+		"title": "UI Errors Log",
+		"errorTotal": "Number of Errors:",
+		"apiTotal": "Erlang",
+		"jsTotal": "Javascript",
+		"viewDetails": "Details"
+	},
+
+	"__comment": "UI-1397: Clean up topbar of unnecessary HTML",
+	"__version": "v3.20_s4",
+	"isMasquerading": {
+		"switchBackTo": "Switch back to",
+		"myAccount": "My account",
+		"currentlyViewing": "Currently Viewing"
+	}
+}

@@ -1,0 +1,46 @@
+<div class="ringing-duration-control">
+	<div class="grid-time">
+		<div class="grid-time-row title">
+			<div class="scale-container"></div>
+			<div class="name">
+				<button type="button" class="distribute-button monster-button monster-button-primary non-fixed">{{ i18n.ringingDurationControl.distribute }}</button>
+			</div>
+			<div class="times"></div>
+			{{#if hasRemoveColumn}}
+			<div class="remove">
+				<i class="help-popover fa fa-question-circle fa-lg" data-original-title="{{ i18n.ringingDurationControl.maxDurationTooltip }}" data-placement="top" data-toggle="tooltip"></i>
+			</div>
+			{{/if}}
+			{{#if hasDisableColumn}}
+			<div class="action">{{ i18n.ringingDurationControl.doNotRing }}</div>
+			{{/if}}
+		</div>
+
+		{{#each endpoints}}
+			<div class="grid-time-row item-selector{{#if deleted}} deleted{{/if}}{{#if disabled}} disabled{{/if}}" data-id="{{id}}">
+				<div class="scale-container"></div>
+				<div class="name"{{#if disabled}} style="opacity: 0.5;"{{/if}}>
+					{{#if icon}}<i class="{{icon}}"></i>{{/if}}
+					{{name}}
+				</div>
+				<div class="times"{{#if disabled}} style="opacity: 0;"{{/if}}>
+					<div class="slider-time">
+
+					</div>
+				</div>
+				{{#if ../hasRemoveColumn}}
+				<div class="action">
+					<button class="monster-button monster-button-danger remove-user">{{ @root.i18n.remove }}</button>
+				</div>
+				{{/if}}
+				{{#if ../hasDisableColumn}}
+				<div class="action">
+					{{#monsterCheckbox}}
+						<input type="checkbox" class="disable-row"{{#if disabled}} checked{{/if}}>
+					{{/monsterCheckbox}}
+				</div>
+				{{/if}}
+			</div>
+		{{/each}}
+	</div>
+</div>

@@ -1,0 +1,154 @@
+<div>
+	<div class="header">
+		<div class="pull-right">
+		{{#monsterSwitch}}
+			<input type="checkbox" class="switch" name="enabled"{{#if data.enabled}} data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}" checked="checked"{{/if}}>
+		{{/monsterSwitch}}
+		</div>
+		<div class="title">{{templateName}}</div>
+	</div>
+	<div class="content{{#unless data.enabled}} disabled{{/unless}}">
+		<form id="{{templateKey}}_form">
+			<div class="form-line">
+				<div class="first-col">
+					<div class="label">{{i18n.templatesBranding.from}}</div>
+				</div>
+				<div class="second-col">
+					<input type="text" name="from" value="{{data.from}}">
+				</div>
+			</div>
+			<div class="form-line">
+				<div class="first-col">
+					<div class="label">{{i18n.templatesBranding.to}}</div>
+				</div>
+				<div class="second-col">
+					<input type="text" name="to.email_addresses" value="{{data.to.email_addresses}}" {{#compare data.to.type '!=' 'specified'}}disabled{{/compare}}>
+				</div>
+				<div class="third-col">
+					<div class="btn-group recipient-radio-group to-group" data-toggle="buttons-radio">
+						<button class="recipient-radio btn {{#compare data.to.type '===' 'original'}}active{{/compare}}"
+								type="button" data-value="original" data-toggle="tooltip" data-placement="top"
+								data-original-title="{{i18n.templatesBranding.recipientTypes.original}}">
+							<i class="fa fa-user icon-small"></i>
+						</button>
+						<button class="recipient-radio btn {{#compare data.to.type '===' 'admins'}}active{{/compare}}"
+								type="button" data-value="admins" data-toggle="tooltip" data-placement="top"
+								data-original-title="{{i18n.templatesBranding.recipientTypes.admins}}">
+							<i class="fa fa-users icon-small"></i>
+						</button>
+						<button class="recipient-radio btn {{#compare data.to.type '===' 'specified'}}active{{/compare}}"
+								type="button" data-value="specified" data-toggle="tooltip" data-placement="top"
+								data-original-title="{{i18n.templatesBranding.recipientTypes.specified}}">
+							<i class="fa fa-edit icon-small"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="form-line">
+				<div class="first-col">
+					<div class="label">{{i18n.templatesBranding.bcc}}</div>
+				</div>
+				<div class="second-col">
+					<input type="text" name="bcc.email_addresses" value="{{data.bcc.email_addresses}}" {{#compare data.bcc.type '!=' 'specified'}}disabled{{/compare}}>
+				</div>
+				<div class="third-col">
+					<div class="btn-group recipient-radio-group bcc-group" data-toggle="buttons-radio">
+						<button class="recipient-radio btn {{#compare data.bcc.type '===' 'original'}}active{{/compare}}"
+								type="button" data-value="original" data-toggle="tooltip" data-placement="top"
+								data-original-title="{{i18n.templatesBranding.recipientTypes.original}}">
+							<i class="fa fa-user icon-small"></i>
+						</button>
+						<button class="recipient-radio btn {{#compare data.bcc.type '===' 'admins'}}active{{/compare}}"
+								type="button" data-value="admins" data-toggle="tooltip" data-placement="top"
+								data-original-title="{{i18n.templatesBranding.recipientTypes.admins}}">
+							<i class="fa fa-users icon-small"></i>
+						</button>
+						<button class="recipient-radio btn {{#compare data.bcc.type '===' 'specified'}}active{{/compare}}"
+								type="button" data-value="specified" data-toggle="tooltip" data-placement="top"
+								data-original-title="{{i18n.templatesBranding.recipientTypes.specified}}">
+							<i class="fa fa-edit icon-small"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="form-line">
+				<div class="first-col">
+					<div class="label">{{i18n.templatesBranding.subject}}</div>
+				</div>
+				<div class="second-col">
+					<input id="{{templateKey}}_subject" type="text" name="subject" value="{{data.subject}}">
+				</div>
+				<div class="third-col">
+					<div class="btn-group">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							{{i18n.templatesBranding.macros}}&nbsp;
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							{{#each macros}}
+							<li>
+								<a class="macro-element" data-macro="{{@key}}" data-target="#{{../templateKey}}_subject">{{friendly_name}}</a>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<ul class="nav nav-tabs body-tabs">
+			<li class="tab-link active"><a href="#{{templateKey}}_html_tab">{{i18n.templatesBranding.htmlBody}}</a></li>
+			<li class="tab-link"><a href="#{{templateKey}}_text_tab">{{i18n.templatesBranding.textBody}}</a></li>
+		</ul>
+		 
+		<div class="tab-content">
+			<div class="tab-pane active" id="{{templateKey}}_html_tab">
+				<div class="wysiwyg-container"></div>
+			</div>
+			<div class="tab-pane" id="{{templateKey}}_text_tab">
+				<div class="template-text-header clearfix">
+					<div class="btn-group pull-right">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							{{i18n.templatesBranding.macros}}&nbsp;
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							{{#each macros}}
+							<li>
+								<a class="macro-element" data-macro="{{@key}}" data-target="#{{../templateKey}}_text_body">{{friendly_name}}</a>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+				<textarea id="{{templateKey}}_text_body" class="template-text-body"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="preview-email-container flat-box">
+		<div class="preview-email-overlay"></div>
+		<div class="preview-email-header">
+			{{i18n.templatesBranding.previewHeader}}
+		</div>
+		<div class="preview-email-content">
+			<form id="{{templateKey}}_preview_form">
+				<span>{{i18n.templatesBranding.previewEmail}}</span>
+				<input id="{{templateKey}}_preview_recipient" type="email" placeholder="test@domain.com">
+				<button type="button" class="btn btn-primary preview-email-send">{{i18n.templatesBranding.previewSend}}</button>
+			</form>
+		</div>
+	</div>
+	<div class="action-bar clearfix">
+		<div class="pull-left">
+			{{#if data.account_overridden}}
+			<button type="button" class="monster-button monster-button-danger restore">{{i18n.templatesBranding.restoreButton}}</button>
+			{{else}}
+			<button type="button" class="monster-button monster-button-danger disabled" data-toggle="tooltip" data-placement="top" data-original-title="{{i18n.templatesBranding.restoreButtonDisabled}}">{{i18n.templatesBranding.restoreButton}}</button>
+			{{/if}}
+		</div>
+		<div class="pull-right">
+			<a class="monster-link cancel">{{i18n.cancel}}</a>
+			<button type="button" class="monster-button monster-button-success save">{{i18n.save}}</button>
+		</div>
+	</div>
+</div>

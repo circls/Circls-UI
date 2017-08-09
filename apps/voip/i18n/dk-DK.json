@@ -1,0 +1,1266 @@
+{
+	"defaultLang": "en-US",
+	"defaultttsvoice": "female/en-US",
+	"callerId": "Caller-ID",
+	"e911": "E911",
+	"failover": "Failover",
+        "numberPrepend": "Prepend",
+        "regextern": "External Registration",
+        "blacklist": "Incoming-Numberblockings",
+
+	"menuTitles": {
+		"myOffice": "Dashboard",
+		"users": "Users",
+		"groups": "Groups",
+		"numbers": "Numbers",
+		"devices": "Devices",
+		"mainNumber": "Main Number",
+		"callLogs": "Call Logs",
+		"quickLinks": "Help Topics",
+		"featureCodes": "Feature Codes",
+		"__comment": "UI-1220: Added VMBox module",
+		"__version": "3.19",
+		"vmboxes": "Voicemail Boxes"
+	},
+
+	"groups": {
+		"addFromSpare": "Add from Spare Numbers",
+		"add": "Add Group",
+		"addExtension": "Add Extension",
+		"addNewExtension": "Extension number: ",
+		"buy": "Buy Numbers",
+		"confirmDeleteGroup": "This group will be permanently deleted. Continue?",
+		"delete": "Delete Group",
+		"dialogCreationGroup": {
+			"availableUsers": "Available Users",
+			"createGroup": "Create Group",
+			"extension": "Extension",
+			"name": "Name this group",
+			"selectedUsers": "Selected Users",
+			"title": "Creating a group",
+			"missingDataAlert": "You must choose a name and an extension for this group"
+		},
+		"groupDeleted": "You successfully deleted {{name}}'s Group",
+		"name": "Group Name",
+		"noAssignedExtensions": "There are currently no extension assigned to this group.",
+		"noExtension": "None",
+		"noFeatures": "None",
+		"noMatchingGroup": "There were no groups found matching your search",
+		"noGroupsConfigured": "Please add a user group to begin",
+		"noNumber": "None",
+		"noAssignedNumbers": "There are no numbers assigned to this group.",
+		"noUnassignedNumbers": "There are no available number left to assign to this group.",
+		"noAssignedNumbers": "There are currently no number assigned to this group.",
+		"noMoreSpareNumbers": "There are no spare number left, you can buy new numbers by clicking the link below",
+		"noMatchingNumbers": "There were no numbers found matching your search",
+		"port": "Port Numbers",
+		"ringThisMemberFor": "Ring this member for:",
+		"ringGroupMissing": "No Ring Group are defined for this Group (group_id missing from callflow)",
+		"userDeleted": "User Deleted",
+		"removeMember": "Remove Member",
+		"distribute": "Distribute",
+		"maxDurationTooltip": "Click this box to change the maximum duration for your ring group. You must enter a number between 30 and 999.",
+		"title": "Total Groups",
+		"titleGrid": {
+			"groups": "Group Name",
+			"members": "Members",
+			"extensions": "Extension",
+			"phoneNumbers": "Phone Numbers",
+			"features": "Group Features"
+		},
+		"toastrMessages": {
+			"numbersUpdated": "You successfully updated the phone numbers of {{name}}",
+			"extensionsUpdated": "You successfully updated the extensions numbers of {{name}}"
+		},
+		"callRecording": {
+			"title": "Call Recording",
+			"headline": "Group Call Recording Settings",
+			"formatLabel": "Format:",
+			"urlLabel": "URL:",
+			"urlPlaceholder": "http://your.server.com/place/to/store/recordings",
+			"timeLimitLabel": "Time Limit (sec):",
+			"noNumber": "If your activate callrecord, you need a number for your extension.",
+			"bestoreDB": "Callrecords will be saved for 6 months in the database."
+		},
+		"ringback": {
+			"title": "Ringback",
+			"headline": "Group Ringback Settings",
+			"dropdownLabel": "Ringback media:",
+			"silence": "Silence",
+                        "germanRing": "Ringback Geramany",
+                        "usaRing": "Ringback USA",
+                        "asiaRing": "Ringback China",
+			"defaultRingback": "Default Ringback",
+			"emptyUploadAlert": "Please select a file to upload",
+			"fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+			"audioUploadButton": "Browse ..."
+		},
+		"nextAction": {
+			"title": "Next Action",
+			"headline": "Add an action when ring over",
+			"label": "Action, if no one answers:",
+			"menu": "Menu",
+			"mainMenu": "Main Menu (Open hours)",
+			"voicemails": "Voicemail Boxes",
+			"users": "Users"
+		},
+		"__comment": "UI-819, v3.19_s1: Showing an error popup when group data is outdated.",
+		"outdatedGroupsError": "Your Group's data is outdated and can not be rendered. Please contact your administrator to update your data.",
+
+		"__comment": "UI-1352: Adding an option to enable/disable call forwarding on ring group",
+		"__version": "3.20",
+		"forward": {
+			"title": "Allow Call-Forward",
+			"headline": "Allow Call-Forward",
+			"description": "Enable this option if you want to allow this group's users to press their device \"Forward\" button to forward a call from this ring group. If this option is disabled, it will ignore the user's command."
+		},
+
+		"__comment": "UI-1604: Adding Walkthrough for new users",
+		"__version": "3.21",
+		"walkthrough": {
+			"steps": {
+				"1": "Add a specific User Group by clicking on the button. The handy drag and drop allows you to add users, create a group name and add an extension number. Once complete, each User Group and its settings will be populated below.",
+				"2": "Once a User Group is created, it will pre-populate the area here. Make any necessary changes such as the group name, number of members and extension number.",
+				"3": "Purchase, Port and Assign numbers. Once complete, it will automatically be assigned to the specific User Group.",
+				"4": "Turn on/off and seamlessly manage any of the User Features specific to the User Group."
+			}
+		},
+
+		"__comment": "UI-1206: Adding a feature to add a Caller ID prepend on groups",
+		"__version": "3.22",
+		"prepend": {
+			"title": "Caller ID change",
+			"headline": "Caller ID change",
+			"cidNameLabel": "Caller ID Name prefix",
+			"cidNumberLabel": "Caller ID Number prefix"
+		},
+		"suffix": {
+			"cidNumberLabel": "Caller ID Number suffix"
+		}
+	},
+
+	"devices": {
+                "deviceBuy": "",
+		"add": "Add Device",
+		"assigned": "Assigned",
+		"createDevice": "Create Device",
+		"confirmDeleteDevice": "This device will be permanently deleted. Continue?",
+		"deleteDevice": "Delete Device",
+		"deletedDevice": "You successfully deleted the following device \"{{deviceName}}\".",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+                "useiax2infoHelp": "If you want to use IAX2 Protocol then you have to set it on.",
+                "provstringinfoHelp": "To use this, open per Webbrowser your phone, and write this string in his config field, and restart this phone manually.",
+		"popupSettings": {
+			"advancedTitle": "Advanced",
+			"brandDownloads": "Productinfo",
+			"basicTitle": "Basic Settings",
+			"basicSectionTitle": "Basic Settings",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"options": {
+				"menuTitle": "Options"
+			},
+			"sip": {
+				"menuTitle": "SIP",
+				"sectionTitle": "SIP Info",
+				"download": "Install Softphone easy",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Howto install Softphone easy and quickly",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download-link: 'Install Softphone easy' start your install of the Softphone as you do.",
+                                                "qrcode": "After installation, at the button of dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone ready to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+				"provstring": "Provstring",
+				"provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!",
+                                "provstring_notsupported": "This device in this version is not supported, please ask for additional support!",
+                                "endpoint_manualHelp": "You can download a manual for this device.",
+                                "endpoint_templateHelp": "For this device it has a Key-Template to download."
+			},
+			"audio": {
+				"menuTitle": "Audio",
+				"sectionTitle": "Audio Settings",
+				"selectedCodecs": "Selected Codecs",
+				"unselectedCodecs": "Available Codecs",
+				"codecs": {
+					"OPUS": "OPUS",
+					"CELT@32000h": "Siren @ 32Khz",
+					"G7221@32000h": "G722.1 @ 32khz",
+					"G7221@16000h": "G722.1 @ 16khz",
+					"G722": "G722",
+					"speex@32000h": "Speex @ 32khz",
+					"speex@16000h": "Speex @ 16khz",
+					"speex": "Speex",
+					"PCMU": "G711u / PCMU - 64kbps (NA)",
+					"PCMA": "G711a / PCMA - 64kbps (Elsewhere)",
+					"G729":"G729 - 8kbps (Requires License)",
+					"GSM":"GSM",
+					"CELT@48000h": "Siren (HD) @ 48kHz",
+					"CELT@64000h": "Siren (HD) @ 64kHz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "Emergency Caller-ID",
+				"sectionTitle": "Emergency Caller-ID",
+				"emergency": "Number",
+				"notSet": "- Account Default -",
+				"noE911Numbers": "You didn't set E911 on any of your numbers, please set it up via the Number Manager and come back on this screen once it's done",
+				"address": "Address",
+				"__comment": "UI-1386: Updating devices to use the numberSelector common control",
+				"__version": "v3.20_s4",
+				"selectNumber": "Select an e911 number",
+				"useDefault": "Use account default"
+			},
+			"miscellaneous": {
+				"menuTitle": "Miscellaneous",
+				"sectionTitle": "Miscellaneous",
+				"rtp": {
+					"enable": "Encrypt the audio",
+					"type": "Type of encryption: ",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"__comment": "UI-1119: Adding ignore_complete_elsewhere",
+				"__version": "3.19",
+				"ignoreCompletedElsewhere": {
+					"label": "Ignore Completed Elsewhere",
+					"help": "When checked supporting phones will show a call missed if it was part of a ring group answered elsewhere."
+				},
+				"__comment": "UI-377: Adding Restart device feature",
+				"__version": "3.21",
+				"restart": {
+					"label": "Send a Restart request (Use if you change phonesettings!)",
+					"button": "Restart",
+					"help": "This sends a request to restart the device. This action is only available if the device is currently registered to the platform.",
+					"success": "You successfully sent a Restart request to this device!"
+				},
+				"__comment": "UI-1818: Adding notify unregister",
+				"__version": "3.22",
+				"unregisterNotifications": {
+					"label": "Notify when unregistered",
+					"help": "Do you want to notify the administrator each time this device unregisters?"
+				}
+			},
+			"webrtc": {
+				"menuTitle": "WebRTC Link",
+				"sectionTitle": "WebRTC Link",
+				"showInfowebrtc": {
+					"infoLink": "Use this selection for absolute caution!",
+					"help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+				}
+			},
+			"restrictions": {
+				"menuTitle": "Restrictions",
+				"sectionTitle": "Restrictions Settings",
+				"inherit": "Inherit",
+				"deny": "Deny",
+				"matcher": {
+					"help": "Type in a number (international format => +[Countryprefix]...) and click on \"Test\" to see if the call would be allowed.",
+					"placeholder": "+18554443333",
+					"button": "Test",
+					"label": "The above number matched this rule.",
+					"__comment": "UI-727, v3.19_s2: Updating the way call restrictions are displayed on devices.",
+					"allowMessage": "This device will be allowed to place a call to {{phoneNumber}}",
+					"denyMessage": "This device will not be allowed to place a call to {{phoneNumber}}."
+				},
+				"__comment": "UI-727, v3.19_s2: Updating the way call restrictions are displayed on devices.",
+				"allow": "Allow",
+				"disabledRestrictionsInfo": "Some types of call have been restricted for your entire account and can not be enabled per-device."
+			},
+			"video": {
+				"menuTitle": "Video",
+				"sectionTitle": "Video Settings",
+				"selectedCodecs": "Selected Codecs",
+				"unselectedCodecs": "Available Codecs",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "H264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			},
+			"__comment": "UI-1351: Add ability to configure feature keys for SIP devices in SmartPBX",
+			"__version": "v3.20_s4",
+			"featureKeys": {
+				"menuTitle": "Feature Keys",
+				"description": "Feature key",
+				"labels": {
+					"user": "User",
+					"parkingSpot": "Parking Spot",
+					"value": "Value"
+				},
+				"info": {
+					"link": {
+						"showInfo": "Show Info",
+						"hideInfo": "Hide Info"
+					},
+					"types": {
+						"presence": "Indicate when a user has an incoming call or is on the phone. The indicator can be used to pick up ringing calls or speed dial that user.",
+						"parking": "Indicate when a call is placed on a parking slot available to the entire company. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+                                                "extension": "Nebenstelle",
+                                                "line": "Leitung",
+						"personal_parking": "Indicate when a call is placed on a parking slot dedicated to the selected user. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+						"speed_dial": "Does not indicate for any calls event but can be used to rapidly call the configured number."
+					}
+				},
+				"types": {
+					"none": "None",
+					"presence": "Presence",
+                                        "extension": "Nebenstelle",
+                                        "line": "Leitung",
+					"parking": "Parking",
+					"personal_parking": "Personal Parking",
+					"speed_dial": "Speed Dial"
+				},
+				"keytemplateHelp": "By click on this, template will be taken from this phone. Select an account wide template to take it at device create."
+			}
+		},
+		"buy": "Buy Devices online",
+                "buyHelp": "You can choose your devices to buy online, and the delievering will be direct to your home / office. This will be confirmed per eMail also. Even in this portal, you can see status and costs.",
+		"classifiers": {
+			"unknown": {
+			    "name": "Other than above",
+			    "help": "Please select this option when you want this account to place calls to ANY NUMBER other than mentioned on the list. (When the format of the number is unknown to the system.)"
+			}
+		},
+		"noMatchingDevices": "There were no devices found matching your search",
+		"noDevicesConfigured": "There are no devices configured",
+		"provisionerPopup": {
+			"brandHeadline": "Select the brand of the device:",
+			"deviceHeadline": "Select the model of the device:",
+			"deviceSelected": "You have selected the {{brand}} {{model}}",
+			"missingBrand": "The brand of my device is not listed here",
+			"missingDevice": "My device is not listed here",
+			"title": "Selection of the device"
+		},
+		"sip_device": {
+			"addTitle": "Adding a SIP Device",
+			"editTitle": "Editing SIP Device: {{name}}",
+			"macAddress": "MAC Address",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "New SIP Device",
+			"deviceName": "Device Name"
+		},
+		"sip_uri": {
+			"addTitle": "Adding a SIP URI",
+			"deviceName": "Name",
+			"editTitle": "Editing SIP URI: {{name}}",
+			"new": "New SIP URI",
+			"uri": "SIP URI",
+			"uriPlaceholder": "sip:device@my.company.com",
+			"hideContactList": "Hide from Contact List"
+		},
+		"landline": {
+			"addTitle": "Adding a Landline",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Landline: {{name}}",
+			"new": "New Landline",
+			"number": "Number",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Allow use of landline's voicemail",
+			"keepCallerId": "Keep Original Caller-ID",
+			"hideContactList": "Hide from Contact List"
+		},
+		"cellphone": {
+			"addTitle": "Adding a Cell Phone",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Cell Phone: {{name}}",
+			"new": "New Cell Phone",
+			"number": "Number",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Allow use of cellphone's voicemail",
+			"keepCallerId": "Keep Original Caller-ID",
+			"hideContactList": "Hide from Contact List"
+		},
+		"mobile": {
+			"addTitle": "Adding a Business Mobile",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Business Mobile: {{name}}",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10 digits phone number",
+			"new": "New Business Mobile"
+		},
+		"smartphone": {
+			"addTitle": "Adding a Smartphone",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Smartphone: {{name}}",
+			"new": "New Smartphone",
+			"requireKeypress": "Allow use of smartphone's voicemail",
+			"keepCallerId": "Keep Original Caller-ID",
+			"hideContactList": "Hide from Contact List"
+		},
+		"fax": {
+			"addTitle": "Adding a Fax Machine",
+			"editTitle": "Editing Fax Machine: {{name}}",
+			"macAddress": "MAC Address",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Fax Machine",
+			"deviceName": "Device Name",
+			"t38": "T38",
+			"disabled": "Disabled",
+			"auto": "Auto-detect",
+			"force": "Always force"
+		},
+		"softphone": {
+			"addTitle": "Adding a Softphone",
+			"editTitle": "Editing Softphone: {{name}}",
+			"new": "New Softphone",
+			"deviceName": "Device Name"
+		},
+		"ata": {
+			"addTitle": "Adding an ATA",
+			"editTitle": "Editing ATA: {{name}}",
+			"new": "New ATA",
+			"deviceName": "Device Name"
+		},
+		"sip": {
+			"username": "SIP Username",
+			"password": "SIP Password",
+			"realm": "Realm"
+		},
+		"spare": "Spare",
+		"title": "Total Devices",
+		"titleGrid": {
+			"edit": "Edit",
+			"enable": "Enable",
+			"user": "User",
+			"modelMacAddress": "Name / Mac Address",
+			"type": "Type"
+		},
+		"types": {
+			"cellphone": "Cell Phone",
+			"sip_device": "SIP Phone",
+			"smartphone": "Smartphone",
+			"mobile": "Business Mobile",
+			"softphone": "Soft Phone",
+			"landline": "Landline",
+			"fax": "Fax",
+			"ata": "ATA",
+			"sip_uri": "SIP URI"
+		},
+		"unassignedDevice": "-",
+		"walkthrough": {
+			"steps": {
+				"1": "Add a specific User Group by clicking on the button. The handy drag and drop allows you to add users, create a group name and add an extension number. Once complete, each User Group and its settings will be populated below.",
+				"2": "Once a User Group is created, it will pre-populate the area here. Make any necessary changes such as the group name, number of members and extension number.",
+				"3": "Purchase, Port and Assign numbers. Once complete, it will automatically be assigned to the specific User Group.",
+				"4": "Turn on/off and seamlessly manage any of the User Features specific to the User Group."
+			}
+		}
+	},
+
+	"users": {
+		"admin": "Admin",
+		"add": "Add User",
+		"addExtension": "Add an extension to this user",
+		"addNewExtension": "Extension number: ",
+		"addFromSpare": "Add from Spare Numbers",
+		"addFromSpareDevices": "Add from Spare Devices",
+		"buy": "Buy Numbers",
+		"confirmDeleteAdmin": "You're about to delete an ADMIN! Deleting an admin will delete his Kazoo user, as well as his voicemail boxes and numbers, it will also prevent him from managing this UI. Do you want to continue?",
+		"confirmDeleteUser": "Deleting a user will delete this user and his Voicemail Box, and unassign the devices and numbers that were assigned to this user. Do you want to continue?",
+		"dialogChangePassword": {
+			"help": "You can set a new password by just typing any password you want, along with the Email address!",
+			"password": "Password",
+			"passwordPlaceholder": "Password (Min. 6 characters)",
+			"title": "Update Email and password",
+			"username": "User's Email address"
+		},
+		"dialogChangePin": {
+			"help": "You can use this popup to set a temporary PIN for a user that lost his PIN for example.",
+			"pin": "PIN",
+			"pinPlaceholder": "Min. 4 digits",
+			"title": "Update PIN"
+		},
+		"dialogCreationUser": {
+			"createUser": "Create User",
+			"errorOnCreation": "An error occured while trying to create this user:",
+			"extension": "Main Extension Number",
+			"extensionAlreadyExist": "This Extension is already taken, please choose a different Extension Number.",
+			"firstName": "First Name",
+			"lastName": "Last Name",
+			"loginEmail": "Email used for Login",
+			"notificationEmail": "Notification E-mail",
+			"password": "Password (Min. 6 characters)",
+			"sendToDifferentEmail": "Send emails to an alternate address",
+			"title": "Create User",
+			"vmboxAlreadyExist": "VMBox Number is already taken, please choose a different Voicemail Box Number.",
+			"vmboxNumber": "VM Box #",
+			"__comment": "UI-814: Adding the option to automatically send email on user creation",
+			"__version": "3.20_s3",
+			"sendWelcomeEmail": "Send credentials to this user"
+		},
+		"editionForm": {
+			"changePIN": "Change PIN",
+			"changeUsername": "Change",
+			"firstName": "First Name",
+			"lastName": "Last Name",
+			"role": "Role",
+			"timezone": "Timezone",
+			"vmboxNumber": "VMBox #",
+			"timeout": "Ringing Timeout",
+			"timeoutSec": "Sec",
+			"timeoutEdit": "Edit in Find-Me-Follow-Me feature",
+			"timeoutEditHint": "The ringing timeout is overriden by the Find-Me-Follow-Me feature. Click on the link below to edit it.",
+			"disabledTimeoutHint": "You need at least one number or extension to set up the ringing timeout.",
+			"__comment": "UI-1109: Adding the Presence ID setting on the User document",
+			"__version": "3.19",
+			"presenceId": "Main Extension Number",
+			"noPresenceID": "None",
+			"__comment": "UI-1066: Adding Help text hover the icons of the user edition form",
+			"__version": "3.19",
+			"nameHelp": "Type the User's First Name in the first input, and the User's Last Name in the second one",
+			"loginHelp": "This is the Username of this user, used to login to the application",
+			"vmboxHelp": "This is the Voicemail Box Number of this user, click on Change PIN to reset the PIN of the Voicemail box of this user",
+			"roleHelp": "The \"Admin\" will have rights to access the App Exchange and add apps to this accoutn, whereas the \"User\" will only be able to access the apps that are enabled for him",
+			"languageHelp": "This will change the language of the text displayed in the UI",
+			"timezoneHelp": "This will set the Timezone used for this User's devices and Voicemail Box",
+			"ringingHelp": "This will set the Ringing Timeout for this User and his Devices. For example, if you set it to 20, this user will be rung for 20 seconds before the system moves to his Voicemail Box",
+			"mainExtensionHelp": "This will define the Caller-ID used for this User for calls inside the system, as well as setting his Presence ID to that number"
+		},
+		"delete": "Delete User",
+		"errorCallerId": "Before configuring the Caller-ID of this user, you need to assign him a number",
+		"errorNumberFaxing": "Before configuring the Faxing number of this user, you need to get some spare numbers on your account (You can buy new numbers in the Numbers section on the left menu).",
+		"featureOn": "ON",
+		"includeInDirectory": "Include User in the Company Directory",
+		"noMatchingDevices": "No devices matching your search",
+		"noMatchingNumbers": "There were no numbers found matching your search",
+		"noMatchingUser": "No data found matching your search",
+		"noUsersConfigured": "Please add a user to begin",
+		"noMoreSpareDevices": "There are no spare device left, you can buy new devices by going in the Devices Inventory",
+		"noMoreSpareNumbers": "There are no spare number left, you can buy new numbers by clicking the link below",
+		"noAssignedDevices": "There are currently no device assigned to this user.",
+		"noAssignedNumbers": "There are currently no number assigned to this user.",
+		"noAssignedExtensions": "There are currently no extension assigned to this user.",
+		"noNumber": "None",
+		"noNumberCallflow": "You need to assign at least one extension or phone number to this user before saving it",
+		"needExtensionFirst": "We require users to have an extension before assigning them a phone number, please click on the extension section and add one from there.",
+		"noExtension": "None",
+		"noAssignedNumbers": "There are no numbers assigned to this user.",
+		"noUnassignedNumbers": "There are no available number left to assign to this user.",
+		"noUserDevices": "None",
+		"noUserFeatures": "None",
+		"noUserCallflow": "An error occured. There are no Callflow assigned to this user, so you can't add him to the Company directory",
+		"port": "Port Numbers",
+		"resetPassword": "Reset Password",
+		"resendInstructions": "Resend Instructions",
+		"title": "Total Users",
+		"titleGrid": {
+			"users": "Users Settings",
+			"extensions": "Extensions",
+			"phoneNumbers": "Phone Numbers",
+			"devices": "Devices",
+			"features": "User Features"
+		},
+		"toastrMessages": {
+			"devicesUpdated": "You successfully updated the devices assigned to {{ name }}.",
+			"instructionsSent": "An e-mail has been sent to {{ email }} with all the user Instructions on how to get started with the UI!",
+			"numbersUpdated": "You successfully updated the phone numbers of {{ name }}.",
+			"passwordReseted": "The password has been reset, an e-mail has been sent to {{ email }} with instructions on how to create a new password.",
+			"userDelete": "You successfully deleted {{ name }} from the Smart PBX!",
+			"userUpdated": "You successfully updated {{ name }} settings.",
+			"pinUpdated": "You successfully updated the PIN of {{ name }}.",
+			"__comment": "UI-1033: Now properly remove the Caller-ID Feature if we remove a number that was set as that Caller-ID Number",
+			"__version": "3.20",
+			"callerIDDeleted": "The Caller-ID Number of this user was set to a number that was no longer assigned to him, so we disabled the Caller-ID Feature."
+		},
+		"uploadPicture": "Upload a Picture",
+		"user": "User",
+		"call_forward": {
+			"directCallsOnly": "Forward direct calls only",
+			"headline": "User Call Forwarding Settings",
+			"keepCallerId": "Keep your Caller-ID",
+			"label": "Forward all calls to" ,
+			"mobile": "A Mobile Phone",
+			"deskphone": "A Desk Phone",
+			"number": "This number",
+			"placeholder": "+14157283992",
+			"requireKeyPress": "Leave voicemails on forwarded numbers",
+			"title": "Call Forwarding",
+			"timeoutWarning": "In order to leave voicemails on forwarded numbers, your ringing timeout needs to be set to at least 30sec. By saving now, you will automatically be redirected to the user edition where you can update the ringing timeout."
+		},
+		"callRecording": {
+			"title": "Call Recording",
+			"headline": "User Call Recording Settings",
+			"formatLabel": "Format:",
+			"urlLabel": "URL:",
+			"urlPlaceholder": "http://your.server.com/place/to/store/recordings",
+			"timeLimitLabel": "Time Limit (sec):",
+			"noNumber": "Before configuring the Inbound Call Recording feature for this user, you need to assign him a number or an extension",
+			"bestoreDB": "Recording will be store for 6 months in database."
+		},
+		"conferencing": {
+			"title": "Conference Bridge",
+			"headline": "Personal Conference Bridge",
+			"pinLabel": "Personal Conference Room number",
+			"number": "Conferencing Phone Number(s)",
+			"help": "You can create a conference call by providing a conferencing phone number and your personal room number to the participants",
+			"noConfNumbers": "You need to add a Main Conference Number (in the Main number section on the left of the SmartPBX) in order to enable the Personnals Conference Bridges"
+		},
+		"faxing": {
+			"trialError": "You're currently using a trial version of the UI. Please upgrade your account to have access to the Faxing feature!",
+			"title": "Faxbox",
+			"headline": "Faxbox",
+			"defaultSettings": {
+				"nameExtension": "'s Faxbox",
+				"headerExtension": " Fax Printer"
+			},
+			"__comment": "UI-1354: Add better explanation to faxbox feature",
+			"__version": "v3.20_s4",
+			"faxToEmail": {
+				"title": "Fax to Email",
+				"text1": "Faxes sent to",
+				"text2": "will be converted to emails and sent to"
+			},
+			"emailToFax": {
+				"title": "Email to Fax",
+				"text1": "Emails sent to ",
+				"text2": " with a PDF (or TIFF) attachment will fax the attachment to ",
+				"text3": "The email must come from ",
+				"default": "{ destination number }",
+				"help": {
+					"showHelp": "Show help",
+					"hideHelp": "Hide help",
+					"question": "What number do you want to fax to?",
+					"placeholder": "destination number"
+				}
+			},
+
+			"googlePrinter": {
+				"title": "Google Printer",
+				"text1": "Click ",
+				"text2": " to activate the Google Cloud Printer. Get the printer installer from ",
+				"link": "here"
+			},
+			"toastr": {
+				"error": {
+					"numberMissing": "Please select a number"
+				}
+			}
+		},
+		"vm_to_email": {
+			"deleteAfterNotify": "Delete messages from database after sending the notification.",
+			"headline": "Voicemail-to-Email Settings",
+			"help": "If you want to change where email notifications go to, please edit the user's email address in the User Administration section",
+			"label": "An e-mail will be sent to {{variable}} for every new voicemail",
+			"title": "Voicemails"
+		},
+		"find_me_follow_me": {
+			"title": "Find me, Follow me",
+			"headline": "Find me, Follow me Settings",
+			"disableDevice": "Do not ring",
+			"ringThisPhoneFor": "Ring this phone for",
+			"noDevice": "You need at least one device to enable this feature.",
+			"noNumber": "Before configuring the Find-Me Follow-Me feature for this user, you need to assign him a number or an extension",
+			"distribute": "Distribute"
+		},
+		"caller_id": {
+			"title": "Caller-ID Number",
+			"dropdownLabel": "Show my Caller-Id Number as",
+			"headline": "User Caller-ID Number Settings",
+			"help": "If you don't enable this feature, the Caller-ID displayed by default will be the one configured on the Main Number of this account."
+		},
+		"music_on_hold": {
+			"title": "Music-On-Hold",
+			"headline": "User Music-On-Hold Settings",
+			"dropdownLabel": "Music on Hold:",
+			"silence": "Silence",
+			"emptyUploadAlert": "Please select a file to upload",
+			"fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+			"__comment": "UI-1025: Updating media file uploads throughout the UI",
+			"__version": "3.20_s3",
+			"audioUploadButton": "Browse ..."
+		},
+		"hotdesk": {
+			"id": "Hotdesk ID",
+			"label": "Does it require a PIN?",
+			"keep_logged_in_elsewhere": "Allow login at multiple devices",
+			"title": "Hot-Desking",
+			"headline": "User Hot-Desking Settings",
+			"help": "The Hot-Desking ID is automatically set as the user's extensions number."
+		},
+		"__comment": "UI-1129: Migration tool from Kazoo-UI to Monster-UI",
+		"__version": "3.19",
+		"migration": {
+			"confirmMigration": "We found an existing callflow with the number you're trying to add, it appears we can migrate this callflow to the SmartPBX. Before we proceed, we want to make sure you understand that you won't be allowed to update this Callflow in Kazoo-UI or in the Monster-UI Callflows app after this change. Do you want to continue?",
+			"tooManyCallflows": "It appears the numbers you're trying to add belong to multiple Kazoo-UI Callflows. There is no way to properly migrate these callflows in Monster-UI please contact your support to fix it."
+		},
+		"__commment": "UI-1109: Adding popup for Presence ID change",
+		"__version": "3.19",
+		"presenceIDPopup": {
+			"title": "Select your new Main Extension",
+			"header": "It appears that you don't have a valid Main Extension configured. Please select your Main Extension from the choices below:",
+			"none": "I don't want to set a new Main Extension"
+		},
+		"__comment": "UI-1393: Updating user devices to use the monsterListing common control",
+		"__version": "v3.20_s4",
+		"devices": {
+			"newDevice": "New Device",
+			"spareDevice": "Add from Spare Devices"
+		},
+
+		"__comment": "UI-1604: Adding Walkthrough for new users",
+		"__version": "3.21",
+		"walkthrough": {
+			"steps": {
+				"1": "Add a specific User by clicking on the button and providing their information. Once complete, each user and their settings will be populated below.",
+				"2": "Once a user is created, it will pre-populate the area here. Make any necessary changes to the specific user within Users Settings",
+				"3": "Provide Users with their own unique direct dial extension numbers.",
+				"4": "Click the button to purchase, port, and assign numbers. Once complete, it will automatically be assigned to the specific user.",
+				"5": "Autoprovision one of our supported devices. The UI comes complete with pre-populated manufacturers and devices. Once complete it will automatically be assigned to the specific user.",
+				"6": "Manage what features Users can access. Turn on/off and manage any of the specific User Features."
+			}
+		}
+	},
+
+	"strategy": {
+		"noNumberHelp": "Note: Please add a Main Office Number to your account first. Once you add a main number, you will be able to set up Office Hours, Holidays and Incoming Call Handling (Call-Flow) for your office.",
+		"sectionTitles": {
+			"numbers": "Main Company Numbers",
+			"confnum": "Main Conference Number",
+			"hours": "Office Hours Strategy",
+			"holidays": "Office Holidays",
+			"calls": "Incoming Call Handling",
+			"__comment": "UI-1210",
+			"__version": "3.22",
+			"faxingnum": "Main Faxbox Number"
+		},
+		"noNumberTitle": "Add Main Number",
+		"noNumberMessage": "Please add or buy a number from the links below to continue.",
+		"noConfNumMessage": "Please add a main conference number.",
+		"numberLinks": {
+			"spare": "Add from Spare Numbers",
+			"buy": {
+				"link": "Buy Numbers",
+				"regular": "Local",
+				"tollfree": "Toll-free",
+				"vanity": "Vanity"
+			},
+			"port": "Port Numbers"
+		},
+		"hours": {
+			"alwaysOpenTitle": "24 hours Open Office",
+			"alwaysOpenDescription": "Choose this option if you want incoming calls to be handled the same way all the time.",
+			"customHoursTitle": "Custom Office Hours",
+			"customHoursDescription": "Choose this option if you want incoming calls to be handled differently when your office is closed.",
+			"listTitle": "Custom Hours",
+			"timezone": "Company Timezone:",
+			"to": "to",
+			"lunchbreakTitle": "Are you closed for lunch hours?",
+			"__comment": "UI-1250: Adding help boxes",
+			"__version": "3.20_s2",
+			"helpAfterHours": "Do not forget to set the call routing for when your office is closed for the night! To set it up, go in the \"Incoming Call Handling\" section of this page, and select the \"After Hours\" tab.",
+			"helpLunchHours": "If your office is closed during lunch hours, you also need to choose the call routing for that. You can set it up in the \"Incoming Call Handling\" section as well, under the \"Lunch Hours\" tab."
+		},
+		"holidays": {
+			"enableTitle": "Are you closed for holidays?",
+			"addLink": "Add Holiday",
+			"singleLink": "Single Day",
+			"rangeLink": "Date Range",
+			"advancedLink": "Advanced",
+			"__comment": "UI-1250: Adding help boxes",
+			"__version": "3.20_s2",
+			"helpHolidays": "Do not forget to set the call routing for when your office is closed for the holidays! To set it up, go in the \"Incoming Call Handling\" section of this page, and select the \"Holidays\" tab."
+		},
+		"calls": {
+			"openHoursTitle": "Open Hours",
+			"lunchHoursTitle": "Lunch Hours",
+			"afterHoursTitle": "After Hours",
+			"holidaysTitle": "Holidays",
+			"incomingCall": "Incoming Call",
+			"virtualReceptionist": "Virtual Receptionist",
+			"voicemail": "Voicemail",
+			"groupOther": "Other",
+			"optionNone": "Skip to Voicemail",
+			"callTabsMessages": {
+				"MainOpenHours":"Select the way you want your callers to reach you when your office is Open.",
+				"MainLunchHours":"Select the way you want your callers to reach you during Lunch Hours.",
+				"MainAfterHours":"Select the way you want your callers to reach you when your office is Closed.",
+				"MainHolidays":"Select the way you want your callers to reach you when you are closed during Holidays."
+			}
+		},
+		"popup": {
+			"title": "Virtual Receptionist",
+			"infoBlock": "Virtual Receptionist will answer incoming calls professionally and automatically transfer them to an appropriate department or person. Main Menu will allow you to set up call routes. Please type or record greetings that matches the Main Menu.",
+			"menuTitle": "Main Menu",
+			"greetingsTitle": "Greetings",
+			"addRouteLink": "Add route",
+			"ttsGreetingTitle": "Text to Speech",
+			"ttsGreetingPlaceholder": "Please enter your greeting message here.",
+			"uploadGreetingTitle": "Upload your own file",
+			"recordGreetingTitle": "Record it over the phone",
+			"recordGreetingInfo": "Record the greeting message yourself over the phone, by following the steps below:",
+			"recordGreetingLines": {
+				"line1": "Pick up a phone registered in this account.",
+				"line2": "Dial your office main number.",
+				"line3": "Enter this PIN when prompted:",
+				"line4": "Record your greetings / menu."
+			},
+			"pressKey": "Press",
+			"for": "for",
+			"__comment": "UI-1025: Updating media file uploads throughout the UI",
+			"__version": "3.20_s3",
+			"fileUploadButton": "Choose File",
+			"__comment": "UI-1185: Adding a help message to the greetings",
+			"__version": "3.20_s4",
+			"greetingsHelp": "You need to click the \"Update\" button in order to save your changes for the greeting message.",
+			"__comment": "UI-1657: Add default action translation",
+			"__version": "v3.22",
+			"defaultAction": "Default action"
+		},
+		"open": "Open",
+		"closed": "Closed",
+		"weekdays": {
+			"monday": "Monday",
+			"tuesday": "Tuesday",
+			"wednesday": "Wednesday",
+			"thursday": "Thursday",
+			"friday": "Friday",
+			"saturday": "Saturday",
+			"sunday": "Sunday"
+		},
+		"ordinals": {
+			"first": "First",
+			"second": "Second",
+			"third": "Third",
+			"fourth": "Fourth",
+			"fifth": "Fifth",
+			"last": "Last"
+		},
+		"monthsShort": {
+			"january": "Jan",
+			"february": "Feb",
+			"march": "Mar",
+			"april": "Apr",
+			"may": "May",
+			"june": "Jun",
+			"july": "Jul",
+			"august": "Aug",
+			"september": "Sep",
+			"october": "Oct",
+			"november": "Nov",
+			"december": "Dec"
+		},
+		"callEntities": {
+			"user": "Users",
+			"device": "Devices",
+			"ring_group": "Groups",
+			"voicemail": "Voicemail Boxes",
+			"__comment": "UI-1353: Add directory support for the virtual receptionist",
+			"__version": "v3.20_s4",
+			"directory": "Directory",
+			"__comment": "UI-1742: Can now select a callflow created in Advanced Callflows in Main Number",
+			"__version": "3.22",
+			"advancedCallflows": "Advanced Callflows"
+		},
+		"confirmMessages": {
+			"deleteHoliday": "This holiday will be permanently deleted. Continue?",
+			"disableHolidays": "All existing holidays will be permanently deleted. Continue?"
+		},
+		"alertMessages": {
+			"uniqueHoliday": "Every holiday must have a unique name.",
+			"undefinedMenu": "You selected a Virtual Receptionist without setting it up. Please set it up by clicking on the Virtual Receptionist link, or choose a different option.",
+			"emptyTtsGreeting": "You must type in your greeting message to enable Text to Speech functionality.",
+			"emptyUploadGreeting": "Please select a file to upload",
+			"fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+			"uniqueMenuNumbers": "Numbers within the menu must be unique and non-empty.",
+			"lastE911Error": "You need e911 set up on at least one of your Main Numbers. Please set up e911 on another Main Number before deleting this one."
+		},
+		"toastrMessages": {
+			"updateHolidaySuccess": "Holidays sucessfully updated.",
+			"updateCallSuccess": "Call strategy sucessfully updated.",
+			"buyNumbersSuccess": "The numbers have been purchased.",
+			"buyNumbersError": "An error occured while purchasing numbers.",
+			"removeNumberSuccess": "Number successfully removed from the main callflow."
+		},
+		"popupRemoveFeatures": {
+			"title": "Features",
+			"questionPartOne": "Do you want to remove features from",
+			"questionPartTwo": "?",
+			"featuresToRemove": "Check the feature(s) to remove :",
+			"features": {
+				"cnam": "Caller-ID",
+				"dash_e911": "e911"
+			}
+		},
+
+		"__comment": "UI-1604: Walkthrough dashboard",
+		"__version": "3.21",
+		"walkthrough": {
+			"first": {
+				"steps": {
+					"1": "Setup your main company number within SmartPBX by purchasing or porting a number. This is different than User Phone Numbers because it represents the main phone number for the entire company."
+				}
+			},
+			"second": {
+				"steps": {
+					"1": "Set up your office hours phone strategy to your convenience. You can set up a 24 hour open office strategy or if your office is ever closed, create custom hours. You can even close your office during lunch hours.",
+					"2": "Is your office closed on holidays? Create specific dates or time frames when your office will be closed",
+					"3": "Virtual Receptionist allows you to seamlessly answer incoming calls. Add call routes to contact the appropriate department or person within the system. You can also create customized greetings using text-to-speech, uploading your own file or recording it over the phone.",
+					"4": "Create a main Conference Number for your business. Purchase, port or add an existing number and set up a Conference Number seamlessly.",
+					"__comment": "UI-1210: Add a step to the walkthrough to explain the main faxbox number",
+					"__version": "3.22",
+					"5": "Create a main Faxbox Number for your business. Purchase, port or add an existing number and set up a Faxbox Number seamlessly."
+				}
+			}
+		},
+		"__comment": "UI-17142: ",
+		"__version": "3.22",
+		"noFaxingNumMessage": "Please add a main faxbox number.",
+		"__comment": "UI-1210: ",
+		"__version": "3.22",
+		"faxing": {
+			"nameExtension": "'s Main Faxbox",
+			"headerExtension": " Fax Printer"
+		},
+		"__comment": "UI-1774: Adding custom greetings to conference",
+		"__version": "3.22",
+		"customConferenceGreeting": {
+			"title": "Custom Conference Greeting",
+			"link": "Custom Greeting",
+			"info": "Customize your conference greeting message using our Text-to-Speech feature. Simply type your greeting message in the input field below.",
+			"mainConfMissing": "Your Main Conference could not be found.",
+			"tooltip": "Your Main Conference has a custom greeting message."
+		}
+	},
+
+	"callLogs": {
+		"title": "Call Logs",
+		"dateRangeTo": "to",
+		"noSearchMatch": "You search criteria did not match any Call Log.",
+		"detailsPopupTitle": "Call Log Details",
+		"applyFilter": "Filter by selected dates",
+		"resetFilter": "Reset filter to default dates",
+		"gridHeaders": {
+			"inboundCall": "Inbound",
+			"outboundCall": "Outbound",
+			"dateTime1": "Date/Time",
+			"from": "From",
+			"to": "To",
+			"duration1": "Duration",
+			"duration2": "(Min)",
+			"hangup1": "Hangup",
+			"hangup2": "Cause",
+			"details1": "Call",
+			"details2": "Details",
+			"report1": "Submit",
+			"report2": "Report",
+			"play1": "Play",
+			"play2": "Record"
+		},
+		"reportCall": "Report Call",
+		"loaderMessage": "Scroll down or click here to load additional Call Logs.",
+		"loadingMessage": "Loading additional Call Logs...",
+		"alertMessages": {
+			"getDetailsError": "An error occured while retrieving the call log's details."
+		},
+		"key": "Key",
+		"value": "Value",
+		"__comment": "UI-1071: Adding new Range buttons to Call Logs",
+		"__version": "3.20",
+		"thisMonth": "This Month",
+		"thisWeek": "This Week",
+		"thisDay": "Today",
+		"custom": "Custom",
+		"callsFrom": "Showing calls from",
+		"callsTo": "to",
+		"hangupCodes": {
+			"NORMAL_CLEARING": "Normal Hangup",
+			"WRONG_CALL_STATE": "Callstate Error",
+			"NO_ROUTE_DESTINATION": "No Route",
+			"CALL_REJECT": "Reject",
+			"MANDATORY_IE_MISSING": "Config Error",
+			"PROGRESS_TIMEOUT": "Progress Timeout",
+			"RECOVERY_ON_TIMER_EXPIRE": "Recovery on timeout"
+		},
+		"playCall": "Play Call",
+		"stopPlaying": "Stop playing",
+		"rewindBackward": "Rewind backward",
+		"rewindForward": "Rewind forward",
+		"downloadRecord": "Download call record",
+		"audioNotSupported": "Your browser does not support the audio element",
+		"audioNotAvailable": "Audio recording is not available",
+		"describeIssue": "Please describe the details of the issue"
+	},
+
+	"myOffice": {
+		"topBarLinks": {
+			"callerID": "Caller ID",
+			"musicOnHold": "Hold Music",
+			"callRecording": "Recording",
+			"hours": "Hours"
+		},
+		"musicOnHold": {
+			"title": "Music-On-Hold",
+			"headline": "Setup Music-On-Hold for the Account",
+			"dropdownLabel": "Music on Hold:",
+			"silence": "Silence",
+			"default": "Default Music",
+			"emptyUploadAlert": "Please select a file to upload",
+			"fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+			"__comment": "UI-1025: Updating media file uploads throughout the UI",
+			"__version": "3.20_s3",
+			"audioUploadButton": "Browse ..."
+		},
+		"callerId": {
+			"title": "Company Caller ID",
+			"headline": "Select a Caller ID Number for the Account",
+			"numberLabel": "Company Caller ID number",
+			"numberHelp": "This number will appear as your Caller ID when you make outbound calls. Needs to be shorter than 15 characters (including spaces).",
+			"nameLabel": "Company Caller ID name",
+			"nameHelp": "This name will appear as your Caller ID when you make outbound calls.",
+			"emergencyLabel": "Company Emergency (E911) Address",
+			"emergencyZipcode": "Zip Code",
+			"emergencyAddress1": "Address Line 1",
+			"emergencyAddress2": "Address Line 2",
+			"emergencyCity": "City",
+			"emergencyState": "State",
+			"emergencyHelp1": "This address will appear as your Caller ID address when you make outbound emergency call to a government agency (e.g. 911 in the US).",
+			"emergencyHelp2": "Note: You can set this feature on users' numbers too if they do not share the same location as above.",
+			"mandatoryE911Alert": "You must specify e911 information for your company caller ID number."
+		},
+		"missingMainNumberForCallerId": "You need to add a main number to your office before configuring the Caller-ID!",
+		"missingE911Message": "Please setup your Company Caller ID and e911 on a Main Number.",
+		"missingMainNumberMessage": "Please add a Main Number to your account.",
+		"totalUsers": "Total Users",
+		"totalDevices": "Total Devices",
+		"totalConfs": "Conference Bridges",
+		"mainNumberLabel": "Main Number",
+		"noMainNumber": "Add main number",
+		"confNumberLabel": "Conference Number",
+		"faxNumberLabel": "Fax Number",
+		"totalNumbers": "Total Numbers",
+		"unregisteredDevices": "Unregistered Devices",
+		"accountId": "Account ID:",
+		"accountRealm": "Account Realm:",
+		"numberChartLegend": {
+			"assigned": "Assigned Numbers",
+			"spare": "Spare Numbers",
+			"local": "Local Numbers",
+			"tollfree": "Toll-free Numbers",
+			"international": "International Numbers",
+			"noNumber": "No number available"
+		},
+		"__comment": "UI-1220: Adding a Main VMBox automatically when they first load the SmartPBX if they don't have one",
+		"__version": "3.19",
+		"mainVMBoxName": "Main Voicemail Box",
+
+		"__comment": "UI-1604: Walkthrough dashboard",
+		"__version": "3.21",
+		"walkthrough": {
+			"steps": {
+				"1": "Review your entire office setup including your users, devices, numbers, main number and conference number",
+				"2": "Create and manage most of your services in the Users tab. Create new users, purchase port, and assign numbers, add an autoprovision devices, and manage User Features.",
+				"3": "Once you have created enough users, create user groups. This is extremely useful if you have users that work in the same department, such as a sales team.",
+				"4": "Create a main number for your business. Manage call handling with Virtual Receptionist, and route calls depending on Office Hours and Holidays"
+			}
+		},
+		"__comment": "UI-1210: Display the Main Faxbox number on the dashboard",
+		"__version": "3.22",
+		"faxingNumberLabel": "Faxbox Number",
+		"__comment": "UI-1197: Display company directory on the dashboard",
+		"__version": "3.22",
+		"directoryLabel": "Company Directory Users:"
+	},
+
+	"__comment": "UI-299, v3.19_s2: Added the Feature Codes tab to SmartPBX.",
+	"featureCodes": {
+		"title": "Available Feature Codes",
+		"noFeatureCodeMessage": "There are no feature codes enabled on your account yet. Feature codes are automatically created when you load the Main Number page.",
+		"mainNumberLink": "Go to Main Number",
+		"labels": {
+			"call_forward[action=activate]": "Enable Call-Forward",
+			"call_forward[action=deactivate]": "Disable Call-Forward",
+			"call_forward[action=toggle]": "Toggle Call-Forward",
+			"call_forward[action=update]": "Update Call-Forward",
+			"call_forward[action=on_busy_enable]": "Enable Call-Forward on Busy",
+			"call_forward[action=on_busy_disable]": "Disable Call-Forward on Busy",
+			"call_forward[action=no_answer_enable]": "Enable Call-Forward No Answer",
+			"call_forward[action=no_answer_disable]": "Disable Call-Forward No Answer",
+			"hotdesk[action=login]": "Enable Hot Desking",
+			"hotdesk[action=logout]": "Disable Hot Desking",
+			"hotdesk[action=toggle]": "Toggle Hot Desking",
+			"voicemail[action=check]": "Check Voicemail",
+			"voicemail[action=\"direct\"]": "Direct to Voicemail",
+			"intercom": "Intercom",
+			"privacy[mode=full]": "Privacy",
+			"park_and_retrieve": "Park and Retrieve",
+			"valet": "Valet",
+			"retrieve": "Retrieve",
+			"donotdisturb[action=\"enable\"]": "Enable Do not disturb",
+			"donotdisturb[action=\"disable\"]": "Disable Do not disturb",
+			"donotdisturb[action=\"toggle\"]": "Toggle Do not disturb",
+			"directory": "Directory",
+			"time": "Check Time",
+			"call_waiting[action=enable]": "Enable Call-Waiting",
+			"call_waiting[action=disable]": "Disable Call-Waiting",
+			"sound_test_service": "Sound Test Service",
+			"call_recording": "Call Recording",
+			"__comment": "UI-1395: Added voicemail[single_mailbox_login] feature code",
+			"__version": "3.20",
+			"voicemail[single_mailbox_login]": "Check Voicemail (auto login)",
+			"move": "Move"
+		},
+		"__comment": "UI-1028, v3.20_s0: Added categories for the feature codes.",
+		"categories": {
+			"call_forward": "Call-Forward",
+			"hotdesk": "Hot-Desking",
+			"parking": "Parking",
+			"do_not_disturb": "Do Not Disturb",
+			"misc": "Miscellaneous"
+		},
+                "installBox": {
+                        "avmTitle": "AVM FRITZ! Clip: Die FRITZ!Box -- the top model for Internet, telephony and multimedia (All-IP)",
+                        "avmDescript": "The FRITZ!Box offers the new Wireless AC standard for ultra-fast wireless speed as well as considerably more range. The latest hardware, lightning-fast gigabit LAN ports, and always the latest version of FRITZ!OS for your Smart Home.",
+                        "avmAllipYtLink": "http://www.youtube.com/watch?v=XXXk9ARdZH8"
+                },
+                "installIos": {
+                        "iosTitle": "QoS-Modem for stable and save internet connections at (All-IP)",
+                        "iosDescript": "Das QoS-Modem is able to hold your internet stable as well, the perfect fit for all your home networking needs.",
+                        "iosAllipYtLink": "http://www.youtube.com/watch?v=Gwg4K-B6RwM"
+                },
+                "installSoft": {
+                        "softTitle": "Zoiper App: The Softphone App on your Smartphone oder PC over (All-IP)",
+                        "softDescript": "The Softphone App on your Smartphone over WLAN-Connection can you have phone cheep as well!"
+                },
+                "installSip": {
+                        "sipTitle": "Easy installation for your SIP-Phones at IP-Connections with (All-IP)",
+                        "sipDescript": "The SIP-Phone is easy to use, just setup and plugin the sip-phone."
+                },
+                "walkthrough": {
+                        "steps": {
+                                "1": "Service Nummern: Give you the overview o possible service numbers.",
+                                "2": "Installation FritzBox: The Guide for install a Fritzbox.",
+                                "3": "Installation QoS-Modem: The Guide for install the QoS-Modem.",
+                                "4": "Installation Softphone: The Guide for install a Softphone.",
+                                "5": "Installation SIP-Phone: The Guide for install a SIP-Phone."
+                        }
+                }
+	},
+
+	"__comment": "UI-1220: Added VMBox module",
+	"__version": "3.19",
+	"vmboxes": {
+		"addTitle": "Adding a Voicemail Box",
+		"editTitle": "Editing a Voicemail Box: {{ name }}",
+		"title": "Total Voicemail Boxes",
+		"add": "Add Voicemail Box",
+		"new": "New Voicemail Box",
+		"createVmbox": "Create new Voicemail Box",
+		"deleteVmbox": "Delete Box",
+		"deleteNotAllowed": "You can not delete this Voicemail Box because it belongs to a User",
+		"confirmDeleteVmbox": "This Voicemail Box will be permanently deleted. Continue?",
+		"deletedVmbox": "You successfully deleted the following Voicemail Box \"{{vmboxName}}\".",
+		"titleGrid": {
+			"name": "Name",
+			"number": "Number",
+			"owner": "User",
+			"edit": "Edit"
+		},
+		"noMatchingVMBoxes": "There were no Voicemail Boxes found matching your search",
+		"noVMBoxesConfigured": "There are no Voicemail Boxes configured",
+		"popupSettings": {
+			"advancedTitle": "Advanced",
+			"basicTitle": "Basic Settings",
+			"basicSectionTitle": "Basic Settings",
+			"basic": {
+				"name": {
+					"label": "Name"
+				},
+				"number": {
+					"label": "Voicemail Number"
+				},
+				"pinNumber": {
+					"label": "PIN Number"
+				}
+			},
+			"options": {
+				"menuTitle": "Options",
+				"sectionTitle": "Options",
+				"timezone": {
+					"label": "Timezone"
+				},
+				"unavailableMessage": {
+					"label": "Unavailable Message"
+				},
+				"timezone": {
+					"label": "Timezone"
+				},
+				"alreadySetup": {
+					"label": "Already Setup?",
+					"help": "Is this voicemail box already considered initialized? If not, the first time the user logs in they will be forced to change their PIN and setup a greeting."
+				},
+				"requirePIN": {
+					"label": "Require PIN?",
+					"help": "Check if voicemail requires a PIN."
+				},
+				"autoLogin": {
+					"label": "Auto-Login Enabled?",
+					"help": "Check to enable auto-login for this voicemail box? (If the user call his own voicemail, it goes straight to his messages)"
+				},
+				"skipGreetings": {
+					"label": "Skip Greetings?",
+					"help": "Check to skip greetings by default"
+				},
+				"skipInstructions": {
+					"label": "Skip Instructions?",
+					"help": "Check to skip instructions by default"
+				},
+				"deleteAfterNotify": {
+					"label": "Delete after Notification?",
+					"help": "Delete the voicemail after the notification has been sent"
+				},
+				"configurable": {
+					"label": "Configurable via Menu?",
+					"help": " If unchecked, it will disallow the user to configure voicemail via the menu"
+				}
+			},
+			"recipients": {
+				"menuTitle": "Recipients",
+				"sectionTitle": "Recipients",
+				"header": "This panel lets you manage who will be notified when someones leave a message on this voicemail box. Click on  \"Add New Recipient\" to add an e-mail address to the list",
+				"create": "Add New Recipient"
+			},
+			"__comment": "UI-975: Adding the prepend feature to numbers",
+			"__version": "v3.22",
+			"greeting": {
+				"menuTitle": "Greeting Media",
+				"sectionTitle": "Greeting Media",
+				"dropdownLabel": "Media:",
+				"noGreeting": "- None -",
+				"audioUploadButton": "Browse...",
+				"fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+				"emptyUploadAlert": "Please select a file to upload"
+			}
+		}
+	},
+        "installservices": {
+                "title": "Install and Service-Numbers",
+                "featureCodes": "Service-Numbers",
+                "installFritzBox": "Inst. FritzBox",
+                "installIosmodem": "Inst. QoS-Modem",
+                "installSoftphone": "Inst. Phone App",
+                "installSipphone": "Inst. SIP-Phone"
+        },
+	"__comment": "UI-1219: Adding the prepend feature to numbers",
+	"__version": "v3.20_s1",
+	"numberPrepend": "Prepend",
+	"__comment": "UI-1153: Show warning icon next to numbers being transfered",
+	"__version": "v3.20_s3",
+	"portIconHelp": "This number is in the process of being ported and will be deleted if the port fails. It only appears for setting up purposes and is not configured to handle calls",
+	"useiax2Gateway": "Use IAX2 Gateway"
+}

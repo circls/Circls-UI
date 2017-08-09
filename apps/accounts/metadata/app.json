@@ -1,0 +1,61 @@
+{
+   "name": "accounts",
+   "i18n": {
+       "en-US": {
+           "label": "Accounts Manager",
+           "description": "The Accounts app allows you to create, customize, and manage of all your client accounts.",
+           "extended_description": "This application allows resellers and service providers to handle anything related to all their customer accounts, giving you all the granular control you need to ensure your customers have an enjoyable  experience with your service. Via this tool you can easily see and manage all  the sub-accounts you have under your main account. Easily edit and configure all the accounts while saving time and money, allowing you to stay on top of all your sub accounts with ease.",
+           "features": [
+               "Customizable sub accounts",
+               "Easy monitoring when sub account deregisters"
+           ]
+       },
+       "de-DE": {
+           "label": "Kontenverwaltung",
+           "description": "Die Kontenverwaltung ermöglicht Ihnen das Erstellen und Ändern Ihre Kundenkonten",
+           "extended_description": "Diese Anwendung ermöglicht es Wiederverkäufern Einstellungen für Ihre Kundenkonten zu verwalten. Über dieses Tool können Sie alle Unterkonten unter Ihrem Hauptkonto verwalten, und können als Wiederverkäufer Ihren Kunden direkt eine Dienstleistung erbringen.",
+           "features": [
+               "Anpassbare Unterkonten",
+               "Einfache Überwachung, für Unterkonten"
+           ]
+       },
+       "fr-FR": {
+           "label": "Gestionnaire de comptes",
+           "description": "The Accounts app allows you to create, customize, and manage of all your client accounts.",
+           "extended_description": "This application allows resellers and service providers to handle anything related to all their customer accounts, giving you all the granular control you need to ensure your customers have an enjoyable  experience with your service. Via this tool you can easily see and manage all  the sub-accounts you have under your main account. Easily edit and configure all the accounts while saving time and money, allowing you to stay on top of all your sub accounts with ease.",
+           "features": [
+               "Sous-comptes personnalisables",
+               "Logiciel natif de facturation"
+           ]
+       },
+       "it-IT": {
+           "label": "Gestione account",
+           "description": "The Accounts app allows you to create, customize, and manage of all your client accounts.",
+           "extended_description": "This application allows resellers and service providers to handle anything related to all their customer accounts, giving you all the granular control you need to ensure your customers have an enjoyable  experience with your service. Via this tool you can easily see and manage all  the sub-accounts you have under your main account. Easily edit and configure all the accounts while saving time and money, allowing you to stay on top of all your sub accounts with ease.",
+           "features": [
+               "Conti sub personalizzabili",
+               "Monitoraggio facile quando account secondario revocando"
+           ]
+       }
+   },
+   "tags": [ "reseller", "developer", "carrier" ],
+   "icon": "Accounts_app.png",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "author": "2600Hz",
+   "version": "1.0",
+   "license": "MPL",
+   "price": "0.00",
+   "screenshots": [
+       "accounts1.png",
+       "accounts2.png",
+       "accounts3.png",
+       "accounts4.png",
+       "accounts5.png",
+       "accounts6.png",
+       "accounts7.png"
+   ],
+   "urls": {
+       "documentation": "{documentation_url}",
+       "howto": "{howto_video_url}"
+   }
+}

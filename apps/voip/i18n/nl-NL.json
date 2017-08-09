@@ -1,0 +1,1077 @@
+{
+	"defaultttsvoice": "female/nl-NL",
+	"callerId": "beller-id",
+	"e911": "E911",
+	"failover": "failover",
+        "numberPrepend": "Prepend",
+        "regextern": "External Registration",
+        "blacklist": "Incoming-Numberblockings",
+
+	"menuTitles": {
+		"myOffice": "dashboard",
+		"users": "gebruikers",
+		"groups": "groepen",
+		"numbers": "getallen",
+		"devices": "apparaten",
+		"mainNumber": "hoofdnummer",
+		"callLogs": "oproeplogboeken",
+		"quickLinks": "help-onderwerpen",
+		"featureCodes": "feature codes",
+		"vmboxes": "voicemail- boxen"
+	},
+
+	"groups": {
+		"addFromSpare": "toevoegen van reserve nummers",
+		"add": "groep toevoegen",
+		"addExtension": "add extensie",
+		"addNewExtension": "toestelnummer",
+		"buy": "kopen nummers",
+		"confirmDeleteGroup": "deze groep zal permanent worden verwijderd. verder gaan?",
+		"delete": "groep verwijderen",
+		"dialogCreationGroup": {
+			"availableUsers": "beschikbaar gebruikers",
+			"createGroup": "voor groepen maken",
+			"extension": "uitbreiding",
+			"name": "noem deze groep",
+			"selectedUsers": "geselecteerde gebruikers",
+			"title": "het creëren van een groep",
+			"missingDataAlert": "moet u een naam en een extensie voor deze groep te kiezen"
+		},
+		"groupDeleted": "je succesvol verwijderd {{ naam }} s groep",
+		"name": "groepsnaam",
+		"noAssignedExtensions": "Er zijn momenteel geen toestel dat is toegewezen aan deze groep.",
+		"noExtension": "geen enkel",
+		"noFeatures": "geen enkel",
+		"noMatchingGroup": "er waren geen groepen gevonden die voldoen aan uw zoekopdracht",
+		"noGroupsConfigured": "voeg een gebruikersgroep te beginnen",
+		"noNumber": "geen enkel",
+		"noAssignedNumbers": "er geen toegewezen aan deze groep.",
+		"noUnassignedNumbers": "er zijn geen beschikbare aantal links naar toewijzen aan deze groep.",
+		"noAssignedNumbers": "Er zijn momenteel geen nummer toegewezen aan deze groep.",
+		"noMoreSpareNumbers": "Er zijn geen reserveonderdelen aantal links, kunt u nieuwe nummers te kopen door te klikken op de onderstaande link",
+		"noMatchingNumbers": "er waren geen nummers gevonden die voldoen aan uw zoekopdracht",
+		"port": "poortnummers",
+		"ringThisMemberFor": "ring dit lid voor",
+		"ringGroupMissing": "geen ring groep zijn gedefinieerd voor deze groep (group_id ontbreekt callflow)",
+		"userDeleted": "gebruiker verwijderd",
+		"removeMember": "verwijder lid",
+		"distribute": "verdelen",
+		"maxDurationTooltip": "Klik dit aan om de maximale duur voor uw ring groep te wijzigen. moet u een nummer in te voeren tussen de 30 en 999.",
+		"title": "totaal groepen",
+		"titleGrid": {
+			"groups": "groepsnaam",
+			"members": "leden",
+			"extensions": "uitbreiding",
+			"phoneNumbers": "telefoonnummers",
+			"features": "groepseigenschappen"
+		},
+		"toastrMessages": {
+			"numbersUpdated": "u met succes de telefoonnummers van bijgewerkte {{ naam }}",
+			"extensionsUpdated": "u met succes de extensies aantallen bijgewerkt {{ naam }}"
+		},
+		"callRecording": {
+			"title": "gespreksopname",
+			"headline": "groepsoproep opname-instellingen",
+			"formatLabel": "formaat",
+			"urlLabel": "url",
+			"urlPlaceholder": "http",
+			"timeLimitLabel": "tijdslimiet (sec)",
+                        "noNumber": "If your activate callrecord, you need a number for your extension.",
+                        "bestoreDB": "Callrecords will be stored for 6 months in the database."
+		},
+		"ringback": {
+			"title": "terugbellen",
+			"headline": "groep terugbellen instellingen",
+			"dropdownLabel": "terugbellen media",
+			"silence": "stilte",
+                        "germanRing": "Ringback Geramany",
+                        "usaRing": "Ringback USA",
+                        "asiaRing": "Ringback China",
+			"defaultRingback": "default terugbellen",
+			"emptyUploadAlert": "Selecteer een bestand om te uploaden",
+			"fileTooBigAlert": "U kunt een bestand niet uploaden met een grootte van meer dan 5MB"
+		},
+		"nextAction": {
+			"title": "volgende actie",
+			"headline": "voeg een actie als er niemand pikt",
+			"label": "als niemand antwoordt, stuurt de oproep om",
+			"menu": "menu",
+			"mainMenu": "hoofdmenu (open uur)",
+			"voicemails": "voicemail- boxen",
+			"users": "gebruikers"
+		},
+		"outdatedGroupsError": "uw groepen gegevens is verouderd en kan niet worden weergegeven. Neem contact op met uw beheerder om uw gegevens bij te werken.",
+                "forward": {
+                        "title": "Allow Call-Forward",
+                        "headline": "Allow Call-Forward",
+                        "description": "Enable this option if you want to allow this group's users to press their device \"Forward\" button to forward a call fromthis ring group. If this option is disabled, it will ignore the user's command."
+                },
+                "walkthrough": {
+                        "steps": {
+                                "1": "Add a specific User Group by clicking on the button. The handy drag and drop allows you to add users, create a group name and add an extension number. Once complete, each User Group and its settings will be populated below.",
+                                "2": "Once a User Group is created, it will pre-populate the area here. Make any necessary changes such as the group name, number of members and extension number.",
+                                "3": "Purchase, Port and Assign numbers. Once complete, it will automatically be assigned to the specific User Group.",
+                                "4": "Turn on/off and seamlessly manage any of the User Features specific to the User Group."
+                        }
+                },
+                "prepend": {
+                        "title": "Caller ID change",
+                        "headline": "Caller ID change",
+                        "cidNameLabel": "Caller ID Name prefix",
+                        "cidNumberLabel": "Caller ID Number prefix"
+                },
+                "suffix": {
+                        "cidNumberLabel": "Caller ID Number suffix"
+		}
+	},
+
+	"devices": {
+		"add": "add -apparaat",
+		"assigned": "toegewezen",
+		"createDevice": "creëren apparaat",
+		"confirmDeleteDevice": "dit apparaat wordt permanent verwijderd. verder gaan?",
+		"deleteDevice": "verwijderen apparaat",
+		"deletedDevice": "je succes verwijderd het volgende apparaat {{ devicename }}.",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+                "provstringinfoHelp": "To use this, open per Webbrowser your phone, and write this string in his config field, and restart this phone manually.",
+		"popupSettings": {
+			"advancedTitle": "gevorderd",
+			"basicTitle": "basisinstellingen",
+			"brandDownloads": "Productinfo",
+			"basicSectionTitle": "basisinstellingen",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "om een codec, slepen en neerzetten van de doos beschikbare codecs aan geselecteerde codecs selectievakje",
+			"options": {
+				"menuTitle": "opties"
+			},
+			"sip": {
+				"menuTitle": "nippen",
+				"sectionTitle": "slok info",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!",
+                                "provstring_notsupported": "This device in this version is not supported, please ask for additional support!"
+			},
+			"audio": {
+				"menuTitle": "audio",
+				"sectionTitle": "audio-instellingen",
+				"selectedCodecs": "geselecteerde codecs",
+				"unselectedCodecs": "beschikbare codecs",
+				"codecs": {
+					"OPUS": "het werk",
+					"CELT@32000h": "sirene @ 32kHz",
+					"G7221@32000h": "g722.1 @ 32kHz",
+					"G7221@16000h": "g722.1 @ 16kHz",
+					"G722": "G722",
+					"speex@32000h": "speex @ 32kHz",
+					"speex@16000h": "speex @ 16kHz",
+					"speex": "speex",
+					"PCMU": "g711u/PCMU-64 kbps (na)",
+					"PCMA": "G711A/PCMA-64 kbps (elders)",
+					"G729": "G729-8kbps (vereist licentie)",
+					"GSM": "gsm",
+					"CELT@48000h": "sirene (hd) @ 48kHz",
+					"CELT@64000h": "sirene (hd) @ 64khz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "noodgevallen beller-id",
+				"sectionTitle": "noodgevallen beller-id",
+				"emergency": "aantal",
+				"notSet": "- Rekening default -",
+				"noE911Numbers": "u didnt set e911 op een van uw nummers, stel het op via het nummer manager en kom terug op dit scherm zodra zijn gedaan",
+				"address": "adres"
+			},
+			"miscellaneous": {
+				"menuTitle": "Diversen",
+				"sectionTitle": "Diversen",
+				"rtp": {
+					"enable": "versleutelen audio",
+					"type": "type codering",
+					"srtp": "SRTP",
+					"zrtp": "zrtp"
+				},
+				"ignoreCompletedElsewhere": {
+					"label": "negeren elders afgerond",
+					"help": "wanneer gecontroleerd ondersteunende telefoons zal een oproep tonen gemist als het was onderdeel van een ring groep beantwoord elders."
+				},
+                                "restart": {
+                                        "label": "Envoyer une requête de redémarrage",
+                                        "button": "Redémarrer",
+                                        "help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+                                        "success": "Vous avez envoyé une requête de redémarrage avec succès!"
+                                }
+                        },
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+			},
+			"restrictions": {
+				"menuTitle": "beperkingen",
+				"sectionTitle": "beperkingen instellingen",
+				"inherit": "erven",
+				"deny": "ontkennen",
+				"matcher": {
+					"help": "Type een nummer (international format => +[Countryprefix]...) en klik op test om te zien of het gesprek zou worden toegestaan...",
+					"placeholder": "+18554443333",
+					"button": "test",
+					"label": "het bovenstaande nummer geëvenaard deze regel.",
+					"allowMessage": "dit apparaat zal worden toegestaan om een oproep te plaatsen om {{ telefoonnummer }}",
+					"denyMessage": "Dit apparaat zal niet worden toegestaan om een oproep te plaatsen {{ telefoonnummer }}."
+				},
+				"allow": "toestaan",
+				"disabledRestrictionsInfo": "sommige soorten oproepen zijn beperkt voor uw gehele account en kan niet worden ingeschakeld per apparaat."
+			},
+                        "video": {
+                                "menuTitle": "Video",
+                                "sectionTitle": "Video Settings",
+                                "selectedCodecs": "Selected Codecs",
+                                "unselectedCodecs": "Available Codecs",
+                                "codecs": {
+                                        "VP8": "VP8",
+                                        "H264": "H264",
+                                        "H263": "H263",
+                                        "H261": "H261"
+                                }
+                        },
+                        "featureKeys": {
+                                "menuTitle": "Feature Keys",
+                                "description": "Feature key",
+                                "labels": {
+                                        "user": "User",
+                                        "parkingSpot": "Parking Spot",
+                                        "value": "Value"
+                                },
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Info",
+                                                "hideInfo": "Hide Info"
+                                        },
+                                        "types": {
+                                                "presence": "Indicate when a user has an incoming call or is on the phone. The indicator can be used to pick up ringing calls or speed dial thatuser.",
+                                                "parking": "Indicate when a call is placed on a parking slot available to the entire company. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+                                                "extension": "Nebenstelle",
+                                                "line": "Leitung",
+                                                "personal_parking": "Indicate when a call is placed on a parking slot dedicated to the selected user. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+                                                "speed_dial": "Does not indicate for any calls event but can be used to rapidly call the configured number."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "presence": "Presence",
+                                        "extension": "Nebenstelle",
+                                        "line": "Leitung",
+                                        "parking": "Parking",
+                                        "personal_parking": "Personal Parking",
+                                        "speed_dial": "Speed Dial"
+                                },
+                                "keytemplateHelp": "By click on this, template will be taken from this phone. Select an account wide template to take it at device create."
+                        }
+		},
+		"buy": "kopen apparaat",
+		"classifiers": {
+			"unknown": {
+			    "name": "anders dan hierboven",
+			    "help": "selecteer deze optie als u wilt dat deze account om te bellen naar een andere dan vermeld op de lijst nummer te plaatsen. (wanneer het formaat van het nummer onbekend het systeem.)"
+			}
+		},
+		"noMatchingDevices": "er waren geen apparaten gevonden die voldoen aan uw zoekopdracht",
+		"noDevicesConfigured": "er geen apparaten geconfigureerd",
+		"provisionerPopup": {
+			"brandHeadline": "Selecteer het merk van het apparaat",
+			"deviceHeadline": "Selecteer het model van het apparaat",
+			"deviceSelected": "u hebt gekozen voor de {{ merk }} {{ model }}",
+			"missingBrand": "het merk van mijn toestel wordt hier niet genoemd",
+			"missingDevice": "mijn toestel wordt hier niet genoemd",
+			"title": "selectie van het apparaat"
+		},
+		"sip_device": {
+			"addTitle": "het toevoegen van een slokje apparaat",
+			"editTitle": "editing slok apparaat",
+			"macAddress": "mac -adres",
+			"macAddressPlaceholder": "19",
+			"new": "nieuwe SIP -apparaat",
+			"deviceName": "toestelnaam"
+		},
+		"sip_uri": {
+			"addTitle": "het toevoegen van een sip uri",
+			"deviceName": "naam",
+			"editTitle": "editing sip uri",
+			"new": "nieuwe sip uri",
+			"uri": "sip uri",
+			"uriPlaceholder": "nippen",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"landline": {
+			"addTitle": "het toevoegen van een vaste lijn",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing vaste lijn",
+			"new": "nieuwe vaste lijn",
+			"number": "aantal",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "vereisen druk op de toets",
+			"keepCallerId": "Bewaar de originele beller-id",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"cellphone": {
+			"addTitle": "toevoegen van een mobiele telefoon",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing mobiele telefoon",
+			"new": "nieuwe mobiele telefoon",
+			"number": "aantal",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "toestaan gebruik van mobiele telefoon voicemail",
+			"keepCallerId": "Bewaar de originele beller-id",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"mobile": {
+			"addTitle": "toevoegen van een mobiel",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing mobiel",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10 cijfers telefoonnummer",
+			"new": "nieuwe mobiele"
+		},
+		"smartphone": {
+			"addTitle": "het toevoegen van een smartphone",
+			"deviceName": "toestelnaam",
+			"editTitle": "editing smartphone",
+			"new": "nieuwe smartphone",
+			"requireKeypress": "toestaan gebruik van mobiele telefoon voicemail",
+			"keepCallerId": "Bewaar de originele beller-id",
+			"hideContactList": "verbergen voor de lijst met contactpersonen"
+		},
+		"fax": {
+			"addTitle": "het toevoegen van een faxapparaat",
+			"editTitle": "editing faxapparaat",
+			"macAddress": "mac -adres",
+			"macAddressPlaceholder": "19",
+			"new": "fax",
+			"deviceName": "toestelnaam",
+			"t38": "T38",
+			"disabled": "invalide",
+			"auto": "automatische detectie",
+			"force": "altijd van kracht"
+		},
+		"softphone": {
+			"addTitle": "het toevoegen van een softphone",
+			"editTitle": "editing softphone",
+			"new": "nieuwe softphone",
+			"deviceName": "toestelnaam"
+		},
+		"ata": {
+			"addTitle": "het toevoegen van een ata",
+			"editTitle": "editing ata",
+			"new": "nieuwe ata",
+			"deviceName": "toestelnaam"
+		},
+		"sip": {
+			"username": "sip gebruikersnaam",
+			"password": "sip wachtwoord",
+			"realm": "rijk"
+		},
+		"spare": "reserve",
+		"title": "totaal apparaten",
+		"titleGrid": {
+			"edit": "uitgeven",
+			"enable": "mogelijk maken",
+			"user": "gebruiker",
+			"modelMacAddress": "naam/mac adres",
+			"type": "type"
+		},
+		"types": {
+			"cellphone": "telefoon",
+			"sip_device": "sip telefoon",
+			"smartphone": "smartphone",
+			"mobile": "mobiel",
+			"softphone": "softphone",
+			"landline": "vaste telefoon",
+			"fax": "fax",
+			"ata": "zij",
+			"sip_uri": "sip uri"
+		},
+		"unassignedDevice": "-",
+                "microphone": "Micrphone",
+                "speaker": "Speaker"
+	},
+
+	"users": {
+		"Sec": "Sec",
+		"admin": "admin",
+		"add": "toe te voegen gebruiker",
+		"addExtension": "voeg een uitbreiding van deze gebruiker",
+		"addNewExtension": "toestelnummer",
+		"addFromSpare": "toevoegen van reserve nummers",
+		"addFromSpareDevices": "toevoegen van reserve -apparaten",
+		"buy": "kopen nummers",
+		"confirmDeleteAdmin": "youre over om een admin verwijderen! het verwijderen van een admin zal zijn kazoo gebruiker, evenals zijn voicemail boxen en cijfers te wissen, zal het ook voorkomen dat hij uit het beheer van deze ui. wilt u doorgaan?",
+		"confirmDeleteUser": "het verwijderen van een gebruiker zal deze gebruiker en zijn voicemail te verwijderen, en ongedaan maken van de apparaten en de nummers die werden toegewezen aan deze gebruiker. wilt u doorgaan?",
+		"dialogChangePassword": {
+			"help": "kunt u een nieuw wachtwoord instellen door gewoon te typen van een wachtwoord dat u wilt, samen met het e-mailadres!",
+			"password": "wachtwoord",
+			"passwordPlaceholder": "wachtwoord (min. 8 tekens)",
+			"title": "-update e-mailadres en wachtwoord",
+			"username": "gebruikers e-mailadres"
+		},
+		"dialogChangePin": {
+			"help": "U kunt deze popup gebruiken om een tijdelijke pin instellen voor een gebruiker die zijn pincode verloren bijvoorbeeld.",
+			"pin": "pin",
+			"pinPlaceholder": "min. 4 cijfers",
+			"title": "-update pin"
+		},
+		"dialogCreationUser": {
+			"createUser": "gebruiker aanmaken",
+			"errorOnCreation": "een fout opgetreden tijdens het proberen om deze gebruiker aan te maken",
+			"extension": "belangrijkste toestelnummer",
+			"extensionAlreadyExist": "deze uitbreiding is al in gebruik, kies dan een ander toestelnummer.",
+			"firstName": "voornaam",
+			"lastName": "achternaam",
+			"loginEmail": "e-mail gebruikt om in te loggen",
+			"notificationEmail": "notificatie e -mail",
+			"password": "wachtwoord (min. 8 tekens)",
+			"sendToDifferentEmail": "e-mails versturen naar een ander adres",
+			"title": "gebruiker aanmaken",
+			"vmboxAlreadyExist": "vmbox nummer is al in gebruik, kies een andere voicemailbox nummer.",
+			"vmboxNumber": "vm doos #",
+			"sendWelcomeEmail": "Send credentials to this user"
+		},
+		"editionForm": {
+			"changePIN": "PIN wijzigen",
+			"changeUsername": "verandering",
+			"firstName": "voornaam",
+			"lastName": "achternaam",
+			"role": "rol",
+			"timezone": "tijdzone",
+			"vmboxNumber": "vmbox #",
+			"timeout": "rinkelen timeout",
+			"timeoutSec": "sec",
+			"timeoutEdit": "bewerk in find -me-follow-me -functie",
+			"timeoutEditHint": "de beltoon time-out wordt overschreven door de vind -me-follow-me -functie. Klik op de link hieronder om deze te bewerken.",
+			"disabledTimeoutHint": "u minstens één nummer of uitbreiding moet het opzetten van de beltoon time-out.",
+			"presenceId": "belangrijkste toestelnummer",
+			"noPresenceID": "geen enkel",
+			"nameHelp": "Typ de gebruikers eerst naam in de eerste ingang, en de gebruikers achternaam in de tweede",
+			"loginHelp": "Dit is de gebruikersnaam van deze gebruiker, die wordt gebruikt om in te loggen om de toepassing",
+			"vmboxHelp": "Dit is de voicemail nummer van deze gebruiker Klik op PIN wijzigen om de pin van de voicemail van deze gebruiker te resetten",
+			"roleHelp": "de admin rechten voor toegang tot de app uitwisseling en apps toevoegen aan deze accoutn hebben, terwijl de gebruiker alleen in staat zal zijn om toegang te krijgen tot de apps die zijn ingeschakeld voor hem",
+			"languageHelp": "Dit zal de taal van het weergegeven in de ui tekst en voor uw apparaten ook veranderen",
+			"timezoneHelp": "dit zal de tijdzone gebruikt voor deze gebruikers apparaten en voicemail box set",
+			"ringingHelp": "dit zal de beltoon time-out voor deze gebruiker en zijn apparaten in te stellen. bijvoorbeeld, als je deze ingesteld op 20, deze gebruiker zal worden gebeld voor 20 seconden voordat het systeem wordt verplaatst naar zijn voicemailbox",
+			"mainExtensionHelp": "dit zal de beller-id gebruikt voor deze gebruiker voor gesprekken binnen het systeem te definiëren, evenals het vastleggen van zijn aanwezigheid id om dat aantal"
+		},
+		"delete": "verwijderen gebruiker",
+		"errorCallerId": "voor het configureren van de beller-id van deze gebruiker, moet je hem een aantal toe te wijzen",
+		"errorNumberFaxing": "Voordat u de faxen aantal van deze gebruiker, moet u een aantal reserve- nummers te krijgen op uw rekening (u kunt nieuwe nummers in de sectie nummers te kopen op het linker menu).",
+		"featureOn": "op",
+		"includeInDirectory": "onder andere gebruiker in de bedrijvengids",
+		"noMatchingDevices": "geen apparaten die voldoen aan uw zoekopdracht",
+		"noMatchingNumbers": "er waren geen nummers gevonden die voldoen aan uw zoekopdracht",
+		"noMatchingUser": "Geen gegevens gevonden die voldoen aan uw zoekopdracht",
+		"noUsersConfigured": "voeg een gebruiker om te beginnen",
+		"noMoreSpareDevices": "er zijn geen reserve -apparaat naar links, kunt u nieuwe apparaten te kopen door te gaan in de apparaten inventaris",
+		"noMoreSpareNumbers": "Er zijn geen reserveonderdelen aantal links, kunt u nieuwe nummers te kopen door te klikken op de onderstaande link",
+		"noAssignedDevices": "Er zijn momenteel geen apparaat is toegewezen aan deze gebruiker.",
+		"noAssignedNumbers": "Er zijn momenteel geen nummer toegewezen aan deze gebruiker.",
+		"noAssignedExtensions": "Er zijn momenteel geen toestel dat is toegewezen aan deze gebruiker.",
+		"noNumber": "geen enkel",
+		"noNumberCallflow": "moet u ten minste één toestel of telefoonnummer om deze gebruiker toe te wijzen alvorens deze op te slaan",
+		"needExtensionFirst": "we moeten gebruikers een uitbreiding voor het toewijzen van hen een telefoonnummer hebben, klik dan op de sectie extensie en voeg één vanaf daar.",
+		"noExtension": "geen enkel",
+		"noAssignedNumbers": "er geen toegewezen aan deze gebruiker.",
+		"noUnassignedNumbers": "er zijn geen beschikbare aantal links naar toewijzen aan deze gebruiker.",
+		"noUserDevices": "geen enkel",
+		"noUserFeatures": "geen enkel",
+		"noUserCallflow": "er is een fout opgetreden. zijn er geen callflow toegewezen aan deze gebruiker, dus u kan hem toe te voegen aan de bedrijvengids",
+		"port": "poortnummers",
+		"resetPassword": "reset wachtwoord",
+		"resendInstructions": "opnieuw instructies",
+		"title": "totale gebruikers",
+		"titleGrid": {
+			"users": "gebruikers instellingen",
+			"extensions": "extensies",
+			"phoneNumbers": "telefoonnummers",
+			"devices": "apparaten",
+			"features": "gebruikersfuncties"
+		},
+		"toastrMessages": {
+			"devicesUpdated": "u met succes de toestellen zijn toegewezen aan bijgewerkt {{ naam }}.",
+			"instructionsSent": "Een e-mail is verzonden naar {{ e }} met de gebruiker instructies over hoe aan de slag met de ui!",
+			"numbersUpdated": "u met succes de telefoonnummers van bijgewerkte {{ naam }}.",
+			"passwordReseted": "het wachtwoord is gereset, een e -mail is verzonden naar {{ e }} gestuurd met instructies over hoe u een nieuw wachtwoord aan te maken.",
+			"userDelete": "je succesvol verwijderd {{ naam }} uit de slimme pbx!",
+			"userUpdated": "u met succes {{ naam }} instellingen bijgewerkt.",
+			"pinUpdated": "je met succes de pin van bijgewerkte {{ naam }}.",
+			"callerIDDeleted": "de beller-ID-nummer van deze gebruiker werd ingesteld op een getal dat niet meer aan hem was toegewezen, dus we uitgeschakeld de functie beller-id."
+		},
+		"uploadPicture": "Een foto uploaden",
+		"user": "gebruiker",
+		"call_forward": {
+			"directCallsOnly": "alleen vooruit directe gesprekken",
+			"headline": "gebruiker doorschakeling instellingen",
+			"keepCallerId": "houd uw beller-id",
+			"label": "Alle oproepen doorsturen naar",
+			"mobile": "een gsm",
+			"deskphone": "een bureautelefoon",
+			"number": "dit getal",
+			"placeholder": "+14157283992",
+			"requireKeyPress": "vertrekken voicemails doorgezonden nummers",
+			"title": "doorschakeling",
+			"timeoutWarning": "om voicemails doorgezonden nummers vertrekken, uw beltoon time-out moet worden ingesteld op ten minste 30 sec. door nu op te slaan, wordt u automatisch doorgestuurd naar de gebruiker editie waar u de beltoon timeout kan bijwerken."
+		},
+		"callRecording": {
+			"title": "inbound call opname",
+			"headline": "gebruiker oproep opname-instellingen",
+			"formatLabel": "formaat",
+			"urlLabel": "url",
+			"urlPlaceholder": "http",
+			"timeLimitLabel": "tijdslimiet (sec)",
+			"noNumber": "voor het configureren van de inbound call opname functie voor deze gebruiker, moet je hem een nummer of een extensie toewijzen",
+			"bestoreDB": "Recording will be stored for 6 months in database."
+		},
+		"conferencing": {
+			"title": "conference bridge",
+			"headline": "persoonlijke conference bridge",
+			"pinLabel": "persoonlijk conferentiezaal aantal",
+			"number": "conferencing telefoonnummer (s)",
+			"help": "kunt u een telefonische vergadering maken door het verstrekken van een conferencing telefoonnummer en uw persoonlijke kamernummer aan de deelnemers",
+			"noConfNumbers": "je nodig hebt om een van de belangrijkste conferentie nummer om de personnals conferentie bruggen in staat toe te voegen (in het hoofdnummer gedeelte aan de linkerkant van de smartpbx)"
+		},
+		"faxing": {
+			"title": "faxbox",
+			"headline": "faxbox",
+			"text": "Deze gebruiker zal faxen op {{ variabele }} als bijlage ontvangen.",
+			"helpOne": "voor gebruikers met Windows, hier is een link naar de",
+			"helpTwo": "wolk installer -printer",
+			"form": {
+				"label": {
+					"callerId": "faxbox nummer",
+					"linkToPrinter": "link naar printer",
+					"smtpEmailAddress": "smtp e-mailadres"
+				}
+			},
+			"defaultSettings": {
+				"nameExtension": "s faxbox",
+				"headerExtension": "fax printer"
+			}
+		},
+		"vm_to_email": {
+			"deleteAfterNotify": "berichten uit de database te verwijderen na de verzending van de kennisgeving.",
+			"headline": "voicemail-to- e-mailinstellingen",
+			"help": "Als u wilt wijzigen waar e-mailberichten te gaan, dan kunt u bewerken van de gebruikers e-mailadres in de sectie gebruikersbeheer",
+			"label": "Een e -mail zal naar {{ variabele }} worden verzonden voor elke nieuwe voicemail",
+			"title": "voicemails"
+		},
+		"find_me_follow_me": {
+			"title": "vinden mij, volg mij",
+			"headline": "vinden mij, volg mij instellingen",
+			"disableDevice": "niet bellen",
+			"ringThisPhoneFor": "ring deze telefoon voor",
+			"noDevice": "u ten minste één apparaat nodig om deze functie in te schakelen.",
+			"noNumber": "voor het configureren van de vondst -me follow-me voorzien voor deze gebruiker, moet je hem een nummer of een extensie toewijzen",
+			"distribute": "verdelen"
+		},
+		"caller_id": {
+			"title": "beller-id-nummer",
+			"dropdownLabel": "laat mijn beller-ID-nummer als",
+			"headline": "gebruiker beller-ID-nummer instellingen",
+			"help": "als je niet in staat deze functie, zal de beller-id standaard weergegeven die op het hoofdnummer van deze account geconfigureerd zijn."
+		},
+		"music_on_hold": {
+			"title": "music -on- hold",
+			"headline": "gebruiker muziek -on- hold instellingen",
+			"dropdownLabel": "wachtmuziek",
+			"silence": "stilte",
+			"emptyUploadAlert": "Selecteer een bestand om te uploaden",
+			"fileTooBigAlert": "U kunt een bestand niet uploaden met een grootte van meer dan 5MB"
+		},
+		"hotdesk": {
+			"id": "hotdesk id",
+			"label": "doet het een pin nodig ?",
+			"keep_logged_in_elsewhere": "toestaan ingelogd op meerdere apparaten",
+			"title": "flexwerkplekken",
+			"headline": "gebruiker flexwerkplekken instellingen",
+			"help": "de flexwerkplekken id wordt automatisch als de gebruikers extensies nummer."
+		},
+		"migration": {
+			"confirmMigration": "vonden we een bestaande callflow met het nummer youre probeert toe te voegen, lijkt het erop kunnen we dit callflow migreren naar de smartpbx. voordat we verder gaan, willen we ervoor zorgen dat u begrijpt dat je gewoon worden toegestaan ​​om deze callflow in kazoo-ui of in de monster-ui callflows app na deze verandering te werken. wilt u doorgaan?",
+			"tooManyCallflows": "het lijkt de nummers youre proberen te behoren tot meerdere kazoo-ui callflows voegen. er is geen manier om goed te migreren deze callflows in monster-gebruikersinterface kunt u contact met uw steun om het te bevestigen."
+		},
+		"presenceIDPopup": {
+			"title": "selecteer uw nieuwe hoofdtoestelnummer",
+			"header": "lijkt het erop dat u het nummer dat u had ingesteld als uw belangrijkste extensie te verwijderen. selecteer uw nieuwe hoofdtoestelnummer uit de onderstaande keuzes",
+			"none": "Ik wil niet een nieuwe hoofdsponsor uitbreidingsset"
+		}
+	},
+
+	"strategy": {
+		"noNumberHelp": "notitie",
+		"sectionTitles": {
+			"numbers": "belangrijkste bedrijf getallen",
+			"confnum": "belangrijkste conferentie nummer",
+			"hours": "kantooruren strategie",
+			"holidays": "kantoor vakantie",
+			"calls": "inkomende oproep afhandeling",
+			"faxingnum": "Main Faxbox Number"
+		},
+		"noNumberTitle": "add hoofdnummer",
+		"noNumberMessage": "voeg of koop een nummer uit het onderstaande links om verder te gaan.",
+		"noConfNumMessage": "voeg dan een belangrijke conferentie nummer.",
+		"numberLinks": {
+			"spare": "toevoegen van reserve nummers",
+			"buy": {
+				"link": "kopen nummers",
+				"regular": "lokaal",
+				"tollfree": "tolvrij",
+				"vanity": "ijdelheid"
+			},
+			"port": "poortnummers"
+		},
+		"hours": {
+			"alwaysOpenTitle": "24 uur open office",
+			"alwaysOpenDescription": "Kies deze optie als u wilt dat inkomende gesprekken op dezelfde manier worden behandeld de hele tijd.",
+			"customHoursTitle": "aangepaste kantooruren",
+			"customHoursDescription": "Kies deze optie als u wilt dat inkomende gesprekken anders te behandelen wanneer uw kantoor gesloten is.",
+			"listTitle": "aangepaste uur",
+			"timezone": "bedrijf tijdzone",
+			"to": "om het",
+			"lunchbreakTitle": "bent u gesloten voor de lunch uren ?",
+			"helpAfterHours": "vergeet niet om de oproep routing voor wanneer uw kantoor is gesloten voor de nacht te stellen! om het op te zetten, gaan in de inkomende oproep afhandeling sectie van deze pagina en selecteer het na uren tabblad.",
+			"helpLunchHours": "als uw kantoor tijdens de lunch uur gesloten is, moet u ook de oproep routing voor dat kiezen. U kunt het op te zetten in de inkomende oproep afhandeling sectie ook, onder het tabblad lunch."
+		},
+		"holidays": {
+			"enableTitle": "bent u gesloten voor vakantie ?",
+			"addLink": "add vakantie",
+			"singleLink": "enkele dag",
+			"rangeLink": "datumbereik",
+			"advancedLink": "gevorderd",
+			"helpHolidays": "vergeet niet om de oproep routing voor wanneer uw kantoor is gesloten voor de vakantie in te stellen! om het op te zetten, gaan in de inkomende oproep hanteren sectie van deze pagina en selecteer het tabblad feestdagen."
+		},
+		"calls": {
+			"openHoursTitle": "openingstijden",
+			"lunchHoursTitle": "ook voor lunch",
+			"afterHoursTitle": "na uren",
+			"holidaysTitle": "vakantie",
+			"incomingCall": "inkomend gesprek",
+			"virtualReceptionist": "virtuele receptioniste",
+			"voicemail": "voicemail",
+			"groupOther": "ander",
+			"optionNone": "doorgaan naar voicemail",
+			"callTabsMessages": {
+				"MainOpenHours": "Selecteer de manier waarop u wilt dat uw bellers u bereiken wanneer uw kantoor is geopend.",
+				"MainLunchHours": "Selecteer de manier waarop u wilt dat uw bellers u bereiken tijdens de lunch uur.",
+				"MainAfterHours": "Selecteer de manier waarop u wilt dat uw bellers u bereiken wanneer uw kantoor gesloten is.",
+				"MainHolidays": "Selecteer de manier waarop u wilt dat uw bellers u bereiken wanneer u tijdens vakanties zijn gesloten."
+			}
+		},
+		"popup": {
+			"title": "virtuele receptioniste",
+			"infoBlock": "virtuele receptioniste zal inkomende gesprekken professioneel te beantwoorden en automatisch overbrengen naar een juiste afdeling of persoon. hoofdmenu kunt u het opzetten van call routes. typt u of opnemen groeten die overeenkomt met het hoofdmenu.",
+			"menuTitle": "hoofdmenu",
+			"greetingsTitle": "de groeten",
+			"addRouteLink": "add route",
+			"ttsGreetingTitle": "tekst naar spraak",
+			"ttsGreetingPlaceholder": "vul dan hier uw begroeting.",
+			"uploadGreetingTitle": "upload uw eigen bestand",
+			"recordGreetingTitle": "opnemen via de telefoon",
+			"recordGreetingInfo": "noteer de begroeting zelf via de telefoon, door het volgen van de onderstaande stappen",
+			"recordGreetingLines": {
+				"line1": "pick-up van een telefoon in deze account zijn geregistreerd.",
+				"line2": "kies uw kantoor hoofdnummer.",
+				"line3": "voer deze PIN in wanneer gevraagd",
+				"line4": "neem uw groeten/menu."
+			},
+			"pressKey": "druk op",
+			"for": "voor",
+			"fileUploadButton": "Choisir fichier",
+			"greetingsHelp": "Vous devez cliquer sur le bouton \"Mettre à jour\" pour sauvegarder les changements apportés au message d'accueil.",
+			"defaultAction": "Default action"
+		},
+		"open": "open",
+		"closed": "gesloten",
+		"weekdays": {
+			"monday": "maandag",
+			"tuesday": "dinsdag",
+			"wednesday": "woensdag",
+			"thursday": "donderdag",
+			"friday": "vrijdag",
+			"saturday": "zaterdag",
+			"sunday": "zondag"
+		},
+		"ordinals": {
+			"first": "ten eerste",
+			"second": "ten tweede",
+			"third": "derde",
+			"fourth": "ten vierde",
+			"fifth": "vijfde",
+			"last": "als laatste"
+		},
+		"monthsShort": {
+			"january": "januari",
+			"february": "februari",
+			"march": "zee",
+			"april": "april",
+			"may": "maand mei",
+			"june": "juni",
+			"july": "Kerstmis",
+			"august": "augustus",
+			"september": "september",
+			"october": "oktober",
+			"november": "november",
+			"december": "december"
+		},
+		"callEntities": {
+			"user": "gebruikers",
+			"device": "apparaten",
+			"ring_group": "groepen",
+			"voicemail": "voicemail- boxen",
+                        "advancedCallflows": "Advanced Callflows"
+		},
+		"confirmMessages": {
+			"deleteHoliday": "Deze vakantie zal permanent verwijderd. verder gaan?",
+			"disableHolidays": "alle bestaande feestdagen zal permanent worden verwijderd. verder gaan?"
+		},
+		"alertMessages": {
+			"uniqueHoliday": "elke vakantie moet een unieke naam hebben.",
+			"undefinedMenu": "u een virtuele receptioniste geselecteerd zonder het instelt. stel het op door te klikken op de virtuele receptioniste koppeling, of kies een andere optie.",
+			"emptyTtsGreeting": "moet u typt in uw begroeting om tekst naar spraak functionaliteit in te schakelen.",
+			"emptyUploadGreeting": "Selecteer een bestand om te uploaden",
+			"fileTooBigAlert": "U kunt een bestand niet uploaden met een grootte van meer dan 5MB",
+			"uniqueMenuNumbers": "nummers binnen het menu moet uniek en niet leeg zijn.",
+			"lastE911Error": "je nodig hebt E911 opgericht op ten minste een van uw belangrijkste nummers. dan kunt u het opzetten van e911 op een andere hoofdnummer vóór het verwijderen van deze."
+		},
+		"toastrMessages": {
+			"updateHolidaySuccess": "vakanties met succes bijgewerkt.",
+			"updateCallSuccess": "call strategie met succes bijgewerkt.",
+			"buyNumbersSuccess": "de nummers zijn gekocht.",
+			"buyNumbersError": "een fout opgetreden bij de aankoop van nummers.",
+			"removeNumberSuccess": "aantal succesvol verwijderd van het belangrijkste callflow."
+		},
+		"popupRemoveFeatures": {
+			"title": "kenmerken",
+			"questionPartOne": "wilt u functies uit te verwijderen",
+			"questionPartTwo": "?",
+			"featuresToRemove": "Controleer de functie (s) te verwijderen",
+			"features": {
+				"cnam": "beller-id",
+				"dash_e911": "E911"
+			}
+		},
+                "walkthrough": {
+                        "first": {
+                                "steps": {
+                                        "1": "Setup your main company number within SmartPBX by purchasing or porting a number. This is different than User Phone Numbers because it represents the main phone number for the entire company."
+                                }
+                        },
+                        "second": {
+                                "steps": {
+                                        "1": "Set up your office hours phone strategy to your convenience. You can set up a 24 hour open office strategy or if your office is ever closed, create custom hours. You can even close your office during lunch hours.",
+                                        "2": "Is your office closed on holidays? Create specific dates or time frames when your office will be closed",
+                                        "3": "Virtual Receptionist allows you to seamlessly answer incoming calls. Add call routes to contact the appropriate department or person within the system. You can also create customized greetings using text-to-speech, uploading your own file or recording it over the phone.",
+                                        "4": "Create a main Conference Number for your business. Purchase, port or add an existing number and set up a Conference Number seamlessly.",
+                                        "5": "Create a main Faxbox Number for your business. Purchase, port or add an existing number and set up a Faxbox Number seamlessly."
+                                }
+                        }
+                },
+                "noFaxingNumMessage": "Please add a main faxbox number.",
+                "faxing": {
+                        "nameExtension": "'s Main Faxbox",
+                        "headerExtension": " Fax Printer"
+                },
+                "customConferenceGreeting": {
+                        "title": "Custom Conference Greeting",
+                        "link": "Custom Greeting",
+                        "info": "Customize your conference greeting message using our Text-to-Speech feature. Simply type your greeting message in the input field below.",
+                        "mainConfMissing": "Your Main Conference could not be found.",
+                        "tooltip": "Your Main Conference has a custom greeting message."
+                }
+        },
+
+	"callLogs": {
+		"title": "oproeplogboeken",
+		"dateRangeTo": "om het",
+		"noSearchMatch": "u zoeken criteria leverde geen passende bellijst.",
+		"detailsPopupTitle": "bellijst",
+		"applyFilter": "filteren op geselecteerde data",
+		"resetFilter": "reset filter om data in gebreke",
+		"gridHeaders": {
+			"inboundCall": "inbound",
+			"outboundCall": "outbound",
+			"dateTime1": "datum tijd",
+			"from": "met ingang van",
+			"to": "om het",
+			"duration1": "duur",
+			"duration2": "(min)",
+			"hangup1": "ophangen",
+			"hangup2": "de oorzaak",
+			"details1": "bellen naar",
+			"details2": "meer informatie",
+			"report1": "voorleggen",
+			"report2": "zich melden"
+		},
+		"reportCall": "rapport oproep",
+		"loaderMessage": "scroll naar beneden of klik hier om aanvullende oproeplogboeken te laden.",
+		"loadingMessage": "laden aanvullende oproeplogboeken...",
+		"alertMessages": {
+			"getDetailsError": "een fout opgetreden tijdens het gesprek ophalen logt details."
+		},
+		"key": "sleutel",
+		"value": "waarde"
+	},
+
+	"myOffice": {
+		"topBarLinks": {
+			"callerID": "caller id",
+			"musicOnHold": "wachtmuziek",
+			"callRecording": "opname",
+			"hours": "uur"
+		},
+		"musicOnHold": {
+			"title": "music -on- hold",
+			"headline": "setup music-on -hold voor rekening",
+			"dropdownLabel": "wachtmuziek",
+			"silence": "stilte",
+			"default": "standaardmuziek",
+			"emptyUploadAlert": "Selecteer een bestand om te uploaden",
+			"fileTooBigAlert": "U kunt een bestand niet uploaden met een grootte van meer dan 5MB"
+		},
+		"callerId": {
+			"title": "bedrijf caller id",
+			"headline": "selecteer een beller -ID -nummer voor de rekening",
+			"numberLabel": "bedrijf caller id -nummer",
+			"numberHelp": "dit aantal zal verschijnen als uw beller-ID wanneer u uitgaande gesprekken.",
+			"nameLabel": "bedrijf caller id naam",
+			"nameHelp": "Deze naam zal verschijnen als uw beller-ID wanneer u uitgaande gesprekken.",
+			"emergencyLabel": "bedrijfshulpverlening (E911) adres",
+			"emergencyZipcode": "postcode",
+			"emergencyAddress1": "adres regel 1",
+			"emergencyAddress2": "adres lijn 2",
+			"emergencyCity": "stad",
+			"emergencyState": "staat",
+			"emergencyHelp1": "Dit adres zal verschijnen als uw beller-ID -adres wanneer u uitgaande noodoproep naar een overheidsinstelling (bv 911 in de VS).",
+			"emergencyHelp2": "notitie",
+			"mandatoryE911Alert": "je moet e911 informatie voor uw bedrijf beller-ID -nummer op te geven."
+		},
+		"missingMainNumberForCallerId": "je nodig hebt om een van de belangrijkste nummer toe te voegen aan uw kantoor voor het configureren van de beller-id!",
+		"missingE911Message": "Neem het opzetten van je bedrijf beller-ID en e911 op een hoofdnummer.",
+		"missingMainNumberMessage": "voeg dan een hoofdnummer om uw account.",
+		"totalUsers": "totale gebruikers",
+		"totalDevices": "totaal apparaten",
+		"totalConfs": "conferentie bruggen",
+		"mainNumberLabel": "hoofdnummer",
+		"noMainNumber": "add hoofdnummer",
+		"confNumberLabel": "conferentie nummer",
+		"faxNumberLabel": "faxnummer",
+		"totalNumbers": "totaal aantal",
+		"unregisteredDevices": "niet-geregistreerde apparaten",
+		"accountId": "account id",
+		"accountRealm": "rekening rijk",
+		"numberChartLegend": {
+			"assigned": "nummers toegewezen",
+			"spare": "spare nummers",
+			"local": "lokale nummers",
+			"tollfree": "gratis nummers",
+			"international": "internationale nummers",
+			"noNumber": "geen getal beschikbaar"
+		},
+		"mainVMBoxName": "belangrijkste voicemailbox",
+		"faxingNumberLabel": "Faxbox Number",
+                "directoryLabel": "Company Directory Users:"
+	},
+
+	"featureCodes": {
+		"title": "beschikbare functie codes",
+		"noFeatureCodeMessage": "zijn er geen functie codes ingeschakeld op uw account. feature codes worden automatisch aangemaakt wanneer u het hoofdnummer pagina te laden.",
+		"mainNumberLink": "ga naar hoofdnummer",
+		"labels": {
+			"call_forward[action=activate]": "staat call- forward",
+			"call_forward[action=deactivate]": "call- forward uitschakelen",
+			"call_forward[action=toggle]": "toggle call- forward",
+			"call_forward[action=update]": "-update call- forward",
+			"call_forward[action=on_busy_enable]": "staat call -forward bij bezet",
+			"call_forward[action=on_busy_disable]": "call- forward uitschakelen op drukke",
+			"call_forward[action=no_answer_enable]": "staat call-doorsturen geen antwoord",
+			"call_forward[action=no_answer_disable]": "Schakel de functie-doorsturen geen antwoord",
+			"hotdesk[action=login]": "mogelijk flexwerkplekken",
+			"hotdesk[action=logout]": "flexwerkplekken uitschakelen",
+			"hotdesk[action=toggle]": "toggle flexwerkplekken",
+			"voicemail[action=check]": "check voicemail",
+			"voicemail[action=direct]": "direct naar de voicemail",
+			"intercom": "intercom",
+			"privacy[mode=full]": "privacy",
+			"park_and_retrieve": "parkeren en ophalen",
+			"valet": "de keuze",
+			"retrieve": "terugvinden",
+			"donotdisturb[action=enable]": "staat niet storen",
+			"donotdisturb[action=disable]": "schakelen niet storen",
+			"donotdisturb[action=toggle]": "schakelen niet storen",
+			"directory": "adresboek",
+			"time": "check tijd",
+			"call_waiting[action=enable]": "staat wisselgesprekservice",
+			"call_waiting[action=disable]": "wisselgesprekservice uitschakelen",
+			"sound_test_service": "sound test dienst",
+			"call_recording": "gespreksopname"
+		},
+		"categories": {
+			"call_forward": "call- forward",
+			"hotdesk": "flexwerkplekken",
+			"parking": "parkeergelegenheid",
+			"do_not_disturb": "niet storen",
+			"misc": "Diversen"
+		},
+                "installBox": {
+                        "avmTitle": "AVM FRITZ! Clip: Die FRITZ!Box -- the top model for Internet, telephony and multimedia (All-IP)",
+                        "avmDescript": "The FRITZ!Box offers the new Wireless AC standard for ultra-fast wireless speed as well as considerably more range. The latest hardware, lightning-fast gigabit LAN ports, and always the latest version of FRITZ!OS for your Smart Home.",
+                        "avmAllipYtLink": "http://www.youtube.com/watch?v=XXXk9ARdZH8"
+                },
+                "installIos": {
+                        "iosTitle": "QoS-Modem for stable and save internet connections at (All-IP)",
+                        "iosDescript": "Das QoS-Modem is able to hold your internet stable as well, the perfect fit for all your home networking needs.",
+                        "iosAllipYtLink": "http://www.youtube.com/watch?v=Gwg4K-B6RwM"
+                },
+                "installSoft": {
+                        "softTitle": "Zoiper App: The Softphone App on your Smartphone oder PC over (All-IP)",
+                        "softDescript": "The Softphone App on your Smartphone over WLAN-Connection can you have phone cheep as well!"
+                },
+                "installSip": {
+                        "sipTitle": "Easy installation for your SIP-Phones at IP-Connections with (All-IP)",
+                        "sipDescript": "The SIP-Phone is easy to use, just setup and plugin the sip-phone."
+                },
+                "walkthrough": {
+                        "steps": {
+                                "1": "Service Nummern: Give you the overview o possible service numbers.",
+                                "2": "Installation FritzBox: The Guide for install a Fritzbox.",
+                                "3": "Installation QoS-Modem: The Guide for install the QoS-Modem.",
+                                "4": "Installation Softphone: The Guide for install a Softphone.",
+                                "5": "Installation SIP-Phone: The Guide for install a SIP-Phone."
+                        }
+                }
+	},
+
+	"vmboxes": {
+		"addTitle": "het toevoegen van een voicemailbox",
+		"editTitle": "het bewerken van een voicemailbox",
+		"title": "totale voicemail- boxen",
+		"add": "add voicemailbox",
+		"new": "nieuwe voicemailbox",
+		"createVmbox": "maak nieuw voicemailbox",
+		"deleteVmbox": "verwijderen",
+		"deleteNotAllowed": "U kunt deze voicemailbox niet verwijderen omdat het behoort tot een gebruiker",
+		"confirmDeleteVmbox": "dit voicemailbox worden definitief verwijderd. verder gaan?",
+		"deletedVmbox": "u met succes de volgende voicemail verwijderd {{ vmboxname }}.",
+		"titleGrid": {
+			"name": "naam",
+			"number": "aantal",
+			"owner": "gebruiker",
+			"edit": "uitgeven"
+		},
+		"noMatchingVMBoxes": "er waren geen voicemail dozen gevonden die voldoen aan uw zoekopdracht",
+		"noVMBoxesConfigured": "zijn er geen voicemail boxen geconfigureerd",
+		"popupSettings": {
+			"advancedTitle": "gevorderd",
+			"basicTitle": "basisinstellingen",
+			"basicSectionTitle": "basisinstellingen",
+			"basic": {
+				"name": {
+					"label": "naam"
+				},
+				"number": {
+					"label": "voicemailnummer"
+				},
+				"pinNumber": {
+					"label": "pincode"
+				}
+			},
+			"options": {
+				"menuTitle": "opties",
+				"sectionTitle": "opties",
+				"timezone": {
+					"label": "tijdzone"
+				},
+				"unavailableMessage": {
+					"label": "onbeschikbaar bericht"
+				},
+				"timezone": {
+					"label": "tijdzone"
+				},
+				"alreadySetup": {
+					"label": "al setup ?",
+					"help": "wordt dit voicemailbox al beschouwd geïnitialiseerd ? zo niet, de eerste keer dat de gebruiker inlogt ze zullen worden gedwongen om hun pin en het inrichten van een groet te veranderen."
+				},
+				"requirePIN": {
+					"label": "pin nodig ?",
+					"help": "controleren of voicemail vereist een pin."
+				},
+				"autoLogin": {
+					"label": "auto-login is ingeschakeld ?",
+					"help": "controleren om auto-login inschakelen voor dit voicemailbox ? (als de gebruiker zijn eigen voicemail te bellen, het gaat rechtstreeks naar zijn berichten)"
+				},
+				"skipGreetings": {
+					"label": "skip groeten ?",
+					"help": "controleren om te groeten standaard overslaan"
+				},
+				"skipInstructions": {
+					"label": "skip instructies ?",
+					"help": "controleren om instructies standaard overslaan"
+				},
+				"deleteAfterNotify": {
+					"label": "verwijderen na de kennisgeving ?",
+					"help": "verwijdert u de voicemail na de kennisgeving is verzonden"
+				},
+				"configurable": {
+					"label": "configureerbaar via het menu ?",
+					"help": "indien niet aangevinkt, zal het de gebruiker hiervan te bemoeilijken voicemail configureren via het menu"
+				}
+			},
+			"recipients": {
+				"menuTitle": "ontvangers",
+				"sectionTitle": "ontvangers",
+				"header": "dit paneel kunt u beheren wie wordt verwittigd wanneer iemands laat een bericht achter op deze voicemailbox. klik op voeg nieuwe ontvanger om een e-mailadres toe te voegen aan de lijst",
+				"create": "voeg nieuwe ontvanger"
+			},
+                        "greeting": {
+                                "menuTitle": "Greeting Media",
+                                "sectionTitle": "Greeting Media",
+                                "dropdownLabel": "Media:",
+                                "noGreeting": "- None -",
+                                "audioUploadButton": "Browse...",
+                                "fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+                                "emptyUploadAlert": "Please select a file to upload"
+                        }
+                }
+	},
+        "installservices": {
+                "title": "Install and Service-Numbers",
+                "featureCodes": "Service-Numbers",
+                "installFritzBox": "Inst. FritzBox",
+                "installIosmodem": "Inst. QoS-Modem",
+                "installSoftphone": "Inst. Phone App",
+                "installSipphone": "Inst. SIP-Phone"
+        },
+	"numberPrepend": "prepend",
+	"portIconHelp": "This number is in the process of being ported and will be deleted if the port fails. It only appears for setting up purposes and is not configured to handle calls"
+}

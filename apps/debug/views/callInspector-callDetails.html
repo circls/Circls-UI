@@ -1,0 +1,50 @@
+<div class="call-analysis">
+	<div class="call-analysis-content">
+		<div class="analysis-endpoint originating{{#if analysis.originating.failure}} failure{{/if}}">
+			<i class="fa {{analysis.originating.icon}}"></i>
+			<div>{{analysis.originating.name}}</div>
+		</div>
+		<div class="analysis-arrow">
+			<div></div>
+		</div>
+		<div class="analysis-endpoint kazoo-server{{#if analysis.kazoo.failure}} failure{{/if}}">
+			<i class="fa {{analysis.kazoo.icon}}"></i>
+			<div>{{analysis.kazoo.name}}</div>
+		</div>
+		<div class="analysis-arrow">
+			<div></div>
+		</div>
+		<div class="analysis-endpoint terminating{{#if analysis.terminating.failure}} failure{{/if}}">
+			<i class="fa {{analysis.terminating.icon}}"></i>
+			<div>{{analysis.terminating.name}}</div>
+		</div>
+	</div>
+</div>
+<div class="call-ladder">
+	<table class="ladder-diagram">
+		<thead>
+			<tr>
+			{{#each destinations}}
+				<th><div>{{this}}</div></th>
+			{{/each}}
+			</tr>
+		</thead>
+
+		<tbody>
+		{{#each messages}}
+			<tr>
+			{{#each this}}
+				<td{{#if element}} class="ladder-element{{#if direction}}-{{direction}}{{/if}} {{color}}"{{/if}}>
+				{{#if ref_timestamp}}
+					<a href="#" data-id="{{ref_timestamp}}">{{label}}</a>
+				{{/if}}
+				</td>
+			{{/each}}
+			</tr>
+		{{/each}}
+		</tbody>
+	</table>
+</div>
+<div class="call-actions">
+	<button type="button" class="monster-button back-button">{{i18n.callInspector.backButton}}</button>
+</div>

@@ -1,0 +1,56 @@
+{
+	"webhooks": {
+		"addCD": "+ Toevoegen aangepaste gegevens",
+		"addWebhook": "het creëren van nieuwe webhook",
+		"delete": "verwijderen",
+		"deleteRequest": "bent u zeker dat u wilt verwijderen",
+		"deleteTitle": "verwijderen?",
+		"dialogWebhook": {
+			"addTitle": "het creëren van nieuwe webhook",
+			"createWebhook": "creëren",
+			"editTitle": "bewerk webhook",
+			"enterName": "naam",
+			"enterHook": "haak",
+			"enterRequest": "op verzoek",
+			"enterRetries": "aantal re- try pogingen",
+			"enterURL": "url",
+			"Hooks": {
+				"ALL": "alle",
+				"ca": "channel_answer",
+				"cc": "channel_create",
+				"cd": "channel_destroy"
+			},
+			"placeholderName": "aangepaste naam",
+			"Request": {
+				"get": "krijgen",
+				"post": "post"
+			},
+			"save": "sparen"
+		},
+		"dialogHistory": {
+			"title": "Historische pogingen op dit webhook"
+		},
+		"editCD": "+ Bewerk aangepaste gegevens",
+		"empty-row": "er waren geen webhooks gevonden mathing uw zoekopdracht.",
+		"info": "webhooks is een mogelijkheid waar ons systeem uw web -programma altijd wel iets interessants gebeurt kan melden. bijvoorbeeld als iemand een telefoongesprek is voltooid, kunnen we u laten weten in real -time en u vertellen wie ze sprak, en voor hoe lang.",
+		"info2": "om deze functie te gebruiken, configureert u een url naar uw webserver en vertel ons welke soorten evenementen u wilt worden geïnformeerd over, en in welk formaat. Deze functie geldt voor uw gehele account en alle apps binnen deze rekening, maar niet sub- accounts.",
+		"less": "info op webhooks verbergen",
+		"more": "meer info op webhooks",
+		"no-webhooks": "er zijn geen webhooks geconfigureerd.",
+		"search": "zoek op",
+		"toastr": {
+			"addSuccess": "je succes hebt toegevoegd",
+			"deleteSuccess": "je succes hebt verwijderd",
+			"editSuccess": "correcte vervanging"
+		},
+		"warning": "je kunt geen aangepaste gegevens op te slaan met dezelfde identifier. Voer een andere id.",
+		"editTooltip": "instellingen bewerken",
+		"historyTooltip": "bekijk de lijst van pogingen op deze webhook",
+		"deleteTooltip": "verwijderen",
+		"attemptSuccess": "succes!",
+		"message": "bericht",
+		"date": "datum",
+		"retriesLeft": "# Pogingen links",
+		"noAttempts": "het systeem didnt elke poging op deze webhook detecteren..."
+	}
+}

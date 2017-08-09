@@ -1,0 +1,79 @@
+{{#each listTransactions}}
+	<div class="transaction-box{{#compare this.type "===" "credit"}} refund{{/compare}}">
+		<div class="expand-box{{#unless this.hasAddOns}} disabled{{/unless}} clearfix">
+			<span class="fa-stack">
+				<i class="fa fa-circle-o fa-stack-2x"></i>
+				<i class="fa fa-plus fa-stack-1x"></i>
+			</span>
+		</div>
+		<div class="text-box {{#unless this.approved}}declined{{/unless}} clearfix">
+			<div class="title">
+				<span>
+				{{#unless this.approved}}
+					<i class="monster-red fa fa-exclamation-triangle"></i>
+					&nbsp;
+				{{/unless}}
+
+				{{#if this.metadata.category}}
+					{{ this.metadata.category }} 
+				{{else}}
+					({{ this.metadata.item }})
+				{{/if}}
+				</span>
+			</div>
+			<div class="title">
+				<span>
+				{{#if this.event}}
+					{{ this.event }} 
+				{{else}}
+					{{ this.friendlyName }} 
+				{{/if}}
+
+				{{#unless this.approved}}
+					&nbsp;({{ this.errorMessage }})
+				{{/unless}}
+				</span>
+			</div>
+			<div class="date">
+				<span>{{ this.friendlyCreated }}</span>
+			</div>
+			<div class="price">
+				<span>{{ ../i18n.currencyUsed }} {{#compare this.type "===" "credit"}}-{{/compare}}{{ this.amount }}</span>
+			</div>
+		</div>
+		{{#if this.hasAddOns}}
+		<div class="expandable">
+			<div class="table-content">
+				<table class="table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>{{ ../../i18n.transactions.serviceTitle }}</th>
+							<th>{{ ../../i18n.transactions.rateTitle }}</th>
+							<th>{{ ../../i18n.transactions.quantityTitle }}</th>
+							<th>{{ ../../i18n.transactions.discount }}</th>
+							<th>{{ ../../i18n.transactions.monthlyChargesTitle }}</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						{{#services}}
+							<tr>
+								<td></td>
+								<td>{{ service }}</td>
+								<td>{{ ../../i18n.currencyUsed }} {{ rate }}</td>
+								<td>{{ quantity }}</td>
+								<td>{{ discount }}</td>
+								<td>{{ ../../i18n.currencyUsed }} {{ monthly_charges }}</td>
+								<td></td>
+							</tr>
+						{{/services}}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		{{/if}}
+	</div>
+	{{else}}
+	<div class="no-data">{{ i18n.transactions.noData }}</div>
+{{/each}}

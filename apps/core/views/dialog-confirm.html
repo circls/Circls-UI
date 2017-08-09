@@ -1,0 +1,12 @@
+<div class="alert-dialog">
+	<div class="dialog-content">
+		{{#if title}}
+		<div class="dialog-header">{{title}}</div>
+		{{/if}}
+		<div class="dialog-text">{{{ content }}}</div>
+	</div>
+	<div class="alert-buttons-wrapper clearfix">
+		<button id="cancel_button" class="{{ cancelButtonClass }}">{{ cancelButtonText }}</button>
+		<button id="confirm_button" class="{{ confirmButtonClass }}">{{ confirmButtonText }}</button>
+	</div>
+</div>

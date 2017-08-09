@@ -1,0 +1,140 @@
+{
+	"name": "branding",
+	"i18n": {
+		"en-US": {
+			"label": "Branding",
+			"description": "The Branding app allows you to customize the UI.",
+			"extended_description": "With the Branding app you can customize many aspects of the UI, from changing the logo to managing the e-mail notification templates. This allows you to effectively apply your own branding and make this product your own.",
+			"features": [
+				"Add your own logo",
+				"Change all the link URLs",
+				"Choose a default language",
+				"Put your own company name",
+				"Customize the welcome message",
+				"Configure Porting & Carrier settings",
+				"Manage the templates for e-mail notifications"
+			]
+		},
+		"ro-RO": {
+			"label": "Branding",
+			"description": "The Branding app allows you to customize the UI.",
+			"extended_description": "With the Branding app you can customize many aspects of the UI, from changing the logo to managing the e-mail notification templates. This allows you to effectively apply your own branding and make this product your own.",
+			"features": [
+				"Add your own logo",
+				"Change all the link URLs",
+				"Choose a default language",
+				"Put your own company name",
+				"Customize the welcome message",
+				"Configure Porting & Carrier settings",
+				"Manage the templates for e-mail notifications"
+			]
+		},
+		"ru-RU": {
+			"label": "Branding",
+			"description": "The Branding app allows you to customize the UI.",
+			"extended_description": "With the Branding app you can customize many aspects of the UI, from changing the logo to managing the e-mail notification templates. This allows you to effectively apply your own branding and make this product your own.",
+			"features": [
+				"Add your own logo",
+				"Change all the link URLs",
+				"Choose a default language",
+				"Put your own company name",
+				"Customize the welcome message",
+				"Configure Porting & Carrier settings",
+				"Manage the templates for e-mail notifications"
+			]
+		},
+		"nl-NL": {
+			"label": "Branding",
+			"description": "The Branding app allows you to customize the UI.",
+			"extended_description": "With the Branding app you can customize many aspects of the UI, from changing the logo to managing the e-mail notification templates. This allows you to effectively apply your own branding and make this product your own.",
+			"features": [
+				"Add your own logo",
+				"Change all the link URLs",
+				"Choose a default language",
+				"Put your own company name",
+				"Customize the welcome message",
+				"Configure Porting & Carrier settings",
+				"Manage the templates for e-mail notifications"
+			]
+		},
+               "de-DE": {
+                   "label": "Eigene Marke",
+                   "description": "Das Maken App stellt einem Wiederverkäufer die Möglichkeit bereit, die Oberfäche anzupassen.",
+                   "extended_description": "Wiederverkäufer für Whitelabel-Integration. können die Oberfläche, Meldungen und Eigenschaften Ihren Bedürfnissen anpassen",
+                   "features": [
+                        "Anpassen des Logos",
+                        "Anpassen der Meldungen",
+			"Anpassung der Links",
+			"Wählen der Erstsprache",
+			"Anpassung für Geschäftsname",
+			"Anpassung der Begrüssungsmeldung",
+			"Anpassung für Portierung und Carrier Einstellungen",
+			"Vorlagen für e-Mail anpassen"
+                   ]
+               },
+               "fr-FR": {
+                   "label": "Branding",
+                   "description": "L'application de l'image de marque Vous permet de personnaliser l'interface utilisateur.",
+                   "extended_description": "Whitelabeling can edit many of messages and logo, if they need.",
+                   "features": [
+                        "Edit logo of branding",
+                        "edit many differend messages",
+			"Add your own logo",
+			"Change all the link URLs",
+			"Choose a default language",
+			"Put your own company name",
+			"Customize the welcome message",
+			"Configure Porting & Carrier settings",
+			"Manage the templates for e-mail notifications"
+                   ]
+               },
+               "it-IT": {
+                       "label": "Branding",
+                       "description": "L'applicazione Branding Consente di personalizzare l'interfaccia utente.",
+                       "extended_description": "Whitelabeling can edit many of messages and logo, if they need.",
+                       "features": [
+                        "Edit logo of branding",
+                        "edit many differend messages",
+			"Add your own logo",
+			"Change all the link URLs",
+			"Choose a default language",
+			"Put your own company name",
+			"Customize the welcome message",
+			"Configure Porting & Carrier settings",
+			"Manage the templates for e-mail notifications"
+                   ]
+               },
+		"es-ES": {
+			"label": "Branding",
+			"description": "The Branding app allows you to customize the UI.",
+			"extended_description": "With the Branding app you can customize many aspects of the UI, from changing the logo to managing the e-mail notification templates. This allows you to effectively apply your own branding and make this product your own.",
+			"features": [
+				"Add your own logo",
+				"Change all the link URLs",
+				"Choose a default language",
+				"Put your own company name",
+				"Customize the welcome message",
+				"Configure Porting & Carrier settings",
+				"Manage the templates for e-mail notifications"
+			]
+		}
+	},
+	"tags": [ "reseller", "carrier" ],
+	"icon": "Branding_app.png",
+        "api_url": "http://kazoo.allip.ovh:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"branding_1.png",
+		"branding_2.png",
+		"branding_3.png",
+		"branding_4.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

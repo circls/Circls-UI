@@ -1,0 +1,78 @@
+<div id="inspector_container">
+	<div class="inspector-header">
+		<div class="title-div">
+			{{i18n.callInspector.title}}
+		</div>
+	</div>
+	<div class="inspector-listing">
+		<div class="inspector-grid-header">
+			<div class="action-div">
+				<div class="search-div pull-right">
+					<span class="search-box">
+						<i class="fa fa-search"></i>
+						<input type="text" class="search-query" placeholder="{{i18n.table.search}}">
+					</span>
+				</div>
+				<div class="filter-div">
+					<button type="button" class="monster-button-secondary refresh-filter"><i class="fa fa-refresh"></i>{{i18n.refresh}}</button>
+					<span>{{i18n.startDate}}</span>
+					<input id="startDate" type="text" class="date-filter filter-from">
+					<span>{{i18n.endDate}}</span>
+					<input id="endDate" type="text" class="date-filter filter-to">
+					<button type="button" class="monster-button-secondary apply-filter"><i class="fa fa-filter"></i>{{i18n.filter}}</button>
+				</div>
+			</div>
+		</div>
+		<div class="inspector-grid">
+			<div class="grid-row-group">
+				<div class="grid-row header-row">
+					<div class="grid-cell direction">
+						<div class="sub-cell cell-top">
+							<i class="fa fa-arrow-right monster-green" title="{{i18n.gridHeaders.inboundCall}}"></i>
+						</div>
+						<div class="sub-cell cell-bottom">
+							<i class="fa fa-arrow-left monster-orange" title="{{i18n.gridHeaders.outboundCall}}"></i>
+						</div>
+					</div>
+					<div class="grid-cell datetime">
+						<div class="sub-cell cell-top">{{i18n.callInspector.gridHeaders.dateTime1}}</div>
+						<div class="sub-cell cell-bottom">{{timezone}}</div>
+					</div>
+					<div class="grid-cell from">
+						<div class="sub-cell single-cell">{{i18n.callInspector.gridHeaders.from}}</div>
+					</div>
+					<div class="grid-cell to">
+						<div class="sub-cell single-cell">{{i18n.callInspector.gridHeaders.to}}</div>
+					</div>
+					<div class="grid-cell duration">
+						<div class="sub-cell cell-top">{{i18n.callInspector.gridHeaders.duration1}}</div>
+						<div class="sub-cell cell-bottom">{{i18n.callInspector.gridHeaders.duration2}}</div>
+					</div>
+					<div class="grid-cell hangup">
+						<div class="sub-cell cell-top">{{i18n.callInspector.gridHeaders.hangup1}}</div>
+						<div class="sub-cell cell-bottom">{{i18n.callInspector.gridHeaders.hangup2}}</div>
+					</div>
+					<div class="grid-cell details">
+						<div class="sub-cell cell-top">{{i18n.callInspector.gridHeaders.see}}</div>
+						<div class="sub-cell cell-bottom">{{i18n.callInspector.gridHeaders.ladder}}</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-row no-match">
+				<div class="grid-cell full-width">{{i18n.callInspector.noSearchMatch}}</div>
+			</div>
+			<div class="grid-row-container">
+			</div>
+			{{#unless calls}}
+			<div class="grid-row">
+				<div class="grid-cell full-width">{{i18n.table.empty}}</div>
+			</div>
+			{{/unless}}
+		</div>
+		<div class="inspector-loader">
+			<div class="loader-message">{{i18n.callInspector.loaderMessage}}</div>
+			<div class="loading-message"><i class="fa fa-spinner fa-lg"></i><span>{{i18n.callInspector.loadingMessage}}</span></div>
+		</div>
+	</div>
+	<div class="inspector-details"></div>
+</div>

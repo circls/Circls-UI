@@ -1,0 +1,37 @@
+<div id="smtp_logs_container">
+	<div class="table-wrapper">
+		<table id="smtp_logs_grid" class="monster-table footable">
+			<thead>
+				<tr>
+					<th data-type="html">{{ i18n.smtpLogs.tableTitles.status }}</th>
+					<th>{{ i18n.smtpLogs.tableTitles.template }}</th>
+					<th>{{ i18n.smtpLogs.tableTitles.from }}</th>
+					<th>{{ i18n.smtpLogs.tableTitles.to }}</th>
+					<th data-breakpoints="xs">{{ i18n.smtpLogs.tableTitles.date }}</th>
+					<th data-filterable="false" data-type="html" data-sortable="false">{{ i18n.smtpLogs.tableTitles.details }}</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each logs}}
+					<tr class="log-row" data-id="{{id}}">
+						<td>
+							{{#if hasErrors}}
+								<i class="fa fa-thumbs-down monster-red">
+							{{else}}
+								<i class="fa fa-thumbs-up monster-green">
+							{{/if}}
+						</td>
+						<td>{{ template_id }}</td>
+						<td>{{ from }}</td>
+						<td>{{ to }}</td>
+						<td data-sorted="true" data-direction="DESC" data-sort-value="{{created}}">{{ toFriendlyDate created }}</td>
+						<td data-filter-value="{{id}}" class="actions">
+							<a href="javascript:void(0);" class="detail-link monster-link" data-id="{{id}}"><i class="fa fa-eye"></i></a>
+						</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+		<table id="smtp_logs_grid" class="display table"></table>
+	</div>
+</div>

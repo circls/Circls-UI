@@ -1,0 +1,92 @@
+<div class="limits-tab-container">
+	<div class="clearfix call-restrictions-div pull-left">
+		<legend>{{ i18n.callRestrictionsLegend }}</legend>
+		<div class="pull-left">
+			<div class="title">{{ i18n.callRestrictionsTitle }}</div>
+			<ul class="call-restrictions-list">
+				{{#each classifiers}}
+				<li class="call-restrictions-element">
+					{{#monsterCheckbox this.name}}
+						<input type="checkbox" {{#if this.checked}}checked{{/if}} name="limits.call_restriction.{{this.id}}.action" value="inherit" data-id="{{this.id}}" />
+					{{/monsterCheckbox}}
+					{{#if this.help}}
+						<i class="help-popover fa fa-question-circle" data-original-title="{{this.help}}" data-placement="top" data-toggle="tooltip"></i>
+					{{/if}}
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+<!--		<div class="manage-flatrate-div pull-left">
+			<i class="help-popover fa fa-question-circle fa-lg pull-right" data-original-title="{{i18n.flatelistTooltip}}" data-placement="top" data-toggle="tooltip"></i>
+			<div class="title">{{ i18n.flatelistTitle }}</div>
+			<label class="allow-postpay">
+				{{#monsterCheckbox i18n.flatelist}}
+					<input name="limits.allow_postpay" class="allow-postpay-ckb pull-left" type="checkbox" {{#if allowFlatewhite}}checked{{/if}} />
+				{{/monsterCheckbox}}
+			</label>
+			<label class="allow-whitlelist">{{ i18n.whitelist }}</label>
+			<input name="limits.max_whitlelist_amount" class="allow-whitlelist-ckb pull-left" type="text"
+					placeholder="^\\+?1(684|264|268|242|8(?:[0,2,3,4,5,6,7]{2}|8[0-9]))\\d{7}$" size="30" value="{{flat_rate_whitelist}}"/>
+			<label class="allow-blacklist">{{ i18n.blacklist }}</label>
+			<input name="limits.max_blacklist_amount" class="allow-blacklist-ckb pull-left" type="text"
+					placeholder="^\\+?1(684|264|268|242|8(?:[0,2,3,4,5,6,7]{2}|8[0-9]))\\d{7}$" size="30" value="{{flat_rate_blacklist}}"/>
+		</div>
+-->		<div class="manage-credit-div pull-left">
+			<i class="help-popover fa fa-question-circle fa-lg pull-inherit" data-original-title="{{i18n.creditTooltip}}" data-placement="top" data-toggle="tooltip"></i>
+			<div class="title">{{ i18n.creditTitle }}</div>
+			<div class="pull-left">
+				{{ i18n.balancePerMinute }} <span class="credit-balance">{{ i18n.currencyUsed }} {{balance}}</span>
+			{{#compare mode "===" "update"}}
+				<a class="change-credits monster-link blue" href="javascript:void(0);">{{ i18n.change }}</a>
+			{{/compare}}
+			{{#compare mode "===" "create"}}
+				<div class="add-credit-container">
+					<span class="add-credit-label">{{ i18n.addToBalance }}</span>
+					<input class="add-credit-input" name="addCreditBalance" type="text" {{#if disableBraintree}}readonly data-toggle="tooltip" data-placement="top" data-original-title="{{i18n.disabledAddCreditTooltip}}"{{/if}} />
+				</div>
+			{{/compare}}
+			</div>
+			<label class="allow-prepay">
+				{{#monsterCheckbox i18n.allowPrepay}}
+					<input name="limits.allow_prepay" class="allow-prepay-ckb pull-left" type="checkbox" {{#if allowPrepay}}checked{{/if}} />
+				{{/monsterCheckbox}}
+			</label>
+			<label class="havetopayonet">
+				{{#monsterCheckbox i18n.havetoPayonnet}}
+					<input name="limits.charge_onnet" class="charge-onnet-ckb pull-left" type="checkbox" {{#if chargeOnnet}}checked{{/if}} />
+				{{/monsterCheckbox}}
+			</label>
+		</div>
+
+		<div class="manage-balance-div pull-left">
+			<i class="help-popover fa fa-question-circle fa-lg pull-inherit" data-original-title="{{i18n.balanceTooltip}}" data-placement="top" data-toggle="tooltip"></i>
+			<div class="title">{{ i18n.PostpayTitle }}</div> 
+			<label class="allow-postpay">
+				{{#monsterCheckbox i18n.allowPostpay}}
+					<input name="limits.allow_postpay" class="allow-postpay-ckb pull-left" type="checkbox" {{#if allowPostpay}}checked{{/if}} />
+				{{/monsterCheckbox}}
+			</label>
+
+			<label class="pull-left fill-line allow-postpay">{{ i18n.postpayamount }}</label>
+			<input name="limits.max_postpay_amount" class="max-postpay-amount-ckb pull-left" type="text" placeholder="500.00" size="12" value="{{maxpostpayAmount}}"/>
+
+			<label class="pull-left fill-line allow-reserve">{{ i18n.reserveamount }}</label>
+			<input name="reserve_amount" class="reserve-amount-ckb pull-left" type="text" placeholder="2.00" size="8" value="{{reserveAmount}}"/>
+		</div>
+
+		<div class="manage-underlimit-div pull-left">
+			<i class="help-popover fa fa-question-circle fa-lg pull-inherit" data-original-title="{{i18n.underlimitTooltip}}" data-placement="top" data-toggle="tooltip"></i>
+			<div class="title">{{ i18n.underlimitTitle }}</div>
+			<label class="allow-postpay">
+				{{#monsterCheckbox i18n.allowCallinunderlimit}}
+					<input name="limits.allow_incall" class="allow-incall-ckb pull-left" type="checkbox" {{#if allowIncall}}checked{{/if}} />
+				{{/monsterCheckbox}}
+			</label>
+			<label class="allow-postpay">
+				{{#monsterCheckbox i18n.allowSayunderlimit}}
+					<input name="limits.say_underlimit" class="say-underlimit-ckb pull-left" type="checkbox" {{#if sayunderLimit}}checked{{/if}} />
+				{{/monsterCheckbox}}
+			</label>
+		</div>
+	</div>
+</div>

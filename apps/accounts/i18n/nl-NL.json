@@ -1,0 +1,385 @@
+{
+        "account": {
+                "routing": {
+                        "addCallflow": "Maak een nieuwe Pivot actie",
+                        "edit": "Edit",
+                        "delete": "Verwijderen",
+                        "trynow": "Test Connection",
+                        "pingSuccess": "Een verzoek werd gestuurd om dit Pivot-actie met succes!",
+                        "tableTitles": {
+                                "name": "Naam",
+                                "number": "Number",
+                                "routesTo": "Routes To",
+                                "acties": "acties",
+                                "numberRouting": "Pivot Routing",
+                                "configureHelp": "Configureren welke telefoonnummers route gesprekken waaraan HTTP URL's voor het afhandelen van gesprekken."
+                        },
+                        "creationForm": {
+                                "title": "Maak een nieuwe Pivot Callflow",
+                                "editTitle": "bewerken Pivot Callflow",
+                                "save": "Save",
+                                "name": {
+                                        "help": "Naam",
+                                        "placeholder": "Naam",
+                                        "label": "Naam"
+                                },
+                                "number": {
+                                        "help": "Number",
+                                        "placeholder": "+15555555555",
+                                        "label": "Nummer"
+                                },
+                                "url": {
+                                        "help": "URL",
+                                        "placeholder": "http://your.server.com",
+                                        "label": "URL"
+                                },
+                                "methode": {
+                                        "help": "Methode",
+                                        "placeholder": "POST / GET",
+                                        "label": "Methode",
+                                        "post": "POST",
+                                        "get": "GET"
+                                }
+                        }
+                },
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "zoiperToken": "Zoiper Token",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "Devicesetting in userportal",
+                        "firmwareupdate": "Firmwareupdate enabled"
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "descript": "Own Account-Dialplan",
+                        "enabled": "Own Account-Dialplan",
+                        "disabled": "None"
+                },
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Businesscustomer"
+        },
+	"addAccount": "Nieuwe account toevoegen",
+	"editSetting": "uitgeven",
+	"saveChanges": "wijzigingen opslaan",
+	"closeSetting": "dicht",
+	"disable": "onbruikbaar maken",
+	"disabled": "invalide",
+	"active": "actief",
+	"delete": "verwijderen",
+	"enable": "mogelijk maken",
+	"add": "voeg toe",
+	"save": "sparen",
+	"update": "bij te werken",
+	"none": "geen enkel",
+	"month": "maand",
+	"missingAccount": "ontbrekende rekening",
+	"disableAccount": "deze account uit te schakelen",
+	"enableAccount": "staat dit account",
+	"deleteAccount": "dit account verwijderen",
+	"useAccount": "gebruik rekening",
+	"changesSaved": "wijzigingen opgeslagen!",
+	"createdOn": "aangemaakt op",
+	"accountStatus": "rekeningstatus",
+	"accountId": "account id",
+	"accountName": "accountnaam",
+	"accountRealm": "rekening rijk",
+	"accountTimezone": "tijdzone",
+	"accountLanguage": "taal",
+	"accountTimezoneTitle": "tijdzone en taal",
+	"accountAdmins": "rekening beheerders",
+	"noAdminMessage": "deze account doesnt elke admin hebben",
+	"noUserMessage": "deze account doesnt hebben geen regelmatige gebruiker",
+	"newAdmin": "voeg een nieuwe beheerder",
+	"newUser": "nieuwe gebruiker",
+	"existingUser": "bestaande gebruiker",
+	"autogenPassword": "auto- Genereer wachtwoord",
+	"manuallyTypePassword": "handmatig het type wachtwoord",
+	"billingContact": {
+		"label": "contactpersoon voor facturering",
+		"name": "facturering naam van de contactpersoon",
+		"email": "billing contact email",
+		"number": "telefoonnummer"
+	},
+	"technicalContact": {
+		"label": "technisch contactpersoon",
+		"name": "technische naam van de contactpersoon",
+		"email": "technische contact e-mail",
+		"number": "telefoonnummer",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
+	},
+	"chargeReminder" : {
+		"line1": "uw on-bestand creditcard wordt direct in rekening worden gebracht voor eventuele wijzigingen die u maakt. als u een terugkerende diensten zijn veranderd, zullen nieuwe heffingen zijn pro -rated voor uw facturatie cyclus.",
+		"line2": "bent u zeker dat u wilt doorgaan ?"
+	},
+	"tabTitles": {
+		"overview": "overzicht",
+		"servicePlans": "service plannen",
+		"limits": "grenzen",
+		"restrictions": "beperkingen",
+		"notes": "notities",
+		"numbersFeatures": "Numbers Features"
+	},
+	"classifiers": {
+		"unknown": {
+			"name": "anders dan hierboven",
+			"help": "selecteer deze optie als u wilt dat deze account om te bellen naar een andere dan vermeld op de lijst nummer te plaatsen. (wanneer het formaat van het nummer onbekend het systeem.)"
+		}
+	},
+	"activeServicePlan": "actieve service plan",
+	"servicePlanMaintenance": "service plan onderhoud",
+	"servicePlanReconciliation": {
+		"button": "worden verzoend",
+		"tooltip": "verzekeren dat de hoeveelheden factureerbare objecten correct zijn."
+	},
+	"servicePlanSynchronization": {
+		"button": "synchroniseren",
+		"tooltip": "actualiseren van de factuurgegevens op de creditcard processor."
+	},
+	"servicePlanWizardLegend": "kiezen voor een service plan voor dit account",
+	"servicePlanResellerOnly": "alleen resellers zijn toegestaan om abonnementen te beheren.",
+	"trunksLegend": "limieten voor onder gelijktijdige inkomende en uitgaande gesprekken",
+	"twowayTrunks": "drieweg trunks",
+	"inboundTrunks": "inbound trunks",
+        "inboundTrunkshelp": "The number of indbound, flat-rate trunks",
+	"outboundTrunks": "tronchi in uscita",
+        "outboundTrunkshelp": "The number of indbound, flat-rate trunks",
+        "callsTrunks": "Hardlimit simultan calls",
+        "callsTrunkshelp": "A hard limit for the total number calls",
+        "burstTrunk": "Burstflatrate Trunk",
+        "burstTrunks": "Burst-flatrate Trunks",
+        "burstTrunkshelp": "The number of two-way, flat-rate trunks used only if no other trunks are available",
+        "resourceconsumingCalls": "Hartlimit consuming resources",
+        "resourceconsumingCallshelp": "A hard limit for the number of resource consuming calls (in- and outbound calls together)",
+	"callRestrictionsLegend": "gespreksbeperkingen",
+	"callRestrictionsTitle": "Dit account kan oproepen te plaatsen...",
+	"balanceTitle": "beheren tegoed",
+	"balancePerMinute": "per minuut tegoed",
+	"balanceTooltip": "Dit krediet zal worden gebruikt om per minuut (plan) gesprekken, internationale gesprekken en gratis telefoongesprekken, ontvangen.",
+	"addToBalance": "toe te voegen aan het huidige evenwicht",
+	"allowPrepay": "kunnen klanten gesprekken die gaan over de hierboven gestelde beperking per minuut maken, en Bill hen de kosten per minuut van het gesprek",
+        "PostpayTitle": "Manage balance handling",
+        "allowPostpay": "Allow this customer to go minus on balance todo invoiceing after a period time (Postpay).",
+        "addToBalance": "Add to the current balance:",
+        "allowPrepay": "Allow customers to make per-minute calls that go over the above limit, and bill them the per-minute cost of the call. (Prepay)",
+        "havetoPayonnet": "Charge also Onnet-calls for this customer, without internal calls (internal extensions)",
+        "flatelistTitle": "Charging within Flatrate",
+        "flatelistTooltip": "This list define the flatrate White- and Blacklist for this customer. if activate it, does only use this rules!",
+        "flatelist": "Activate this white and blacklist for this Customer. if not only systemwide white- and blacklist will be rule!",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "postpayamount": "Max Postpay amount",
+        "reserveamount": "Reserve Amount",
+	"addAdminLink": {
+		"toggleOn": "voeg een admin op de rekening",
+		"toggleOff": "ik ben van gedachten veranderd, die een admin nodig heeft?"
+	},
+	"adminLabels": {
+		"firstName": "admin voornaam",
+		"lastName": "admin achternaam",
+		"email": "admin e-mailadres",
+		"emailTooltip": "Dit e-mailadres zal dienen als de gebruikersnaam om in te loggen op monster-ui.",
+		"number": "admin telefoonnummer",
+		"password": "admin wachtwoord",
+		"confirm": "bevestig wachtwoord",
+		"sendCredentialsEmail": "Send an email to this admin with a reminder of these credentials",
+                "sendCredentialsEmailShort": "Send a summary email with credentials"
+	},
+	"adminPlaceholders": {
+		"firstName": "voornaam",
+		"lastName": "achternaam",
+		"email": "e-mailadres",
+		"number": "telefoonnummer",
+		"password": "wachtwoord",
+		"confirm": "bevestigen"
+	},
+	"wizardStepTitles": {
+		"setupAccount": "opzetten van een account",
+		"servicePlan": "kiezen voor service plan",
+		"limits": "gespreksbeperkingen",
+		"restrictions": "toestemmingen"
+	},
+	"wizardErrorMessages": {
+		"pleaseCorrect": "Corrigeer de volgende fouten",
+		"accountMandatoryFields": "de accountnaam en rijk velden zijn verplicht.",
+		"adminMandatoryFields": "de admin voornaam, achternaam en e-mailadres zijn verplicht bij het toevoegen van een nieuwe admin.",
+		"adminPasswordError": "het wachtwoord moet minstens 6 tekens lang zijn en zijn voorzien van een letter en een cijfer.",
+		"adminPasswordConfirmError": "het wachtwoord en de bevestiging komen niet overeen.",
+		"incorrectBalanceFormat": "onjuiste indeling voor het evenwicht krediet, kunt u alleen een nummer invoeren met maximaal 2 decimalen.",
+		"balanceMinimumAmount": "het minimum bedrag voor het evenwicht krediet is $ 5,00."
+	},
+	"wizardProcessingMessage1": "bewerkingsverzoek...",
+	"wizardProcessingMessage2": "even geduld aub terwijl de rekening wordt aangemaakt.",
+	"autogenPasswordPopup": {
+		"message": "een wachtwoord is ben automatisch gegenereerd voor uw beheerder {{ adminname }}. dit is de enige keer dat dit vergeten wordt weergegeven, moet u het onthouden of schrijf het op.",
+		"login": "log in",
+		"password": "wachtwoord"
+	},
+	"deleteUserConfirm": "Deze gebruiker zal permanent worden verwijderd. verder gaan?",
+	"deleteAccountConfirm": "deze account permanent verwijderd. verder gaan?",
+	"toastrMessages": {
+		"servicePlanUpdateSuccess": "actieve service plan succesvol gewijzigd!",
+		"servicePlanUpdateError": "een onverwachte fout opgetreden! Probeer het opnieuw.",
+		"servicePlanReconciliationSuccess": "verzoening met succes afgerond!",
+		"servicePlanReconciliationError": "een fout opgetreden tijdens verzoeningsproces! Probeer het later opnieuw.",
+		"servicePlanSynchronizationSuccess": "synchronisatie met succes afgerond!",
+		"servicePlanSynchronizationError": "een fout is opgetreden tijdens de synchronisatie proces! Probeer het later opnieuw.",
+		"limitsUpdateSuccess": "grenzen succesvol gewijzigd!",
+		"limitsUpdateError": "een onverwachte fout opgetreden tijdens het bijwerken van de grenzen, Probeer het later opnieuw.",
+		"creditAddSuccess": "krediet succesvol toegevoegd aan het huidige evenwicht!",
+		"creditAddError": "een onverwachte fout opgetreden bij het toevoegen van krediet, Probeer het later opnieuw.",
+		"deleteAccountError": "een fout opgetreden tijdens het verwijderen van de rekening, probeer het opnieuw.",
+		"newAccount": {
+			"accountError": "een onverwachte fout opgetreden tijdens het aanmaken van het account.",
+			"adminError": "de rekening beheerder kan niet worden gemaakt.",
+			"limitsError": "een fout opgetreden tijdens het opzetten van de grenzen.",
+			"forbiddenLimitsError": "U bent niet toegestaan om deze grenzen te stellen. Neem contact op met uw vertegenwoordiger.",
+			"creditError": "een fout opgetreden tijdens het toevoegen van verdienste van dit nieuwe account, zorg ervoor dat uw credit card informatie geldig.",
+			"servicePlanError": "een fout opgetreden bij het toewijzen van de service plan op de rekening."
+		},
+		"uiRestrictionsUpdateSuccess": "ui beperkingen succesvol gewijzigd!",
+		"uiRestrictionsUpdateError": "een onverwachte fout opgetreden tijdens het bijwerken van de ui beperkingen, probeer het later nog eens.",
+		"notesUpdateSuccess": "notities succesvol gewijzigd!",
+		"notesUpdateError": "een onverwachte fout opgetreden tijdens het bijwerken van de noten, Probeer het later opnieuw.",
+		"triggerMasquerading": "u bent nu vermomd de rekening {{ accountnaam }}.",
+		"restoreMasquerading": "je bent niet meer voordoet.",
+                "callRestrictionsUpdateSuccess": "Call restrictions updated successfully!",
+                "callRestrictionsUpdateError": "An unexpected error occured when updating the call restrictions, please try again later.",
+                "appstoreUpdateSuccess": "Allowed apps updated successfully!",
+                "appstoreUpdateError": "An unexpected error occured when updating the list of allowed apps, please try again later.",
+                "numbersfeaturesUpdateSuccess": "Numberfeatures updated successfully!",
+                "numbersfeaturesUpdateError": "An unexpected error occured when updating the numberfeatures, please try again later."
+	},
+	"uiRestrictionsLegend": "selecteer wat uw klant kunt bekijken",
+	"uiRestrictionsTooltip": "wanneer u klikt op uw naam uit rechterbovenhoek van het scherm ziet u een dropdown menu te zien. U kunt de weergave van deze opties om je sub- account aan door simpelweg het vinkje uit accountmachtigingen beperken.",
+	"uiRestrictionsMenu": {
+		"settings": "instellingen",
+		"user": "gebruiker",
+		"account": "rekening",
+		"billing": "facturering",
+		"creditCard": "kredietkaart",
+		"transactions": "transacties",
+		"servicePlan": "serviceplan",
+		"perMinute": "per minuut",
+		"trunking": "trunking",
+		"inbound": "inbound",
+		"outbound": "outbound",
+		"__comment": "ui-664",
+		"__version": "v3.19_s2",
+		"twoway": "drieweg",
+		"__comment": "ui-1074",
+		"__version": "v3.20_s2",
+		"errorTracker": "ui fouten te melden",
+		"misc": "misc",
+		"rates": "Rates",
+		"numbersFeatures": "Numbers Features"
+	},
+	"uiRestrictionsExtraSettings": {
+		"perMinute": {
+			"legend": "meer instellingen voor de witbalans",
+			"showCreditInfo": "tonen kredietinformatie",
+			"showMinutesInfo": "Toon minuten informatie"
+		}
+	},
+	"validationMessages": {
+		"invalidPasswordConfirm": "wachtwoorden komen niet overeen."
+	},
+	"notesLegend": "wat aantekeningen maken op deze rekening",
+	"landingContent": [
+		"You can edit a sub-account by selecting it from the list on the left",
+		"Or",
+		"Create a new sub-account by clicking on the \"Add New Account\" button."
+	],
+	"carrierTab": "drager",
+	"accountType": "account type",
+	"reseller": "reseller",
+	"standard": "standaard",
+	"outboundTrunkshelp": "The number of indbound, flat-rate trunks",
+        "callsTrunks": "Limithard Simultan Calls",
+        "callsTrunkshelp": "A hard limit for the total number calls",
+        "burstTrunk": "Burstflatrate Trunk",
+        "burstTrunks": "Burst-flatrate Trunks",
+        "burstTrunkshelp": "The number of two-way, flat-rate trunks used only if no other trunks are available",
+        "resourceconsumingCalls": "Hartlimit simultan calls",
+        "resourceconsumingCallshelp": "A hard limit for the number of resource consuming calls",
+        "sentEmailPopup": "An email has been sent to {{email}} with the login information.",
+        "disabledAddCreditTooltip": "Braintree is required to add credit. Please contact your administrator for more information.",
+        "deleteAccountConfirmVar": "This account (\"{{accountName}}\") will be permanently deleted. Continue?",
+        "deleteAccountDialog": {
+                "title": "Confirmation of Account Deletion",
+                "cancel": "Cancel",
+                "deleteAccount": "Delete Account",
+                "deleteKey": "DELETE",
+                "deleteMessageIntro": "Do you really want to delete this account (\"{{variable}}\")?",
+                "deleteMessageExplanation": "Please type the word \"{{variable}}\" in the following input and then click on the Delete button to proceed"
+        },
+        "updateCreditDialog": {
+                "title": "Update Credits Amount",
+                "creditBalance": "Available Credit Balance",
+                "addCredit": "Add",
+                "removeCredit": "Remove",
+                "addCreditOne": "Add Credit One Time",
+                "removeCreditOne": "Remove Credit One Time",
+                "helpAddCreditOne": "By using this, you will add some credits to the balance of this account, which will allow it enable features such as e911 or Caller-ID, but also to place per-minute calls.",
+                "helpRemoveCreditOne": "We let you remove credits from your sub-accounts with this feature. If you added too many credits to an account, you could fix it by removing the extra creditshere for example.",
+                "placeholderAmount": "10.00",
+                "successfulUpdate": "Congratulations, you successfuly updated the amount of credits available on that account! :)"
+        },
+        "account_has_descendants": "You need to delete subaccounts before deleting this account",
+        "changeServicePlanDialog": {
+                "title": "Set service plan",
+                "successUpdate": "You successfuly updated the service plan of this account!"
+        },
+        "numbersFeatures": {
+                "legend": "Enable/Disable numbers' features",
+                "features": {
+                        "e911": "E911",
+                        "cnam": "CNAM"
+                }
+        },
+        "announcementLegend": "Announcement that will popup everytime someone logs in to this account",
+        "deleteAnnouncement": "Delete Announcement",
+        "__comment": "UI-2053: Enable super duper admin users to promote/demote accounts",
+        "__version": "3.23",
+        "reserllerAction": "Reseller action",
+        "promoteDemoteError": "An error happened during this operation. Please try again later.",
+        "promoteAccount": {
+                "button": "Promote",
+                "confirm": "You are about to promote this account",
+                "success": "This account was promoted successfully"
+        },
+        "demoteAccount": {
+                "button": "Demote",
+                "confirm": "You are about to demote this account",
+                "success": "This account was demoted successfully"
+        }
+}

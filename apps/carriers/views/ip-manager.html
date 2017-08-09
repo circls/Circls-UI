@@ -1,0 +1,25 @@
+<div class="ip-manager clearfix">
+	<h3>{{ i18n.carriers.ips.title }}</h3>
+	<span class="subtitle"> {{ i18n.carriers.ips.subtitle }}</span>
+
+	<div class="zone-selector clearfix">
+		{{#each zones}}
+			<div class="zone" data-zone="{{ name }}">
+				<div class="title">{{ friendlyName }}</div>
+				<div class="ip"></div>
+			</div>
+		{{else}}
+			<div class="alert">{{ ../i18n.carriers.ips.noZones }}</div>
+		{{/each}}
+	</div>
+
+	{{#if isSuperDuper}}
+		<a class="skip-step monster-link blue">{{ i18n.carriers.ips.skip }}</a>
+	{{/if}}
+
+	{{#if zones.length}}
+		<div class="actions pull-right">
+			<button id="buy_ips" class="monster-button monster-button-success disabled">{{ i18n.carriers.ips.purchase }}</button>
+		</div>
+	{{/if}}
+</div>

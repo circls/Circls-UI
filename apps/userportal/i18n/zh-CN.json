@@ -1,0 +1,377 @@
+{
+	"userportal": {
+		"vmstatus": {
+		    "new": "New",
+		    "saved": "Saved",
+		    "deleted": "Deleted"
+		},
+		"my_voicemails": "My Voicemails",
+		"my_call_history": "My Call History",
+		"my_settings": "My Settings",
+		"forward_calls_to": "Forward Calls To",
+		"also_ring_my_voip_phone": "Also Ring My VoIP Phone",
+		"send_voicemail_to_email": "Send Voicemail to Email",
+		"email_address": "Email Address",
+		"keep_caller_id": "Keep Caller ID",
+		"save": "Save",
+		"my_devices": "My Devices",
+		"registered_devices_are_displayed": "Registered devices are displayed in green below.",
+		"my_contact_list": "My Contact List",
+		"in_order_to_use_the_quickcall_feature": "In order to use the Quickcall feature, you can either enter a number in the Textbox below, or select directly a number from your Contact List.",
+		"the_quickcall_feature_will_ring_your_selected_device": "The QuickCall feature will ring your selected device, and will then try to reach the number you selected once you picked up the call.",
+		"mark_as_new": "Mark as New",
+		"mark_as_saved": "Mark as Saved",
+		"delete": "Delete",
+		"date": "Date",
+		"from_caller_id": "From (Caller ID)",
+		"to_dialed_number": "To (Dialed number)",
+		"duration": "Duration",
+		"caller_id": "Caller ID",
+		"status": "Status",
+		"listen": "Listen",
+		"download": "Load",
+		"play": "Play",
+		"name": "Name",
+		"internal_number": "Internal Number",
+		"external_number": "External Number",
+		"you_need_to_select_a_registered_device": "You need to select a registered device from the dropdown in order to use the QuickCall Feature!",
+		"quickcall_device": "Quickcall Device: ",
+		"quickcall_startedto": "Quickcall started to: ",
+		"call": "Call",
+		"start_date": "Start",
+		"end_date": "End",
+		"filter": "Filter",
+		"dates_in_the_filter": "Dates in the filter are not in the proper format (mm/dd/yyyy)",
+		"message_index": "Message Index",
+		"voicemail_box_id": "Voicemail Box ID",
+		"are_you_sure_that_you_want_to_delete": "Are you sure that you want to delete the selected voicemail message(s)?",
+		"enable_call_forward": "Enable Call Forward",
+		"rangeTooLarge": "The range is bigger than {{variable}} days, please correct it",
+                "device_types": {
+                        "cellphone": "Cell Phone",
+                        "sip_device": "SIP Phone",
+                        "smartphone": "Smartphone",
+                        "mobile": "Mobile",
+                        "softphone": "Soft Phone",
+                        "landline": "Landline",
+                        "fax": "Fax",
+                        "ata": "ATA",
+                        "sip_uri": "SIP URI"
+                },
+                "setquickcallDevice": "Please, go to your account settings and select first a quickcall device."
+	},
+
+	"devices": {
+		"add": "Add my new Device",
+		"assigned": "Assigned",
+		"createDevice": "Create my new Device",
+		"confirmDeleteDevice": "This device will be permanently deleted. Continue?",
+		"deleteDevice": "Delete Device",
+		"addedDevice": "You successfully added the following device \"{{deviceName}}\".",
+		"deletedDevice": "You successfully deleted the following device \"{{deviceName}}\".",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+		"useiax2infoHelp": "If you want to use IAX2 Protocol then you have to set it on.",
+		"popupSettings": {
+			"advancedTitle": "Advanced",
+			"brandDownloads": "Productinfo",
+			"basicTitle": "Basic Settings",
+			"basicSectionTitle": "Basic Settings",
+			"dragAndDrop": "To select a codec, drag and drop from the available codecs box to selected codecs box",
+                        "dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"options": {
+				"menuTitle": "Options"
+			},
+			"sip": {
+				"menuTitle": "SIP",
+				"sectionTitle": "SIP Info",
+				"download": "Install Softphone easy",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Howto install Softphone easy and quickly",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download-link: 'Install Softphone easy' start your install of the Softphone as you do.",
+                                                "qrcode": "After installation, at the button of dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone ready to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+			},
+			"audio": {
+				"menuTitle": "Audio",
+				"sectionTitle": "Audio Settings",
+				"selectedCodecs": "Selected Codecs",
+				"unselectedCodecs": "Available Codecs",
+				"codecs": {
+					"OPUS": "OPUS",
+					"CELT@32000h": "Siren @ 32Khz",
+					"G7221@32000h": "G722.1 @ 32khz",
+					"G7221@16000h": "G722.1 @ 16khz",
+					"G722": "G722",
+					"speex@32000h": "Speex @ 32khz",
+					"speex@16000h": "Speex @ 16khz",
+					"speex": "Speex",
+					"PCMU": "G711u / PCMU - 64kbps (NA)",
+					"PCMA": "G711a / PCMA - 64kbps (Elsewhere)",
+					"G729":"G729 - 8kbps (Requires License)",
+					"GSM":"GSM",
+					"CELT@48000h": "Siren (HD) @ 48kHz",
+					"CELT@64000h": "Siren (HD) @ 64kHz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "Emergency Caller-ID",
+				"sectionTitle": "Emergency Caller-ID",
+				"emergency": "Number",
+				"notSet": "- Account Default -",
+				"noE911Numbers": "You didn't set E911 on any of your numbers, please set it up via the Number Manager and come back on this screen once it's done",
+				"address": "Address",
+				"__comment": "UI-1386: Updating devices to use the numberSelector common control",
+				"__version": "v3.20_s4",
+				"selectNumber": "Select an e911 number",
+				"useDefault": "Use account default"
+			},
+			"miscellaneous": {
+				"menuTitle": "Miscellaneous",
+				"sectionTitle": "Miscellaneous",
+				"rtp": {
+					"enable": "Encrypt the audio",
+					"type": "Type of encryption: ",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"__comment": "UI-1119: Adding ignore_complete_elsewhere",
+				"__version": "3.19",
+				"ignoreCompletedElsewhere": {
+					"label": "Ignore Completed Elsewhere",
+					"help": "When checked supporting phones will show a call missed if it was part of a ring group answered elsewhere."
+				},
+				"__comment": "UI-377: Adding Restart device feature",
+				"__version": "3.21",
+				"restart": {
+					"label": "Send a Restart request",
+					"button": "Restart",
+					"help": "This sends a request to restart the device. This action is only available if the device is currently registered to the platform.",
+					"success": "You successfully sent a Restart request to this device!"
+				}
+			},
+			"webrtc": {
+				"menuTitle": "WebRTC Link",
+				"sectionTitle": "WebRTC Link",
+				"showInfowebrtc": {
+					"infoLink": "Use this selection for absolute caution!",
+					"help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+				}
+			},
+			"restrictions": {
+				"menuTitle": "Restrictions",
+				"sectionTitle": "Restrictions Settings",
+				"inherit": "Inherit",
+				"deny": "Deny",
+				"matcher": {
+					"help": "Type in a number (international format => +[Countryprefix]...) and click on \"Test\" to see if the call would be allowed.",
+					"placeholder": "+18554443333",
+					"button": "Test",
+					"label": "The above number matched this rule.",
+					"__comment": "UI-727, v3.19_s2: Updating the way call restrictions are displayed on devices.",
+					"allowMessage": "This device will be allowed to place a call to {{phoneNumber}}",
+					"denyMessage": "This device will not be allowed to place a call to {{phoneNumber}}."
+				},
+				"__comment": "UI-727, v3.19_s2: Updating the way call restrictions are displayed on devices.",
+				"allow": "Allow",
+				"disabledRestrictionsInfo": "Some types of call have been restricted for your entire account and can not be enabled per-device."
+			},
+			"video": {
+				"menuTitle": "Video",
+				"sectionTitle": "Video Settings",
+				"selectedCodecs": "Selected Codecs",
+				"unselectedCodecs": "Available Codecs",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "H264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			},
+			"__comment": "UI-1351: Add ability to configure feature keys for SIP devices in SmartPBX",
+			"__version": "v3.20_s4",
+			"featureKeys": {
+				"menuTitle": "Feature Keys",
+				"description": "Feature key",
+				"labels": {
+					"user": "User",
+					"parkingSpot": "Parking Spot",
+					"value": "Value"
+				},
+				"info": {
+					"link": {
+						"showInfo": "Show Info",
+						"hideInfo": "Hide Info"
+					},
+					"types": {
+						"presence": "Indicate when a user has an incoming call or is on the phone. The indicator can be used to pick up ringing calls or speed dial that user.",
+						"parking": "Indicate when a call is placed on a parking slot available to the entire company. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+                                                "extension": "Nebenstelle",
+                                                "line": "Leitung",
+						"personal_parking": "Indicate when a call is placed on a parking slot dedicated to the selected user. The indicator can be used to transfer a call to the parking slot or retrieve a parked call.",
+						"speed_dial": "Does not indicate for any calls event but can be used to rapidly call the configured number."
+					}
+				},
+				"types": {
+					"none": "None",
+					"presence": "Presence",
+                                        "extension": "Nebenstelle",
+                                        "line": "Leitung",
+					"parking": "Parking",
+					"personal_parking": "Personal Parking",
+					"speed_dial": "Speed Dial"
+				},
+				"keytemplateHelp": "By click on this, template will be taken from this phone. Select an account wide template to take it at device create."
+			}
+		},
+		"buy": "Buy Device",
+		"classifiers": {
+			"unknown": {
+			    "name": "Other than above",
+			    "help": "Please select this option when you want this account to place calls to ANY NUMBER other than mentioned on the list. (When the format of the number is unknown to the system.)"
+			}
+		},
+		"noMatchingDevices": "There were no devices found matching your search",
+		"noDevicesConfigured": "There are no devices configured",
+		"provisionerPopup": {
+			"brandHeadline": "Select the brand of the device:",
+			"deviceHeadline": "Select the model of the device:",
+			"deviceSelected": "You have selected the {{brand}} {{model}}",
+			"missingBrand": "The brand of my device is not listed here",
+			"missingDevice": "My device is not listed here",
+			"title": "Selection of the device"
+		},
+		"sip_device": {
+			"addTitle": "Adding a SIP Device",
+			"editTitle": "Editing SIP Device: {{name}}",
+			"macAddress": "MAC Address",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "New SIP Device",
+			"deviceName": "Device Name"
+		},
+		"sip_uri": {
+			"addTitle": "Adding a SIP URI",
+			"deviceName": "Name",
+			"editTitle": "Editing SIP URI: {{name}}",
+			"new": "New SIP URI",
+			"uri": "SIP URI",
+			"uriPlaceholder": "sip:device@my.company.com",
+			"hideContactList": "Hide from Contact List"
+		},
+		"landline": {
+			"addTitle": "Adding a Landline",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Landline: {{name}}",
+			"new": "New Landline",
+			"number": "Number",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Require Key Press",
+			"keepCallerId": "Keep Original Caller-ID",
+			"hideContactList": "Hide from Contact List"
+		},
+		"cellphone": {
+			"addTitle": "Adding a Cell Phone",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Cell Phone: {{name}}",
+			"new": "New Cell Phone",
+			"number": "Number",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Allow use of cellphone voicemail",
+			"keepCallerId": "Keep Original Caller-ID",
+			"hideContactList": "Hide from Contact List"
+		},
+		"mobile": {
+			"addTitle": "Adding a Mobile",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Mobile: {{name}}",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10 digits phone number",
+			"new": "New Mobile"
+		},
+		"smartphone": {
+			"addTitle": "Adding a Smartphone",
+			"deviceName": "Device Name",
+			"editTitle": "Editing Smartphone: {{name}}",
+			"new": "New Smartphone",
+			"requireKeypress": "Allow use of cellphone voicemail",
+			"keepCallerId": "Keep Original Caller-ID",
+			"hideContactList": "Hide from Contact List"
+		},
+		"fax": {
+			"addTitle": "Adding a Fax Machine",
+			"editTitle": "Editing Fax Machine: {{name}}",
+			"macAddress": "MAC Address",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Fax Machine",
+			"deviceName": "Device Name",
+			"t38": "T38",
+			"disabled": "Disabled",
+			"auto": "Auto-detect",
+			"force": "Always force"
+		},
+		"softphone": {
+			"addTitle": "Adding a Softphone",
+			"editTitle": "Editing Softphone: {{name}}",
+			"new": "New Softphone",
+			"deviceName": "Device Name"
+		},
+		"ata": {
+			"addTitle": "Adding an ATA",
+			"editTitle": "Editing ATA: {{name}}",
+			"new": "New ATA",
+			"deviceName": "Device Name"
+		},
+		"sip": {
+			"username": "SIP Username",
+			"password": "SIP Password",
+			"realm": "Realm"
+		},
+		"spare": "Spare",
+		"title": "Total Devices",
+		"titleGrid": {
+			"edit": "Edit",
+			"enable": "Enable",
+			"user": "User",
+			"modelMacAddress": "Name / Mac Address",
+			"type": "Type"
+		},
+		"types": {
+			"cellphone": "Cell Phone",
+			"sip_device": "SIP Phone",
+			"smartphone": "Smartphone",
+			"mobile": "Mobile",
+			"softphone": "Soft Phone",
+			"landline": "Landline",
+			"fax": "Fax",
+			"ata": "ATA",
+			"sip_uri": "SIP URI"
+		},
+		"unassignedDevice": "-",
+		"walkthrough": {
+			"steps": {
+				"1": "Add a specific User Group by clicking on the button. The handy drag and drop allows you to add users, create a group name and add an extension number. Once complete, each User Group and its settings will be populated below.",
+				"2": "Once a User Group is created, it will pre-populate the area here. Make any necessary changes such as the group name, number of members and extension number.",
+				"3": "Purchase, Port and Assign numbers. Once complete, it will automatically be assigned to the specific User Group.",
+				"4": "Turn on/off and seamlessly manage any of the User Features specific to the User Group."
+			}
+		}
+	},
+	"useiax2Gateway": "Use IAX2-Gateway"
+}

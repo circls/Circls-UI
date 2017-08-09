@@ -1,0 +1,144 @@
+.transactions-content-wrapper .title-box:first-of-type {
+	margin-right: 10px;
+}
+
+.transactions-content-wrapper .action-bar-wrapper input {
+	margin: 0 10px 0 5px;
+	width: 80px;
+	cursor: pointer;
+	background-color: #f0f0f9;
+	border-radius: 2px;
+	box-shadow: none;
+	text-align: center;
+}
+
+.transactions-content-wrapper .action-bar-wrapper > * {
+	vertical-align: baseline; 
+}
+
+.transactions-content-wrapper .action-bar-wrapper .dropdown {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.transactions-content-wrapper .list-transactions {
+	margin-top: 25px;
+}
+
+.transactions-content-wrapper .list-transactions .no-data {
+	background: none repeat scroll 0 0 #F0F0F0;
+	border: 1px solid #CCCCCC;
+	padding: 15px;
+	text-align: center;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box {
+	line-height: auto;
+	margin-bottom: 15px;
+	background-color: #f0f0f9;
+	border: solid 1px #c0c0c9;
+	border-radius: 2px;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box.refund {
+	color: #22A5FF;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box.open {
+	background-color: #fff;
+	border-color: #22a5ff;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box > *:not(.expandable) {
+	line-height: auto;
+	height: auto;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box .expandable .table {
+	margin-bottom: 0;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box .expand-box {
+	float: left;
+	text-align: center;
+	width: 80px;
+	min-height: 65px;
+	line-height: 65px;
+}
+.transactions-content-wrapper .list-transactions .transaction-box .expand-box:not(.disabled) {
+	cursor: pointer;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box .expand-box > * {
+	line-height: auto;
+	text-align: center;
+	font-size: 11px;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box .expand-box i {
+	color: #303039;
+}
+.transactions-content-wrapper .list-transactions .transaction-box .expand-box.disabled i {
+	color: #c0c0c9;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box .text-box {
+	margin-left: 80px;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box .text-box.declined {
+	color: red;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box .text-box > * {
+	float: left;
+	width: 24%;
+	text-align: center;
+	font-weight: 600;
+	min-height: 65px;
+	line-height: 65px;
+}
+.text-box span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 15px;
+}
+
+/* Table Customization */
+.transactions-content-wrapper .list-transactions .transaction-box .table-content {
+	margin: 0 20px 20px;
+	padding-top: 20px;
+	border-top: solid 1px #c0c0c9;
+}
+
+.transactions-content-wrapper .list-transactions .transaction-box table.table {
+	border: solid 1px #c0c0c9;
+}
+.transactions-content-wrapper .list-transactions .transaction-box table.table th {
+	text-align: center;
+	background: #f0f0f9;
+	color: #303039;
+	text-shadow: none;
+	border-bottom: solid 1px #c0c0c9;
+}
+.transactions-content-wrapper .list-transactions .transaction-box table.table tr {
+	background: #fff;
+}
+.transactions-content-wrapper .list-transactions .transaction-box table.table td {
+	text-align: center;
+	border: none;
+}
+.transactions-content-wrapper .list-transactions .transaction-box table.table tr:not(:first-child) td {
+	border-top: solid 1px #c0c0c9;
+}
+.transactions-content-wrapper .list-transactions .transaction-box table.table tr th:first-child,
+.transactions-content-wrapper .list-transactions .transaction-box table.table tr th:last-child {
+	width: 10px;
+	padding: 0;
+}
+.transactions-content-wrapper .list-transactions .transaction-box table.table tr td:first-child,
+.transactions-content-wrapper .list-transactions .transaction-box table.table tr td:last-child {
+	width: 10px;
+	padding: 0;
+	border: none;
+}

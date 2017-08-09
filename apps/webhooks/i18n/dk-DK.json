@@ -1,0 +1,145 @@
+{
+	"webhooks": {
+		"addCD": "+ Add Custom Data",
+		"addWebhook": "New Webhook",
+		"delete": "DELETE",
+		"deleteRequest": "Are you sure you want to delete ",
+		"deleteTitle": "Delete?",
+		"dialogWebhook": {
+			"addTitle": "New Webhook",
+			"createWebhook": "CREATE",
+			"editTitle": "Edit Webhook",
+			"enterName": "Name",
+			"enterHook": "Hook",
+			"enterRequest": "Request",
+			"enterRetries": "Number of re-try attempts",
+			"enterURL": "URL",
+			"Hooks": {
+				"ALL": "all",
+				"ca": "channel_answer",
+				"cc": "channel_create",
+				"cd": "channel_destroy"
+			},
+			"placeholderName": "Custom Name",
+			"Request": {
+				"get": "GET",
+				"post": "POST"
+			},
+			"save": "SAVE"
+		},
+		"dialogHistory": {
+			"title": "History of attempts on this webhook"
+		},
+		"editCD": "+ Edit Custom Data",
+		"empty-row": "There were no webhooks found mathing your search.",
+		"info": "WebHooks is a capability where our system can notify your web program anytime something of interest happens. For example, if someone completes a phone call, we can let you know in real-time and tell you who they were talking to, and for how long.",
+		"info2": "To use this feature, configure a URL to your web server and tell us which type of events you want to be notified about, and in what format. This feature applies to your entire account and any apps within this account, but not sub-accounts.",
+		"less": "Hide Info On Webhooks",
+		"more": "More Info On Webhooks",
+		"no-webhooks": "There are no webhooks configured.",
+		"search": "Search",
+		"toastr": {
+			"addSuccess": "You have successfully added ",
+			"deleteSuccess": "You have successfully deleted ",
+			"editSuccess": "You have successfully changed "	
+		},
+		"warning": "You cannot save Custom Data with the same identifier. Please enter a different identifier.",
+		"__comment": "UI-748: Adding tooltips for actions",
+		"__version": "3.20",
+		"editTooltip": "Edit Settings",
+		"historyTooltip": "View the list of attempts on this webhook",
+		"deleteTooltip": "Delete",
+		"attemptSuccess": "Success!",
+		"message": "Message",
+		"date": "Date",
+		"retriesLeft": "# of Retries Left",
+		"noAttempts": "The system didn't detect any attempt on this webhook...",
+
+		"webhookCounters": {
+			"active": "Active",
+			"disabled": "Disabled",
+			"errors": "Errors"
+		},
+		"webhookFilters": {
+			"all": "All Webhooks",
+			"active": "Active Hooks",
+			"disabled": "Disabled Hooks",
+			"errors": "Errors"
+		},
+		"noWebhooks": "There are no webhook configured on this account.",
+		"emptySearch": "There were no webhook found matching your search.",
+		"reenableButton": "Re-enable all failing webhooks",
+		"reenableTooltip": "Webhooks that you manually disabled will stay that way. Only hooks that have been disabled by the server will be re-enabled.",
+		"errorTooltip": "This Webhook has been disabled by the server for the following reason: ",
+		"deleteMessage": "Are you sure you want to delete this Webhook?",
+		"webhookEdition": {
+			"creationTitle": "Create New Webhook",
+			"editionTitle": "Edit Webhook",
+			"creationSaveButton": "Create Webhook",
+			"editionSaveButton": "Update Webhook",
+			"nameSectionTitle": "Let's name your Webhook and decide what event will trigger it",
+			"methodSectionTitle": "Select a request method, the server to send the info to, and how many re-try attempts the hook should make",
+			"customDataSectionTitle": "Add custom data to your Webhook (Optional)",
+			"groupSectionTitle": "Tag this Webhook to a Group if you want to categorize it further",
+			"nameLabel": "Hook Name",
+			"hookLabel": "Trigger Event",
+			"methodLabel": "Request Type",
+			"urlLabel": "URL",
+			"urlPlaceholder": "http://my.server.com/call_answered.php?account_id=123456",
+			"retriesLabel": "Re-try Attempts",
+			"customDataLabel": "+ Add Data Row",
+			"customDataKey": "Custom Key",
+			"customDataValue": "Custom Value",
+			"groupSelectLabel": "Tag to Group",
+			"noGroupOption": "Do Not Group",
+			"newGroupOption": "+ Create a New Group",
+			"existingOptionGroup": "Existing Groups:",
+			"newGroupLabel": "Create New Group"
+		},
+		"webhookAttempts": {
+			"backButton": "Back to Webhooks",
+			"enableButton": "Re-enable this webhook",
+			"header": "{{webhookName}}'s Request Log",
+			"noAttempts": "The system didn't detect any attempt on this webhook...",
+			"date": "Date",
+			"time": "Time",
+			"sent": "Sent",
+			"received": "Received",
+			"attempts": "Attempts"
+		},
+		"webhookList": {
+			"all": {
+				"name": "All",
+				"description": "This webhook will be triggered by all the events"
+			},
+			"skel": {
+				"name": "Skel",
+				"description": "This webhook example be triggered by skel the events"
+			},
+			"outbound_fax": {
+				"name": "outbound_fax",
+				"description": "Outbound faxes (or errors if they occur)"
+			},
+			"object": {
+				"name": "object",
+				"description": "Receive notifications when objects in Kazoo are changed"
+			},
+			"channel_destroy": {
+				"name": "channel_destroy",
+				"description": "Events when calls end"
+			},
+			"channel_create": {
+				"name": "channel_create",
+				"description": "Events when new calls start"
+			},
+			"channel_answer": {
+				"name": "channel_answer",
+				"description": "Events for when the channel is answered by the endpoint"
+			},
+			"callflow": {
+				"name": "callflow",
+				"description": "Fire a webhook from a callflow"
+			}
+		}
+	}
+}

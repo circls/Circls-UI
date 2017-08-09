@@ -1,0 +1,15 @@
+<div id="registration_detail_dialog">
+
+	<table class="table">
+		{{#each metadata}}
+			<tr>
+				<td>{{ @key }}</td>
+				<td>{{ this }}</td>
+			</tr>
+		{{/each}}
+	</table>
+
+	<div class="action-bar dialog-buttons-wrapper">
+		<button id="close" class="monster-button">{{ i18n.close }}</button>
+	</div>
+</div>

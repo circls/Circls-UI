@@ -1,0 +1,502 @@
+@import url('../submodules/balance/balance.css');
+@import url('../submodules/billing/billing.css');
+@import url('../submodules/servicePlan/servicePlan.css');
+@import url('../submodules/transactions/transactions.css');
+@import url('../submodules/trunks/trunks.css');
+@import url('../submodules/user/user.css');
+@import url('../submodules/account/account.css');
+@import url('../submodules/errorTracker/errorTracker.css');
+
+/* My account */
+#myaccount {
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 67px;
+	bottom: 0px;
+	z-index: 20;
+
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: all 0.3s ease-in;
+	    -ms-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+}
+#myaccount.myaccount-open {
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+}
+
+#myaccount > .container-fluid {
+	height: 100%;
+	padding: 0;
+}
+
+#myaccount > .container-fluid > .row-fluid {
+	height: 100%;
+}
+
+#myaccount > .container-fluid > .row-fluid > [class*="span"]{
+	height: 100%;
+}
+
+/* MYACCOUNT MENU */
+#myaccount .myaccount-container {
+	padding-left: 280px;
+	min-height: 100%;
+	overflow: hidden;
+}
+#myaccount .myaccount-container > div {
+	float: left;
+	position: relative;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	/* Hack to keep both columns at the same height */
+}
+#myaccount .myaccount-menu {
+	background-color: #f0f0f9;
+	width: 280px;
+	border-right: 1px solid #c0c0c9;
+	box-sizing: border-box;
+	right: 280px;
+	margin-left: -100%;
+
+	-webkit-transition:width 0.3s;
+	-moz-transition:width 0.3s;
+	-o-transition:width 0.3s;
+	transition:width 0.3s;
+}
+#myaccount .myaccount-right {
+	width: 100%;
+}
+
+#myaccount .myaccount-menu .nav {
+	height: 100%;
+	padding-right: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-left: 0;
+}
+
+#myaccount .myaccount-menu .badge {
+	background: #fff;
+	border: 1px solid #c0c0c9;
+	color: #22a5ff;
+	border-radius: 0;
+	padding: 3px 9px;
+}
+
+#myaccount .myaccount-menu .nav li {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-right: 2px solid transparent;
+}
+
+#myaccount .myaccount-menu .nav > li.active {
+	background-color: #fff !important;
+	border-right-color: #22a5ff;
+}
+
+#myaccount .myaccount-menu .nav > li:not(.nav-header):hover {
+	background-color: #e0e0e9;
+	cursor: pointer;
+}
+
+#myaccount .myaccount-menu .nav li.nav-header {
+	padding: 0;
+	padding-bottom: 5px;
+	margin: 35px 20px 10px 20px;
+	border-bottom: solid 1px #c0c0c9;
+	text-transform: uppercase;
+}
+
+#myaccount .myaccount-menu .nav a {
+	background: none !important;
+	text-shadow: none;
+	color: #303039;
+	padding: 0;
+	margin: 0;
+	height: 22px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#myaccount .myaccount-menu .nav a i {
+	display: inline-block;
+	margin-right: 10px;
+	width: 35px;
+	color: #303039;
+}
+
+#myaccount .myaccount-menu .menu-bottom {
+	height: 15%;
+}
+
+#myaccount .myaccount-menu .nav li .active-highlight i {
+	font-size: 20px;
+}
+
+#myaccount .myaccount-menu .nav li.active .active-highlight > * {
+	color: #22a5ff;
+}
+
+#myaccount .myaccount-menu .menu-bottom .signout {
+	text-transform: uppercase;
+	background: #333;
+	color: #fff;
+	height: 100%;
+}
+
+#myaccount .myaccount-menu .menu-bottom .signout-text {
+	padding: 27px 10% 0;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#myaccount .myaccount-menu .menu-bottom .signout:hover {
+	cursor: pointer;
+	color: #22a5ff;
+}
+
+/* MYACCOUNT CONTENT */
+#myaccount .myaccount-content {
+	background-color: white;
+	padding: 20px 30px;
+}
+
+#myaccount .myaccount-titlebar {
+	padding: 10px 30px;
+	margin-top: 20px;
+}
+
+#myaccount .myaccount-right .myaccount-titlebar .myaccount-module-title {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+#myaccount .myaccount-right .myaccount-titlebar .myaccount-close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	#myaccount .myaccount-menu {
+		width: 200px;
+		right: 200px;
+	}
+	#myaccount .myaccount-container {
+		padding-left: 200px;
+	}
+	#myaccount .myaccount-menu .badge {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	#myaccount .myaccount-menu {
+		width: 47px;
+		right: 47px;
+	}
+
+	#myaccount .myaccount-menu .nav li {
+		padding: 10px 0px;
+	}
+
+	#myaccount .myaccount-menu .nav a i {
+		margin-left: 12px;
+	}
+
+	#myaccount .myaccount-menu .nav li.nav-header,
+	#myaccount .myaccount-menu .nav a .element-name {
+		display: none;
+	}
+
+	#myaccount .myaccount-container {
+		padding-left: 47px;
+	}
+	#myaccount .myaccount-menu .badge {
+		display: none;
+	}
+}
+
+#myaccount .myaccount-content .list-settings .card-type.visa {
+	background: url(static/visa.png);
+}
+
+#myaccount .myaccount-content .list-settings .card-type.amex {
+	background: url(static/amex.png);
+}
+
+#myaccount .myaccount-content .list-settings .card-type.discover {
+	background: url(static/discover.png);
+}
+
+#myaccount .myaccount-content .list-settings .card-type.mastercard {
+	background: url(static/mastercard.png);
+}
+
+#myaccount .myaccount-content .list-settings {
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #f0f0f9;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item {
+	border-top: 1px solid #c0c0c9;
+	border-left: 1px solid #c0c0c9;
+	border-right: 1px solid #c0c0c9;
+}
+#myaccount .myaccount-content .list-settings .settings-item:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+#myaccount .myaccount-content .list-settings .settings-item:last-child {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom: 1px solid #c0c0c9;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item:last-child .settings-item-content {
+	border-radius: 0 0 4px 4px;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item.open {
+	border: 1px solid #22a5ff;
+	background-color: #fff;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item.open + .settings-item {
+	border-top: none;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .settings-link {
+	color: #303039;
+	cursor: pointer;
+	display: block;
+	font-weight: 600;
+	height: 60px;
+	line-height: 60px;
+	padding: 0px 15px;
+	text-decoration: none;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item:not(.open) .settings-link:hover {
+	background-color: #e0e0e9;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item.open .settings-link {
+	padding: 0px;
+	margin: 0 15px;
+	border-bottom: solid 1px #c0c0c9;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .title {
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	width: 220px;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .settings-link .description {
+	display: inline-block;
+	font-weight: 600;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .settings-link .description .number {
+	font-weight: bold;
+	color: #22a5ff;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .settings-link .update {
+	float: right;
+	overflow: hidden;
+}
+#myaccount .myaccount-content .list-settings .settings-item .settings-link .update .text {
+	display: none;
+	margin-left: 5px;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .settings-link .changes-saved {
+	float: right;
+	display: none;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .settings-link:hover .update .text {
+	display: inline-block;
+	-webkit-animation-duration: 0.5s;
+			animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+	-webkit-animation-name: myAccountShowEdit;
+			animation-name: myAccountShowEdit;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item-content {
+	display: none;
+	padding: 20px 15px;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item-content .form-horizontal {
+	margin: 0;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item-content label.uneditable {
+	color: #22a5ff;
+	cursor: default;
+	font-weight: 600;
+	padding-top: 5px;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item-content .edition {
+	display: none;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item .settings-link .description > ul {
+	display: table-cell;
+	height: 60px;
+	list-style: none outside none;
+	margin: 0;
+	vertical-align: middle;
+}
+
+#myaccount .myaccount-content .list-settings .card-type {
+	display: inline-block;
+	margin-bottom: -9px;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 40px;
+}
+
+#myaccount .myaccount-content .list-settings .input-prepend .add-on {
+	padding: 1px 7px;
+	height: 26px;
+}
+
+#myaccount .myaccount-content .list-settings .input-prepend .add-on i {
+	margin: 0 5px;
+	font-size: 24px;
+}
+
+#myaccount .myaccount-content .list-settings .input-prepend .add-on .card-type {
+	margin: 0;
+}
+
+#myaccount .myaccount-content .list-settings .settings-item-content .edition .card-type {
+	display: none;
+}
+
+#myaccount .myaccount-content .list-settings .control-label {
+	width: 200px;
+	text-align: left;
+}
+
+#myaccount .myaccount-content .list-settings .controls {
+	margin-left: 220px;
+}
+
+#myaccount .myaccount-content .list-settings .controls button, #myaccount .myaccount-content .list-settings .controls input {
+	margin-right: 5px;
+}
+
+#myaccount .myaccount-content .list-settings .controls input {
+	border-radius: 2px;
+	box-shadow: none;
+	border-color: #c0c0c9;
+}
+#myaccount .myaccount-content .list-settings .controls input[type="radio"] {
+	margin-top: 0;
+}
+
+#myaccount .myaccount-content .list-settings .controls input:focus {
+	border-color: #22a5ff;
+}
+
+#myaccount .myaccount-content .list-settings .action-group {
+	padding-top: 20px;
+	border-top: solid 1px #c0c0c9;
+}
+
+#myaccount .myaccount-content .list-settings .action-bar {
+	float: right;
+}
+
+#myaccount .myaccount-content .list-settings .action-bar > *:not(:last-child) {
+	margin-right: 10px;
+}
+
+#myaccount .myaccount-content .list-settings .controls .plain-text {
+	margin-top: 5px;
+}
+
+#myaccount .myaccount-content .list-settings .controls.checkbox-container {
+	padding-top: 5px;
+}
+
+#myaccount .myaccount-content .title-bar
+{
+	background-color: #f0f0f9;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: solid 1px #c0c0c9;
+	border-radius: 2px;
+}
+
+#myaccount .myaccount-content .title-bar > *:not(.pull-right) {
+	display: inline-block;
+}
+
+/***** Animations *****/
+
+@-webkit-keyframes myAccountShowEdit {
+	0% {
+		opacity: 0;
+		margin-right: -50px;
+	}
+	100% {
+		opacity: 1;
+		margin-right: 0px;
+	}
+}
+@keyframes myAccountShowEdit {
+	0% {
+		opacity: 0;
+		margin-right: -50px;
+	}
+	100% {
+		opacity: 1;
+		margin-right: 0px;
+	}
+}
+
+/* Walkthrough popups */
+.walkthrough-popup {
+	padding: 15px;
+	width: 450px;
+}
+
+.walkthrough-popup .actions-wrapper {
+	border-top: 1px solid #777;
+	margin-top: 25px;
+	padding-top: 15px;
+	text-align: right;
+}
+
+.description li {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.help-popover {
+    float: initial;
+}
+
+.help_popover {
+    float: right;
+}

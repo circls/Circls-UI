@@ -1,0 +1,1189 @@
+{
+	"defaultttsvoice": "female/ru-RU",
+	"callerId": "Caller-ID",
+	"e911": "Экстр.выз.911",
+	"failover": "Аварийное переключение",
+        "numberPrepend": "Prepend",
+        "regextern": "External Registration",
+        "blacklist": "Incoming-Numberblockings",
+
+	"menuTitles": {
+		"myOffice": "Панель управления",
+		"users": "Пользователи",
+		"groups": "Группы",
+		"numbers": "Номера",
+		"devices": "Устройства",
+		"mainNumber": "Основной номер",
+		"callLogs": "Журнал вызовов",
+		"quickLinks": "Help Topics",
+		"featureCodes": "Codes & Howto",
+		"__comment": "UI-1220: Added VMBox module",
+		"__version": "3.19",
+		"vmboxes": "Голосовая почта"
+	},
+
+	"groups": {
+		"addFromSpare": "Добавить из резервных номеров",
+		"add": "Добавить группу",
+		"addExtension": "Добавить внутренний номер",
+		"addNewExtension": "Внутренний номер: ",
+		"buy": "Купить номер",
+		"confirmDeleteGroup": "Эта группа будет удалена без возможности восстановления. Продолжнить?",
+		"delete": "Удалить группу",
+		"dialogCreationGroup": {
+			"availableUsers": "Доступные пользователи",
+			"createGroup": "Создать группу",
+			"extension": "Внутренний номер",
+			"name": "Имя группы",
+			"selectedUsers": "Выбранные пользователи",
+			"title": "Создание группы",
+			"missingDataAlert": "Вы должны выбрать имя и внутренний номер для этой группы"
+		},
+		"groupDeleted": "Вы успешно удалили  {{name}}'-ю группу",
+		"name": "Имя группы",
+		"noAssignedExtensions": "Для этой группы ещё не назначен внутренний номер.",
+		"noExtension": "Пусто",
+		"noFeatures": "Пусто",
+		"noMatchingGroup": "Не найдено групп отвечающих условиям вашего поиска",
+		"noGroupsConfigured": "Пожалуйста, сначала добавьте группу для пользователя",
+		"noNumber": "Пусто",
+		"noAssignedNumbers": "Для этой группы не назначены никакие номера.",
+		"noUnassignedNumbers": "Нет доступных номеров для назначения этой группе.",
+		"noAssignedNumbers": "Дня этой группы ещё не назначен номер.",
+		"noMoreSpareNumbers": "Не осталось резервных номеров, вы можете купить номера перейдя по ссылке ниже",
+		"noMatchingNumbers": "Не найдено номеров отвечающих условиям вашего поиска",
+		"port": "Номера портов",
+		"ringThisMemberFor": "Позвоните по этому номеру для:",
+		"ringGroupMissing": "Группа обзвона не задана для этой группы (group_id отстутсвует в сценарии звонка)",
+		"userDeleted": "Пользователь удален",
+		"removeMember": "Удалить из группы",
+		"distribute": "Distribute",
+		"maxDurationTooltip": "Выберите это поле для изменения максимальной длительности вашего сценария обзвона. Вы должны ввести число от 30 до 999.",
+		"title": "Группы",
+		"titleGrid": {
+			"groups": "Имя группы",
+			"members": "Члены",
+			"extensions": "Внутр. номера",
+			"phoneNumbers": "Номера телефонов",
+			"features": "Свойства группы"
+		},
+		"toastrMessages": {
+			"numbersUpdated": "Вы успешно изменили телефонный номер {{name}}",
+			"extensionsUpdated": "Вы успешно изменили внутренний номер {{name}}"
+		},
+		"callRecording": {
+			"title": "Запись разговоров",
+			"headline": "Настройки записи разговоров для группы",
+			"formatLabel": "Формат:",
+			"urlLabel": "URL:",
+			"urlPlaceholder": "http://your.server.com/place/to/store/recordings",
+			"timeLimitLabel": "Ограничение времени (сек.):",
+                        "noNumber": "If your activate callrecord, you need a number for your extension.",
+                        "bestoreDB": "Callrecords will be stored for 6 months in the database."
+		},
+		"ringback": {
+			"title": "Мелодия гудка",
+			"headline": "Настройки мелодии звонка для группы",
+			"dropdownLabel": "Мелодия гудка:",
+			"silence": "Без звука",
+                        "germanRing": "Ringback Geramany",
+                        "usaRing": "Ringback USA",
+                        "asiaRing": "Ringback China",
+			"defaultRingback": "Мелодия гудка по умолчанию",
+			"emptyUploadAlert": "Пожалуйста, выберите файл для загрузки",
+			"fileTooBigAlert": "Вы не можете загрузить файл размером более 5Мб",
+			"__comment": "UI-1025: Updating media file uploads throughout the UI",
+			"__version": "3.20_s3",
+			"audioUploadButton": "Выберите звуковой файл"
+		},
+		"nextAction": {
+			"title": "Следующее действие",
+			"headline": "Добавить действие, когда никто не принял вызов",
+			"label": "Если никто не ответил, перевести вызов:",
+			"menu": "Меню",
+			"mainMenu": "Основное меню (Дневное время)",
+			"voicemails": "Ящики голосовой почты",
+			"users": "Пользователи"
+		},
+		"__comment": "UI-819, v3.19_s1: Показывает окно ошибки, если данные о группе устарели.",
+		"outdatedGroupsError": "Данные о вашей пользовательской группе устарели и не могут использоваться. Пожалуйста, обратитесь к вашему администратору для обновления информации.",
+
+		"__comment": "UI-1352: Adding an option to enable/disable call forwarding on ring group",
+		"__version": "3.20",
+		"forward": {
+			"title": "Разрешить переадресацию",
+			"headline": "Разрешить переадресацию",
+			"description": "Включите эту опцию, если вы хотите разрешить членам группы нажимать кнопку \"Переадресация\" для переадресации вызовов этой группы. Если эта опция выключена, пользовательская команда будет проигнорирована."
+		},
+		"__comment": "UI-1604: Adding Walkthrough for new users",
+		"__version": "3.21",
+		"walkthrough": {
+			"steps": {
+				"1": "Нажмите кнопку чтобы добавить группу пользователей. Добавьте устройства и пользователей в вашу группу, просто перетащив их, затем заадайте группе имя и внутренний номер. Когда закончите, все ваши группы и их настройки будут доступны в интерфейсе ниже.",
+				"2": "Когда группа пользователей создана, она заполнит область ниже. Внесите необходимые изменения, такие как имя группы, количество участников и внутренний номер.",
+				"3": "Приобретите и назначьте городской номер для группы.",
+				"4": "Включайте, выключайте и управляйте возможностями группы пользователей."
+			}
+		},
+                "prepend": {
+                        "title": "Caller ID change",
+                        "headline": "Caller ID change",
+                        "cidNameLabel": "Caller ID Name prefix",
+                        "cidNumberLabel": "Caller ID Number prefix"
+                },
+                "suffix": {
+                        "cidNumberLabel": "Caller ID Number suffix"
+		}
+	},
+
+	"devices": {
+		"add": "Добавить устройство",
+		"assigned": "Назначено",
+		"createDevice": "Создать устройство",
+		"confirmDeleteDevice": "Это устройство будет удалено без возможности восстановления. Продолжить?",
+		"deleteDevice": "Удалить устройство",
+		"deletedDevice": "Вы успешно удалили следующее устройство \"{{deviceName}}\".",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+                "provstringinfoHelp": "To use this, open per Webbrowser your phone, and write this string in his config field, and restart this phone manually.",
+		"popupSettings": {
+			"advancedTitle": "Расширенные",
+			"basicTitle": "Основные настройки",
+			"brandDownloads": "Productinfo",
+			"basicSectionTitle": "Основные настройки",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "Для выбора кодека мышкой перетащите необходимый кодек из списка доступных кодеков в список выбранных кодеков.",
+			"options": {
+				"menuTitle": "Параметры"
+			},
+			"sip": {
+				"menuTitle": "SIP",
+				"sectionTitle": "Параметры SIP",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "types": {
+                                        "none": "None",
+                                        "autoprovision": "Autoprovision",
+                                        "software": "Easy Install",
+                                        "qrcode": "QR-Code",
+                                        "security": "Security"
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!",
+                                "provstring_notsupported": "This device in this version is not supported, please ask for additional support!"
+			},
+			"audio": {
+				"menuTitle": "Звук",
+				"sectionTitle": "Настройки звука",
+				"selectedCodecs": "Выбранные кодеки",
+				"unselectedCodecs": "Доступные кодеки",
+				"codecs": {
+					"OPUS": "OPUS",
+					"CELT@32000h": "Siren @ 32Khz",
+					"G7221@32000h": "G722.1 @ 32khz",
+					"G7221@16000h": "G722.1 @ 16khz",
+					"G722": "G722",
+					"speex@32000h": "Speex @ 32khz",
+					"speex@16000h": "Speex @ 16khz",
+					"speex": "Speex",
+					"PCMU": "G711u / PCMU - 64kbps (NA)",
+					"PCMA": "G711a / PCMA - 64kbps (Elsewhere)",
+					"G729":"G729 - 8kbps (Requires License)",
+					"GSM":"GSM",
+					"CELT@48000h": "Siren (HD) @ 48kHz",
+					"CELT@64000h": "Siren (HD) @ 64kHz"
+				}
+			},
+			"callerId": {
+				"menuTitle": "Caller-ID для эстр.служб",
+				"sectionTitle": "Caller-ID при вызове экстренных служб",
+				"emergency": "Номер",
+				"notSet": "- Учетная запись по умолчанию -",
+				"noE911Numbers": "Вы не определили номер для экстренных вызовов (Е911) ни для одного из ваших номеров, пожалуйста, установите его для любого из ваших номеров в разделе Управление номерами и продолжите текущую настройку.",
+				"address": "Адрес",
+				"__comment": "UI-1386: Updating devices to use the numberSelector common control",
+				"__version": "v3.20_s4",
+				"selectNumber": "Выберите номер для экстренных служб",
+				"useDefault": "Использовать настройки по умолчанию"
+			},
+			"miscellaneous": {
+				"menuTitle": "Прочее",
+				"sectionTitle": "Прочее",
+				"rtp": {
+					"enable": "Шифрование звука",
+					"type": "Тип шифрования: ",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"__comment": "UI-1119: Adding ignore_complete_elsewhere",
+				"__version": "3.19",
+				"ignoreCompletedElsewhere": {
+					"label": "Игнорировать ответ в другом месте",
+					"help": "Если включено, поддерживаемые модели телефонов будут отображать пропущенный вызов, даже если он был частью вызова группы и был отвечен кем-то ещё."
+				},
+                                "restart": {
+                                        "label": "Envoyer une requête de redémarrage",
+                                        "button": "Redémarrer",
+                                        "help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+                                        "success": "Vous avez envoyé une requête de redémarrage avec succès!"
+                                }
+                        },
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+			},
+			"restrictions": {
+				"menuTitle": "Ограничения",
+				"sectionTitle": "Настройка ограничений",
+				"inherit": "Наследовать",
+				"deny": "Запретить",
+				"matcher": {
+					"help": "Введите номер (international format => +[Countryprefix]...) и нажмите кнопку \"Проверить\" чтобы убедиться, что вызов разрешен.",
+					"placeholder": "+18554443333",
+					"button": "Проверить",
+					"label": "Указанный номер соответствует этому правилу.",
+					"__comment": "UI-727, v3.19_s2: Информация об изменении ограничений вызовов отображается на устройствах.",
+					"allowMessage": "Этому устройству разрешено совершать вызовы по номеру {{phoneNumber}}",
+					"denyMessage": "Этому устройству запрещено совершать вызовы по номеру {{phoneNumber}}."
+				},
+				"__comment": "UI-727, v3.19_s2: Информация об изменении ограничений вызовов отображается на устройствах.",
+				"allow": "Разрешить",
+				"disabledRestrictionsInfo": "Некоторые типы вызовов ограничены для всей вашей учётной записи и не могут быть назначены для конкретного устройства."
+			},
+			"video": {
+				"menuTitle": "Видео",
+				"sectionTitle": "Настройки видео",
+				"selectedCodecs": "Выбранные кодеки",
+				"unselectedCodecs": "Доступные кодеки",
+				"codecs": {
+					"VP8": "VP8",
+					"H264": "H264",
+					"H263": "H263",
+					"H261": "H261"
+				}
+			},
+			"featureKeys": {
+				"menuTitle": "Клавиши расширения",
+				"description": "Клавиши расширения",
+				"labels": {
+					"user": "Пользователь",
+					"parkingSpot": "Парковочная орбита",
+					"value": "Значение"
+				},
+				"info": {
+					"link": {
+						"showInfo": "Показать инфо",
+						"hideInfo": "Спрятать инфо"
+					},
+					"types": {
+						"presence": "Показывать, когда пользователю приходит входящий вызов на его телефоне, или он разговаривает. Индикатор может использоваться  для перехвата вызова или для быстрого набора.",
+						"parking": "Показывать, когда звонок поставлен на парковочную орбиту, доступную всем пользователям. Индикатор может быть использован для парковки звонка или подключения к запаркованному звонку.",
+						"personal_parking": "Показывать, когда звонок поставлен на персональную парковочную орбиту пользователя. Индикатор может быть использован для парковки звонка или подключения к запаркованному звонку.",
+						"speed_dial": "Не отображать события звонка, использовать только для быстрого набора."
+					}
+				},
+                                "types": {
+                                        "none": "None",
+                                        "presence": "Presence",
+                                        "extension": "Nebenstelle",
+                                        "line": "Leitung",
+                                        "parking": "Parking",
+                                        "personal_parking": "Personal Parking",
+                                        "speed_dial": "Speed Dial"
+                                },
+                                "keytemplateHelp": "By click on this, template will be taken from this phone. Select an account wide template to take it at device create."
+                        }
+		},
+		"buy": "Купить устройство",
+		"classifiers": {
+			"unknown": {
+			    "name": "Кроме указанных выше",
+			    "help": "Пожалуйста, выберите этот параметр, если вы хотите, чтобы эта учетная запись могла совершать вызовы на ЛЮБОЙ номер, не представленный в списке. (Когда формат номера не известен для системы.)"
+			}
+		},
+		"noMatchingDevices": "Не найдено устройств отвечающих условиям вашего поиска",
+		"noDevicesConfigured": "Нет сконфигурированных устройств",
+		"provisionerPopup": {
+			"brandHeadline": "Выберите марку устройства:",
+			"deviceHeadline": "Выберите модель устройства:",
+			"deviceSelected": "Вы выбрали {{brand}} {{model}}",
+			"missingBrand": "Марки моего устройства нет в списке",
+			"missingDevice": "Моего устройства нет в списке",
+			"title": "Выбор устройства"
+		},
+		"sip_device": {
+			"addTitle": "Добавление a SIP устройства",
+			"editTitle": "Редактирование SIP устройства: {{name}}",
+			"macAddress": "MAC Address",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Новое SIP устройство",
+			"deviceName": "Имя устройства"
+		},
+		"sip_uri": {
+			"addTitle": "Добавление a SIP URI",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование SIP URI: {{name}}",
+			"new": "Новый SIP URI",
+			"uri": "SIP URI",
+			"uriPlaceholder": "sip:device@my.company.com",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"landline": {
+			"addTitle": "Добавление стационарной линии",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование стационарной линии: {{name}}",
+			"new": "Новая стационарная линия",
+			"number": "Номер",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Требуется нажатие кнопки",
+			"keepCallerId": "Переадресация с передачей номера вызывающего абонента",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"cellphone": {
+			"addTitle": "Добавление сотового телефона",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование сотового телефона: {{name}}",
+			"new": "Новый сотовый телефон",
+			"number": "Номер",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Разрешить использование голосовой почты сотового телефона",
+			"keepCallerId": "Сохранить оригинальный Caller-ID",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"mobile": {
+			"addTitle": "Добавление мобильного телефона",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование мобильного телефона: {{name}}",
+			"mdn": "MDN",
+			"mdnPlaceholder": "10-значный номер телефона",
+			"new": "Новый мобильный телефон"
+		},
+		"smartphone": {
+			"addTitle": "Добавление смартфона",
+			"deviceName": "Имя устройства",
+			"editTitle": "Редактирование смартфона: {{name}}",
+			"new": "Новый смартфон",
+			"requireKeypress": "Разрешить изпользование голосовой почты сотового телефона",
+			"keepCallerId": "Сохранить оригинальный Caller-ID",
+			"hideContactList": "Скрыть из списка контактов"
+		},
+		"fax": {
+			"addTitle": "Добавление факса",
+			"editTitle": "Редактирование факса: {{name}}",
+			"macAddress": "MAC адрес",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Новый факс",
+			"deviceName": "Имя устройства",
+			"t38": "T38",
+			"disabled": "Запрещено",
+			"auto": "Автоопределение",
+			"force": "Принудительно"
+		},
+		"softphone": {
+			"addTitle": "Добавление софтфона",
+			"editTitle": "Редактирование софтфона: {{name}}",
+			"new": "Новый софтфон",
+			"deviceName": "Имя устройства"
+		},
+		"ata": {
+			"addTitle": "Добавление шлюза",
+			"editTitle": "Редактирование шлюза: {{name}}",
+			"new": "Новый шлюз",
+			"deviceName": "Имя устройства"
+		},
+		"sip": {
+			"username": "SIP пользователь",
+			"password": "SIP пароль",
+			"realm": "Realm"
+		},
+		"spare": "Резервные",
+		"title": "Устройства",
+		"titleGrid": {
+			"edit": "Изменить",
+			"enable": "Включить",
+			"user": "Пользователь",
+			"modelMacAddress": "Имя / MAC адрес",
+			"type": "Type"
+		},
+		"types": {
+			"cellphone": "Сотовый телефон",
+			"sip_device": "SIP телефон",
+			"smartphone": "Смартфон",
+			"mobile": "Мобильный телефон",
+			"softphone": "Софтфон",
+			"landline": "Стационарная линия",
+			"fax": "Факс",
+			"ata": "Шлюз",
+			"sip_uri": "SIP URI"
+		},
+		"unassignedDevice": "-"
+	},
+
+	"users": {
+		"admin": "Admin",
+		"add": "Добавить пользователя",
+		"addExtension": "Добавить внутренний телефон для этого пользователя",
+		"addNewExtension": "Внутренний номер: ",
+		"addFromSpare": "Добавить из  резервных номеров",
+		"addFromSpareDevices": "Добавить из резервных устройств",
+		"buy": "Купить номера",
+		"confirmDeleteAdmin": "Об удалении пользователя ADMIN! Удаление пользователя admin приведет к удалению созданных им пользователей в системе, а так же их голосовых ящиков и номеровs, это так же не позволит управлять ими в пользовательском интерфейсе системы. Вы хотите продолжить?",
+		"confirmDeleteUser": "Удаление пользователя удалит как самого пользователя, так и его ящик голосовой почты, так же отменит привязки устройств и номеров назначенных для этого пользователя. Вы хотите продлжить?",
+		"dialogChangePassword": {
+			"help": "Вы можете установить новый пароль введя любой пароль, а так же и новый адрес электронной почты!",
+			"password": "Пароль",
+			"passwordPlaceholder": "Пароль (Мин. 6 знаков)",
+			"title": "Изменение Email и паролья",
+			"username": "Email пользователя"
+		},
+		"dialogChangePin": {
+			"help": "Вы можете воспользоваться этим меню для установки временного PIN для пользователя, который, например, потерял свой PIN.",
+			"pin": "PIN",
+			"pinPlaceholder": "Мин. 4 цифры",
+			"title": "Изменение PIN"
+		},
+		"dialogCreationUser": {
+			"createUser": "Создать пользователя",
+			"errorOnCreation": "Произошла ошибка во время попытки создать этого пользователя:",
+			"extension": "Внутренний номер #",
+			"extensionAlreadyExist": "Этот внутренний номер уже занят, пожалуйта выберите другой внутренний номер.",
+			"firstName": "Имя",
+			"lastName": "Фамилия",
+			"loginEmail": "Email пользователя для входа в систему",
+			"notificationEmail": "E-mail для отпавки уведомлений",
+			"password": "Пароль (Мин. 6 знаков)",
+			"sendToDifferentEmail": "Отправлять сообщения на альтернативный Email",
+			"title": "Создание пользователя",
+			"vmboxAlreadyExist": "Голосовой ящик уже выбран, пожалуйта выберите номер другого голосового почтового ящика.",
+			"vmboxNumber": "Номер ящика ГП",
+			"__comment": "UI-814: Adding the option to automatically send email on user creation",
+			"__version": "3.20_s3",
+			"sendWelcomeEmail": "Отправить данные входа"
+		},
+		"editionForm": {
+			"changePIN": "Изменить PIN",
+			"changeUsername": "Изменить",
+			"firstName": "Имя",
+			"lastName": "Фамилия",
+			"role": "Роль",
+			"timezone": "Часовой пояс",
+			"vmboxNumber": "Номер ящика ГП",
+			"timeout": "Огнаничение длительности вызова",
+			"timeoutSec": "Сек",
+			"timeoutEdit": "Редактирование функции Find-me-Follow-me",
+			"timeoutEditHint": "Ограничение длительности вызова перекрывается настройкой функции Find-me-Follow-me. Откройте ссылку ниже, чтобы отредактировать её.",
+			"disabledTimeoutHint": "Вам необходим как минимум один номер или внутренний номер, чтобы установить оганичение длительности вызова.",
+			"__comment": "UI-1109: Adding the Presence ID setting on the User document",
+			"__version": "3.19",
+			"presenceId": "Основной внутренний номер",
+			"noPresenceID": "Нет",
+			"__comment": "UI-1066: Adding Help text hover the icons of the user edition form",
+			"__version": "3.19",
+			"nameHelp": "Введите Имя в первом поле и Фамилию во втором",
+			"loginHelp": "Это имя учётной записи пользователя, используется для входа",
+			"vmboxHelp": "Это номер ящика голосовой почты пользователя, нажмите на Изменить PIN для сброса PIN-кода ящика голосовой почты",
+			"roleHelp": "\"Администратор\" будет иметь право доступа к магазину приложений и добавлению приложений в систему, тогда как \"Пользователь\" будет иметь право доступа лишь к тем приложениям, которые для него разрешены",
+			"languageHelp": "Здесь можно изменить изменит язык интерфейса",
+			"timezoneHelp": "Здесь можно изменить часовой пояс, используемый устройствами пользователя и ящиком голосовой почты",
+			"ringingHelp": "Здесь можно изменить максимальное время вызова пользователя и его устройств. Например, если выставлено 20, то звонок будет длиться 20 секунд до перевода в голосовую почту",
+			"mainExtensionHelp": "Здесь можно определить Caller-ID, используемый при звонках внутри системы, и изменить Presence ID на этот номер"
+		},
+		"delete": "Удалить пользователя",
+		"errorCallerId": "Перед конфигурированием Caller-ID для этого пользователя вам необходимо назначить ему номер",
+		"errorNumberFaxing": "Перед конфигурированием номера факса для этого пользователя вам необходимо получить резервный номер для вашей учётной записи (Вы можете купить новые номера в разделе \"Номера\" в меню слева).",
+		"featureOn": "ON",
+		"includeInDirectory": "Включит пользователя в каталог компании",
+		"noMatchingDevices": "Не найдено устройств отвечающих условиям вашего поиска",
+		"noMatchingNumbers": "Не найдено номеров отвечающих условиям вашего поиска",
+		"noMatchingUser": "Не найдено данных отвечающих условиям вашего поиска",
+		"noUsersConfigured": "Пожалуйста, добавьте пользователя, чтобы начать",
+		"noMoreSpareDevices": "Не осталось резервных устройств, вы можете купить новые устройства, перейдя в меню управления устройствами",
+		"noMoreSpareNumbers": "Не осталось резервных номеров, вы можете купить новые номера перейдя по ссылке ниже",
+		"noAssignedDevices": "Пользователю не назначено ни одного устройства.",
+		"noAssignedNumbers": "Пользователю не назначени ни одного номера.",
+		"noAssignedExtensions": "Пользователю не назначено ни одного внутреннего номера.",
+		"noNumber": "Пусто",
+		"noNumberCallflow": "Вам необходимо назначить как минимум один внутренний или внешний номера для этого пользователя, прежде чем сохранить настройки",
+		"needExtensionFirst": "Перед назначением внешнего номера пользователю ему необходимо назначить внутренний номер. Пожалуйста перейдите в меню управления внутренними номерами и добавьте внутренний номер.",
+		"noExtension": "Пусто",
+		"noAssignedNumbers": "Пользователю не назначено ни одного номера.",
+		"noUnassignedNumbers": "Не осталось доступных номеров для назначения этому пользователю.",
+		"noUserDevices": "Пусто",
+		"noUserFeatures": "Пусто",
+		"noUserCallflow": "Ошибка. Пользователю не назначено ни одного сценария звонка и вы не можете добавить его в каталог компании",
+		"port": "Номера портов",
+		"resetPassword": "Сбросить пароль",
+		"resendInstructions": "Переотправить инструкции",
+		"title": "Все пользователи",
+		"titleGrid": {
+			"users": "Параметры пользователей",
+			"extensions": "Внутр. номера",
+			"phoneNumbers": "Номера",
+			"devices": "Устройства",
+			"features": "Функции"
+		},
+		"toastrMessages": {
+			"devicesUpdated": "Вы успешно изменили устройства назначенные для {{ name }}.",
+			"instructionsSent": "На электронный адрес {{ email }} было отправлено информационное письмо со всеми пользовательскими инструкциями и описаниями, как начать работать с интерфейсом!",
+			"numbersUpdated": "Вы успешно изменили телефонные номера для {{ name }}.",
+			"passwordReseted": "Пароль был сброшен, на e-mail {{ email }} было отправлено сообщение с инструкциями, как установить новый пароль new password.",
+			"userDelete": "Вы успешно удалили пользователя {{ name }} из Smart PBX!",
+			"userUpdated": "Вы успешно изменили параметры пользователя {{ name }}.",
+			"pinUpdated": "Вы успешно изменили PIN для {{ name }}.",
+			"__comment": "UI-1033: Now properly remove the Caller-ID Feature if we remove a number that was set as that Caller-ID Number",
+			"__version": "3.20",
+			"callerIDDeleted": "Номер Caller-ID установлен в номер, который больше ему не принадлежит, та что мы отключили функцию Caller-ID."
+		},
+		"uploadPicture": "Загрузка картинки",
+		"user": "Пользователь",
+		"call_forward": {
+			"directCallsOnly": "Переводить только прямые вызовы",
+			"headline": "Настройка переадресации вызовов",
+			"keepCallerId": "Сохранить ваш Caller-ID",
+			"label": "Перевести все вызовы" ,
+			"mobile": "Мобильный телефон",
+			"deskphone": "Настольный телефон",
+			"number": "Этот номер",
+			"placeholder": "+74157283992",
+			"requireKeyPress": "Оставить голосовые сообщения на переадресованных номерах",
+			"title": "Переадресация вызовов",
+			"timeoutWarning": "Для перевода голосовых сообщений на переадресуемые номера, вы должны установить ограничение времени вызова не менее 30 сек. Для экономии времени, вы будете автоматически перенаправлены в меню редактирования пользователя, где вы сможете изменить время ограничения вызова."
+		},
+		"callRecording": {
+			"title": "Запись входящих разговоров",
+			"headline": "Настройки записи разговоров",
+			"formatLabel": "Формат:",
+			"urlLabel": "URL:",
+			"urlPlaceholder": "http://your.server.com/place/to/store/recordings",
+			"timeLimitLabel": "Ограничение времени (сек):",
+			"noNumber": "Перед конфигурацией функции записи входящих разговоров для этого пользователя, вам необходимо назначить ему номер или внутренний номер",
+			"bestoreDB": "Recording will be store for 6 months in database."
+		},
+		"conferencing": {
+			"title": "Конференции",
+			"headline": "Персональная конференция",
+			"pinLabel": "Номер персонального конференц-зала",
+			"number": "Номер(а) персональных конференций",
+			"help": "Вы можете создать конференц-звонок передав телефонный номер конференции и номер персональной комнаты участникам",
+			"noConfNumbers": "Вам необходимо добавить номер основной конференции (в выборе основного номера в левом меню SmartPBX) для включения персональных конференций"
+		},
+		"faxing": {
+			"title": "Факс-email",
+			"headline": "Факс-email",
+			"defaultSettings": {
+				"nameExtension": "Виртуальный факс",
+				"headerExtension": " Факс-принтер"
+			},			
+                        "__comment": "UI-1354: Add better explanation to faxbox feature",
+			"__version": "v3.20_s4",
+			"faxToEmail": {
+				"title": "Факс в Email",
+				"text1": "Факсы, отправленные на номер",
+				"text2": "будут преобразованы в электронную почту и отправлены"
+			},
+			"emailToFax": {
+				"title": "Email в Факс",
+				"text1": "Сообщения электронной почты, отправленные на",
+				"text2": " с вложениями в формате PDF (или TIFF) будут преобразованы в факсы и отправлены",
+				"text3": "Электронная почта должна приходить с адреса ",
+				"default": "{ номер назначения }",
+				"help": {
+					"showHelp": "Показать помощь",
+					"hideHelp": "Скрыть помощь",
+					"question": "На какой номер вы хотите отправлять факсы?",
+					"placeholder": "номер назначения"
+				}
+			},
+
+			"googlePrinter": {
+				"title": "Принтер Google",
+				"text1": "Нажмите ",
+				"text2": " для активации облачного принтера Google. Загрузите инсталлятор по ",
+				"link": "ссылке"
+			},
+			"toastr": {
+				"error": {
+					"numberMissing": "Пожалуйста, выберите номер"
+				}
+			}
+		},
+		"vm_to_email": {
+			"deleteAfterNotify": "Удалите сообщения из базы данных после отправки уведомления.",
+			"headline": "Настройка Voicemail-to-Email",
+			"help": "Если вы собираетесь изменить адрес, куда должны приходить email-уведомления, пожалуйста отредактируйте e-mail адрес пользователя меню администрирования пользователей",
+			"label": "E-mail будет отправлен на адрес  {{variable}} для всех новых голосовых сообщений",
+			"title": "Голосовая почта"
+		},
+		"find_me_follow_me": {
+			"title": "Find-me-Follow-me",
+			"headline": "Настройка Find-me-Follow-me",
+			"disableDevice": "Не звонить",
+			"ringThisPhoneFor": "Позвонить на этот телефон для",
+			"noDevice": "Вам необходимо как минимум одно устройство для включения этой функции.",
+			"noNumber": "Перед настройкой функции Find-Me-Follow-Me для этого пользователя, вам необходимо назначить ему внутренний номер",
+			"distribute": "Раздавать"
+		},
+		"caller_id": {
+			"title": "Номер Caller-ID",
+			"dropdownLabel": "Покажи мой номер Caller-Id как",
+			"headline": "Настройка номера Caller-ID",
+			"help": "Если вы не включили эту функцию, Caller-ID отображаемый по умолчанию будет сконфигурирован как основной номер для этой учетной записи."
+		},
+		"music_on_hold": {
+			"title": "Music-On-Hold",
+			"headline": "Настройка Music-On-Hold",
+			"dropdownLabel": "Music on Hold:",
+			"silence": "Без звука",
+			"emptyUploadAlert": "Пожалуйста, выберите файл для загрузки",
+			"fileTooBigAlert": "Вы не можете загрузить файл размером больше 5Мб",
+			"__comment": "UI-1025: Updating media file uploads throughout the UI",
+			"__version": "3.20_s3",
+			"audioUploadButton": "Выберите звуковой файл"
+		},
+		"hotdesk": {
+			"id": "ID присваиваемого телефона",
+			"label": "Требуется ли PIN?",
+			"keep_logged_in_elsewhere": "Разрешить регистрацию для нескольких устройств",
+			"title": "Присвоение телефона",
+			"headline": "Настройка Присвоения телефона",
+			"help": "ID присваиваемого телефона автоматически устанавливается как внутренний номер пользователя."
+		},
+		"__comment": "UI-1129: Migration tool from Kazoo-UI to Monster-UI",
+		"__version": "3.19",
+		"migration": {
+			"confirmMigration": "Мы нашли существующий сценарий для номера, который вы хотите добавить, похоже, мы можем перенести его в SmartPBX. Прежде чем мы продолжим, хочется убедиться что вы понимаете, что больше не сможете изменить этот сценарий через Web-интерфейс. Хотите продолжить?",
+			"tooManyCallflows": "Похоже что номера, которые вы пытаетесь добавить, принадлежат множественным существующим сценариям. Автоматическая миграция невозможна. Пожалуйста, обратитесь в техническую поддержку."
+		},
+		"__commment": "UI-1109: Adding popup for Presence ID change",
+		"__version": "3.19",
+		"presenceIDPopup": {
+			"title": "Выберите ваш новый основной внутренний номер",
+			"header": "Похоже вы пытаетесь удалить номер, который назначен как основной внутренний номер. Пожалуйста, назначьте другой основной внутренний номер из списка ниже:",
+			"none": "Я не хочу назначать основной внутренний номер"
+		},
+		"__comment": "UI-1393: Updating user devices to use the monsterListing common control",
+		"__version": "v3.20_s4",
+		"devices": {
+			"newDevice": "Новое устройство",
+			"spareDevice": "Выбрать из неназначенных устройств"
+		},
+		"__comment": "UI-1604: Adding Walkthrough for new users",
+		"__version": "3.21",
+		"walkthrough": {
+				"steps": {
+						"1": "Нажмите на кнопку и введите информацию для создания пользователя. Пользователь появится в списке и его данные можно будет изменить в будущем",
+						"2": "Как только пользователь будет создан, его данные будут внесены в эту область. Вы сможете вносить изменения в настройки пользователя",
+						"3": "Назначьте пользователям их собственные уникальные внутренние номера",
+						"4": "Назначьте пользователям городские номера",
+						"5": "Задайте параметры автоматической настройки устройства. Этот интерфейс предоставляет возможность настройки устройств многих производителей и моделей. После настройки устройство будет назначено пользователю.",
+						"6": "Управляете возможностями пользователей. Вы можете включить, выключить или настроить различные дополнительные возможности."
+				}
+		}
+	},
+
+	"strategy": {
+		"noNumberHelp": "Замечание: Пожалуйста прежде всего добавьте основной номер офиса для вашей учетной записи. Если вы добавили основной номер, то вы можете настроить режим работы офиса, праздники и управление входящими вызовами (сценарии звонков) для вашего офиса.",
+		"sectionTitles": {
+			"numbers": "Основные номера компании",
+			"confnum": "Номер основной конференции",
+			"hours": "Режим работы офиса",
+			"holidays": "Праздники",
+			"calls": "Управление входящими вызовами",
+			"faxingnum": "Main Faxbox Number"
+		},
+		"noNumberTitle": "Добавить основной номер",
+		"noNumberMessage": "Пожалуйста добавьте или купите номер по ссылке ниже, чтобы продолжить.",
+		"noConfNumMessage": "Пожалуйста добавьте номер основной конференции.",
+		"numberLinks": {
+			"spare": "Добавить из резервных номеров",
+			"buy": {
+				"link": "Купить номера",
+				"regular": "Городские",
+				"tollfree": "8-800",
+				"vanity": "Красивые"
+			},
+			"port": "Номера портов"
+		},
+		"hours": {
+			"alwaysOpenTitle": "24 x 7",
+			"alwaysOpenDescription": "Выберите это опцию если вы хотите, чтобы входящие вызовы обрабатывалить одинаково в любое время.",
+			"customHoursTitle": "Другой режим работы",
+			"customHoursDescription": "Выберите эту опцию если вы хотите, чтобы входящие звонки обрабатывались по-другому во внерабочее время.",
+			"listTitle": "Режим работы офиса",
+			"timezone": "Часовой пояс компании:",
+			"to": "для",
+			"lunchbreakTitle": "Вы закрыты в обеденное время?",
+			"__comment": "UI-1250: Adding help boxes",
+			"__version": "3.20_s2",
+			"helpAfterHours": "Не забудьте назначить маршрут звонка для нерабочего времени! Для настройки перейдите в раздел \"Обработка входящих звонков\", и выберите закладку \"Нерабочее время\".",
+			"helpLunchHours": "Если ваш офис закрывается на обеденный перерыв, вам также нужно настроить обработку звонков в это время. Для настройки перейдите в раздел \"Обработка входящих звонков\", и выберите закладку \"Обеденный перерыв\"."
+		},
+		"holidays": {
+			"enableTitle": "Вы закрыты на праздниках?",
+			"addLink": "Добавить праздники",
+			"singleLink": "Один день",
+			"rangeLink": "Диапазон дат",
+			"advancedLink": "Расширенный",
+			"__comment": "UI-1250: Adding help boxes",
+			"__version": "3.20_s2",
+			"helpHolidays": "Не забудьте настроить маршрутизацию звонков во время праздников!  Для настройки перейдите в раздел \"Обработка входящих звонков\", и выберите закладку \"Праздники\"."
+		},
+		"calls": {
+			"openHoursTitle": "Рабочие часы",
+			"lunchHoursTitle": "Обеденные часы",
+			"afterHoursTitle": "Внерабочее вермя",
+			"holidaysTitle": "Праздники",
+			"incomingCall": "Входящие звонки",
+			"virtualReceptionist": "Виртуальный секретарь",
+			"voicemail": "Голосовая почта",
+			"groupOther": "Другое",
+			"optionNone": "Пропустить до голосовой почты",
+			"callTabsMessages": {
+				"MainOpenHours":"Выберите путь, по которому звонки будут приходить к вам в рабочее время.",
+				"MainLunchHours":"Выберите путь, по которому звонки будут приходить к вам во обеденное время.",
+				"MainAfterHours":"Выберите путь, по которому звонки будут приходить к вам во внерабочее время.",
+				"MainHolidays":"Выберите путь, по которому звонки будут приходить к вам в праздники."
+			}
+		},
+		"popup": {
+			"title": "Виртуальный секретарь",
+			"infoBlock": "Витруальный секретарь будет отвечать на входящие звонки профессионально и автоматически переводя их на соответсвующий департамент или сотрудника. Основное меню позволит вам установить маршруты вызовов. Пожалуйста наберите или запишите приветствия, которые соответствуют главному меню.",
+			"menuTitle": "Главное меню",
+			"greetingsTitle": "Приветствия",
+			"addRouteLink": "Добавить маршрут",
+			"ttsGreetingTitle": "Текст в речь",
+			"ttsGreetingPlaceholder": "Пожалуйста введите ваше приветственное сообщение здесь.",
+			"uploadGreetingTitle": "Загрузите ваш файл",
+			"recordGreetingTitle": "Запишите через телефон",
+			"recordGreetingInfo": "Запишите ваше приветственное сообщение через телефон, следуя инструкциям ниже:",
+			"recordGreetingLines": {
+				"line1": "Возьмите телефон, зарегистрированный для этой учетной записи.",
+				"line2": "Наберите основной номер офиса.",
+				"line3": "Введите следующий PIN, по запросу:",
+				"line4": "Запишите ваше приветствие / меню."
+			},
+			"pressKey": "Нажмите",
+			"for": "для",
+			"fileUploadButton": "Выберите файл",
+			"greetingsHelp": "Вы должны нажать кнопку \"Обновить\" для сохранения изменений в сообщении приветствия.",
+			"defaultAction": "Default action"
+		},
+		"open": "Открыт",
+		"closed": "Закрыт",
+		"weekdays": {
+			"monday": "Понедельник",
+			"tuesday": "Вторник",
+			"wednesday": "Среда",
+			"thursday": "Четверг",
+			"friday": "Пятница",
+			"saturday": "Суббота",
+			"sunday": "Воскресенье"
+		},
+		"ordinals": {
+			"first": "Первый",
+			"second": "Второй",
+			"third": "Третий",
+			"fourth": "Четвертый",
+			"fifth": "Пятый",
+			"last": "Последний"
+		},
+		"monthsShort": {
+			"january": "Янв",
+			"february": "Фев",
+			"march": "Мар",
+			"april": "Апр",
+			"may": "Май",
+			"june": "Июн",
+			"july": "Июл",
+			"august": "Авг",
+			"september": "Сен",
+			"october": "Окт",
+			"november": "Ноя",
+			"december": "Дек"
+		},
+		"callEntities": {
+			"user": "Пользователи",
+			"device": "Устройства",
+			"ring_group": "Группы",
+			"voicemail": "Ящики голосовой почты",
+			"directory": "Справочник",
+                        "advancedCallflows": "Advanced Callflows"
+		},
+		"confirmMessages": {
+			"deleteHoliday": "Эти праздники будут удалены без возможности восстановления. Продолжить?",
+			"disableHolidays": "Все существующие праздники будут удалены без возможности восстановления. Продолжить?"
+		},
+		"alertMessages": {
+			"uniqueHoliday": "Все праздники должны иметь уникальные имена.",
+			"undefinedMenu": "Вы выбрали виртуального секретаря без его настройки. Пожалуйста настройте его перейдя по ссылке на \"виртуального секретаря\" или выберите другие варианты.",
+			"emptyTtsGreeting": "Вы должны набрать сообдение приветствия, чтобы включить функцию \"текст в речь\".",
+			"emptyUploadGreeting": "Выберите файл для загрузки",
+			"fileTooBigAlert": "Вы не можете загрузить файл размером более 5Мб",
+			"uniqueMenuNumbers": "Номера в этом меню должны быть уникальные и не-пустые.",
+			"lastE911Error": "Вам необходимо настроить экстренные вызовы (E911) как минимум для одного из основных номеров. Пожалуйста настройте E911 на других основных номерах, прежде чем удалять этот."
+		},
+		"toastrMessages": {
+			"updateHolidaySuccess": "Праздники успешно изменены.",
+			"updateCallSuccess": "Стратегия обзвона успешно изменена.",
+			"buyNumbersSuccess": "Номера были успешно приобретены.",
+			"buyNumbersError": "Ошибка произошла во время приобретения номеров.",
+			"removeNumberSuccess": "Номера успешно удалены из основного сценария обзвона."
+		},
+		"popupRemoveFeatures": {
+			"title": "Удаление функций",
+			"questionPartOne": "Вы хотите удалить функции с номера",
+			"questionPartTwo": "?",
+			"featuresToRemove": "Функции для удаления :",
+			"features": {
+				"cnam": "Caller-ID",
+				"dash_e911": "Экстренные службы"
+			}
+		},
+		"walkthrough": {
+			"first": {
+				"steps": {
+						"1": "Назначьте основной номер вашей компании, купив его себе. Этот номер отличается от номеров пользователей, так как он является номером всей организации"
+				}
+			},
+			"second": {
+				"steps": {
+						"1": "Настройте время работы вашего офиса. Вы можете выбрать как круглосуточный режим, или настроить рабочее время и даже время обеденного перерыва",
+						"2": "Ваш офис закрывается на выходные? Задайте даты или отрезки времени, когда ваш офис закрыт",
+						"3": "Виртуальный секретарь позволяет вам автоматически принимать входящие звонки и приветствовать звонящих. Добавьте маршруты прохождения звонков для различных отделов или персон. Вы можете назначить собственное приветствие, вписав текст для озвучивания роботом, загрузив собственный файл или же наговорив приветствие через телефонную трубку",
+						"4": "Создайте номер для сервера конференций вашей организации. Купите или выберите уже купленный номер и назначьте его серверу конференций."
+                                                "5": "Create a main Faxbox Number for your business. Purchase, port or add an existing number and set up a Faxbox Number seamlessly."
+                                }
+                        }
+                },
+                "noFaxingNumMessage": "Please add a main faxbox number.",
+                "faxing": {
+                        "nameExtension": "'s Main Faxbox",
+                        "headerExtension": " Fax Printer"
+                },
+                "customConferenceGreeting": {
+                        "title": "Custom Conference Greeting",
+                        "link": "Custom Greeting",
+                        "info": "Customize your conference greeting message using our Text-to-Speech feature. Simply type your greeting message in the input field below.",
+                        "mainConfMissing": "Your Main Conference could not be found.",
+                        "tooltip": "Your Main Conference has a custom greeting message."
+                }
+	},
+	"callLogs": {
+		"title": "Журналы вызовов",
+		"dateRangeTo": "для",
+		"noSearchMatch": "Вашим критериям поиска не соответсвует ни одна запись из журнала вызовов.",
+		"detailsPopupTitle": "Детализация журнала вызовов",
+		"applyFilter": "Фильтр по выбранным датам",
+		"resetFilter": "Сбросить фильтр на даты по умолчанию",
+		"gridHeaders": {
+			"inboundCall": "Входящие",
+			"outboundCall": "Исходящие",
+			"dateTime1": "Дата/Время",
+			"from": "От",
+			"to": "к",
+			"duration1": "Длительность",
+			"duration2": "(мин)",
+			"hangup1": "Код",
+			"hangup2": "Завершения",
+			"play1": "Прослушать",
+			"play2": "Запись",
+			"details1": "Вызов",
+			"details2": "Детализация",
+			"report1": "Предоставление",
+			"report2": "Отчета"
+		},
+		"reportCall": "Отчет о вызовах",
+		"playCall": "Прослушать запись",
+		"stopPlaying": "Остановить прослушивание",
+		"rewindBackward": "Перемотать назад",
+		"rewindForward": "Перемотать вперёд",
+		"downloadRecord": "Выгрузить запись разговора",
+		"audioNotSupported": "Ваш браузер не поддерживает элемент audio",
+		"audioNotAvailable": "Запись разговора недоступна",
+		"loaderMessage": "Прокрутите ниже и щелкните здесь мышкой для загрузки дополнительных строчек вызовов.",
+		"loadingMessage": "Загрузка дополнительных строк журнала...",
+		"alertMessages": {
+			"getDetailsError": "Ошибка произошла во время получения детализации вызовов."
+		},
+		"key": "Ключ",
+		"value": "Значение",
+		"__comment": "UI-1071: Adding new Range buttons to Call Logs",
+		"__version": "3.20",
+		"thisMonth": "Этот месяц",
+		"thisWeek": "Эта неделя",
+		"thisDay": "Сегодня",
+		"custom": "Своё",
+		"callsFrom": "Показываются звонки с",
+		"callsTo": "по"
+	},
+
+	"myOffice": {
+		"topBarLinks": {
+			"callerID": "Caller ID",
+			"musicOnHold": "Музыка ожидания",
+			"callRecording": "Запись",
+			"hours": "Часы"
+		},
+		"musicOnHold": {
+			"title": "Музыка ожидания",
+			"headline": "Настройка музыки ожидания для учетной записи",
+			"dropdownLabel": "Музыка ожидания:",
+			"silence": "Тишина",
+			"default": "Музыка по умолчанию",
+			"emptyUploadAlert": "Пожалуйста выберите файл для загрузки",
+			"fileTooBigAlert": "Вы не можете загрузить файли размером более 5Мб",
+			"__comment": "UI-1025: Updating media file uploads throughout the UI",
+			"__version": "3.20_s3",
+			"audioUploadButton": "Выберите звуковой файл"
+		},
+		"callerId": {
+			"title": "Caller-ID компании",
+			"headline": "Выберите номер Caller-ID для учетной записи",
+			"numberLabel": "Номер Caller-ID компании",
+			"numberHelp": "Этот номер будет отображаться как ваш Caller-ID (идентификатор абонента), когда вы совершаете исходящие вызовы.",
+			"nameLabel": "Имя Caller-ID компании",
+			"nameHelp": "Это имя будет отображаться как ваш Caller-ID, когда вы совершаете исходящие вызовы.",
+			"emergencyLabel": "Адрес компании для экстренных служб (E911)",
+			"emergencyZipcode": "Индекс",
+			"emergencyAddress1": "Адрес линия 1",
+			"emergencyAddress2": "Адрес линия 2",
+			"emergencyCity": "Город",
+			"emergencyState": "Область",
+			"emergencyHelp1": "Этот адрес будет отображаться как ваш Caller-ID адрес, когда вы будете совершать исходящие вызовы в экстренные службы.",
+			"emergencyHelp2": "Замечание: Вы так же можете установтить эту функцию для пользовательских номеров, если они расположены в других офисах.",
+			"mandatoryE911Alert": "Вы должны указать информацию о номере Caler-ID вашей компании для эестренных служб E911."
+		},
+		"missingMainNumberForCallerId": "Вам необходимо добавить основной номер для вашего офиса перед настройкой Caller-ID!",
+		"missingE911Message": "Пожалуйста установите Caller-ID вашей компании и номер для эстренных служб (E911) для основного номера.",
+		"missingMainNumberMessage": "Пожалуйста добавьте основной номер для вашей учетной записи.",
+		"totalUsers": "Всего пользователей",
+		"totalDevices": "Всего устройств",
+		"totalConfs": "Конференций",
+		"mainNumberLabel": "Основной номер",
+		"noMainNumber": "Добавить основной номер",
+		"confNumberLabel": "Номер конференции",
+		"faxNumberLabel": "Номер факса",
+		"totalNumbers": "Всего номеров",
+		"unregisteredDevices": "Незарегистрированные устройства",
+		"accountId": "Идентификатор учетной записи:",
+		"accountRealm": "Realm учетной записи:",
+		"numberChartLegend": {
+			"assigned": "Назначенные номера",
+			"spare": "Резервные номера",
+			"local": "Городские номера",
+			"tollfree": "8-800 номера",
+			"international": "Международные номера",
+			"noNumber": "Никакие номера не доступны"
+		},
+		"__comment": "UI-1220: Adding a Main VMBox automatically when they first load the SmartPBX if they don't have one",
+		"__version": "3.19",
+		"mainVMBoxName": "Главный ящик ГП",
+		"__comment": "UI-1604: Walkthrough dashboard",
+		"__version": "3.21",
+		"walkthrough": {
+				"steps": {
+						"1": "Проверьте все настройки вашего офиса, включая пользователей, устройства, номера, главный номер и номер конференции",
+						"2": "Большинство сервисов настраивается в разделе Пользователи. Создавайте пользователей, назначайте им внутренние и городские номера, управляйте устройствами и функциями",
+						"3": "После создания пользователей, создайте группы. Это очень удобно, если у вас есть пользователи, работающие в отделах, например, в отделе продаж",
+						"4": "Задайте главный номер организайии. Управляйте прохождением вызовов с помощью Виртуального Секретаря и включите особые настройки для нерабочего времени и праздничных дней"
+				}
+		},
+		"faxingNumberLabel": "Faxbox Number",
+                "directoryLabel": "Company Directory Users:"
+	},
+
+	"featureCodes": {
+		"title": "Доступные коды ДВО",
+		"noFeatureCodeMessage": "Коды ДВО ещё  не включены для вашей учетной записи. Коды ДВО автоматически создадутся, когда вы загрузите меню для основного номера.",
+		"mainNumberLink": "К основному номеру",
+		"labels": {
+			"call_forward[action=activate]": "Включить переадресацию, с указанием номера для переадресации",
+			"call_forward[action=deactivate]": "Выключить переадресацию",
+			"call_forward[action=toggle]": "Включить переадресацию на ранее заданный номер",
+			"call_forward[action=update]": "Изменить переадресацию",
+			"call_forward[action=on_busy_enable]": "Включить переадресацию по \"занято\"",
+			"call_forward[action=on_busy_disable]": "Выключить переадресацию по \"нято\"",
+			"call_forward[action=no_answer_enable]": "Включить переадресацию по \"нет ответа\"",
+			"call_forward[action=no_answer_disable]": "Выключить переадресацию по \"нет ответа\"",
+			"hotdesk[action=login]": "Включить \"присвоение телефона\"",
+			"hotdesk[action=logout]": "Выключить \"присвоение телефона\"",
+			"hotdesk[action=toggle]": "Переключить \"присвоение телефона\"",
+			"voicemail[action=check]": "Проверить голосовую почту",
+			"voicemail[action=\"direct\"]": "Подключиться напрямую к голосовой почте",
+			"intercom": "Интерком",
+			"privacy[mode=full]": "Анти-АОН",
+			"park_and_retrieve": "Паркова и возврат вызова",
+			"valet": "Автоматическая парковка",
+			"retrieve": "Возврат вызова",
+			"donotdisturb[action=\"enable\"]": "Включить \"не беспокоить\"",
+			"donotdisturb[action=\"disable\"]": "Выключить \"не беспокоить\"",
+			"donotdisturb[action=\"toggle\"]": "Переключить \"не беспокоить\"",
+			"directory": "Адресная книга",
+			"time": "Проверка времени",
+			"call_waiting[action=enable]": "Включить \"ожидание вызова\"",
+			"call_waiting[action=disable]": "Выключить \"ожидание вызова\"",
+			"sound_test_service": "Тест качества голоса",
+			"call_recording": "Запись разговоров",
+                        "__comment": "UI-1395: Added voicemail[single_mailbox_login] feature code",
+                        "__version": "3.20",
+                        "voicemail[single_mailbox_login]": "Проверить ГП (авто-вход)"
+		},
+                "__comment": "UI-1028, v3.20_s0: Added categories for the feature codes.",
+                "categories": {
+                        "call_forward": "Переадресация",
+                        "hotdesk": "Присвоение телефона",
+                        "parking": "Парковка",
+                        "do_not_disturb": "Не беспокоить",
+                        "misc": "Разное"
+                },
+                "installBox": {
+                        "avmTitle": "AVM FRITZ! Clip: Die FRITZ!Box -- the top model for Internet, telephony and multimedia (All-IP)",
+                        "avmDescript": "The FRITZ!Box offers the new Wireless AC standard for ultra-fast wireless speed as well as considerably more range. The latest hardware, lightning-fast gigabit LAN ports, and always the latest version of FRITZ!OS for your Smart Home.",
+                        "avmAllipYtLink": "http://www.youtube.com/watch?v=XXXk9ARdZH8"
+                },
+                "installIos": {
+                        "iosTitle": "QoS-Modem for stable and save internet connections at (All-IP)",
+                        "iosDescript": "Das QoS-Modem is able to hold your internet stable as well, the perfect fit for all your home networking needs.",
+                        "iosAllipYtLink": "http://www.youtube.com/watch?v=Gwg4K-B6RwM"
+                },
+                "installSoft": {
+                        "softTitle": "Zoiper App: The Softphone App on your Smartphone oder PC over (All-IP)",
+                        "softDescript": "The Softphone App on your Smartphone over WLAN-Connection can you have phone cheep as well!"
+                },
+                "installSip": {
+                        "sipTitle": "Easy installation for your SIP-Phones at IP-Connections with (All-IP)",
+                        "sipDescript": "The SIP-Phone is easy to use, just setup and plugin the sip-phone."
+                },
+                "walkthrough": {
+                        "steps": {
+                                "1": "Service Nummern: Give you the overview o possible service numbers.",
+                                "2": "Installation FritzBox: The Guide for install a Fritzbox.",
+                                "3": "Installation QoS-Modem: The Guide for install the QoS-Modem.",
+                                "4": "Installation Softphone: The Guide for install a Softphone.",
+                                "5": "Installation SIP-Phone: The Guide for install a SIP-Phone."
+                        }
+                }
+	},
+
+        "__comment": "UI-1220: Added VMBox module",
+        "__version": "3.19",
+        "vmboxes": {
+                "addTitle": "Добавление ящика ГП",
+                "editTitle": "Редактирование ящика ГП: {{ name }}",
+                "title": "Всего ящиков ГП",
+                "add": "Добавить ящик ГП",
+                "new": "Новый ящик ГП",
+                "createVmbox": "Создать новый ящик голосовой почты",
+                "deleteVmbox": "Удалить ящик",
+                "deleteNotAllowed": "Вы не можете удалить этот ящик ГП, так как он принадлежит пользователю",
+                "confirmDeleteVmbox": "Этот ящик ГП будет безвозвратно удалён. Вы хотите продолжить?",
+                "deletedVmbox": "Вы успешно удалили ящик ГП: \"{{vmboxName}}\".", 
+                "titleGrid": {
+                        "name": "Имя",
+                        "number": "Номер",
+                        "owner": "Пользователь",
+                        "edit": "Редактировать"
+                },
+                "noMatchingVMBoxes": "По вашему поиску не было найдено ящиков ГП",
+                "noVMBoxesConfigured": "Нет сконфигурированных ящиков ГП",
+                "popupSettings": {
+                        "advancedTitle": "Расширенные",
+                        "basicTitle": "Базовые настройки",
+                        "basicSectionTitle": "Базовые настройки",
+                        "basic": {
+                                "name": {
+                                        "label": "Имя"
+                                },
+                                "number": {
+                                        "label": "Номер голосовой почты"
+                                },
+                                "pinNumber": {
+                                        "label": "PIN-код"
+                                }
+                        },
+                        "options": {
+                                "menuTitle": "Options",
+                                "sectionTitle": "Настройки",
+                                "timezone": {
+                                        "label": "Часовой пояс"
+                                },
+                                "unavailableMessage": {
+                                        "label": "Сообщение о недоступности"
+                                },
+                                "alreadySetup": {
+                                        "label": "Ящик уже настроен?",
+                                        "help": "Этот ящик ГП уже настроен? Если нет, то при первом входе пользователь должен будет настроить своё приветствие и PIN-код."
+                                },
+                                "requirePIN": {
+                                        "label": "Требовать ввод PIN-кода?",
+                                        "help": "Требуется ли ввод PIN-кода для доступа к ГП."
+                                },
+                                "autoLogin": {
+                                        "label": "Авто-вход включен?",
+                                        "help": "Вкючает авто-вход в ящик ГП. Когда пользователь звонит в свой ящик ГП, он сразу попадает к сообщениям, минуя ввод номера ящика и PIN-кода"
+                                },
+                                "skipGreetings": {
+                                        "label": "Пропускать приветствия?",
+                                        "help": "Выберите, чтобы пропускать приветствия"
+                                },
+                                "skipInstructions": {
+                                        "label": "Пропустить инструкции?",
+                                        "help": "Выберите, чтобы пропускать инструации при входе в ГП"
+                                },
+                                "deleteAfterNotify": {
+                                        "label": "Удалять после уведомления?",
+                                        "help": "Удалять сообщения после отправки e-mail с оповещением"
+                                },
+                                "configurable": {
+                                        "label": "Конфигурируется через меню?",
+                                        "help": "Если не выбрано, то пользователь не сможет настраивать свой ящик ГП через голосовое меню"
+                                }
+                        },
+                        "recipients": {
+                                "menuTitle": "Получатели",
+                                "sectionTitle": "Получатели",
+                                "header": "Эта панель позволяет управлять получателями уведомлений об оставлеенных сообщениях ГП. Нажмите на \"Добавить получателя\", чтобы добавить адрес e-mail ",
+                                "create": "Добавить получателя"
+                        },
+                        "greeting": {
+                                "menuTitle": "Greeting Media",
+                                "sectionTitle": "Greeting Media",
+                                "dropdownLabel": "Media:",
+                                "noGreeting": "- None -",
+                                "audioUploadButton": "Browse...",
+                                "fileTooBigAlert": "You can not upload a file with a size exceeding 5MB",
+                                "emptyUploadAlert": "Please select a file to upload"
+                        }
+                }
+        },
+        "installservices": {
+                "title": "Install and Service-Numbers",
+                "featureCodes": "Service-Numbers",
+                "installFritzBox": "Inst. FritzBox",
+                "installIosmodem": "Inst. QoS-Modem",
+                "installSoftphone": "Inst. Phone App",
+                "installSipphone": "Inst. SIP-Phone"
+        },
+        "numberPrepend": "Префикс",
+        "portIconHelp": "Этот номер находится в процессе портирования и будет удалён, если этот процесс окончится неудачей. Он не участвует в обработке звонков и приведён здесь исключительно для целей настройки системы",
+		"dialogInProgress": {
+			"title": "Внимание",
+			"message": "Функционал находится в разработке"
+		}
+}

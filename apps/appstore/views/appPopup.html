@@ -1,0 +1,120 @@
+<div id="appstore_popup_container" class="clearfix">
+	<div class="top-container clearfix">
+		<div class="left-container">
+			<div class="title-container clearfix">
+				<div class="icon" {{#if app.extra.icon}}style="background-image:url({{app.extra.icon}})"{{/if}}></div>
+				<div class="title">{{ app.extra.label }}</div>
+			</div>
+			<div class="screenshot-container">
+				<div id="screenshot_carousel" class="carousel slide">
+					<ol class="carousel-indicators">
+						{{#each app.extra.screenshots}}
+						<li data-target="#screenshot_carousel" data-slide-to="{{@index}}" class="{{#unless @index}}active{{/unless}}"></li>
+						{{else}}
+						<li data-target="#screenshot_carousel" data-slide-to="0" class="active"></li>
+						{{/each}}
+					</ol>
+					<div class="carousel-inner">
+						{{#each app.extra.screenshots}}
+						<div class="item {{#unless @index}}active{{/unless}}" style="background-image: url('{{this}}')"></div>
+						{{else}}
+						<div class="item missing-screenshot active"></div>
+						{{/each}}
+					</div>
+					<a class="left carousel-control" href="#screenshot_carousel" data-slide="prev">‹</a>
+					<a class="right carousel-control" href="#screenshot_carousel" data-slide="next">›</a>
+				</div>
+			</div>
+		</div>
+		<div class="right-container">
+			<div class="app-details-view">
+				<div class="toggle-button-bloc">
+					{{#monsterSwitch}}
+					<input type="checkbox" name="installed" id="app_switch" checked />
+					{{/monsterSwitch}}
+				</div>
+				<div class="info-bloc">
+					<ul>
+						{{#unless isWhitelabeling}}
+							<li>{{ i18n.author }}: {{ app.author }}</li>
+						{{/unless}}
+						<li>{{ i18n.version }}: {{ app.version }}</li>
+						<li>{{ i18n.license }}: {{ app.license }}</li>
+					</ul>
+				</div>
+				<div class="permissions-bloc">
+					<div class="permissions-title">{{ i18n.permissions.title }}</div>
+					<div>
+						{{#monsterRadio i18n.permissions.all}}
+						<input id="app_popup_all_users_radiobtn" type="radio" name="permissions" value="all" checked>
+						{{/monsterRadio}}
+					</div>
+					<div>
+						{{#monsterRadio i18n.permissions.admins}}
+						<input id="app_popup_admin_only_radiobtn" type="radio" name="permissions" value="admins">
+						{{/monsterRadio}}
+					</div>
+					<div>
+						{{#monsterRadio i18n.permissions.specific}}
+						<input id="app_popup_specific_users_radiobtn" type="radio" name="permissions" value="specific">
+						{{/monsterRadio}}
+					</div>
+					<div class="permissions-link">
+						<a href="#" id="app_popup_select_users_link">{{ i18n.noselected }}</a>
+					</div>
+				</div>
+			</div>
+			<div class="user-list-view">
+				<div class="user-list-title">
+					{{ i18n.selectedUsers }} <span class="selected-users-number">0</span>/<span class="total-users-number">0</span>
+				</div>
+				<div class="user-list-filter">
+					<input type="text" class="search-query input-medium" placeholder="{{i18n.search}}...">
+				</div>
+				<div class="user-list-links clearfix">
+					<a data-action="check" href="#">{{ i18n.selectAll }}</a>
+					<a data-action="uncheck" href="#">{{ i18n.unselectAll }}</a>
+				</div>
+				<form id="app_popup_user_list_form">
+					<ul class="user-list">
+						{{#each users}}
+						<li class="user-list-element" data-name="{{first_name}} {{last_name}}">
+							<label title="{{first_name}} {{last_name}}">
+								{{#monsterCheckbox}}
+									<input type="checkbox" name="users[]" value={{this.id}} data-original={{#if this.selected}}"check" checked{{else}}"uncheck"{{/if}}>
+								{{/monsterCheckbox}}
+								{{first_name}} {{last_name}}
+							</label>
+						</li>
+						{{/each}}
+					</ul>
+				</form>
+				<div class="user-list-buttons bottom-right-div">
+					<button id="user_list_cancel" type="button" class="monster-button-small">{{i18n.cancel}}</button>
+					<button id="user_list_save" type="button" class="monster-button-primary monster-button-small pull-right">{{i18n.ok}}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-container">
+		<div class="description-container">
+			<div class="description-title">{{ i18n.description }}</div>
+			<div class="description-content">{{ app.extra.description }}</div>
+			<div class="description-content">{{ app.extra.extendedDescription }}</div>
+			<div class="description-content">
+				<div class="features-title">{{ i18n.featuresTitle }}</div>
+				<ul>
+					{{#each app.extra.features}}
+					<li>{{this}}</li>
+					{{else}}
+					<li>{{ i18n.undefinedFeatures }}</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="action-bar clearfix">
+		<button type="button" id="appstore_popup_cancel" class="monster-button">{{i18n.cancel}}</button>
+		<button type="button" id="appstore_popup_save" class="monster-button-success">{{i18n.save}}</button>
+	</div>
+</div>

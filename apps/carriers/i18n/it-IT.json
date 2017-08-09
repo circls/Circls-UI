@@ -1,0 +1,250 @@
+{
+	"carriers": {
+		"ips": {
+			"title": "benvenuto ai vettori app",
+			"subtitle": "sembra che l'account youre utilizzando non dispone di un numero sufficiente di indirizzi IP assegnati. al fine di iniziare a utilizzare l'applicazione, è necessario acquistare almeno 1 indirizzo IP da 2 zone diverse. si prega di selezionare le zone di seguito",
+			"purchase": "ips acquisto",
+			"zones": {
+				"central": "centrale",
+				"east": "est",
+				"west": "ovest"
+			},
+			"noZones": "appare non ci sono zone disponibili per il vostro account, vi preghiamo di contattare uno dei il rappresentante di vendita!",
+			"noMore": "non più ips disponibili in questa zona",
+			"skip": "I don't need to select any IP Address for this account, skip this step"
+		},
+		"brands": {
+                        "efon": "e-fon CH",
+                        "winet": "Winet CH",
+                        "netvoip": "Netvoip CH",
+                        "netswiss": "Netswisstelecom CH",
+                        "sipcall": "Sipcall CH",
+                        "sipgate": "Sipgate DE",
+                        "swisscom": "Swisscom CH",
+                        "sunrise": "Sunrise CH",
+                        "calltrade": "CallTrade CH",
+                        "mitto": "Mitto CH",
+                        "oblcom": "OBLcom CH",
+                        "att": "AT&T US",
+                        "telekom": "Deutsche Telekom DE",
+                        "bt": "British Telecom UK",
+                        "sky_telecom": "Sky-Telecom CH",
+                        "t42com": "42Com DE",
+			"bandwidth": "larghezza di banda",
+			"broadvox": "Broadvox",
+			"call_centric": "centric chiamata",
+			"level3": "livello 3",
+			"onsip": "onsip",
+			"onvoy": "Onvoy",
+			"peatec": "peatec",
+			"verizon": "verizon",
+			"vitelity": "vitelity",
+			"voice_plus": "voce fuoricampo",
+			"voip_innovations": "innovazioni voip",
+			"other": "altro",
+			"noTemplate": "no template",
+			"custom": "abitudine"
+		},
+		
+		"toastrMessages": {
+			"carrierCreated": "aggiunto con successo {{nome}} come un vettore per il tuo account!",
+			"carrierUpdated": "aggiornato con successo {{nome}}!",
+			"noNamePlaceholder": "questo vettore",
+			"providerDeleted": "è stato rimosso con successo il {{nome}} fornitore di servizi dal proprio account",
+			"templateDeleted": "è stato rimosso con successo il {{nome}} template dal tuo conto",
+			"warningDeleteProvider": "sei sicuro di voler rimuovere questo fornitore di servizi ({{nome}}) dal tuo conto ?",
+			"warningDeleteTemplate": "sei sicuro di voler rimuovere questo template ({{nome}}) dal tuo conto ?"
+		},
+		"menuTitles": {
+			"dashboard": "cruscotto",
+			"carrierTemplates": "modelli di carrier",
+			"serviceProviders": "fornitori di servizi",
+			"callingPriorities": "chiamando priorità",
+			"importNumbers": "numeri di importazione",
+			"setLocally": "set localmente",
+			"setGlobally": "impostare globalmente"
+		},
+		"resourcesChoice": "tipo di risorse",
+		"resourcesHelp": "è possibile scegliere il tipo di risorse che si desidera modificare, quando l'aggiornamento dei vettori. risorse locali avranno un impatto solo il vostro conto, mentre le risorse globali sono a disposizione di tutti gli account nel sistema. assicurarsi di sapere cosa stai facendo, se si seleziona la modalità globale!",
+		"toggleAdmin": {
+			"global": "globale",
+			"local": "locale"
+		},
+
+		"callingPriorities": {
+			"differentPriorities": "scegliere diverse priorità per tutti i servizi in uscita",
+			"differentTitle": "selezionare ogni servizio di chiamate in uscita al di sotto e impostare provider specifici per ogni servizio",
+			"samePriorities": "scegliere stesse priorità per tutti i servizi in uscita",
+			"sameTitle": "priorità fornitori per tutti i servizi di chiamata outbound",
+			"titleTemplate": "uscita chiamando impostazioni priorità",
+			"noCarriers": "Al momento non hai vettori stabiliti in questo account. youll solo essere in grado di gestire le priorità dei vostri elementi portanti una volta che li hanno istituiti. vai nella sezione fornitori di servizi e creare lì!",
+			"warningNoCarriers": "Al momento non hai abilitato per questa categoria vettori!",
+			"noCarriersForClassifier": "non avete qualsiasi fornitore di servizi istituito per questa categoria. si prega di andare in fornitori di servizi e abilitare questa categoria del fornitore di servizi!",
+			"prioritiesUpdated": "si successo aggiornato le impostazioni di priorità di chiamata!"
+		},
+
+		"serviceProviders": {
+			"editResource": {
+				"titles": {
+					"advanced": "avanzato",
+					"basic": "di base",
+					"audio": "audio",
+					"video": "il video",
+					"flags": "bandiere",
+					"gateway": "ingresso"
+				},
+				"server": {
+					"title": "server",
+					"placeholder": "255.255.255.255",
+					"help": "indirizzo ip del vettore (ex"
+				},
+				"subtitles": {
+					"audio": "impostazioni audio",
+					"video": "impostazioni video",
+					"flags": "bandiere direttore",
+					"gateway": "impostazioni gateway"
+				},
+				"codecs": {
+					"dragAndDrop": "per selezionare un codec, drag and drop dalla casella codec disponibili al dialogo codec selezionata",
+					"selectedCodecs": "codec selezionati",
+					"unselectedCodecs": "codec disponibili",
+					"OPUS": "lavoro",
+					"CELT@32000h": "sirena @ 32 kHz",
+					"G7221@32000h": "g722.1 @ 32 kHz",
+					"G7221@16000h": "g722.1 @ 16kHz",
+					"G722": "G722",
+					"speex@32000h": "Speex @ 32 kHz",
+					"speex@16000h": "Speex @ 16kHz",
+					"PCMU": "G711u/PCMU-64kbps (na)",
+					"PCMA": "G711A/PCMA-64kbps (altrove)",
+					"G729": "G729-8kbps (richiede licenza)",
+					"GSM": "gsm",
+					"CELT@48000h": "sirena (hd) @ 48kHz",
+					"CELT@64000h": "sirena (hd) @ 64kHz",
+					"VP8": "VP8",
+					"H264": "h264",
+					"H263": "H263",
+					"H261": "H261"
+				},
+				"add": "aggiungere alla lista",
+				"update": "salvare",
+				"addCarrierTitle": "aggiungere un vettore al tuo account",
+				"editCarrierTitle": "modificare le impostazioni delle {{variabile}}",
+				"addTemplateTitle": "aggiungere un modello al tuo account",
+				"editTemplateTitle": "modificare le impostazioni del modello seguente",
+				"newCarrier": "nuovo vettore",
+				"creatingCustomCarrier": "la creazione di carrier personalizzati",
+				"name": "nome",
+				"templateName": "di marca",
+				"customName": "altro nome di marca",
+				"username": "nome utente",
+				"password": "parola d'ordine",
+				"flags": {
+					"name": "nome bandiera",
+					"create": "creare nuova bandiera",
+					"require": "richiedono bandiere ?",
+					"requireHelp": "quando controllato"
+				},
+				"rules": {
+					"add": "aggiungere nuova regola",
+					"empty": "attualmente si dispone di regole stabilite per questo vettore! selezionare una regola in aggiunta nuova discesa regola sopra per aggiungere uno.",
+					"title": "regole",
+					"prefix": "prefisso",
+					"suffix": "suffisso",
+					"customizeMatch": "personalizzare partita",
+					"match": "partita",
+					"test": "test",
+					"success": "di si!",
+					"failure": "no...",
+					"testPlaceholder": "digitare un numero di test...",
+					"testTitle": "fa questo numero rientrano in questa categoria ?",
+					"formattedNumberTitle": "numero dopo la formattazione"
+				},
+				"authentication": {
+					"title": "metodo di autenticazione",
+					"help": "scegliere il mezzo con cui il vettore di autenticare le chiamate quando loro inviato. se non conoscere, consultare il vettore!"
+				},
+				"realm": {
+					"title": "regno",
+					"help": "se il regno sorso fornita da questo vettore è diverso rispetto al suo server e youre utilizzando l'autenticazione della password è necessario impostare questo campo per chiamate in uscita a lavorare."
+				},
+				"progressTimeout": {
+					"title": "progresso timeout",
+					"help": "per quanto tempo le chiamate devono attendere per loro di iniziare (suoneria). a volte, chiamate ad esempio prendere internazionale più, se il vettore è giù, valori elevati si ritardano il failover."
+				},
+                                "dialstring_prefix": {
+                                        "title": "Caller-ID Prefix",
+                                        "help": "If this Carrier use a Prefix for a Calleri-ID, this field is used for."
+                                },
+                                "dialstring_format": {
+                                        "title": "Caller-ID Format",
+                                        "help": "Choose format of Caller-ID to signal in right way for this carrier."
+                                },
+				"supportsT38": {
+					"title": "supporta T.38",
+					"help": "quando si utilizzano dispositivi fax, controllare questo per tentare di passare a T.38. se il vettore doesnt supporta questo codec, la chiamata verrà abbandonato."
+				},
+				"staticRoute": {
+					"title": "route statica",
+					"help": "se le chiamate devono essere inviati al medesimo uri indipendentemente da ciò che è stato composto, configurare la destinazione qui."
+				},
+				"staticRouteSIPURI": {
+					"title": "URI SIP"
+				},
+				"formatFromURI": {
+					"title": "formato da uri",
+					"help": "controllare questo per sostituire il sorso di intestazione (spesso utilizzato per caller -id) con la seguente regno"
+				},
+				"formatFromURIRealm": {
+					"title": "regno"
+				},
+				"customSIPInterface": {
+					"title": "Interfaccia sorso personalizzata",
+					"help": "se il vostro sistema è stato configurato con più interfacce SIP, selezionare questa opzione per inserire il nome dell'interfaccia usata per instradare le chiamate in uscita"
+				},
+				"customSIPInterfaceName": {
+					"title": "nome"
+				},
+				"ip": "indirizzo ip",
+				"ipPlaceholder": "255.255.255.255",
+				"creds": "username e password",
+				"missingIP": "sembra che tu non abbia alcuna IP dedicato mappato al tuo account. non puoi aggiungere questo vettore senza uno, si prega di contattare la società voip per ottenere uno."
+			},
+			"listTitleTemplate": "elenco dei modelli disponibili per i vostri sottoconti",
+			"listTitleCarriers": "elenco dei fornitori di servizi configurati",
+			"titleTemplate": "aggiungere un modello selezionando un profilo prima",
+			"titleCarriers": "aggiungere un provider selezionando il relativo modello prima",
+			"providerMissing": "il mio provider non è elencato sopra",
+			"noCarriers": "non avete qualsiasi vettore configurato per questo account. per aggiungere uno, selezionare un modello dalla barra in alto e compilare le diverse impostazioni!",
+			"noTemplates": "non avete alcun modello configurato per il vostro account secondario! i tuoi sottoconti non sarà in grado di aggiungere un vettore da un modello fino a quando non si aggiunge qui."
+		},
+
+		"listingJobs": {
+			"titleTemplate": "elenco dei lavori di importazione",
+			"refreshTooltip": "Aggiorna lista",
+			"create": "creare nuovo lavoro di importazione",
+			"statuses": {
+				"success": "esito positivo",
+				"failed": "mancato",
+				"pending": "in corso",
+				"errors": "errori"
+			},
+			"dialogAdd": {
+				"created": "è stato creato con successo un nuovo lavoro denominato {{nome}}. è possibile controllare lo stato del profilo, e vedere i risultati quando il suo finito!",
+				"name": "nome del lavoro",
+				"selectProvider": "Selezione fornitore",
+				"inputNumbers": "numeri di ingresso da importare",
+				"beginImport": "inizio import",
+				"formatHelp": "esempio format",
+				"inputHelp": "autotrans.sh de -de de- de.json de- prompts.txt diff diff-prompts.txt en-prompts.txt en-us en-us.json es-es fr -ca get_translate.php go.sh it-IT"
+			},
+			"dialogView": {
+				"title": "lo stato di {{nome}}",
+				"errors": {
+					"unauthorized": "non autorizzato a eseguire l'operazione numero richiesto",
+					"not_routable": "il numero non soddisfa i requisiti minio per la riconciliazione"
+				}
+			}
+		}
+	}
+}

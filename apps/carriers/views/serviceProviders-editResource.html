@@ -1,0 +1,392 @@
+<div class="edit-resource-wrapper">
+	<div class="header clearfix">
+		{{#compare extra.brandName "!==" "other"}}
+			<div class="carrier-logo {{extra.brandName}}">
+				{{#compare extra.brandName "===" "custom"}}
+					<div class="text-wrapper">{{ resource.template_name }}</div>
+				{{/compare}}
+			</div>
+		{{/compare}}
+
+		<div class="title"> 
+			{{#compare extra.mode "===" "create"}}
+				{{#if extra.knownBrand}} 
+					{{ extra.friendlyBrand }}
+				{{else}}
+					{{ i18n.carriers.serviceProviders.editResource.creatingCustomCarrier }}
+				{{/if}}
+			{{else}}
+				{{resource.name}} 
+			{{/compare}}
+		</div>
+
+		<ul class="nav nav-pills">
+			<li class="tabs-main-selector main-section active">
+				<a class="tabs-selector change-section" data-section="basic" href="javascript:void(0)">{{ i18n.carriers.serviceProviders.editResource.titles.basic }}</a>
+			</li>
+			<li class="tabs-main-selector main-section dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">{{ i18n.carriers.serviceProviders.editResource.titles.advanced }}
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a class="tabs-selector change-section" data-section="flags" href="javascript:void(0)"><i class="fa fa-flag"></i>{{ i18n.carriers.serviceProviders.editResource.titles.flags }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="audio" href="javascript:void(0)"><i class="fa fa-music"></i>{{ i18n.carriers.serviceProviders.editResource.titles.audio }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="video" href="javascript:void(0)"><i class="fa fa-video-camera"></i>{{ i18n.carriers.serviceProviders.editResource.titles.video }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="gateway" href="javascript:void(0)"><i class="fa fa-random"></i>{{ i18n.carriers.serviceProviders.editResource.titles.gateway }}</a></li>
+					<li><a class="tabs-selector change-section" data-section="misc" href="javascript:void(0)"><i class="fa fa-cogs"></i>{{ i18n.carriers.serviceProviders.editResource.titles.misc }}</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<form id="resource_form">
+		<div class="tabs-section active" data-section="basic">
+			<!-- Only let them customize the brand, if it wasn't set by the template -->
+			{{#compare extra.mode "===" "create"}}
+				{{#compare extra.brandName "===" "other"}}
+					<div class="control-group template-name-fields">
+						<label class="control-label title" for="template_name">{{ i18n.carriers.serviceProviders.editResource.templateName }}</label>
+						<div class="controls">
+							<select name="template_name">
+								{{#select extra.selectedBrand}}
+									{{#each extra.templateBrands}}
+										<option value="{{@key}}">{{this}}</option>
+									{{/each}}
+								{{/select}}
+							</select>
+						</div>
+					</div>
+
+					<div class="control-group template-name-additional">
+						<div class="carrier-logo {{ extra.defaultBrand }} active"></div>
+						<div class="fields-other{{#compare extra.selectedBrand "===" "other"}} active{{/compare}}">
+							<label class="control-label title" for="name">{{ i18n.carriers.serviceProviders.editResource.customName }}</label>
+							<div class="controls">
+								<input type="text" id="name" name="extra.templateName" value="{{resource.template_name}}">
+							</div>
+						</div>
+					</div>
+				{{/compare}}
+			{{/compare}}
+
+			<div class="control-group gatewayselection">
+				<label class="control-label title" for="name">{{ i18n.carriers.serviceProviders.editResource.name }}</label>
+				<div class="controls">
+					<input type="text" id="name" name="name" value="{{resource.name}}">
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection">
+				<label class="control-label title" for="server">{{ i18n.carriers.serviceProviders.editResource.server.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.server.help }}"></i></label>
+
+				<div class="list-ips">
+					{{#each resource.gateways}}
+					<div class="controls">
+						<div class="server-ip" data-number="@index">
+							<input type="text" id="server" name="extra.servers[]" value="{{ server }}" placeholder="{{../i18n.carriers.serviceProviders.editResource.server.placeholder}}">
+							{{#compare @index "===" 0}}
+							<button class="monster-button monster-button-server-ip non-fixed add-ip" type="button"><i class="fa fa-plus"></i></button>
+							{{else}}
+							<button class="monster-button monster-button-danger non-fixed delete-ip" type="button"><i class="fa fa-trash-o"></i></button>
+							{{/compare}}
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label title" for="authentication_method">{{ i18n.carriers.serviceProviders.editResource.authentication.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.authentication.help }}"></i></label>
+				<div class="controls">
+					<div>
+						{{#monsterRadio i18n.carriers.serviceProviders.editResource.creds}}
+						<input type="radio" name="extra.authType" value="creds"{{#compare extra.authType "===" "creds"}} checked{{/compare}}>
+						{{/monsterRadio}}
+					</div>
+					<div class="input-wrapper{{#compare extra.authType "===" "creds"}} active{{/compare}}" data-type="creds">
+						<input class="input-medium" type="text" id="username" name="gateways[0].username" value="{{resource.gateways.[0].username}}" placeholder="{{ i18n.carriers.serviceProviders.editResource.username }}">
+						<input class="input-medium" type="password" id="password" name="gateways[0].password" value="{{resource.gateways.[0].password}}" placeholder="{{ i18n.carriers.serviceProviders.editResource.password }}">
+					</div>
+
+					<div>
+						{{#monsterRadio i18n.carriers.serviceProviders.editResource.ip}}
+						<input type="radio" name="extra.authType" value="ip"{{#compare extra.authType "===" "ip"}} checked{{/compare}}>
+						{{/monsterRadio}}
+					</div>
+					<div class="input-wrapper{{#compare extra.authType "===" "ip"}} active{{/compare}}" data-type="ip">
+						<ul>
+						{{#each extra.listIPs}}
+							<li>{{this.ip}} ({{this.zone}})
+						{{/each}}
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="rules-block">
+				<label class="title"> {{ i18n.carriers.serviceProviders.editResource.rules.title }} </label>
+
+				<li class="dropdown dropdown-classifier">
+					<a data-toggle="dropdown" class="dropdown-toggle monster-link" role="button" href="#">
+					<i class="fa fa-plus-circle monster-green"></i>
+					<span class="action-text">{{ i18n.carriers.serviceProviders.editResource.rules.add }}</span></a>
+
+					<ul class="dropdown-menu">
+					</ul>
+				</li>
+				
+				<div class="list-classifiers">
+				</div>
+			</div>
+		</div>
+
+		<div class="tabs-section clearfix" data-section="flags">
+			<div class="title">
+				{{ i18n.carriers.serviceProviders.editResource.subtitles.flags }}
+			</div>
+
+			<div class="control-group">
+				<div class="controls">
+					<label class="checkbox">
+						{{#monsterCheckbox i18n.carriers.serviceProviders.editResource.flags.require}}
+							<input type="checkbox" name="require_flags"{{#if resource.require_flags}} checked{{/if}}>
+						{{/monsterCheckbox}}
+						<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="top" data-original-title="{{ i18n.carriers.serviceProviders.editResource.flags.requireHelp }}"></i>
+					</label>
+				</div>
+
+				<div class="list-entities list-flags">
+					<div class="create-entity">
+						<div class="entity-wrapper placeholder">
+							<div class="create-text">
+								<i class="fa fa-plus-circle"></i>
+								{{ i18n.carriers.serviceProviders.editResource.flags.create}}
+							</div>
+							
+							<div class="create-inputs">
+								{{ i18n.carriers.serviceProviders.editResource.flags.name}}
+								<input type="text" id="flag_name" name="extra.flagName" class="input-medium">
+								<button id="add_flag" class="monster-button monster-button-success">{{ i18n.add }}</button>
+								<a href="javascript:void(0);" id="cancel_flag">{{ i18n.cancel }}</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="saved-entities">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabs-section clearfix" data-section="audio">
+			<div class="title">
+				{{ i18n.carriers.serviceProviders.editResource.subtitles.audio }}
+			</div>
+
+			<div class="helper">
+				<i class="fa fa-info-circle"></i>
+				{{ i18n.carriers.serviceProviders.editResource.codecs.dragAndDrop }}
+			</div>
+
+			<div class="items-selector codec-selector clearfix" id="audio_codec_selector"></div>
+		</div>
+
+		<div class="tabs-section clearfix" data-section="video">
+			<div class="title">
+				{{ i18n.carriers.serviceProviders.editResource.subtitles.video }}
+			</div>
+			<div class="helper">
+				<i class="fa fa-info-circle"></i>
+				{{ i18n.carriers.serviceProviders.editResource.codecs.dragAndDrop }}
+			</div>
+
+			<div class="items-selector codec-selector" id="video_codec_selector"></div>
+		</div>
+
+		<div class="tabs-section clearfix" data-section="gateway">
+			<div class="title">
+				{{ i18n.carriers.serviceProviders.editResource.subtitles.gateway }}
+			</div>
+
+			<div class="control-group gatewayselection">
+				<label class="control-label" for="gateway_endpoint_type">{{ i18n.carriers.serviceProviders.editResource.endpoint_type.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.endpoint_type.help }}"></i></label>
+				<div class="controls">
+					<select class="input" name="gateways[0].endpoint_type">
+						{{#select resource.gateways.[0].endpoint_type}}
+							{{#each extra.endpointTypes}}
+								<option value="{{this}}">{{this}}</option>
+							{{/each}}
+						{{/select}}
+					</select>
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "freetdm"}} linked-to-select{{/compare}}">
+				<label class="control-label" for="gateway_span">{{ i18n.carriers.serviceProviders.editResource.span.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.span.help }}"></i></label>
+				<div class="controls">
+					<input type="text" id="gateway_span" name="gateways[0].span" value="{{resource.gateways.[0].span}}">
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "freetdm"}} linked-to-select{{/compare}}">
+				<label class="control-label" for="gateway_channel_selection">{{ i18n.carriers.serviceProviders.editResource.channel_selection.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.channel_selection.help }}"></i></label>
+				<div class="controls">
+					<select class="input" name="gateways[0].channel_selection">
+						{{#select resource.gateways.[0].channel_selection}}
+							{{#each extra.channelSelections}}
+								<option value="{{this}}">{{this}}</option>
+							{{/each}}
+						{{/select}}
+					</select>
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "sip"}} linked-to-select{{/compare}}">
+				<label class="control-label" for="gateway_realm">{{ i18n.carriers.serviceProviders.editResource.realm.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.realm.help }}"></i></label>
+				<div class="controls">
+					<input type="text" id="gateway_realm" name="gateways[0].realm" value="{{resource.gateways.[0].realm}}">
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "skype"}} linked-to-select{{/compare}}">
+				<label class="control-label" for="gateway_skype_interface">{{ i18n.carriers.serviceProviders.editResource.skype_interface.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.skype_interface.help }}"></i></label>
+				<div class="controls">
+					<input type="text" id="gateway_skype_interface" name="gateways[0].skype_interface" value="{{resource.gateways.[0].skype_interface}}">
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "skype"}} linked-to-select{{/compare}}">
+				<label class="control-label" for="gateway_skype_rr">{{ i18n.carriers.serviceProviders.editResource.skype_rr.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.skype_rr.help }}"></i></label>
+				<div class="controls">
+					{{#monsterCheckbox i18n.carriers.serviceProviders.editResource.skype_rr.subtitle}}
+						<input type="checkbox" id="gateway_skype_rr" name="gateways[0].skype_rr"{{#if resource.gateways.[0].skype_rr}} checked{{/if}}>
+					{{/monsterCheckbox}}
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection">
+				<div class="controls inline">
+					<label class="control-label" for="name">{{ i18n.carriers.serviceProviders.editResource.progressTimeout.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.progressTimeout.help }}"></i></label>
+					<div class="controls">
+						<select class="input-mini" name="gateways[0].progress_timeout">
+							{{#select resource.gateways.[0].progress_timeout}}
+								{{#each extra.progressTimeouts}}
+									<option value="{{this}}">{{this}}</option>
+								{{/each}}
+							{{/select}}
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection">
+				<label class="control-label" for="gateway_prefix">{{ i18n.carriers.serviceProviders.editResource.dialstring_prefix.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.dialstring_prefix.help }}"></i></label>
+				<div class="controls">
+					<input class="input-mini" type="text" id="gateway_realm" name="gateways[0].gate_prefix" value="{{resource.gateways.[0].gate_prefix}}">
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection">
+				<label class="control-label" for="gateway_suffix">{{ i18n.carriers.serviceProviders.editResource.dialstring_suffix.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.dialstring_suffix.help }}"></i></label>
+				<div class="controls">
+					<input class="input-mini" type="text" id="gateway_realm" name="gateways[0].gate_suffix" value="{{resource.gateways.[0].gate_suffix}}">
+				</div>
+			</div>
+
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "sip"}} linked-to-select{{/compare}}">
+				<div class="controls">
+					<label class="checkbox">
+						{{#monsterCheckbox i18n.carriers.serviceProviders.editResource.supportsT38.title}}
+							<input type="checkbox" name="media.fax_option"{{#if resource.media.fax_option}} checked{{/if}}>
+						{{/monsterCheckbox}}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.supportsT38.help }}"></i>
+					</label>
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection">
+				<label class="control-label" for="gateway_format">{{ i18n.carriers.serviceProviders.editResource.dialstring_format.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.dialstring_format.help }}"></i></label>
+				<div class="controls">
+					<select class="input" name="gateways[0].gate_format">
+						{{#select resource.gateways.[0].gate_format}}
+							{{#each extra.calleridFormats}}
+								<option value="{{this}}">{{this}}</option>
+							{{/each}}
+						{{/select}}
+					</select>
+				</div>
+			</div>
+
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "sip"}} linked-to-select{{/compare}}">
+				<div class="controls">
+					<label class="checkbox">
+						{{#monsterCheckbox i18n.carriers.serviceProviders.editResource.staticRoute.title}}
+							<input type="checkbox" name="extra.hasRoute" class="checkbox-show-div"{{#if extra.hasRoute}} checked{{/if}}> 
+						{{/monsterCheckbox}}
+						<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.staticRoute.help }}"></i>
+					</label>
+					<div class="linked-to-select{{#if extra.hasRoute}} active{{/if}}">
+						<label>{{ i18n.carriers.serviceProviders.editResource.staticRouteSIPURI.title }}</label>
+						<input type="text" name="gateways[0].route" value="{{resource.gateways.[0].route}}">
+					</div>
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "sip"}} linked-to-select{{/compare}}">
+				<div class="controls">
+					<label class="checkbox">
+						{{#monsterCheckbox i18n.carriers.serviceProviders.editResource.formatFromURI.title}}
+							<input type="checkbox" name="format_from_uri" class="checkbox-show-div"{{#if resource.format_from_uri}} checked{{/if}}>
+						{{/monsterCheckbox}}
+						<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.formatFromURI.help }}"></i>
+					</label>
+					<div class="linked-to-select {{#if resource.format_from_uri}} active{{/if}}">
+						<label>{{ i18n.carriers.serviceProviders.editResource.formatFromURIRealm.title }}</label>
+						<input type="text" name="from_uri_realm" value="{{resource.from_uri_realm}}">
+					</div>
+				</div>
+			</div>
+
+			<div class="control-group gatewayselection{{#compare resource.gateways.[0].endpoint_type "!==" "sip"}} linked-to-select{{/compare}}">
+				<div class="controls">
+					<label class="checkbox">
+
+						{{#monsterCheckbox i18n.carriers.serviceProviders.editResource.customSIPInterface.title}}
+							<input type="checkbox" name="extra.hasCustomSIP" class="checkbox-show-div"{{#if extra.hasCustomSIP}} checked{{/if}}> 
+						{{/monsterCheckbox}}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.customSIPInterface.help }}"></i>
+					</label>
+					<div class="linked-to-select{{#if extra.hasCustomSIP}} active{{/if}}">
+						<label>{{ i18n.carriers.serviceProviders.editResource.customSIPInterfaceName.title }}</label>
+						<input type="text" name="gateways[0].custom_sip_interface" value="{{resource.gateways.[0].custom_sip_interface}}">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabs-section clearfix" data-section="misc">
+			<div class="title">
+				{{ i18n.carriers.serviceProviders.editResource.subtitles.misc }}
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="contract_expiration_date">{{ i18n.carriers.serviceProviders.editResource.contractExpirationDate.title }}<!-- <i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.contractExpirationDate.help }}"></i> --></label>
+				<div class="controls">
+					<input type="text" id="contract_expiration_date" name="contract_expiration_date" value="{{ toFriendlyDate resource.contract_expiration_date "short"}}">
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label">{{ i18n.carriers.serviceProviders.editResource.notes.title }}<i class="help-popover fa fa-question-circle" data-toggle="tooltip" data-placement="right" data-original-title="{{ i18n.carriers.serviceProviders.editResource.notes.help }}"></i></label>
+				<div class="controls">
+					<div class="clearfix wysiwyg-container"></div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div class="actions">
+		<a class="monster-link blue" id="cancel_link" href="javascript:void(0);">{{ i18n.cancel }}</a>
+		<button id="save_resource" class="monster-button monster-button-success">{{ i18n.carriers.serviceProviders.editResource.update }}</button>
+	</div>
+</div>

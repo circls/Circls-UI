@@ -1,0 +1,120 @@
+<div class="general-branding-container">
+	<legend>{{i18n.generalBranding.mainTitle}}</legend>
+	<div class="general-branding-content centered-content">
+		<div class="logo-upload-div">
+			<div class="left-col">
+				<div class="input-label">{{i18n.generalBranding.logoLabel}}</div>
+				{{#if brandingLogo}}
+				<div class="image-preview logo-preview" data-original-logo="{{brandingLogo}}" style="background-image:url({{brandingLogo}})">
+				{{else}}
+				<div class="image-preview logo-preview empty">
+				{{/if}}
+					<i class="fa fa-undo icon-small monster-lightgrey reset-image reset-logo"></i>
+				</div>
+			</div>
+			<div class="right-col">
+				<div class="upload-label">{{i18n.generalBranding.logoSize}}</div>
+				<div class="upload-label">{{i18n.generalBranding.logoFormat}}</div>
+				<input id="company_logo_input" type="file" name="companyLogo" accept="image/*">
+			</div>
+		</div>
+		<div class="favicon-upload-div">
+			<div class="left-col">
+				<div class="input-label">{{i18n.generalBranding.faviconLabel}}</div>
+				{{#if brandingIcon}}
+				<div class="image-preview favicon-preview" data-original-favicon="{{brandingIcon}}" style="background-image:url({{brandingIcon}})">
+				{{else}}
+				<div class="image-preview favicon-preview empty">
+				{{/if}}
+					<i class="fa fa-undo icon-small monster-lightgrey reset-image reset-favicon"></i>
+				</div>
+			</div>
+			<div class="right-col">
+				<div class="upload-label">{{i18n.generalBranding.faviconSize}}</div>
+				<input id="company_icon_input" type="file" name="companyIcon" accept="image/*">
+			</div>
+		</div>
+		<form id="general_branding_form">
+			<div class="input-div clearfix">
+				<div class="left-col">
+					<label>
+						<div class="input-label">{{i18n.generalBranding.companyNameLabel}}</div>
+						<input type="text" name="company_name" value="{{brandingDoc.company_name}}">
+					</label>
+					<label>
+						<div class="input-label">{{i18n.generalBranding.companyWebsiteLabel}}</div>
+						<input type="text" name="nav.learn_more" value="{{brandingDoc.nav.learn_more}}">
+					</label>
+					<label>
+						<div class="input-label">{{i18n.generalBranding.domainLabel}}</div>
+						<input type="text" required name="domain" value="{{brandingDoc.domain}}">
+					</label>
+					<label>
+						<div class="input-label">
+							{{i18n.generalBranding.realmSuffix}}<i class="help-popover fa fa-question-circle" data-original-title="{{i18n.generalBranding.realmSuffixHelp}}" data-placement="top" data-toggle="tooltip"></i>
+						</div>
+						<input type="text" required name="realm_suffix" value="{{brandingDoc.realm_suffix}}">
+					</label>
+					<label>
+						<div class="input-label">{{i18n.generalBranding.callReportEmail}}</div>
+						<input type="text" name="callReportEmail" value="{{brandingDoc.callReportEmail}}">
+					</label>
+				</div>
+				<div class="right-col">
+					<label>
+                                                <div class="control-group">
+                                                    <label class="control-label" for="account_language">{{ i18n.generalBranding.languageLabel }}</label>
+                                                    <div class="controls">
+                                                            <select id="account_language" name="language" data-original_value="{{account.language}}"></select>
+                                                    </div>
+                                                </div>
+					</label>
+					<label>
+						<div class="input-label">{{i18n.generalBranding.helpLabel}}</div>
+						<input type="text" name="nav.help" value="{{brandingDoc.nav.help}}">
+					</label>
+					<label>
+						<div class="input-label">{{i18n.generalBranding.termsLabel}}</div>
+						<input type="text" name="port.terms" value="{{brandingDoc.port.terms}}">
+					</label>
+					<label>
+						<div class="input-label">{{i18n.generalBranding.applicationTitle}}</div>
+						<input type="text" name="applicationTitle" value="{{brandingDoc.applicationTitle}}">
+					</label>
+					<div class="hide-powered-wrapper">
+						{{#monsterCheckbox i18n.generalBranding.poweredByLabel}}
+							<input type="checkbox" class="pretty" name="hide_powered" {{#unless brandingDoc.hide_powered}}checked{{/unless}}>
+						{{/monsterCheckbox}}
+					</div>
+				</div>
+			</div>
+			<div class="input-div clearfix">
+				<div class="welcome-toggle">
+				{{#monsterSwitch}}
+					<input type="checkbox" id="custom_welcome" name="custom_welcome" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}" {{#if brandingDoc.custom_welcome}}checked{{/if}}>
+				{{/monsterSwitch}}
+					<span>{{i18n.generalBranding.welcomeLabel}}</span>
+				</div>
+				<div class="wysiwyg-container" {{#unless brandingDoc.custom_welcome}}style="display:none"{{/unless}}>
+				</div>
+				<label class="welcome-message-container" {{#unless brandingDoc.custom_welcome}}style="display:none"{{/unless}}>
+					<div class="input-label">{{i18n.generalBranding.welcomeLabel}}</div>
+					<textarea id="custom_welcome_message" name="custom_welcome_message" rows="3"></textarea>
+				</label>
+			</div>
+		</form>
+	</div>
+
+	{{#monsterText}}
+		{{ i18n.saveInfoMessage}}
+	{{/monsterText}}
+
+	<div class="action-bar clearfix">
+		<div class="pull-right">
+			{{#if brandingDoc.id}}
+			<button type="button" class="monster-button monster-button-danger delete">{{i18n.delete}}</button>
+			{{/if}}
+			<button type="button" class="monster-button monster-button-success save">{{i18n.save}}</button>
+		</div>
+	</div>
+</div>

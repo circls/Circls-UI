@@ -1,0 +1,55 @@
+{
+	"rates": {
+		"addCD": " + Zufügen Gesprächstarif",
+		"addrates": "Zufügen eines Gesprächstarifs",
+		"delete": "Löschen des Tarif",
+		"deleteRequest": "Löschen des Gesprächstarif ",
+		"deleteTitle": "Löschen des Tarif?",
+		"dialograte": {
+			"addTitle":          "Gesprächstarif zufügen",
+			"editTitle":         "Gesprächstarif ändern",
+			"ratename":               "Zielname",
+			"isocode":                "ISO Code",
+			"direction":              "Richtung",
+			"weight":                 "Gewichtung",
+			"surcharge":              "Zuschlag",
+			"pvttype":                "Typ",
+			"flatrate":               "Flatrate inkl.",
+			"prefix":                 "Vorwahl",
+			"routecode":              "Route Code",
+			"ratecost":               "Tarif",
+			"internal":               "EP Tarif",
+			"routes":                 "Route (Regex)",
+			"max":                    "Taktung",
+			"min":                    "Min. Taktung",
+			"description":            "Beschreibung",
+			"ratenochargetime":       "Verrechnung ab",
+			"options":                "Optionen",
+			"carrier":                "Carriername",
+			"Direction": {
+				"incoming": "Eingehend",
+				"outgoing": "Ausgehend"
+			},
+			"placeholderName": "Benutzername",
+			"save": "Speichern",
+			"createrates": "Zufügen"
+		},
+		"editCD": " + Gesprächstarif ändern",
+		"empty-row": "Es wurden keine Gesprächstarife gemäss Ihrer Suche gefunden.",
+		"info_superduper": "Gesprächstarife ist eine App die Gesprächstarife anpassen kann. Ohne ein anders Konto aktiviert werden die global gültigen Tarife bearbeitet. Um diese App für Ihre Kunden zu benutzen, müssen Sie in den Kontenverwaltung das Konto auswählen und mit \"Benutze Konto\" aktivieren. Dann können Sie dessen Tarife anpassen.",
+		"info_reseller": "Gesprächstarife ist eine App die Ihre Gesprächstarife für Wiederverkäufer anzeigt",
+		"info_user": "Gesprächstarife ist eine App die Ihre Gesprächstarife anezeigt",
+		"less": "Keine Info",
+		"more": "Info Gesprächstarife",
+		"no-rates": "Es sind keine Gesprächstarife vorhanden.",
+		"search": "Suche",
+		"toastr": {
+			"addSuccess": "Gesprächstarif wurde erfolgreich hinzugefügt.",
+			"addresellernotMasquarde": "Gesprächstarif können nicht hinzugefügt werden.",
+			"deleteSuccess": "Gesprächstarif wurde erfolgreich gelöscht.",
+			"editSuccess": "Gesprächstarif wurde erfolgreich geändert.",
+			"editresellernotMasquarde": "Gesprächsrarif wurde ohne EP-Tarif erfolgreich geändert."
+		},
+		"warning": "Sie können nicht zweimal den gleichen Namen verwenden. Bitte geben Sie einen andern ein."
+	}
+}

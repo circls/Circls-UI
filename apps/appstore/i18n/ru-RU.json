@@ -1,0 +1,35 @@
+{
+	"description": "Описание",
+	"featuresTitle": "Возможности:",
+	"undefinedFeatures": "Список возможностей скоро будет...",
+	"author": "Автор",
+	"version": "Версия",
+	"license": "Лицензия",
+	"price": "Цена",
+	"free": "Бесплатно",
+	"save": "Сохранить",
+	"filters": {
+		"all": "Все приложения",
+		"installed": "Мои приложения",
+		"resellers": "Агентские приложения",
+		"carriers": "Операторские приложения",
+		"developers": "Приложения для разработки"
+	},
+	"permissions": {
+		"title": "Кто может использовать это приложение?",
+		"all": "Все пользователи",
+		"admins": "Только админы",
+		"specific": "Конкретные пользователи"
+	},
+	"selectedUsers": "Выбранные пользователи",
+	"selectAll": "Выбрать всех",
+	"unselectAll": "Сбросить выбор",
+        "noselected": "No selected user",
+	"selectUsersLink": "Выбранные пользователи ({{selectedUsers}})",
+	"alerts": {
+		"noUserSelected": "Вы можете выбрать по крайней мере одного пользователя для этого приложения.<br><br>Если вы не хотите использовать это приложение, просто отключите его."
+	},
+        "__comment": "UI-1190: Updating the way apps are turned on/off",
+        "__version": "v3.20_s2",
+        "ok": "OK"
+}

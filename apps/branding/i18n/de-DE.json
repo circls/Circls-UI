@@ -1,0 +1,180 @@
+{
+	"menuTitles": {
+		"general": "Allgemein",
+		"advanced": "Erweitert",
+		"templates": "Vorlagen",
+		"dnsHelper": "DNS-Prüfer"
+	},
+	"alertMessages": {
+		"logoWrongType": "Das Logo muss in JPEG oder PNG Format sein.",
+		"logoWrongSize": "Das Logo darf nicht mehr als 190px breit und 72px hoch sein.",
+		"deleteConfirm": "Das werden alle Branding-Informationen gelöscht, sowohl Allgemein als auch Erweitert. Wollen Sie fortfahren?",
+		"closeTemplateConfirm": "Nicht gespeicherte Änderungen dieser Vorlage werden verworfen. Wollen Sie fortfahren?",
+		"templateUpdateSuccess": "Vorlage wurde erfolgreich hochgeladen.",
+		"templatePreviewSuccess": "Die Vorschaumeldung wurde an {{email_address}} gesendet",
+                "templateRestoreSuccess": "Vorlage wurde erfolgreich auf Anfangszustand wiederhergestellt.",
+		"iconWrongSize": "Ihr Icon-Logo darf nicht mehr als 64px hoch und 64px breit sein."
+	},
+	"generalBranding": {
+		"mainTitle": "Beschriftung Benutzeroberfläche",
+		"logoLabel": "Logo ihrer Firma hochladen",
+		"logoSize": "Maximale Grösse: 190px mit 72px",
+		"logoFormat": "Format: JPEG oder PNG",
+		"companyNameLabel": "Geschäftsname",
+		"companyWebsiteLabel": "Webseite Link",
+		"domainLabel": "Domainname",
+		"languageLabel": "Sprache",
+		"helpLabel": "Hilfe / Wiki Link",
+		"termsLabel": "AGB Link",
+		"poweredByLabel": "Programmiert durch 2600hz",
+		"welcomeLabel": "Eigene Willkommensnachricht",
+                "realmSuffix": "Realm Suffix",
+                "realmSuffixHelp": "Dieser Suffix wird für \"Eigene Marke (White-Labels)\" benutzt um  den Realm für die Domain zu generieren.",
+                "applicationTitle": "Titelname im Browser Tab",
+                "faviconLabel": "Hochladen des Icons",
+                "faviconSize": "Maximumgrösse: 64px mit 64px",
+                "callReportEmail": "Email-Adresse für Fragen"
+        },
+	"advancedBranding": {
+		"mainTitle": "Erweitertes Branding",
+		"porting": {
+			"title": "Nummer Portierung",
+			"allowCustomerRequest": {
+				"title": "Übermittlung des Portierungantrages:",
+				"yes": "Erlaubt dem Kunden eine Portierungsantrag selbst zu stellen",
+				"no": "Portierungen nur nach Kundenauftrag ausführen"
+			},
+			"manageCustomerPorts": {
+				"title": "Ausführung der Portierungsauftrages:",
+				"yes": "Wir selbst werden den Portierungsauftrag mit diesem Konto bearbeiten",
+				"no": "Open Phone Net AG wird die Portierungen für Sie bearbeiten"
+			},
+			"supportLabel": "Support Kontakt",
+			"supportPlaceholder": "support@domain.com",
+			"loaLabel": "Vollmachtformular",
+			"loaPlaceholder": "http://mycompany.com/Vollmacht.pdf",
+			"resporgLabel": "Portierungsformular",
+			"resporgPlaceholder": "http://mycompany.com/Portierung.pdf"
+		},
+		"carrier": {
+			"title": "Verbindungs-Carrier",
+			"choices": {
+				"title": "Wahlmöglichkeiten für die Benutzer, seinem Routing:",
+				"list": {
+					"useBlended": "Benutze Verbindungs-Carrier des Systems",
+					"useReseller": "Benutze Verbindungs-Carrier des Wiederverkäufer",
+					"byoc": "Benutze deine eigenen Verbindungs-Carrier"
+				},
+				"help1": "Die erste Option wird standardmäßig in der Rechnung festgelegt.",
+				"help2": "Aktivieren Sie mehr als eine Option, kann der Benutzer diese Einstellung anpassen."
+			}
+		}
+	},
+	"templatesBranding": {
+		"mainTitle": "Vorlagen bearbeiten",
+		"templateNames": {
+			"password_recovery": "Ein Benutzer hat die Passworterneuerung ausgelöst",
+			"welcome": "Willkommensnachricht an Kontobesitzer",
+			"new_account": "Neues Konto wurde erstellt",
+			"new_user": "Neuer Benutzer wurde erstellt",
+			"first_registration": "Erste Anmeldung wurde beendet",
+			"first_call": "Erster Anruf wurde beendet",
+			"transaction": "Eine Überweisung hat stattgefunden",
+			"low_balance": "Tiefes Kontoguthaben ist erreicht",
+			"abnormal_hangup": "Ein Verbindungsfehler hat stattgefunden",
+			"system_alert": "Ein Systemalarm ist aufgetreten",
+			"deregister": "Ein Gerät ist nicht angemeldet",
+			"fax_to_email": "Ein Fax wurde per eMail versandt",
+                        "fax_inbound_error_to_email": "Fehler bei Eingehendem Fax",
+                        "fax_inbound_to_email": "Fax Eingehend zu eMail",
+                        "denied_emergency_bridge": "Notruf blockiert (Keine Notrufadresse)",
+                        "port_request_admin": "Eine Portierung wurde aufgegeben (Admin)",
+			"fax_outbound_error_to_email": "Fehler bei Ausgehendem Fax",
+			"fax_outbound_to_email": "eMail zu Fax Ausgehend",
+			"voicemail_to_email": "Eine Voicemail wurde per eMail zugestellt",
+			"voicemail_full": "Nachricht Voicemailbox ist voll",
+			"new_port_request": "Neuer Portierungsauftrag ist aufgegeben worden",
+			"ported": "Eine Portierung wurde abgeschlossen",
+			"port_cancel": "Eine Portierung wurde abgebrochen",
+			"port_rejected": "Eine Portierung wurde zurückgewiesen",
+			"port_comment": "Eine Portierung erfordert Kommentar",
+			"port_pending": "Eine Portierung wartet zur Ausführung",
+			"port_request": "Eine Portierung wurde aufgegeben",
+			"port_scheduled": "Eine Portierung ist zeitlich fixiert worden",
+			"skel": "Grundlagen Vorlage",
+			"topup": "Tiefes Kontoguthaben",
+			"webhook_disabled": "Ein Webvorgang wurde automatisch abgeschaltet",
+			"cnam_request": "Eine CNAM Anfrage wurde ausgelöst",
+			"vanity_number_request": "Anfrage für eine Mehrwertnummer wurde ausgelöst"
+		},
+		"templateCategories": {
+			"account": "Kategorie Konto",
+			"billing": "Kategorie Rechnung",
+			"system": "Kategorie System",
+			"user": "Kategorie Benutzer",
+			"reseller": "Kategorie Wiederverkauf / Konto Alarme",
+			"fax": "Kategorie Fax",
+			"skel": "Kategorie Grundlagen",
+			"voicemail": "Kategorie Voicemail",
+			"port_request": "Kategorie Portierung",
+			"registration": "Kategorie Gerateüberwachung",
+			"webhook": "Kategorie Webvorgänge",
+			"numbers": "Kategorie Nummer Management",
+			"misc": "Kategorie Übriges"
+		},
+		"from": "Von:",
+		"to": "Zu:",
+		"bcc": "Blindkopie:",
+		"subject": "Betreff:",
+		"macros": "Macros",
+		"recipientTypes": {
+			"specified": "Spezifisch: Schreiben Sie eine Liste (durch Kommata getrennt) E-Mail-Adressen.",
+			"admins": "Administrator: Diese E-Mail werden zu allen Kontoadministratoren gesendet werden.",
+			"original": "Original Benutzer: Diese E-Mail wird dem ursprünglichen Benutzer, der es ausgelöst gesendet."
+		},
+		"htmlBody": "HTML Body",
+		"textBody": "Nur Text",
+                "previewHeader": "Sie können eine Vorschau dieser Mitteilung per eMail erhalten:",
+                "previewEmail": "eMail",
+                "previewSend": "Senden",
+		"preview_notification": "Sie können diese Benachrichtigung an eine eMail-Adresse senden:",
+		"restoreButton": "Anfangszustand wiederherstellen",
+		"restoreWarning": "Diese Mitteilungsvorlage wird auf die Standardeinstellungen wiederhergestellt, und jede Anpassung, die Sie gemacht haben verworfen.",
+                "restoreButtonDisabled": "Es wurde keine Mitteilung versendet. Wenn Sie den Anfangszustand diser Mitteilung behalten möchten , drücke \"Abbrechen\".",
+                "editIconTooltips": {
+                        "disabled": "ABGESCHALTET: Diese Vorlage wurde abgeschaltet. Das System wird keine Mitteilung versenden, bis es wieder aktiviert wird.",
+                        "custom": "EIGENE VORLAGE: Diese Vorlage wurde vom Benutzer abgeändert. Das System benutzt nun diese Vorlage für die Mitteilung.",
+                        "default": "SYSTEM: Diese Vorlage wurde vom Benutzer nicht abgeändert. Das System benutzt die Systemvorlage für die Mitteilung."
+                }
+	},
+	"saveInfoMessage": "Einige Änderungen werden nur nach einer Neuanmeldung übernommen.",
+	"welcomeWysiwyg": {
+		"fontSizes": {
+			"1": "Schmalste",
+			"2": "Schmal",
+			"3": "Mittelschmal",
+			"4": "Mittel",
+			"5": "Mittelgross",
+			"6": "Gross",
+			"7": "Grösste"
+		}
+	},
+        "accessForbidden": "Entschuldigung, das Branding App ist nur für Wiederverkäufer Konto verfügbar.",
+        "dnsBranding": {
+                "check": "Prüfen",
+                "label": "Domainname für \"Eigene Marke\":",
+                "info": "Dies sind die Einstellungen von {{variable}} für Ihren DNS-Server. Stellen sie diesen gemäss diesen Angaben ein:",
+                "table": {
+                        "purpose": "Funktion",
+                        "subDomain": "Subdomain",
+                        "recordType": "Record Type",
+                        "recordData": "Record Data",
+                        "setupProperly": "Kommentar"
+                },
+                "toastr": {
+                        "error": {
+                                "invalidDomain": "Die Prüfung des DND-Einstellungen war nicht erfolgreich!"
+                        }
+                }
+        }
+}

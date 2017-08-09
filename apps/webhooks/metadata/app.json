@@ -1,0 +1,91 @@
+{
+   "name": "webhooks",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "i18n": {
+       "en-US": {
+           "label": "Webhooks",
+           "description": "Set up and manage your webhooks",
+           "extended_description": "The purpose of this application is to allow developers to setup their webhooks.",
+           "features": [
+               "Webflows create",
+               "Webflows edit and delete"
+           ]
+       },
+       "ro-RO": {
+           "label": "Webhooks",
+           "description": "Set up and manage your webhooks",
+           "extended_description": "The purpose of this application is to allow developers to setup their webhooks.",
+           "features": [
+               "Webflows create",
+               "Webflows edit and delete"
+           ]
+       },
+       "ru-RU": {
+           "label": "Webhooks",
+           "description": "Set up and manage your webhooks",
+           "extended_description": "The purpose of this application is to allow developers to setup their webhooks.",
+           "features": [
+               "Webflows create",
+               "Webflows edit and delete"
+           ]
+       },
+       "nl-NL": {
+           "label": "Webhooks",
+           "description": "Set up and manage your webhooks",
+           "extended_description": "The purpose of this application is to allow developers to setup their webhooks.",
+           "features": [
+               "Webflows create",
+               "Webflows edit and delete"
+           ]
+       },
+       "de-DE": {
+           "label": "Webvorgänge",
+           "description": "Einrichten und verwalten Ihre Webvorgänge",
+           "extended_description": "Der Zweck dieser Anwendung ist es, Entwickler und Integratoren ein Werkzeug für die Integration in andere Systeme zu ermöglichen.",
+           "features": [
+               "Webvoränge einrichten",
+               "Webvorgänge ändern und löschen"
+           ]
+       },
+       "it-IT": {
+           "label": "Webhooks",
+           "description": "impostare e gestire le vostre webhooks",
+           "extended_description": "Lo scopo di questa applicazione è quello di consentire agli sviluppatori di creare il webhooks.",
+           "features": [
+               "Webflows create",
+               "Webflows edit and delete"
+           ]
+       },
+       "fr-FR": {
+           "label": "Webhooks",
+           "description": "Mettre en place et gérer vos webhooks",
+           "extended_description": "Le but de cette application est de permettre aux développeurs d'installer leur webhooks.",
+           "features": [
+               "Webflows create",
+               "Webflows edit and delete"
+           ]
+       },
+       "es-ES": {
+           "label": "Webhooks",
+           "description": "Set up and manage your webhooks",
+           "extended_description": "The purpose of this application is to allow developers to setup their webhooks.",
+           "features": [
+               "Webflows create",
+               "Webflows edit and delete"
+           ]
+       }
+   },
+   "tags": [
+       "developer", "reseller", "carrier", "all"
+   ],
+   "author": "2600hz",
+   "version": "1.0",
+   "license": "GPL",
+   "price": 0,
+   "icon": "WebHooks_app.png",
+   "screenshots": [
+       "webhooks1.png",
+       "webhooks2.png"
+   ],
+   "pvt_type": "app"
+}

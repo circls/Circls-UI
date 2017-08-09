@@ -1,0 +1,69 @@
+<div class="feature-popup-container" data-feature="faxing">
+	<div class="feature-popup-title">
+		<div class="feature-fa-wrapper">
+			<i class="{{user.extra.mapFeatures.faxing.icon}}"></i>
+		</div>
+		{{i18n.users.faxing.headline}}
+		<div class="switch">
+		{{#monsterSwitch}}
+			<input class="switch-state" type="checkbox" id="checkbox_caller_id" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}"{{#if user.extra.mapFeatures.faxing.active}} checked="checked"{{/if}}></input>
+		{{/monsterSwitch}}
+		</div>
+	</div>
+
+	<div class="content{{#unless user.extra.mapFeatures.faxing.active}} disabled{{/unless}}">
+		<form class="form-horizontal" id="faxbox_form">
+			<fieldset>
+				<legend>{{i18n.users.faxing.faxToEmail.title}}</legend>
+				<p>
+					{{i18n.users.faxing.faxToEmail.text1}}
+					<span class="number-select"></span>
+					{{i18n.users.faxing.faxToEmail.text2}} <strong class="monster-primary-color">{{user.email}}</strong>.
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>{{i18n.users.faxing.emailToFax.title}}</legend>
+				<p>
+					{{i18n.users.faxing.emailToFax.text1}}
+					<strong><em><span class="number-mirror">{{#if faxbox}}{{faxbox.caller_id}}{{else}}{{i18n.users.faxing.emailToFax.default}}{{/if}}</span></em></strong>
+					<strong class="monster-primary-color">@{{account.realm}}</strong>
+					{{i18n.users.faxing.emailToFax.text2}}
+					<strong><em><span class="number-mirror">{{#if faxbox}}{{faxbox.caller_id}}{{else}}{{i18n.users.faxing.emailToFax.default}}{{/if}}</span></em></strong>.
+					<br>
+					{{i18n.users.faxing.emailToFax.text3}}
+					<strong class="monster-primary-color">{{user.email}}</strong>.
+				</p>
+				<div class="helper">
+					<a href="javascript:void(0);" id="helper_link" data-toggle="collapse" data-target="#helper_content">
+						<span class="text">{{i18n.users.faxing.emailToFax.help.showHelp}}</span>
+					</a>
+					<div id="helper_content" class="collapse">
+						<div class="control-group">
+							<label for="destination_number" class="control-label">{{i18n.users.faxing.emailToFax.help.question}}</label>
+							<div class="controls">
+								<input type="text" id="destination_number" maxlength="16" placeholder="{{i18n.users.faxing.emailToFax.help.placeholder}}">
+							</div>
+						</div>
+					</div>
+			</fieldset>
+			<fieldset>
+			{{#compare faxbox.cloud_state '===' 'registered'}}
+				<legend>{{i18n.users.faxing.googlePrinter.title}}</legend>
+				<p>
+					{{i18n.users.faxing.googlePrinter.text1}}
+					<a href="{{faxbox.cloud_connector_claim_url}}" target="_blank">{{i18n.users.faxing.googlePrinter.link}}</a>
+					{{i18n.users.faxing.googlePrinter.text2}}
+					<a href="https://tools.google.com/dlpage/cloudprintdriver" target="_blank">{{i18n.users.faxing.googlePrinter.link}}</a>.
+				</p>
+			{{/compare}}
+			</fieldset>
+		</form>
+	</div>
+
+	<div class="actions clearfix">
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{i18n.cancel}}</a>
+			<button type="button" class="monster-button monster-button-success save">{{i18n.saveChanges}}</button>
+		</div>
+	</div>
+</div>

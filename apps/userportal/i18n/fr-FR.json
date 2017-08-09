@@ -1,0 +1,328 @@
+{
+	"userportal": {
+                "vmstatus": {
+                    "new": "New",
+                    "saved": "Saved",
+                    "deleted": "Deleted"
+                },
+		"my_voicemails": "Mon message vocaux",
+		"my_call_history": "Mon Historique des appels",
+		"my_settings": "Mes reglages",
+		"forward_calls_to": "renvoyer les appels vers",
+		"also_ring_my_voip_phone": "Ring aussi mon téléphone VoIP",
+		"send_voicemail_to_email": "Envoyer Messagerie vocale par courriel",
+		"email_address": "Adresse courriel",
+		"keep_caller_id": "Gardez Caller ID",
+		"save": "Sauver",
+		"my_devices": "Mes périphériques",
+		"registered_devices_are_displayed": "appareils enregistrés sont affichés en vert ci-dessous.",
+		"my_contact_list": "ma liste de contacts",
+		"in_order_to_use_the_quickcall_feature": "Pour utiliser la fonction Quickcall, vous pouvez saisir un nombre dans la zone de texte ci-dessous, ou sélectionnez directement un numéro de votre liste de contacts",
+		"the_quickcall_feature_will_ring_your_selected_device": "La fonction QuickCall va sonner votre appareil sélectionné, et ensuite essayer d'atteindre le nombre que vous avez sélectionné une fois que vous reprenez l'appel",
+		"mark_as_new": "Marquer comme nouveau",
+		"mark_as_saved": "Marquer comme sauverd",
+		"delete": "Supprimer",
+		"date": "Date",
+		"from_caller_id": "Numéro composé",
+		"to_dialed_number": "Numéro externe",
+		"duration": "Duree",
+		"caller_id": "Caller ID",
+		"status": "Status",
+		"listen": "Listen",
+		"download": "Download",
+                "play": "Play Message",
+		"name": "Nom",
+		"internal_number": "Number interne",
+		"external_number": "Numbero externe",
+		"you_need_to_select_a_registered_device": "Vous devez sélectionner un périphérique enregistré dans la liste déroulante afin d'utiliser la fonction QuickCall!",
+		"quickcall_device": "Quickcall périphérique: ",
+		"quickcall_startedto": "Quickcall started to: ",
+		"call": "Appeler",
+		"start_date": "Demarrer",
+		"end_date": "End",
+		"filter": "Filtre",
+		"dates_in_the_filter": "Les dates dans le filtre ne sont pas dans le bon format (jj/mm/aaaa)",
+		"message_index": "Message Index",
+		"voicemail_box_id": "Voicemail Box ID",
+		"are_you_sure_that_you_want_to_delete": "Etes-vous sûr que vous voulez supprimer le message de messagerie vocale sélectionné (s)?",
+		"enable_call_forward": "Activer le renvoi d'appel",
+		"rangeTooLarge": "La gamme est plus grand que {{variables}} jours, s'il vous plaît corriger",
+                "device_types": {
+                        "cellphone": "Cell Phone",
+                        "sip_device": "SIP Phone",
+                        "smartphone": "Smartphone",
+                        "mobile": "Mobile",
+                        "softphone": "Soft Phone",
+                        "landline": "Landline",
+                        "fax": "Fax",
+                        "ata": "ATA",
+                        "sip_uri": "SIP URI"
+                },
+                "setquickcallDevice": "Please, go to your account settings and select first a quickcall device."
+	},
+
+	"devices": {
+		"add": "Ajouter téléphone",
+		"assigned": "Assignés",
+		"createDevice": "Créer téléphone",
+		"confirmDeleteDevice": "Ce téléphone sera supprimé de façon permanente. Continuer quand même?",
+		"deleteDevice": "Supprimer téléphone",
+		"deletedDevice": "Le téléphone \"{{deviceName}}\" a été supprimé avec succès.",
+                "unregistinfo": "Info per email, if device not registerd",
+                "unregistinfoHelp": "If you want that the administrator become a email, when the phone is unregistered.",
+		"popupSettings": {
+			"advancedTitle": "Avancés",
+			"basicTitle": "Réglages",
+			"basicSectionTitle": "Réglages basiques",
+			"brandDownloads": "Productinfo",
+			"dragAndDropAudio": "With the volume tuner, you can reduct echo cancelation (decrease -1 or more). To select a codec, drag and drop from the available codecs box to selected codecs box",
+			"dragAndDrop": "Pour sélectionner un codec, glisser-déposer depuis la boite des codecs disponibles jusqu'à celle des codecs sélectionnés",
+			"options": {
+				"menuTitle": "Réglages"
+			},
+			"sip": {
+				"menuTitle": "SIP",
+				"sectionTitle": "SIP Info",
+				"download": "Autoprovision Softphone",
+                                "info": {
+                                        "link": {
+                                                "showInfo": "Show Autoprovision Info",
+                                                "hideInfo": "No Info"
+                                        },
+                                        "types": {
+                                                "autoprovision": "You can easy install your softphone, without knowning technical details.",
+                                                "software": "Over the download link, start your install the Softphone easy.",
+                                                "qrcode": "After the installation, at the button of Dialfield in the Softphon, you have to scan the QR-Code with it, and quickly is your phone redy to use!",
+                                                "security": "Have fun with secure softphone easyinstall."
+                                        }
+                                },
+                                "provstring": "Provstring",
+                                "provstring_conferror": "Please set config for Automatic Devicesetting in account first!",
+                                "provstring_jsconferror": "Please set config in /js/config.js 'api.provisioner oder api.provisioner_http' first!"
+			},
+			"audio": {
+				"menuTitle": "Audio",
+				"sectionTitle": "Réglages audio",
+				"selectedCodecs": "Codecs sélectionnés",
+				"unselectedCodecs": "Codecs disponibles"
+			},
+			"callerId": {
+				"menuTitle": "Caller-ID d'urgence",
+				"sectionTitle": "Caller-ID d'urgence",
+				"emergency": "Numéro",
+				"notSet": "- Valeur du compte par défaut -",
+				"noE911Numbers": "L'E911 n'a été configuré sur aucun numéro, veuillez utiliser l'application de gestion des numéros pour le configurer sur un de vos numéros avant de définir votre Caller-ID d'urgence.",
+				"address": "Adresse",
+				"__comment": "UI-1386: Updating devices to use the numberSelector common control",
+				"__version": "v3.20_s4",
+				"selectNumber": "Sélectionnez un numéro E911",
+				"useDefault": "Utiliser la valeur du compte par défaut"
+			},
+			"miscellaneous": {
+				"menuTitle": "Divers",
+				"sectionTitle": "Divers",
+				"rtp": {
+					"enable": "Stratégie d'encryption audio",
+					"srtp": "SRTP",
+					"zrtp": "ZRTP"
+				},
+				"__comment": "UI-1119: Adding ignore_complete_elsewhere",
+				"__version": "3.19",
+				"ignoreCompletedElsewhere": {
+					"label": "Afficher les appels manqués des groupes d'Appels",
+					"help": "Si cette case est cochée, les téléphones ayant accès à cette fonctionnalité afficheront les appels manqués même s'ils viennent d'un Groupe d'Appel et que l'appel a été pris par un collègue"
+				},
+				"__comment": "UI-377: Adding Restart device feature",
+				"__version": "3.21",
+				"restart": {
+					"label": "Envoyer une requête de redémarrage",
+					"button": "Redémarrer",
+					"help": "Ce bouton envoie une requête de redémarrage. Cette action n'est disponible que pour les appareils qui sont actuellement connectés à la plateforme.",
+					"success": "Vous avez envoyé une requête de redémarrage avec succès!"
+				}
+			},
+                        "webrtc": {
+                                "menuTitle": "WebRTC Link",
+                                "sectionTitle": "WebRTC Link",
+                                "showInfowebrtc": {
+                                        "infoLink": "Use this selection for absolute caution!",
+                                        "help": "To Support WebRTC via a Callbutton, we strong warn you to limit this extension, that call can internal only! without any Service Number! Please use this with absolute caution! Best you restrict internal calling by timeconditions too."
+                                }
+                        },
+			"restrictions": {
+				"menuTitle": "Restrictions",
+				"sectionTitle": "Réglages des Restrictions",
+				"inherit": "Hériter",
+				"deny": "Refuser",
+				"matcher": {
+					"help": "Saisissez un numéro (international format => +[Countryprefix]...) et cliquez sur \"Tester\" pour savoir s'il sera autorisé.",
+					"placeholder": "+18554443333",
+					"button": "Tester",
+					"label": "Le numéro ci-dessus appartient à cette catégorie.",
+					"allowMessage": "Ce téléphone sera autorisé à appeler le numéro {{phoneNumber}}",
+					"denyMessage": "Ce téléphone ne sera pas autorisé à appeler le numéro {{phoneNumber}}."
+				},
+				"__comment": "UI-727, v3.19_s2: Updating the way call restrictions are displayed on devices.",
+				"allow": "Autoriser",
+				"disabledRestrictionsInfo": "Certains types d'appels on été bloqués pour votre compte et ne peuvent pas être activés sur vos téléphones."
+			},
+			"video": {
+				"menuTitle": "Vidéo",
+				"sectionTitle": "Réglages vidéo",
+				"selectedCodecs": "Codecs sélectionnés",
+				"unselectedCodecs": "Codecs disponibles"
+			},
+			"featureKeys": {
+				"menuTitle": "Feature Keys",
+				"description": "Feature key",
+				"labels": {
+					"user": "Utilisateur",
+					"parkingSpot": "Place",
+					"value": "Valeur"
+				},
+				"info": {
+					"link": {
+						"showInfo": "Show Info",
+						"hideInfo": "Hide Info"
+					},
+					"types": {
+						"presence": "Indique lorsqu'un utilisateur à un appel entrant ou est en train d'appeler. L'indicateur peut être utilisé pour répondre à un appel ou appeler l'utilisateur.",
+						"parking": "Indique lorsqu'un appel est placé sur une place de parking accessible par l'intégralité de l'entreprise. L'indicateur peut être utilisé pour transférer un appel vers la place de parking ou récupérer un appel en attente.",
+						"personal_parking": "Indique lorsqu'un appel est placé sur une place de parking dédié à l'utilisateur sélectionné. L'indicateur peut être utilisé pour transférer un appel vers la place de parking ou récupérer un appel en attente.",
+						"speed_dial": "N'indique pas l'état d'un appel mais peut être utilisé pour appeller rapidement le numéro configuré."
+					}
+				},
+				"types": {
+					"none": "Aucun",
+					"presence": "Présence",
+					"parking": "Parking",
+					"personal_parking": "Personal Parking",
+					"speed_dial": "Speed Dial"
+				}
+			}
+		},
+		"buy": "Acheter téléphone",
+		"classifiers": {
+			"unknown": {
+			    "name": "Autre que les options précédentes",
+			    "help": "Veuillez sélectionner cette option lorsque vous souhaitez que ce compte fasse un appel vers un format de numéro non-spécifié ci-dessus."
+			}
+		},
+		"noMatchingDevices": "Aucun téléphone correspondant à votre recherche",
+		"noDevicesConfigured": "Aucun téléphone configuré",
+		"provisionerPopup": {
+			"brandHeadline": "Sélectionner la marque du téléphone:",
+			"deviceHeadline": "Sélectionner le modèle du téléphone:",
+			"deviceSelected": "Vous avez sélectionner le {{brand}} {{model}}",
+			"missingBrand": "La marque de mon téléphone ne figure pas dans cette liste",
+			"missingDevice": "Le modèle de mon téléphone n'est pas listé",
+			"title": "Sélection du téléphone"
+		},
+		"sip_device": {
+			"addTitle": "Ajouter un téléphone SIP",
+			"editTitle": "Modification d'un téléphone SIP: {{name}}",
+			"macAddress": "Adresse MAC",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Nouveau téléphone SIP",
+			"deviceName": "Nom du téléphone"
+		},
+		"sip_uri": {
+			"addTitle": "Ajouter une URI SIP",
+			"deviceName": "Nom",
+			"editTitle": "Modification d'une URI SIP: {{name}}",
+			"new": "Nouvelle URI SIP",
+			"uri": "URI SIP",
+			"uriPlaceholder": "sip:device@my.company.com",
+			"hideContactList": "Cacher de la liste de Contacts"
+		},
+		"landline": {
+			"addTitle": "Ajout d'une ligne fixe",
+			"deviceName": "Nom",
+			"editTitle": "Modification d'une ligne fixe: {{name}}",
+			"new": "Nouvelle ligne fixe",
+			"number": "Numéro",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Autoriser l'utilisation du répondeur de la ligne fixe",
+			"keepCallerId": "Conserver le Caller-ID original",
+			"hideContactList": "Cacher de la liste de Contacts"
+		},
+		"cellphone": {
+			"addTitle": "Ajout d'un Portable",
+			"deviceName": "Nom",
+			"editTitle": "Modification d'un Portable: {{name}}",
+			"new": "Nouveau Portable",
+			"number": "Numéro",
+			"numberPlaceholder": "+14152231121",
+			"requireKeypress": "Autoriser l'utilisation du répondeur du portable",
+			"keepCallerId": "Conserver le Caller-ID original",
+			"hideContactList": "Cacher de la liste de Contacts"
+		},
+		"mobile": {
+			"addTitle": "Ajout d'un Mobile",
+			"deviceName": "Nom",
+			"editTitle": "Modification d'un Mobile: {{name}}",
+			"mdn": "MDN",
+			"mdnPlaceholder": "Numéro de tél. US à 10 chiffres",
+			"new": "Nouveau Mobile"
+		},
+		"smartphone": {
+			"addTitle": "Ajout d'un Smartphone",
+			"deviceName": "Nom",
+			"editTitle": "Modification d'un Smartphone: {{name}}",
+			"new": "Nouveau Smartphone",
+			"requireKeypress": "Autoriser l'utilisation du répondeur du Smartphone",
+			"keepCallerId": "Conserver le Caller-ID original",
+			"hideContactList": "Cacher de la liste de Contacts"
+		},
+		"fax": {
+			"addTitle": "Ajout d'un Fax",
+			"editTitle": "Modification d'un Fax: {{name}}",
+			"macAddress": "Adresse MAC",
+			"macAddressPlaceholder": "19:33:1A:B2:12:58",
+			"new": "Nouveau Fax",
+			"deviceName": "Nom",
+			"t38": "T38",
+			"disabled": "Désactivé",
+			"auto": "Détection auto",
+			"force": "Toujours forcé"
+		},
+		"softphone": {
+			"addTitle": "Ajout d'un Softphone",
+			"editTitle": "Modification d'un Softphone: {{name}}",
+			"new": "Nouveau Softphone",
+			"deviceName": "Nom"
+		},
+		"ata": {
+			"addTitle": "Ajout d'un ATA",
+			"editTitle": "Modification d'un ATA: {{name}}",
+			"new": "Nouvel ATA",
+			"deviceName": "Nom"
+		},
+		"sip": {
+			"username": "Nom d'utilisateur SIP",
+			"password": "Mot de passe SIP",
+			"realm": "Royaume"
+		},
+		"spare": "Disponibles",
+		"title": " Nombre de Téléphones",
+		"titleGrid": {
+			"edit": "Modifier",
+			"enable": "Activer",
+			"user": "Utilisateur",
+			"modelMacAddress": "Nom / Adresse MAC",
+			"type": "Type"
+		},
+		"types": {
+			"cellphone": "Portable",
+			"sip_device": "Téléphone SIP",
+			"smartphone": "Smartphone",
+			"mobile": "Mobile",
+			"softphone": "Softphone",
+			"landline": "Ligne fixe",
+			"fax": "Fax",
+			"ata": "ATA",
+			"sip_uri": "URI SIP"
+		},
+		"unassignedDevice": "-"
+	}
+}

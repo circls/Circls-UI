@@ -1,0 +1,56 @@
+{
+	"webhooks": {
+		"addCD": "+ Adaugă date personalizate",
+		"addWebhook": "crearea de noi webhook",
+		"delete": "șterge",
+		"deleteRequest": "esti sigur ca vrei sa stergi",
+		"deleteTitle": "șterge ?",
+		"dialogWebhook": {
+			"addTitle": "crearea de noi webhook",
+			"createWebhook": "crea",
+			"editTitle": "edita webhook",
+			"enterName": "nume",
+			"enterHook": "cârlig",
+			"enterRequest": "cerere",
+			"enterRetries": "Numărul de încercări re-try",
+			"enterURL": "url",
+			"Hooks": {
+				"ALL": "toate",
+				"ca": "channel_answer",
+				"cc": "channel_create",
+				"cd": "channel_destroy"
+			},
+			"placeholderName": "numele personalizat",
+			"Request": {
+				"get": "obține",
+				"post": "post"
+			},
+			"save": "cu excepția"
+		},
+		"dialogHistory": {
+			"title": "Istoria de încercări pe acest webhook"
+		},
+		"editCD": "+ Datelor edita personalizate",
+		"empty-row": "nu s-au gasit webhooks mathing de căutare.",
+		"info": "webhooks este o capacitate care sistemul nostru poate notifica program web oricând ceva de interes se întâmplă. de exemplu, dacă cineva completeaza un apel telefonic, putem să vă anunțăm în timp real și să vă spun cine au fost să vorbesc cu, și pentru cât timp.",
+		"info2": "pentru a utiliza această caracteristică, configurați un url pentru serverul de web și spuneți-ne ce tip de evenimente pe care doriți să fie notificate cu privire la, și în ce format. această caracteristică se aplică pentru întregul cont, precum și orice aplicații în acest cont, dar nu sub- conturi.",
+		"less": "ascunde informații despre webhooks",
+		"more": "Mai multe informații despre webhooks",
+		"no-webhooks": "nu există webhooks configurate.",
+		"search": "căutare",
+		"toastr": {
+			"addSuccess": "Ați adăugat cu succes",
+			"deleteSuccess": "ați șters cu succes",
+			"editSuccess": "s-au schimbat cu succes"
+		},
+		"warning": "nu puteți salva datele personalizate cu același identificator. Vă rugăm introduceți un identificator diferit.",
+		"editTooltip": "editați setări",
+		"historyTooltip": "vizualiza lista de tentative de pe acest webhook",
+		"deleteTooltip": "șterge",
+		"attemptSuccess": "succes!",
+		"message": "mesaj",
+		"date": "data",
+		"retriesLeft": "# De încercări stânga",
+		"noAttempts": "sistemul de pe lângă detecta orice încercare de pe acest webhook..."
+	}
+}

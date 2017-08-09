@@ -1,0 +1,105 @@
+<div id="feature_codes_container">
+        <div class="feature-codes-header">
+            <div class="features-btn">
+                    <button data-type="featureCodes" class="btn{{#compare type "===" "featureCodes"}} active{{/compare}}" type="button">{{ i18n.installservices.featureCodes }}</button>
+                    <button data-type="installFritzBox" class="btn{{#compare type "===" "installFritzBox"}} active{{/compare}}" type="button">{{ i18n.installservices.installFritzBox }}</button>
+                    <button data-type="installIosmodem" class="btn{{#compare type "===" "installIosmodem"}} active{{/compare}}" type="button">{{ i18n.installservices.installIosmodem }}</button>
+                    <button data-type="installSoftphone" class="btn{{#compare type "===" "installSoftphone"}} active{{/compare}}" type="button">{{ i18n.installservices.installSoftphone }}</button>
+                    <button data-type="installSipphone" class="btn{{#compare type "===" "installSipphone"}} active{{/compare}}" type="button">{{ i18n.installservices.installSipphone }}</button>
+                    <button data-type="installWebrtc" class="btn{{#compare type "===" "installWebrtc"}} active{{/compare}}" type="button">{{ i18n.installservices.installWebrtc }}</button>
+            </div>
+        </div>
+
+	<div class="featureCodes feature-codes-content clearfix">
+		{{#each featureCodes}}
+			<div class="feature-codes-category">
+				<div class="category-header">{{this.category}}</div>
+				<div class="category-content">
+					{{#each this.codes}}
+					<div class="feature-code-line">
+						<div class="feature-code-label">
+							{{this.name}}
+						</div>
+						<div class="feature-code">
+							<div class="code-prefix">*</div>
+							<div class="code-number">{{this.number}}</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		{{else}}
+		<div class="no-feature-codes">
+			<div class="message">{{i18n.featureCodes.noFeatureCodeMessage}}</div>
+			<a class="main-number-link">{{i18n.featureCodes.mainNumberLink}}</a>
+		</div>
+		{{/each}}
+	</div>
+
+	<div class="installFritzBox feature-codes-content clearfix" style="display: none">
+	    <div class="entry">
+		<div class="entry-inner">
+		    <a class="lightbox-iframe" title="{{i18n.featureCodes.installBox.avmTitle}}" 
+			href="{{i18n.featureCodes.installBox.avmAllipYtLink}}" target="blank">
+			<img width="90%" src="apps/voip/style/static/images/allipfritz.jpg" alt="{{i18n.featureCodes.installBox.avmTitle}}">
+			<span class="play"></span>
+		    </a>
+		    <div class="csc-title">{{i18n.featureCodes.installBox.avmTitle}}</div>
+		    <div class="csc-text"><p>{{i18n.featureCodes.installBox.avmDescript}}</p></div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="installIosmodem feature-codes-content clearfix" style="display: none">
+	    <div class="entry">
+		<div class="entry-inner">
+		    <a class="lightbox-iframe" title="{{i18n.featureCodes.installBox.avmTitle}}" 
+			href="{{i18n.featureCodes.installIos.iosAllipYtLink}}" target="blank">
+			<img width="90%" src="apps/voip/style/static/images/iopsys_prov.jpg" alt="{{i18n.featureCodes.installIos.iosTitle}}">
+			<span class="play"></span>
+		    </a>
+			<div class="csc-title">{{i18n.featureCodes.installIos.iosTitle}}</div>
+			<div class="csc-text"><p>{{i18n.featureCodes.installIos.iosDescript}}</p></div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="installSoftphone feature-codes-content clearfix" style="display: none">
+	    <div class="entry">
+		<div class="entry-inner">
+			<video width="90%" poster="apps/voip/style/static/images/kazoo_softprov-{{i18n.defaultLang}}.jpg" controls>
+			<source src="apps/voip/style/static/images/kazoo_softprov-{{i18n.defaultLang}}.mp4" type="video/mp4" 
+			title="{{i18n.featureCodes.installSoft.softTitle}}" alt="{{i18n.featureCodes.installSoft.softTitle}}"></video>
+			<div class="csc-title">{{i18n.featureCodes.installSoft.softTitle}}</div>
+			<div class="csc-text"><p>{{i18n.featureCodes.installSoft.softDescript}}</p></div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="installSipphone feature-codes-content clearfix" style="display: none">
+	    <div class="entry">
+		<div class="entry-inner">
+			<video width="90%" poster="apps/voip/style/static/images/kazoo_sipprov-{{i18n.defaultLang}}.jpg" controls>
+			<source src="apps/voip/style/static/images/kazoo_sipprov-{{i18n.defaultLang}}.mp4" type="video/mp4" 
+			title="{{i18n.featureCodes.installSip.sipTitle}}" alt="{{i18n.featureCodes.installSip.sipTitle}}"></video>
+			<div class="csc-title">{{i18n.featureCodes.installSip.sipTitle}}</div>
+			<div class="csc-text"><p>{{i18n.featureCodes.installSip.sipDescript}}</p></div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="installWebrtc feature-codes-content clearfix" style="display: none">
+	    <div class="entry">
+		<div class="entry-inner">
+			<video width="90%" poster="apps/voip/style/static/images/kazoo_certprov-{{i18n.defaultLang}}.jpg" controls>
+			<source src="apps/voip/style/static/images/kazoo_certprov-{{i18n.defaultLang}}.mp4" type="video/mp4" 
+			title="{{i18n.featureCodes.installSip.sipTitle}}" alt="{{i18n.featureCodes.installrtc.rtcTitle}}"></video>
+			<div class="csc-title">{{i18n.featureCodes.installrtc.rtcTitle}}</div>
+			<div class="csc-text"><p>{{i18n.featureCodes.installrtc.rtcDescript}}</p></div>
+			<div class="csc-text"> <a href=" {{ i18n.login.certbuttonLink }}">{{i18n.login.installcert.certFirefox}}</a> </div>
+			<div class="csc-text"> <a download="{{i18n.login.installcert.certnameWindows}}" href=" {{ i18n.login.certbuttonLinkwin }}">{{i18n.login.installcert.certWin}}</a> </div>
+		</div>
+	    </div>
+	</div>
+
+</div>

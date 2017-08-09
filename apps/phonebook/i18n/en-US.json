@@ -1,0 +1,110 @@
+{
+	"menuTitles": {
+		"phonebook": "Phonebook",
+		"speeddial": "Speeddial-list",
+		"blacklist": "Blacklist"
+	},
+
+	"phonebook": {
+                "renew": "Renew",
+                "add": "Add",
+                "delete": "Delete",
+		"title": "Phonebook",
+		"tableTitles": {
+                        "country": "Country",
+                        "company": "Company",
+                        "name": "Name",
+                        "address": "Address",
+                        "zip": "Zip",
+                        "city": "City",
+                        "details": "Details"
+		},
+		"detailDialog": {
+			"popupTitle": "Edit phonebook entry"
+		},
+                "quickcallDevice": "Quickcall Device",
+                "setquickcallDevice": "Please, go to your account settings and select first a quickcall device.",
+                "quickcall_startedto": "Quickcall connect to: ",
+                "deleteSuccess": "Entry was succesfull deleted ",
+                "addSuccess": "Entry was successfull added ",
+                "uploadDialog": {
+                        "uploadDialog": "Upload of phonebook datas"
+                }
+	},
+	
+	"phonebookDetail" : {
+		"connectivityTitle" : "Edit phonebook entry",
+		"id": "Number",
+		"country": "Country",
+		"company": "Company",
+		"name": "Name",
+		"address" : "Address",
+		"zip" : "Zip",
+		"city" : "City",
+		"local" : "Location",
+		"email" : "Email",
+		"yes" : "Yes",
+		"no" : "No",
+		"key": "Key",
+		"value": "Value"
+	},
+
+	"speeddial": {
+		"title": "Speeddial-list",
+		"tableTitles": {
+			"from": "From",
+			"to": "To",
+			"date": "Date",
+			"details": "Details",
+			"status": "Status"
+		},
+		"detailDialog": {
+			"popupTitle": "Technical Details",
+			"metadataTitle": "Metadata",
+			"errorTitle": "Error(s)",
+			"apiKeys": {
+			}
+		}
+	},
+
+	"callInspector": {
+		"title": "Call Inspector",
+		"gridHeaders": {
+			"inboundCall": "Inbound",
+			"outboundCall": "Outbound",
+			"dateTime1": "Date/Time",
+			"from": "From",
+			"to": "To",
+			"duration1": "Duration",
+			"duration2": "(Min)",
+			"hangup1": "Hangup",
+			"hangup2": "Cause",
+			"see": "See",
+			"ladder": "Ladder"
+		},
+		"loaderMessage": "Scroll down or click here to load additional calls.",
+		"loadingMessage": "Loading additional calls...",
+		"noSearchMatch": "You search criteria did not match any call.",
+		"backButton": "Back",
+		"analysisTypes": {
+			"user": "User",
+			"carrier": "Carrier",
+			"kazoo": "Kazoo",
+			"cloud": ""
+		}
+	},
+
+	"blacklist": {
+		"title": "Blacklist",
+		"tableTitles": {
+			"subscription": "Subscription",
+			"type": "Type",
+			"mwi": "MWI",
+			"blf": "BLF",
+			"blacklist": "PR",
+			"subscribersCount": "Subscribers",
+			"flush": "Flush"
+		},
+		"flushSent": "You successfully triggered a reset command on extension {{variable}}"
+	}
+}

@@ -1,0 +1,29 @@
+<form class="form-horizontal" name="form">
+	<div class="login-input row-login">
+		<input type="text" id="login" name="login" value="{{username}}" placeholder="{{ i18n.username }}">
+		<i class="fa fa-envelope"></i>
+	</div>
+
+	<div class="login-input row-login">
+		<input type="password" name="password" id="password" placeholder="{{ i18n.password }}">
+		<i class="fa fa-lock"></i>
+	</div>
+
+	<div class="login-input row-login">
+		<input type="text" id="account_name" name="account_name" value="{{accountName }}" placeholder="{{ i18n.account.name }}">
+		<i class="fa fa-bookmark"></i>
+	</div>
+
+	<div class="row-login row-action">
+		{{#monsterCheckbox i18n.rememberMe}}
+			<input type="checkbox" id="remember_me" {{#if rememberMe }}checked{{/if}} />
+		{{/monsterCheckbox}}
+		{{#unless hidePasswordRecovery}}
+		<a href="#" class="forgot-password pull-right">{{ i18n.forgotPassword }}</a>
+		{{/unless}}
+	</div>
+
+	<div class="row-login">
+		<button class="login" type="submit">{{ i18n.login.buttonText }}</button>
+	</div>
+</form>

@@ -1,0 +1,22 @@
+{
+	"defaultApp": {
+		"title": "Erste App",
+		"label": "Wenn Sie eine Erste App haben, wird beim Anmelden sofort diese angezeigt."
+	},
+	"noDefaultApp": {
+		"label": "Keine Erste App gewählt"
+	},
+	"appDescription": {
+		"title": "Setting a default app",
+		"label": "Um eine Erste App einzustellen , müssen Sie das Bild in die Box verschieben."
+	},
+	"searchQuery": {
+		"placeholder": "Suche Apps"
+	},
+	"appstore": {
+		"button": "Neue Apps"
+	},
+	"appList": {
+		"title": "Meine Apps"
+	}
+}

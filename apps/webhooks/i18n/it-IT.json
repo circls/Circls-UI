@@ -1,0 +1,56 @@
+{
+	"webhooks": {
+		"addCD": "+ Aggiungere dati personalizzati",
+		"addWebhook": "creare nuova webhook",
+		"delete": "cancellare",
+		"deleteRequest": "sei sicuro di voler cancellare",
+		"deleteTitle": "eliminare ?",
+		"dialogWebhook": {
+			"addTitle": "creare nuova webhook",
+			"createWebhook": "dare vita",
+			"editTitle": "modifica webhook",
+			"enterName": "nome",
+			"enterHook": "gancio",
+			"enterRequest": "richiesta di",
+			"enterRetries": "numero di tentativi di re- try",
+			"enterURL": "url",
+			"Hooks": {
+				"ALL": "tutto",
+				"ca": "channel_answer",
+				"cc": "channel_create",
+				"cd": "channel_destroy"
+			},
+			"placeholderName": "nome personalizzato",
+			"Request": {
+				"get": "ottenere",
+				"post": "posta"
+			},
+			"save": "salvare"
+		},
+		"dialogHistory": {
+			"title": "storia dei tentativi su questo webhook"
+		},
+		"editCD": "+ Modifica dei dati personalizzati",
+		"empty-row": "non c'erano webhooks trovati mathing tua ricerca.",
+		"info": "webhooks è una capacità di cui il nostro sistema può informare il programma web in qualsiasi momento qualcosa di interessante accade. per esempio, se qualcuno compie una telefonata, siamo in grado di farvi sapere in tempo reale e dirò chi stavano parlando, e per quanto tempo.",
+		"info2": "Per utilizzare questa funzione, configurare un URL al server web e dirci che tipo di eventi che si desidera ricevere una notifica, e in quale formato. questa caratteristica si applica a tutto l'account e qualsiasi applicazione all'interno di questo account, ma non sotto- conti.",
+		"less": "nascondere informazioni su webhooks",
+		"more": "più informazioni webhooks",
+		"no-webhooks": "non ci sono webhooks configurate.",
+		"search": "ricerca",
+		"toastr": {
+			"addSuccess": "avete aggiunto",
+			"deleteSuccess": "avete cancellato con successo",
+			"editSuccess": "avete cambiato con successo"
+		},
+		"warning": "Non è possibile salvare i dati personalizzati con lo stesso identificativo. inserisci un identificativo diverso.",
+		"editTooltip": "Modifica impostazioni",
+		"historyTooltip": "visualizzare l' elenco dei tentativi in questo webhook",
+		"deleteTooltip": "cancellare",
+		"attemptSuccess": "successo!",
+		"message": "messaggio",
+		"date": "data",
+		"retriesLeft": "# Di tentativi sinistra",
+		"noAttempts": "il sistema non ha ancora rilevare qualsiasi tentativo in questo webhook..."
+	}
+}

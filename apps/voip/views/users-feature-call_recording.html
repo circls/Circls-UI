@@ -1,0 +1,50 @@
+<div class="feature-popup-container" data-feature="call_recording">
+	<div class="feature-popup-title">
+		<div class="feature-fa-wrapper">
+			<i class="{{user.extra.mapFeatures.call_recording.icon}}"></i>
+		</div>
+		{{ i18n.users.callRecording.headline }}
+		<div class="switch">
+		{{#monsterSwitch}}
+			<input class="switch-state" type="checkbox" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}"{{#if user.extra.mapFeatures.call_recording.active}} checked="checked"{{/if}}></input>
+		{{/monsterSwitch}}
+		</div>
+	</div>
+{{#if storeinDB}}
+	<div class="content{{#if user.extra.mapFeatures.call_recording.active}}{{else}} disabled{{/if}}">
+		<div>
+			<span>{{ i18n.users.callRecording.bestoreDB }}</span>
+			<div class="switch control">
+			{{#monsterSwitch}}
+				<input class="switch-dbrecord" type="checkbox" data-on="{{i18n.enabled}}" data-off="{{i18n.disabled}}"{{#if user.extra.mapFeatures.dbrecording.active}} checked="checked"{{/if}}></input>
+			{{/monsterSwitch}}
+			</div>
+		</div>
+	</div>
+{{/if}}
+	<div class="content{{#if user.extra.mapFeatures.call_recording.active}}{{else}} disabled{{/if}}{{#if user.extra.mapFeatures.dbrecording.active}} disabled{{/if}} content_url">
+		<form id="call_recording_form">
+			<div>
+				<span>{{ i18n.users.callRecording.urlLabel }}</span>
+				<input required name="url" type="url" placeholder="{{ i18n.users.callRecording.urlPlaceholder }}" value="{{url}}">
+			</div>
+			<div>
+				<span>{{ i18n.users.callRecording.formatLabel }}</span>
+				<select name="format" class="input-medium">
+					<option value="mp3" {{#if format}}{{#compare format '===' 'mp3'}}selected{{/compare}}{{else}}selected{{/if}}>mp3</option>
+					<option value=2"wav" {{#compare format '===' 'wav'}}selected{{/compare}}>wav</option>
+				</select>
+			</div>
+			<div>
+				<span>{{ i18n.users.callRecording.timeLimitLabel }}</span>
+				<input required name="time_limit" type="text" class="input-small" value="{{#if timeLimit}}{{timeLimit}}{{else}}600{{/if}}">
+			</div>
+		</form>
+	</div>
+	<div class="actions clearfix">
+		<div class="pull-right">
+			<a class="cancel-link monster-link blue" href="javascript:void(0);">{{ i18n.cancel }}</a>
+			<button type="button" class="monster-button monster-button-success save">{{ i18n.saveChanges }}</button>
+		</div>
+	</div>
+</div>

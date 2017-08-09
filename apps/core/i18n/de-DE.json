@@ -1,0 +1,823 @@
+{
+        "defaultttsvoice": "female/de-DE",
+        "dialplan": {
+                "diallocal": "Wähle lokal ohne Vorwahl z.B."
+        },
+        "emergencyplan": {
+                "police": "Polizei",
+                "hospital": "Spital",
+                "firedepartment": "Feuerwehr"
+        },
+	"none": "Kein",
+	"logoTop": "logo.png",
+	"poweredBy": "CIRCLS",
+	"poweredByWebsite": "http://www.circls.co",
+	"welcome": "Circls Mobile-First Business Telephone",
+	"hello": "Willkommen!",
+	"error": "Fehler",
+	"olderVersion": "Es scheint, dass die Daten für die Aktualisierung, außerhalb dieses Programms erstellt wurde, möchten Sie trotzdem fortfahren?",
+	"errors": {
+		"generic": "Ein unerwarteter Fehler ist aufgetreten, bitte versuchen Sie es nocheinmal!",
+		"genericLabel": "API-Antwort",
+		"401": "Anmeldungsfehler, bitte überprüfen Sie den Benutzernamen und das Konto, ob es korrekt ist.",
+		"403": "Zugriff verweigert.",
+		"500": "Interner Serverfehler, bitte kontaktieren Sie Ihren Administrator.",
+		"api": "Interner Serverfehler, bitte führen Sie ein Update ihrer API-Engine durch. Benötigt:",
+		"invalidData": {
+			"errorLabel": "Fehlereingabe:",
+			"required": "Das Feld \"{{field}}\" muss ausgefüllt werden.",
+			"minimum": "Der Wert für dieses Feld \"{{field}}\" muss mindestens {{value}} sein.",
+			"maximum": "Das Feld \"{{field}}\" ist der maximale Wert {{value}} überschritten.",
+			"minLength": "Die Länge des Feldes \"{{field}}\" muss mindestens {{value}} Zeichen sein.",
+			"maxLength": "Die Länge des Feldes \"{{field}}\" darf maximal {{value}} Zeichen sein.",
+			"enum:": "Der Wert für dieses Feld \"{{field}}\" wurde nicht in der Liste der zulässigen Werte gefunden.",
+			"minItems": "Die Liste für dieses Feld \"{{field}}\" muss mindestens {{value}} Einträge enthalten.",
+			"maxItems": "Die Liste für dieses Feld \"{{field}}\" darf maximal {{value}} Einträge enthalten.",
+			"minProperties": "Das Objekt für dieses Feld \"{{field}}\" verfügt nicht über genügend Einträge.",
+			"uniqueItems": "Die Einträge für dieses Feld \"{{field}}\" müssen eindeutig sein.",
+			"pattern": "Der Wert für dieses Feld \"{{field}}\" ist nicht in Übereinstimmung mit \"{{value}}\".",
+			"divisibleBy": "Der Wert für dieses Feld \"{{field}}\" ist nicht teilbar mit {{value}}.",
+			"disallow": "Der Wert für dieses Feld \"{{field}}\" ist nicht erlaubt.",
+			"type": "Der Wert für dieses Feldes \"{{field}}\" muss vom Typ \"{{value}}\" sein.",
+			"unique": "Der Wert für dieses Feldes \"{{field}}\" muss eindeutig sein.",
+			"forbidden": "Der Wert für dieses Feld \"{{field}}\" kann nicht geändert werden.",
+                        "service_restriction": "Ihr Konto weisst zuwenig Guthaben auf, um die Nummer \"{{field}}\" ({{value}}) zu übernehmen."
+                },
+                "errorMessages": {
+                        "datastore_conflict": "Ein Fehler bei der speicherung des Dokuments ist aufgetreten. Bitte probieren Sie nochmals, und kontakieren Sie Ihren Administrator, falls es nicht geht.",
+                        "account_has_descendants": "Sie können kein Konto löschen, das Unterkonten enthält."
+		}
+	},
+	"apps": "Apps",
+	"add": "Zufügen",
+	"alertLogout": "Ihre Sitzung ist Aufgrund längerer Inaktivität abgelaufen. Bitte mdelden Sie sich erneut an.",
+	"cancel": "Abbrechen",
+	"change": "Ändern",
+	"chargeReminder": {
+		"line1": "Wenn Sie wiederkehrende Leistungen geändert haben, werden die Gebühren Anteilig für Ihren Rechnungszyklus verrechnet. Der Betrag wird jetzt von Ihrem Konto beglichen.",
+                "line2": "Bitte bestägigen, dass Sie dies durchführen wollen?"
+	},
+	"close" : "Schliessen",
+	"conferencingLogo": "Konferenzschaltung",
+	"csv": "CSV",
+	"currencyUsed": "USD",
+	"delete": "Löschen",
+	"dialog" : {
+		"showError": "Zeige Fehler",
+		"confirmOk": "OK",
+		"confirm": "Betätigen",
+		"confirmCancel" : "Abbrechen",
+		"confirmTitle" : "Bestätigung",
+                "errorTitle": "Ein Fehler ist aufgetreten!",
+                "infoTitle": "Info",
+                "warningTitle": "Warnung!"
+        },
+	"disabled": "Ausgeschaltet",
+	"download": "Download",
+	"enabled": "Eingeschaltet",
+	"endDate": "Enddatum",
+	"examplePhoneNumber": "+41 52 508 19 22",
+	"filter": "Filter",
+	"info": "Info",
+	"next": "Weiter",
+	"on": "An",
+	"off": "Aus",
+	"show": "Zeige",
+	"hide": "Verstecken",
+	"paging": {
+		"first": "Erste",
+		"previous": "Vorherige",
+		"next": "Nächste",
+		"last": "Letzte"
+	},
+	"pdf": "PDF",
+	"previous": "Vorherige",
+	"remove": "Löschen",
+	"save": "Spreichern",
+	"saveChanges": "Änderungen speichern",
+	"search": "Suchen",
+	"select": "Auswählen",
+	"startDate": "Startdatum",
+	"submit": "Übermitteln",
+	"table" : {
+		"search": "Suchen...",
+		"empty" : "Keine Einträge in dieser Tabelle",
+		"processing" : "Bitte warten...",
+		"showEntries": "Zeige _MENU_ Einträge",
+		"startEndTotal": "Zeige _START_ bis _END_ von _TOTAL_ Einträgen",
+		"zeroRecords": "Keine Einträge gefunden",
+		"loading": "Bin am laden...",
+		"filtered": "(Gefiltert von _MAX_ Einträge Total)",
+		"infoEmpty": "Leer"
+	},
+	"unexpectedError": "Ein Fehler ist aufgetreten, bitte wiederholen!",
+	"update": "Aktualisieren",
+	"upload": "Upload",
+	"validation": {
+		"defaultRules": {
+			"required": "Dieses Feld muss ausgefüllt werden.",
+			"remote": "Bitte diese Feld ausfüllen.",
+			"email": "Bitte eine korrekte Mail Adresse eingeben.",
+			"url": "Geben Sie bitte eine korrekte URL ein.",
+			"date": "Geben Sie bitte eine korrektes Datum ein.",
+			"dateISO": "Geben Sie bitte ein korrektes Datum (ISO).",
+			"number": "Geben Sie bitte eine gültige Nummer ein.",
+			"digits": "Geben Sie bitte nur Zahlen ein.",
+			"creditcard": "Geben Sie bitte eine gültige Kreditkartennummern ein.",
+			"equalTo": "Bitte wiederholen sie Ihr Eingabe.",
+			"maxlength": "Geben Sie nicht mehr als {0} Zeichen ein.",
+			"minlength": "Geben Sie bitte ministens {0} Zeichen ein.",
+			"rangelength": "Ihre Eingabe muss mindestens {0} und maximal {1} Zeichen lang sein.",
+			"range": "Geben Sie bitte eine Zahl zwischen {0} und {1} ein.",
+			"max": "Geben Sie bitte eine Zahl weniger als {0} ein.",
+			"min": "Geben Sie bitte eine Zahl grösser als {0} ein."
+		},
+		"customRules": {
+			"checkList": "Ist belegt",
+			"mac": "Geben Sie bitte eine gültige MAC-Adresse ein.",
+			"ipv4": "Geben Sie bitte eine gültige IP v4 Adresse ein.",
+			"time12h": "Geben Sie bitte eine gültige Zeit im 12-Stunden Format AM/PM ein.",
+			"greaterDate": "Die Startzeit darf nicht grösser als die Endzeit sein.",
+			"realm": "Sie dürfen nur Buchstaben, Zahlen, Punkte und Bindestriche verwenden."
+		},
+		"required": "benötigt."
+	},
+	"warning": "Warnung!",
+	"confirmCharges": {
+		"title": "Kosten bestätigen",
+                "oneTimeFee": "Einmaliger Betrag",
+		"withChargesPartOne": "Der Preis dafür ist {{variable}}",
+		"withChargesPartTwo": " Einmalig {{variable}}. ",
+		"withoutCharges": "Ist kein {{variable}}.",
+		"detail": "Details der montlichen Kosten für Ihr Konto",
+		"service": "Service",
+		"rate": "Preis",
+		"quantity": "Anzahl",
+		"discount": "Rabatt",
+		"monthlyCharges": "Monatliche Kosten",
+		"amount": "{{variable}}",
+		"actions": "Drücken Sie Abbrechen oder OK zum Bestätigen."
+	},
+	"languages": {
+		"auto": "Automatisch (en-US)",
+		"germanGermany": "Deutsch (de-DE)",
+		"frenchFrench": "French (fr-FR)",
+		"italianItalian": "Italian (it-IT)",
+		"americanEnglish": "English (en-US)",
+                "russianRussian": "Russian (ru-RU)"
+	},
+	"services": {
+		"cnam": "Telefonbuchabfrage",
+		"did_us": "USA Nummer",
+		"did_de": "Deutschland Nummer",
+		"did_at": "Österreich Nummer",
+		"e911": "Notrufnummern",
+		"outbound_cnam": "Ausgehende Telefonbuchabfrage",
+		"inbound_cnam": "Eingehende Telefonbuchabfrage",
+		"inbound_trunk": "Eingehender Verbindung",
+		"inbound_trunks": "Eingehende Verbindungen",
+		"port": "Portierung",
+		"sip_devices": "SIP Geräte",
+		"sip_device": "SIP Gerät",
+		"tollfree_us": "US Tollfree",
+		"tollfree_ch": "CH Gratisnummern",
+		"twoway_trunk": "Flatrate-Verbindung",
+		"twoway_trunks": "Flatrate-Verbindungen",
+		"user": "Benutzer",
+                "toll_ch": "Mehrwert Nummern CH",
+                "tollfree_ch": "0800-Nummern CH",
+                "toll_de": "0900-Mehrwert Nummern DE",
+                "tollfree_de": "0800-Nummern DE",
+                "mobile_ch": "Mobile Nummern",
+                "did_ch": "Festnetznummern Schweiz",
+                "did_de": "Festnetznummern Deutschland",
+                "fixnet_ch": "Festnetznummern Schweiz",
+                "business_ch": "Businessnummern Schweiz",
+                "activation_charge": "Aktivierung",
+                "minimum": "Minimal",
+                "exceptions": "Ausnahmen",
+                "rate": "Monatlich:",
+                "CH_Numbers": "CH Nummer",
+                "CH_Tollfree": "CH Gratisnummer (080X)",
+                "DE_Numbers": "DE Nummer",
+                "DE_Tollfree": "DE Gratisnummer (080X)",
+                "Two-Way_Trunk": "Flatrate Verbindungen",
+                "Inbound_Trunk": "Eingehende Verbindungen",
+                "Outbound_Trunk": "Ausgehende Verbindungen",
+                "Outbound_CNAM": "Ausgehendes Telefonbuch",
+                "Inbound_CNAM": "Eingehendes Telefonbuch",
+                "Port_Request_Single": "Portierung Auftrag",
+                "Port_Request_DID": "Portierung Auftrag (DID Blöcke)",
+                "Emergency_Service": "Notfall Nummern",
+                "user": "Systembenutzer",
+                "admin": "Administrator",
+                "toll_ch": "Mehrwert Nummern CH",
+                "tollfree_ch": "0800-Nummern CH",
+                "toll_de": "0900-Mehrwert Nummern DE",
+                "tollfree_de": "0800-Nummern DE",
+                "mobile_ch": "Mobile Nummern",
+                "did_ch": "Festnetznummern Schweiz",
+                "did_de": "Festnetznummern Deutschland",
+                "fixnet_ch": "Festnetznummern Schweiz",
+                "business_ch": "Businessnummern Schweiz",
+                "activation_charge": "Aktivierung",
+                "minimum": "Minimal",
+                "exceptions": "Ausnahmen",
+                "rate": "Monatlich:",
+                "CH_Numbers": "CH Nummer",
+                "CH_Tollfree": "CH Gratisnummer (080X)",
+                "DE_Numbers": "DE Nummer",
+                "DE_Tollfree": "DE Gratisnummer (080X)",
+                "Two-Way_Trunk": "Flatrate Verbindungen",
+                "Inbound_Trunk": "Eingehende Verbindungen",
+                "Outbound_Trunk": "Ausgehende Verbindungen",
+                "calls_Trunk": "Verbindung Anruf",
+                "calls_Trunks": "Verbindungen Anrufe",
+                "burst_Trunk": "Überhöhte-Flatrate Verbindung",
+                "burst_Trunks": "Überhöhte-Flatrate Verbindungen",
+                "resource_consumingCalls": "Verbindungsresourcen total",
+                "Outbound_CNAM": "Ausgehendes Telefonbuch",
+                "Inbound_CNAM": "Eingehendes Telefonbuch",
+                "Port_Request_Single": "Portierung Auftrag",
+                "Port_Request_DID": "Portierung Auftrag (DID Blöcke)",
+                "Emergency_Service": "Notfall Nummern",
+                "user": "Systembenutzer",
+                "admin": "Administrator",
+                "callcenter": "Anrufschleifen (Professional)",
+                "callflows": "Anrufleitungen (selbst verwalten)",
+                "numbers": "Nummern-Verwaltung",
+                "branding": "Eigene Marke",
+                "pivot": "Anruf-ML",
+                "userportal": "Benutzerportal",
+                "carriers": "Eigene-Carrier Verwaltung",
+                "cluster": "Cluster-Verwaltung",
+                "rates": "Gesprächstarife Verwaltung",
+                "voip": "Hosted-PBX Verwaltung",
+                "conferences": "Konferenz App",
+                "accounts": "Kontoverwaltung",
+                "migration": "Migrations App",
+                "mobile": "Handy Integration",
+                "monitoring": "Monitoring Detail Registrationen",
+                "pbxs": "PBX-Anschlüsse Verwaltung",
+                "ports": "Portierungen Verwaltung",
+                "reporting": "Verkaufszahlen für Wiederverkauf",
+                "webhooks": "Webvorgänge integrieren",
+                "alarms": "Pikett-Alarm",
+                "developer": "API-Dokummentation"
+	},
+	"wysiwyg": {
+		"toastr": {
+			"error": {
+				"format": " ist ein nicht unterstützes Format",
+				"upload": "Fehler beim hinaufladen der Datei"
+			}
+		},
+		"title": {
+			"fontSize": "Schriftgrösse",
+
+			"bold": "Bold (Ctrl/Cmd+B)",
+			"italic": "Italic (Ctrl/Cmd+I)",
+			"underline": "Unterstrichen (Ctrl/Cmd+U)",
+			"strikethrough" : "Durchgestrichen",
+
+			"fontColor": "Schriftfarbe",
+
+			"alignment": "Ausrichtung",
+			"alignLeft": "Links (Ctrl/Cmd+L)",
+			"center": "Zentriert (Ctrl/Cmd+E)",
+			"alignRight": "Rechts (Ctrl/Cmd+R)",
+			"justify": "Ausrichten (Ctrl/Cmd+J)",
+
+			"list": "Liste",
+
+			"bulletList": "Auswahlliste",
+			"numberList": "Nummernliste",
+
+			"reduceIndent": "Reduzieren indent (Shift+Tab)",
+			"indent": "Indent (Tab)",
+
+			"createLink": "Hyperlink",
+			"removeLink": "Hyperlink löschen",
+
+			"upload": "Bild einfügen (oder mit Drag & Drop)",
+
+			"undo": "Rückgänging (Ctrl/Cmd+Z)",
+			"redo": "Wiederholen (Ctrl/Cmd+Y)",
+
+			"horizontalRule": "Horizontale Ausrichtung",
+
+			"macro": "Macro"
+		},
+		"text": {
+			"big": "Gross",
+			"normal": "Normal",
+			"small" : "Klein"
+		},
+		"placeholder": {
+			"createLink": "URL"
+		}
+	},
+	"calendar": {
+		"suffix": {
+			"am": "Vormittags",
+			"pm": "Nachmittags"
+		},
+		"day": {
+			"0": "Sonntag",
+			"1": "Montag",
+			"2": "Dienstag",
+			"3": "Mittwoch",
+			"4": "Donnerstag",
+			"5": "Freitag",
+			"6": "Samstag"
+		},
+		"month": {
+			"0": "Januar",
+			"1": "Februar",
+			"2": "März",
+			"3": "April",
+			"4": "Mai",
+			"5": "Juni",
+			"6": "Juli",
+			"7": "August",
+			"8": "September",
+			"9": "Oktober",
+			"10": "November",
+			"11": "Dezember"
+		}
+	},
+	"description": "Beschreibung",
+	"featuresTitle": "Eigenschaft:",
+	"undefinedFeatures": "Liste der Eigenschaften kommt bald...",
+	"author": "Autor",
+	"version": "Version",
+	"license": "Lizenz",
+	"price": "Preis",
+	"free": "Gratis",
+	"save": "Speichern",
+	"filters": {
+		"all": "Alle Apps",
+		"installed": "Meine Apps",
+		"resellers": "Wiederverkauf Apps",
+		"carriers": "Distributor Apps",
+		"developers": "Entwickler Apps"
+	},
+	"permissions": {
+		"title": "Wer kann das App benutzten?",
+		"all": "Alle Benutzer",
+		"admins": "Nur Admin",
+		"specific": "Spezial Benutzer"
+	},
+	"selectedUsers": "Ausgewählte Benutzer",
+	"selectAll": "alle Anwählen",
+	"unselectAll": "alle Abwählen",
+	"noselected": "Kein Benutzer ausgewählt",
+	"selectUsersLink": "Benutzer auswählen ({{selectedUsers}})",
+	"alerts": {
+		"noUserSelected": "Sie müssen ein Benutzer für dies App auswählen.<br><br>Oder Sie können alle Benutzer abwählen, um es nicht zuzulassen."
+	},
+        "refresh": "Erneuern",
+        "unassign": "Ablegen",
+        "advancedErrorDialog": {
+                "title": "Ein Fehler...",
+                "viewDetails": "Mehr Informationen",
+                "requestId": "Request ID",
+                "apiUrl": "API URL",
+                "verb": "API Typ"
+        },
+        "javascriptErrorDialog": {
+                "title": "Ein Javascript Fehler ist aufgetreten...",
+                "message": "Nachricht",
+                "line": "Linie",
+                "column": "Klonne",
+                "stackTrace": "Stack Trace",
+                "file": "Dateiname"
+        },
+        "linkedColumns": {
+                "available": "Mögliche Auswahl",
+                "selected": "Ausgewählt"
+        },
+        "codecs": {
+                "audio": {
+                        "OPUS": "OPUS",
+                        "CELT@32000h": "Siren @ 32Khz",
+                        "G7221@32000h": "G722.1 @ 32khz",
+                        "G7221@16000h": "G722.1 @ 16khz",
+                        "G722": "G722 (HD)",
+                        "speex@32000h": "Speex @ 32khz",
+                        "speex@16000h": "Speex @ 16khz",
+                        "PCMU": "G711u / PCMU - 64kbps (ISDN)",
+                        "PCMA": "G711a / PCMA - 64kbps (ISDN)",
+                        "G729":"G729 - 8kbps (Benötigt Lizenz)",
+                        "GSM":"GSM (Analog)",
+                        "CELT@48000h": "Siren (HD) @ 48kHz",
+                        "CELT@64000h": "Siren (HD) @ 64kHz"
+                },
+                "video": {
+                        "VP8": "VP8",
+                        "H264": "H264",
+                        "H263": "H263",
+                        "H261": "H261"
+                }
+        },
+	"hangupCauses": {
+		"SUCCESS": {
+			"inbound": "Die Verbindung wurde Umgeleitet",
+                        "friendlyName": "Umgeleitet"
+		},
+		"NO_RESPONSE": {
+			"inbound": "Anrufweiterleitung war eingeschaltet, scheiterte, weil der Benutzer weitergeleitet wurde oder nicht reagiert war.",
+                        "friendlyName": "Nicht angemeldet"
+		},
+		"UNSPECIFIED": {
+                        "friendlyName": "Fehler nicht bekannt"
+			
+			},
+		"UNALLOCATED_NUMBER": {
+			"outbound": "Die Nummer die gewählt wurde ist kein gültiges Anrufziel oder konnte nicht über die gewählten Carrier erreicht werden.",
+			"inbound": "Normalerweise für PBX-Trunks, kann aber auch anzeigen, dass auf Kundenseite ein Gerät nicht richtig funktioniert, oder die Nummer nicht programmiert ist.",
+                        "friendlyName": "Nummer nicht in Betrieb"
+		},
+		"NO_ROUTE_TRANSIT_NET": {
+                        "friendlyName": "Kein Transitnetz"
+		},
+		"NO_ROUTE_DESTINATION": {
+			"outbound": "Die Nummer die gewählt wurde ist kein gültiges Anrufziel oder konnte nicht über die gewählten Carrier erreicht werden.",
+			"inbound": "Normalerweise für PBX-Trunks, kann aber auch anzeigen, dass auf Kundenseite ein Gerät nicht richtig funktioniert, oder die Nummer nicht programmiert ist.",
+                        "friendlyName": ""
+		},
+		"CHANNEL_UNACCEPTABLE": {
+                        "friendlyName": "Parameterfehler Kanal"
+		},
+		"CALL_AWARDED_DELIVERED": {
+                        "friendlyName": "Verbindungsfehler"
+		},
+		"NORMAL_CLEARING": {
+			"inbound": "Alles ist OK. Die Verbindung wurde normal beendet",
+			"outbound": "Alles ist OK. Die Verbindung wurde normal beendet",
+                        "friendlyName": "Normal beendet"
+		},
+		"USER_BUSY": {
+			"inbound": "Unter 1 Sek.: Das Telefon war besetzt oder nicht erreichbar; über 1 Sek.: Der Benutzer hat den Anruf abgelehnt.",
+                        "friendlyName": "Besetzt"
+		},
+		"NO_USER_RESPONSE": {
+                        "friendlyName": "Endgerät antwortet nicht"
+		},
+		"NO_ANSWER": {
+                        "friendlyName": "Keine Antwort"
+		},
+		"SUBSCRIBER_ABSENT": {
+                        "friendlyName": "Endgerät antwortet nicht"
+		},
+		"CALL_REJECTED": {
+			"outbound": "Dier Anruf zum Carrier wird nicht unterstützt, oder hat keine Kapazität. Es wird zum nächstmöglichen Carrier geschaltet. Dies ist nicht kein Allgmmeiner Fehler und ist normal.",
+			"inbound": "Unter 1 Sek.: Das Telefon hat \"nicht Stören aktiviert\" oder alle Leitungen auf dem Telefon sind belegt. Über 1 Sek.: Der Bentuzer hat den Anruf abgelehnt.",
+                        "friendlyName": "Anruf abgelehnt"
+		},
+		"NUMBER_CHANGED": {
+                        "friendlyName": "Anruf weitergeleitet"
+		},
+		"REDIRECTION_TO_NEW_DESTINATION": {
+			"inbound": "Unter 1 Sek.: Das Telefon hat \"Umleitung aktiviert\". Über 1 Sek.: Der Bentuzer hat Umleitung bei \"nicht erreichbar aktiviert\".",
+                        "friendlyName": "Umgeleitet neues Ziel"
+		},
+		"EXCHANGE_ROUTING_ERROR": {
+			"outbound": "Der Carrier für die Verbindung, wurde für diese Verbindung nicht eingestellt, oder hat nicht genügend Kapazität für die Verbindung. Der nächste Carrier in der Liste wird kontaktiert. Dies zeigt nicht unbedingt einen Fehler.",
+			"inbound": "Normalerweise für PBX-Trunks, kann aber auch anzeigen, dass auf Kundenseite ein Gerät nicht richtig funktioniert, oder die Nummer nicht programmiert ist.",
+                        "friendlyName": "Verbindung abgelehnt"
+		},
+		"DESTINATION_OUT_OF_ORDER": {
+                        "friendlyName": "Ziel nicht erreichbar"
+		},
+		"INVALID_NUMBER_FORMAT": {
+                        "friendlyName": "Falsche Nummer"
+		},
+		"FACILITY_REJECTED": {
+                        "friendlyName": "Abgelehnt"
+		},
+		"RESPONSE_TO_STATUS_ENQUIRY": {
+                        "friendlyName": "Kein Status möglich"
+		},
+		"NORMAL_UNSPECIFIED": {
+                        "friendlyName": "Nicht bekannt"
+		},
+		"NORMAL_CIRCUIT_CONGESTION": {
+                        "friendlyName": "Besetzt"
+		},
+		"NETWORK_OUT_OF_ORDER": {
+			"outbound": "Der Carrier für die Verbindung, wurde für diese Verbindung nicht eingestellt, oder hat nicht genügend Kapazität für die Verbindung. Der nächste Carrier in der Liste wird kontaktiert. Dies zeigt nicht unbedingt einen Fehler.",
+			"inbound": "Normalerweise für PBX-Trunks, kann aber auch anzeigen, dass auf Kundenseite ein Gerät nicht richtig funktioniert, oder die Nummer nicht programmiert ist.",
+                        "friendlyName": "Verbindungsfehler"
+		},
+		"NORMAL_TEMPORARY_FAILURE": {
+			"outbound": "Der Carrier für die Verbindung, wurde für diese Verbindung nicht eingestellt, oder hat nicht genügend Kapazität für die Verbindung. Der nächste Carrier in der Liste wird kontaktiert. Dies zeigt nicht unbedingt einen Fehler.",
+			"inbound": "Dies sollte nicht vorkommen. Dies ist ein Verarbeitungsfehler.",
+                        "friendlyName": "Verbindungsfehler zeitlich"
+		},
+		"SWITCH_CONGESTION": {
+                        "friendlyName": "Verbindugsstau"
+		},
+		"ACCESS_INFO_DISCARDED": {
+                        "friendlyName": "Informationsfehler"
+		},
+		"REQUESTED_CHAN_UNAVAIL": {
+                        "friendlyName": "Kanalfehler"
+		},
+		"FACILITY_NOT_SUBSCRIBED": {
+                        "friendlyName": "Wartung Zielnetz"
+		},
+		"OUTGOING_CALL_BARRED": {
+			"outbound": "Ausgehende Anrufe sind nicht erlaubt",
+                        "friendlyName": "Ausgehend Verboten"
+		},
+		"INCOMING_CALL_BARRED": {
+			"inbound": "Eingehende Anrufe sind nicht erlaubt",
+                        "friendlyName": "Eingehend verboten"
+		},
+		"BEARERCAPABILITY_NOTAUTH": {
+                        "friendlyName": "Dienstnameldungsfehler"
+		},
+		"BEARERCAPABILITY_NOTAVAIL": {
+                        "friendlyName": "Keine Diensterkennung"
+		},
+		"SERVICE_UNAVAILABLE": {
+                        "friendlyName": "Dienstfehler"
+		},
+		"BEARERCAPABILITY_NOTIMPL": {
+                        "friendlyName": "Parameter Dienstfehler"
+		},
+		"CHAN_NOT_IMPLEMENTED": {
+                        "friendlyName": "Kanal fehlt"
+		},
+		"FACILITY_NOT_IMPLEMENTED": {
+                        "friendlyName": "Wartung nicht möglich"
+		},
+		"SERVICE_NOT_IMPLEMENTED": {
+                        "friendlyName": "Dienst nicht möglich"
+		},
+		"INVALID_CALL_REFERENCE": {
+                        "friendlyName": "Falscher Absender"
+		},
+		"INCOMPATIBLE_DESTINATION": {
+			"outbound": "Die Verbindung zum Carrier benötigt eine Verschlüsselung, haber die Methode wird nicht unterstützt. Ebenso kann eine Faxübertragung abbrechen wenn die geforderte T38 Unterstützung fehlt.",
+			"inbound": "Die Verbindung zum Carrier benötigt eine Verschlüsselung, haber die Methode wird nicht unterstützt. Ebenso kann eine Faxübertragung abbrechen wenn die geforderte T38 Unterstützung fehlt.",
+                        "friendlyName": "Fehler Verschlüsselung"
+		},
+		"INVALID_MSG_UNSPECIFIED": {
+                        "friendlyName": "Nachrichtfehler"
+		},
+		"MANDATORY_IE_MISSING": {
+                        "friendlyName": "Dienst fehlt"
+		},
+		"MESSAGE_TYPE_NONEXIST": {
+                        "friendlyName": "Nachrichttyp fehlt"
+		},
+		"WRONG_MESSAGE": {
+                        "friendlyName": "Falsche Nachricht"
+		},
+		"IE_NONEXIST": {
+                        "friendlyName": "Existiert nicht"
+		},
+		"INVALID_IE_CONTENTS": {
+                        "friendlyName": "Inhaltfehler"
+		},
+		"WRONG_CALL_STATE": {
+			"outbound": "Die Weiterverbindung zum Carrier hat einen Fehler und muss behoben werden.",
+			"inbound": "Der Anruf wurde beendet bovor die Endstelle antwortete, oder das System hat ein Prolbem mit diesem Benutzer.",
+                        "friendlyName": "Fehler des Benutzerstatus"
+		},
+		"RECOVERY_ON_TIMER_EXPIRE": {
+			"outbound": "Die Weiterverbindung zum Carrier hat einen Fehler und muss behoben werden.",
+			"inbound": "Die Anfrage für den Anruf auf das Gerät wurde blockiert. (Verbindungsunterbruch oder Firewall problem)",
+                        "friendlyName": "Verbindungsabbruch"
+		},
+		"MANDATORY_IE_LENGTH_ERROR": {
+                        "friendlyName": "Fehler zu lang"
+		},
+		"PROTOCOL_ERROR": {
+                        "friendlyName": "Protokollfehler"
+		},
+		"INTERWORKING": {
+                        "friendlyName": "System beschäftigt"
+		},
+		"ORIGINATOR_CANCEL": {
+			"outbound": "Der Anruf wurde beendet, ehe beantwortet wurde.",
+			"inbound": "Der Anruf wurde beendet, ehe beantwortet wurde.",
+                        "friendlyName": "Verpasst"
+		},
+		"CRASH": {
+		},
+		"SYSTEM_SHUTDOWN": {
+                        "friendlyName": "System anhalten"
+		},
+		"LOSE_RACE": {
+			"outbound": "Mehrere Telefone klingelten gemeinsam, und mit einem anderen wurde der Anruf beantwortet.",
+			"inbound": "Mehrere Telefone klingelten gemeinsam, und mit einem anderen wurde der Anruf beantwortet.",
+                        "friendlyName": "Gruppenruf"
+		},
+		"MANAGER_REQUEST": {
+                        "friendlyName": "System anfrage"
+		},
+		"BLIND_TRANSFER": {
+			"inbound": "Dies ist der erste Teil bei Übergabe der Verbindung (Ohne Rückfrage) an einen andern Teilnehmer.",
+                        "friendlyName": "Weiterschaltung"
+		},
+		"ATTENDED_TRANSFER": {
+			"outbound": "Dies ist der erste Teil bei Übergabe der Verbindung (Mit Rückfrage) an einen andern Teilnehmer.",
+			"inbound": "Dies ist der erste Teil bei Übergabe der Verbindung (Mit Rückfrage) an einen andern Teilnehmer.",
+                        "friendlyName": "Verbinden mit Nachfrage"
+		},
+		"ALLOTTED_TIMEOUT": {
+                        "friendlyName": "Zeitüberschreitung"
+		},
+		"USER_CHALLENGE": {
+                        "friendlyName": "Benutzerwechsel"
+		},
+		"MEDIA_TIMEOUT": {
+			"inbound": "Netzwerk oder Firewall Problem. Die Verbindung ohne Medienübertragung (Audiodaten) wurde abgebrochen.",
+                        "friendlyName": "Netzwerkproblem"
+		},
+		"PICKED_OFF": {
+                        "friendlyName": "Pickup beendet"
+		},
+		"USER_NOT_REGISTERED": {
+                        "friendlyName": "Bentuzer nicht angemeldet"
+		},
+		"PROGRESS_TIMEOUT": {
+			"outbound": "Der Anrufe über diesen Carrier wurde nicht in eingestellter Zeit beantworted. Dies bedeutet meistens, das versucht wurde eine Verbindung aufzubauen, jedoch die Rückmeldung zu lange dauerte. Tritt dies mehrmals auf sollte die Zeit für die Rückmeldung angepasst werden. (Gelegentlich kann dies vorkommen).",
+			"inbound": "Die Anfrage für den Anruf auf das Gerät wurde blockiert. (Verbindungsunterbruch oder Firewall problem)",
+                        "friendlyName": "Fehler Timeout Carrier"
+		},
+		"GATEWAY_DOWN": {
+                        "friendlyName": "Fehler Gateway"
+		}
+	},
+
+	"passwordStrength": {
+		"strong": "Stark",
+		"good": "Gut",
+		"medium": "Mittel",
+		"weak": "Schwach",
+		"bad": "Schlecht",
+		"empty": "Ein Passowrt eingeben"
+	},
+
+	"invalidCredentialsMessage": "Ihre Sitzung ist abgelaufen. Schliessen Sie das Fenster für einen Neuanmeldung.",
+
+	"monsterResults": {
+		"titles": {
+			"success": "Erfolgreich",
+			"error": "Fehler"
+		}
+	},
+        "controlCenter": "Konto Einstellungen",
+        "uploadProgressTitle": "Dateien hochladen...",
+        "defaultTimezone": "- Konto/Benutzer (System) -",
+        "stepByStep": {
+                "nextLabel": "Nächste",
+                "prevLabel": "Zurück",
+                "skipLabel": "Überspringen",
+                "doneLabel": "Fertig"
+        },
+        "ttsvoice": {
+              "femaleenUS": "Frau Englisch US",
+              "maleenUS": "Mann Englisch US",
+              "femaleenCA": "Frau Englisch CA",
+              "femaleenAU": "Frau Englisch AU",
+              "femaleenGB": "Frau Englisch GB",
+              "maleenGB": "Mann Englisch GB",
+              "femaleesUS": "Frau Spanisch US",
+              "maleesUS": "Mann Spanisch US",
+              "femalezhCN": "Frau Chinesisch",
+              "malezhCN": "Mann Chinesisch CN",
+              "femalezhHK": "Frau Chinesisch CN",
+              "femalezhTW": "Frau Chinesisch TW",
+              "femalejaJP": "Frau Japanisch",
+              "malejaJP": "Mann Japanisch",
+              "femalekoKR": "Frau Koreanisch",
+              "malekoKR": "Mann Koreanisch",
+              "femaledaDK": "Frau Dänisch",
+              "femaledeDE": "Frau Deutsch",
+              "maledeDE": "Mann Deutsch",
+              "femalecaES": "Frau Spanisch ES",
+              "maleesES": "Mann Spanisch ES",
+              "femalefiFI": "Frau Finisch",
+              "femalefrCA": "Frau Französich CA",
+              "malefrCA": "Mann Französisch CA",
+              "femalefrFR": "Frau Französisch",
+              "malefrFR": "Mann Französisch",
+              "femaleitIT": "Frau Italienisch",
+              "maleitIT": "Mann Italienisch",
+              "femalenbNO": "Frau Norwegisch",
+              "femalenlNL": "Frau Niederländisch",
+              "femaleplPL": "Frau Polnisch",
+              "femaleptBR": "Frau Portugisisch BR",
+              "femaleptPT": "Frau Portugisisch PT",
+              "maleptPT": "Mann Portugisisch",
+              "femaleruRU": "Frau Russisch",
+              "maleruRU": "Mann Russisch",
+              "femalesvSE": "Frau Schwedisch",
+              "femalehuHU": "Frau Ungarisch",
+              "femalecsCZ": "Frau Tschechisch",
+              "femaletrTR": "Frau Türkisch",
+              "maletrTR": "Mann Türkisch"
+    },
+    "timepicker": {
+            "am": "am",
+            "pm": "pm",
+            "AM": "AM",
+            "PM": "PM",
+            "decimal": ".",
+            "min": "mins",
+            "hr": "hr",
+            "hrs": "hrs"
+    },
+    "YES": "JA",
+    "NO":  "NEIN",
+    "friendlyTimer": {
+            "minutesAnd": "Minuten und",
+            "hours": "Stunden",
+            "seconds": "Sekunden"
+    },
+
+    "accountToggle": {
+            "currentAccountLabel": "Kontenwahl",
+            "toggleTooltip": "Schnellauswahl Konto"
+    },
+    "triggerMasquerading": "Sie sind als \"{{accountName}}\" eingebucht.",
+    "restoreMasquerading": "Ihr Konto ist wieder aktiviert.",
+    "noMasqueradingAllowed": "Sie wurden zu den \"Apps\" umgeleitet, weil ein Kontosprung nicht erlaubt ist.",
+    "authenticationIssue": "Ein Anmeldefehler ist währen dem Vorgang aufgetreten!",
+    "expiredTrial": "Ihre Testzeit ist am {{date}} erreicht, kontaktieren Sie einen Verkäufer für mehr Informationen.",
+    "disabledAccount": "Ihr Konto wurde abgeschaltet.",
+    "unitsMultiple": {
+                "byte": [
+                        {
+                                "symbole": "Bytes",
+                                "multiple": "Bytes"
+                        },
+                        {
+                                "symbole": "kB",
+                                "multiple": "Kilobyte"
+                        },
+                        {
+                                "symbole": "MB",
+                                "multiple": "Megabyte"
+                        },
+                        {
+                                "symbole": "GB",
+                                "multiple": "Gigabyte"
+                        },
+                        {
+                                "symbole": "TB",
+                                "multiple": "Terabyte"
+                        },
+                        {
+                                "symbole": "PB",
+                                "multiple": "Petabyte"
+                        },
+                        {
+                                "symbole": "EB",
+                                "multiple": "Exabyte"
+                        },
+                        {
+                                "symbole": "ZB",
+                                "multiple": "Zettabyte"
+                        },
+                        {
+                                "symbole": "YB",
+                                "multiple": "Yottabyte"
+                        }
+                ]
+        },
+        "globalShortcuts": {
+                "categories": {
+                        "general": "Globale Tastenkürzel",
+                        "apps": "Zur Applikation",
+                        "appSpecific": "Jetzige Applikation"
+                },
+                "popupTitle": "Tastenkürzel Zusammenfassung",
+                "keys": {
+                        "a": { "title": "Kontosprung" },
+                        "d": { "title": "Ereiterte Kontoinformation" },
+                        "r": { "title": "App Erneuern" },
+                        "#": { "title": "App Laden" },
+                        "@": { "title": "Mein Konto"},
+                        "shift+l": { "title": "Schnell Abmeldung"},
+                        "?": { "title": "Zeige Tastenkürzel" },
+                        "shift+m": { "title": "Kontosprung Stop" }
+                }
+        },
+        "debugAccountDialog": {
+                "title": "Ereiterte Kontoinformationen",
+                "accountName": "Kontoname",
+                "accountId": "Konto-ID",
+                "authToken": "Auth Token",
+                "apiUrl": "API-URL"
+        },
+        "footable": {
+                "search": "Suche",
+                "format": "{PF}-{PL} von {TR}"
+        }
+}

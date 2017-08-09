@@ -1,0 +1,10 @@
+	{{#if user_id}}
+		<div class="row row-user" id="row_user_{{ user_id }}" data-id="{{ user_id }}">
+			<div class="column first">{{ user_name }}</div>
+			<div class="column third"><a class="action_user delete fa fa-trash-o" data-id="{{ user_id }}"></a></div>
+	{{else}}
+		<div class="row row-user" id="row_no_data">
+			<div class="column merged">{{ i18n.callflows.queues.there_is_currently_no_user }}</div>
+	{{/if}}
+		<div class="clear"/>
+	</div>
